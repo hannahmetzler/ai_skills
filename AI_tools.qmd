@@ -1,0 +1,81 @@
+---
+title: "AI tools: Tips und Tricks für LLMs"
+author: "Hannah Metzler"
+date: "2. April 2024"
+format: 
+  revealjs: 
+    transition: 'slide'
+    ## Defines the theme of the presentation, both version and style
+    theme: [default, AI_tools_files/libs/custom.scss]
+#editor
+editor: visual
+---
+
+## Was sind LLMs eigentlich?
+
+- Large Language Models: fortschrittliche Sprachmodelle
+- Trainiert mit Daten aus dem Internet (Wikipedia, Medien, Social Media...), Literatur, Videos, Filme Podcasts, Medien
+- Statistische Wort und Satz Vorhersagen, abgeleitet aus riesigen Datenmengen
+- Fähigkeit, ausführliche und kontextreiche Antworten zu liefern.
+
+## Google vs. LLMs: häufige Fehler
+
+- ChatGPT nicht wie eine Suchmaschine nutzen; statt kurzer Keywords, umfangreiche Informationen und Kontext für bessere Ergebnisse verwenden.
+
+## Anwendungsbeispiele
+
+- Alltägliche Anfragen: 
+  - Veranstaltungen, Freizeitaktivitäten, Komplimente.
+  - Rezeptvorschläge, Einkaufslisten.
+- Forschung und Studium: Zusammenfassung langer Berichte.
+
+## Emotionale Interaktion mit KI
+
+- Emotionale Ausdrücke können zu besseren Ergebnissen führen
+- Training des Modells auf menschlicher Sprache
+- Modell verhält sich wie Menschen
+
+## Bedeutung für die Zukunft
+
+- Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen
+- Wir lernen laufen wie wir sie am besten verwenden können
+- Täglich benützen
+
+## What can you use them for?
+
+
+
+## Tips and tricks
+
+## Emotional prompts
+
+## System prompts
+
+## Best models today
+
+-   Gemini
+
+-   ChatGPT 4
+
+-   Claude
+
+-   Check BART
+
+## What are different models good for?
+
+# Joao talk
+
+Evaluating LLMs - what is trustworthy
+- Chatbot Arena
+- r/LocalLamma comments: best place to learn about this stuff
+    - a Starter guide for playing with your own local AI
+    - The llama hitchiking guide to local LLMs
+Other good sources: Medium, Twitter
+
+Mixture of experts - very promising: another architecture, e.g. Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data
+
+:::{.notes}
+Best open source model: Mixtral
+LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685
+tps: tokens per second
+:::
