@@ -14,13 +14,23 @@ editor: visual
 ## Was sind LLMs eigentlich?
 
 - Large Language Models: fortschrittliche Sprachmodelle
+- fortschrittliche KI-Systeme, die riesige Mengen an Textdaten verarbeiten, um menschenähnliche Texte zu generieren.
 - Trainiert mit Daten aus dem Internet (Wikipedia, Medien, Social Media...), Literatur, Videos, Filme Podcasts, Medien
 - Statistische Wort und Satz Vorhersagen, abgeleitet aus riesigen Datenmengen
 - Fähigkeit, ausführliche und kontextreiche Antworten zu liefern.
 
 ## Google vs. LLMs: häufige Fehler
 
-- ChatGPT nicht wie eine Suchmaschine nutzen; statt kurzer Keywords, umfangreiche Informationen und Kontext für bessere Ergebnisse verwenden.
+- Suchmaschine: 
+  - wenige kurze Keywords
+  - Antwort: viele einzelne Ergebnisse
+
+- LLM:
+  - Viel Details, Informationen und Kontext geben
+  - Sprechen wie mit einer Person
+  - Feedback geben & Dialog führen
+  - Antwort ist zusammenfassend
+  
 
 ## Anwendungsbeispiele
 
@@ -29,41 +39,86 @@ editor: visual
   - Rezeptvorschläge, Einkaufslisten.
 - Forschung und Studium: Zusammenfassung langer Berichte.
 
-## Emotionale Interaktion mit KI
+## Emotionale Prompts
 
 - Emotionale Ausdrücke können zu besseren Ergebnissen führen
 - Training des Modells auf menschlicher Sprache
+- Statistik: wahrscheinlich besser oder schlechter wenn ich sage es ist wichtig?
 - Modell verhält sich wie Menschen
+- Kann Sorgfalt der Modelle bei der Antwortfindung beeinflussen.
 
 ## Bedeutung für die Zukunft
 
 - Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen
 - Wir lernen laufen wie wir sie am besten verwenden können
-- Täglich benützen
+- Täglich benützen und kreativ sein! 
 
-## What can you use them for?
+# Anwendungen
+
+## Anwendungen im Alltag
+
+- **Rezepte**: Vorschläge basierend auf vorhandenen Zutaten.
+- **Reiseplanung**: Individuelle Empfehlungen für Städtereisen, basierend auf persönlichen Präferenzen.
+- **Einkaufslisten**: Schitzeln und Gulasch für 4 Personen
+
+## Anwendungen bei der Arbeit
+
+- **Feedback zu Präsentationen**: Analyse und Verbesserungsvorschläge für Folien.
+- **Hyper-Personalisierung**: Analyse von LinkedIn-Profilen für zielgerichtete Verkaufsstrategien.
+
+### Ausprobieren!
+
+- **Akademische Forschung**: 
+  - Systematische Literaturübersichten, Zusammenfassungen von Fachartikeln.
+  - Feedback für Präsentationen
+  - Struktur eine Präsentation erstellen lassen
+  - Programmieren
+  - Texte überarbeiten
+  - erster Entwurf eines Textes schreiben anhand von Notizen
+  - im eigenen Schreibstil schreiben: Paper reinladen
+  - eigenes Wissen zusammenfassen
+- **Textgenerierung**: Erstellung von Inhalten, Übersetzungen, Zusammenfassungen.
 
 
+## Tipps und Tricks
 
-## Tips and tricks
+- **Baseprompts**: Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen.
+- Antwort eines LLMs mit anderem LMM checken: Stimmt das?
+- Modell nachfragen: überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?
+- 80% mit ChatGPT, dann selbst überprüfen - erster Entwurf
 
-## Emotional prompts
+## Halluzinationen
 
-## System prompts
+- Viel weniger Problem als zu Beginn
 
-## Best models today
+## Aktuelle Top-Modelle
 
--   Gemini
+- **Gemini**
+- **ChatGPT 4**
+- **Claude**
 
--   ChatGPT 4
+## Stärken verschiedener Modelle
 
--   Claude
+- **Claude**: längere Texte, besitzt ein besseres Gedächtnis (500 Seiten) (Context window)
+- **Perplexity AI**: Funktioniert wie eine Suchmaschine, bietet direkte Antworten aus dem Web mit wissenschaftlichen Quellen
+- **Bard**: Von Google, vielseitig einsetzbar.
 
--   Check BART
+## Chat GPT 4
 
-## What are different models good for?
+- ChatGPT 4 ist viel besser als die kostenlosen Version
+- Handyapp mit Mikrofon Funktion: Unterhaltung
+- Multimodales Arbeiten
+- Bilder, Screenshots reinladen
+- Bilder kreiren
 
-# Joao talk
+# Fortgeschrittene Techniken
+
+- **Custom GPT**: Erstellung eines angepassten Modells für spezifische Anforderungen oder zur Simulation eines digitalen Zwillings.
+- System/Base prompts
+
+# Advanced Notes
+
+## Joao talk
 
 Evaluating LLMs - what is trustworthy
 - Chatbot Arena
