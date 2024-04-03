@@ -79,6 +79,14 @@ knitr::include_graphics("images/wordembeddings.svg")
   - Sprechen wie mit einer Person
   - Feedback geben & Dialog führen, Performance verbessert sich sehr schnell
   - Antwort ist zusammenfassend
+  
+## Chat GPT-4
+
+- ChatGPT 4 ist viel besser als die kostenlosen Version
+- Handy App mit Mikrofon Funktion: Unterhaltung mit ChatGPT
+- Multimodales Arbeiten
+- Bilder, Screenshots reinladen
+- Bilder kreiren  
 
 ## Stärken verschiedener Modelle
 
@@ -107,29 +115,24 @@ knitr::include_graphics("images/wordembeddings.svg")
 
 Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
-## Chat GPT 4
-
-- ChatGPT 4 ist viel besser als die kostenlosen Version
-- Handyapp mit Mikrofon Funktion: Unterhaltung, via Bluetooth Kopfhörer
-- Multimodales Arbeiten
-- Bilder, Screenshots reinladen
-- Bilder kreiren  
+---
 
 # Anwendungen
 
-## Anwendungen im Alltag
+## Im Alltag
 
 - **Rezepte**: Vorschläge basierend auf vorhandenen Zutaten  ([Beispiel](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
     - Individuell anpassen ([Beispiel weniger Aufwand](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
 - **Reiseplanung**: Individuelle Empfehlungen für Städtereisen
 - **Einkaufslisten**: Schnitzeln und Gulasch für 4 Personen ([Beispiel Wochenessensplan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
-- **Lange komplexe Dokumente zusammenfassen**: Link oder Datei hochladen
+- **Lange Dokumente zusammenfassen**: Link oder Datei hochladen
   - Anleitungen von Kamera, Mikrowelle, Lichtpanellen etc. 
   - Gesetz zusammenfassen ([Beispiel Legehennen](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
+  - Lange Zeitungsartikel zusammenfassen: als Podcast anhören
   
 ---
 
-## Anwendungen im Alltag 2
+## Im Alltag 2
 
 
 - Haushalt: Fleckenentfernungstipss ([Beispiel](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
@@ -137,10 +140,11 @@ Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 - Mindfulness Mediationsanleitung
 - Coaching für wichtige Karriereentscheidungen
 - Empfehlungen für Jobs/Positionen/Rollen basierend auf meinem CV
+- Stadt, Land Fluss spielen
 
 ---
 
-### Anwendungen in der wissenschaftlichen Arbeit
+## In der wissenschaftlichen Arbeit
 
 - Entwurf/ Struktur für eine Präsentation vorschlagen
 - Feedback zu Präsentationen: Folien hochladen (Screenshot)
@@ -160,18 +164,21 @@ Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 - Übersetzung [www.deepl.com](www.deepl.com)
 - Produktivitätscoach: Screenshot eines Terminkalenders von einer Woche, oder mehreren Wochen
 - Transkripte von Interviews machen lassen
+- Datenset hochladen + Fragestellung
 
 # Tipps und Tricks
 
 ## Allgemeines
 
+- ChatGPT App runterladen, Mikrofon & Kopfhörer verwenden
+- Oft benutzen und ausprobieren!
 - Rechtschreibung komplett egal
 - 80% mit ChatGPT, dann selbst überprüfen - erster Entwurf
 
 ## Halluzinationen
 
 - Daten erfinden die es nicht gibt
-- Viel weniger Problem als zu Beginn
+- Viel weniger ein Problem als zu Beginn
 - 4 Augenprinzip: Modell macht 80%, ich den Rest
 - Modell nachfragen: überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?
 - Selben Prompt in verschiedene Modelle reingeben und vergleichen, z.B. auf <https://poe.com>, <https://anakin.ai>
@@ -189,6 +196,7 @@ knitr::include_graphics('images/emotional_prompt.jpg')
 Write your answer and give me a confidence score between 0-1 for your answer. 
 You'd better be sure.
 ```
+
 ---
 
 ### Weiter emotionale Beispiele: 
@@ -207,13 +215,91 @@ You'd better be sure.
 - Weniger Halluzinationen
 - Reden wie mit einem Menschen
 
-## Fortgeschrittene Techniken
+# Tipps für Fortgeschrittene
 
-- **Baseprompts**: Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen: 
-    ◦ „Bitte schreibe mir einen Megaprompt, damit ich dies das nächste Mal wieder machen kann in JSON“
-- **Custom GPT**: Erstellung eines angepassten Modells für spezifische Anforderungen oder zur Simulation eines digitalen Zwillings.
-- **Digital Twin** einer Person trainieren, andere können mit dem Twin kommunizieren, ohne die Person bei der Arbeit zu unterbrechen
-  - Alle meine Paper/Arbeiten reinladen: Twin mit meinem Wissen
+## Base prompts
+
+- Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen: 
+- „Bitte schreibe mir einen Megaprompt, damit ich dies das nächste Mal wieder machen kann in JSON“
+
+
+### Beispiel: 
+
+Could you please write a system prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON. 
+
+---
+
+### Base prompt Beispiel - Chat GPT Antwort: 
+
+{
+  "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
+  "context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known."
+}
+
+## Customizing the default version of ChatGPT
+
+- **System prompts**: Prompts die jedes Mal eingegeben werden, z.b. emotionale Prompts
+
+
+
+::: {.columns}
+
+::: {.column width="10%"}
+
+```{r}
+knitr::include_graphics('images/how_to_system_prompt.png')
+```
+
+:::
+
+::: {.column width="45%"}
+```{r}
+knitr::include_graphics('images/system_prompt.png')
+```
+:::
+
+::: {.column width="45%"}
+"Für meinen Job ist das extrem wichtig, bitte arbeite genau, und überprüfe, ob alles stimmt."
+:::
+
+:::
+
+  
+## Creating Custom GPTs
+
+- Erstellung eines angepassten Modells für spezifische Anforderungen
+- Beispiele: 
+  - in meinem Schreibstil schreiben
+  - Prägnante Antworten für Code, an meine Skills angepasst
+  
+## Creating Custom GPTs: How to
+
+::: {.columns}
+
+::: {.column width="20%"}
+```{r, fig.width = 2}
+knitr::include_graphics('images/how_to_custom_gpt.png')
+```
+:::
+
+::: {.column width="80%"}
+```{r}
+knitr::include_graphics('images/gpt_builder.png')
+```
+:::
+
+:::
+
+- GPT Builder stellt weitere Fragen
+- Ausprobieren und weiter "reinreden" bis es passt
+
+
+## Custom GPT Variante: Digital Twin
+
+- Training eines Modells mit dem Wissen einer Person 
+- Andere können mit dem Twin kommunizieren, ohne die Person bei der Arbeit zu unterbrechen
+
+- Mein Versuch: Alle meine Paper/Arbeiten reinladen: Digital Twin mit meinem Wissen
 
 ## Bedeutung für die Zukunft
 
@@ -228,9 +314,8 @@ You'd better be sure.
 - Tiktok, Twitter
 
 ::: notes
-# Advanced Notes
 
-## Joao talk
+### Joao talk
 
 Evaluating LLMs - what is trustworthy
 - [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
@@ -241,7 +326,6 @@ Other good sources: Medium, Twitter
 
 Mixture of experts - very promising: another architecture, e.g. Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data
 
-:::{.notes}
 Best open source model: Mixtral
 LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685
 tps: tokens per second
