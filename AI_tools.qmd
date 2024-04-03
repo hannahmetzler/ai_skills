@@ -331,7 +331,7 @@ knitr::include_graphics('images/gpt_builder.png')
 
 ::: notes
 
-### Joao talk
+Joao talk
 
 Evaluating LLMs - what is trustworthy
 - [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
