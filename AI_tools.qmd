@@ -13,11 +13,11 @@ editor: visual
 
 ## Was sind LLMs eigentlich?
 
-- Large Language Models: fortschrittliche Sprachmodelle
-- fortschrittliche KI-Systeme, die riesige Mengen an Textdaten verarbeiten, um menschenähnliche Texte zu generieren.
-- Trainiert mit Daten aus dem Internet (Wikipedia, Medien, Social Media...), Literatur, Videos, Filme Podcasts, Medien
+- Large Language Models:
+- Fortschrittliche Sprachmodelle, die riesige Mengen an Textdaten verarbeiten
+- Trainiert mit Textdaten aus dem Internet (Wikipedia, Medien, Social Media...), Literatur, Videos, Filme Podcasts, Medien...
 - Statistische Wort und Satz Vorhersagen, abgeleitet aus riesigen Datenmengen
-- Fähigkeit, ausführliche und kontextreiche Antworten zu liefern.
+- können ausführliche und kontextreiche Antworten liefern
 
 ## Google vs. LLMs: häufige Fehler
 
