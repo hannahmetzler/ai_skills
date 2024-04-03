@@ -1,5 +1,6 @@
 ---
-title: "AI tools: Tips und Tricks für LLMs"
+title: "AI tools: Tipps und Tricks für LLM Chatbots"
+subtitle: "Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
 author: "Hannah Metzler"
 date: "2. April 2024"
 format: 
@@ -13,39 +14,204 @@ editor: visual
 
 ## Was sind LLMs eigentlich?
 
-- Large Language Models:
+- Large Language Models: Neurale Netzwerke/Deep Learning Modelle auf Texten trainiert
 - Fortschrittliche Sprachmodelle, die riesige Mengen an Textdaten verarbeiten
-- Trainiert mit Textdaten aus dem Internet (Wikipedia, Medien, Social Media...), Literatur, Videos, Filme Podcasts, Medien...
-- Statistische Wort und Satz Vorhersagen, abgeleitet aus riesigen Datenmengen
-- können ausführliche und kontextreiche Antworten liefern
+- Trainiert mit riesigen Mengen an Textdaten aus dem Internet (Wikipedia, Soziale Medien, Online Medien, Bücher, Literatur, Videos, Filme, Youtube, Podcasts...)
+- Machen daraus statistische Wort und Satz Vorhersagen
+- Können ausführliche und kontextreiche Antworten liefern
 
-## Google vs. LLMs: häufige Fehler
+## Wie wurden LLMs trainiert?
 
-- Suchmaschine: 
-  - wenige kurze Keywords
-  - Antwort: viele einzelne Ergebnisse
+### Unsupervised training (Transformer models)
 
-- LLM:
-  - Viel Details, Informationen und Kontext geben
+- **Masked word prediction**
+  “New **[MASK]** is a city”
+- **Next sentence prediction**
+"Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved."  (TRUE/FALSE)
+
+::: {.columns}
+::: {.column width="50%"}
+- Input layer: Quantitative representation of sentence
+- Output layer: One-hot encoding
+:::
+::: {.column width="50%"}
+```{r, echo=FALSE}
+knitr::include_graphics("images/neuralnet.svg")
+```
+:::
+:::
+
+::: notes
+One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words
+Input: one-hot times embedding, everything but the mask
+:::
+
+
+## Wie werden Worte numerisch repäsentiert? 
+
+::: columns
+::: column
+- Vector embeddings = word embeddings
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/wordembeddings.svg")
+```
+:::
+::: column
+- LLMs: contextual word embeddings
+- Kontext (vor und nach dem Wort) wird mit repräsentiert
+:::
+:::
+
+
+## Suchmaschinen vs. LLMs benutzen
+
+### Suchmaschine
+
+  - wenige kurze Stichworte
+  - Antwort: viele einzelne Ergebnisse 
+
+---
+
+### LLM
+
+  - Lange "Prompts" mit viel Details, Erklärungen und Kontext
   - Sprechen wie mit einer Person
-  - Feedback geben & Dialog führen
+  - Feedback geben & Dialog führen, Performance verbessert sich sehr schnell
   - Antwort ist zusammenfassend
+
+## Stärken verschiedener Modelle
+
+- **Claude** (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)
+  - Gratis,  mit Limit
+  - Geht aus Österreich nicht: [VPN und virtuelle Telefonnummer](https://anakin.ai/de/blog/claude-ai-phone-number-verification/)
+  - Durch andere Apps verwenden: [Anakin.ai](www.anakin.ai)
+- [**Gemini**](https://gemini.google.com/app): Von Google, vielseitig einsetzbar.
+
+## Tools aufbauend auf LLMs
+
+- **Perplexity AI**: wie Suchmaschine, wissenschaftlichen Quellenangaben
+  - [Beispiel Testosteron & Verhalten](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
+ 
+- **Elicit AI**: Analyze research papers at superhuman speed
+  - Slides dazu [hier](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
+  - [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
+
+## Aktuelle Top-Modelle
+
+- **Claude** (Anthropic)
+- **ChatGPT 4** (Open AI)
+- **Bard (Gemini)** (Google)
+
+Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
+
+## Chat GPT 4
+
+- ChatGPT 4 ist viel besser als die kostenlosen Version
+- Handyapp mit Mikrofon Funktion: Unterhaltung, via Bluetooth Kopfhörer
+- Multimodales Arbeiten
+- Bilder, Screenshots reinladen
+- Bilder kreiren  
+
+# Anwendungen
+
+## Anwendungen im Alltag
+
+- **Rezepte**: Vorschläge basierend auf vorhandenen Zutaten  ([Beispiel](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
+    - Individuell anpassen ([Beispiel weniger Aufwand](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
+- **Reiseplanung**: Individuelle Empfehlungen für Städtereisen
+- **Einkaufslisten**: Schnitzeln und Gulasch für 4 Personen ([Beispiel Wochenessensplan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
+- **Lange komplexe Dokumente zusammenfassen**: Link oder Datei hochladen
+  - Anleitungen von Kamera, Mikrowelle, Lichtpanellen etc. 
+  - Gesetz zusammenfassen ([Beispiel Legehennen](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
   
+---
 
-## Anwendungsbeispiele
+## Anwendungen im Alltag 2
 
-- Alltägliche Anfragen: 
-  - Veranstaltungen, Freizeitaktivitäten, Komplimente.
-  - Rezeptvorschläge, Einkaufslisten.
-- Forschung und Studium: Zusammenfassung langer Berichte.
+
+- Haushalt: Fleckenentfernungstipss ([Beispiel](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
+- Geschenksideen ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
+- Mindfulness Mediationsanleitung
+- Coaching für wichtige Karriereentscheidungen
+- Empfehlungen für Jobs/Positionen/Rollen basierend auf meinem CV
+
+---
+
+### Anwendungen in der wissenschaftlichen Arbeit
+
+- Entwurf/ Struktur für eine Präsentation vorschlagen
+- Feedback zu Präsentationen: Folien hochladen (Screenshot)
+- Erster Überblick über neues Themengebiet
+- Texte: überarbeiten, zusammenfassen
+- Erster Entwurf eines Textes schreiben anhand von Notizen
+- Im eigenen Schreibstil schreiben: Paper reinladen
+
+---
+
+### Anwendungen in der Arbeit
+
+- Surveys entwickeln und vortesten (MC Fragen, Feedback zur Verständlichkeit...)
+- Programmieren: Grundstruktur, Fehler finden...
+- Lange Reports/Paper hochladen (z.B. 2 Unis anhand von Reports vergleichen, Tabelle dazu erstellen lassen)
+- Transkripte von Interviews erstellen lassen
+- Übersetzung [www.deepl.com](www.deepl.com)
+- Produktivitätscoach: Screenshot eines Terminkalenders von einer Woche, oder mehreren Wochen
+- Transkripte von Interviews machen lassen
+
+# Tipps und Tricks
+
+## Allgemeines
+
+- Rechtschreibung komplett egal
+- 80% mit ChatGPT, dann selbst überprüfen - erster Entwurf
+
+## Halluzinationen
+
+- Daten erfinden die es nicht gibt
+- Viel weniger Problem als zu Beginn
+- 4 Augenprinzip: Modell macht 80%, ich den Rest
+- Modell nachfragen: überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?
+- Selben Prompt in verschiedene Modelle reingeben und vergleichen, z.B. auf <https://poe.com>, <https://anakin.ai>
+- Antwort eines LLMs mit anderem LMM checken: Stimmt das? Kannst du das bitte mit Studien belegen?
 
 ## Emotionale Prompts
 
-- Emotionale Ausdrücke können zu besseren Ergebnissen führen
-- Training des Modells auf menschlicher Sprache
-- Statistik: wahrscheinlich besser oder schlechter wenn ich sage es ist wichtig?
+- Emotionale Ausdrücke können zu besseren Ergebnissen führen ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
+
+```{r}
+knitr::include_graphics('images/emotional_prompt.jpg')
+```
+
+```
+Write your answer and give me a confidence score between 0-1 for your answer. 
+You'd better be sure.
+```
+---
+
+### Weiter emotionale Beispiele: 
+
+- Mir ist das extrem wichtig, bitte arbeite genau. 
+- Ich geb dir ein Trinkgeld von 200 Dollar, wenn du gut arbeitest. 
+- Ich habe keine Finger, bitte hilf mir. 
+- Wenn du korrekt und gut arbeitest, bekommst du einen Leckerbissen. 
+
+## Emotionale Prompts
+
+- Warum? Training des Modells auf menschlicher Sprache
+- Ist Antwort wahrscheinlich besser oder schlechter, wenn ich wem sage es ist wichtig?
 - Modell verhält sich wie Menschen
-- Kann Sorgfalt der Modelle bei der Antwortfindung beeinflussen.
+- Kann Sorgfalt/Richtigkeit der Antwort erhöhen
+- Weniger Halluzinationen
+- Reden wie mit einem Menschen
+
+## Fortgeschrittene Techniken
+
+- **Baseprompts**: Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen: 
+    ◦ „Bitte schreibe mir einen Megaprompt, damit ich dies das nächste Mal wieder machen kann in JSON“
+- **Custom GPT**: Erstellung eines angepassten Modells für spezifische Anforderungen oder zur Simulation eines digitalen Zwillings.
+- **Digital Twin** einer Person trainieren, andere können mit dem Twin kommunizieren, ohne die Person bei der Arbeit zu unterbrechen
+  - Alle meine Paper/Arbeiten reinladen: Twin mit meinem Wissen
 
 ## Bedeutung für die Zukunft
 
@@ -53,75 +219,19 @@ editor: visual
 - Wir lernen laufen wie wir sie am besten verwenden können
 - Täglich benützen und kreativ sein! 
 
-# Anwendungen
 
-## Anwendungen im Alltag
+# Am Laufenden bleiben
 
-- **Rezepte**: Vorschläge basierend auf vorhandenen Zutaten.
-- **Reiseplanung**: Individuelle Empfehlungen für Städtereisen, basierend auf persönlichen Präferenzen.
-- **Einkaufslisten**: Schitzeln und Gulasch für 4 Personen
+- Newsletter: [There's an AI for that](https://theresanaiforthat.com/), [One useful thing](https://www.oneusefulthing.org/)
+- Tiktok, Twitter
 
-## Anwendungen bei der Arbeit
-
-- **Feedback zu Präsentationen**: Analyse und Verbesserungsvorschläge für Folien.
-- **Hyper-Personalisierung**: Analyse von LinkedIn-Profilen für zielgerichtete Verkaufsstrategien.
-
-### Ausprobieren!
-
-- **Akademische Forschung**: 
-  - Systematische Literaturübersichten, Zusammenfassungen von Fachartikeln.
-  - Feedback für Präsentationen
-  - Struktur eine Präsentation erstellen lassen
-  - Programmieren
-  - Texte überarbeiten
-  - erster Entwurf eines Textes schreiben anhand von Notizen
-  - im eigenen Schreibstil schreiben: Paper reinladen
-  - eigenes Wissen zusammenfassen
-- **Textgenerierung**: Erstellung von Inhalten, Übersetzungen, Zusammenfassungen.
-
-
-## Tipps und Tricks
-
-- **Baseprompts**: Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen.
-- Antwort eines LLMs mit anderem LMM checken: Stimmt das?
-- Modell nachfragen: überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?
-- 80% mit ChatGPT, dann selbst überprüfen - erster Entwurf
-
-## Halluzinationen
-
-- Viel weniger Problem als zu Beginn
-
-## Aktuelle Top-Modelle
-
-- **Gemini**
-- **ChatGPT 4**
-- **Claude**
-
-## Stärken verschiedener Modelle
-
-- **Claude**: längere Texte, besitzt ein besseres Gedächtnis (500 Seiten) (Context window)
-- **Perplexity AI**: Funktioniert wie eine Suchmaschine, bietet direkte Antworten aus dem Web mit wissenschaftlichen Quellen
-- **Bard**: Von Google, vielseitig einsetzbar.
-
-## Chat GPT 4
-
-- ChatGPT 4 ist viel besser als die kostenlosen Version
-- Handyapp mit Mikrofon Funktion: Unterhaltung
-- Multimodales Arbeiten
-- Bilder, Screenshots reinladen
-- Bilder kreiren
-
-# Fortgeschrittene Techniken
-
-- **Custom GPT**: Erstellung eines angepassten Modells für spezifische Anforderungen oder zur Simulation eines digitalen Zwillings.
-- System/Base prompts
-
+::: notes
 # Advanced Notes
 
 ## Joao talk
 
 Evaluating LLMs - what is trustworthy
-- Chatbot Arena
+- [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 - r/LocalLamma comments: best place to learn about this stuff
     - a Starter guide for playing with your own local AI
     - The llama hitchiking guide to local LLMs

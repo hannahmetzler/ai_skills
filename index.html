@@ -12,7 +12,7 @@
 
   <meta name="author" content="Hannah Metzler">
   <meta name="dcterms.date" content="2024-04-02">
-  <title>AI tools: Tips und Tricks für LLMs</title>
+  <title>AI tools: Tipps und Tricks für LLM Chatbots</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -327,7 +327,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">AI tools: Tips und Tricks für LLMs</h1>
+  <h1 class="title">AI tools: Tipps und Tricks für LLM Chatbots</h1>
+  <p class="subtitle">Für mehr: <a href="https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/">Erklär mir die Welt Podcast mit Malcolm Wachota</a></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -342,57 +343,137 @@ Hannah Metzler
 <section id="was-sind-llms-eigentlich" class="slide level2">
 <h2>Was sind LLMs eigentlich?</h2>
 <ul>
-<li>Large Language Models:</li>
+<li>Large Language Models: Neurale Netzwerke/Deep Learning Modelle auf Texten trainiert</li>
 <li>Fortschrittliche Sprachmodelle, die riesige Mengen an Textdaten verarbeiten</li>
-<li>Trainiert mit Textdaten aus dem Internet (Wikipedia, Medien, Social Media…), Literatur, Videos, Filme Podcasts, Medien…</li>
-<li>Statistische Wort und Satz Vorhersagen, abgeleitet aus riesigen Datenmengen</li>
-<li>können ausführliche und kontextreiche Antworten liefern</li>
+<li>Trainiert mit riesigen Mengen an Textdaten aus dem Internet (Wikipedia, Soziale Medien, Online Medien, Bücher, Literatur, Videos, Filme, Youtube, Podcasts…)</li>
+<li>Machen daraus statistische Wort und Satz Vorhersagen</li>
+<li>Können ausführliche und kontextreiche Antworten liefern</li>
 </ul>
 </section>
-<section id="google-vs.-llms-häufige-fehler" class="slide level2">
-<h2>Google vs.&nbsp;LLMs: häufige Fehler</h2>
+<section id="wie-wurden-llms-trainiert" class="slide level2">
+<h2>Wie wurden LLMs trainiert?</h2>
+<h3 id="unsupervised-training-transformer-models">Unsupervised training (Transformer models)</h3>
 <ul>
-<li>Suchmaschine:
+<li><strong>Masked word prediction</strong> “New <strong>[MASK]</strong> is a city”</li>
+<li><strong>Next sentence prediction</strong> “Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved.” (TRUE/FALSE)</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
-<li>wenige kurze Keywords</li>
+<li>Input layer: Quantitative representation of sentence</li>
+<li>Output layer: One-hot encoding</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/neuralnet.svg"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="notes">
+<p>One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="wie-werden-worte-numerisch-repäsentiert" class="slide level2">
+<h2>Wie werden Worte numerisch repäsentiert?</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Vector embeddings = word embeddings</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/wordembeddings.svg"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column">
+<ul>
+<li>LLMs: contextual word embeddings</li>
+<li>Kontext (vor und nach dem Wort) wird mit repräsentiert</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="suchmaschinen-vs.-llms-benutzen" class="slide level2">
+<h2>Suchmaschinen vs.&nbsp;LLMs benutzen</h2>
+<h3 id="suchmaschine">Suchmaschine</h3>
+<ul>
+<li>wenige kurze Stichworte</li>
 <li>Antwort: viele einzelne Ergebnisse</li>
-</ul></li>
-<li>LLM:
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="llm">LLM</h3>
 <ul>
-<li>Viel Details, Informationen und Kontext geben</li>
+<li>Lange “Prompts” mit viel Details, Erklärungen und Kontext</li>
 <li>Sprechen wie mit einer Person</li>
-<li>Feedback geben &amp; Dialog führen</li>
+<li>Feedback geben &amp; Dialog führen, Performance verbessert sich sehr schnell</li>
 <li>Antwort ist zusammenfassend</li>
+</ul>
+</section>
+<section id="stärken-verschiedener-modelle" class="slide level2">
+<h2>Stärken verschiedener Modelle</h2>
+<ul>
+<li><strong>Claude</strong> (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)
+<ul>
+<li>Gratis, mit Limit</li>
+<li>Geht aus Österreich nicht: <a href="https://anakin.ai/de/blog/claude-ai-phone-number-verification/">VPN und virtuelle Telefonnummer</a></li>
+<li>Durch andere Apps verwenden: <a href="www.anakin.ai">Anakin.ai</a></li>
+</ul></li>
+<li><a href="https://gemini.google.com/app"><strong>Gemini</strong></a>: Von Google, vielseitig einsetzbar.</li>
+</ul>
+</section>
+<section id="tools-aufbauend-auf-llms" class="slide level2">
+<h2>Tools aufbauend auf LLMs</h2>
+<ul>
+<li><strong>Perplexity AI</strong>: wie Suchmaschine, wissenschaftlichen Quellenangaben
+<ul>
+<li><a href="https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w">Beispiel Testosteron &amp; Verhalten</a></li>
+</ul></li>
+<li><strong>Elicit AI</strong>: Analyze research papers at superhuman speed
+<ul>
+<li>Slides dazu <a href="https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7">hier</a></li>
+<li><a href="https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb">Beispiel</a></li>
 </ul></li>
 </ul>
 </section>
-<section id="anwendungsbeispiele" class="slide level2">
-<h2>Anwendungsbeispiele</h2>
+<section id="aktuelle-top-modelle" class="slide level2">
+<h2>Aktuelle Top-Modelle</h2>
 <ul>
-<li>Alltägliche Anfragen:
-<ul>
-<li>Veranstaltungen, Freizeitaktivitäten, Komplimente.</li>
-<li>Rezeptvorschläge, Einkaufslisten.</li>
-</ul></li>
-<li>Forschung und Studium: Zusammenfassung langer Berichte.</li>
+<li><strong>Claude</strong> (Anthropic)</li>
+<li><strong>ChatGPT 4</strong> (Open AI)</li>
+<li><strong>Bard (Gemini)</strong> (Google)</li>
 </ul>
+<p>Quelle: <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord</p>
 </section>
-<section id="emotionale-prompts" class="slide level2">
-<h2>Emotionale Prompts</h2>
+<section id="chat-gpt-4" class="slide level2">
+<h2>Chat GPT 4</h2>
 <ul>
-<li>Emotionale Ausdrücke können zu besseren Ergebnissen führen</li>
-<li>Training des Modells auf menschlicher Sprache</li>
-<li>Statistik: wahrscheinlich besser oder schlechter wenn ich sage es ist wichtig?</li>
-<li>Modell verhält sich wie Menschen</li>
-<li>Kann Sorgfalt der Modelle bei der Antwortfindung beeinflussen.</li>
-</ul>
-</section>
-<section id="bedeutung-für-die-zukunft" class="slide level2">
-<h2>Bedeutung für die Zukunft</h2>
-<ul>
-<li>Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen</li>
-<li>Wir lernen laufen wie wir sie am besten verwenden können</li>
-<li>Täglich benützen und kreativ sein!</li>
+<li>ChatGPT 4 ist viel besser als die kostenlosen Version</li>
+<li>Handyapp mit Mikrofon Funktion: Unterhaltung, via Bluetooth Kopfhörer</li>
+<li>Multimodales Arbeiten</li>
+<li>Bilder, Screenshots reinladen</li>
+<li>Bilder kreiren</li>
 </ul>
 </section>
 <section>
@@ -403,90 +484,138 @@ Hannah Metzler
 <section id="anwendungen-im-alltag" class="slide level2">
 <h2>Anwendungen im Alltag</h2>
 <ul>
-<li><strong>Rezepte</strong>: Vorschläge basierend auf vorhandenen Zutaten.</li>
-<li><strong>Reiseplanung</strong>: Individuelle Empfehlungen für Städtereisen, basierend auf persönlichen Präferenzen.</li>
-<li><strong>Einkaufslisten</strong>: Schitzeln und Gulasch für 4 Personen</li>
-</ul>
-</section>
-<section id="anwendungen-bei-der-arbeit" class="slide level2">
-<h2>Anwendungen bei der Arbeit</h2>
+<li><strong>Rezepte</strong>: Vorschläge basierend auf vorhandenen Zutaten (<a href="https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374">Beispiel</a>)
 <ul>
-<li><strong>Feedback zu Präsentationen</strong>: Analyse und Verbesserungsvorschläge für Folien.</li>
-<li><strong>Hyper-Personalisierung</strong>: Analyse von LinkedIn-Profilen für zielgerichtete Verkaufsstrategien.</li>
-</ul>
-<h3 id="ausprobieren">Ausprobieren!</h3>
-<ul>
-<li><strong>Akademische Forschung</strong>:
-<ul>
-<li>Systematische Literaturübersichten, Zusammenfassungen von Fachartikeln.</li>
-<li>Feedback für Präsentationen</li>
-<li>Struktur eine Präsentation erstellen lassen</li>
-<li>Programmieren</li>
-<li>Texte überarbeiten</li>
-<li>erster Entwurf eines Textes schreiben anhand von Notizen</li>
-<li>im eigenen Schreibstil schreiben: Paper reinladen</li>
-<li>eigenes Wissen zusammenfassen</li>
+<li>Individuell anpassen (<a href="https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde">Beispiel weniger Aufwand</a>)</li>
 </ul></li>
-<li><strong>Textgenerierung</strong>: Erstellung von Inhalten, Übersetzungen, Zusammenfassungen.</li>
+<li><strong>Reiseplanung</strong>: Individuelle Empfehlungen für Städtereisen</li>
+<li><strong>Einkaufslisten</strong>: Schnitzeln und Gulasch für 4 Personen (<a href="https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170">Beispiel Wochenessensplan</a>)</li>
+<li><strong>Lange komplexe Dokumente zusammenfassen</strong>: Link oder Datei hochladen
+<ul>
+<li>Anleitungen von Kamera, Mikrowelle, Lichtpanellen etc.</li>
+<li>Gesetz zusammenfassen (<a href="https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375">Beispiel Legehennen</a>)</li>
+</ul></li>
 </ul>
 </section>
-<section id="tipps-und-tricks" class="slide level2">
-<h2>Tipps und Tricks</h2>
+<section id="anwendungen-im-alltag-2" class="slide level2">
+<h2>Anwendungen im Alltag 2</h2>
 <ul>
-<li><strong>Baseprompts</strong>: Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen.</li>
-<li>Antwort eines LLMs mit anderem LMM checken: Stimmt das?</li>
-<li>Modell nachfragen: überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?</li>
+<li>Haushalt: Fleckenentfernungstipss (<a href="https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0">Beispiel</a>)</li>
+<li>Geschenksideen (<a href="https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b">Beispiel</a>)</li>
+<li>Mindfulness Mediationsanleitung</li>
+<li>Coaching für wichtige Karriereentscheidungen</li>
+<li>Empfehlungen für Jobs/Positionen/Rollen basierend auf meinem CV</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="anwendungen-in-der-wissenschaftlichen-arbeit">Anwendungen in der wissenschaftlichen Arbeit</h3>
+<ul>
+<li>Entwurf/ Struktur für eine Präsentation vorschlagen</li>
+<li>Feedback zu Präsentationen: Folien hochladen (Screenshot)</li>
+<li>Erster Überblick über neues Themengebiet</li>
+<li>Texte: überarbeiten, zusammenfassen</li>
+<li>Erster Entwurf eines Textes schreiben anhand von Notizen</li>
+<li>Im eigenen Schreibstil schreiben: Paper reinladen</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="anwendungen-in-der-arbeit">Anwendungen in der Arbeit</h3>
+<ul>
+<li>Surveys entwickeln und vortesten (MC Fragen, Feedback zur Verständlichkeit…)</li>
+<li>Programmieren: Grundstruktur, Fehler finden…</li>
+<li>Lange Reports/Paper hochladen (z.B. 2 Unis anhand von Reports vergleichen, Tabelle dazu erstellen lassen)</li>
+<li>Transkripte von Interviews erstellen lassen</li>
+<li>Übersetzung <a href="www.deepl.com">www.deepl.com</a></li>
+<li>Produktivitätscoach: Screenshot eines Terminkalenders von einer Woche, oder mehreren Wochen</li>
+<li>Transkripte von Interviews machen lassen</li>
+</ul>
+</section></section>
+<section>
+<section id="tipps-und-tricks" class="title-slide slide level1 center">
+<h1>Tipps und Tricks</h1>
+
+</section>
+<section id="allgemeines" class="slide level2">
+<h2>Allgemeines</h2>
+<ul>
+<li>Rechtschreibung komplett egal</li>
 <li>80% mit ChatGPT, dann selbst überprüfen - erster Entwurf</li>
 </ul>
 </section>
 <section id="halluzinationen" class="slide level2">
 <h2>Halluzinationen</h2>
 <ul>
+<li>Daten erfinden die es nicht gibt</li>
 <li>Viel weniger Problem als zu Beginn</li>
+<li>4 Augenprinzip: Modell macht 80%, ich den Rest</li>
+<li>Modell nachfragen: überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?</li>
+<li>Selben Prompt in verschiedene Modelle reingeben und vergleichen, z.B. auf <a href="https://poe.com" class="uri">https://poe.com</a>, <a href="https://anakin.ai" class="uri">https://anakin.ai</a></li>
+<li>Antwort eines LLMs mit anderem LMM checken: Stimmt das? Kannst du das bitte mit Studien belegen?</li>
 </ul>
 </section>
-<section id="aktuelle-top-modelle" class="slide level2">
-<h2>Aktuelle Top-Modelle</h2>
+<section id="emotionale-prompts" class="slide level2">
+<h2>Emotionale Prompts</h2>
 <ul>
-<li><strong>Gemini</strong></li>
-<li><strong>ChatGPT 4</strong></li>
-<li><strong>Claude</strong></li>
+<li>Emotionale Ausdrücke können zu besseren Ergebnissen führen (<a href="https://arxiv.org/abs/2307.11760">Cheng et al., 2023</a>)</li>
+</ul>
+
+<img data-src="images/emotional_prompt.jpg" width="610" class="r-stretch"><pre><code>Write your answer and give me a confidence score between 0-1 for your answer. 
+You'd better be sure.</code></pre>
+</section>
+<section class="slide level2">
+
+<h3 id="weiter-emotionale-beispiele">Weiter emotionale Beispiele:</h3>
+<ul>
+<li>Mir ist das extrem wichtig, bitte arbeite genau.</li>
+<li>Ich geb dir ein Trinkgeld von 200 Dollar, wenn du gut arbeitest.</li>
+<li>Ich habe keine Finger, bitte hilf mir.</li>
+<li>Wenn du korrekt und gut arbeitest, bekommst du einen Leckerbissen.</li>
 </ul>
 </section>
-<section id="stärken-verschiedener-modelle" class="slide level2">
-<h2>Stärken verschiedener Modelle</h2>
+<section id="emotionale-prompts-1" class="slide level2">
+<h2>Emotionale Prompts</h2>
 <ul>
-<li><strong>Claude</strong>: längere Texte, besitzt ein besseres Gedächtnis (500 Seiten) (Context window)</li>
-<li><strong>Perplexity AI</strong>: Funktioniert wie eine Suchmaschine, bietet direkte Antworten aus dem Web mit wissenschaftlichen Quellen</li>
-<li><strong>Bard</strong>: Von Google, vielseitig einsetzbar.</li>
+<li>Warum? Training des Modells auf menschlicher Sprache</li>
+<li>Ist Antwort wahrscheinlich besser oder schlechter, wenn ich wem sage es ist wichtig?</li>
+<li>Modell verhält sich wie Menschen</li>
+<li>Kann Sorgfalt/Richtigkeit der Antwort erhöhen</li>
+<li>Weniger Halluzinationen</li>
+<li>Reden wie mit einem Menschen</li>
 </ul>
 </section>
-<section id="chat-gpt-4" class="slide level2">
-<h2>Chat GPT 4</h2>
+<section id="fortgeschrittene-techniken" class="slide level2">
+<h2>Fortgeschrittene Techniken</h2>
 <ul>
-<li>ChatGPT 4 ist viel besser als die kostenlosen Version</li>
-<li>Handyapp mit Mikrofon Funktion: Unterhaltung</li>
-<li>Multimodales Arbeiten</li>
-<li>Bilder, Screenshots reinladen</li>
-<li>Bilder kreiren</li>
+<li><strong>Baseprompts</strong>: Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen: ◦ „Bitte schreibe mir einen Megaprompt, damit ich dies das nächste Mal wieder machen kann in JSON“</li>
+<li><strong>Custom GPT</strong>: Erstellung eines angepassten Modells für spezifische Anforderungen oder zur Simulation eines digitalen Zwillings.</li>
+<li><strong>Digital Twin</strong> einer Person trainieren, andere können mit dem Twin kommunizieren, ohne die Person bei der Arbeit zu unterbrechen
+<ul>
+<li>Alle meine Paper/Arbeiten reinladen: Twin mit meinem Wissen</li>
+</ul></li>
+</ul>
+</section>
+<section id="bedeutung-für-die-zukunft" class="slide level2">
+<h2>Bedeutung für die Zukunft</h2>
+<ul>
+<li>Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen</li>
+<li>Wir lernen laufen wie wir sie am besten verwenden können</li>
+<li>Täglich benützen und kreativ sein!</li>
 </ul>
 </section></section>
-<section id="fortgeschrittene-techniken" class="title-slide slide level1 center">
-<h1>Fortgeschrittene Techniken</h1>
-<ul>
-<li><strong>Custom GPT</strong>: Erstellung eines angepassten Modells für spezifische Anforderungen oder zur Simulation eines digitalen Zwillings.</li>
-<li>System/Base prompts</li>
-</ul>
-</section>
-
 <section>
-<section id="advanced-notes" class="title-slide slide level1 center">
-<h1>Advanced Notes</h1>
-
+<section id="am-laufenden-bleiben" class="title-slide slide level1 center">
+<h1>Am Laufenden bleiben</h1>
+<ul>
+<li>Newsletter: <a href="https://theresanaiforthat.com/">There’s an AI for that</a>, <a href="https://www.oneusefulthing.org/">One useful thing</a></li>
+<li>Tiktok, Twitter</li>
+</ul>
+<p>::: notes # Advanced Notes</p>
 </section>
 <section id="joao-talk" class="slide level2">
 <h2>Joao talk</h2>
-<p>Evaluating LLMs - what is trustworthy - Chatbot Arena - r/LocalLamma comments: best place to learn about this stuff - a Starter guide for playing with your own local AI - The llama hitchiking guide to local LLMs Other good sources: Medium, Twitter</p>
+<p>Evaluating LLMs - what is trustworthy - <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord - r/LocalLamma comments: best place to learn about this stuff - a Starter guide for playing with your own local AI - The llama hitchiking guide to local LLMs Other good sources: Medium, Twitter</p>
 <p>Mixture of experts - very promising: another architecture, e.g.&nbsp;Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data</p>
 <aside class="notes">
 <p>Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685 tps: tokens per second</p>
@@ -717,6 +846,44 @@ Hannah Metzler
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
