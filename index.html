@@ -328,7 +328,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">AI tools: Tipps und Tricks für LLM Chatbots</h1>
-  <p class="subtitle">Für mehr: <a href="https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/">Erklär mir die Welt Podcast mit Malcolm Wachota</a></p>
+  <p class="subtitle">42. WISIA Symposion CSH Wien <br> Für mehr: <a href="https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/">Erklär mir die Welt Podcast mit Malcolm Wachota</a></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -350,12 +350,12 @@ Hannah Metzler
 <li>Können ausführliche und kontextreiche Antworten liefern</li>
 </ul>
 </section>
-<section id="wie-wurden-llms-trainiert" class="slide level2">
-<h2>Wie wurden LLMs trainiert?</h2>
-<h3 id="unsupervised-training-transformer-models">Unsupervised training (Transformer models)</h3>
+<section id="neuronale-netzwerke" class="slide level2">
+<h2>Neuronale Netzwerke</h2>
 <ul>
-<li><strong>Masked word prediction</strong> “New <strong>[MASK]</strong> is a city”</li>
-<li><strong>Next sentence prediction</strong> “Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved.” (TRUE/FALSE)</li>
+<li>Mehrere Schichten an “Neuronen”</li>
+<li>Deep Learning</li>
+<li>Lineare Regressionen errechnen “weights” für die Verbindungen</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -413,16 +413,32 @@ Hannah Metzler
 </div>
 </div>
 </section>
+<section id="wie-werden-llms-trainiert" class="slide level2">
+<h2>Wie werden LLMs trainiert?</h2>
+<p>All Transformer models (a model architecture for efficient computing):</p>
+<ul>
+<li><strong>Masked word prediction</strong>
+<ul>
+<li>“New <strong>[MASK]</strong> is a city”</li>
+</ul></li>
+<li><strong>Next sentence prediction</strong>
+<ul>
+<li>“Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved.”<br>
+</li>
+<li>TRUE/FALSE als Feedback</li>
+</ul></li>
+</ul>
+</section>
 <section id="suchmaschinen-vs.-llms-benutzen" class="slide level2">
 <h2>Suchmaschinen vs.&nbsp;LLMs benutzen</h2>
+<div class="columns">
+<div class="column" style="width:35%;">
 <h3 id="suchmaschine">Suchmaschine</h3>
 <ul>
 <li>wenige kurze Stichworte</li>
 <li>Antwort: viele einzelne Ergebnisse</li>
 </ul>
-</section>
-<section class="slide level2">
-
+</div><div class="column" style="width:60%;">
 <h3 id="llm">LLM</h3>
 <ul>
 <li>Lange “Prompts” mit viel Details, Erklärungen und Kontext</li>
@@ -430,28 +446,34 @@ Hannah Metzler
 <li>Feedback geben &amp; Dialog führen, Performance verbessert sich sehr schnell</li>
 <li>Antwort ist zusammenfassend</li>
 </ul>
+</div>
+</div>
 </section>
 <section id="chat-gpt-4" class="slide level2">
 <h2>Chat GPT-4</h2>
 <ul>
 <li>ChatGPT 4 ist viel besser als die kostenlosen Version</li>
 <li>Handy App mit Mikrofon Funktion: Unterhaltung mit ChatGPT</li>
-<li>Multimodales Arbeiten</li>
-<li>Bilder, Screenshots reinladen</li>
+<li>Multimodales Arbeiten:
+<ul>
+<li>Bilder &amp; Screenshots reinladen</li>
 <li>Bilder kreiren</li>
+<li>Ein Bild beschreiben/Graphik interpretieren</li>
+<li>Mit ChatGPT sprechen</li>
+<li>Dokumente (Paper etc) hochladen</li>
+</ul></li>
 </ul>
 </section>
 <section id="stärken-verschiedener-modelle" class="slide level2">
 <h2>Stärken verschiedener Modelle</h2>
 <ul>
-<li><strong>ChatGPT 4</strong> (Open AI): Kontextverständnis (komplexe, mehrschichtige Dialoge), Lernfähigkeit, Vielseitig</li>
+<li><strong>ChatGPT 4</strong> (Open AI): Kontextverständnis (komplexe, mehrschichtige Dialoge), Lernfähigkeit, vielseitig</li>
 <li><strong>Claude</strong> (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)
 <ul>
 <li>Gratis, mit Limit</li>
-<li>Geht aus Österreich nicht: <a href="https://anakin.ai/de/blog/claude-ai-phone-number-verification/">VPN und virtuelle Telefonnummer</a></li>
-<li>Durch andere Apps verwenden: <a href="www.anakin.ai">Anakin.ai</a></li>
+<li>Geht aus Österreich nicht: <a href="https://anakin.ai/de/blog/claude-ai-phone-number-verification/">VPN und virtuelle Telefonnummer</a>, oder via andere Apps verwenden: <a href="www.anakin.ai">Anakin.ai</a></li>
 </ul></li>
-<li><a href="https://gemini.google.com/app"><strong>Gemini</strong></a> (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten</li>
+<li><a href="https://gemini.google.com/app"><strong>Bard/Gemini</strong></a> (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten</li>
 </ul>
 </section>
 <section id="tools-aufbauend-auf-llms" class="slide level2">
@@ -477,9 +499,6 @@ Hannah Metzler
 </ul>
 <p>Quelle: <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord</p>
 </section>
-<section class="slide level2">
-
-</section>
 <section>
 <section id="anwendungen" class="title-slide slide level1 center">
 <h1>Anwendungen</h1>
@@ -494,20 +513,20 @@ Hannah Metzler
 </ul></li>
 <li><strong>Reiseplanung</strong>: Individuelle Empfehlungen für Städtereisen</li>
 <li><strong>Einkaufslisten</strong>: Schnitzeln und Gulasch für 4 Personen (<a href="https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170">Beispiel Wochenessensplan</a>)</li>
+<li><strong>Haushalt</strong>: Fleckenentfernungstipps (<a href="https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0">Beispiel</a>)</li>
+<li><strong>Geschenksideen</strong> (<a href="https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b">Beispiel</a>)</li>
+<li>Mindfulness Mediationsanleitung</li>
+</ul>
+</section>
+<section id="im-alltag-2" class="slide level2">
+<h2>Im Alltag 2</h2>
+<ul>
 <li><strong>Lange Dokumente zusammenfassen</strong>: Link oder Datei hochladen
 <ul>
 <li>Anleitungen von Kamera, Mikrowelle, Lichtpanellen etc.</li>
 <li>Gesetz zusammenfassen (<a href="https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375">Beispiel Legehennen</a>)</li>
 <li>Lange Zeitungsartikel zusammenfassen: als Podcast anhören</li>
 </ul></li>
-</ul>
-</section>
-<section id="im-alltag-2" class="slide level2">
-<h2>Im Alltag 2</h2>
-<ul>
-<li>Haushalt: Fleckenentfernungstipss (<a href="https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0">Beispiel</a>)</li>
-<li>Geschenksideen (<a href="https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b">Beispiel</a>)</li>
-<li>Mindfulness Mediationsanleitung</li>
 <li>Coaching für wichtige Karriereentscheidungen</li>
 <li>Empfehlungen für Jobs/Positionen/Rollen basierend auf meinem CV</li>
 <li>Stadt, Land Fluss spielen</li>
@@ -518,17 +537,17 @@ Hannah Metzler
 <ul>
 <li>Entwurf/ Struktur für eine Präsentation vorschlagen</li>
 <li>Feedback zu Präsentationen: Folien hochladen (Screenshot)</li>
-<li>Erster Überblick über neues Themengebiet</li>
-<li>Texte: überarbeiten, zusammenfassen</li>
-<li>Erster Entwurf eines Textes schreiben anhand von Notizen</li>
+<li>Erster Überblick über neues Themengebiet &amp; Brainstorming</li>
+<li>Texte: überarbeiten, zusammenfassen, kürzen</li>
+<li>Ersten Entwurf eines Textes schreiben anhand von Notizen</li>
 <li>Im eigenen Schreibstil schreiben: Paper reinladen</li>
+<li>Surveys entwickeln und vortesten (MC Fragen, Feedback zur Verständlichkeit…)</li>
 </ul>
 </section>
 <section class="slide level2">
 
 <h3 id="anwendungen-in-der-arbeit">Anwendungen in der Arbeit</h3>
 <ul>
-<li>Surveys entwickeln und vortesten (MC Fragen, Feedback zur Verständlichkeit…)</li>
 <li>Programmieren: Grundstruktur, Fehler finden…</li>
 <li>Lange Reports/Paper hochladen (z.B. 2 Unis anhand von Reports vergleichen, Tabelle dazu erstellen lassen)</li>
 <li>Transkripte von Interviews erstellen lassen</li>
@@ -582,15 +601,13 @@ You'd better be sure.</code></pre>
 <li>Wenn du korrekt und gut arbeitest, bekommst du einen Leckerbissen.</li>
 </ul>
 </section>
-<section id="emotionale-prompts-1" class="slide level2">
-<h2>Emotionale Prompts</h2>
+<section id="warum-funktionieren-emotionale-prompts" class="slide level2">
+<h2>Warum funktionieren emotionale Prompts?</h2>
 <ul>
-<li>Warum? Training des Modells auf menschlicher Sprache</li>
-<li>Ist Antwort wahrscheinlich besser oder schlechter, wenn ich wem sage es ist wichtig?</li>
-<li>Modell verhält sich wie Menschen</li>
-<li>Kann Sorgfalt/Richtigkeit der Antwort erhöhen</li>
-<li>Weniger Halluzinationen</li>
-<li>Reden wie mit einem Menschen</li>
+<li><p>Training des Modells auf menschlicher Sprache, Beschreibung menschlicher Interaktionen</p></li>
+<li><p>Ist die Antwort eines Menschen wahrscheinlich besser oder schlechter, wenn ich wem sage es ist wichtig?</p></li>
+<li><p>Kann Sorgfalt/Richtigkeit der Antwort erhöhen</p></li>
+<li><p>Deswegen: Reden wie mit einem Menschen</p></li>
 </ul>
 </section></section>
 <section>
@@ -618,7 +635,7 @@ You'd better be sure.</code></pre>
 <li><strong>System prompts</strong>: Prompts die jedes Mal eingegeben werden, z.b. emotionale Prompts</li>
 </ul>
 <div class="columns">
-<div class="column" style="width:10%;">
+<div class="column" style="width:15%;">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -638,7 +655,7 @@ You'd better be sure.</code></pre>
 </div>
 </div>
 </div>
-</div><div class="column" style="width:45%;">
+</div><div class="column" style="width:40%;">
 <p>“Für meinen Job ist das extrem wichtig, bitte arbeite genau, und überprüfe, ob alles stimmt.”</p>
 </div>
 </div>
@@ -699,15 +716,13 @@ You'd better be sure.</code></pre>
 <li>Wir lernen laufen wie wir sie am besten verwenden können</li>
 <li>Täglich benützen und kreativ sein!</li>
 </ul>
-</section></section>
-<section>
-<section id="am-laufenden-bleiben" class="title-slide slide level1 center">
-<h1>Am Laufenden bleiben</h1>
+</section>
+<section id="am-laufenden-bleiben" class="slide level2">
+<h2>Am Laufenden bleiben</h2>
 <ul>
 <li>Newsletter: <a href="https://theresanaiforthat.com/">There’s an AI for that</a>, <a href="https://www.oneusefulthing.org/">One useful thing</a></li>
 <li>Tiktok, Twitter</li>
 </ul>
-</section>
 <section id="joao-talk" class="notes">
 <h3>Joao talk</h3>
 <p>Evaluating LLMs - what is trustworthy - <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord - r/LocalLamma comments: best place to learn about this stuff - a Starter guide for playing with your own local AI - The llama hitchiking guide to local LLMs Other good sources: Medium, Twitter</p>
@@ -718,7 +733,8 @@ You'd better be sure.</code></pre>
 <div class="footer footer-default">
 
 </div>
-</div></section>
+</div>
+</section></section>
     </div>
   </div>
 

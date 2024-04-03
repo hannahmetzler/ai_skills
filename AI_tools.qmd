@@ -1,6 +1,6 @@
 ---
 title: "AI tools: Tipps und Tricks für LLM Chatbots"
-subtitle: "Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
+subtitle: "42. WISIA Symposion CSH Wien <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
 author: "Hannah Metzler"
 date: "2. April 2024"
 format: 
@@ -20,14 +20,11 @@ editor: visual
 - Machen daraus statistische Wort und Satz Vorhersagen
 - Können ausführliche und kontextreiche Antworten liefern
 
-## Wie wurden LLMs trainiert?
+## Neuronale Netzwerke
 
-### Unsupervised training (Transformer models)
-
-- **Masked word prediction**
-  “New **[MASK]** is a city”
-- **Next sentence prediction**
-"Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved."  (TRUE/FALSE)
+- Mehrere Schichten an "Neuronen"
+- Deep Learning
+- Lineare Regressionen errechnen "weights" für die Verbindungen
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -63,15 +60,30 @@ knitr::include_graphics("images/wordembeddings.svg")
 :::
 :::
 
+## Wie werden LLMs trainiert?
+
+All Transformer models (a model architecture for efficient computing): 
+
+- **Masked word prediction**
+  - “New **[MASK]** is a city”
+  
+- **Next sentence prediction**
+  - "Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved."  
+  - TRUE/FALSE als Feedback
+
 
 ## Suchmaschinen vs. LLMs benutzen
+
+::: columns
+::: {.column width="35%"}
 
 ### Suchmaschine
 
   - wenige kurze Stichworte
-  - Antwort: viele einzelne Ergebnisse 
-
----
+  - Antwort: viele einzelne Ergebnisse
+  
+:::
+::: {.column width="60%"}
 
 ### LLM
 
@@ -80,22 +92,28 @@ knitr::include_graphics("images/wordembeddings.svg")
   - Feedback geben & Dialog führen, Performance verbessert sich sehr schnell
   - Antwort ist zusammenfassend
   
+:::
+:::
+  
 ## Chat GPT-4
 
 - ChatGPT 4 ist viel besser als die kostenlosen Version
 - Handy App mit Mikrofon Funktion: Unterhaltung mit ChatGPT
-- Multimodales Arbeiten
-- Bilder, Screenshots reinladen
-- Bilder kreiren  
+- Multimodales Arbeiten: 
+  - Bilder & Screenshots reinladen
+  - Bilder kreiren 
+  - Ein Bild beschreiben/Graphik interpretieren
+  - Mit ChatGPT sprechen
+  - Dokumente (Paper etc) hochladen
+  
 
 ## Stärken verschiedener Modelle
 
-- **ChatGPT 4** (Open AI): Kontextverständnis (komplexe, mehrschichtige Dialoge), Lernfähigkeit, Vielseitig
+- **ChatGPT 4** (Open AI): Kontextverständnis (komplexe, mehrschichtige Dialoge), Lernfähigkeit, vielseitig
 - **Claude** (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)
   - Gratis,  mit Limit
-  - Geht aus Österreich nicht: [VPN und virtuelle Telefonnummer](https://anakin.ai/de/blog/claude-ai-phone-number-verification/)
-  - Durch andere Apps verwenden: [Anakin.ai](www.anakin.ai)
-- [**Gemini**](https://gemini.google.com/app) (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten
+  - Geht aus Österreich nicht: [VPN und virtuelle Telefonnummer](https://anakin.ai/de/blog/claude-ai-phone-number-verification/), oder via andere Apps verwenden: [Anakin.ai](www.anakin.ai)
+- [**Bard/Gemini**](https://gemini.google.com/app) (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten
 
 
 ## Tools aufbauend auf LLMs
@@ -115,8 +133,6 @@ knitr::include_graphics("images/wordembeddings.svg")
 
 Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
----
-
 # Anwendungen
 
 ## Im Alltag
@@ -125,19 +141,19 @@ Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
     - Individuell anpassen ([Beispiel weniger Aufwand](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
 - **Reiseplanung**: Individuelle Empfehlungen für Städtereisen
 - **Einkaufslisten**: Schnitzeln und Gulasch für 4 Personen ([Beispiel Wochenessensplan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
-- **Lange Dokumente zusammenfassen**: Link oder Datei hochladen
-  - Anleitungen von Kamera, Mikrowelle, Lichtpanellen etc. 
-  - Gesetz zusammenfassen ([Beispiel Legehennen](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
-  - Lange Zeitungsartikel zusammenfassen: als Podcast anhören
-  
+- **Haushalt**: Fleckenentfernungstipps ([Beispiel](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
+- **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
+- Mindfulness Mediationsanleitung
+
 ---
 
 ## Im Alltag 2
 
 
-- Haushalt: Fleckenentfernungstipss ([Beispiel](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
-- Geschenksideen ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
-- Mindfulness Mediationsanleitung
+- **Lange Dokumente zusammenfassen**: Link oder Datei hochladen
+  - Anleitungen von Kamera, Mikrowelle, Lichtpanellen etc. 
+  - Gesetz zusammenfassen ([Beispiel Legehennen](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
+  - Lange Zeitungsartikel zusammenfassen: als Podcast anhören
 - Coaching für wichtige Karriereentscheidungen
 - Empfehlungen für Jobs/Positionen/Rollen basierend auf meinem CV
 - Stadt, Land Fluss spielen
@@ -148,16 +164,17 @@ Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
 - Entwurf/ Struktur für eine Präsentation vorschlagen
 - Feedback zu Präsentationen: Folien hochladen (Screenshot)
-- Erster Überblick über neues Themengebiet
-- Texte: überarbeiten, zusammenfassen
-- Erster Entwurf eines Textes schreiben anhand von Notizen
+- Erster Überblick über neues Themengebiet & Brainstorming
+- Texte: überarbeiten, zusammenfassen, kürzen
+- Ersten Entwurf eines Textes schreiben anhand von Notizen
 - Im eigenen Schreibstil schreiben: Paper reinladen
+- Surveys entwickeln und vortesten (MC Fragen, Feedback zur Verständlichkeit...)
 
 ---
 
 ### Anwendungen in der Arbeit
 
-- Surveys entwickeln und vortesten (MC Fragen, Feedback zur Verständlichkeit...)
+
 - Programmieren: Grundstruktur, Fehler finden...
 - Lange Reports/Paper hochladen (z.B. 2 Unis anhand von Reports vergleichen, Tabelle dazu erstellen lassen)
 - Transkripte von Interviews erstellen lassen
@@ -206,14 +223,13 @@ You'd better be sure.
 - Ich habe keine Finger, bitte hilf mir. 
 - Wenn du korrekt und gut arbeitest, bekommst du einen Leckerbissen. 
 
-## Emotionale Prompts
+## Warum funktionieren emotionale Prompts?
 
-- Warum? Training des Modells auf menschlicher Sprache
-- Ist Antwort wahrscheinlich besser oder schlechter, wenn ich wem sage es ist wichtig?
-- Modell verhält sich wie Menschen
+- Training des Modells auf menschlicher Sprache, Beschreibung menschlicher Interaktionen
+- Ist die Antwort eines Menschen wahrscheinlich besser oder schlechter, wenn ich wem sage es ist wichtig?
+
 - Kann Sorgfalt/Richtigkeit der Antwort erhöhen
-- Weniger Halluzinationen
-- Reden wie mit einem Menschen
+- Deswegen: Reden wie mit einem Menschen
 
 # Tipps für Fortgeschrittene
 
@@ -244,7 +260,7 @@ Could you please write a system prompt from our interaction here, that I can use
 
 ::: {.columns}
 
-::: {.column width="10%"}
+::: {.column width="15%"}
 
 ```{r}
 knitr::include_graphics('images/how_to_system_prompt.png')
@@ -258,7 +274,7 @@ knitr::include_graphics('images/system_prompt.png')
 ```
 :::
 
-::: {.column width="45%"}
+::: {.column width="40%"}
 "Für meinen Job ist das extrem wichtig, bitte arbeite genau, und überprüfe, ob alles stimmt."
 :::
 
@@ -308,7 +324,7 @@ knitr::include_graphics('images/gpt_builder.png')
 - Täglich benützen und kreativ sein! 
 
 
-# Am Laufenden bleiben
+## Am Laufenden bleiben
 
 - Newsletter: [There's an AI for that](https://theresanaiforthat.com/), [One useful thing](https://www.oneusefulthing.org/)
 - Tiktok, Twitter
