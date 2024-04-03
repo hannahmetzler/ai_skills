@@ -82,11 +82,13 @@ knitr::include_graphics("images/wordembeddings.svg")
 
 ## Stärken verschiedener Modelle
 
+- **ChatGPT 4** (Open AI): Kontextverständnis (komplexe, mehrschichtige Dialoge), Lernfähigkeit, Vielseitig
 - **Claude** (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)
   - Gratis,  mit Limit
   - Geht aus Österreich nicht: [VPN und virtuelle Telefonnummer](https://anakin.ai/de/blog/claude-ai-phone-number-verification/)
   - Durch andere Apps verwenden: [Anakin.ai](www.anakin.ai)
-- [**Gemini**](https://gemini.google.com/app): Von Google, vielseitig einsetzbar.
+- [**Gemini**](https://gemini.google.com/app) (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten
+
 
 ## Tools aufbauend auf LLMs
 
