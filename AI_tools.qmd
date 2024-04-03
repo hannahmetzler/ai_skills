@@ -310,7 +310,7 @@ knitr::include_graphics('images/gpt_builder.png')
 - Ausprobieren und weiter "reinreden" bis es passt
 
 
-## Custom GPT Variante: Digital Twin
+## Custom GPT Variante: Digital Twins
 
 - Training eines Modells mit dem Wissen einer Person 
 - Andere können mit dem Twin kommunizieren, ohne die Person bei der Arbeit zu unterbrechen
