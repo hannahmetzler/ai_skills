@@ -35,12 +35,12 @@ editor: visual
 -   Lineare Regressionen errechnen "weights" für die Verbindungen
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="47%"}
 -   Input layer: Quantitative representation of sentence
 -   Output layer: One-hot encoding
 :::
 
-::: {.column width="50%"}
+::: {.column width="47%"}
 ```{r, echo=FALSE}
 knitr::include_graphics("images/neuralnet.svg")
 ```
