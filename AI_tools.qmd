@@ -153,7 +153,7 @@ Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
 # Anwendungen
 
-## Im Alltag
+## Ideen für den Alltag
 
 -   **Rezepte**: Vorschläge basierend auf vorhandenen Zutaten ([Beispiel](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
     -   Individuell anpassen ([Beispiel weniger Aufwand](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
@@ -165,7 +165,7 @@ Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
 ------------------------------------------------------------------------
 
-## Im Alltag 2
+## Ideen für den Alltag 2
 
 -   **Lange Dokumente zusammenfassen**: Link oder Datei hochladen
     -   Anleitungen von Kamera, Mikrowelle, Lichtpanellen etc.
@@ -348,9 +348,12 @@ knitr::include_graphics('images/gpt_builder.png')
 
 ## Bedeutung für die Zukunft
 
--   Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen
--   Wir lernen laufen wie wir sie am besten verwenden können
--   Täglich benützen und kreativ sein!
+- Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen
+- Natur von vielen Jobs wird sich verändern
+- Menschen, die kreativ und kritisch damit umgehen können sind gefragt
+- Es gibt noch keine "Experten", ein "richtig benützen"
+- Wir lernen laufend, wie wir sie am besten verwenden können. 
+- Einfach ausprobieren: Täglich benützen und kreativ sein!
 
 ## Am Laufenden bleiben
 
