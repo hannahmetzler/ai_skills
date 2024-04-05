@@ -1,0 +1,33 @@
+/*-- scss:defaults --*/
+/* define variables that affect fonts, colors, borders, etc. (note that variables start with a $)*/
+
+//$body-bg: #191919;
+//$body-color: #fff;
+$link-color: #2a76dd;
+
+
+// headings
+$presentation-heading-color: #1f5c99 !default;
+$presentation-h1-font-size: 2.5em;
+$presentation-h2-font-size: 1.4em;
+$presentation-h3-font-size: 1em;
+//$presentation-heading-font: $font-family-sans-serif
+
+// smaller title on title slide
+.title-slide .title {
+  font-size: 20px;
+}
+
+// more space between columns: 
+.column {
+  margin-right: 20px;
+};
+//no slide number on title sldie
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+
+
+//Previous formatting Xaringan
+

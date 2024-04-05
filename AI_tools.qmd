@@ -1,7 +1,7 @@
 ---
 title: "AI tools: Tipps und Tricks für LLM Chatbots"
-subtitle: "42. WISIA Symposion CSH Wien <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
-author: "Hannah Metzler"
+subtitle: "42. WISIA Symposion, CSH Wien <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
+author: "Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_tools/"
 date: "5. April 2024"
 format: 
   revealjs: 

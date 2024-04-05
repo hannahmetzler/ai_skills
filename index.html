@@ -10,8 +10,8 @@
 <link href="AI_tools_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.550">
 
-  <meta name="author" content="Hannah Metzler">
-  <meta name="dcterms.date" content="2024-04-02">
+  <meta name="author" content="Hannah Metzler   Folien: https://hannahmetzler.eu/AI_tools/">
+  <meta name="dcterms.date" content="2024-04-05">
   <title>AI tools: Tipps und Tricks für LLM Chatbots</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -328,17 +328,17 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">AI tools: Tipps und Tricks für LLM Chatbots</h1>
-  <p class="subtitle">42. WISIA Symposion CSH Wien <br> Für mehr: <a href="https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/">Erklär mir die Welt Podcast mit Malcolm Wachota</a></p>
+  <p class="subtitle">42. WISIA Symposion, CSH Wien <br> Für mehr: <a href="https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/">Erklär mir die Welt Podcast mit Malcolm Wachota</a></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Hannah Metzler 
+Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_tools/ 
 </div>
 </div>
 </div>
 
-  <p class="date">2024-04-02</p>
+  <p class="date">2024-04-05</p>
 </section>
 <section id="was-sind-llms-eigentlich" class="slide level2">
 <h2>Was sind LLMs eigentlich?</h2>
@@ -392,9 +392,9 @@ Hannah Metzler
 <section id="wie-werden-worte-numerisch-repäsentiert" class="slide level2">
 <h2>Wie werden Worte numerisch repäsentiert?</h2>
 <div class="columns">
-<div class="column">
+<div class="column" style="width:40%;">
 <ul>
-<li>Vector embeddings = word embeddings</li>
+<li>Vector embeddings <br> = word embeddings</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -405,11 +405,21 @@ Hannah Metzler
 </div>
 </div>
 </div>
-</div><div class="column">
+</div><div class="column" style="width:56%;">
 <ul>
 <li>LLMs: contextual word embeddings</li>
 <li>Kontext (vor und nach dem Wort) wird mit repräsentiert</li>
+<li><a href="https://www.tiktok.com/@whats_ai/video/7247609946672565510">Beispiel</a> “Apple”: Mac oder Frucht?</li>
 </ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/apple_context.png" class="quarto-figure quarto-figure-center" width="250"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -467,34 +477,70 @@ Hannah Metzler
 <section id="stärken-verschiedener-modelle" class="slide level2">
 <h2>Stärken verschiedener Modelle</h2>
 <ul>
-<li><strong>ChatGPT 4</strong> (Open AI): Kontextverständnis (komplexe, mehrschichtige Dialoge), Lernfähigkeit, vielseitig</li>
-<li><strong>Claude</strong> (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)
-<ul>
-<li>Gratis, mit Limit</li>
-<li>Geht aus Österreich nicht: <a href="https://anakin.ai/de/blog/claude-ai-phone-number-verification/">VPN und virtuelle Telefonnummer</a>, oder via andere Apps verwenden: <a href="www.anakin.ai">Anakin.ai</a></li>
-</ul></li>
-<li><a href="https://gemini.google.com/app"><strong>Bard/Gemini</strong></a> (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten</li>
+<li><a href="https://chat.openai.com/"><strong>ChatGPT-4</strong></a> (Open AI): Kontextverständnis (komplexe, mehrschichtige Dialoge), Lernfähigkeit, vielseitig</li>
+<li><a href="https://claude.ai/"><strong>Claude</strong></a> (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)</li>
+<li><a href="https://gemini.google.com/app"><strong>Bard (Modell: Gemini)</strong></a> (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten</li>
 </ul>
 </section>
 <section id="tools-aufbauend-auf-llms" class="slide level2">
 <h2>Tools aufbauend auf LLMs</h2>
 <ul>
-<li><strong>Perplexity AI</strong>: wie Suchmaschine, wissenschaftlichen Quellenangaben
+<li><a href="https://www.perplexity.ai/"><strong>Perplexity AI</strong></a>: wie Suchmaschine, wissenschaftlichen Quellenangaben
 <ul>
 <li><a href="https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w">Beispiel Testosteron &amp; Verhalten</a></li>
 </ul></li>
-<li><strong>Elicit AI</strong>: Analyze research papers at superhuman speed
+<li><a href="https://elicit.com/"><strong>Elicit AI</strong></a>: Analyze research papers at superhuman speed
 <ul>
 <li>Slides dazu <a href="https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7">hier</a></li>
 <li><a href="https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb">Beispiel</a></li>
 </ul></li>
 </ul>
 </section>
+<section id="zugang-zu-modellen" class="slide level2">
+<h2>Zugang zu Modellen</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Modell</th>
+<th>Gratiszugang</th>
+<th>Kosten /Monat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ChatGPT</td>
+<td>Version 3.5, 4 via Bing App</td>
+<td>24€</td>
+</tr>
+<tr class="even">
+<td>Claude*</td>
+<td>200 Tokens/Tag</td>
+<td>ca $20</td>
+</tr>
+<tr class="odd">
+<td>Bard</td>
+<td>2500 Tokens/Tag</td>
+<td>21.99€</td>
+</tr>
+<tr class="even">
+<td>Perplexity</td>
+<td>3 Anfragen/Tag, 1000 Tokens/Monat</td>
+<td>$17-20</td>
+</tr>
+<tr class="odd">
+<td>Elicit</td>
+<td>1000 Tokens/Monat</td>
+<td>$10-12</td>
+</tr>
+</tbody>
+</table>
+<p>* Aus Österreich <a href="https://anakin.ai/de/blog/claude-ai-phone-number-verification/">VPN und virtuelle Telefonnummer</a> benötigt; oder Platform wie <a href="www.anakin.ai">Anakin.ai</a>|</p>
+</section>
 <section id="aktuelle-top-modelle" class="slide level2">
 <h2>Aktuelle Top-Modelle</h2>
 <ul>
 <li><strong>Claude</strong> (Anthropic)</li>
-<li><strong>ChatGPT 4</strong> (Open AI)</li>
+<li><strong>ChatGPT-4</strong> (Open AI)</li>
 <li><strong>Bard (Gemini)</strong> (Google)</li>
 </ul>
 <p>Quelle: <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord</p>
@@ -532,29 +578,39 @@ Hannah Metzler
 <li>Stadt, Land Fluss spielen</li>
 </ul>
 </section>
-<section id="in-der-wissenschaftlichen-arbeit" class="slide level2">
-<h2>In der wissenschaftlichen Arbeit</h2>
+<section id="ideen-für-die-wissenschaftliche-arbeit" class="slide level2">
+<h2>Ideen für die wissenschaftliche Arbeit</h2>
 <ul>
 <li>Entwurf/ Struktur für eine Präsentation vorschlagen</li>
-<li>Feedback zu Präsentationen: Folien hochladen (Screenshot)</li>
-<li>Erster Überblick über neues Themengebiet &amp; Brainstorming</li>
+<li>Feedback zu Präsentationen: Folie(n) hochladen</li>
+<li>Überblick über neues Themengebiet &amp; Brainstorming</li>
 <li>Texte: überarbeiten, zusammenfassen, kürzen</li>
 <li>Ersten Entwurf eines Textes schreiben anhand von Notizen</li>
-<li>Im eigenen Schreibstil schreiben: Paper reinladen</li>
-<li>Surveys entwickeln und vortesten (MC Fragen, Feedback zur Verständlichkeit…)</li>
+<li>Im eigenen Schreibstil schreiben: Paper hochladen</li>
+<li>Surveys, z.B. MC Fragen entwickeln &amp; testen, Feedback zur Verständlichkeit</li>
 </ul>
 </section>
-<section class="slide level2">
-
-<h3 id="anwendungen-in-der-arbeit">Anwendungen in der Arbeit</h3>
+<section id="in-der-arbeit-ideen" class="slide level2">
+<h2>In der Arbeit: Ideen</h2>
 <ul>
-<li>Programmieren: Grundstruktur, Fehler finden…</li>
-<li>Lange Reports/Paper hochladen (z.B. 2 Unis anhand von Reports vergleichen, Tabelle dazu erstellen lassen)</li>
+<li>Workshop &amp; Diskussionen zusammenfassen &amp; protokollieren: Mikro mitlaufen lassen</li>
+<li>Programmieren: LLMs sind Data Scientists!
+<ul>
+<li>Fehler finden, Code Grundstruktur…</li>
+<li>Datenset hochladen + Fragestellung dazu</li>
+</ul></li>
+<li>Lange Reports/Paper hochladen, analysieren lassen
+<ul>
+<li>z.B. 2 Uni Jahresreports vergleichen, Tabelle zu Unterschieden erstellen lassen</li>
+</ul></li>
 <li>Transkripte von Interviews erstellen lassen</li>
+</ul>
+</section>
+<section id="in-der-arbeit-ideen-2" class="slide level2">
+<h2>In der Arbeit: Ideen 2</h2>
+<ul>
 <li>Übersetzung <a href="www.deepl.com">www.deepl.com</a></li>
 <li>Produktivitätscoach: Screenshot eines Terminkalenders von einer Woche, oder mehreren Wochen</li>
-<li>Transkripte von Interviews machen lassen</li>
-<li>Datenset hochladen + Fragestellung</li>
 </ul>
 </section></section>
 <section>
@@ -574,12 +630,24 @@ Hannah Metzler
 <section id="halluzinationen" class="slide level2">
 <h2>Halluzinationen</h2>
 <ul>
-<li>Daten erfinden die es nicht gibt</li>
+<li>LLMs erfinden Daten, die es nicht gibt
+<ul>
+<li>Warum? Statistische Sprachvorhersage</li>
+</ul></li>
 <li>Viel weniger ein Problem als zu Beginn</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<h3 id="halluzinationen---strategien-zur-überprüfung">Halluzinationen - Strategien zur Überprüfung</h3>
+<ul>
 <li>4 Augenprinzip: Modell macht 80%, ich den Rest</li>
-<li>Modell nachfragen: überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?</li>
+<li>Nachfragen: Überprüfe das nochmal, ist das so korrekt? Kannst du mir Quellen dazu geben?</li>
 <li>Selben Prompt in verschiedene Modelle reingeben und vergleichen, z.B. auf <a href="https://poe.com" class="uri">https://poe.com</a>, <a href="https://anakin.ai" class="uri">https://anakin.ai</a></li>
-<li>Antwort eines LLMs mit anderem LMM checken: Stimmt das? Kannst du das bitte mit Studien belegen?</li>
+<li>Antwort des 1. Modells in ein anderes Modell geben &amp; fragen:
+<ul>
+<li>Stimmt das? Kannst du das bitte mit Studien belegen?</li>
+</ul></li>
 </ul>
 </section>
 <section id="emotionale-prompts" class="slide level2">
@@ -593,7 +661,7 @@ You'd better be sure.</code></pre>
 </section>
 <section class="slide level2">
 
-<h3 id="weiter-emotionale-beispiele">Weiter emotionale Beispiele:</h3>
+<h3 id="weitere-beispiele-für-emotionale-prompts">Weitere Beispiele für emotionale Prompts:</h3>
 <ul>
 <li>Mir ist das extrem wichtig, bitte arbeite genau.</li>
 <li>Ich geb dir ein Trinkgeld von 200 Dollar, wenn du gut arbeitest.</li>
@@ -615,19 +683,20 @@ You'd better be sure.</code></pre>
 <h1>Tipps für Fortgeschrittene</h1>
 
 </section>
-<section id="base-prompts" class="slide level2">
-<h2>Base prompts</h2>
+<section id="base-or-system-prompts" class="slide level2">
+<h2>Base or system prompts</h2>
 <ul>
 <li>Nach einer erfolgreichen Interaktion einen Baseprompt in JSON formatieren lassen für zukünftige Anfragen:</li>
 <li>„Bitte schreibe mir einen Megaprompt, damit ich dies das nächste Mal wieder machen kann in JSON“</li>
 </ul>
 <h3 id="beispiel">Beispiel:</h3>
-<p>Could you please write a system prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.</p>
+<p>Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.</p>
 </section>
 <section class="slide level2">
 
 <h3 id="base-prompt-beispiel---chat-gpt-antwort">Base prompt Beispiel - Chat GPT Antwort:</h3>
-<p>{ “request”: “Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.”, “context”: “When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known.” }</p>
+<p>{ “request”: “Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.”,</p>
+<p>“context”: “When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known.” }</p>
 </section>
 <section id="customizing-the-default-version-of-chatgpt" class="slide level2">
 <h2>Customizing the default version of ChatGPT</h2>
@@ -645,7 +714,7 @@ You'd better be sure.</code></pre>
 </div>
 </div>
 </div>
-</div><div class="column" style="width:45%;">
+</div><div class="column" style="width:30%;">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -655,7 +724,7 @@ You'd better be sure.</code></pre>
 </div>
 </div>
 </div>
-</div><div class="column" style="width:40%;">
+</div><div class="column" style="width:45%;">
 <p>“Für meinen Job ist das extrem wichtig, bitte arbeite genau, und überprüfe, ob alles stimmt.”</p>
 </div>
 </div>
@@ -674,7 +743,10 @@ You'd better be sure.</code></pre>
 <section id="creating-custom-gpts-how-to" class="slide level2">
 <h2>Creating Custom GPTs: How to</h2>
 <div class="columns">
-<div class="column" style="width:20%;">
+<div class="column" style="width:18%;">
+<ol type="1">
+<li></li>
+</ol>
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -684,12 +756,25 @@ You'd better be sure.</code></pre>
 </div>
 </div>
 </div>
-</div><div class="column" style="width:80%;">
+</div><div class="column" style="width:14%;">
+<ol start="2" type="1">
+<li></li>
+</ol>
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="images/gpt_builder.png" width="448"></p>
+<p><img data-src="images/how_to_custom_gpt2.png" width="258"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/gpt_builder.png" width="448" height="400"></p>
 </figure>
 </div>
 </div>
@@ -701,8 +786,8 @@ You'd better be sure.</code></pre>
 <li>Ausprobieren und weiter “reinreden” bis es passt</li>
 </ul>
 </section>
-<section id="custom-gpt-variante-digital-twin" class="slide level2">
-<h2>Custom GPT Variante: Digital Twin</h2>
+<section id="custom-gpt-variante-digital-twins" class="slide level2">
+<h2>Custom GPT Variante: Digital Twins</h2>
 <ul>
 <li><p>Training eines Modells mit dem Wissen einer Person</p></li>
 <li><p>Andere können mit dem Twin kommunizieren, ohne die Person bei der Arbeit zu unterbrechen</p></li>
@@ -720,15 +805,29 @@ You'd better be sure.</code></pre>
 <section id="am-laufenden-bleiben" class="slide level2">
 <h2>Am Laufenden bleiben</h2>
 <ul>
-<li>Newsletter: <a href="https://theresanaiforthat.com/">There’s an AI for that</a>, <a href="https://www.oneusefulthing.org/">One useful thing</a></li>
+<li>Newsletter:
+<ul>
+<li><a href="https://theresanaiforthat.com/">There’s an AI for that</a></li>
+<li><a href="https://www.oneusefulthing.org/">One useful thing</a></li>
+</ul></li>
 <li>Tiktok, Twitter</li>
 </ul>
-<section id="joao-talk" class="notes">
-<h3>Joao talk</h3>
+<aside class="notes">
+<p>Joao talk</p>
 <p>Evaluating LLMs - what is trustworthy - <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord - r/LocalLamma comments: best place to learn about this stuff - a Starter guide for playing with your own local AI - The llama hitchiking guide to local LLMs Other good sources: Medium, Twitter</p>
 <p>Mixture of experts - very promising: another architecture, e.g.&nbsp;Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data</p>
 <p>Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685 tps: tokens per second</p>
-</section>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -786,7 +885,7 @@ You'd better be sure.</code></pre>
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: false,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
