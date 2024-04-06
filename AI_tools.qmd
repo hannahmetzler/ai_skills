@@ -9,7 +9,7 @@ format:
     ## Defines the theme of the presentation, both version and style
     theme: [default, custom.scss]
     # incremental slides point by point
-    # incremental: true
+    incremental: true
     aspect-ratio: 16:9
     slide-number: true
 # title-slide-attributes:
@@ -22,7 +22,7 @@ editor: visual
 
 ## Was sind LLMs eigentlich?
 
--   Large Language Models: Neurale Netzwerke/Deep Learning Modelle auf Texten trainiert
+-   Large Language Models: Neuroale Netzwerke/Deep Learning Modelle auf Texten trainiert
 -   Fortschrittliche Sprachmodelle, die riesige Mengen an Textdaten verarbeiten
 -   Trainiert mit riesigen Mengen an Textdaten aus dem Internet (Wikipedia, Soziale Medien, Online Medien, Bücher, Literatur, Videos, Filme, Youtube, Podcasts...)
 -   Machen daraus statistische Wort und Satz Vorhersagen
@@ -161,7 +161,7 @@ Quelle: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 -   **Einkaufslisten**: Schnitzeln und Gulasch für 4 Personen ([Beispiel Wochenessensplan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
 -   **Haushalt**: Fleckenentfernungstipps ([Beispiel](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
 -   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
--   Mindfulness Mediationsanleitung
+-   Mindfulness Meditationsanleitung
 
 ------------------------------------------------------------------------
 
