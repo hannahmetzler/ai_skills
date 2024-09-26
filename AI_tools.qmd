@@ -1,5 +1,6 @@
 ---
-title: "AI tools: Tipps und Tricks für LLM Chatbots"
+titel: "AI tools: Tipps und Tricks für LLM Chatbots"
+#title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 subtitle: "42. WISIA Symposion, CSH Wien <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
 author: "Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_tools/"
 date: "5. April 2024"
@@ -70,7 +71,6 @@ knitr::include_graphics("images/wordembeddings.svg")
 ```{r, fig.align='center', out.width=250}
 knitr::include_graphics('images/apple_context.png')
 ```
-
 :::
 :::
 
@@ -121,7 +121,6 @@ All Transformer models (a model architecture for efficient computing):
 -   [**Claude**](https://claude.ai/) (Anthropic): längere Texte, besseres Gedächtnis (500 Seiten) (Context window)
 -   [**Bard (Modell: Gemini)**](https://gemini.google.com/app) (Google): Suchfähigkeit und Datenbasis, Integration mit Google Diensten
 
-
 ## Tools aufbauend auf LLMs
 
 -   [**Perplexity AI**](https://www.perplexity.ai/): wie Suchmaschine, wissenschaftlichen Quellenangaben
@@ -130,18 +129,17 @@ All Transformer models (a model architecture for efficient computing):
     -   Slides dazu [hier](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
     -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
 
-
 ## Zugang zu Modellen
 
-| Modell     | Gratiszugang                       | Kosten  /Monat     | 
-|------------|------------------------------------|----------------|
-| ChatGPT | Version 3.5, 4 via Bing App | 24€ |         
-| Claude\*    | 200 Tokens/Tag                    | ca $20 | 
-| Bard | 2500 Tokens/Tag                  | 21.99€   | 
-| Perplexity | 3 Anfragen/Tag, 1000 Tokens/Monat  | $17-20  |  
-| Elicit     | 1000 Tokens/Monat                 | $10-12   | 
+| Modell     | Gratiszugang                      | Kosten /Monat |
+|------------|-----------------------------------|---------------|
+| ChatGPT    | Version 3.5, 4 via Bing App       | 24€           |
+| Claude\*   | 200 Tokens/Tag                    | ca \$20       |
+| Bard       | 2500 Tokens/Tag                   | 21.99€        |
+| Perplexity | 3 Anfragen/Tag, 1000 Tokens/Monat | \$17-20       |
+| Elicit     | 1000 Tokens/Monat                 | \$10-12       |
 
-\* Aus Österreich [VPN und virtuelle Telefonnummer](https://anakin.ai/de/blog/claude-ai-phone-number-verification/) benötigt; oder Platform wie [Anakin.ai](www.anakin.ai)|
+\* Aus Österreich [VPN und virtuelle Telefonnummer](https://anakin.ai/de/blog/claude-ai-phone-number-verification/) benötigt; oder Platform wie [Anakin.ai](www.anakin.ai)\|
 
 ## Aktuelle Top-Modelle
 
@@ -348,12 +346,12 @@ knitr::include_graphics('images/gpt_builder.png')
 
 ## Bedeutung für die Zukunft
 
-- Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen
-- Natur von vielen Jobs wird sich verändern
-- Menschen, die kreativ und kritisch damit umgehen können sind gefragt
-- Es gibt noch keine "Experten", ein "richtig benützen"
-- Wir lernen laufend, wie wir sie am besten verwenden können. 
-- Einfach ausprobieren: Täglich benützen und kreativ sein!
+-   Die Rolle von KI-Technologien wie ChatGPT wird weiter zunehmen
+-   Natur von vielen Jobs wird sich verändern
+-   Menschen, die kreativ und kritisch damit umgehen können sind gefragt
+-   Es gibt noch keine "Experten", ein "richtig benützen"
+-   Wir lernen laufend, wie wir sie am besten verwenden können.
+-   Einfach ausprobieren: Täglich benützen und kreativ sein!
 
 ## Am Laufenden bleiben
 
