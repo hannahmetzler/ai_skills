@@ -1,7 +1,7 @@
 ---
 titel: "AI tools: Tipps und Tricks für LLM Chatbots"
 #title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-subtitle: "42. WISIA Symposion, CSH Wien <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
+subtitle: "Skills training LBG Career Center <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
 author: "Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_tools/"
 date: "5. April 2024"
 format: 
@@ -358,7 +358,10 @@ knitr::include_graphics('images/gpt_builder.png')
 -   Newsletter:
     -   [There's an AI for that](https://theresanaiforthat.com/)
     -   [One useful thing](https://www.oneusefulthing.org/)
--   Tiktok, Twitter
+-   Tiktok: Nathan Jones???
+-   Twitter
+-   LinkedIn: Ethan Mollick
+-   Paper lesen
 
 ::: notes
 Joao talk
