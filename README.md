@@ -1,43 +1,30 @@
-# AI_tools
-Workshop on using LLMs
+# Skills training: Mastering AI Chatbots: Optimizing Research through Effective Use
 
-## Notes from Meeting on July 12th
+## Enhance your research with AI through practical skills, customization, and ethical considerations
 
-Brainstorming mit Mareike: 
+In this skills training, we will focus on how to use AI chatbots effectively for tasks throughout the research process. 
+We will cover how to customize AI Chatbot settings and practice the art of writing effective prompts. 
+We will also briefly examine how Large Language Models (the models behind modern chatbots) work, get an overview of different models
+and their strengths, and discuss the most important ethical questions around using AI chatbots in research.
 
-Generelles Verständnis
-Prompten: wie prompte ich richtig
-Einstellungen in den Tools
-Ethik auch mit anschneiden, mit Fokus auf Wissenschaft (rechtliche Grundlagen, AI act Richtlinien), ev. kurz zu Gesellschaft (aber da kommen immer Diskussionen auf). Beispiele: 
-- Copyright? 
-- Wissenschaftliche Output Ethik: Was heisst das für meine Forschungsergebnisse
-- AI verwenden um ein Paper zu schreiben, 
-- Quellenangaben, soll ich paper mit ChatGPT schreiben
-- Ergebnisse aus dem Institut hineingeben
-- Daten für Patente
-- Was passiert mit den Daten z.B. im Vergleich zu Google
+- Instructors: [Dr. Hannah Metzler](www.hannahmetzler.eu) & Konstantin Hebenstreit, MSc.
+- October 29, 2024 at LBG Career Center, Vienna
+- Slides: https://hannahmetzler.eu/AI_skills/
 
-Fokus auf Anwendung und Interaktives selbst austesten, ethische und theoretische Aspekte aber mit anschneiden
+## Preparation before the skills training: 
 
-Nach dem Mittagessen was interaktives, Challenge mit Kleingrupppen? z.B. Fähigkeiten als Arzt mit GPT teste nanhand Konstantin's Fragebogen. 
+1) Please create user accounts on the following platforms:
 
-Rahmenbedingungen: 
-- Präsenz
-- 9-17h, mit Kaffeepausen und 1h Mittagspause
-- Hausübun im Voraus?
-    - Elicit
-    - verschiedene Modelle testen mit einem Prompt von uns
-    - eigene Use cases testen mit versch. Modellen?
-- Definitiv im Voraus Accounts bei verschiedenen MOdellen machen
+- [ChatGPT](http://chat.openai.com)  
+- [Claude.ai](http://Claude.ai)  
+- [Poe.com](http://Poe.com)
 
-- Tische als Gruppen oder in Reihen?
-- ca 15 Teilnehmer, in 3er Gruppen, 1h vorher offen, es gibt Mittagessen
+2) Also install the ChatGPT app on your phone, and on your laptop if you are using a MacBook.
 
-Timeline: 
-- Ankündingungstext für Website plus Profil bis 23. August
-- Syllabus idealerweise Anfang Oktober, spätestens 1 Woche vorher
+3) Regarding access to chat bots for during and after the skills training, you have one of three options: 
 
-Fragen für die Anmeldesurvey: 
-Bezahlter Account oder nicht? Wofür hast du LLMs schon verwendet?
+- Option 1: We highly recommend that you pay for a [ChatGPT](http://chat.openai.com) Plus plan starting from the day before our skills training. This will allow you to take full advantage of the exercises in the course, and to continue integrating what you’ve learnt in your everyday work. It costs $24 per month, and you can cancel it up to 24h before the renewal date. That is, you only need to pay for one month if you decide you don’t need it after trying for a few days. To get a the Plus plan, first create an account on www.chat.openai.com, then upgrade to Plus (under your account symbol in the top right corner). 
 
+- Option 2: If you mainly use or plan to use LLM chatbots for writing or do not want to “share” data with the company behind ChatGPT (OpenAI), we recommend that you instead pay for a month of access to [Claude.ai](http://Claude.ai). Claude does not use the text you enter in the chatbot for further model training (except if there are safety concerns with your requests). 
 
+- Option 3: If you decide not to pay for a paid plan for one month, we’ll have a few accounts sponsored by the LBG Career Center that will allow you to do all exercises in the course in pairs of two. You’ll get most out of the training if you do the exercises alone, but together will definitely be fun too\! 
