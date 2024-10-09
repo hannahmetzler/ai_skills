@@ -1,7 +1,6 @@
 ---
 titel: "AI tools: Tipps und Tricks für LLM Chatbots"
-#title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-subtitle: "Skills training LBG Career Center <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
+subtitle: "42. WISIA Symposion, CSH Wien <br> Für mehr: [Erklär mir die Welt Podcast mit Malcolm Wachota](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)"
 author: "Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_tools/"
 date: "5. April 2024"
 format: 
@@ -35,7 +34,7 @@ editor: visual
 -   Deep Learning
 -   Lineare Regressionen errechnen "weights" für die Verbindungen
 
-::: columns
+::::: columns
 ::: {.column width="47%"}
 -   Input layer: Quantitative representation of sentence
 -   Output layer: One-hot encoding
@@ -46,7 +45,7 @@ editor: visual
 knitr::include_graphics("images/neuralnet.svg")
 ```
 :::
-:::
+:::::
 
 ::: notes
 One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
@@ -54,7 +53,7 @@ One hot encoding: output has as many units as words, we predict the one with the
 
 ## Wie werden Worte numerisch repäsentiert?
 
-::: columns
+::::: columns
 ::: {.column width="40%"}
 -   Vector embeddings <br> = word embeddings
 
@@ -72,7 +71,7 @@ knitr::include_graphics("images/wordembeddings.svg")
 knitr::include_graphics('images/apple_context.png')
 ```
 :::
-:::
+:::::
 
 ## Wie werden LLMs trainiert?
 
@@ -86,7 +85,7 @@ All Transformer models (a model architecture for efficient computing):
 
 ## Suchmaschinen vs. LLMs benutzen
 
-::: columns
+::::: columns
 ::: {.column width="35%"}
 ### Suchmaschine
 
@@ -102,7 +101,7 @@ All Transformer models (a model architecture for efficient computing):
 -   Feedback geben & Dialog führen, Performance verbessert sich sehr schnell
 -   Antwort ist zusammenfassend
 :::
-:::
+:::::
 
 ## Chat GPT-4
 
@@ -282,7 +281,7 @@ Could you please write a mega prompt from our interaction here, that I can use a
 
 -   **System prompts**: Prompts die jedes Mal eingegeben werden, z.b. emotionale Prompts
 
-::: columns
+:::::: columns
 ::: {.column width="15%"}
 ```{r}
 knitr::include_graphics('images/how_to_system_prompt.png')
@@ -298,7 +297,7 @@ knitr::include_graphics('images/system_prompt.png')
 ::: {.column width="45%"}
 "Für meinen Job ist das extrem wichtig, bitte arbeite genau, und überprüfe, ob alles stimmt."
 :::
-:::
+::::::
 
 ## Creating Custom GPTs
 
@@ -309,7 +308,7 @@ knitr::include_graphics('images/system_prompt.png')
 
 ## Creating Custom GPTs: How to
 
-::: columns
+:::::: columns
 ::: {.column width="18%"}
 1)  
 
@@ -331,7 +330,7 @@ knitr::include_graphics('images/how_to_custom_gpt2.png')
 knitr::include_graphics('images/gpt_builder.png')
 ```
 :::
-:::
+::::::
 
 -   GPT Builder stellt weitere Fragen
 -   Ausprobieren und weiter "reinreden" bis es passt
