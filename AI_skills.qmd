@@ -100,27 +100,82 @@ All Transformer models (a model architecture for efficient computing):
 
 ## Use search engines vs. LLMs
 
-::::: columns
+:::: columns
 ::: {.column width="35%"}
 ### Search engine
 
--   few short keywords
+-   A few short keywords
+<br><br><br><br><br>
 -   Answer: many single results
 :::
 
 ::: {.column width="60%"}
-### LLM
+### LLM Chatbot
 
--   Long prompts with lots of details, explanations and context
--   Speak as if to a person
--   Give feedback & engage in dialogue, performance improves very quickly
+-   Long prompts with lots of details, context, examples & explanations
 -   Answer is summarised
 :::
-:::::
+::::
 
-## Chat GPT-4
+## General tips
 
--   ChatGPT 4 is much better than the free version
+- App: Use microphone & headphones
+- Use it often and try it out!
+- Speak as if to a person
+- Give feedback & engage in dialogue, performance improves very quickly
+- Spelling doesn't matter at all
+- Do the first 80% quickly, then check.
+- Work on your prompts!
+
+## Effective Prompting
+
+- Loooooooooooooong
+- Provide context, examples
+
+## Hallucinations
+
+-   LLMs invent data that doesn't exist
+    -   Why? Statistical language prediction
+-   Getting better, but still happens
+
+------------------------------------------------------------------------
+
+### Hallucinations - strategies for verification
+
+-   4-eyes principle: Model does 80%, 20% human
+-   Follow-up questions: Check this again, is it correct? Can you give me some sources? Are you sure?
+-   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
+-   Enter the answer of the 1st model in another model & ask:
+    -   Is this correct? Can you please back this up with studies?
+
+## Multimodal ChatGPT interactions
+
+:::: columns
+::: column
+**Free**
+- File Uploads 
+- Browse
+- Discovering and using GPTs
+- Upload images
+- Audio: Talking (Mac, Phone)
+- Data analysis 
+
+
+:::
+::: column
+**Paid plans**
+-   Create images
+
+:::
+
+
+## Chat GPT-4 possibilities
+
+-   [Different models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini) in the Plus plan
+    - ChatGPT4o: fast, intelligent, cheaper
+    - ChatGPT4: more expensive (1/2 rate limit)
+    - o1-preview: Reasoning
+    - Only via API: ChatGPT Turbo, ChatGPT 3.5
 -   Mobile phone app with microphone function: conversation with ChatGPT
 -   Multimodal working:
     -   Upload images & screenshots
@@ -135,13 +190,6 @@ All Transformer models (a model architecture for efficient computing):
 -   [**Claude**](https://claude.ai/) (Anthropic): longer texts, better memory (500 pages) (Context window)
 -   [**Bard (Model: Gemini)**](https://gemini.google.com/app) (Google): Search capability and database, integration with Google services
 
-## Tools based on LLMs
-
--   [**Perplexity AI**](https://www.perplexity.ai/): like search engine, scientific references
-    -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
--   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
-    -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
-    -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
 
 ## Access to models
 
@@ -216,30 +264,7 @@ Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 -   Translation [www.deepl.com](www.deepl.com)
 -   Productivity coach: screenshot of a diary for a week, or several weeks
 
-# Tips and tricks
-
-## General
-
--   Download ChatGPT app, use microphone & headphones
--   Use it often and try it out!
--   Spelling doesn't matter at all
--   80% with ChatGPT, then check it yourself - first draft
-
-## Hallucinations
-
--   LLMs invent data that doesn't exist
-    -   Why? Statistical language prediction
--   Much less of a problem than at the beginning
-
-------------------------------------------------------------------------
-
-### Hallucinations - strategies for verification
-
--   4 eyes principle: Model does 80%, I do the rest
--   Follow-up questions: Check this again, is it correct? Can you give me some sources?
--   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
--   Enter the answer of the 1st model in another model & ask:
-    -   Is this correct? Can you please back this up with studies?
+# Outdated tipps?
 
 ## Emotional prompts
 
@@ -358,6 +383,21 @@ knitr::include_graphics("images/gpt_builder.png")
 
 -   My experiment: upload all my papers/work: Digital Twin with my knowledge
 
+## Tools based on LLMs
+
+-   [**Perplexity AI**](https://www.perplexity.ai/): like search engine, scientific references
+    -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
+-   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
+    -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
+    -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
+- NotebookLM: Create podcasts using papers
+
+# Ethics
+
+## Data
+
+## Copyright
+
 ## Significance for the future
 
 -   The role of AI technologies such as ChatGPT will continue to grow
@@ -365,7 +405,7 @@ knitr::include_graphics("images/gpt_builder.png")
 -   People who can deal with it creatively and critically are in demand
 -   There are no "experts" yet, a "right use"
 -   We are constantly learning how best to use them.
--   Just try it out: Use it every day and be creative!
+- Keep using & experimenting
 
 ## Resources
 
@@ -376,14 +416,14 @@ knitr::include_graphics("images/gpt_builder.png")
 ### Staying up to date
 
 :::: columns
-::: {.column width="50%"}
+::: column
 - Ethan Mollick
   - Newsletter: [One useful thing](https://www.oneusefulthing.org/)
   - [There's an AI for that](https://theresanaiforthat.com/)
   - On [LinkedIn](https://www.linkedin.com/in/emollick/)
   
 :::
-::: {.column width="50%"}
+::: column
 - [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
 - Twitter ???
 
