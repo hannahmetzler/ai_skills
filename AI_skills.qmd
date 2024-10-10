@@ -85,15 +85,87 @@ knitr::include_graphics("images/apple_context.png")
 :::
 :::::
 
-## How are LLMs trained?
+## How are LLMs trained? - update
 
 All Transformer models (a model architecture for efficient computing):
 
--   BERT specific, correct: **Masked word prediction**
+-   BERT specific, to update: **Masked word prediction**
     -   “New **\[MASK\]** is a city”
 -   **Next sentence prediction**
     -   "Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved."\
     -   TRUE/FALSE als Feedback
+    
+## Terms to explain
+
+- context window
+- token
+
+## Current top models - To do: update
+
+-   **ChatGPT-4o** (Open AI)
+-   **Claude** (Anthropic)
+-   **Bard (Gemini)** (Google)
+
+## Multimodal ChatGPT interactions
+
+**(Some also work with Claude)**
+
+- File Uploads (& Claude)
+- Browse
+- Discovering and using GPTs
+- Upload & analyze images
+- Create images with DALL-E
+- Audio: Talking/Listening
+- Data analysis (& Claude)
+- Execute code
+
+## Strengths of different models - update
+
+-   [**ChatGPT-4**](https://chat.openai.com/) (Open AI): multimodal interactions, 8.000 tokens (more with API)
+-   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, longer context window (200.000 tokens)
+-   [**Gemini**](https://gemini.google.com/app) (Google): ??? (Search capability and database, integration with Google services), 100.000 tokens
+
+Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
+
+## Different ChatGPT versions
+
+- ChatGPT4: more resource intensive = expensive
+- ChatGPT4o = optimized to be faster and cheaper
+- ChatGPT-4o mini: every day tasks
+- Only via API or special access plans:
+  - ChatGPT-4 Turbo: long context window (128.000 tokens)
+  - o1-preview: advanced reasoning
+  - ChatGPT-3.5: less resource intense
+  
+::: footer
+[ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini)
+
+::: 
+
+## Slide on Chatbot Arena?
+
+
+
+
+
+## Access to models
+
+| model      | free access                       | costs /month |
+|------------|-----------------------------------|--------------|
+| ChatGPT    | GPT-4o mini, GPT4-o limited, limits for multimodal   | 24€          |
+| Claude   | 200 tokens/day                    | ca \$20      |
+| Gemini      | 1 month trial of paid version, 2500 tokens/day                   | 21.99€     |
+| Perplexity | 3 requests/day, 1000 tokens/month | \$17-20      |
+| Elicit     | 1000 tokens/month                 | \$10-12      |
+
+::: notes
+To Do: update requests/limits
+:::
+
+
+## Discussion 
+
+- In small groups: 
 
 
 # The basics: How to talk to an LLM Chatbot?
@@ -119,13 +191,35 @@ All Transformer models (a model architecture for efficient computing):
 
 ## General tips
 
-- App: Use microphone & headphones
 - Use it often and try it out!
-- Speak as if to a person
+- Speak to it as if it was a person
 - Give feedback & engage in dialogue, performance improves very quickly
 - Spelling doesn't matter at all
 - Do the first 80% quickly, then check.
+- Use microphone & headphones and actually talk!
 - Work on your prompts!
+
+## Voice Control
+
+- ChatGPT App on Mac & Smartphones
+- Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
+
+:::::: columns
+::: {.column width="47%"}
+### Voice Up
+
+- Hold SPACE (outside text input) to record, release to submit
+- ESC to stop & transcribe text without submitting
+:::
+
+::: {.column width="47%"}
+### ChatGPT App
+![](images/voice_control.png)
+
+- Headphones for an ongoing conversation
+- Microphone to record, stop to transcribe
+:::
+::::::
 
 ## Effective Prompting
 
@@ -140,76 +234,13 @@ All Transformer models (a model architecture for efficient computing):
 
 ------------------------------------------------------------------------
 
-### Hallucinations - strategies for verification
+## Strategies for verification
 
 -   4-eyes principle: Model does 80%, 20% human
 -   Follow-up questions: Check this again, is it correct? Can you give me some sources? Are you sure?
 -   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
 -   Enter the answer of the 1st model in another model & ask:
     -   Is this correct? Can you please back this up with studies?
-
-## Multimodal ChatGPT interactions
-
-:::: columns
-::: column
-**Free**
-- File Uploads 
-- Browse
-- Discovering and using GPTs
-- Upload images
-- Audio: Talking (Mac, Phone)
-- Data analysis 
-
-
-:::
-::: column
-**Paid plans**
--   Create images
-
-:::
-
-
-## Chat GPT-4 possibilities
-
--   [Different models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini) in the Plus plan
-    - ChatGPT4o: fast, intelligent, cheaper
-    - ChatGPT4: more expensive (1/2 rate limit)
-    - o1-preview: Reasoning
-    - Only via API: ChatGPT Turbo, ChatGPT 3.5
--   Mobile phone app with microphone function: conversation with ChatGPT
--   Multimodal working:
-    -   Upload images & screenshots
-    -   Create images
-    -   Describe an image/interpret graphics
-    -   Speak with ChatGPT
-    -   Upload documents (paper etc)
-
-## Strengths of different models
-
--   [**ChatGPT-4**](https://chat.openai.com/) (Open AI): context understanding (complex, multi-layered dialogues), learning ability, versatile
--   [**Claude**](https://claude.ai/) (Anthropic): longer texts, better memory (500 pages) (Context window)
--   [**Bard (Model: Gemini)**](https://gemini.google.com/app) (Google): Search capability and database, integration with Google services
-
-
-## Access to models
-
-| model      | free access                       | costs /month |
-|------------|-----------------------------------|--------------|
-| ChatGPT    | Version 3.5, 4 via Bing App       | 24€          |
-| Claude\*   | 200 tokens/day                    | ca \$20      |
-| Bard       | 2500 tokens/day                   | 21.99€       |
-| Perplexity | 3 requests/day, 1000 tokens/month | \$17-20      |
-| Elicit     | 1000 tokens/month                 | \$10-12      |
-
-\* From Austria \[VPN and virtual phones
-
-## Current top models
-
--   Claude\*\* (Anthropic)
--   ChatGPT-4\*\* (Open AI)
--   **Bard (Gemini)** (Google)
-
-Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
 # Applications
 
@@ -338,6 +369,17 @@ knitr::include_graphics("images/system_prompt.png")
 "This is extremely important for my job, please work accurately and check that everything is correct."
 :::
 ::::::
+
+::: notes
+My custom Instructions: ask Konstantin if useful. 
+I am based in Vienna, and am a postdoc researcher in computational social science and psychology. I am a women, I use ChatGPT to code in R. I also use Github. I check scientific information for work, my research topics include social media, misinformation, polarization, false polarization, subjective well-being, analysing social media data, suicide prevention via the media (media effects research), machine learning applications in these areas, social dominance and power, social connection and belonging, hatespeech, hormones, power postures. I do acroyoga, am part of a co-housing project, am in a relationship. I like listening to podcasts, reading books, biking, talking about relationships, meeting friends, acroyoga etc. I also supervise PhD and master students.
+
+In my personal life, I am polyamorous, vegetarian to vegan, like effective altruism, S+, good at relationships, moving to a co housing project in 2 years, 37 years old.
+
+Open question: How would you like ChatGPT to respond?
+Think step by step. Don't give detailed explanations of code unless I ask for it. 
+:::
+
 
 ## Creating Custom GPTs
 
