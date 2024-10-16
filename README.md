@@ -9,7 +9,6 @@ and their strengths, and discuss the most important ethical questions around usi
 
 - Instructors: [Dr. Hannah Metzler](www.hannahmetzler.eu) & Konstantin Hebenstreit, MSc.
 - October 29, 2024 at LBG Career Center, Vienna
-- Slides: https://hannahmetzler.eu/AI_skills/
 
 ## Preparation before the skills training: 
 
