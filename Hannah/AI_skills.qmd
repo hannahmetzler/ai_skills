@@ -192,8 +192,10 @@ form pairs with the rest
 ## Hallucinations
 
 -   LLMs invent data that doesn't exist
-    -   Why? Statistical language prediction
--   Getting better, but still happens
+    - Why? Statistical language prediction
+    - Trained to give an answer, not to be truthful. 
+-   New models are much better, but this will continue to happen
+- What to do?
 
 ------------------------------------------------------------------------
 
@@ -204,6 +206,7 @@ form pairs with the rest
 -   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
 -   Enter the answer of the 1st model in another model & ask:
     -   Is this correct? Can you please back this up with studies?
+- Sources: use Perplexity
 
 
 ## At work: ideas
@@ -246,10 +249,9 @@ Practical advice: Testing emotional prompts can help in specific scenarios, like
 
 ### More examples of emotional prompts:
 
--   This is extremely important to me, please be accurate.
--   I'll tip you \$200 if you do a good job.
--   I have no fingers, please help me.
--   If you work correctly and well, you'll get a treat.
+- This is extremely important to me, please be accurate.
+- If you work correctly and well, you'll get a treat.
+- This is important for my career, please be careful. 
 
 ## Why do emotional prompts work?
 
