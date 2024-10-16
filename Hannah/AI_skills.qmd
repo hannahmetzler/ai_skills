@@ -25,14 +25,14 @@ editor: source
 ### Dr. Hannah Metzler 
 Complexity Science Hub & Meduni Vienna <br>
 Psychology, Neuroscience & Data Science <br>
-www.hannahmetzler.eu | metzler@csh.ac.at <br>
-X: @hannahmetzler1
+https://hannahmetzler.eu | metzler@csh.ac.at <br>
+X: [@hannahmetzler1](https://x.com/hannahmetzler1)
 
 ### Konstanstin Hebenstreit, M.Sc.
 Artificial Intelligence Institute at Meduni Vienna <br>
 Artificial Intelligence, LLMs & Data Science <br> 
 konstantin.hebenstreit@meduniwien.ac.at <br>
-X: @K_Hebenstreit
+X: [@K_Hebenstreit](https://x.com/K_Hebenstreit)
 
 ## Who are you?
 
@@ -46,7 +46,7 @@ X: @K_Hebenstreit
 
 | | |
 |----------|----------|
-| 9h15 - | Introduction to LLMs |
+| 9h30 - | Introduction to LLMs |
 | Y | Basic skills |
 | Y | More advanced prompting |
 |12:30 – 13:30  | Lunch break |
@@ -55,7 +55,19 @@ X: @K_Hebenstreit
 | Y | Ethical questions |
 | Y - 17h | Closing round |
 
-# The basics: How to talk to an LLM Chatbot?
+
+## Access to LLM chatbots
+
+- Who has a paid account?
+- Log in for 8 more accounts
+
+::: notes
+form pairs with the rest
+
+:::
+
+# Introduction to LLMs
+# The Basics: How to talk to an LLM Chatbot?
 
 ## Use search engines vs. LLMs
 
@@ -64,7 +76,6 @@ X: @K_Hebenstreit
 ### Search engine
 
 -   A few short keywords
-<br><br><br><br><br>
 -   Answer: many single results
 :::
 
@@ -79,16 +90,16 @@ X: @K_Hebenstreit
 ## General tips
 
 - Use it often and try it out!
-- Speak to it as if it was a person
+- Speak to it as if it was a person: "Talk into it"
 - Give feedback & engage in dialogue, performance improves very quickly
-- Spelling doesn't matter at all
-- Do the first 80% quickly, then check.
+- Spelling doesn't matter
+- Use it for the first 80% of your tasks
 - Use microphone & headphones and actually talk!
 - Work on your prompts!
 
 ## Voice Control
 
-- ChatGPT App on Mac & Smartphones
+- In the ChatGPT App on Mac & Smartphones
 - Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
 
 :::::: columns
@@ -110,8 +121,73 @@ X: @K_Hebenstreit
 
 ## Effective Prompting
 
-- Loooooooooooooong
-- Provide context, examples
+- **Assign a persona or role**
+  - e.g., PhD student, journalist, psychologist
+  - Specify expertise level
+
+- **Provide Clear & Extensive Context**
+  - Background of your request
+  - Provide specific details
+
+- **Provide Specific Examples** (Emails, abstracts etc)
+- Describe constraints: what you don't want
+
+## Effective Prompting
+
+- **Direct Questions & Instructions**
+  - Clear and concise queries lead to better answers
+
+- **Start with a Clear Instruction**
+  - e.g., "Help me draft an email to..."
+
+- **Specify the Desired Format**
+  - Formal tone, length, structure (e.g., bullet points, paragraphs)
+
+- **Provide feedback to improve the output**
+
+## Exercise: Email (20 minutes)
+
+- Choose an email you need to write soon
+- Talk to ChatGPT using the microphone
+- Explain who you are, who the email is for
+- Explain the purpose and necessary points to include
+- Tell it to write in the style of the examples you'll give it
+- Tell it to wait for further input
+- Upload 2 emails of you as writing style examples
+
+## Ideas for using it often: Everyday
+
+-   Recipes\*\*: Suggestions based on existing ingredients ([example](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
+    -   Customise ([example less effort](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
+-   **Travel planning**: Individual recommendations for city trips
+-   Shopping lists\*\*: Schnitzels and goulash for 4 people ([example weekly meal plan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
+-   **Household**: Stain removal tips ([example](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
+-   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
+-   Mindfulness meditation guide
+-   Play city, country river
+
+## Ideas for using it often: Everyday 2
+
+-   **Summarise long documents**: Upload link or file
+    -   Instructions from camera, microwave, light panels etc.
+    -   Summarise the law ([example laying hens](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
+    -   Summarise long newspaper articles: listen as a podcast
+-   Coaching for important career decisions
+-   Recommendations for jobs/positions/roles based on my CV
+
+------------------------------------------------------------------------
+
+## Ideas for academic work
+
+-   Suggest outline/structure for a presentation
+-   Feedback on presentations: Upload slide(s)
+-   Overview of new topic area & brainstorming
+-   Texts: revise, summarise, shorten
+-   Write first draft of a text based on notes
+-   Write in your own style: Upload paper
+-   Surveys, e.g. develop & test MC questions, feedback on comprehensibility
+
+------------------------------------------------------------------------
 
 ## Hallucinations
 
@@ -129,46 +205,10 @@ X: @K_Hebenstreit
 -   Enter the answer of the 1st model in another model & ask:
     -   Is this correct? Can you please back this up with studies?
 
-# Applications
-
-## Ideas for everyday life
-
--   Recipes\*\*: Suggestions based on existing ingredients ([example](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
-    -   Customise ([example less effort](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
--   **Travel planning**: Individual recommendations for city trips
--   Shopping lists\*\*: Schnitzels and goulash for 4 people ([example weekly meal plan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
--   **Household**: Stain removal tips ([example](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
--   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
--   Mindfulness meditation guide
-
-------------------------------------------------------------------------
-
-## Ideas for everyday life 2
-
--   **Summarise long documents**: Upload link or file
-    -   Instructions from camera, microwave, light panels etc.
-    -   Summarise the law ([example laying hens](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
-    -   Summarise long newspaper articles: listen as a podcast
--   Coaching for important career decisions
--   Recommendations for jobs/positions/roles based on my CV
--   Play city, country river
-
-------------------------------------------------------------------------
-
-## Ideas for academic work
-
--   Suggest outline/structure for a presentation
--   Feedback on presentations: Upload slide(s)
--   Overview of new topic area & brainstorming
--   Texts: revise, summarise, shorten
--   Write first draft of a text based on notes
--   Write in your own style: Upload paper
--   Surveys, e.g. develop & test MC questions, feedback on comprehensibility
-
-------------------------------------------------------------------------
 
 ## At work: ideas
 
+- Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
 -   Summarise & record workshop & discussions: Run mic
 -   Programming: LLMs are data scientists!
     -   Find errors, basic code structure...
@@ -182,9 +222,7 @@ X: @K_Hebenstreit
 -   Translation [www.deepl.com](www.deepl.com)
 -   Productivity coach: screenshot of a diary for a week, or several weeks
 
-# Outdated tipps?
-
-## Emotional prompts
+## Emotion prompts
 
 -   Emotional expressions can lead to better results ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
 
@@ -196,6 +234,13 @@ knitr::include_graphics("images/emotional_prompt.jpg")
 Write your answer and give me a confidence score between 0-1 for your answer. 
 You'd better be sure.
 ```
+
+::: notes
+Still relevant?
+Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​
+ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity.
+Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior
+:::
 
 ------------------------------------------------------------------------
 
@@ -319,60 +364,53 @@ knitr::include_graphics("images/gpt_builder.png")
 -   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
     -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
     -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
-- NotebookLM: Create podcasts using papers
+- NotebookLM: Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant)
 
 # Ethics
 
-## Data
+# Significance for the future
 
-## Copyright
-
-## Significance for the future
-
--   The role of AI technologies such as ChatGPT will continue to grow
--   Nature of many jobs will change
--   People who can deal with it creatively and critically are in demand
--   There are no "experts" yet, a "right use"
--   We are constantly learning how best to use them.
+- The role of AI technologies such as ChatGPT will continue to grow
+- Nature of many jobs will change
+- People who can deal with it creatively and critically are in demand
+- There are no "experts" yet, a "right use"
+- We are constantly learning how best to use them.
 - Keep using & experimenting
 
-## Resources
+## Basic Resources
 
 - 2 [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
   - [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
   - [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
+- [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/): Useful terms
 
-### Staying up to date
+## Staying up to date
 
 :::: columns
-::: column
-- Ethan Mollick
-  - Newsletter: [One useful thing](https://www.oneusefulthing.org/)
-  - [There's an AI for that](https://theresanaiforthat.com/)
-  - On [LinkedIn](https://www.linkedin.com/in/emollick/)
-  
-:::
-::: column
+::: {.column width="47%"}
+### Newsletters
+
+- [One useful thing](https://www.oneusefulthing.org/) (E. Mollick)
+- AI compiled: [There's an AI for that](https://theresanaiforthat.com/)
+
+### Social Media 
+
+- [Ethan Mollic on LinkedIn](https://www.linkedin.com/in/emollick/)
 - [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
-- Twitter ???
+
+
+:::
+::: {.column width="47%"}
+### Other social media accounts? X?
+
+- Konstantin recommendations?
+- check: https://analyticsindiamag.com/ai-mysteries/top-30-ai-influeners-to-follow-on-x/
 
 :::
 ::::
 
-## Resources
+## Deep Dives & Big Picture
 
-### Deep Dives & Big Picture
-
-- [Co-Intelligence: Living and Working with AI ](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
-- Read papers
-
-
-::: notes
-Joao talk
-
-Evaluating LLMs - what is trustworthy - [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord - r/LocalLamma comments: best place to learn about this stuff - a Starter guide for playing with your own local AI - The llama hitchiking guide to local LLMs Other good sources: Medium, Twitter
-
-Mixture of experts - very promising: another architecture, e.g. Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data
-
-Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685 tps: tokens per second
-:::
+- A really enjoyable book: [Co-Intelligence: Living and Working with AI ](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
+- Reddit community: r/LocalLamma
+- Medium (rec from a colleague)
