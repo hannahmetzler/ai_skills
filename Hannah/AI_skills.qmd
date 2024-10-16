@@ -1,77 +1,73 @@
 ---
-titel: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 subtitle: "Skill training LBG Career Center"
 author: "Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills"
 date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"
-    ## Defines the theme of the presentation, both version and style
     theme: [default, custom.scss]
-    # incremental slides point by point
     incremental: false
     aspect-ratio: 16:9
     slide-number: true
+    title-slide: true  # This enables the title slide
+# Optional background attributes for the title slide
 # title-slide-attributes:
-# data-background-image: images/
-# data-background-size: cover
-# data-background-opacity: "0.5"
-#editor
+#   data-background-image: images/your_image.jpg
+#   data-background-size: cover
+#   data-background-opacity: "0.5"
 editor: source
+markdown: 
+  wrap: 72
 ---
 
 ## Who are we?
 
-### Dr. Hannah Metzler 
-Complexity Science Hub & Meduni Vienna <br>
-Psychology, Neuroscience & Data Science <br>
-https://hannahmetzler.eu | metzler@csh.ac.at <br>
-X: [@hannahmetzler1](https://x.com/hannahmetzler1)
+### Dr. Hannah Metzler
+
+Complexity Science Hub & Meduni Vienna <br> Psychology, Neuroscience & Data Science <br> https://hannahmetzler.eu \| metzler\@csh.ac.at <br> X: [\@hannahmetzler1](https://x.com/hannahmetzler1)
 
 ### Konstanstin Hebenstreit, M.Sc.
-Artificial Intelligence Institute at Meduni Vienna <br>
-Artificial Intelligence, LLMs & Data Science <br> 
-konstantin.hebenstreit@meduniwien.ac.at <br>
-X: [@K_Hebenstreit](https://x.com/K_Hebenstreit)
+
+Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence, LLMs & Data Science <br> konstantin.hebenstreit\@meduniwien.ac.at <br> X: [\@K_Hebenstreit](https://x.com/K_Hebenstreit)
 
 ## Who are you?
 
-* Scientific discipline & topic area
+-   Scientific discipline & topic area
 
-* One thing you have already used LLMs for
+-   One thing you have already used LLMs for
 
-* If any: particular expectation or interests for today
+-   If any: particular expectation or interests for today
 
-## What we'll do today [update]
+## What we'll do today \[update\]
 
-| | |
-|----------|----------|
-| 9h30 - | Introduction to LLMs |
-| Y | Basic skills |
-| Y | More advanced prompting |
-|12:30 – 13:30  | Lunch break |
-| Y | Applications in Science |
-| Y | Scientific tools built on LLMs |
-| Y | Ethical questions |
-| Y - 17h | Closing round |
-
+|               |                                |
+|---------------|--------------------------------|
+| 9h30 -        | Introduction to LLMs           |
+| Y             | Basic skills                   |
+| Y             | More advanced prompting        |
+| 12:30 – 13:30 | Lunch break                    |
+| Y             | Applications in Science        |
+| Y             | Scientific tools built on LLMs |
+| Y             | Ethical questions              |
+| Y - 17h       | Closing round                  |
 
 ## Access to LLM chatbots
 
-- Who has a paid account?
-- Log in for 8 more accounts
+-   Who has a paid account?
+-   Log in for 8 more accounts
 
 ::: notes
 form pairs with the rest
-
 :::
 
 # Introduction to LLMs
+
 # The Basics: How to talk to an LLM Chatbot?
 
 ## Use search engines vs. LLMs
 
-:::: columns
+::::: columns
 ::: {.column width="35%"}
 ### Search engine
 
@@ -85,75 +81,71 @@ form pairs with the rest
 -   Long prompts with lots of details, context, examples & explanations
 -   Answer is summarised
 :::
-::::
+:::::
 
 ## General tips
 
-- Use it often and try it out!
-- Speak to it as if it was a person: "Talk into it"
-- Give feedback & engage in dialogue, performance improves very quickly
-- Spelling doesn't matter
-- Use it for the first 80% of your tasks
-- Use microphone & headphones and actually talk!
-- Work on your prompts!
+-   Use it often and try it out!
+-   Speak to it as if it was a person: "Talk into it"
+-   Give feedback & engage in dialogue, performance improves very quickly
+-   Spelling doesn't matter
+-   Use it for the first 80% of your tasks
+-   Use microphone & headphones and actually talk!
+-   Work on your prompts!
 
 ## Voice Control
 
-- In the ChatGPT App on Mac & Smartphones
-- Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
+-   In the ChatGPT App on Mac & Smartphones
+-   Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
 
-:::::: columns
+::::: columns
 ::: {.column width="47%"}
 ### Voice Up
 
-- Hold SPACE (outside text input) to record, release to submit
-- ESC to stop & transcribe text without submitting
+-   Hold SPACE (outside text input) to record, release to submit
+-   ESC to stop & transcribe text without submitting
 :::
 
 ::: {.column width="47%"}
 ### ChatGPT App
+
 ![](images/voice_control.png)
 
-- Headphones for an ongoing conversation
-- Microphone to record, stop to transcribe
+-   Headphones for an ongoing conversation
+-   Microphone to record, stop to transcribe
 :::
-::::::
+:::::
 
 ## Effective Prompting
 
-- **Assign a persona or role**
-  - e.g., PhD student, journalist, psychologist
-  - Specify expertise level
-
-- **Provide Clear & Extensive Context**
-  - Background of your request
-  - Provide specific details
-
-- **Provide Specific Examples** (Emails, abstracts etc)
-- Describe constraints: what you don't want
+-   **Assign a persona or role**
+    -   e.g., PhD student, journalist, psychologist
+    -   Specify expertise level
+-   **Provide Clear & Extensive Context**
+    -   Background of your request
+    -   Provide specific details
+-   **Provide Specific Examples** (Emails, abstracts etc)
+-   Describe constraints: what you don't want
 
 ## Effective Prompting
 
-- **Direct Questions & Instructions**
-  - Clear and concise queries lead to better answers
-
-- **Start with a Clear Instruction**
-  - e.g., "Help me draft an email to..."
-
-- **Specify the Desired Format**
-  - Formal tone, length, structure (e.g., bullet points, paragraphs)
-
-- **Provide feedback to improve the output**
+-   **Direct Questions & Instructions**
+    -   Clear and concise queries lead to better answers
+-   **Start with a Clear Instruction**
+    -   e.g., "Help me draft an email to..."
+-   **Specify the Desired Format**
+    -   Formal tone, length, structure (e.g., bullet points, paragraphs)
+-   **Provide feedback to improve the output**
 
 ## Exercise: Email (20 minutes)
 
-- Choose an email you need to write soon
-- Talk to ChatGPT using the microphone
-- Explain who you are, who the email is for
-- Explain the purpose and necessary points to include
-- Tell it to write in the style of the examples you'll give it
-- Tell it to wait for further input
-- Upload 2 emails of you as writing style examples
+-   Choose an email you need to write soon
+-   Talk to ChatGPT using the microphone
+-   Explain who you are, who the email is for
+-   Explain the purpose and necessary points to include
+-   Tell it to write in the style of the examples you'll give it
+-   Tell it to wait for further input
+-   Upload 2 emails of you as writing style examples
 
 ## Ideas for using it often: Everyday
 
@@ -192,10 +184,10 @@ form pairs with the rest
 ## Hallucinations
 
 -   LLMs invent data that doesn't exist
-    - Why? Statistical language prediction
-    - Trained to give an answer, not to be truthful. 
+    -   Why? Statistical language prediction
+    -   Trained to give an answer, not to be truthful.
 -   New models are much better, but this will continue to happen
-- What to do?
+-   What to do?
 
 ------------------------------------------------------------------------
 
@@ -206,12 +198,11 @@ form pairs with the rest
 -   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
 -   Enter the answer of the 1st model in another model & ask:
     -   Is this correct? Can you please back this up with studies?
-- Sources: use Perplexity
-
+-   Sources: use Perplexity
 
 ## At work: ideas
 
-- Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
+-   Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
 -   Summarise & record workshop & discussions: Run mic
 -   Programming: LLMs are data scientists!
     -   Find errors, basic code structure...
@@ -239,19 +230,16 @@ You'd better be sure.
 ```
 
 ::: notes
-Still relevant?
-Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​
-ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity.
-Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior
+Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior
 :::
 
 ------------------------------------------------------------------------
 
 ### More examples of emotional prompts:
 
-- This is extremely important to me, please be accurate.
-- If you work correctly and well, you'll get a treat.
-- This is important for my career, please be careful. 
+-   This is extremely important to me, please be accurate.
+-   If you work correctly and well, you'll get a treat.
+-   This is important for my career, please be careful.
 
 ## Why do emotional prompts work?
 
@@ -305,15 +293,12 @@ knitr::include_graphics("images/system_prompt.png")
 ::::::
 
 ::: notes
-My custom Instructions: ask Konstantin if useful. 
-I am based in Vienna, and am a postdoc researcher in computational social science and psychology. I am a women, I use ChatGPT to code in R. I also use Github. I check scientific information for work, my research topics include social media, misinformation, polarization, false polarization, subjective well-being, analysing social media data, suicide prevention via the media (media effects research), machine learning applications in these areas, social dominance and power, social connection and belonging, hatespeech, hormones, power postures. I do acroyoga, am part of a co-housing project, am in a relationship. I like listening to podcasts, reading books, biking, talking about relationships, meeting friends, acroyoga etc. I also supervise PhD and master students.
+My custom Instructions: ask Konstantin if useful. I am based in Vienna, and am a postdoc researcher in computational social science and psychology. I am a women, I use ChatGPT to code in R. I also use Github. I check scientific information for work, my research topics include social media, misinformation, polarization, false polarization, subjective well-being, analysing social media data, suicide prevention via the media (media effects research), machine learning applications in these areas, social dominance and power, social connection and belonging, hatespeech, hormones, power postures. I do acroyoga, am part of a co-housing project, am in a relationship. I like listening to podcasts, reading books, biking, talking about relationships, meeting friends, acroyoga etc. I also supervise PhD and master students.
 
 In my personal life, I am polyamorous, vegetarian to vegan, like effective altruism, S+, good at relationships, moving to a co housing project in 2 years, 37 years old.
 
-Open question: How would you like ChatGPT to respond?
-Think step by step. Don't give detailed explanations of code unless I ask for it. 
+Open question: How would you like ChatGPT to respond? Think step by step. Don't give detailed explanations of code unless I ask for it.
 :::
-
 
 ## Creating Custom GPTs
 
@@ -324,7 +309,7 @@ Think step by step. Don't give detailed explanations of code unless I ask for it
 
 ## Creating Custom GPTs: How to
 
-:::: columns
+:::::: columns
 ::: {.column width="18%"}
 1)  
 
@@ -346,7 +331,7 @@ knitr::include_graphics("images/how_to_custom_gpt2.png")
 knitr::include_graphics("images/gpt_builder.png")
 ```
 :::
-::::
+::::::
 
 -   GPT Builder asks more questions
 -   Try it out and keep "talking into it" until it fits
@@ -366,53 +351,51 @@ knitr::include_graphics("images/gpt_builder.png")
 -   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
     -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
     -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
-- NotebookLM: Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant)
+-   NotebookLM: Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant)
 
 # Ethics
 
 # Significance for the future
 
-- The role of AI technologies such as ChatGPT will continue to grow
-- Nature of many jobs will change
-- People who can deal with it creatively and critically are in demand
-- There are no "experts" yet, a "right use"
-- We are constantly learning how best to use them.
-- Keep using & experimenting
+-   The role of AI technologies such as ChatGPT will continue to grow
+-   Nature of many jobs will change
+-   People who can deal with it creatively and critically are in demand
+-   There are no "experts" yet, a "right use"
+-   We are constantly learning how best to use them.
+-   Keep using & experimenting
 
 ## Basic Resources
 
-- 2 [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
-  - [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
-  - [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
-- [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/): Useful terms
+-   2 [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
+    -   [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
+    -   [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
+-   [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/): Useful terms
 
 ## Staying up to date
 
-:::: columns
+::::: columns
 ::: {.column width="47%"}
 ### Newsletters
 
-- [One useful thing](https://www.oneusefulthing.org/) (E. Mollick)
-- AI compiled: [There's an AI for that](https://theresanaiforthat.com/)
+-   [One useful thing](https://www.oneusefulthing.org/) (E. Mollick)
+-   AI compiled: [There's an AI for that](https://theresanaiforthat.com/)
 
-### Social Media 
+### Social Media
 
-- [Ethan Mollic on LinkedIn](https://www.linkedin.com/in/emollick/)
-- [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
-
-
+-   [Ethan Mollic on LinkedIn](https://www.linkedin.com/in/emollick/)
+-   [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
 :::
+
 ::: {.column width="47%"}
 ### Other social media accounts? X?
 
-- Konstantin recommendations?
-- check: https://analyticsindiamag.com/ai-mysteries/top-30-ai-influeners-to-follow-on-x/
-
+-   Konstantin recommendations?
+-   check: https://analyticsindiamag.com/ai-mysteries/top-30-ai-influeners-to-follow-on-x/
 :::
-::::
+:::::
 
 ## Deep Dives & Big Picture
 
-- A really enjoyable book: [Co-Intelligence: Living and Working with AI ](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
-- Reddit community: r/LocalLamma
-- Medium (rec from a colleague)
+-   A really enjoyable book: [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
+-   Reddit community: r/LocalLamma
+-   Medium (rec from a colleague)
