@@ -1,5 +1,5 @@
 ---
-titel: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 subtitle: "Skill training LBG Career Center"
 author: "Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_skills/"
 date: "October 29 2024"
@@ -32,11 +32,220 @@ editor: source
 
 # Introduction (Konstantin)
 
+
+## AI and Science
+
+::::: columns
+::: {.column width="47%"}
+![](images/ai_scientist_news.png)
+<small>*Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-the-ai-scientist)*</small>
+:::
+
+::: {.column width="47%" .fragment}
+![](images/comparing_numbers.png)
+
+:::
+:::::
+
+## AI
+
+::::: columns
+::: {.column #vcenter width="20%" align="center"}
+Inputs
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="25%" align="center"}
+AI-Model
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="20%" align="center"}
+Output
+:::
+:::::
+
+## AI
+
+::::: columns
+::: {.column #vcenter width="20%" align="center"}
+![](https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg)
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="25%" align="center"}
+Image classification
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="20%" align="center"}
+Lemon
+:::
+:::::
+
+## LLMs
+
+::::: columns
+::: {.column #vcenter width="20%" align="center"}
+Text
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="25%" align="center"}
+Language Model
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="20%" align="center"}
+Text
+:::
+:::::
+
+
+## LLMs
+
+::::: columns
+::: {.column #vcenter width="15%" align="center"}
+Text
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="40%" align="center"}
+![](images/tunable_parameters.png)
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="15%" align="center"}
+Text
+:::
+:::::
+
+## Text representation
+
+::::: columns
+::: {.column width="40%" align="center"}
+Words
+
+<small>
+Even though the sound of it is<br> something quite atrocious, if you<br> say it loud enough, you’ll always<br> sound precocious, <br>Supercalifragilisticexpialidocious!
+</small>
+
+<small>
+*Marry Poppins*
+</small>
+
+:::
+
+::: {.column width="10%" align="center".fragment data-fragment-index="1"}
+→
+:::
+
+::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
+Tokens = "Subwords"
+
+![](images/tokenzined_sentence.png)
+:::
+
+:::::
+
+
+
+## Text representation
+
+::::: columns
+::: {.column width="40%" align="center"}
+Word/Token
+
+<!-- ![](images/tokenzined_sentence.png) -->
+<br>
+<span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even</span> ...
+:::
+
+::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
+→
+:::
+::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
+Word Embedding
+<small>
+[-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540,
+0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710,
+0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789,
+0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972,
+0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286,
+-0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830, -0.5211, 0.4406,
+0.5527, -0.4477, -0.5722, -0.2245, 0.2804, -0.7130, 0.0882, 0.5521, 0.1541, 0.5902,
+0.4780, 0.2184, 0.5483, 0.6220, 0.2904, 0.4306, -0.6218, -0.2375, 0.9270, 0.4768,
+0.7297, -0.1043, 0.7881, 0.4285, 0.1069, -0.8241, 0.5683, 0.5897, 0.4607, 0.4581,
+-0.7885, -0.6630, 0.2964, -0.7604, -0.9701, 0.0876, 0.6447, -0.8935, 0.5315, 0.7490]
+</small>
+:::
+:::::
+
+<!-- ## Text
+
+::::: columns
+::: {.column width="40%" align="center"}
+Words
+
+<small>
+Even though the sound of it is<br> something quite atrocious, if you<br> say it loud enough, you’ll always<br> sound precocious, <br>Supercalifragilisticexpialidocious!
+</small>
+
+<small>
+*Marry Poppins*
+</small>
+:::
+
+::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
+→
+:::
+::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
+Tokens
+
+![](images/tokenzined_sentence.png)
+
+::: {.column width="40%" align="center" .fragment data-fragment-index="2"}
+= "Subwords"
+:::
+:::::
+
+---
+
+## Text 2
+
+::::: columns
+::: {.column width="40%" align="center"}
+Tokensabc
+
+![](images/tokenzined_sentence.png)
+:::
+
+::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
+→
+:::
+::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
+Embeddings
+
+![](images/tokenzined_sentence.png)
+:::
+::::: -->
+
+
+
+
 ## What is an LLM, actually?
 
--   Large Language Models: Neural networks = Deep Learning models trained on text
+-   Large Language Models: Deep Learning Neural Networks trained on text
 -   Advanced Language models that process huge amounts of text
--   Trained with huge amounts of text data from the Internet (Wikipedia, social media, online media, books, literature, videos, films, YouTube, podcasts...)
+-   Trained with text data from the Internet (Wikipedia, social media, online media, books, literature, videos, films, YouTube, podcasts...)
 -   Turn it into statistical word and sentence predictions
 -   Can provide detailed and context-rich answers
 
@@ -461,7 +670,6 @@ knitr::include_graphics("images/gpt_builder.png")
 ::: column
 - Ethan Mollick
   - Newsletter: [One useful thing](https://www.oneusefulthing.org/)
-  - [There's an AI for that](https://theresanaiforthat.com/)
   - On [LinkedIn](https://www.linkedin.com/in/emollick/)
   
 :::
@@ -472,9 +680,16 @@ knitr::include_graphics("images/gpt_builder.png")
 :::
 ::::
 
-## Resources
+## Resources 2
 
-### Deep Dives & Big Picture
+:::: columns
+::: column
+- Youtube for technical understanding ["3Blue1Brown"](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+:::
+::::
+
+## Deep Dives & Big Picture
 
 - [Co-Intelligence: Living and Working with AI ](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 - Read papers
