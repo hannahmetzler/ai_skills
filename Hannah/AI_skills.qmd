@@ -72,7 +72,8 @@ form pairs with the rest
 ### Search engine
 
 -   A few short keywords
--   Answer: many single results
+-   Answer: many single results <br><br>
+-   Real-time information & news via internet
 :::
 
 ::: {.column width="60%"}
@@ -80,8 +81,14 @@ form pairs with the rest
 
 -   Long prompts with lots of details, context, examples & explanations
 -   Answer is summarised
+-   Answer is statistically probable: prototypical, average, generalized
+-   Generalizes across time, no real time-access
 :::
 :::::
+
+::: notes
+LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (brainstorming, managing projects, creating documents...)
+:::
 
 ## General tips
 
@@ -92,6 +99,10 @@ form pairs with the rest
 -   Use it for the first 80% of your tasks
 -   Use microphone & headphones and actually talk!
 -   Work on your prompts!
+
+::: notes
+Now I want to go through some of these points in more detail with you.
+:::
 
 ## Voice Control
 
@@ -115,6 +126,29 @@ form pairs with the rest
 -   Microphone to record, stop to transcribe
 :::
 :::::
+
+## 
+
+## Using it often: Everyday life ideas
+
+-   [**Recipes**](https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243): Suggestions based on existing ingredients
+-   **Travel planning**: Individual recommendations for city trips
+-   **Shopping lists** ([vegetable curry](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170), [weekly meal plan](https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614), [scientific workshop](https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63))
+-   **Household**: [Stain](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0) or [smell](https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e) removal tips (example)
+-   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
+-   [**Mindfulness meditation**](https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25) guide (example not found anymore)
+-   Personalized fitness plan (example not found anymore)
+-   Finding a [web hosting](https://chatgpt.com/share/67166a6e-772c-800b-9da7-67148e1f9c51) service
+
+::: notes
+example for mindfulness and fitness plan not found anymore, complete with better ideas if I have time
+:::
+
+## 5 minutes exercise
+
+-   Pick one of the ideas, and try it out.
+
+-   Use voice control to be quicker.
 
 ## Effective Prompting
 
@@ -147,18 +181,7 @@ form pairs with the rest
 -   Tell it to wait for further input
 -   Upload 2 emails of you as writing style examples
 
-## Ideas for using it often: Everyday
-
--   Recipes\*\*: Suggestions based on existing ingredients ([example](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
-    -   Customise ([example less effort](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
--   **Travel planning**: Individual recommendations for city trips
--   Shopping lists\*\*: Schnitzels and goulash for 4 people ([example weekly meal plan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
--   **Household**: Stain removal tips ([example](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
--   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
--   Mindfulness meditation guide
--   Play city, country river
-
-## Ideas for using it often: Everyday 2
+## Ideas for using it at work
 
 -   **Summarise long documents**: Upload link or file
     -   Instructions from camera, microwave, light panels etc.
@@ -167,29 +190,17 @@ form pairs with the rest
 -   Coaching for important career decisions
 -   Recommendations for jobs/positions/roles based on my CV
 
-------------------------------------------------------------------------
-
-## Ideas for academic work
-
--   Suggest outline/structure for a presentation
--   Feedback on presentations: Upload slide(s)
--   Overview of new topic area & brainstorming
--   Texts: revise, summarise, shorten
--   Write first draft of a text based on notes
--   Write in your own style: Upload paper
--   Surveys, e.g. develop & test MC questions, feedback on comprehensibility
-
-------------------------------------------------------------------------
+# Hallucinations
 
 ## Hallucinations
 
 -   LLMs invent data that doesn't exist
-    -   Why? Statistical language prediction
-    -   Trained to give an answer, not to be truthful.
+-   Why? Statistical language prediction.
+-   Trained to give an answer, not to be truthful.
+-   Does not have fact knowledge or real-time access.
+-   Cannot reflect on its own processes
 -   New models are much better, but this will continue to happen
--   What to do?
-
-------------------------------------------------------------------------
+-   Can sound very plausible & be hard to recognize
 
 ## Strategies for verification
 
@@ -353,9 +364,89 @@ knitr::include_graphics("images/gpt_builder.png")
     -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
 -   NotebookLM: Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant)
 
-# Ethics
+# Scientific Work
 
-# Significance for the future
+## Ideas for academic work
+
+-   Suggest outline/structure for a presentation
+-   Feedback on presentations: Upload slide(s)
+-   Overview of new topic area & brainstorming
+-   Texts: revise, summarise, shorten
+-   Write first draft of a text based on notes
+-   Write in your own style: Upload paper
+-   Surveys, e.g. [develop & test MC questions](https://chatgpt.com/share/67166062-c0e4-800b-b018-07562fc3819d), [check comprehensibility](https://chatgpt.com/share/6716608a-2044-800b-9461-c7508b2912b4), [answer options](https://chatgpt.com/share/67166a29-9330-800b-b041-41c1b9554e8c)
+
+::: notes
+survey item to be updated, new conversation with chatgpt necessary
+:::
+
+## Brainstorming:
+
+-   [Journalist interview questions](https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f)
+
+## Brainstorming
+
+-   [Application: Future research directions](https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea) (second half of chat)
+    -   What does research on why people donate show? Please include research from Lucius Caviola, Stefan Schubert, and their collaborators.
+    -   Have any interventions to increase donations, or get more people to donate, emerged from this research?
+    -   What are the most important open questions in psychology regarding how to foster prosocial behavior and cooperation?
+    -   What is a concrete experiment that you would do to investigate prosocial behavior, for example donations? Which design, which experimental groups, or which psychological measures would you use?
+
+## Writing
+
+-   Providing your paper, the r[eviewer requests](https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464) for rewriting, let it rephrase
+
+## Literature search
+
+-   Dimensions AI: with scientific sources ([Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c))
+
+-   Summarizing a paper based on [Zotero note example](https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8)
+
+-   Discussion about [social media & mental health](https://chatgpt.com/share/671668f9-c280-800b-83ef-0e591c1200ca)
+
+-   Exploring a completely new topic (first half of chat, sleep training effects)
+
+## Applications/Letters
+
+-   [Recommendation letter](https://chatgpt.com/share/67166d34-1fa8-800b-ba58-0bc6da8dea1b)
+
+-   Refining [cover letter & teaching statement](https://chatgpt.com/share/67166cc1-a2bc-800b-ad9f-28eb8b5078d9)
+
+# Personal coaching
+
+## Career decisions 
+
+-   Personal example:
+
+    -   decision around leaving academia (long-term) &
+
+    -   Accepting an invitation to give a job talk as assistant professor (short-term)
+
+    ::: notes
+    The conversation:
+
+    <https://chatgpt.com/share/671662d7-5258-800b-bc6b-689f263dbe9e>
+    :::
+
+## My conversation with an ChatGPT coach  {.scrollable}
+
+-   Context: background, my values and where they (don't) fit with academia, what I like about academia, what is difficult for me, what kind of work-life balance I want in the future, how I want to feel in my next job, which aspects I want it to have, my fears about both paths, why I have not managed to make the decision so far... (\~650 words)
+
+-   Explicit instruction & role: "You are an encouraging and empathetic coach, who helps me take this decision that feels like one of the biggest in my life so far. Don't shy away from being directive and giving advice. "
+
+-   What would you do if you had to decide for me?
+
+-   What are opportunities outside academia where my skills are valued? Which types of roles? Which companies?
+
+-   I also have to make a decision today, without any time to explore other things, about whether I accept the invitation for the interview. What would you do there? Accept or not? Please give a recommendation for a decision, yes or no.
+
+-   CV upload plus: The list of job roles and industry you gave me above was also very useful. Could you adapt the list so it is more personalized after reading my CV and my publication list? I have attached them in a document.
+
+-   It's also important that I can work while living in Vienna, I do not want to move. I prefer working on site. Would you make any adjustments to this list with this knowledge?
+
+-   Please, adjust the list again and include only roles outside of academia that fit me. Can you name specific companies in Vienna? If yes, include them in the list. Also, about the data science roles, I am unsure if they fit well. I am a psychologist who knows to code in R and is really good at statistics. I understand Machine Learning, but have not worked with large datasets myself. I have not written any larger ML project code myself, but worked on one with a Data Science student. What do you think about that?
+
+## Significance for the future
 
 -   The role of AI technologies such as ChatGPT will continue to grow
 -   Nature of many jobs will change
@@ -369,6 +460,7 @@ knitr::include_graphics("images/gpt_builder.png")
 -   2 [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
     -   [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
     -   [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
+-   Intrenion.com: videos and ChatGPT prompt course notes
 -   [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/): Useful terms
 
 ## Staying up to date
@@ -378,7 +470,7 @@ knitr::include_graphics("images/gpt_builder.png")
 ### Newsletters
 
 -   [One useful thing](https://www.oneusefulthing.org/) (E. Mollick)
--   AI compiled: [There's an AI for that](https://theresanaiforthat.com/)
+-   Intrenion
 
 ### Social Media
 
