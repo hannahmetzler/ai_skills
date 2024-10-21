@@ -12,18 +12,33 @@ and their strengths, and discuss the most important ethical questions around usi
 
 ## Preparation before the skills training: 
 
-1) Please create user accounts on the following platforms:
+### Chatbot Access: Your Options
 
-- [ChatGPT](http://chat.openai.com)  
-- [Claude.ai](http://Claude.ai)  
-- [Poe.com](http://Poe.com)
+For the workshop exercises, we recommend having access to a pro/plus version of one of the best chatbots:
 
-2) Also install the ChatGPT app on your phone, and on your laptop if you are using a MacBook.
+* **Option 1: [ChatGPT](http://chat.openai.com) Plus (Recommended)** To fully participate in the exercises and continue applying what you learn, consider a ChatGPT Plus plan, starting the day of or before the training. It's €24 for a month, with the option to cancel before the renewal date.
 
-3) Regarding access to chat bots for during and after the skills training, you have one of three options: 
+   To get ChatGPT Plus:
 
-- Option 1: We highly recommend that you pay for a [ChatGPT](http://chat.openai.com) Plus plan starting from the day before our skills training. This will allow you to take full advantage of the exercises in the course, and to continue integrating what you’ve learnt in your everyday work. It costs $24 per month, and you can cancel it up to 24h before the renewal date. That is, you only need to pay for one month if you decide you don’t need it after trying for a few days. To get a the Plus plan, first create an account on www.chat.openai.com, then upgrade to Plus (under your account symbol in the top right corner). 
+  1. Sign up at chat.openai.com.  
+  2. Upgrade to Plus (under your account symbol in the top right corner).  
+  3. For privacy: Go to Settings → Data Controls → Improve model for everyone: off.  
+  4. Download the ChatGPT app on your phone. If you're using a MacBook, install it on your laptop as well.  
+  5. If you're on Windows or Linux, you can install the Chrome extension [Voice Up](https://voicecontrol.chat/).
 
-- Option 2: If you mainly use or plan to use LLM chatbots for writing or do not want to “share” data with the company behind ChatGPT (OpenAI), we recommend that you instead pay for a month of access to [Claude.ai](http://Claude.ai). Claude does not use the text you enter in the chatbot for further model training (except if there are safety concerns with your requests). 
+* **Option 2: [Claude](http://Claude.ai)** If you primarily use LLMs for writing and value a strong writing style, Claude.ai is a good alternative. It's approximately €22 for a month, with the option to cancel before the renewal date. Claude.ai prioritizes privacy and doesn't use your input for model training (except for safety concerns).
 
-- Option 3: If you decide not to pay for a paid plan for one month, we’ll have a few accounts sponsored by the LBG Career Center that will allow you to do all exercises in the course in pairs of two. You’ll get most out of the training if you do the exercises alone, but together will definitely be fun too\! 
+* **Option 3: [Google Gemini](https://gemini.google/advanced/) Pro (Free Trial)** Google offers a free trial of Gemini Pro for one month. If you cancel before the trial ends, there's no cost.
+
+We'll also have some ChatGPT accounts available for shared use, courtesy of the LBG Career Center. While you'll get the most out of the training if you do the exercises alone, working together can also be fun\!
+
+### Files to bring (if you have them)
+
+Having these files available on your laptop will help you maximize learning in the workshop:
+
+* A motivation letter and CV from a previous application  
+* Your LinkedIn profile  
+* Your own research papers or your Master's/PhD thesis  
+* Around 20 PDF research papers (any topic related to your research is fine)
+
+Looking forward to seeing you at the workshop\!
