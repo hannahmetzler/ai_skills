@@ -1,8 +1,8 @@
 ---
-title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-subtitle: "Skill training LBG Career Center"
-author: "Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_skills/"
-date: "October 29 2024"
+title: "Introduction to Large Language Models (LLMs)"
+subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+author: "Konstantin Hebenstreit"
+date: "October 22 2024"
 format: 
   revealjs: 
     transition: "slide"
@@ -20,19 +20,6 @@ format:
 editor: source
 ---
 
-# Welcome slides
-
-## Who are we?
-
-## Who are you?
-
-## What we'll do today
-
-- Timeplan
-
-# Introduction (Konstantin)
-
-
 ## AI and Science
 
 ::::: columns
@@ -47,17 +34,19 @@ editor: source
 :::
 :::::
 
-## AI
+## How does AI work?
+<br>
+<br>
 
 ::::: columns
 ::: {.column #vcenter width="20%" align="center"}
-Inputs
+Input
 :::
 ::: {.column #vcenter width="10%" align="center"}
 →
 :::
 ::: {.column #vcenter width="25%" align="center"}
-AI-Model
+AI Model
 :::
 ::: {.column #vcenter width="10%" align="center"}
 →
@@ -68,6 +57,8 @@ Output
 :::::
 
 ## AI
+<br>
+<br>
 
 ::::: columns
 ::: {.column #vcenter width="20%" align="center"}
@@ -77,7 +68,7 @@ Output
 →
 :::
 ::: {.column #vcenter width="25%" align="center"}
-Image classification
+Image Classification Model
 :::
 ::: {.column #vcenter width="10%" align="center"}
 →
@@ -88,6 +79,8 @@ Lemon
 :::::
 
 ## LLMs
+<br>
+<br>
 
 ::::: columns
 ::: {.column #vcenter width="20%" align="center"}
@@ -97,7 +90,7 @@ Text
 →
 :::
 ::: {.column #vcenter width="25%" align="center"}
-Language Model
+Large Language Model
 :::
 ::: {.column #vcenter width="10%" align="center"}
 →
@@ -109,6 +102,8 @@ Text
 
 
 ## LLMs
+<br>
+<br>
 
 ::::: columns
 ::: {.column #vcenter width="15%" align="center"}
@@ -128,7 +123,35 @@ Text
 :::
 :::::
 
+## LLMs: Autocomplete
+<br>
+<br>
+
+::::: columns
+::: {.column #vcenter width="15%" align="center"}
+<small>"The actress that played Rose in the 1997 film Titanic is named..."</small>
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="40%" align="center"}
+![](images/tunable_parameters.png)
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="15%" align="center"}
+_Predicts the next word_
+:::
+:::::
+
+## Next word prediction
+
+![](images/next_word_prediction.png)
+
 ## Text representation
+<br>
+<br>
 
 ::::: columns
 ::: {.column width="40%" align="center"}
@@ -156,9 +179,9 @@ Tokens = "Subwords"
 
 :::::
 
-
-
 ## Text representation
+<br>
+<br>
 
 ::::: columns
 ::: {.column width="40%" align="center"}
@@ -180,68 +203,61 @@ Word Embedding
 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789,
 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972,
 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286,
--0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830, -0.5211, 0.4406,
-0.5527, -0.4477, -0.5722, -0.2245, 0.2804, -0.7130, 0.0882, 0.5521, 0.1541, 0.5902,
-0.4780, 0.2184, 0.5483, 0.6220, 0.2904, 0.4306, -0.6218, -0.2375, 0.9270, 0.4768,
-0.7297, -0.1043, 0.7881, 0.4285, 0.1069, -0.8241, 0.5683, 0.5897, 0.4607, 0.4581,
--0.7885, -0.6630, 0.2964, -0.7604, -0.9701, 0.0876, 0.6447, -0.8935, 0.5315, 0.7490]
+-0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830]
 </small>
 :::
 :::::
 
-<!-- ## Text
+## Representing the meaning of words
 
 ::::: columns
-::: {.column width="40%" align="center"}
-Words
+::: {.column width="40%"}
+**Word embeddings**
 
-<small>
-Even though the sound of it is<br> something quite atrocious, if you<br> say it loud enough, you’ll always<br> sound precocious, <br>Supercalifragilisticexpialidocious!
-</small>
-
-<small>
-*Marry Poppins*
-</small>
+```{r}
+knitr::include_graphics("images/wordembeddings.svg")
+```
 :::
 
-::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
-→
-:::
-::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
-Tokens
+::: {.column width="56%"}
+**Contextual word embeddings**
 
-![](images/tokenzined_sentence.png)
+-   Context (before and after the word) taken into account
+-   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit?
 
-::: {.column width="40%" align="center" .fragment data-fragment-index="2"}
-= "Subwords"
+```{r, fig.align="center", out.width=250}
+knitr::include_graphics("images/apple_context.png")
+```
 :::
 :::::
-
----
-
-## Text 2
-
-::::: columns
-::: {.column width="40%" align="center"}
-Tokensabc
-
-![](images/tokenzined_sentence.png)
-:::
-
-::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
-→
-:::
-::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
-Embeddings
-
-![](images/tokenzined_sentence.png)
-:::
-::::: -->
-
-
-
 
 ## What is an LLM, actually?
+
+- **Large Language Models (LLMs)**: Deep learning neural networks built to understand and generate text
+- Trained on **vast amounts of text** from diverse sources (Wikipedia, social media, books, podcasts, etc.)
+- Convert text data into **statistical patterns** to predict words and sentences
+
+
+## Pros and Cons of LLMs
+
+### Pros
+- Generates coherent, human-like text
+- Vast knowledge embedded in its parameters
+- Useful for content generation, summarization, and translation
+
+### Cons
+- Cannot think before responding
+- Struggles with logical reasoning, often makes incorrect assumptions
+- Can produce inaccurate or hallucinated information
+
+## Thank You for Your Attention!
+<br>
+<br>
+**Questions? I’m happy to answer!**
+
+
+
+<!-- ## What is an LLM, actually?
 
 -   Large Language Models: Deep Learning Neural Networks trained on text
 -   Advanced Language models that process huge amounts of text
@@ -272,27 +288,7 @@ knitr::include_graphics("images/neuralnet.svg")
 One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
 :::
 
-## How are words represented numerically?
 
-::::: columns
-::: {.column width="40%"}
--   Vector embeddings <br> = word embeddings
-
-```{r}
-knitr::include_graphics("images/wordembeddings.svg")
-```
-:::
-
-::: {.column width="56%"}
--   LLMs: contextual word embeddings
--   Kontext (vor und nach dem Wort) wird mit repräsentiert
--   [Beispiel](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac oder Frucht?
-
-```{r, fig.align="center", out.width=250}
-knitr::include_graphics("images/apple_context.png")
-```
-:::
-:::::
 
 ## How are LLMs trained? - update
 
@@ -703,4 +699,4 @@ Evaluating LLMs - what is trustworthy - [Chatbot Arena](https://chat.lmsys.org/)
 Mixture of experts - very promising: another architecture, e.g. Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data
 
 Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685 tps: tokens per second
-:::
+::: -->
