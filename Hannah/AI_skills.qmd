@@ -396,6 +396,8 @@ survey item to be updated, new conversation with chatgpt necessary
 
 -   Providing your paper, the r[eviewer requests](https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464) for rewriting, let it rephrase
 
+-   [Feeding it with my papers](https://chatgpt.com/share/67166dd7-d494-800b-a652-1f0bb114d354), digital scientific twin:
+
 ## Literature search
 
 -   Dimensions AI: with scientific sources ([Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c))
@@ -423,9 +425,7 @@ survey item to be updated, new conversation with chatgpt necessary
     -   Accepting an invitation to give a job talk as assistant professor (short-term)
 
     ::: notes
-    The conversation:
-
-    <https://chatgpt.com/share/671662d7-5258-800b-bc6b-689f263dbe9e>
+    The conversation: <https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5>
     :::
 
 ## My conversation with an ChatGPT coach  {.scrollable}
