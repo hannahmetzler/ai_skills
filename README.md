@@ -14,7 +14,7 @@ and their strengths, and discuss the most important ethical questions around usi
 
 - [Welcome & course overview](https://hannahmetzler.eu/AI_skills/Hannah/#/title-slide)
 - [Introduction to LLMs](https://hannahmetzler.eu/AI_skills/Konstantin/#/title-slide)
-- [The Basics: How to talk to an LLM Chatbot?](https://hannahmetzler.eu/AI_skills/Hannah/the-basics-how-to-talk-to-an-llm-chatbot)
+- [The Basics: How to talk to an LLM Chatbot?](https://hannahmetzler.eu/AI_skills/Hannah/#/the-basics-how-to-talk-to-an-llm-chatbot)
 
 ## Preparation before the skills training: 
 
