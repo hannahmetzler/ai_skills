@@ -93,6 +93,20 @@ All Transformer models (a model architecture for efficient computing):
 -   **Claude Sonnet 3.5** (Anthropic)
 -   **Bard (Gemini)** (Google)
 
+## Strengths of different models - update
+
+-   [**ChatGPT-4**](https://chat.openai.com/) (Open AI): multimodal interactions, 8.000 tokens (more with API)
+-   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, longer context window (200.000 tokens)
+-   [**Gemini**](https://gemini.google.com/app) (Google): ??? (Search capability and database, integration with Google services), 100.000 tokens
+
+Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
+
+
+::: notes
+multimodal interactions with ChatGPT described on next slide
+:::
+
+
 ## Multimodal ChatGPT interactions
 
 **(Some also work with Claude)**
@@ -106,13 +120,9 @@ All Transformer models (a model architecture for efficient computing):
 - Data analysis (& Claude)
 - Execute code
 
-## Strengths of different models - update
+## Slide on Chatbot Arena?
 
--   [**ChatGPT-4**](https://chat.openai.com/) (Open AI): multimodal interactions, 8.000 tokens (more with API)
--   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, longer context window (200.000 tokens)
--   [**Gemini**](https://gemini.google.com/app) (Google): ??? (Search capability and database, integration with Google services), 100.000 tokens
 
-Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
 ## Different ChatGPT versions
 
@@ -129,7 +139,6 @@ Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 
 ::: 
 
-## Slide on Chatbot Arena?
 
 
 
