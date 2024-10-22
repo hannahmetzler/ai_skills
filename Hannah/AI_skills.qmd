@@ -194,13 +194,14 @@ example for mindfulness and fitness plan not found anymore, complete with better
 
 ## Hallucinations
 
--   LLMs invent data that doesn't exist
--   Why? Statistical language prediction.
+-   LLMs invent facts/sources that don't exist.
+-   Why? Statistical patterns in training data
+-   Predicting the next most likely word.
+-   Likely = plausible & hard to recognize
 -   Trained to give an answer, not to be truthful.
 -   Does not have fact knowledge or real-time access.
 -   Cannot reflect on its own processes
--   New models are much better, but this will continue to happen
--   Can sound very plausible & be hard to recognize
+-   New models much better, but problem is built in
 
 ## Strategies for verification
 
@@ -211,7 +212,7 @@ example for mindfulness and fitness plan not found anymore, complete with better
     -   Is this correct? Can you please back this up with studies?
 -   Sources: use Perplexity
 
-## At work: ideas
+## Collection of research use cases
 
 -   Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
 -   Summarise & record workshop & discussions: Run mic
@@ -222,10 +223,7 @@ example for mindfulness and fitness plan not found anymore, complete with better
     -   e.g. compare 2 university annual reports, create a table of differences
 -   Have transcripts of interviews created
 
-## In the work: Ideas 2
-
--   Translation [www.deepl.com](www.deepl.com)
--   Productivity coach: screenshot of a diary for a week, or several weeks
+## Ideas for work
 
 ## Emotion prompts
 
@@ -363,6 +361,9 @@ knitr::include_graphics("images/gpt_builder.png")
     -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
     -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
 -   NotebookLM: Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant)
+-   Translation [www.deepl.com](www.deepl.com)
+
+## 
 
 # Scientific Work
 
@@ -414,9 +415,33 @@ survey item to be updated, new conversation with chatgpt necessary
 
 -   Refining [cover letter & teaching statement](https://chatgpt.com/share/67166cc1-a2bc-800b-ad9f-28eb8b5078d9)
 
-# Personal coaching
+# AI as a Coach
 
-## Career decisions 
+## AI as a coach
+
+::: {.columns}
+
+::: {.column width="43%"}
+### Topics
+
+- Career decisions
+- Productivity coach: screenshot of a diary for a week, or several weeks
+- Fitness coach
+- Nutrition coach
+:::
+
+::: {.column width="43%"}
+### Why?
+
+- For free
+- Radical honesty - no shame
+- Going into detail
+- Asking for advice based on my input
+:::
+
+:::
+
+## Career decisions
 
 -   Personal example:
 
@@ -428,7 +453,7 @@ survey item to be updated, new conversation with chatgpt necessary
     The conversation: <https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5>
     :::
 
-## My conversation with an ChatGPT coach  {.scrollable}
+## My conversation with an ChatGPT coach {.scrollable}
 
 -   Context: background, my values and where they (don't) fit with academia, what I like about academia, what is difficult for me, what kind of work-life balance I want in the future, how I want to feel in my next job, which aspects I want it to have, my fears about both paths, why I have not managed to make the decision so far... (\~650 words)
 
