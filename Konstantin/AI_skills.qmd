@@ -1,8 +1,8 @@
 ---
-titel: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-subtitle: "Skill training LBG Career Center"
-author: "Hannah Metzler <br> Folien: https://hannahmetzler.eu/AI_skills/"
-date: "October 29 2024"
+title: "Introduction to Large Language Models (LLMs)"
+subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+author: "Konstantin Hebenstreit"
+date: "October 22 2024"
 format: 
   revealjs: 
     transition: "slide"
@@ -20,23 +20,218 @@ format:
 editor: source
 ---
 
-# Welcome slides
+## AI and Science
 
-## Who are we?
+::::: columns
+::: {.column width="47%"}
+![](images/ai_scientist_news.png)
+<small>*Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-the-ai-scientist)*</small>
+:::
 
-## Who are you?
+::: {.column width="47%" .fragment}
+![](images/comparing_numbers.png)
 
-## What we'll do today
+:::
+:::::
 
-- Timeplan
+## How does AI work?
+<br>
+<br>
 
-# Introduction (Konstantin)
+::::: columns
+::: {.column #vcenter width="20%" align="center"}
+Input
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="25%" align="center"}
+AI Model
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="20%" align="center"}
+Output
+:::
+:::::
+
+## AI
+<br>
+<br>
+
+::::: columns
+::: {.column #vcenter width="20%" align="center"}
+![](https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg)
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="25%" align="center"}
+Image Classification Model
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="20%" align="center"}
+Lemon
+:::
+:::::
+
+## LLMs
+<br>
+<br>
+
+::::: columns
+::: {.column #vcenter width="20%" align="center"}
+Text
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="25%" align="center"}
+Large Language Model
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="20%" align="center"}
+Text
+:::
+:::::
+
+
+## LLMs
+<br>
+<br>
+
+::::: columns
+::: {.column #vcenter width="15%" align="center"}
+Text
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="40%" align="center"}
+![](images/tunable_parameters.png)
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="15%" align="center"}
+Text
+:::
+:::::
+
+## LLMs: Autocomplete
+<br>
+<br>
+
+::::: columns
+::: {.column #vcenter width="15%" align="center"}
+<small>"The actress that played Rose in the 1997 film Titanic is named..."</small>
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="40%" align="center"}
+![](images/tunable_parameters.png)
+:::
+::: {.column #vcenter width="10%" align="center"}
+→
+:::
+::: {.column #vcenter width="15%" align="center"}
+_Predicts the next word_
+:::
+:::::
+
+## Next word prediction
+
+![](images/next_word_prediction.png)
+
+<!-- ## Text representation
+<br>
+<br>
+
+::::: columns
+::: {.column width="40%" align="center"}
+Words
+
+<small>
+Even though the sound of it is<br> something quite atrocious, if you<br> say it loud enough, you’ll always<br> sound precocious, <br>Supercalifragilisticexpialidocious!
+</small>
+
+<small>
+*Marry Poppins*
+</small>
+
+:::
+
+::: {.column width="10%" align="center".fragment data-fragment-index="1"}
+→
+:::
+
+::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
+Tokens = "Subwords"
+
+![](images/tokenzined_sentence.png)
+:::
+
+::::: -->
+
+
+## Representing the meaning of words
+
+::::: columns
+::: {.column width="40%"}
+**Word embeddings**
+
+```{r}
+knitr::include_graphics("images/wordembeddings.svg")
+```
+:::
+
+::: {.column width="56%"}
+**Contextual word embeddings**
+
+-   Context (before and after the word) taken into account
+-   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit?
+
+```{r, fig.align="center", out.width=250}
+knitr::include_graphics("images/apple_context.png")
+```
+:::
+:::::
 
 ## What is an LLM, actually?
 
--   Large Language Models: Neural networks = Deep Learning models trained on text
+- **Large Language Models (LLMs)**: Deep learning neural networks built to understand and generate text
+- Trained on **vast amounts of text** from diverse sources (Wikipedia, social media, books, podcasts, etc.)
+- Convert text data into **statistical patterns** to predict words and sentences
+
+
+## Pros and Cons of LLMs
+
+- Generates coherent, human-like text
+- Vast knowledge embedded in its parameters
+- Useful for content generation, summarization, and translation
+
+- Cannot think before responding
+- Struggles with logical reasoning, often makes incorrect assumptions
+- Can produce inaccurate or hallucinated information
+
+## Thank You for Your Attention!
+<br>
+<br>
+**Questions? I’m happy to answer!**
+
+
+
+<!-- ## What is an LLM, actually?
+
+-   Large Language Models: Deep Learning Neural Networks trained on text
 -   Advanced Language models that process huge amounts of text
--   Trained with huge amounts of text data from the Internet (Wikipedia, social media, online media, books, literature, videos, films, YouTube, podcasts...)
+-   Trained with text data from the Internet (Wikipedia, social media, online media, books, literature, videos, films, YouTube, podcasts...)
 -   Turn it into statistical word and sentence predictions
 -   Can provide detailed and context-rich answers
 
@@ -63,27 +258,7 @@ knitr::include_graphics("images/neuralnet.svg")
 One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
 :::
 
-## How are words represented numerically?
 
-::::: columns
-::: {.column width="40%"}
--   Vector embeddings <br> = word embeddings
-
-```{r}
-knitr::include_graphics("images/wordembeddings.svg")
-```
-:::
-
-::: {.column width="56%"}
--   LLMs: contextual word embeddings
--   Kontext (vor und nach dem Wort) wird mit repräsentiert
--   [Beispiel](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac oder Frucht?
-
-```{r, fig.align="center", out.width=250}
-knitr::include_graphics("images/apple_context.png")
-```
-:::
-:::::
 
 ## How are LLMs trained? - update
 
@@ -461,7 +636,6 @@ knitr::include_graphics("images/gpt_builder.png")
 ::: column
 - Ethan Mollick
   - Newsletter: [One useful thing](https://www.oneusefulthing.org/)
-  - [There's an AI for that](https://theresanaiforthat.com/)
   - On [LinkedIn](https://www.linkedin.com/in/emollick/)
   
 :::
@@ -472,9 +646,16 @@ knitr::include_graphics("images/gpt_builder.png")
 :::
 ::::
 
-## Resources
+## Resources 2
 
-### Deep Dives & Big Picture
+:::: columns
+::: column
+- Youtube for technical understanding ["3Blue1Brown"](https://www.youtube.com/watch?v=wjZofJX0v4M)
+
+:::
+::::
+
+## Deep Dives & Big Picture
 
 - [Co-Intelligence: Living and Working with AI ](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 - Read papers
@@ -488,4 +669,4 @@ Evaluating LLMs - what is trustworthy - [Chatbot Arena](https://chat.lmsys.org/)
 Mixture of experts - very promising: another architecture, e.g. Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data
 
 Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685 tps: tokens per second
-:::
+::: -->
