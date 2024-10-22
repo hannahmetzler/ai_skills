@@ -30,7 +30,7 @@ editor: source
 -   Turn it into statistical word and sentence predictions
 -   Can provide detailed and context-rich answers
 
-## Neural networks
+## Neural networks [Maybe incluce this slide Konstantin?]
 
 -   Multiple layers of "neurons"
 -   Deep learning
@@ -75,7 +75,7 @@ knitr::include_graphics("images/apple_context.png")
 :::
 :::::
 
-## How are LLMs trained? - update
+## How are LLMs trained? - to do: update
 
 All Transformer models (a model architecture for efficient computing):
 
@@ -85,15 +85,12 @@ All Transformer models (a model architecture for efficient computing):
     -   "Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved."\
     -   TRUE/FALSE als Feedback
     
-## Terms to explain
 
-- context window
-- token
 
 ## Current top models - To do: update
 
 -   **ChatGPT-4o** (Open AI)
--   **Claude** (Anthropic)
+-   **Claude Sonnet 3.5** (Anthropic)
 -   **Bard (Gemini)** (Google)
 
 ## Multimodal ChatGPT interactions
@@ -149,11 +146,14 @@ Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 | Elicit     | 1000 tokens/month                 | \$10-12      |
 
 ::: notes
-To Do: update requests/limits
+To Do: update requests/limits, maybe just write "limited" under free access rather than the details?
 :::
 
 
 ## Discussion 
 
-- In small groups: Which challenges do you encounter when using LLMs for your work?
+- In groups of 3 (10 minutes): 
+  - Which problems do you encounter when using LLMs? 
+  - What works well?
+- 5 minutes for sharing most important points with the whole group
 
