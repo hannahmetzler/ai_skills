@@ -240,12 +240,10 @@ knitr::include_graphics("images/apple_context.png")
 
 ## Pros and Cons of LLMs
 
-### Pros
 - Generates coherent, human-like text
 - Vast knowledge embedded in its parameters
 - Useful for content generation, summarization, and translation
 
-### Cons
 - Cannot think before responding
 - Struggles with logical reasoning, often makes incorrect assumptions
 - Can produce inaccurate or hallucinated information
