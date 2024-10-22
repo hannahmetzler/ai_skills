@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Large Language Models (LLMs)"
+title: "How do Large Language Models (LLMs) work?"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 author: "Konstantin Hebenstreit"
 date: "October 22 2024"
