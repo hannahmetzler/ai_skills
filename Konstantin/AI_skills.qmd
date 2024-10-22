@@ -12,6 +12,7 @@ format:
     incremental: false
     aspect-ratio: 16:9
     slide-number: true
+    speakerNotes: true
 # title-slide-attributes:
 # data-background-image: images/
 # data-background-size: cover
@@ -149,7 +150,30 @@ _Predicts the next word_
 
 ![](images/next_word_prediction.png)
 
-<!-- ## Text representation
+
+## In technical words
+
+-   Deep Learngin: Multiple layers of "neurons"
+-   Linear regressions calculate "weights" for the connections
+
+::::: columns
+::: {.column width="47%"}
+-   Input layer: Quantitative representation of sentence
+-   Output layer: One-hot encoding
+:::
+
+::: {.column width="47%"}
+```{r, echo=FALSE}
+knitr::include_graphics("images/neuralnet.svg")
+```
+:::
+:::::
+
+::: notes
+One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
+:::
+
+## Text representation
 <br>
 <br>
 
@@ -177,7 +201,37 @@ Tokens = "Subwords"
 ![](images/tokenzined_sentence.png)
 :::
 
-::::: -->
+:::::
+
+
+## Text representation
+<br>
+<br>
+
+::::: columns
+::: {.column width="40%" align="center"}
+Word/Token
+
+<!-- ![](images/tokenzined_sentence.png) -->
+<br>
+<span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even</span> ...
+:::
+
+::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
+→
+:::
+::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
+Word Embedding
+<small>
+[-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540,
+0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710,
+0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789,
+0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972,
+0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286,
+-0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830]
+</small>
+:::
+:::::
 
 
 ## Representing the meaning of words
@@ -210,7 +264,110 @@ knitr::include_graphics("images/apple_context.png")
 - Convert text data into **statistical patterns** to predict words and sentences
 
 
-## Pros and Cons of LLMs
+## How are LLMs trained?
+
+**GPT**:
+**G**enerative **P**re-trained **T**ransformer models (a model architecture for efficient computing):
+
+- Generative: Produces/Generates Text
+- Pre-trained: on large text corpus.
+Autoregressive:
+Always predicts the next word of a text.
+Does not need any annotation.
+- Transformer: type
+
+
+## Current top models
+
+-   **ChatGPT-4o and o1** (Open AI)
+-   **Claude 3.5 Sonnet** (Anthropic)
+-   **Gemini 1.5 pro** (Google)
+
+best non-proprietary:
+-   **Llama 3.1** (Meta)
+
+## Strengths of different models and interfaces
+
+-   [**ChatGPT-4o**](https://chat.openai.com/) (Open AI): web search, code execution, multimodal interactions, custom GPTs with document upload. (128,000 tokens)
+-   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, beautiful text rendering, custom projects. (200.000 tokens)
+-   [**Gemini 1.5 pro**](https://gemini.google.com/app) (Google): web search, code execution, multimodal interactions, integration with Google services, custom models. (up to 2 million tokens)
+
+
+::: notes
+multimodal interactions with ChatGPT described on next slide
+:::
+
+
+## Multimodal ChatGPT interactions
+
+**(Some also work with Claude)**
+
+- File Uploads (& Claude)
+- Browse
+- Discovering and using custom GPTs (& Claude: projects)
+- Upload & analyze images (& Claude)
+- Create images with DALL-E
+- Audio: Talking/Listening
+- Data analysis (& Claude)
+- Execute code
+
+Only Claude: Artifacts, formatting text and websites.
+
+## Chatbot Arena
+Human ratings of chatbot responses
+![](images/chatbot_arena.png)
+
+<small>
+Rank (UB): model's ranking compared to other models
+
+Rank (StyleCtrl): model's ranking with style control (lenght, formatting, etc.)
+</small>
+
+Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
+
+
+## Different ChatGPT versions
+
+- ChatGPT4: more resource intensive = expensive
+- ChatGPT4o: optimized to be faster and cheaper
+- ChatGPT-4o mini: every day tasks
+- o1-preview: thinks before it answers, for complex tasks
+    (no web search)
+
+<!-- - Only via API or special access plans:
+  - ChatGPT-4 Turbo: long context window (128.000 tokens)
+  - ChatGPT-3.5: less resource intense -->
+  
+::: footer
+[ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini)
+
+::: 
+
+
+## Access to models
+
+| model      | free access                       | costs /month |
+|------------|-----------------------------------|--------------|
+| ChatGPT    | GPT-4o mini, GPT4-o limited, limits for multimodal   | 24€          |
+| Claude   | 200 tokens/day                    | ca \$20      |
+| Gemini      | 1 month trial of paid version, <br> high usage limits in free version                   | 22€     |
+| Perplexity | 3 requests/day, 1000 tokens/month | \$17-20      |
+| Elicit     | 1000 tokens/month                 | \$10-12      |
+
+::: notes
+To Do: update requests/limits, maybe just write "limited" under free access rather than the details?
+:::
+
+
+## Discussion 
+
+- In groups of 3 (10 minutes): 
+  - Which problems do you encounter when using LLMs? 
+  - What works well?
+- 5 minutes for sharing most important points with the whole group
+
+
+<!-- ## Pros and Cons of LLMs
 
 - Generates coherent, human-like text
 - Vast knowledge embedded in its parameters
@@ -218,13 +375,7 @@ knitr::include_graphics("images/apple_context.png")
 
 - Cannot think before responding
 - Struggles with logical reasoning, often makes incorrect assumptions
-- Can produce inaccurate or hallucinated information
-
-## Thank You for Your Attention!
-<br>
-<br>
-**Questions? I’m happy to answer!**
-
+- Can produce inaccurate or hallucinated information -->
 
 
 <!-- ## What is an LLM, actually?
