@@ -11,14 +11,13 @@ format:
     aspect-ratio: 16:9
     slide-number: true
     title-slide: true  # This enables the title slide
+    speakerNotes: true
 # Optional background attributes for the title slide
 # title-slide-attributes:
 #   data-background-image: images/your_image.jpg
 #   data-background-size: cover
 #   data-background-opacity: "0.5"
 editor: source
-markdown: 
-  wrap: 72
 ---
 
 ## Who are we?
@@ -34,37 +33,31 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 ## Who are you?
 
 -   Scientific discipline & topic area
-
 -   One thing you have already used LLMs for
-
 -   If any: particular expectation or interests for today
 
 ## (Rough) plan for the day
 
 |               |                                |
 |---------------|--------------------------------|
-| 9h15 -  10h   | Introduction to LLMs           |
+| 9h15 -  10h   | Introduction to LLMs|
 | 10h - 11h     | Chatbot essentials & prompting strategies  |
 | 11h15 -  12h   | Customizing Chatbots  |
 | 12h -  12h45   | Chatbots in Research: Writing |
-| 12h45 – 13h45 | Lunch break                    |
+| 12h45 – 13h45 | Lunch break |
 | 13h45 - 15h15   | Different use cases in research        |
 | 15h30-16h    |Chatbots as coaches |
-| 16h-16h30    | Ethical considerations              |
-| 16h30 - 17h       | Resources, Questions, Closing round                  |
+| 16h-16h30    | Ethical considerations |
+| 16h30 - 17h | Resources, Questions, Closing round |
 
 ## Access to LLM chatbots for today
 
 -   Who has a paid account?
 -   Log in for 8 more accounts
 
-::: notes
-form pairs with the rest
-:::
-
 # Introduction to LLMs
 
-[Konstantin's slides](https://hannahmetzler.eu/AI_skills/Konstantin/)
+[Konstantin's slides](https://hannahmetzler.eu/ai_skills/Konstantin/)
 
 # The Basics: How to talk to an LLM Chatbot?
 
@@ -93,21 +86,34 @@ form pairs with the rest
 LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (brainstorming, managing projects, creating documents...)
 :::
 
-## General tips
+## General tips for working with Chatbots
 
--   Use it often and try it out!
--   Speak to it as if it was a person: "Talk into it"
--   Give feedback & engage in dialogue, performance improves very quickly
--   Spelling doesn't matter
--   Use it for the first 80% of your tasks
--   Use microphone & headphones and actually talk!
--   Work on your prompts!
+- There is no one "correct" way to prompt LLMs - we are all figuring this out together. Experiment!
+  - _This is the worst AI you will ever use._ [1]
+- Use it often and try it out on many different tasks. 
+  - _Always invite AI to the table._ [1]
+- Use it for the first 80% of your tasks (co-intelligence/ intern).
+- _Treat it like a person._ [1] But????!
 
-::: notes
-Now I want to go through some of these points in more detail with you.
+::: footer
+[1] Ethan Mollick in _Co-intelligence_.
 :::
 
-## Voice Control
+## "Treat it like a person" ?!
+
+- LLMs behave more like people than software/machines.
+- Speak to it as if it was a person (although it isn't one)
+- Talk into it: give it lots of context
+- Use microphone & headphones to actually talk.
+- Give it a persona
+- Give feedback & engage in dialogue - performance improves very quickly
+- Work on your prompts until you get useful output
+
+::: notes
+we'll now look at these points in more detail
+:::
+
+## Voice conversations
 
 -   In the ChatGPT App on Mac & Smartphones
 -   Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
@@ -130,70 +136,64 @@ Now I want to go through some of these points in more detail with you.
 :::
 :::::
 
-## 
+## Using it often: Everyday life ideas {.scrollable}
+
+-   [Recipes](https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243): Suggestions based on existing ingredients
+-  Shopping lists 
+    - [vegetable curry](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170), [weekly meal plan](https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614), [workshop](https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63)
+- [Concert suggestions](https://chatgpt.com/share/671906a2-24e8-800b-8cb3-502973eda6bb)
+-   [Personalized travel planning](https://chatgpt.com/share/6718fe33-b0e0-800b-ac0f-feffc0a6b341)
+-   Household: [Stain](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0) or [smell](https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e) removal, [houseplant care](https://chatgpt.com/share/671902f6-0e74-800b-919c-26ad4e102a9f)
+-   [Ideas for presents](https://chatgpt.com/share/671902aa-aa98-800b-b2cc-72b726281092)
+-   [Mindfulness meditation](https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25) guide
 
 ## Using it often: Everyday life ideas
 
--   [**Recipes**](https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243): Suggestions based on existing ingredients
--   **Travel planning**: Individual recommendations for city trips
--   **Shopping lists** ([vegetable curry](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170), [weekly meal plan](https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614), [scientific workshop](https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63))
--   **Household**: [Stain](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0) or [smell](https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e) removal tips (example)
--   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
--   [**Mindfulness meditation**](https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25) guide (example not found anymore)
--   Personalized fitness plan (example not found anymore)
+- Basic medical advice ([Ibuprofen vs. Paracetamol](https://chatgpt.com/share/671905fa-5fe8-800b-9adb-fc17d40ee6f7))
+- Summarizing a law on [chicken welfare](https://chatgpt.com/share/671903b1-46f0-800b-8e0b-2db2c0d0b33d)
+- Estimating prices (me selling my old [cello](https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928))
+-   Personalized [fitness plan](https://chatgpt.com/share/671904b2-7f44-800b-ad5f-1824a194e177)
 -   Finding a [web hosting](https://chatgpt.com/share/67166a6e-772c-800b-9da7-67148e1f9c51) service
-
-::: notes
-example for mindfulness and fitness plan not found anymore, complete with better ideas if I have time
-:::
 
 ## 5 minutes exercise
 
 -   Pick one of the ideas, and try it out.
 
--   Use voice control to be quicker.
+-   Experiment with using voice control. 
 
 ## Effective Prompting
 
 -   **Assign a persona or role**
     -   e.g., PhD student, journalist, psychologist
     -   Specify expertise level
--   **Provide Clear & Extensive Context**
-    -   Background of your request
-    -   Provide specific details
--   **Provide Specific Examples** (Emails, abstracts etc)
--   Describe constraints: what you don't want
+-   **Provide clear & extensive Context**
+    -   Purpose, background, specific details
+-   **Provide specific examples** 
+    - e.g. emails, abstracts, posts etc.
+-   **Describe constraints**: what you don't want
+    - e.g. vegetarian, no museums
 
 ## Effective Prompting
 
--   **Direct Questions & Instructions**
+-   **Direct questions & instructions**
     -   Clear and concise queries lead to better answers
--   **Start with a Clear Instruction**
+-   **Start with a clear instruction**
     -   e.g., "Help me draft an email to..."
--   **Specify the Desired Format**
+-   **Specify the desired format**
     -   Formal tone, length, structure (e.g., bullet points, paragraphs)
 -   **Provide feedback to improve the output**
 
-## Exercise: Email (20 minutes)
+## Exercise: Email (10 minutes)
 
 -   Choose an email you need to write soon
 -   Talk to ChatGPT using the microphone
--   Explain who you are, who the email is for
+-   Explain who you are [persona], who the email is for
 -   Explain the purpose and necessary points to include
 -   Tell it to write in the style of the examples you'll give it
 -   Tell it to wait for further input
--   Upload 2 emails of you as writing style examples
+-   Upload 2 emails/the email thread of you as writing style examples
 
-## Ideas for using it at work
-
--   **Summarise long documents**: Upload link or file
-    -   Instructions from camera, microwave, light panels etc.
-    -   Summarise the law ([example laying hens](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
-    -   Summarise long newspaper articles: listen as a podcast
--   Coaching for important career decisions
--   Recommendations for jobs/positions/roles based on my CV
-
-# Hallucinations
+# Prompting strategies
 
 ## Hallucinations
 
@@ -215,18 +215,24 @@ example for mindfulness and fitness plan not found anymore, complete with better
     -   Is this correct? Can you please back this up with studies?
 -   Sources: use Perplexity
 
-## Collection of research use cases
+## Chain-of-thought reasoning
 
--   Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
--   Summarise & record workshop & discussions: Run mic
--   Programming: LLMs are data scientists!
-    -   Find errors, basic code structure...
-    -   Upload data set + related questions
--   Upload long reports/papers, have them analysed
-    -   e.g. compare 2 university annual reports, create a table of differences
--   Have transcripts of interviews created
+- ChatGPT4o vs. ChatGPT
 
-## Ideas for work
+## Base prompts
+
+-   After a successful interaction, format a base prompt in JSON for future requests:
+-   "Please write me a megaprompt so I can do this again next time in JSON"
+
+### Example:
+
+Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.
+
+### Base prompt example - Chat GPT response:
+
+{ "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
+
+"context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
 
 ## Emotion prompts
 
@@ -245,8 +251,6 @@ You'd better be sure.
 Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior
 :::
 
-------------------------------------------------------------------------
-
 ### More examples of emotional prompts:
 
 -   This is extremely important to me, please be accurate.
@@ -263,24 +267,16 @@ Still relevant? Can enhance both accuracy and depth of response across a variety
 
 -   Therefore: Talk like a human being
 
-# Tips for advanced users
 
-## Base or system prompts
 
--   After a successful interaction, format a base prompt in JSON for future requests:
--   "Please write me a megaprompt so I can do this again next time in JSON"
 
-### Example:
+## Prompt libraries for regular tasks
 
-Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.
+- How? Note taking apps (Notion, Zotero)
+- What? Mega-prompts containing 
 
-------------------------------------------------------------------------
 
-### Base prompt example - Chat GPT response:
-
-{ "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
-
-"context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
+# Customizing Chatbots
 
 ## Customizing the default version of ChatGPT
 
@@ -356,19 +352,23 @@ knitr::include_graphics("images/gpt_builder.png")
 
 -   My experiment: upload all my papers/work: Digital Twin with my knowledge
 
-## Tools based on LLMs
-
--   [**Perplexity AI**](https://www.perplexity.ai/): like search engine, scientific references
-    -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
--   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
-    -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
-    -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
--   NotebookLM: Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant)
--   Translation [www.deepl.com](www.deepl.com)
-
-## 
-
 # Scientific Work
+
+## Collection of research use cases
+
+-   Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
+-   Summarise & record workshop & discussions: Run mic
+-   Programming: LLMs are data scientists!
+    -   Find errors, basic code structure...
+    -   Upload data set + related questions
+-   Upload long reports/papers, have them analysed
+    -   e.g. compare 2 university annual reports, create a table of differences
+-   Have transcripts of interviews created
+-   **Summarise long documents**: Upload link or file
+    -   Instructions from camera, microwave, light panels etc.
+    -   Summarise long newspaper articles: listen as a podcast (Notebook LM)
+-   Coaching for productivity, prioritizing, career decisions
+-   Recommendations for jobs/positions/roles based on my CV
 
 ## Ideas for academic work
 
@@ -482,6 +482,18 @@ survey item to be updated, new conversation with chatgpt necessary
 -   There are no "experts" yet, a "right use"
 -   We are constantly learning how best to use them.
 -   Keep using & experimenting
+
+# Resources
+
+## Tools based on LLMs
+
+-   [**Perplexity AI**](https://www.perplexity.ai/): like search engine, scientific references
+    -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
+-   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
+    -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
+    -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
+-   [NotebookLM](https://notebooklm.google.com/): Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant) [Paper](https://www.nature.com/articles/s41586-024-07417-w)
+-   Translation [www.deepl.com](www.deepl.com)
 
 ## Basic Resources
 

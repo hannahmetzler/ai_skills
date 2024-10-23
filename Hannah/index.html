@@ -30,71 +30,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/theme/quarto.css">
   <link href="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -415,18 +350,14 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <section id="who-are-you" class="slide level2">
 <h2>Who are you?</h2>
 <ul>
-<li><p>Scientific discipline &amp; topic area</p></li>
-<li><p>One thing you have already used LLMs for</p></li>
-<li><p>If any: particular expectation or interests for today</p></li>
+<li>Scientific discipline &amp; topic area</li>
+<li>One thing you have already used LLMs for</li>
+<li>If any: particular expectation or interests for today</li>
 </ul>
 </section>
 <section id="rough-plan-for-the-day" class="slide level2">
 <h2>(Rough) plan for the day</h2>
 <table>
-<colgroup>
-<col style="width: 31%">
-<col style="width: 68%">
-</colgroup>
 <tbody>
 <tr class="odd">
 <td>9h15 - 10h</td>
@@ -473,23 +404,10 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li>Who has a paid account?</li>
 <li>Log in for 8 more accounts</li>
 </ul>
-<aside class="notes">
-<p>form pairs with the rest</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="introduction-to-llms" class="title-slide slide level1 center">
 <h1>Introduction to LLMs</h1>
-<p><a href="https://hannahmetzler.eu/AI_skills/Konstantin/">Konstantin’s slides</a></p>
+<p><a href="https://hannahmetzler.eu/ai_skills/Konstantin/">Konstantin’s slides</a></p>
 </section>
 
 <section>
@@ -531,19 +449,37 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
           display:block!important;
       }</style></aside>
 </section>
-<section id="general-tips" class="slide level2">
-<h2>General tips</h2>
+<section id="general-tips-for-working-with-chatbots" class="slide level2">
+<h2>General tips for working with Chatbots</h2>
 <ul>
-<li>Use it often and try it out!</li>
-<li>Speak to it as if it was a person: “Talk into it”</li>
-<li>Give feedback &amp; engage in dialogue, performance improves very quickly</li>
-<li>Spelling doesn’t matter</li>
-<li>Use it for the first 80% of your tasks</li>
-<li>Use microphone &amp; headphones and actually talk!</li>
-<li>Work on your prompts!</li>
+<li>There is no one “correct” way to prompt LLMs - we are all figuring this out together. Experiment!
+<ul>
+<li><em>This is the worst AI you will ever use.</em> [1]</li>
+</ul></li>
+<li>Use it often and try it out on many different tasks.
+<ul>
+<li><em>Always invite AI to the table.</em> [1]</li>
+</ul></li>
+<li>Use it for the first 80% of your tasks (co-intelligence/ intern).</li>
+<li><em>Treat it like a person.</em> [1] But????!</li>
+</ul>
+<div class="footer">
+<p>[1] Ethan Mollick in <em>Co-intelligence</em>.</p>
+</div>
+</section>
+<section id="treat-it-like-a-person" class="slide level2">
+<h2>“Treat it like a person” ?!</h2>
+<ul>
+<li>LLMs behave more like people than software/machines.</li>
+<li>Speak to it as if it was a person (although it isn’t one)</li>
+<li>Talk into it: give it lots of context</li>
+<li>Use microphone &amp; headphones to actually talk.</li>
+<li>Give it a persona</li>
+<li>Give feedback &amp; engage in dialogue - performance improves very quickly</li>
+<li>Work on your prompts until you get useful output</li>
 </ul>
 <aside class="notes">
-<p>Now I want to go through some of these points in more detail with you.</p>
+<p>we’ll now look at these points in more detail</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -556,8 +492,8 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
           display:block!important;
       }</style></aside>
 </section>
-<section id="voice-control" class="slide level2">
-<h2>Voice Control</h2>
+<section id="voice-conversations" class="slide level2">
+<h2>Voice conversations</h2>
 <ul>
 <li>In the ChatGPT App on Mac &amp; Smartphones</li>
 <li>Otherwise: Chrome extension <a href="https://voicecontrol.chat/">Voice Up</a> (ChatGPT &amp; Claude)</li>
@@ -579,40 +515,36 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 </div>
 </div>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-</section>
-<section id="using-it-often-everyday-life-ideas" class="slide level2">
+<section id="using-it-often-everyday-life-ideas" class="slide level2 scrollable">
 <h2>Using it often: Everyday life ideas</h2>
 <ul>
-<li><a href="https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243"><strong>Recipes</strong></a>: Suggestions based on existing ingredients</li>
-<li><strong>Travel planning</strong>: Individual recommendations for city trips</li>
-<li><strong>Shopping lists</strong> (<a href="https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170">vegetable curry</a>, <a href="https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614">weekly meal plan</a>, <a href="https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63">scientific workshop</a>)</li>
-<li><strong>Household</strong>: <a href="https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0">Stain</a> or <a href="https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e">smell</a> removal tips (example)</li>
-<li><strong>Geschenksideen</strong> (<a href="https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b">Beispiel</a>)</li>
-<li><a href="https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25"><strong>Mindfulness meditation</strong></a> guide (example not found anymore)</li>
-<li>Personalized fitness plan (example not found anymore)</li>
+<li><a href="https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243">Recipes</a>: Suggestions based on existing ingredients</li>
+<li>Shopping lists
+<ul>
+<li><a href="https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170">vegetable curry</a>, <a href="https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614">weekly meal plan</a>, <a href="https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63">workshop</a></li>
+</ul></li>
+<li><a href="https://chatgpt.com/share/671906a2-24e8-800b-8cb3-502973eda6bb">Concert suggestions</a></li>
+<li><a href="https://chatgpt.com/share/6718fe33-b0e0-800b-ac0f-feffc0a6b341">Personalized travel planning</a></li>
+<li>Household: <a href="https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0">Stain</a> or <a href="https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e">smell</a> removal, <a href="https://chatgpt.com/share/671902f6-0e74-800b-919c-26ad4e102a9f">houseplant care</a></li>
+<li><a href="https://chatgpt.com/share/671902aa-aa98-800b-b2cc-72b726281092">Ideas for presents</a></li>
+<li><a href="https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25">Mindfulness meditation</a> guide</li>
+</ul>
+</section>
+<section id="using-it-often-everyday-life-ideas-1" class="slide level2">
+<h2>Using it often: Everyday life ideas</h2>
+<ul>
+<li>Basic medical advice (<a href="https://chatgpt.com/share/671905fa-5fe8-800b-9adb-fc17d40ee6f7">Ibuprofen vs.&nbsp;Paracetamol</a>)</li>
+<li>Summarizing a law on <a href="https://chatgpt.com/share/671903b1-46f0-800b-8e0b-2db2c0d0b33d">chicken welfare</a></li>
+<li>Estimating prices (me selling my old <a href="https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928">cello</a>)</li>
+<li>Personalized <a href="https://chatgpt.com/share/671904b2-7f44-800b-ad5f-1824a194e177">fitness plan</a></li>
 <li>Finding a <a href="https://chatgpt.com/share/67166a6e-772c-800b-9da7-67148e1f9c51">web hosting</a> service</li>
 </ul>
-<aside class="notes">
-<p>example for mindfulness and fitness plan not found anymore, complete with better ideas if I have time</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="minutes-exercise" class="slide level2">
 <h2>5 minutes exercise</h2>
 <ul>
 <li><p>Pick one of the ideas, and try it out.</p></li>
-<li><p>Use voice control to be quicker.</p></li>
+<li><p>Experiment with using voice control.</p></li>
 </ul>
 </section>
 <section id="effective-prompting" class="slide level2">
@@ -623,64 +555,56 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li>e.g., PhD student, journalist, psychologist</li>
 <li>Specify expertise level</li>
 </ul></li>
-<li><strong>Provide Clear &amp; Extensive Context</strong>
+<li><strong>Provide clear &amp; extensive Context</strong>
 <ul>
-<li>Background of your request</li>
-<li>Provide specific details</li>
+<li>Purpose, background, specific details</li>
 </ul></li>
-<li><strong>Provide Specific Examples</strong> (Emails, abstracts etc)</li>
-<li>Describe constraints: what you don’t want</li>
+<li><strong>Provide specific examples</strong>
+<ul>
+<li>e.g.&nbsp;emails, abstracts, posts etc.</li>
+</ul></li>
+<li><strong>Describe constraints</strong>: what you don’t want
+<ul>
+<li>e.g.&nbsp;vegetarian, no museums</li>
+</ul></li>
 </ul>
 </section>
 <section id="effective-prompting-1" class="slide level2">
 <h2>Effective Prompting</h2>
 <ul>
-<li><strong>Direct Questions &amp; Instructions</strong>
+<li><strong>Direct questions &amp; instructions</strong>
 <ul>
 <li>Clear and concise queries lead to better answers</li>
 </ul></li>
-<li><strong>Start with a Clear Instruction</strong>
+<li><strong>Start with a clear instruction</strong>
 <ul>
 <li>e.g., “Help me draft an email to…”</li>
 </ul></li>
-<li><strong>Specify the Desired Format</strong>
+<li><strong>Specify the desired format</strong>
 <ul>
 <li>Formal tone, length, structure (e.g., bullet points, paragraphs)</li>
 </ul></li>
 <li><strong>Provide feedback to improve the output</strong></li>
 </ul>
 </section>
-<section id="exercise-email-20-minutes" class="slide level2">
-<h2>Exercise: Email (20 minutes)</h2>
+<section id="exercise-email-10-minutes" class="slide level2">
+<h2>Exercise: Email (10 minutes)</h2>
 <ul>
 <li>Choose an email you need to write soon</li>
 <li>Talk to ChatGPT using the microphone</li>
-<li>Explain who you are, who the email is for</li>
+<li>Explain who you are [persona], who the email is for</li>
 <li>Explain the purpose and necessary points to include</li>
 <li>Tell it to write in the style of the examples you’ll give it</li>
 <li>Tell it to wait for further input</li>
-<li>Upload 2 emails of you as writing style examples</li>
-</ul>
-</section>
-<section id="ideas-for-using-it-at-work" class="slide level2">
-<h2>Ideas for using it at work</h2>
-<ul>
-<li><strong>Summarise long documents</strong>: Upload link or file
-<ul>
-<li>Instructions from camera, microwave, light panels etc.</li>
-<li>Summarise the law (<a href="https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375">example laying hens</a>)</li>
-<li>Summarise long newspaper articles: listen as a podcast</li>
-</ul></li>
-<li>Coaching for important career decisions</li>
-<li>Recommendations for jobs/positions/roles based on my CV</li>
+<li>Upload 2 emails/the email thread of you as writing style examples</li>
 </ul>
 </section></section>
 <section>
-<section id="hallucinations" class="title-slide slide level1 center">
-<h1>Hallucinations</h1>
+<section id="prompting-strategies" class="title-slide slide level1 center">
+<h1>Prompting strategies</h1>
 
 </section>
-<section id="hallucinations-1" class="slide level2">
+<section id="hallucinations" class="slide level2">
 <h2>Hallucinations</h2>
 <ul>
 <li>LLMs invent facts/sources that don’t exist.</li>
@@ -706,33 +630,19 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li>Sources: use Perplexity</li>
 </ul>
 </section>
-<section id="collection-of-research-use-cases" class="slide level2">
-<h2>Collection of research use cases</h2>
+<section id="chain-of-thought-reasoning" class="slide level2">
+<h2>Chain-of-thought reasoning</h2>
 <ul>
-<li>Statistics questions <a href="https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c">Example</a></li>
-<li>Summarise &amp; record workshop &amp; discussions: Run mic</li>
-<li>Programming: LLMs are data scientists!
-<ul>
-<li>Find errors, basic code structure…</li>
-<li>Upload data set + related questions</li>
-</ul></li>
-<li>Upload long reports/papers, have them analysed
-<ul>
-<li>e.g.&nbsp;compare 2 university annual reports, create a table of differences</li>
-</ul></li>
-<li>Have transcripts of interviews created</li>
+<li>ChatGPT4o vs.&nbsp;ChatGPT</li>
 </ul>
-</section>
-<section id="ideas-for-work" class="slide level2">
-<h2>Ideas for work</h2>
 </section>
 <section id="emotion-prompts" class="slide level2">
 <h2>Emotion prompts</h2>
 <ul>
 <li>Emotional expressions can lead to better results (<a href="https://arxiv.org/abs/2307.11760">Cheng et al., 2023</a>)</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href=""></a>knitr::include_graphics("images/emotional_prompt.jpg")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<pre><code>Write your answer and give me a confidence score between 0-1 for your answer. 
+
+<img data-src="images/emotional_prompt.jpg" width="610" class="r-stretch"><pre><code>Write your answer and give me a confidence score between 0-1 for your answer. 
 You'd better be sure.</code></pre>
 <aside class="notes">
 <p>Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior</p>
@@ -747,9 +657,6 @@ You'd better be sure.</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section class="slide level2">
-
 <h3 id="more-examples-of-emotional-prompts">More examples of emotional prompts:</h3>
 <ul>
 <li>This is extremely important to me, please be accurate.</li>
@@ -765,10 +672,17 @@ You'd better be sure.</code></pre>
 <li><p>Can increase care/accuracy of the answer</p></li>
 <li><p>Therefore: Talk like a human being</p></li>
 </ul>
+</section>
+<section id="prompt-libraries-for-regular-tasks" class="slide level2">
+<h2>Prompt libraries for regular tasks</h2>
+<ul>
+<li>How? Note taking apps (Notion, Zotero)</li>
+<li>What? Mega-prompts containing</li>
+</ul>
 </section></section>
 <section>
-<section id="tips-for-advanced-users" class="title-slide slide level1 center">
-<h1>Tips for advanced users</h1>
+<section id="customizing-chatbots" class="title-slide slide level1 center">
+<h1>Customizing Chatbots</h1>
 
 </section>
 <section id="base-or-system-prompts" class="slide level2">
@@ -779,9 +693,6 @@ You'd better be sure.</code></pre>
 </ul>
 <h3 id="example">Example:</h3>
 <p>Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.</p>
-</section>
-<section class="slide level2">
-
 <h3 id="base-prompt-example---chat-gpt-response">Base prompt example - Chat GPT response:</h3>
 <p>{ “request”: “Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.”,</p>
 <p>“context”: “When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known.” }</p>
@@ -793,9 +704,25 @@ You'd better be sure.</code></pre>
 </ul>
 <div class="columns">
 <div class="column" style="width:15%;">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a href=""></a>knitr::include_graphics("images/how_to_system_prompt.png")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/how_to_system_prompt.png" width="132"></p>
+</figure>
+</div>
+</div>
+</div>
 </div><div class="column" style="width:30%;">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb4-1"><a href=""></a>knitr::include_graphics("images/system_prompt.png")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/system_prompt.png" width="294"></p>
+</figure>
+</div>
+</div>
+</div>
 </div><div class="column" style="width:45%;">
 <p>“This is extremely important for my job, please work accurately and check that everything is correct.”</p>
 </div>
@@ -834,14 +761,38 @@ You'd better be sure.</code></pre>
 <ol type="1">
 <li></li>
 </ol>
-<p><code>{r, echo=F} knitr::include_graphics("images/how_to_custom_gpt.png")</code></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/how_to_custom_gpt.png" width="129"></p>
+</figure>
+</div>
+</div>
+</div>
 </div><div class="column" style="width:14%;">
 <ol start="2" type="1">
 <li></li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a href=""></a>knitr::include_graphics("images/how_to_custom_gpt2.png")</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/how_to_custom_gpt2.png" width="258"></p>
+</figure>
+</div>
+</div>
+</div>
 </div><div class="column" style="width:60%;">
-<p><code>{r, out.height=400} knitr::include_graphics("images/gpt_builder.png")</code></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/gpt_builder.png" width="448" height="400"></p>
+</figure>
+</div>
+</div>
+</div>
 </div>
 </div>
 <ul>
@@ -856,30 +807,35 @@ You'd better be sure.</code></pre>
 <li><p>Others can communicate with the twin without interrupting the person at work</p></li>
 <li><p>My experiment: upload all my papers/work: Digital Twin with my knowledge</p></li>
 </ul>
-</section>
-<section id="tools-based-on-llms" class="slide level2">
-<h2>Tools based on LLMs</h2>
-<ul>
-<li><a href="https://www.perplexity.ai/"><strong>Perplexity AI</strong></a>: like search engine, scientific references
-<ul>
-<li><a href="https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w">Example testosterone &amp; behaviour</a></li>
-</ul></li>
-<li><a href="https://elicit.com/"><strong>Elicit AI</strong></a>: Analyse research papers at superhuman speed
-<ul>
-<li>Slides <a href="https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7">here</a></li>
-<li><a href="https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb">Beispiel</a></li>
-</ul></li>
-<li>NotebookLM: Create podcasts using papers <a href="https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant">Example Tutorial</a></li>
-<li>Translation <a href="www.deepl.com">www.deepl.com</a></li>
-</ul>
-</section>
-<section id="section-1" class="slide level2">
-<h2></h2>
 </section></section>
 <section>
 <section id="scientific-work" class="title-slide slide level1 center">
 <h1>Scientific Work</h1>
 
+</section>
+<section id="collection-of-research-use-cases" class="slide level2">
+<h2>Collection of research use cases</h2>
+<ul>
+<li>Statistics questions <a href="https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c">Example</a></li>
+<li>Summarise &amp; record workshop &amp; discussions: Run mic</li>
+<li>Programming: LLMs are data scientists!
+<ul>
+<li>Find errors, basic code structure…</li>
+<li>Upload data set + related questions</li>
+</ul></li>
+<li>Upload long reports/papers, have them analysed
+<ul>
+<li>e.g.&nbsp;compare 2 university annual reports, create a table of differences</li>
+</ul></li>
+<li>Have transcripts of interviews created</li>
+<li><strong>Summarise long documents</strong>: Upload link or file
+<ul>
+<li>Instructions from camera, microwave, light panels etc.</li>
+<li>Summarise long newspaper articles: listen as a podcast (Notebook LM)</li>
+</ul></li>
+<li>Coaching for productivity, prioritizing, career decisions</li>
+<li>Recommendations for jobs/positions/roles based on my CV</li>
+</ul>
 </section>
 <section id="ideas-for-academic-work" class="slide level2">
 <h2>Ideas for academic work</h2>
@@ -1019,6 +975,27 @@ You'd better be sure.</code></pre>
 <li>There are no “experts” yet, a “right use”</li>
 <li>We are constantly learning how best to use them.</li>
 <li>Keep using &amp; experimenting</li>
+</ul>
+</section></section>
+<section>
+<section id="resources" class="title-slide slide level1 center">
+<h1>Resources</h1>
+
+</section>
+<section id="tools-based-on-llms" class="slide level2">
+<h2>Tools based on LLMs</h2>
+<ul>
+<li><a href="https://www.perplexity.ai/"><strong>Perplexity AI</strong></a>: like search engine, scientific references
+<ul>
+<li><a href="https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w">Example testosterone &amp; behaviour</a></li>
+</ul></li>
+<li><a href="https://elicit.com/"><strong>Elicit AI</strong></a>: Analyse research papers at superhuman speed
+<ul>
+<li>Slides <a href="https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7">here</a></li>
+<li><a href="https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb">Beispiel</a></li>
+</ul></li>
+<li><a href="https://notebooklm.google.com/">NotebookLM</a>: Create podcasts using papers <a href="https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant">Example Tutorial</a> <a href="https://www.nature.com/articles/s41586-024-07417-w">Paper</a></li>
+<li>Translation <a href="www.deepl.com">www.deepl.com</a></li>
 </ul>
 </section>
 <section id="basic-resources" class="slide level2">
@@ -1279,6 +1256,44 @@ You'd better be sure.</code></pre>
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
