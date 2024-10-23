@@ -479,7 +479,16 @@ survey item to be updated, new conversation with chatgpt necessary
 
 -   Please, adjust the list again and include only roles outside of academia that fit me. Can you name specific companies in Vienna? If yes, include them in the list. Also, about the data science roles, I am unsure if they fit well. I am a psychologist who knows to code in R and is really good at statistics. I understand Machine Learning, but have not worked with large datasets myself. I have not written any larger ML project code myself, but worked on one with a Data Science student. What do you think about that?
 
-## Significance for the future
+## Productivity coaching example
+
+- insert
+
+## Exercise (15 min)
+
+- Choose a decision, or something you want feedback on
+- ...
+
+# Significance for the future
 
 -   The role of AI technologies such as ChatGPT will continue to grow
 -   Nature of many jobs will change
