@@ -352,6 +352,11 @@ knitr::include_graphics("images/gpt_builder.png")
 
 -   My experiment: upload all my papers/work: Digital Twin with my knowledge
 
+## Existing Custom GPTs for research
+
+- Dimensions Research GPT / Consenus
+- check: data analysis buddy
+
 # Scientific Work
 
 ## Collection of research use cases
