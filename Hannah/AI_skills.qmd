@@ -39,20 +39,21 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 
 -   If any: particular expectation or interests for today
 
-## What we'll do today \[update\]
+## (Rough) plan for the day
 
 |               |                                |
 |---------------|--------------------------------|
-| 9h30 -        | Introduction to LLMs           |
-| Y             | Basic skills                   |
-| Y             | More advanced prompting        |
-| 12:30 – 13:30 | Lunch break                    |
-| Y             | Applications in Science        |
-| Y             | Scientific tools built on LLMs |
-| Y             | Ethical questions              |
-| Y - 17h       | Closing round                  |
+| 9h15 -  10h   | Introduction to LLMs           |
+| 10h - 11h     | Chatbot essentials & prompting strategies  |
+| 11h15 -  12h   | Customizing Chatbots  |
+| 12h -  12h45   | Chatbots in Research: Writing |
+| 12h45 – 13h45 | Lunch break                    |
+| 13h45 - 15h15   | Different use cases in research        |
+| 15h30-16h    |Chatbots as coaches |
+| 16h-16h30    | Ethical considerations              |
+| 16h30 - 17h       | Resources, Questions, Closing round                  |
 
-## Access to LLM chatbots
+## Access to LLM chatbots for today
 
 -   Who has a paid account?
 -   Log in for 8 more accounts
@@ -62,6 +63,8 @@ form pairs with the rest
 :::
 
 # Introduction to LLMs
+
+[Konstantin's slides](https://hannahmetzler.eu/AI_skills/Konstantin/)
 
 # The Basics: How to talk to an LLM Chatbot?
 
