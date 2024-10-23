@@ -130,7 +130,9 @@ Text
 
 ::::: columns
 ::: {.column #vcenter width="15%" align="center"}
+
 <small>"The actress that played Rose in the 1997 film Titanic is named..."</small>
+
 :::
 ::: {.column #vcenter width="10%" align="center"}
 →
@@ -212,9 +214,14 @@ Tokens = "Subwords"
 ::: {.column width="40%" align="center"}
 Word/Token
 
-<!-- ![](images/tokenzined_sentence.png) -->
+
 <br>
-<span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even</span> ...
+
+<span
+style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even
+</span>
+...
+
 :::
 
 ::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
@@ -240,9 +247,8 @@ Word Embedding
 ::: {.column width="40%"}
 **Word embeddings**
 
-```{r}
-knitr::include_graphics("images/wordembeddings.svg")
-```
+![](images/wordembeddings.svg)
+
 :::
 
 ::: {.column width="56%"}
@@ -251,13 +257,11 @@ knitr::include_graphics("images/wordembeddings.svg")
 -   Context (before and after the word) taken into account
 -   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit?
 
-```{r, fig.align="center", out.width=250}
-knitr::include_graphics("images/apple_context.png")
-```
+<img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;" />
 :::
 :::::
 
-## What is an LLM, actually?
+## What is an LLM, actually? 
 
 - **Large Language Models (LLMs)**: Deep learning neural networks built to understand and generate text
 - Trained on **vast amounts of text** from diverse sources (Wikipedia, social media, books, podcasts, etc.)
@@ -274,7 +278,7 @@ knitr::include_graphics("images/apple_context.png")
 Autoregressive:
 Always predicts the next word of a text.
 Does not need any annotation.
-- Transformer: type
+- Transformer: type of the language model
 
 
 ## Current top models
@@ -333,11 +337,8 @@ Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 - ChatGPT-4o mini: every day tasks
 - o1-preview: thinks before it answers, for complex tasks
     (no web search)
-
-<!-- - Only via API or special access plans:
-  - ChatGPT-4 Turbo: long context window (128.000 tokens)
-  - ChatGPT-3.5: less resource intense -->
   
+
 ::: footer
 [ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini)
 

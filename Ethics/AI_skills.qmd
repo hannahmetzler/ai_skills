@@ -1,0 +1,184 @@
+---
+title: "How do Large Language Models (LLMs) work?"
+subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+author: "Konstantin Hebenstreit"
+date: "October 22 2024"
+format: 
+  revealjs: 
+    transition: "slide"
+    ## Defines the theme of the presentation, both version and style
+    theme: [default, custom.scss]
+    # incremental slides point by point
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    speakerNotes: true
+    footer: ""
+# title-slide-attributes:
+# data-background-image: images/
+# data-background-size: cover
+# data-background-opacity: "0.5"
+#editor
+editor: source
+---
+
+## Ethics in using AI for research
+
+1. General topics of ethics an AI
+2. What it means for research
+
+Critical concerns about data privacy and scientific outputs like publications.
+
+:::notes
+I can give an overview of the concerns and information but I am not a lawyer, no legal advice. 
+:::
+
+## Reminder: Chatbots Are Hard to Control
+
+<br>
+
+AI companies invest significant effort to ensure their chatbots behave ethically.
+
+For example, chatbots should not assist users in harmful or destructive behaviors, but challenges remain...
+
+## Example: Jailbreaking
+- **Jailbreaking**: Techniques to bypass AI safety measures.
+
+::: {style="overflow: hidden; height: 70%; width: 60%;"}
+![](images/emoji_jailbreak.png)
+:::
+
+:::footer
+[GitHub TheBigPromptLibrary](https://github.com/0xeb/TheBigPromptLibrary/blob/main/Jailbreak/OpenAI/rsrc/gpt4o-via-emojis-06082024-02.jpg)
+:::
+
+## Bias and Fairness in AI Outputs
+
+- AI can perpetuate societal biases present in training data.
+- **Examples**:
+  - Associating "doctor" with male gender.
+  - Associating "nurse" with female gender.
+
+:::footer
+Kotek et al., [2023](https://arxiv.org/pdf/2308.14921)
+:::
+
+## Unintended Consequences of Debiasing
+
+Gemini: "generate a picture of a US senator from the 1800s."
+
+![](https://duet-cdn.vox-cdn.com/thumbor/0x0:1668x1168/750x525/filters:focal(834x584:835x585):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/25297980/Screen_Shot_2024_02_21_at_3.10.17_PM.png)
+
+:::footer
+[The Verge on Google Gemini AI](https://www.theverge.com/2024/2/21/24079371/google-ai-gemini-generative-inaccurate-historical)
+:::
+
+:::notes
+The first female senator, a white woman, served in 1922.
+:::
+
+
+## Transparency
+- "Black Box": Opaque how models work.
+- Even for "white box" open-weights Llama models not open on which data they are trained.
+
+## Accountability
+- 2023: Two US lawyers fined for submitting fake court citations from ChatGPT, leading to a $5,000 fine.
+
+:::footer
+[The Guardian](https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt)
+:::
+
+## Data privacy concerns
+- Training data extraction: reconstruct training data from input
+- Attribute inference attacks: LLMs can combine information (from big data) to predict sensitive attributes from 'harmless' user data
+
+## Copyright
+- is passive, applies to everything you put online
+- bound to a person
+- AI cannot be holder of copyright, as it is not a person
+
+- copyright case: getty images for example
+
+## Increasing use of LLMs in research
+
+![](images/llm_use_research.png){.nostretch width="90%"}
+
+:::footer
+Liang et al., [2024](https://arxiv.org/abs/2404.01268)
+:::
+
+## AI in Journal Policies
+
+- Policies are evolving rapidly in response to AI developments.
+- Always review journal guidelines before submitting your work.
+
+## Elsevier's Policies for Journals {.smaller}
+
+- **For Authors**:
+  - AI tools can only be used to improve language and readability.
+  - Must disclose AI use in manuscripts.
+  - AI cannot be listed as an author. 
+
+- **Figures & Images**:
+  - AI cannot alter or create images (except if part of research methods).
+  - AI use in research must be documented in methods.
+
+::: footer
+[Elsevier AI Policy](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals)
+:::
+
+## Elsevier's Policies for Journals (cont.) {.smaller}
+
+- **For Reviewers**:
+  - Do not upload manuscripts to AI tools (confidentiality breach).
+  - AI should not assist in peer review.
+
+- **For Editors**:
+  - AI tools must not be used to evaluate or make decisions on manuscripts.
+  - Maintain confidentiality in all communications.
+
+::: footer
+[Elsevier AI Policy](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals)
+:::
+
+## MedUni Vienna PhD thesis guideline {.smaller}
+
+“A doctoral thesis is expected to contain text that is the intellectual product of the student. If, for any reason, a student feels that he or she must rely on an AI algorithm or a writing enhancement tool (Chat-GPT, Grammarly, Google Translate, DeepL, etc.) to translate, generate, or paraphrase texts, this must be indicated as such with an appropriate citation at the end of the relevant paragraph and in the Bibliography. While this indication will serve to defend the student against any claims of reviewer deception, there is no guarantee that the reviewers will be appreciative of ample AI-generated texts in the thesis. Accordingly, theses relying extensively on AI may fail to receive a positive evaluation by the reviewers. Students should note AI-detection algorithms will still recognise machine-generated texts even after being paraphrased by the authors, and that subsequent revised thesis submissions remain marked. Hence, students should be aware that relying on AI may incurr a risk, which is solely their own, and it therefore is strongly recommended that they disclose all AI use in the Declaration, the List of Algorithms, the body of the text, and the Bibliography. For more information, please see https://apastyle.apa.org/blog/how-to-cite-chatgpt”
+
+
+## Implications for Academic Research
+- Citation and Misinformation
+- copyright issues !!
+- plagiarism issues, please use plagiarism checker
+
+## GDPR
+- {general explanation}
+- {sensitive data}
+
+## Sensitive information
+- Please consult experts on data security of your university
+- Especially for everything that concerns patient data
+
+## Use case
+GDPR conform use of research data:
+Microsoft and OpenAI offer Possiblity of Azure Server in Europe to comply with those rules.
+If you need an option for how to be able to use sensitive research data with LLMs.
+
+## Possible Future
+::::: columns
+::: {.column width="45%"}
+![](https://www.fau.edu/newsdesk/images/news/self-driving-patent-newsdesk.jpg){.nostretch width=100% height=250px}
+Self-driving car
+:::
+::: {.column width="45%"}
+![](images/dalle_guided_research.png){.nostretch width=100% height=250px}
+Autonomous research systems
+:::
+:::::
+
+<br>
+
+::: {style="text-align:center;"}
+**Human accountability**
+:::
