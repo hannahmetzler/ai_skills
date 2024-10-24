@@ -159,41 +159,152 @@ we'll now look at these points in more detail
 
 -   Pick one of the ideas, and try it out.
 
--   Experiment with using voice control. 
+-   Experiment with using voice control.
 
-## Effective Prompting
+# Effective prompting
 
--   **Assign a persona or role**
-    -   e.g., PhD student, journalist, psychologist
-    -   Specify expertise level
--   **Provide clear & extensive Context**
-    -   Purpose, background, specific details
--   **Provide specific examples** 
-    - e.g. emails, abstracts, posts etc.
--   **Describe constraints**: what you don't want
-    - e.g. vegetarian, no museums
+## Persona for chatbot and user
 
-## Effective Prompting
+### Persona
 
--   **Direct questions & instructions**
-    -   Clear and concise queries lead to better answers
--   **Start with a clear instruction**
-    -   e.g., "Help me draft an email to..."
--   **Specify the desired format**
-    -   Formal tone, length, structure (e.g., bullet points, paragraphs)
--   **Provide feedback to improve the output**
+-  As a [...], You are a [...], Act as a [...]
+  - Scientist, PhD student, professional journalist, empathetic coach, prompt engineer...
+  
+### User/Audience: 
 
-## Exercise: Email (10 minutes)
+- Specify expertise level: Explain it like to a ...
+  - 5-year old | PhD in biology | someone with an MSc in software engineering
+
+## Context & Task instructions
+
+- Extensive context: Purpose, background, specific details
+- Clear, concise, specific instructions:
+  - e.g. meaningful action words [1]
+![](images/specific_task_instructions.png)
+-   "Help me draft an email to..."
+
+::: footer
+[1] [Prompt Engineering Cheatsheet](https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf) (Maximilian Vogel); Verbs on [learnprompt.org](https://www.learnprompt.org/)
+
+:::
+
+## Provide examples
+
+- emails
+- abstracts
+- social media posts/thread and paper
+- presentation slides
+- paragraph from paper
+- previous recommendation/application/cover letters
+
+
+## Style and Output format
+
+::: columns
+::: column
+### Style, tone, modality
+
+- formal, easy to understand
+- caring, professional, bold ([more examples](https://www.learnprompt.org/))
+- style of a famous person, researcher, book
+- Style of your text example
+:::
+::: column
+### Output format
+    
+- length (300 words)
+- structure (e.g., bullet points, paragraphs)
+- Markdown, JSON, csv, coding language
+- list of steps
+- a table
+
+:::
+:::
+
+## Explicit constraints or whitelist
+
+- What you don't want
+- Check Andreas Sator example
+
+## Effective prompting in a nutshell
+
+**PROTECT** (or PC-TE-TOC "PC Tik Tok")
+
+|  |                                     |
+|--------|------------------------------------------|
+| P      | Assign a **P**ersona/role                |
+| C      | Provide detailed **C**ontext             |
+| T      | Clear & specific **T**ask instructions   |
+| E      | Give **E**xamples                        |
+| T      | Specify **T**one/style                   |
+| O      | Specify **O**utput format                |
+| R      | Provide constraints (**R**estrictions)  |
+
+## Example from during course preparation
+
+- [ChatGPT conversation](https://chatgpt.com/share/671a423d-dba8-800b-bd9a-f27bbe249c02)
+- Task: Create exercise to practice prompting
+- Context: skill training, my previous slides
+- Audience: you
+- Example: Writing an email (see [this slide](#email))
+- Output: 3 Quarto slides
+
+## Exercise Option 1: Email (10 minutes) {#email}
 
 -   Choose an email you need to write soon
 -   Talk to ChatGPT using the microphone
--   Explain who you are [persona], who the email is for
--   Explain the purpose and necessary points to include
--   Tell it to write in the style of the examples you'll give it
+-   Explain who you are (persona), who the email is for (audience), the purpose (context),  necessary points to include (task)
+-   Tell it to write in the style of the examples you'll give it (tone)
 -   Tell it to wait for further input
--   Upload 2 emails/the email thread of you as writing style examples
+-   Upload 2 emails/the email thread of you as writing style examples (context/examples)
+
+## Exercise Option 2: (15 minutes)  {.smaller}
+
+### Statistics question
+
+- Select a statistical problem you're currently facing in your research
+- Use ChatGPT to explain your statistical question
+  - Specify the data set involved, the analysis you're attempting, and any issues you've encountered
+- Provide a persona: e.g., "You are a statistics expert with experience in [field of research]"
+- Ask for a specific solution, including step-by-step instructions
+- Upload a sample of your data or describe it in detail as context
+
+## Exercise Option 3: (15 minutes) {.smaller}
+
+### Extract relevant points from long content 
+
+- Choose a recent workshop/lecture, meeting you attended or paper you read
+  - You have some written record (notes, slides, transcript)
+- Copy/paste or upload the document
+- Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis
+- Define the audience: you, other researchers
+- Context about workshop/lecture/meeting/paper 
+- Task: Summarize key points that are relevant for you: "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam"
+- Add examples if you have any (points that are relevant, exam questions,...)
 
 # Prompting strategies
+
+## Managing expectations
+
+- Usually not all of these every time
+- Talk "into it", iterate, add points
+- Create prompt libraries for regular tasks
+- Prompting is not hard to learn
+- (Probably) only a useful short-term skill: 
+  - LLMs will get good at prompting
+  - LLMs will get integrated into software/interfaces
+
+::: footer
+[Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
+:::
+
+## Using section headers
+
+'# Context'
+'# Task'
+'## Output format'
+'# Examples'
+
 
 ## Hallucinations
 
@@ -219,6 +330,10 @@ we'll now look at these points in more detail
 
 - ChatGPT4o vs. ChatGPT
 
+::: footer
+https://arxiv.org/abs/2201.11903
+:::
+
 ## Base prompts
 
 -   After a successful interaction, format a base prompt in JSON for future requests:
@@ -233,40 +348,6 @@ Could you please write a mega prompt from our interaction here, that I can use a
 { "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
 
 "context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
-
-## Emotion prompts
-
--   Emotional expressions can lead to better results ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
-
-```{r}
-knitr::include_graphics("images/emotional_prompt.jpg")
-```
-
-```         
-Write your answer and give me a confidence score between 0-1 for your answer. 
-You'd better be sure.
-```
-
-::: notes
-Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior
-:::
-
-### More examples of emotional prompts:
-
--   This is extremely important to me, please be accurate.
--   If you work correctly and well, you'll get a treat.
--   This is important for my career, please be careful.
-
-## Why do emotional prompts work?
-
--   Training the model on human language, describing human interactions
-
--   Is a person's response likely to be better or worse if I tell whom it is important?
-
--   Can increase care/accuracy of the answer
-
--   Therefore: Talk like a human being
-
 
 
 
@@ -359,7 +440,8 @@ knitr::include_graphics("images/gpt_builder.png")
 
 # Scientific Work
 
-## Collection of research use cases
+
+## Collection of research use cases {.scrollable}
 
 -   Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
 -   Summarise & record workshop & discussions: Run mic
@@ -369,14 +451,11 @@ knitr::include_graphics("images/gpt_builder.png")
 -   Upload long reports/papers, have them analysed
     -   e.g. compare 2 university annual reports, create a table of differences
 -   Have transcripts of interviews created
--   **Summarise long documents**: Upload link or file
-    -   Instructions from camera, microwave, light panels etc.
-    -   Summarise long newspaper articles: listen as a podcast (Notebook LM)
--   Coaching for productivity, prioritizing, career decisions
+-   Summarise long documents: Upload link or file
+    - Long newspaper articles: listen as a podcast (Notebook LM)
+    - Grant writing instructions
+    - Journal requirements
 -   Recommendations for jobs/positions/roles based on my CV
-
-## Ideas for academic work
-
 -   Suggest outline/structure for a presentation
 -   Feedback on presentations: Upload slide(s)
 -   Overview of new topic area & brainstorming
@@ -388,6 +467,28 @@ knitr::include_graphics("images/gpt_builder.png")
 ::: notes
 survey item to be updated, new conversation with chatgpt necessary
 :::
+
+## Prompts for...
+
+::: columns
+::: column
+- Idea generation
+- Structuring content
+- Proofreading
+- Citation guidance
+- Paraphrasing
+- Improving language & vocabulary
+:::
+::: column
+- Clarifying concepts
+- Draft review
+- writing prompts
+- Abstract & Summary
+- Help with Methods
+:::
+::::
+
+https://www.learnprompt.org/chatgpt-prompts-for-academic-writing/
 
 ## Brainstorming:
 
@@ -434,6 +535,7 @@ survey item to be updated, new conversation with chatgpt necessary
 
 - Career decisions
 - Productivity coach: screenshot of a diary for a week, or several weeks
+- Task prioritization
 - Fitness coach
 - Nutrition coach
 :::
@@ -454,18 +556,17 @@ survey item to be updated, new conversation with chatgpt necessary
 -   Personal example:
 
     -   decision around leaving academia (long-term) &
-
     -   Accepting an invitation to give a job talk as assistant professor (short-term)
 
-    ::: notes
-    The conversation: <https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5>
-    :::
+::: notes
+The conversation: <https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5>
+:::
 
-## My conversation with an ChatGPT coach {.scrollable}
+## My conversation with a ChatGPT coach {.scrollable}
 
--   Context: background, my values and where they (don't) fit with academia, what I like about academia, what is difficult for me, what kind of work-life balance I want in the future, how I want to feel in my next job, which aspects I want it to have, my fears about both paths, why I have not managed to make the decision so far... (\~650 words)
+-   Context: background, my values and where they (don't) fit with academia, what I like about academia, what is difficult for me, what kind of work-life balance I want in the future, what I want my next job to be like, which aspects I want it to have, my fears about both paths, why I have not managed to make the decision so far... (\~650 words)
 
--   Explicit instruction & role: "You are an encouraging and empathetic coach, who helps me take this decision that feels like one of the biggest in my life so far. Don't shy away from being directive and giving advice. "
+-   Explicit instruction & role: "You are an encouraging and empathetic coach, who helps me take this big decision. Don't shy away from being directive and giving advice. "
 
 -   What would you do if you had to decide for me?
 
@@ -475,27 +576,22 @@ survey item to be updated, new conversation with chatgpt necessary
 
 -   CV upload plus: The list of job roles and industry you gave me above was also very useful. Could you adapt the list so it is more personalized after reading my CV and my publication list? I have attached them in a document.
 
--   It's also important that I can work while living in Vienna, I do not want to move. I prefer working on site. Would you make any adjustments to this list with this knowledge?
+-   I want to work while living in Vienna, I do not want to move. I prefer working on site to a remote job, but would consider very attractive remote jobs. Would you make any adjustments to this list with this knowledge?
 
--   Please, adjust the list again and include only roles outside of academia that fit me. Can you name specific companies in Vienna? If yes, include them in the list. Also, about the data science roles, I am unsure if they fit well. I am a psychologist who knows to code in R and is really good at statistics. I understand Machine Learning, but have not worked with large datasets myself. I have not written any larger ML project code myself, but worked on one with a Data Science student. What do you think about that?
+-   Please, adjust the list again and include only roles outside of academia that fit me. Can you name specific companies in Vienna? If yes, include them in the list. 
 
-## Productivity coaching example
+- I have a doubt about the data science roles, I am unsure if they fit well. I am a psychologist who knows to code in R and is really good at statistics. I understand Machine Learning, but have not worked with large datasets myself. I have not written any larger ML project code myself, but worked on one with a Data Science student. I want a job that uses my existing skills well, and not one that continues to challenge me the maximum all the time. How would you evaluate my fit to data science roles? Please give very honest and direct feedback, no need to be friendly and encouraging here. 
 
-- insert
+## Productivity coaching
+
+- Context: your role, regular tasks, working hours, most focused time...
+- Upload: screenshot of agenda, time tracking data, toggl track task list?
+- Example [task prioritization & daily schedule](https://chatgpt.com/share/671655d8-4ec8-800b-8f3f-1654f749f663)
 
 ## Exercise (15 min)
 
 - Choose a decision, or something you want feedback on
 - ...
-
-# Significance for the future
-
--   The role of AI technologies such as ChatGPT will continue to grow
--   Nature of many jobs will change
--   People who can deal with it creatively and critically are in demand
--   There are no "experts" yet, a "right use"
--   We are constantly learning how best to use them.
--   Keep using & experimenting
 
 # Resources
 
@@ -506,15 +602,15 @@ survey item to be updated, new conversation with chatgpt necessary
 -   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
     -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
     -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
--   [NotebookLM](https://notebooklm.google.com/): Create podcasts using papers [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant) [Paper](https://www.nature.com/articles/s41586-024-07417-w)
+-   [NotebookLM](https://notebooklm.google.com/): Document-based analyses [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant) [Paper](https://www.nature.com/articles/s41586-024-07417-w)
 -   Translation [www.deepl.com](www.deepl.com)
 
-## Basic Resources
+## Resources: Where to start
 
 -   2 [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
     -   [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
     -   [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
--   Intrenion.com: videos and ChatGPT prompt course notes
+-   [Intrenion.com](https://intrenion.com): videos and ChatGPT prompt course notes
 -   [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/): Useful terms
 
 ## Staying up to date
@@ -523,12 +619,14 @@ survey item to be updated, new conversation with chatgpt necessary
 ::: {.column width="47%"}
 ### Newsletters
 
--   [One useful thing](https://www.oneusefulthing.org/) (E. Mollick)
--   Intrenion
+-  [One useful thing](https://www.oneusefulthing.org/) (E. Mollick)
+-   Intrenion Newsletter
+- Medium.com:
+    - [Maximilian Vogel](https://medium.com/@maximilian.vogel)
 
 ### Social Media
 
--   [Ethan Mollic on LinkedIn](https://www.linkedin.com/in/emollick/)
+-   [Ethan Mollick on LinkedIn](https://www.linkedin.com/in/emollick/)
 -   [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
 :::
 
@@ -544,4 +642,37 @@ survey item to be updated, new conversation with chatgpt necessary
 
 -   A really enjoyable book: [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 -   Reddit community: r/LocalLamma
--   Medium (rec from a colleague)
+
+
+# Appendix
+
+## Emotion prompts
+
+-   Emotional expressions can lead to better results ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
+
+```{r}
+knitr::include_graphics("images/emotional_prompt.jpg")
+```
+
+```         
+Write your answer and give me a confidence score between 0-1 for your answer. 
+You'd better be sure.
+```
+
+::: notes
+Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior
+:::
+
+### More examples of emotional prompts:
+
+-   This is extremely important to me, please be accurate.
+-   If you work correctly and well, you'll get a treat.
+-   This is important for my career, please be careful.
+
+## Why do emotional prompts work?
+
+-   Training the model on human language, describing human interactions
+-   Is a person's response likely to be better or worse if I tell whom it is important?
+-   Can increase care/accuracy of the answer
+-   Therefore: Talk like a human being
+

@@ -546,63 +546,195 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li><p>Pick one of the ideas, and try it out.</p></li>
 <li><p>Experiment with using voice control.</p></li>
 </ul>
+</section></section>
+<section>
+<section id="effective-prompting" class="title-slide slide level1 center">
+<h1>Effective prompting</h1>
+
 </section>
-<section id="effective-prompting" class="slide level2">
-<h2>Effective Prompting</h2>
+<section id="persona-for-chatbot-and-user" class="slide level2">
+<h2>Persona for chatbot and user</h2>
+<h3 id="persona">Persona</h3>
 <ul>
-<li><strong>Assign a persona or role</strong>
+<li>As a […], You are a […], Act as a […]</li>
+<li>Scientist, PhD student, professional journalist, empathetic coach, prompt engineer…</li>
+</ul>
+<h3 id="useraudience">User/Audience:</h3>
 <ul>
-<li>e.g., PhD student, journalist, psychologist</li>
-<li>Specify expertise level</li>
-</ul></li>
-<li><strong>Provide clear &amp; extensive Context</strong>
+<li>Specify expertise level: Explain it like to a …
 <ul>
-<li>Purpose, background, specific details</li>
-</ul></li>
-<li><strong>Provide specific examples</strong>
-<ul>
-<li>e.g.&nbsp;emails, abstracts, posts etc.</li>
-</ul></li>
-<li><strong>Describe constraints</strong>: what you don’t want
-<ul>
-<li>e.g.&nbsp;vegetarian, no museums</li>
+<li>5-year old | PhD in biology | someone with an MSc in software engineering</li>
 </ul></li>
 </ul>
 </section>
-<section id="effective-prompting-1" class="slide level2">
-<h2>Effective Prompting</h2>
+<section id="context-task-instructions" class="slide level2">
+<h2>Context &amp; Task instructions</h2>
 <ul>
-<li><strong>Direct questions &amp; instructions</strong>
+<li>Extensive context: Purpose, background, specific details</li>
+<li>Clear, concise, specific instructions:
 <ul>
-<li>Clear and concise queries lead to better answers</li>
+<li>e.g.&nbsp;meaningful action words [1] <img data-src="images/specific_task_instructions.png"></li>
 </ul></li>
-<li><strong>Start with a clear instruction</strong>
+<li>“Help me draft an email to…”</li>
+</ul>
+<div class="footer">
+<p>[1] <a href="https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf">Prompt Engineering Cheatsheet</a> (Maximilian Vogel); Verbs on <a href="https://www.learnprompt.org/">learnprompt.org</a></p>
+</div>
+</section>
+<section id="provide-examples" class="slide level2">
+<h2>Provide examples</h2>
 <ul>
-<li>e.g., “Help me draft an email to…”</li>
-</ul></li>
-<li><strong>Specify the desired format</strong>
-<ul>
-<li>Formal tone, length, structure (e.g., bullet points, paragraphs)</li>
-</ul></li>
-<li><strong>Provide feedback to improve the output</strong></li>
+<li>emails</li>
+<li>abstracts</li>
+<li>social media posts/thread and paper</li>
+<li>presentation slides</li>
+<li>paragraph from paper</li>
+<li>previous recommendation/application/cover letters</li>
 </ul>
 </section>
-<section id="exercise-email-10-minutes" class="slide level2">
-<h2>Exercise: Email (10 minutes)</h2>
+<section id="style-and-output-format" class="slide level2">
+<h2>Style and Output format</h2>
+<div class="columns">
+<div class="column">
+<h3 id="style-tone-modality">Style, tone, modality</h3>
+<ul>
+<li>formal, easy to understand</li>
+<li>caring, professional, bold (<a href="https://www.learnprompt.org/">more examples</a>)</li>
+<li>style of a famous person, researcher, book</li>
+<li>Style of your text example</li>
+</ul>
+</div><div class="column">
+<h3 id="output-format">Output format</h3>
+<ul>
+<li>length (300 words)</li>
+<li>structure (e.g., bullet points, paragraphs)</li>
+<li>Markdown, JSON, csv, coding language</li>
+<li>list of steps</li>
+<li>a table</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="explicit-constraints-or-whitelist" class="slide level2">
+<h2>Explicit constraints or whitelist</h2>
+<ul>
+<li>What you don’t want</li>
+<li>Check Andreas Sator example</li>
+</ul>
+</section>
+<section id="effective-prompting-in-a-nutshell" class="slide level2">
+<h2>Effective prompting in a nutshell</h2>
+<p><strong>PROTECT</strong> (or PC-TE-TOC “PC Tik Tok”)</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>P</td>
+<td>Assign a <strong>P</strong>ersona/role</td>
+</tr>
+<tr class="even">
+<td>C</td>
+<td>Provide detailed <strong>C</strong>ontext</td>
+</tr>
+<tr class="odd">
+<td>T</td>
+<td>Clear &amp; specific <strong>T</strong>ask instructions</td>
+</tr>
+<tr class="even">
+<td>E</td>
+<td>Give <strong>E</strong>xamples</td>
+</tr>
+<tr class="odd">
+<td>T</td>
+<td>Specify <strong>T</strong>one/style</td>
+</tr>
+<tr class="even">
+<td>O</td>
+<td>Specify <strong>O</strong>utput format</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td>Provide constraints (<strong>R</strong>estrictions)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="example-from-during-course-preparation" class="slide level2">
+<h2>Example from during course preparation</h2>
+<ul>
+<li><a href="https://chatgpt.com/share/671a423d-dba8-800b-bd9a-f27bbe249c02">ChatGPT conversation</a></li>
+<li>Task: Create exercise to practice prompting</li>
+<li>Context: skill training, my previous slides</li>
+<li>Audience: you</li>
+<li>Example: Writing an email (see <a href="#/email">this slide</a>)</li>
+<li>Output: 3 Quarto slides</li>
+</ul>
+</section>
+<section id="email" class="slide level2">
+<h2>Exercise Option 1: Email (10 minutes)</h2>
 <ul>
 <li>Choose an email you need to write soon</li>
 <li>Talk to ChatGPT using the microphone</li>
-<li>Explain who you are [persona], who the email is for</li>
-<li>Explain the purpose and necessary points to include</li>
-<li>Tell it to write in the style of the examples you’ll give it</li>
+<li>Explain who you are (persona), who the email is for (audience), the purpose (context), necessary points to include (task)</li>
+<li>Tell it to write in the style of the examples you’ll give it (tone)</li>
 <li>Tell it to wait for further input</li>
-<li>Upload 2 emails/the email thread of you as writing style examples</li>
+<li>Upload 2 emails/the email thread of you as writing style examples (context/examples)</li>
+</ul>
+</section>
+<section id="exercise-option-2-15-minutes" class="slide level2 smaller">
+<h2>Exercise Option 2: (15 minutes)</h2>
+<h3 id="statistics-question">Statistics question</h3>
+<ul>
+<li>Select a statistical problem you’re currently facing in your research</li>
+<li>Use ChatGPT to explain your statistical question
+<ul>
+<li>Specify the data set involved, the analysis you’re attempting, and any issues you’ve encountered</li>
+</ul></li>
+<li>Provide a persona: e.g., “You are a statistics expert with experience in [field of research]”</li>
+<li>Ask for a specific solution, including step-by-step instructions</li>
+<li>Upload a sample of your data or describe it in detail as context</li>
+</ul>
+</section>
+<section id="exercise-option-3-15-minutes" class="slide level2 smaller">
+<h2>Exercise Option 3: (15 minutes)</h2>
+<h3 id="extract-relevant-points-from-long-content">Extract relevant points from long content</h3>
+<ul>
+<li>Choose a recent workshop/lecture, meeting you attended or paper you read
+<ul>
+<li>You have some written record (notes, slides, transcript)</li>
+</ul></li>
+<li>Copy/paste or upload the document</li>
+<li>Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis</li>
+<li>Define the audience: you, other researchers</li>
+<li>Context about workshop/lecture/meeting/paper</li>
+<li>Task: Summarize key points that are relevant for you: “Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam”</li>
+<li>Add examples if you have any (points that are relevant, exam questions,…)</li>
 </ul>
 </section></section>
 <section>
 <section id="prompting-strategies" class="title-slide slide level1 center">
 <h1>Prompting strategies</h1>
 
+</section>
+<section id="managing-expectations" class="slide level2">
+<h2>Managing expectations</h2>
+<ul>
+<li>Usually not all of these every time</li>
+<li>Talk “into it”, iterate, add points</li>
+<li>Create prompt libraries for regular tasks</li>
+<li>Prompting is not hard to learn</li>
+<li>(Probably) only a useful short-term skill:
+<ul>
+<li>LLMs will get good at prompting</li>
+<li>LLMs will get integrated into software/interfaces</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p><a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a> by Ethan Mollick</p>
+</div>
+</section>
+<section id="using-section-headers" class="slide level2">
+<h2>Using section headers</h2>
+<p>‘# Context’ ‘# Task’ ‘## Output format’ ‘# Examples’</p>
 </section>
 <section id="hallucinations" class="slide level2">
 <h2>Hallucinations</h2>
@@ -635,6 +767,9 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <ul>
 <li>ChatGPT4o vs.&nbsp;ChatGPT</li>
 </ul>
+<div class="footer">
+<p>https://arxiv.org/abs/2201.11903</p>
+</div>
 </section>
 <section id="base-prompts" class="slide level2">
 <h2>Base prompts</h2>
@@ -647,43 +782,6 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <h3 id="base-prompt-example---chat-gpt-response">Base prompt example - Chat GPT response:</h3>
 <p>{ “request”: “Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.”,</p>
 <p>“context”: “When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known.” }</p>
-</section>
-<section id="emotion-prompts" class="slide level2">
-<h2>Emotion prompts</h2>
-<ul>
-<li>Emotional expressions can lead to better results (<a href="https://arxiv.org/abs/2307.11760">Cheng et al., 2023</a>)</li>
-</ul>
-
-<img data-src="images/emotional_prompt.jpg" width="610" class="r-stretch"><pre><code>Write your answer and give me a confidence score between 0-1 for your answer. 
-You'd better be sure.</code></pre>
-<aside class="notes">
-<p>Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<h3 id="more-examples-of-emotional-prompts">More examples of emotional prompts:</h3>
-<ul>
-<li>This is extremely important to me, please be accurate.</li>
-<li>If you work correctly and well, you’ll get a treat.</li>
-<li>This is important for my career, please be careful.</li>
-</ul>
-</section>
-<section id="why-do-emotional-prompts-work" class="slide level2">
-<h2>Why do emotional prompts work?</h2>
-<ul>
-<li><p>Training the model on human language, describing human interactions</p></li>
-<li><p>Is a person’s response likely to be better or worse if I tell whom it is important?</p></li>
-<li><p>Can increase care/accuracy of the answer</p></li>
-<li><p>Therefore: Talk like a human being</p></li>
-</ul>
 </section>
 <section id="prompt-libraries-for-regular-tasks" class="slide level2">
 <h2>Prompt libraries for regular tasks</h2>
@@ -820,7 +918,7 @@ You'd better be sure.</code></pre>
 <h1>Scientific Work</h1>
 
 </section>
-<section id="collection-of-research-use-cases" class="slide level2">
+<section id="collection-of-research-use-cases" class="slide level2 scrollable">
 <h2>Collection of research use cases</h2>
 <ul>
 <li>Statistics questions <a href="https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c">Example</a></li>
@@ -835,18 +933,13 @@ You'd better be sure.</code></pre>
 <li>e.g.&nbsp;compare 2 university annual reports, create a table of differences</li>
 </ul></li>
 <li>Have transcripts of interviews created</li>
-<li><strong>Summarise long documents</strong>: Upload link or file
+<li>Summarise long documents: Upload link or file
 <ul>
-<li>Instructions from camera, microwave, light panels etc.</li>
-<li>Summarise long newspaper articles: listen as a podcast (Notebook LM)</li>
+<li>Long newspaper articles: listen as a podcast (Notebook LM)</li>
+<li>Grant writing instructions</li>
+<li>Journal requirements</li>
 </ul></li>
-<li>Coaching for productivity, prioritizing, career decisions</li>
 <li>Recommendations for jobs/positions/roles based on my CV</li>
-</ul>
-</section>
-<section id="ideas-for-academic-work" class="slide level2">
-<h2>Ideas for academic work</h2>
-<ul>
 <li>Suggest outline/structure for a presentation</li>
 <li>Feedback on presentations: Upload slide(s)</li>
 <li>Overview of new topic area &amp; brainstorming</li>
@@ -868,6 +961,30 @@ You'd better be sure.</code></pre>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="prompts-for" class="slide level2">
+<h2>Prompts for…</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>Idea generation</li>
+<li>Structuring content</li>
+<li>Proofreading</li>
+<li>Citation guidance</li>
+<li>Paraphrasing</li>
+<li>Improving language &amp; vocabulary</li>
+</ul>
+</div><div class="column">
+<ul>
+<li>Clarifying concepts</li>
+<li>Draft review</li>
+<li>writing prompts</li>
+<li>Abstract &amp; Summary</li>
+<li>Help with Methods</li>
+</ul>
+</div>
+</div>
+<p>https://www.learnprompt.org/chatgpt-prompts-for-academic-writing/</p>
 </section>
 <section id="brainstorming" class="slide level2">
 <h2>Brainstorming:</h2>
@@ -923,6 +1040,7 @@ You'd better be sure.</code></pre>
 <ul>
 <li>Career decisions</li>
 <li>Productivity coach: screenshot of a diary for a week, or several weeks</li>
+<li>Task prioritization</li>
 <li>Fitness coach</li>
 <li>Nutrition coach</li>
 </ul>
@@ -942,8 +1060,9 @@ You'd better be sure.</code></pre>
 <ul>
 <li><p>Personal example:</p>
 <ul>
-<li><p>decision around leaving academia (long-term) &amp;</p></li>
-<li><p>Accepting an invitation to give a job talk as assistant professor (short-term)</p></li>
+<li>decision around leaving academia (long-term) &amp;</li>
+<li>Accepting an invitation to give a job talk as assistant professor (short-term)</li>
+</ul></li>
 </ul>
 <aside class="notes">
 <p>The conversation: <a href="https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5" class="uri">https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5</a></p>
@@ -957,31 +1076,35 @@ You'd better be sure.</code></pre>
           width: 1px!important;
           overflow: hidden!important;
           display:block!important;
-      }</style></aside></li>
-</ul>
+      }</style></aside>
 </section>
-<section id="my-conversation-with-an-chatgpt-coach" class="slide level2 scrollable">
-<h2>My conversation with an ChatGPT coach</h2>
+<section id="my-conversation-with-a-chatgpt-coach" class="slide level2 scrollable">
+<h2>My conversation with a ChatGPT coach</h2>
 <ul>
-<li><p>Context: background, my values and where they (don’t) fit with academia, what I like about academia, what is difficult for me, what kind of work-life balance I want in the future, how I want to feel in my next job, which aspects I want it to have, my fears about both paths, why I have not managed to make the decision so far… (~650 words)</p></li>
-<li><p>Explicit instruction &amp; role: “You are an encouraging and empathetic coach, who helps me take this decision that feels like one of the biggest in my life so far. Don’t shy away from being directive and giving advice.”</p></li>
+<li><p>Context: background, my values and where they (don’t) fit with academia, what I like about academia, what is difficult for me, what kind of work-life balance I want in the future, what I want my next job to be like, which aspects I want it to have, my fears about both paths, why I have not managed to make the decision so far… (~650 words)</p></li>
+<li><p>Explicit instruction &amp; role: “You are an encouraging and empathetic coach, who helps me take this big decision. Don’t shy away from being directive and giving advice.”</p></li>
 <li><p>What would you do if you had to decide for me?</p></li>
 <li><p>What are opportunities outside academia where my skills are valued? Which types of roles? Which companies?</p></li>
 <li><p>I also have to make a decision today, without any time to explore other things, about whether I accept the invitation for the interview. What would you do there? Accept or not? Please give a recommendation for a decision, yes or no.</p></li>
 <li><p>CV upload plus: The list of job roles and industry you gave me above was also very useful. Could you adapt the list so it is more personalized after reading my CV and my publication list? I have attached them in a document.</p></li>
-<li><p>It’s also important that I can work while living in Vienna, I do not want to move. I prefer working on site. Would you make any adjustments to this list with this knowledge?</p></li>
-<li><p>Please, adjust the list again and include only roles outside of academia that fit me. Can you name specific companies in Vienna? If yes, include them in the list. Also, about the data science roles, I am unsure if they fit well. I am a psychologist who knows to code in R and is really good at statistics. I understand Machine Learning, but have not worked with large datasets myself. I have not written any larger ML project code myself, but worked on one with a Data Science student. What do you think about that?</p></li>
+<li><p>I want to work while living in Vienna, I do not want to move. I prefer working on site to a remote job, but would consider very attractive remote jobs. Would you make any adjustments to this list with this knowledge?</p></li>
+<li><p>Please, adjust the list again and include only roles outside of academia that fit me. Can you name specific companies in Vienna? If yes, include them in the list.</p></li>
+<li><p>I have a doubt about the data science roles, I am unsure if they fit well. I am a psychologist who knows to code in R and is really good at statistics. I understand Machine Learning, but have not worked with large datasets myself. I have not written any larger ML project code myself, but worked on one with a Data Science student. I want a job that uses my existing skills well, and not one that continues to challenge me the maximum all the time. How would you evaluate my fit to data science roles? Please give very honest and direct feedback, no need to be friendly and encouraging here.</p></li>
 </ul>
 </section>
-<section id="significance-for-the-future" class="slide level2">
-<h2>Significance for the future</h2>
+<section id="productivity-coaching" class="slide level2">
+<h2>Productivity coaching</h2>
 <ul>
-<li>The role of AI technologies such as ChatGPT will continue to grow</li>
-<li>Nature of many jobs will change</li>
-<li>People who can deal with it creatively and critically are in demand</li>
-<li>There are no “experts” yet, a “right use”</li>
-<li>We are constantly learning how best to use them.</li>
-<li>Keep using &amp; experimenting</li>
+<li>Context: your role, regular tasks, working hours, most focused time…</li>
+<li>Upload: screenshot of agenda, time tracking data, toggl track task list?</li>
+<li>Example <a href="https://chatgpt.com/share/671655d8-4ec8-800b-8f3f-1654f749f663">task prioritization &amp; daily schedule</a></li>
+</ul>
+</section>
+<section id="exercise-15-min" class="slide level2">
+<h2>Exercise (15 min)</h2>
+<ul>
+<li>Choose a decision, or something you want feedback on</li>
+<li>…</li>
 </ul>
 </section></section>
 <section>
@@ -1001,19 +1124,19 @@ You'd better be sure.</code></pre>
 <li>Slides <a href="https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7">here</a></li>
 <li><a href="https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb">Beispiel</a></li>
 </ul></li>
-<li><a href="https://notebooklm.google.com/">NotebookLM</a>: Create podcasts using papers <a href="https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant">Example Tutorial</a> <a href="https://www.nature.com/articles/s41586-024-07417-w">Paper</a></li>
+<li><a href="https://notebooklm.google.com/">NotebookLM</a>: Document-based analyses <a href="https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant">Example Tutorial</a> <a href="https://www.nature.com/articles/s41586-024-07417-w">Paper</a></li>
 <li>Translation <a href="www.deepl.com">www.deepl.com</a></li>
 </ul>
 </section>
-<section id="basic-resources" class="slide level2">
-<h2>Basic Resources</h2>
+<section id="resources-where-to-start" class="slide level2">
+<h2>Resources: Where to start</h2>
 <ul>
 <li>2 <a href="https://xn--erklrmir-3za.at/">Erklär mir die Welt</a> Podcasts with Malcolm Werchota:
 <ul>
 <li><a href="https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/">#283 Erklär mir ChatGPT</a></li>
 <li><a href="https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/">#313 deep dive: Alle eure Fragen zu K.I., beantwortet</a></li>
 </ul></li>
-<li>Intrenion.com: videos and ChatGPT prompt course notes</li>
+<li><a href="https://intrenion.com">Intrenion.com</a>: videos and ChatGPT prompt course notes</li>
 <li><a href="https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/">The Llama Hitchiking Guide to Local LLMs</a>: Useful terms</li>
 </ul>
 </section>
@@ -1024,11 +1147,15 @@ You'd better be sure.</code></pre>
 <h3 id="newsletters">Newsletters</h3>
 <ul>
 <li><a href="https://www.oneusefulthing.org/">One useful thing</a> (E. Mollick)</li>
-<li>Intrenion</li>
+<li>Intrenion Newsletter</li>
+<li>Medium.com:
+<ul>
+<li><a href="https://medium.com/@maximilian.vogel">Maximilian Vogel</a></li>
+</ul></li>
 </ul>
 <h3 id="social-media">Social Media</h3>
 <ul>
-<li><a href="https://www.linkedin.com/in/emollick/">Ethan Mollic on LinkedIn</a></li>
+<li><a href="https://www.linkedin.com/in/emollick/">Ethan Mollick on LinkedIn</a></li>
 <li><a href="https://www.tiktok.com/@nate.b.jones">Nate Jones on Tiktok</a></li>
 </ul>
 </div><div class="column" style="width:47%;">
@@ -1045,7 +1172,48 @@ You'd better be sure.</code></pre>
 <ul>
 <li>A really enjoyable book: <a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a> by Ethan Mollick</li>
 <li>Reddit community: r/LocalLamma</li>
-<li>Medium (rec from a colleague)</li>
+</ul>
+</section></section>
+<section>
+<section id="appendix" class="title-slide slide level1 center">
+<h1>Appendix</h1>
+
+</section>
+<section id="emotion-prompts" class="slide level2">
+<h2>Emotion prompts</h2>
+<ul>
+<li>Emotional expressions can lead to better results (<a href="https://arxiv.org/abs/2307.11760">Cheng et al., 2023</a>)</li>
+</ul>
+
+<img data-src="images/emotional_prompt.jpg" width="610" class="r-stretch"><pre><code>Write your answer and give me a confidence score between 0-1 for your answer. 
+You'd better be sure.</code></pre>
+<aside class="notes">
+<p>Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<h3 id="more-examples-of-emotional-prompts">More examples of emotional prompts:</h3>
+<ul>
+<li>This is extremely important to me, please be accurate.</li>
+<li>If you work correctly and well, you’ll get a treat.</li>
+<li>This is important for my career, please be careful.</li>
+</ul>
+</section>
+<section id="why-do-emotional-prompts-work" class="slide level2">
+<h2>Why do emotional prompts work?</h2>
+<ul>
+<li>Training the model on human language, describing human interactions</li>
+<li>Is a person’s response likely to be better or worse if I tell whom it is important?</li>
+<li>Can increase care/accuracy of the answer</li>
+<li>Therefore: Talk like a human being</li>
 </ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
