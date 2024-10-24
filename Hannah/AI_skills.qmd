@@ -335,12 +335,13 @@ Could you please write a mega prompt from our interaction here, that I can use a
 
 ## Strategies for verification
 
--   4-eyes principle: Model does 80%, 20% human
--   Follow-up questions: Check this again, is it correct? Can you give me some sources? Are you sure?
+- 4-eyes principle: Model does 80%, 20% human (expertise matters)
+- Check online and give me 5 sources for this claim
+- Chain of Verification: Check online for 4 facts to make sure that this answer is correct
+- Ask for prompts: Why am I not getting the answer I am looking for? (Andreas book example)
 -   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
--   Enter the answer of the 1st model in another model & ask:
-    -   Is this correct? Can you please back this up with studies?
--   Sources: use Perplexity
+-   Ask other models: Enter output of model 1 and ask: "Is this correct? Can you back this up with sources?"
+-   Sources: Perplexity, Dimensions Research AI, Consensus
 
 ## Chain-of-thought reasoning
 
