@@ -300,11 +300,27 @@ we'll now look at these points in more detail
 
 ## Using section headers
 
+- Check how to write Markdown content without executing it
+
 '# Context'
 '# Task'
 '## Output format'
 '# Examples'
 
+## Base prompts
+
+-   After a successful interaction, format a base prompt in JSON for future requests:
+-   "Please write me a megaprompt so I can do this again next time in JSON"
+
+### Example:
+
+Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.
+
+## Base prompt example - Chat GPT response:
+
+{ "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
+
+"context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
 
 ## Hallucinations
 
@@ -328,28 +344,13 @@ we'll now look at these points in more detail
 
 ## Chain-of-thought reasoning
 
+- potential example from here: https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf
+
 - ChatGPT4o vs. ChatGPT
 
 ::: footer
 https://arxiv.org/abs/2201.11903
 :::
-
-## Base prompts
-
--   After a successful interaction, format a base prompt in JSON for future requests:
--   "Please write me a megaprompt so I can do this again next time in JSON"
-
-### Example:
-
-Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.
-
-### Base prompt example - Chat GPT response:
-
-{ "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
-
-"context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
-
-
 
 ## Prompt libraries for regular tasks
 
