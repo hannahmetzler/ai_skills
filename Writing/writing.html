@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="AI_skills_files/libs/clipboard/clipboard.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tabby.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/popper.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="AI_skills_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="AI_skills_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="writing_files/libs/clipboard/clipboard.min.js"></script>
+<script src="writing_files/libs/quarto-html/tabby.min.js"></script>
+<script src="writing_files/libs/quarto-html/popper.min.js"></script>
+<script src="writing_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="writing_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="writing_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="writing_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="writing_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Konstantin Hebenstreit">
-  <meta name="dcterms.date" content="2024-10-22">
-  <title>How do Large Language Models (LLMs) work?</title>
+  <meta name="dcterms.date" content="2024-10-29">
+  <title>Using Chatbots for Writing</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="writing_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="writing_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="writing_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="writing_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="writing_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="writing_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="writing_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -327,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">How do Large Language Models (LLMs) work?</h1>
+  <h1 class="title">Using Chatbots for Writing</h1>
   <p class="subtitle">Mastering AI Chatbots: Optimizing Research through Effective Use</p>
 
 <div class="quarto-title-authors">
@@ -338,16 +338,16 @@ Konstantin Hebenstreit
 </div>
 </div>
 
-  <p class="date">2024-10-22</p>
+  <p class="date">2024-10-29</p>
 </section>
 <section id="writing-sections-of-papers" class="slide level2">
 <h2>Writing sections of papers</h2>
-<h3 id="test-how-good-is-the-ai-in-wrtitin-a-discussion">Test how good is the AI in wrtitin a discussion</h3>
-<p>Tryout: (Re-)Writing the discussion of a given paper</p>
+<h3 id="test-how-good-is-the-ai-in-writing-a-discussion">Test how good is the AI in writing a discussion</h3>
+<p>Try out: (Re-)Writing the discussion of a given paper</p>
 <ol type="1">
 <li>Choose a paper you know very well, best would be one of your own.</li>
-<li>Give the paper without the discussion to the Chatbot</li>
-<li>Let it write the discussion</li>
+<li>Give the paper without the discussion to the model “o1-preview”</li>
+<li>Let it write the discussion on it’s own</li>
 <li>Check how it is doing</li>
 </ol>
 </section>
@@ -356,7 +356,7 @@ Konstantin Hebenstreit
 <h3 id="paper-about-generalization-of-prompting-strategies">Paper about generalization of prompting strategies</h3>
 
 <img data-src="images/peerj_screenshot.png" class="r-stretch"><div class="footer">
-<p>Hebenstreit et al <a href="https://peerj.com/articles/cs-1999/#">2024</a></p>
+<p>Hebenstreit et al.&nbsp;<a href="https://peerj.com/articles/cs-1999/#">2024</a></p>
 </div>
 </section>
 <section id="ai-generated-discussion" class="slide level2 smaller" style="font-size: 0.4em;">
@@ -385,6 +385,18 @@ Konstantin Hebenstreit
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</section>
+<section id="dont-let-the-ai-work-against-you" class="slide level2">
+<h2>Don’t let the AI work against you!</h2>
+<ul>
+<li>Possible strategy, but usually the output is not good</li>
+<li>Too much text to check</li>
+<li>Lot’s of correction work for you</li>
+</ul>
+<div class="fragment">
+<h3 id="rightarrow-next-smarter-try"><span class="math inline">\(\rightarrow\)</span> Next (smarter) try</h3>
+<p>Model input - to do ?????????????????????????</p>
+</div>
 </section>
 <section id="different-strategy-bullet-points" class="slide level2 smaller" style="font-size: 0.4em;">
 <h2>Different strategy: bullet points</h2>
@@ -431,7 +443,22 @@ Konstantin Hebenstreit
 <li><strong>Medical Datasets (MedQA and MedMCQA):</strong></li>
 </ul></li>
 </ul>
-<p>(…)</p>
+<p><strong>(… 2 times this amount of text)</strong></p>
+</section>
+<section id="how-are-we-doing-this-time" class="slide level2">
+<h2>How are we doing this time?</h2>
+<ul>
+<li>Still too much information for a quick check</li>
+<li>What we want:
+<ul>
+<li>Structure of a scientific discussion</li>
+<li>Most important points for each section</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<h3 id="rightarrow-next-even-smarter-try"><span class="math inline">\(\rightarrow\)</span> Next (even smarter) try</h3>
+<p>Model input - to do ?????????????????????????</p>
+</div>
 </section>
 <section id="fit-it-into-subheadings" class="slide level2 smaller" style="font-size: 0.5em;">
 <h2>Fit it into subheadings</h2>
@@ -500,22 +527,44 @@ Konstantin Hebenstreit
 <h2>In real life it probably needs refinement</h2>
 <p>In a paper where you need to write the discussion, you can just copy the suggested discussion in bullet point format into a Google docs and work on it.</p>
 <p><br></p>
-<p>When you are happy with it, then it is time to let the Chatbot write the whole text.</p>
-<p><br></p>
 <p>Using the capabilities of the Chatbot for you not against you…</p>
+<ul>
+<li>Your work starts here</li>
+<li>Thinking about text &amp; argument flow</li>
+<li>Update bullet points</li>
+</ul>
 </section>
-<section id="next-try" class="slide level2">
-<h2>Next try</h2>
-<p>Have the chatbot summarize the original discussion of the paper in bullet points of the subheadings.</p>
-<p>Have the chatbot create the discussion section with bullet points.</p>
+<section id="let-llm-draft-the-discussion" class="slide level2">
+<h2>Let LLM draft the discussion</h2>
+<ul>
+<li>When you are happy with it, then it is time to let the Chatbot write the whole text.</li>
+<li>This is what the model does well</li>
+</ul>
+</section>
+<section id="final-step-writing-the-paragraphs" class="slide level2">
+<h2>Final step: Writing the paragraphs</h2>
+<ul>
+<li><p>Have the chatbot summarize the original discussion of the paper in bullet points of the subheadings.</p></li>
+<li><p>Have the chatbot create the discussion section with bullet points.</p></li>
+<li><p>Tip: One paragraph at a time</p></li>
+</ul>
 </section>
 <section id="final-test" class="slide level2">
 <h2>Final test</h2>
-<p>Give the bullet points of the original discussion to the Chatbot and let it</p>
+<p>Give the bullet points of the original discussion to the Chatbot and let it write</p>
 </section>
-<section id="use-in-pracitice" class="slide level2">
-<h2>Use in pracitice</h2>
-<p>Let the Chatbot create a guess for your discussion in bullet points. Refine it manually. Then let the Chatbot write the whole discussion.</p>
+<section id="take-aways-for-scientific-writing-with-llm-chatbots" class="slide level2">
+<h2>Take aways for scientific writing with LLM Chatbots</h2>
+<ol type="1">
+<li>Let the Chatbot create a draft of your discussion in bullet points.</li>
+<li>Refine the structure &amp; overview manually.</li>
+<li>Then let the Chatbot write:
+<ul>
+<li>one paragraph</li>
+<li>refine manually</li>
+<li>provide existing paragraphs as context for the next</li>
+</ul></li>
+</ol>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -526,19 +575,19 @@ Konstantin Hebenstreit
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="AI_skills_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="writing_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="AI_skills_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

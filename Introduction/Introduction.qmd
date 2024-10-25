@@ -352,6 +352,8 @@ Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
 - ChatGPT-4o mini: every day tasks
 - o1-preview: thinks before it answers, for complex tasks (no web search)
   
+  
+$\rightarrow$ Konstantin's default: GPT4
 
 ::: footer
 [ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini)

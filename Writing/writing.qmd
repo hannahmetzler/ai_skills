@@ -1,8 +1,8 @@
 ---
-title: "How do Large Language Models (LLMs) work?"
+title: "Using Chatbots for Writing"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 author: "Konstantin Hebenstreit"
-date: "October 22 2024"
+date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"
@@ -24,12 +24,12 @@ editor: source
 
 ## Writing sections of papers
 
-### Test how good is the AI in wrtitin a discussion
-Tryout: (Re-)Writing the discussion of a given paper
+### Test how good is the AI in writing a discussion
+Try out: (Re-)Writing the discussion of a given paper
 
 1. Choose a paper you know very well, best would be one of your own.
-2. Give the paper without the discussion to the Chatbot
-3. Let it write the discussion
+2. Give the paper without the discussion to the model "o1-preview"
+3. Let it write the discussion on it's own
 4. Check how it is doing
 
 ## My example
@@ -38,7 +38,7 @@ Tryout: (Re-)Writing the discussion of a given paper
 ![](images/peerj_screenshot.png)
 
 :::footer
-Hebenstreit et al [2024](https://peerj.com/articles/cs-1999/#)
+Hebenstreit et al. [2024](https://peerj.com/articles/cs-1999/#)
 :::
 
 ## AI generated discussion:{.smaller style="font-size: 0.4em;"}
@@ -68,6 +68,18 @@ People often tell me that they are frustrated because they have to read all of t
 We need to find a method that is easy for us. Easy to test if the Chatbot is doing what we want.
 :::
 
+## Don't let the AI work against you!
+
+- Possible strategy, but usually the output is not good
+- Too much text to check
+- Lot's of correction work for you
+
+. . .
+
+### $\rightarrow$ Next (smarter) try
+
+Model input - to do ?????????????????????????
+
 ## Different strategy: bullet points{.smaller style="font-size: 0.4em;"}
 - **Effectiveness of Chain-of-Thought (CoT) Reasoning Strategies:**
   - Applying CoT reasoning strategies consistently outperforms direct prompting across various models and datasets.
@@ -94,7 +106,20 @@ We need to find a method that is easy for us. Easy to test if the Chatbot is doi
 - **Performance on Domain-Specific Datasets:**
   - **Medical Datasets (MedQA and MedMCQA):**
 
-(...)
+**(... 2 times this amount of text)**
+
+## How are we doing this time?
+
+- Still too much information for a quick check
+- What we want: 
+  - Structure of a scientific discussion
+  - Most important points for each section
+  
+. . .
+
+### $\rightarrow$ Next (even smarter) try
+
+Model input - to do ?????????????????????????
 
 ## Fit it into subheadings{.smaller style="font-size: 0.5em;"}
 
@@ -131,7 +156,7 @@ Future Work
 	•	Explore new reasoning prompts through automated and human-in-the-loop approaches to further enhance performance.
 	•	Evaluate CoT strategies in additional domains like legal or technical fields to test their generalizability.
 	•	Examine the impact of varying model parameters, such as temperature settings, on the effectiveness of CoT reasoning.
-
+	
 ## If you want to compare to the original{.smaller style="font-size: 0.35em;"}
 
 **Using the chatbot to turn the original discussion into bullet points** 
@@ -175,21 +200,51 @@ In a paper where you need to write the discussion, you can just copy the suggest
 
 <br>
 
-When you are happy with it, then it is time to let the Chatbot write the whole text.
-
-<br>
-
 Using the capabilities of the Chatbot for you not against you...
 
-## Next try
-Have the chatbot summarize the original discussion of the paper in bullet points of the subheadings.
+- Your work starts here
+- Thinking about text & argument flow
+- Update bullet points
 
-Have the chatbot create the discussion section with bullet points.
+## Let LLM draft the discussion
+
+- When you are happy with it, then it is time to let the Chatbot write the whole text.
+- This is what the model does well
+
+## Final step: Writing the paragraphs
+
+- Have the chatbot summarize the original discussion of the paper in bullet points of the subheadings.
+
+- Have the chatbot create the discussion section with bullet points.
+
+- Tip: One paragraph at a time
 
 ## Final test
-Give the bullet points of the original discussion to the Chatbot and let it 
+Give the bullet points of the original discussion to the Chatbot and let it write
 
-## Use in pracitice
-Let the Chatbot create a guess for your discussion in bullet points. 
-Refine it manually.
-Then let the Chatbot write the whole discussion.
+## Take aways for scientific writing with LLM Chatbots
+
+1. Let the Chatbot create a draft of your discussion in bullet points. 
+1. Refine the structure & overview manually.
+1. Then let the Chatbot write:
+    - one paragraph
+    - refine manually
+    - provide existing paragraphs as context for the next
+    
+## Writing: Use cases for academics
+
+- Ideas where you could use LLM chatbots to write?
+
+. . .
+
+- Revise, proof-read, summarise, shorten, finding titles, review
+- Refine your own writing (Book example Tim Skern)
+- Tone/style checking
+
+## Concrete examples we have done
+
+- Getting feedback on specified aspects of drafts [Example](https://www.clearerthinking.org/post/writing)
+-   Providing your paper, the [reviewer requests](https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464) for rewriting, let it rephrase
+-   [Feeding it with my papers](https://chatgpt.com/share/67166dd7-d494-800b-a652-1f0bb114d354), digital scientific twin
+-   [Recommendation letter](https://chatgpt.com/share/67166d34-1fa8-800b-ba58-0bc6da8dea1b)
+-   Refining [cover letter & teaching statement](https://chatgpt.com/share/67166cc1-a2bc-800b-ad9f-28eb8b5078d9)

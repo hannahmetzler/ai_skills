@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="AI_skills_files/libs/clipboard/clipboard.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tabby.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/popper.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="AI_skills_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="AI_skills_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+<script src="research_files/libs/clipboard/clipboard.min.js"></script>
+<script src="research_files/libs/quarto-html/tabby.min.js"></script>
+<script src="research_files/libs/quarto-html/popper.min.js"></script>
+<script src="research_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="research_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="research_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="research_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="research_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Hannah Metzler &amp; Konstantin Hebenstreit   Slides: https://github.com/hannahmetzler/AI_skills">
   <meta name="dcterms.date" content="2024-10-29">
-  <title>Mastering AI Chatbots: Optimizing Research through Effective Use</title>
+  <title>Enhancing your research outputs with LLM Chatbots</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="research_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="research_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="research_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="research_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="research_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="research_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="research_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -327,8 +327,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Mastering AI Chatbots: Optimizing Research through Effective Use</h1>
-  <p class="subtitle">Skill training LBG Career Center</p>
+  <h1 class="title">Enhancing your research outputs with LLM Chatbots</h1>
+  <p class="subtitle">Mastering AI Chatbots: Optimizing Research through Effective Use</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -340,618 +340,89 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 
   <p class="date">2024-10-29</p>
 </section>
-<section id="who-are-we" class="slide level2">
-<h2>Who are we?</h2>
-<h3 id="dr.-hannah-metzler">Dr.&nbsp;Hannah Metzler</h3>
-<p>Complexity Science Hub &amp; Meduni Vienna <br> Psychology, Neuroscience &amp; Data Science <br> https://hannahmetzler.eu | metzler@csh.ac.at <br> X: <a href="https://x.com/hannahmetzler1">@hannahmetzler1</a></p>
-<h3 id="konstanstin-hebenstreit-m.sc.">Konstanstin Hebenstreit, M.Sc.</h3>
-<p>Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence, LLMs &amp; Data Science <br> konstantin.hebenstreit@meduniwien.ac.at <br> X: <a href="https://x.com/K_Hebenstreit">@K_Hebenstreit</a></p>
-</section>
-<section id="who-are-you" class="slide level2">
-<h2>Who are you?</h2>
-<ul>
-<li>Scientific discipline &amp; topic area</li>
-<li>One thing you have already used LLMs for</li>
-<li>If any: particular expectation or interests for today</li>
-</ul>
-</section>
-<section id="rough-plan-for-the-day" class="slide level2">
-<h2>(Rough) plan for the day</h2>
-<table>
-<tbody>
-<tr class="odd">
-<td>9h15 - 10h</td>
-<td>Introduction to LLMs</td>
-</tr>
-<tr class="even">
-<td>10h - 11h</td>
-<td>Chatbot essentials &amp; prompting strategies</td>
-</tr>
-<tr class="odd">
-<td>11h15 - 12h</td>
-<td>Customizing Chatbots</td>
-</tr>
-<tr class="even">
-<td>12h - 12h45</td>
-<td>Chatbots in Research: Writing</td>
-</tr>
-<tr class="odd">
-<td>12h45 – 13h45</td>
-<td>Lunch break</td>
-</tr>
-<tr class="even">
-<td>13h45 - 15h15</td>
-<td>Different use cases in research</td>
-</tr>
-<tr class="odd">
-<td>15h30-16h</td>
-<td>Chatbots as coaches</td>
-</tr>
-<tr class="even">
-<td>16h-16h30</td>
-<td>Ethical considerations</td>
-</tr>
-<tr class="odd">
-<td>16h30 - 17h</td>
-<td>Resources, Questions, Closing round</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="access-to-llm-chatbots-for-today" class="slide level2">
-<h2>Access to LLM chatbots for today</h2>
-<ul>
-<li>Who has a paid account?</li>
-<li>Log in for 8 more accounts</li>
-</ul>
-</section>
-<section id="introduction-to-llms" class="title-slide slide level1 center">
-<h1>Introduction to LLMs</h1>
-<p><a href="https://hannahmetzler.eu/ai_skills/Konstantin/">Konstantin’s slides</a></p>
-</section>
-
 <section>
-<section id="the-basics-how-to-talk-to-an-llm-chatbot" class="title-slide slide level1 center">
-<h1>The Basics: How to talk to an LLM Chatbot?</h1>
+<section id="scientific-tools-based-on-llms" class="title-slide slide level1 center">
+<h1>Scientific tools based on LLMs</h1>
 
 </section>
-<section id="use-search-engines-vs.-llms" class="slide level2">
-<h2>Use search engines vs.&nbsp;LLMs</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<h3 id="search-engine">Search engine</h3>
-<ul>
-<li>A few short keywords</li>
-<li>Answer: many single results <br><br></li>
-<li>Real-time information &amp; news via internet</li>
-</ul>
-</div><div class="column" style="width:60%;">
-<h3 id="llm-chatbot">LLM Chatbot</h3>
-<ul>
-<li>Long prompts with lots of details, context, examples &amp; explanations</li>
-<li>Answer is summarised</li>
-<li>Answer is statistically probable: prototypical, average, generalized</li>
-<li>Generalizes across time, no real time-access</li>
-</ul>
-</div>
-</div>
-<aside class="notes">
-<p>LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (brainstorming, managing projects, creating documents…)</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
 </section>
-<section id="general-tips-for-working-with-chatbots" class="slide level2">
-<h2>General tips for working with Chatbots</h2>
+<section id="perplexity-5-min" class="slide level2">
+<h2>Perplexity (5 min)</h2>
 <ul>
-<li>There is no one “correct” way to prompt LLMs - we are all figuring this out together. Experiment!
+<li><a href="https://www.perplexity.ai/"><strong>Perplexity AI</strong></a></li>
+<li>Like search engine, scientific references
 <ul>
-<li><em>This is the worst AI you will ever use.</em> [1]</li>
+<li><a href="https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w">Example testosterone &amp; behaviour</a></li>
 </ul></li>
-<li>Use it often and try it out on many different tasks.
-<ul>
-<li><em>Always invite AI to the table.</em> [1]</li>
-</ul></li>
-<li>Use it for the first 80% of your tasks (co-intelligence/ intern).</li>
-<li><em>Treat it like a person.</em> [1] But????!</li>
-</ul>
-<div class="footer">
-<p>[1] Ethan Mollick in <em>Co-intelligence</em>.</p>
-</div>
-</section>
-<section id="treat-it-like-a-person" class="slide level2">
-<h2>“Treat it like a person” ?!</h2>
-<ul>
-<li>LLMs behave more like people than software/machines.</li>
-<li>Speak to it as if it was a person (although it isn’t one)</li>
-<li>Talk into it: give it lots of context</li>
-<li>Use microphone &amp; headphones to actually talk.</li>
-<li>Give it a persona</li>
-<li>Give feedback &amp; engage in dialogue - performance improves very quickly</li>
-<li>Work on your prompts until you get useful output</li>
-</ul>
-<aside class="notes">
-<p>we’ll now look at these points in more detail</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="voice-conversations" class="slide level2">
-<h2>Voice conversations</h2>
-<ul>
-<li>In the ChatGPT App on Mac &amp; Smartphones</li>
-<li>Otherwise: Chrome extension <a href="https://voicecontrol.chat/">Voice Up</a> (ChatGPT &amp; Claude)</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:47%;">
-<h3 id="voice-up">Voice Up</h3>
-<ul>
-<li>Hold SPACE (outside text input) to record, release to submit</li>
-<li>ESC to stop &amp; transcribe text without submitting</li>
-</ul>
-</div><div class="column" style="width:47%;">
-<h3 id="chatgpt-app">ChatGPT App</h3>
-<p><img data-src="images/voice_control.png"></p>
-<ul>
-<li>Headphones for an ongoing conversation</li>
-<li>Microphone to record, stop to transcribe</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="using-it-often-everyday-life-ideas" class="slide level2 scrollable">
-<h2>Using it often: Everyday life ideas</h2>
-<ul>
-<li><a href="https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243">Recipes</a>: Suggestions based on existing ingredients</li>
-<li>Shopping lists
-<ul>
-<li><a href="https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170">vegetable curry</a>, <a href="https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614">weekly meal plan</a>, <a href="https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63">workshop</a></li>
-</ul></li>
-<li><a href="https://chatgpt.com/share/671906a2-24e8-800b-8cb3-502973eda6bb">Concert suggestions</a></li>
-<li><a href="https://chatgpt.com/share/6718fe33-b0e0-800b-ac0f-feffc0a6b341">Personalized travel planning</a></li>
-<li>Household: <a href="https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0">Stain</a> or <a href="https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e">smell</a> removal, <a href="https://chatgpt.com/share/671902f6-0e74-800b-919c-26ad4e102a9f">houseplant care</a></li>
-<li><a href="https://chatgpt.com/share/671902aa-aa98-800b-b2cc-72b726281092">Ideas for presents</a></li>
-<li><a href="https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25">Mindfulness meditation</a> guide</li>
+<li>Exploration</li>
+<li>Tip: Search for best tools using the “social” option, as reddit is searched. (Less clutter/ads)</li>
 </ul>
 </section>
-<section id="using-it-often-everyday-life-ideas-1" class="slide level2">
-<h2>Using it often: Everyday life ideas</h2>
+<section id="elicit-5-min" class="slide level2">
+<h2>Elicit (5 min)</h2>
+<p>Link: <a href="https://elicit.com/"><strong>Elicit AI</strong></a>: Analyse research papers at superhuman speed - Slides <a href="https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7">here</a> - <a href="https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb">Beispiel</a></p>
+</section>
+<section id="exercise-elicit-or-perplexity-10-min" class="slide level2">
+<h2>Exercise Elicit or Perplexity (10 min)</h2>
 <ul>
-<li>Basic medical advice (<a href="https://chatgpt.com/share/671905fa-5fe8-800b-9adb-fc17d40ee6f7">Ibuprofen vs.&nbsp;Paracetamol</a>)</li>
-<li>Summarizing a law on <a href="https://chatgpt.com/share/671903b1-46f0-800b-8e0b-2db2c0d0b33d">chicken welfare</a></li>
-<li>Estimating prices (me selling my old <a href="https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928">cello</a>)</li>
-<li>Personalized <a href="https://chatgpt.com/share/671904b2-7f44-800b-ad5f-1824a194e177">fitness plan</a></li>
-<li>Finding a <a href="https://chatgpt.com/share/67166a6e-772c-800b-9da7-67148e1f9c51">web hosting</a> service</li>
+<li>Exploring a completely new topic</li>
 </ul>
 </section>
-<section id="minutes-exercise" class="slide level2">
-<h2>5 minutes exercise</h2>
+<section id="notebooklm-10-min" class="slide level2">
+<h2>NotebookLM (10 min)</h2>
+<p>Link: <a href="https://notebooklm.google.com/">NotebookLM</a>: Document-based analyses <a href="https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant">Example Tutorial</a> <a href="https://www.nature.com/articles/s41586-024-07417-w">Paper</a></p>
+</section>
+<section id="other-tools-to-explore" class="slide level2">
+<h2>Other tools to explore</h2>
 <ul>
-<li><p>Pick one of the ideas, and try it out.</p></li>
-<li><p>Experiment with using voice control.</p></li>
+<li><a href="">Tome</a> for presentations</li>
+<li>Translation <a href="www.deepl.com">www.deepl.com</a></li>
+<li>ResearchRabbit for Literature search based on paper networks</li>
 </ul>
+</section>
+<section id="exercise-15-min" class="slide level2">
+<h2>Exercise (15 min)</h2>
 </section></section>
 <section>
-<section id="effective-prompting" class="title-slide slide level1 center">
-<h1>Effective prompting</h1>
+<section id="other-researcher-use-cases" class="title-slide slide level1 center">
+<h1>Other researcher use cases</h1>
 
 </section>
-<section id="persona-for-chatbot-and-user" class="slide level2">
-<h2>Persona for chatbot and user</h2>
-<h3 id="persona">Persona</h3>
+<section id="summarizing-content" class="slide level2">
+<h2>Summarizing content</h2>
 <ul>
-<li>As a […], You are a […], Act as a […]</li>
-<li>Scientist, PhD student, professional journalist, empathetic coach, prompt engineer…</li>
-</ul>
-<h3 id="useraudience">User/Audience:</h3>
-<ul>
-<li>Specify expertise level: Explain it like to a …
-<ul>
-<li>5-year old | PhD in biology | someone with an MSc in software engineering</li>
-</ul></li>
-</ul>
-</section>
-<section id="context-task-instructions" class="slide level2">
-<h2>Context &amp; Task instructions</h2>
-<ul>
-<li>Extensive context: Purpose, background, specific details</li>
-<li>Clear, concise, specific instructions:
-<ul>
-<li>e.g.&nbsp;meaningful action words [1] <img data-src="images/specific_task_instructions.png"></li>
-</ul></li>
-<li>“Help me draft an email to…”</li>
-</ul>
-<div class="footer">
-<p>[1] <a href="https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf">Prompt Engineering Cheatsheet</a> (Maximilian Vogel); Verbs on <a href="https://www.learnprompt.org/">learnprompt.org</a></p>
-</div>
-</section>
-<section id="provide-examples" class="slide level2">
-<h2>Provide examples</h2>
-<ul>
-<li>emails</li>
-<li>abstracts</li>
-<li>social media posts/thread and paper</li>
-<li>presentation slides</li>
-<li>paragraph from paper</li>
-<li>previous recommendation/application/cover letters</li>
-</ul>
-</section>
-<section id="style-and-output-format" class="slide level2">
-<h2>Style and Output format</h2>
-<div class="columns">
-<div class="column">
-<h3 id="style-tone-modality">Style, tone, modality</h3>
-<ul>
-<li>formal, easy to understand</li>
-<li>caring, professional, bold (<a href="https://www.learnprompt.org/">more examples</a>)</li>
-<li>style of a famous person, researcher, book</li>
-<li>Style of your text example</li>
-</ul>
-</div><div class="column">
-<h3 id="output-format">Output format</h3>
-<ul>
-<li>length (300 words)</li>
-<li>structure (e.g., bullet points, paragraphs)</li>
-<li>Markdown, JSON, csv, coding language</li>
-<li>list of steps</li>
-<li>a table</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="explicit-constraints-or-whitelist" class="slide level2">
-<h2>Explicit constraints or whitelist</h2>
-<ul>
-<li>What you don’t want</li>
-<li>Check Andreas Sator example</li>
-</ul>
-</section>
-<section id="effective-prompting-in-a-nutshell" class="slide level2">
-<h2>Effective prompting in a nutshell</h2>
-<p><strong>PROTECT</strong> (or PC-TE-TOC “PC Tik Tok”)</p>
-<table>
-<tbody>
-<tr class="odd">
-<td>P</td>
-<td>Assign a <strong>P</strong>ersona/role</td>
-</tr>
-<tr class="even">
-<td>C</td>
-<td>Provide detailed <strong>C</strong>ontext</td>
-</tr>
-<tr class="odd">
-<td>T</td>
-<td>Clear &amp; specific <strong>T</strong>ask instructions</td>
-</tr>
-<tr class="even">
-<td>E</td>
-<td>Give <strong>E</strong>xamples</td>
-</tr>
-<tr class="odd">
-<td>T</td>
-<td>Specify <strong>T</strong>one/style</td>
-</tr>
-<tr class="even">
-<td>O</td>
-<td>Specify <strong>O</strong>utput format</td>
-</tr>
-<tr class="odd">
-<td>R</td>
-<td>Provide constraints (<strong>R</strong>estrictions)</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="example-from-during-course-preparation" class="slide level2">
-<h2>Example from during course preparation</h2>
-<ul>
-<li><a href="https://chatgpt.com/share/671a423d-dba8-800b-bd9a-f27bbe249c02">ChatGPT conversation</a></li>
-<li>Task: Create exercise to practice prompting</li>
-<li>Context: skill training, my previous slides</li>
-<li>Audience: you</li>
-<li>Example: Writing an email (see <a href="#/email">this slide</a>)</li>
-<li>Output: 3 Quarto slides</li>
-</ul>
-</section>
-<section id="email" class="slide level2">
-<h2>Exercise Option 1: Email (10 minutes)</h2>
-<ul>
-<li>Choose an email you need to write soon</li>
-<li>Talk to ChatGPT using the microphone</li>
-<li>Explain who you are (persona), who the email is for (audience), the purpose (context), necessary points to include (task)</li>
-<li>Tell it to write in the style of the examples you’ll give it (tone)</li>
-<li>Tell it to wait for further input</li>
-<li>Upload 2 emails/the email thread of you as writing style examples (context/examples)</li>
-</ul>
-</section>
-<section id="exercise-option-2-15-minutes" class="slide level2 smaller">
-<h2>Exercise Option 2: (15 minutes)</h2>
-<h3 id="statistics-question">Statistics question</h3>
-<ul>
-<li>Select a statistical problem you’re currently facing in your research</li>
-<li>Use ChatGPT to explain your statistical question
-<ul>
-<li>Specify the data set involved, the analysis you’re attempting, and any issues you’ve encountered</li>
-</ul></li>
-<li>Provide a persona: e.g., “You are a statistics expert with experience in [field of research]”</li>
-<li>Ask for a specific solution, including step-by-step instructions</li>
-<li>Upload a sample of your data or describe it in detail as context</li>
-</ul>
-</section>
-<section id="exercise-option-3-15-minutes" class="slide level2 smaller">
-<h2>Exercise Option 3: (15 minutes)</h2>
-<h3 id="extract-relevant-points-from-long-content">Extract relevant points from long content</h3>
-<ul>
-<li>Choose a recent workshop/lecture, meeting you attended or paper you read
-<ul>
-<li>You have some written record (notes, slides, transcript)</li>
-</ul></li>
-<li>Copy/paste or upload the document</li>
-<li>Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis</li>
-<li>Define the audience: you, other researchers</li>
-<li>Context about workshop/lecture/meeting/paper</li>
-<li>Task: Summarize key points that are relevant for you: “Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam”</li>
-<li>Add examples if you have any (points that are relevant, exam questions,…)</li>
-</ul>
-</section></section>
-<section>
-<section id="prompting-strategies" class="title-slide slide level1 center">
-<h1>Prompting strategies</h1>
-
-</section>
-<section id="managing-expectations" class="slide level2">
-<h2>Managing expectations</h2>
-<ul>
-<li>Usually not all of these every time</li>
-<li>Talk “into it”, iterate, add points</li>
-<li>Create prompt libraries for regular tasks</li>
-<li>Prompting is not hard to learn</li>
-<li>(Probably) only a useful short-term skill:
-<ul>
-<li>LLMs will get good at prompting</li>
-<li>LLMs will get integrated into software/interfaces</li>
-</ul></li>
-</ul>
-<div class="footer">
-<p><a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a> by Ethan Mollick</p>
-</div>
-</section>
-<section id="using-section-headers" class="slide level2">
-<h2>Using section headers</h2>
-<ul>
-<li>Check how to write Markdown content without executing it</li>
-</ul>
-<p>‘# Context’ ‘# Task’ ‘## Output format’ ‘# Examples’</p>
-</section>
-<section id="base-prompts" class="slide level2">
-<h2>Base prompts</h2>
-<ul>
-<li>After a successful interaction, format a base prompt in JSON for future requests:</li>
-<li>“Please write me a megaprompt so I can do this again next time in JSON”</li>
-</ul>
-<h3 id="example">Example:</h3>
-<p>Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.</p>
-</section>
-<section id="base-prompt-example---chat-gpt-response" class="slide level2">
-<h2>Base prompt example - Chat GPT response:</h2>
-<p>{ “request”: “Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.”,</p>
-<p>“context”: “When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known.” }</p>
-</section>
-<section id="hallucinations" class="slide level2">
-<h2>Hallucinations</h2>
-<ul>
-<li>LLMs invent facts/sources that don’t exist.</li>
-<li>Why? Statistical patterns in training data</li>
-<li>Predicting the next most likely word.</li>
-<li>Likely = plausible &amp; hard to recognize</li>
-<li>Trained to give an answer, not to be truthful.</li>
-<li>Does not have fact knowledge or real-time access.</li>
-<li>Cannot reflect on its own processes</li>
-<li>New models much better, but problem is built in</li>
-</ul>
-</section>
-<section id="strategies-for-verification" class="slide level2">
-<h2>Strategies for verification</h2>
-<ul>
-<li>4-eyes principle: Model does 80%, 20% human (expertise matters)</li>
-<li>Check online and give me 5 sources for this claim</li>
-<li>Chain of Verification: Check online for 4 facts to make sure that this answer is correct</li>
-<li>Ask for prompts: Why am I not getting the answer I am looking for? (Andreas book example)</li>
-<li>Enter the same prompt in different models and compare, e.g.&nbsp;at <a href="https://poe.com" class="uri">https://poe.com</a>, <a href="https://anakin.ai" class="uri">https://anakin.ai</a></li>
-<li>Ask other models: Enter output of model 1 and ask: “Is this correct? Can you back this up with sources?”</li>
-<li>Sources: Perplexity, Dimensions Research AI, Consensus</li>
-</ul>
-</section>
-<section id="chain-of-thought-reasoning" class="slide level2">
-<h2>Chain-of-thought reasoning</h2>
-<ul>
-<li><p>potential example from here: https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf</p></li>
-<li><p>ChatGPT4o vs.&nbsp;ChatGPT</p></li>
-</ul>
-<div class="footer">
-<p>https://arxiv.org/abs/2201.11903</p>
-</div>
-</section>
-<section id="prompt-libraries-for-regular-tasks" class="slide level2">
-<h2>Prompt libraries for regular tasks</h2>
-<ul>
-<li>How? Note taking apps (Notion, Zotero)</li>
-<li>What? Mega-prompts containing</li>
-</ul>
-</section></section>
-<section>
-<section id="customizing-chatbots" class="title-slide slide level1 center">
-<h1>Customizing Chatbots</h1>
-
-</section>
-<section id="customizing-the-default-version-of-chatgpt" class="slide level2">
-<h2>Customizing the default version of ChatGPT</h2>
-<ul>
-<li>System prompts**: Prompts that are entered each time, e.g.&nbsp;emotional prompts</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:15%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/how_to_system_prompt.png" width="132"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:30%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/system_prompt.png" width="294"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:45%;">
-<p>“This is extremely important for my job, please work accurately and check that everything is correct.”</p>
-</div>
-</div>
-<aside class="notes">
-<p>My custom Instructions: ask Konstantin if useful. I am based in Vienna, and am a postdoc researcher in computational social science and psychology. I am a women, I use ChatGPT to code in R. I also use Github. I check scientific information for work, my research topics include social media, misinformation, polarization, false polarization, subjective well-being, analysing social media data, suicide prevention via the media (media effects research), machine learning applications in these areas, social dominance and power, social connection and belonging, hatespeech, hormones, power postures. I do acroyoga, am part of a co-housing project, am in a relationship. I like listening to podcasts, reading books, biking, talking about relationships, meeting friends, acroyoga etc. I also supervise PhD and master students.</p>
-<p>In my personal life, I am polyamorous, vegetarian to vegan, like effective altruism, S+, good at relationships, moving to a co housing project in 2 years, 37 years old.</p>
-<p>Open question: How would you like ChatGPT to respond? Think step by step. Don’t give detailed explanations of code unless I ask for it.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="creating-custom-gpts" class="slide level2">
-<h2>Creating Custom GPTs</h2>
-<ul>
-<li>Creation of a customised model for specific requirements</li>
-<li>Examples:
-<ul>
-<li>Writing in my writing style</li>
-<li>Concise answers for code, adapted to my skills</li>
-</ul></li>
-</ul>
-</section>
-<section id="creating-custom-gpts-how-to" class="slide level2">
-<h2>Creating Custom GPTs: How to</h2>
-<div class="columns">
-<div class="column" style="width:18%;">
-<ol type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/how_to_custom_gpt.png" width="129"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:14%;">
-<ol start="2" type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/how_to_custom_gpt2.png" width="258"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/gpt_builder.png" width="448" height="400"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-<ul>
-<li>GPT Builder asks more questions</li>
-<li>Try it out and keep “talking into it” until it fits</li>
-</ul>
-</section>
-<section id="custom-gpt-variant-digital-twins" class="slide level2">
-<h2>Custom GPT variant: Digital Twins</h2>
-<ul>
-<li><p>Training a model with the knowledge of a person</p></li>
-<li><p>Others can communicate with the twin without interrupting the person at work</p></li>
-<li><p>My experiment: upload all my papers/work: Digital Twin with my knowledge</p></li>
-</ul>
-</section>
-<section id="existing-custom-gpts-for-research" class="slide level2">
-<h2>Existing Custom GPTs for research</h2>
-<ul>
-<li>Dimensions Research GPT / Consenus</li>
-<li>check: data analysis buddy</li>
-</ul>
-</section></section>
-<section>
-<section id="scientific-work" class="title-slide slide level1 center">
-<h1>Scientific Work</h1>
-
-</section>
-<section id="collection-of-research-use-cases" class="slide level2 scrollable">
-<h2>Collection of research use cases</h2>
-<ul>
-<li>Statistics questions <a href="https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c">Example</a></li>
-<li>Summarise &amp; record workshop &amp; discussions: Run mic</li>
-<li>Programming: LLMs are data scientists!
-<ul>
-<li>Find errors, basic code structure…</li>
-<li>Upload data set + related questions</li>
-</ul></li>
-<li>Upload long reports/papers, have them analysed
-<ul>
-<li>e.g.&nbsp;compare 2 university annual reports, create a table of differences</li>
-</ul></li>
-<li>Have transcripts of interviews created</li>
+<li>Record workshops, interviews, discussions: note taking and summarization</li>
+<li>Upload long reports/papers, have them analysed e.g.&nbsp;compare 2 university annual reports, create a table of differences</li>
 <li>Summarise long documents: Upload link or file
 <ul>
 <li>Long newspaper articles: listen as a podcast (Notebook LM)</li>
-<li>Grant writing instructions</li>
+<li>Grant writing instructions, specific questions</li>
 <li>Journal requirements</li>
 </ul></li>
-<li>Recommendations for jobs/positions/roles based on my CV</li>
+<li>Summarizing a paper based on <a href="https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8">Zotero note example</a></li>
+</ul>
+</section>
+<section id="structuring-stuff" class="slide level2">
+<h2>Structuring stuff</h2>
+<ul>
 <li>Suggest outline/structure for a presentation</li>
-<li>Feedback on presentations: Upload slide(s)</li>
-<li>Overview of new topic area &amp; brainstorming</li>
-<li>Texts: revise, summarise, shorten</li>
-<li>Write first draft of a text based on notes</li>
-<li>Write in your own style: Upload paper</li>
+<li>Course Syllabi</li>
+</ul>
+</section>
+<section id="getting-feedback-on-everything" class="slide level2">
+<h2>Getting feedback on everything</h2>
+<ul>
+<li>Upload presentation slides</li>
+</ul>
+</section>
+<section id="area-specific-research-tasks" class="slide level2">
+<h2>Area specific research tasks</h2>
+<ul>
 <li>Surveys, e.g.&nbsp;<a href="https://chatgpt.com/share/67166062-c0e4-800b-b018-07562fc3819d">develop &amp; test MC questions</a>, <a href="https://chatgpt.com/share/6716608a-2044-800b-9461-c7508b2912b4">check comprehensibility</a>, <a href="https://chatgpt.com/share/67166a29-9330-800b-b041-41c1b9554e8c">answer options</a></li>
+<li>Statistics questions <a href="https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c">Example</a></li>
+<li>Discussion about <a href="https://chatgpt.com/share/671668f9-c280-800b-83ef-0e591c1200ca">social media &amp; mental health</a></li>
 </ul>
 <aside class="notes">
 <p>survey item to be updated, new conversation with chatgpt necessary</p>
@@ -987,57 +458,58 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li>Abstract &amp; Summary</li>
 <li>Help with Methods</li>
 </ul>
-</div>
-</div>
-<p>https://www.learnprompt.org/chatgpt-prompts-for-academic-writing/</p>
-</section>
-<section id="brainstorming" class="slide level2">
-<h2>Brainstorming:</h2>
-<ul>
-<li><a href="https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f">Journalist interview questions</a></li>
-</ul>
-</section>
-<section id="brainstorming-1" class="slide level2">
-<h2>Brainstorming</h2>
-<ul>
-<li><a href="https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea">Application: Future research directions</a> (second half of chat)
-<ul>
-<li>What does research on why people donate show? Please include research from Lucius Caviola, Stefan Schubert, and their collaborators.</li>
-<li>Have any interventions to increase donations, or get more people to donate, emerged from this research?</li>
-<li>What are the most important open questions in psychology regarding how to foster prosocial behavior and cooperation?</li>
-<li>What is a concrete experiment that you would do to investigate prosocial behavior, for example donations? Which design, which experimental groups, or which psychological measures would you use?</li>
-</ul></li>
-</ul>
-</section>
-<section id="writing" class="slide level2">
-<h2>Writing</h2>
-<ul>
-<li><p>Providing your paper, the r<a href="https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464">eviewer requests</a> for rewriting, let it rephrase</p></li>
-<li><p><a href="https://chatgpt.com/share/67166dd7-d494-800b-a652-1f0bb114d354">Feeding it with my papers</a>, digital scientific twin:</p></li>
-</ul>
-</section>
-<section id="literature-search" class="slide level2">
-<h2>Literature search</h2>
-<ul>
-<li><p>Dimensions AI: with scientific sources (<a href="https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c">Example thread</a>)</p></li>
-<li><p>Summarizing a paper based on <a href="https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8">Zotero note example</a></p></li>
-<li><p>Discussion about <a href="https://chatgpt.com/share/671668f9-c280-800b-83ef-0e591c1200ca">social media &amp; mental health</a></p></li>
-<li><p>Exploring a completely new topic (first half of chat, sleep training effects)</p></li>
-</ul>
-</section>
-<section id="applicationsletters" class="slide level2">
-<h2>Applications/Letters</h2>
-<ul>
-<li><p><a href="https://chatgpt.com/share/67166d34-1fa8-800b-ba58-0bc6da8dea1b">Recommendation letter</a></p></li>
-<li><p>Refining <a href="https://chatgpt.com/share/67166cc1-a2bc-800b-ad9f-28eb8b5078d9">cover letter &amp; teaching statement</a></p></li>
-</ul>
+</div></div>
+<p><a href="https://learnprompt.org/chatgpt-prompts-for-academic-writing/" class="uri">https://learnprompt.org/chatgpt-prompts-for-academic-writing/</a></p>
+<!-- ## Brainstorming & Exploration -->
+<!-- -   [Journalist interview questions](https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f) -->
+<!-- -   [Application: Future research directions](https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea) (second half of chat) -->
+<!--     -   What does research on why people donate show? Please include research from Lucius Caviola, Stefan Schubert, and their collaborators. -->
+<!--     -   Have any interventions to increase donations, or get more people to donate, emerged from this research? -->
+<!--     -   What are the most important open questions in psychology regarding how to foster prosocial behavior and cooperation? -->
+<!--     -   What is a concrete experiment that you would do to investigate prosocial behavior, for example donations? Which design, which experimental groups, or which psychological measures would you use? -->
+<!-- ## Exercise Summarizing: (15 minutes) {.smaller visibility='hidden'} -->
+<!-- ### Extract relevant points from long content  -->
+<!-- - Choose a recent workshop/lecture, meeting you attended or paper you read -->
+<!--   - You have some written record (notes, slides, transcript) -->
+<!-- - Copy/paste or upload the document -->
+<!-- - Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis -->
+<!-- - Define the audience: you, other researchers -->
+<!-- - Context about workshop/lecture/meeting/paper  -->
+<!-- - Task: Summarize key points that are relevant for you: "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam" -->
+<!-- - Add examples if you have any (points that are relevant, exam questions,...) -->
 </section></section>
 <section>
-<section id="ai-as-a-coach" class="title-slide slide level1 center">
-<h1>AI as a Coach</h1>
+<section id="try-something-new" class="title-slide slide level1 center">
+<h1>Try something new</h1>
 
 </section>
-<section id="ai-as-a-coach-1" class="slide level2">
+<section id="options" class="slide level2">
+<h2>3 options</h2>
+<ol type="1">
+<li>Data analysis</li>
+<li>Creating a website</li>
+<li>Coaching</li>
+</ol>
+</section>
+<section id="data-analysis" class="slide level2">
+<h2>Data analysis</h2>
+<ul>
+<li>LLMs are data scientists!!</li>
+<li>link to houseprices file</li>
+<li>take a look into the file</li>
+<li>test different Chatbots and ask for visual data exploration and analysis</li>
+</ul>
+</section>
+<section id="creating-a-website" class="slide level2">
+<h2>Creating a website</h2>
+<ul>
+<li>Turn your CV into a personal website</li>
+<li><a href="https://claude.site/artifacts/50f01821-fb16-4332-b65e-5499c3b71a0f">Example</a> to get you started</li>
+<li>Define sections</li>
+<li>Design: give it an example website screenshot …</li>
+</ul>
+</section>
+<section id="ai-as-a-coach" class="slide level2">
 <h2>AI as a coach</h2>
 <div class="columns">
 <div class="column" style="width:43%;">
@@ -1046,8 +518,6 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li>Career decisions</li>
 <li>Productivity coach: screenshot of a diary for a week, or several weeks</li>
 <li>Task prioritization</li>
-<li>Fitness coach</li>
-<li>Nutrition coach</li>
 </ul>
 </div><div class="column" style="width:43%;">
 <h3 id="why">Why?</h3>
@@ -1057,15 +527,14 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li>Going into detail</li>
 <li>Asking for advice based on my input</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="career-decisions" class="slide level2">
 <h2>Career decisions</h2>
 <ul>
-<li><p>Personal example:</p>
+<li>Personal example:
 <ul>
-<li>decision around leaving academia (long-term) &amp;</li>
+<li>Decision around leaving academia (long-term) &amp;</li>
 <li>Accepting an invitation to give a job talk as assistant professor (short-term)</li>
 </ul></li>
 </ul>
@@ -1105,7 +574,7 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li>Example <a href="https://chatgpt.com/share/671655d8-4ec8-800b-8f3f-1654f749f663">task prioritization &amp; daily schedule</a></li>
 </ul>
 </section>
-<section id="exercise-15-min" class="slide level2">
+<section id="exercise-15-min-1" class="slide level2">
 <h2>Exercise (15 min)</h2>
 <ul>
 <li>Choose a decision, or something you want feedback on</li>
@@ -1116,22 +585,6 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <section id="resources" class="title-slide slide level1 center">
 <h1>Resources</h1>
 
-</section>
-<section id="tools-based-on-llms" class="slide level2">
-<h2>Tools based on LLMs</h2>
-<ul>
-<li><a href="https://www.perplexity.ai/"><strong>Perplexity AI</strong></a>: like search engine, scientific references
-<ul>
-<li><a href="https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w">Example testosterone &amp; behaviour</a></li>
-</ul></li>
-<li><a href="https://elicit.com/"><strong>Elicit AI</strong></a>: Analyse research papers at superhuman speed
-<ul>
-<li>Slides <a href="https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7">here</a></li>
-<li><a href="https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb">Beispiel</a></li>
-</ul></li>
-<li><a href="https://notebooklm.google.com/">NotebookLM</a>: Document-based analyses <a href="https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant">Example Tutorial</a> <a href="https://www.nature.com/articles/s41586-024-07417-w">Paper</a></li>
-<li>Translation <a href="www.deepl.com">www.deepl.com</a></li>
-</ul>
 </section>
 <section id="resources-where-to-start" class="slide level2">
 <h2>Resources: Where to start</h2>
@@ -1158,67 +611,19 @@ Hannah Metzler &amp; Konstantin Hebenstreit <br> Slides: https://github.com/hann
 <li><a href="https://medium.com/@maximilian.vogel">Maximilian Vogel</a></li>
 </ul></li>
 </ul>
+</div><div class="column" style="width:47%;">
 <h3 id="social-media">Social Media</h3>
 <ul>
 <li><a href="https://www.linkedin.com/in/emollick/">Ethan Mollick on LinkedIn</a></li>
 <li><a href="https://www.tiktok.com/@nate.b.jones">Nate Jones on Tiktok</a></li>
+<li>YouTube: 3brown1blue for visualized understanding of technical concepts</li>
 </ul>
-</div><div class="column" style="width:47%;">
-<h3 id="other-social-media-accounts-x">Other social media accounts? X?</h3>
-<ul>
-<li>Konstantin recommendations?</li>
-<li>check: https://analyticsindiamag.com/ai-mysteries/top-30-ai-influeners-to-follow-on-x/</li>
-</ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="deep-dives-big-picture" class="slide level2">
 <h2>Deep Dives &amp; Big Picture</h2>
 <ul>
 <li>A really enjoyable book: <a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a> by Ethan Mollick</li>
-<li>Reddit community: r/LocalLamma</li>
-</ul>
-</section></section>
-<section>
-<section id="appendix" class="title-slide slide level1 center">
-<h1>Appendix</h1>
-
-</section>
-<section id="emotion-prompts" class="slide level2">
-<h2>Emotion prompts</h2>
-<ul>
-<li>Emotional expressions can lead to better results (<a href="https://arxiv.org/abs/2307.11760">Cheng et al., 2023</a>)</li>
-</ul>
-
-<img data-src="images/emotional_prompt.jpg" width="610" class="r-stretch"><pre><code>Write your answer and give me a confidence score between 0-1 for your answer. 
-You'd better be sure.</code></pre>
-<aside class="notes">
-<p>Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Despite built-in prompting strategies like chain of thought reasoning, using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-<h3 id="more-examples-of-emotional-prompts">More examples of emotional prompts:</h3>
-<ul>
-<li>This is extremely important to me, please be accurate.</li>
-<li>If you work correctly and well, you’ll get a treat.</li>
-<li>This is important for my career, please be careful.</li>
-</ul>
-</section>
-<section id="why-do-emotional-prompts-work" class="slide level2">
-<h2>Why do emotional prompts work?</h2>
-<ul>
-<li>Training the model on human language, describing human interactions</li>
-<li>Is a person’s response likely to be better or worse if I tell whom it is important?</li>
-<li>Can increase care/accuracy of the answer</li>
-<li>Therefore: Talk like a human being</li>
 </ul>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -1230,19 +635,19 @@ You'd better be sure.</code></pre>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="AI_skills_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="research_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="research_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="research_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="research_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="research_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="research_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="AI_skills_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="research_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="research_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="research_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="research_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1436,44 +841,6 @@ You'd better be sure.</code></pre>
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -1506,18 +873,7 @@ You'd better be sure.</code></pre>
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1549,7 +905,47 @@ You'd better be sure.</code></pre>
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1586,7 +982,11 @@ You'd better be sure.</code></pre>
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

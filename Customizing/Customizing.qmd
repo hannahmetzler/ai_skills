@@ -94,7 +94,8 @@ knitr::include_graphics("images/gpt_builder.png")
 ## Exercise: Create your CustomGPT (15 min)
 
 - Your writing buddy
-- KOnstantin better ideas
+- Quarto buddy
+
 
 
 ## Existing Custom GPTs for research
@@ -102,6 +103,8 @@ knitr::include_graphics("images/gpt_builder.png")
 - Dimensions Research GPT / Consenus
 
 ## Dimensions Research GPT
+
+-   ([Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c))
 
 ## Consensus
 
