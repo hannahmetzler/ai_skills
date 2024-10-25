@@ -6,7 +6,7 @@ date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"
-    theme: [default, ../custom.scss]
+    theme: [default, custom.scss]
     incremental: false
     aspect-ratio: 16:9
     slide-number: true
