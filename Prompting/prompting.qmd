@@ -12,11 +12,6 @@ format:
     slide-number: true
     title-slide: true  # This enables the title slide
     speakerNotes: true
-# Optional background attributes for the title slide
-# title-slide-attributes:
-#   data-background-image: images/your_image.jpg
-#   data-background-size: cover
-#   data-background-opacity: "0.5"
 editor: source
 ---
 
