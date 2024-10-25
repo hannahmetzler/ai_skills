@@ -1,0 +1,109 @@
+---
+title: "Customizing Chatbots"
+subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+author: "Konstantin Hebenstreit"
+date: "October 29 2024"
+format: 
+  revealjs: 
+    transition: "slide"
+    ## Defines the theme of the presentation, both version and style
+    theme: [default, custom.scss]
+    # incremental slides point by point
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    speakerNotes: true
+    footer: ""
+# title-slide-attributes:
+# data-background-image: images/
+# data-background-size: cover
+# data-background-opacity: "0.5"
+#editor
+editor: source
+---
+
+# Customizing Chatbots
+
+## System prompts
+
+- Customizing your default version of ChatGPT
+-  Prompts that are entered each time, e.g. chain of thought
+
+:::::: columns
+::: {.column width="45%"}
+```{r}
+knitr::include_graphics("images/system_prompt.png")
+```
+:::
+
+::: {.column width="45%"}
+"This is extremely important for my job, please work accurately and check that everything is correct."
+:::
+::::::
+
+
+## Ideas for useful system prompts
+
+- When I start with "reason"
+- Reproducible research
+
+::: notes
+Don't give detailed explanations of code unless I ask for it.
+
+Challenge to continue learning
+:::
+
+## Claude's system prompt
+
+## Creating Custom GPTs
+
+-   Creation of a customised model for specific requirements
+-   Examples:
+    -   Writing in my wHannah/images/riting style
+    -   Concise answers for code, adapted to my skills
+
+## Creating Custom GPTs: How to
+
+:::::: columns
+::: {.column width="18%"}
+1)  
+
+```{r, echo=F}
+knitr::include_graphics("images/how_to_custom_gpt.png")
+```
+:::
+
+::: {.column width="14%"}
+2)  
+
+```{r}
+knitr::include_graphics("images/how_to_custom_gpt2.png")
+```
+:::
+
+::: {.column width="60%"}
+```{r, out.height=400}
+knitr::include_graphics("images/gpt_builder.png")
+```
+:::
+::::::
+
+-   GPT Builder asks more questions
+-   Try it out and keep "talking into it" until it fits
+
+## Exercise: Create your CustomGPT (15 min)
+
+- Your writing buddy
+- KOnstantin better ideas
+
+
+## Existing Custom GPTs for research
+
+- Dimensions Research GPT / Consenus
+
+## Dimensions Research GPT
+
+## Consensus
+
+## Exercise: Testing Dimensions/Consensus (5 min)
+

@@ -40,7 +40,7 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 
 |               |                                |
 |---------------|--------------------------------|
-| 9h15 -  10h   | Introduction to LLMs|
+| 9h20 -  10h   | Introduction to LLMs|
 | 10h - 11h     | Chatbot essentials & prompting strategies  |
 | 11h15 -  12h   | Customizing Chatbots  |
 | 12h -  12h45   | Chatbots in Research: Writing |
@@ -52,7 +52,8 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 
 ## Access to LLM chatbots for today
 
--   Who has a paid account?
+- Who has a paid account?
+- Did all others create a Gemini pro trial account?
 -   Log in for 8 more accounts
 
 # Introduction to LLMs
@@ -115,7 +116,7 @@ we'll now look at these points in more detail
 
 ## Voice conversations
 
--   In the ChatGPT App on Mac & Smartphones
+-   ChatGPT App on Mac (Windows beta) & Smartphones
 -   Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
 
 ::::: columns
@@ -133,6 +134,7 @@ we'll now look at these points in more detail
 
 -   Headphones for an ongoing conversation
 -   Microphone to record, stop to transcribe
+- Advanced voice mode
 :::
 :::::
 
@@ -154,6 +156,10 @@ we'll now look at these points in more detail
 - Estimating prices (me selling my old [cello](https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928))
 -   Personalized [fitness plan](https://chatgpt.com/share/671904b2-7f44-800b-ad5f-1824a194e177)
 -   Finding a [web hosting](https://chatgpt.com/share/67166a6e-772c-800b-9da7-67148e1f9c51) service
+
+::: notes
+all links only work if I am logged in??/
+:::
 
 ## 5 minutes exercise
 
@@ -249,7 +255,7 @@ we'll now look at these points in more detail
 - Example: Writing an email (see [this slide](#email))
 - Output: 3 Quarto slides
 
-## Exercise Option 1: Email (10 minutes) {#email}
+## Exercise Option 1: Email (15 minutes) {#email}
 
 -   Choose an email you need to write soon
 -   Talk to ChatGPT using the microphone
@@ -269,19 +275,6 @@ we'll now look at these points in more detail
 - Ask for a specific solution, including step-by-step instructions
 - Upload a sample of your data or describe it in detail as context
 
-## Exercise Option 3: (15 minutes) {.smaller}
-
-### Extract relevant points from long content 
-
-- Choose a recent workshop/lecture, meeting you attended or paper you read
-  - You have some written record (notes, slides, transcript)
-- Copy/paste or upload the document
-- Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis
-- Define the audience: you, other researchers
-- Context about workshop/lecture/meeting/paper 
-- Task: Summarize key points that are relevant for you: "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam"
-- Add examples if you have any (points that are relevant, exam questions,...)
-
 # Prompting strategies
 
 ## Managing expectations
@@ -298,7 +291,9 @@ we'll now look at these points in more detail
 [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 :::
 
-## Using section headers
+## Other useful tips
+
+### Using section headers
 
 - Check how to write Markdown content without executing it
 
@@ -306,6 +301,11 @@ we'll now look at these points in more detail
 '# Task'
 '## Output format'
 '# Examples'
+
+### Chain-of-thought reasoning
+
+- Let's think step by step. 
+- Define precise steps you want the model to do. 
 
 ## Base prompts
 
@@ -333,25 +333,32 @@ Could you please write a mega prompt from our interaction here, that I can use a
 -   Cannot reflect on its own processes
 -   New models much better, but problem is built in
 
-## Strategies for verification
+## Strategies for verification I
 
-- 4-eyes principle: Model does 80%, 20% human (expertise matters)
+- 4-eyes principle: Model does 80%, 20% human
+- Expertise and fact knowledge matters (even more?)
 - Check online and give me 5 sources for this claim
 - Chain of Verification: Check online for 4 facts to make sure that this answer is correct
 - Ask for prompts: Why am I not getting the answer I am looking for? (Andreas book example)
 -   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
+
+::: footer
+Ethan Mollick, [Malcolm Wachota](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
+:::
+
+## Strategies for verification II
+
 -   Ask other models: Enter output of model 1 and ask: "Is this correct? Can you back this up with sources?"
 -   Sources: Perplexity, Dimensions Research AI, Consensus
 
-## Chain-of-thought reasoning
+## Exercise: Correcting Hallucinations (10 min)
 
-- potential example from here: https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf
+- book example
+- construct CV and check
 
-- ChatGPT4o vs. ChatGPT
 
-::: footer
-https://arxiv.org/abs/2201.11903
-:::
+
+
 
 ## Prompt libraries for regular tasks
 
@@ -359,86 +366,6 @@ https://arxiv.org/abs/2201.11903
 - What? Mega-prompts containing 
 
 
-# Customizing Chatbots
-
-## Customizing the default version of ChatGPT
-
--   System prompts\*\*: Prompts that are entered each time, e.g. emotional prompts
-
-:::::: columns
-::: {.column width="15%"}
-```{r}
-knitr::include_graphics("images/how_to_system_prompt.png")
-```
-:::
-
-::: {.column width="30%"}
-```{r}
-knitr::include_graphics("images/system_prompt.png")
-```
-:::
-
-::: {.column width="45%"}
-"This is extremely important for my job, please work accurately and check that everything is correct."
-:::
-::::::
-
-::: notes
-My custom Instructions: ask Konstantin if useful. I am based in Vienna, and am a postdoc researcher in computational social science and psychology. I am a women, I use ChatGPT to code in R. I also use Github. I check scientific information for work, my research topics include social media, misinformation, polarization, false polarization, subjective well-being, analysing social media data, suicide prevention via the media (media effects research), machine learning applications in these areas, social dominance and power, social connection and belonging, hatespeech, hormones, power postures. I do acroyoga, am part of a co-housing project, am in a relationship. I like listening to podcasts, reading books, biking, talking about relationships, meeting friends, acroyoga etc. I also supervise PhD and master students.
-
-In my personal life, I am polyamorous, vegetarian to vegan, like effective altruism, S+, good at relationships, moving to a co housing project in 2 years, 37 years old.
-
-Open question: How would you like ChatGPT to respond? Think step by step. Don't give detailed explanations of code unless I ask for it.
-:::
-
-## Creating Custom GPTs
-
--   Creation of a customised model for specific requirements
--   Examples:
-    -   Writing in my writing style
-    -   Concise answers for code, adapted to my skills
-
-## Creating Custom GPTs: How to
-
-:::::: columns
-::: {.column width="18%"}
-1)  
-
-```{r, echo=F}
-knitr::include_graphics("images/how_to_custom_gpt.png")
-```
-:::
-
-::: {.column width="14%"}
-2)  
-
-```{r}
-knitr::include_graphics("images/how_to_custom_gpt2.png")
-```
-:::
-
-::: {.column width="60%"}
-```{r, out.height=400}
-knitr::include_graphics("images/gpt_builder.png")
-```
-:::
-::::::
-
--   GPT Builder asks more questions
--   Try it out and keep "talking into it" until it fits
-
-## Custom GPT variant: Digital Twins
-
--   Training a model with the knowledge of a person
-
--   Others can communicate with the twin without interrupting the person at work
-
--   My experiment: upload all my papers/work: Digital Twin with my knowledge
-
-## Existing Custom GPTs for research
-
-- Dimensions Research GPT / Consenus
-- check: data analysis buddy
 
 # Scientific Work
 
@@ -509,6 +436,21 @@ https://www.learnprompt.org/chatgpt-prompts-for-academic-writing/
 -   Providing your paper, the r[eviewer requests](https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464) for rewriting, let it rephrase
 
 -   [Feeding it with my papers](https://chatgpt.com/share/67166dd7-d494-800b-a652-1f0bb114d354), digital scientific twin:
+
+## Summarizing text
+
+## Exercise Option 3: (15 minutes) {.smaller}
+
+### Extract relevant points from long content 
+
+- Choose a recent workshop/lecture, meeting you attended or paper you read
+  - You have some written record (notes, slides, transcript)
+- Copy/paste or upload the document
+- Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis
+- Define the audience: you, other researchers
+- Context about workshop/lecture/meeting/paper 
+- Task: Summarize key points that are relevant for you: "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam"
+- Add examples if you have any (points that are relevant, exam questions,...)
 
 ## Literature search
 
