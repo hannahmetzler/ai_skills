@@ -1,5 +1,5 @@
 ---
-title: "Enhancing your research outputs with LLM Chatbots"
+title: "Try something new or meet your personal LLM coach"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 author: "Hannah Metzler & Konstantin Hebenstreit <br> Slides: https://github.com/hannahmetzler/AI_skills"
 date: "October 29 2024"
@@ -22,7 +22,7 @@ editor: source
 
 # Try something new
 
-## 3 options
+## 3 Exercise options
 1. Data analysis
 1. Creating a website
 1. Coaching
@@ -45,7 +45,7 @@ editor: source
 ::: {.columns}
 
 ::: {.column width="43%"}
-### Topics
+### Coaching topics
 
 - Career decisions
 - Productivity coach: screenshot of a diary for a week, or several weeks
@@ -53,7 +53,7 @@ editor: source
 :::
 
 ::: {.column width="43%"}
-### Why?
+### Benefits
 
 - For free
 - Radical honesty - no shame
@@ -68,13 +68,14 @@ editor: source
 - Personal example:
     -   Decision around leaving academia (long-term) &
     -   Accepting an invitation to give a job talk as assistant professor (short-term)
-- Context: explaining my situation and 
+- Context: explaining my situation, values, doubts, wishes for the future...
+- Asking for: direct advice, fitting job roles based on CV, approaches to take decisions
 
 ::: notes
 The conversation: <https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5>
 :::
 
-## My conversation with a ChatGPT coach {.scrollable}
+## Example coaching session prompts {.scrollable .smaller}
 
 -   Explicit instruction & role: "You are an encouraging and empathetic coach, who helps me take a big decision. Don't shy away from being directive and giving advice. You are very experienced in coaching PhDs leaving academia, and a lot of knowledge about the job market for PhDs with a background in [...] in Vienna."
 
