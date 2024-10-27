@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="AI_skills_files/libs/clipboard/clipboard.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tabby.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/popper.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="AI_skills_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="AI_skills_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="writing_files/libs/clipboard/clipboard.min.js"></script>
+<script src="writing_files/libs/quarto-html/tabby.min.js"></script>
+<script src="writing_files/libs/quarto-html/popper.min.js"></script>
+<script src="writing_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="writing_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="writing_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="writing_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="writing_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Konstantin Hebenstreit">
-  <meta name="dcterms.date" content="2024-10-22">
-  <title>How do Large Language Models (LLMs) work?</title>
+  <meta name="dcterms.date" content="2024-10-29">
+  <title>Using Chatbots for Writing</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="writing_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="writing_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="writing_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="writing_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="writing_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="writing_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="writing_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -327,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">How do Large Language Models (LLMs) work?</h1>
+  <h1 class="title">Using Chatbots for Writing</h1>
   <p class="subtitle">Mastering AI Chatbots: Optimizing Research through Effective Use</p>
 
 <div class="quarto-title-authors">
@@ -338,668 +338,233 @@ Konstantin Hebenstreit
 </div>
 </div>
 
-  <p class="date">2024-10-22</p>
+  <p class="date">2024-10-29</p>
 </section>
-<section id="ai-and-science" class="slide level2">
-<h2>AI and Science</h2>
-<div class="columns">
-<div class="column" style="width:47%;">
-<p><img data-src="images/ai_scientist_news.png"> <small><em>Source: <a href="https://www.discovermagazine.com/the-sciences/meet-the-ai-scientist">Discover Magazine</a></em></small></p>
-</div><div class="column fragment" style="width:47%;">
-<p><img data-src="images/comparing_numbers.png"></p>
-</div></div>
+<section id="writing-sections-of-papers" class="slide level2">
+<h2>Writing sections of papers</h2>
+<h3 id="test-how-good-is-the-ai-in-writing-a-discussion">Test how good is the AI in writing a discussion</h3>
+<p>Try out: (Re-)Writing the discussion of a given paper</p>
+<ol type="1">
+<li>Choose a paper you know very well, best would be one of your own.</li>
+<li>Give the paper without the discussion to the model “o1-preview”</li>
+<li>Let it write the discussion on it’s own</li>
+<li>Check how it is doing</li>
+</ol>
 </section>
-<section id="how-does-ai-work" class="slide level2">
-<h2>How does AI work?</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Input</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
-<p>AI Model</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Output</p>
-</div></div>
-</section>
-<section id="ai" class="slide level2">
-<h2>AI</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p><img data-src="https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg"></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
-<p>Image Classification Model</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Lemon</p>
-</div></div>
-</section>
-<section id="llms" class="slide level2">
-<h2>LLMs</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Text</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
-<p>Large Language Model</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Text</p>
-</div></div>
-</section>
-<section id="llms-1" class="slide level2">
-<h2>LLMs</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p>Text</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:40%;">
-<p><img data-src="images/tunable_parameters.png"></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p>Text</p>
-</div></div>
-</section>
-<section id="llms-autocomplete" class="slide level2">
-<h2>LLMs: Autocomplete</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p><small>“The actress that played Rose in the 1997 film Titanic is named…”</small></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:40%;">
-<p><img data-src="images/tunable_parameters.png"></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p><em>Predicts the next word</em></p>
-</div></div>
-</section>
-<section id="next-word-prediction" class="slide level2">
-<h2>Next word prediction</h2>
+<section id="my-example" class="slide level2">
+<h2>My example</h2>
+<h3 id="paper-about-generalization-of-prompting-strategies">Paper about generalization of prompting strategies</h3>
 
-<!-- ## Text representation
-<br>
-<br>
-
-::::: columns
-::: {.column width="40%" align="center"}
-Words
-
-<small>
-Even though the sound of it is<br> something quite atrocious, if you<br> say it loud enough, you’ll always<br> sound precocious, <br>Supercalifragilisticexpialidocious!
-</small>
-
-<small>
-*Marry Poppins*
-</small>
-
-:::
-
-::: {.column width="10%" align="center".fragment data-fragment-index="1"}
-→
-:::
-
-::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
-Tokens = "Subwords"
-
-![](images/tokenzined_sentence.png)
-:::
-
-::::: -->
-<img data-src="images/next_word_prediction.png" class="r-stretch"></section>
-<section id="representing-the-meaning-of-words" class="slide level2">
-<h2>Representing the meaning of words</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>Word embeddings</strong></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/wordembeddings.svg"></p>
-</figure>
+<img data-src="images/peerj_screenshot.png" class="r-stretch"><div class="footer">
+<p>Hebenstreit et al.&nbsp;<a href="https://peerj.com/articles/cs-1999/#">2024</a></p>
 </div>
-</div>
-</div>
-</div><div class="column" style="width:56%;">
-<p><strong>Contextual word embeddings</strong></p>
+</section>
+<section id="ai-generated-discussion" class="slide level2 smaller" style="font-size: 0.4em;">
+<h2>AI generated discussion:</h2>
+<p>In this study, we conducted a comprehensive comparison of zero-shot chain-of-thought (CoT) reasoning strategies across multiple large language models (LLMs) and diverse datasets. Our findings highlight that while the effectiveness of specific reasoning strategies can vary depending on the model and dataset, overall gains from CoT reasoning remain robust. Notably, GPT-4 demonstrated the most significant improvements when applying advanced reasoning prompts, particularly the “Zhou” prompt discovered through automated prompt engineering (Zhou et al., 2023b).</p>
+<p>Effectiveness of Reasoning Strategies</p>
+<p>Our results indicate that employing explicit reasoning prompts generally outperforms direct prompting without any specific CoT trigger. The “Zhou” prompt—“Let’s work this out in a step by step way to be sure we have the right answer.”—consistently yielded the highest performance across models, especially with GPT-4. This aligns with previous research suggesting that guiding models to think step by step enhances their ability to solve complex problems (Wei et al., 2022; Kojima et al., 2022).</p>
+<p>Interestingly, while GPT-4 benefited significantly from externalized reasoning prompts, models like Flan-T5-xxl did not exhibit the same level of improvement. For Flan-T5-xxl, direct prompting remained among the optimal methods. This suggests that the efficacy of CoT reasoning strategies may be model-dependent, possibly due to differences in training data, architecture, or inherent reasoning capabilities.</p>
+<p>Model Performance Across Datasets</p>
+<p>The performance of models varied notably across different datasets. GPT-4 and GPT-3.5-turbo achieved the highest scores overall, particularly excelling in datasets like WorldTree v2 and CommonsenseQA. These datasets, which require general knowledge and logical reasoning, appear to be well-suited for advanced LLMs. The superior performance on WorldTree v2 suggests that better models find this dataset increasingly easier, potentially due to their enhanced ability to process and reason with scientific facts.</p>
+<p>Conversely, StrategyQA presented challenges, with models showing lower performance due to the dataset’s ambiguous items. This highlights the impact of question clarity on model performance and suggests that even advanced models struggle with poorly defined problems.</p>
+<p>The medical datasets, MedQA and MedMCQA, were the most difficult for all models. Only GPT-4 and GPT-3.5-turbo displayed acceptable performance levels, underscoring the complexity of medical knowledge and the limitations of LLMs without specialized training in this domain. The low performance of models like Flan-T5-xxl on MedQA (Krippendorff’s alpha close to chance) emphasizes the need for domain-specific fine-tuning to improve accuracy in specialized fields.</p>
+<p>Impact of Data Contamination</p>
+<p>(…)</p>
+<aside class="notes">
+<p>People often tell me that they are frustrated because they have to read all of that text the AI is providing.</p>
+<p>We need to find a method that is easy for us. Easy to test if the Chatbot is doing what we want.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="dont-let-the-ai-work-against-you" class="slide level2">
+<h2>Don’t let the AI work against you!</h2>
 <ul>
-<li>Context (before and after the word) taken into account</li>
-<li><a href="https://www.tiktok.com/@whats_ai/video/7247609946672565510">Example</a> “Apple”: Mac or fruit?</li>
+<li>Possible strategy, but usually the output is not good</li>
+<li>Too much text to check</li>
+<li>Lot’s of correction work for you</li>
 </ul>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/apple_context.png" class="quarto-figure quarto-figure-center" width="250"></p>
-</figure>
+<div class="fragment">
+<h3 id="rightarrow-next-smarter-try"><span class="math inline">\(\rightarrow\)</span> Next (smarter) try</h3>
+<p>Model input - to do ?????????????????????????</p>
 </div>
-</div>
-</div>
-</div></div>
 </section>
-<section id="what-is-an-llm-actually" class="slide level2">
-<h2>What is an LLM, actually?</h2>
+<section id="different-strategy-bullet-points" class="slide level2 smaller" style="font-size: 0.4em;">
+<h2>Different strategy: bullet points</h2>
 <ul>
-<li><strong>Large Language Models (LLMs)</strong>: Deep learning neural networks built to understand and generate text</li>
-<li>Trained on <strong>vast amounts of text</strong> from diverse sources (Wikipedia, social media, books, podcasts, etc.)</li>
-<li>Convert text data into <strong>statistical patterns</strong> to predict words and sentences</li>
-</ul>
-</section>
-<section id="pros-and-cons-of-llms" class="slide level2">
-<h2>Pros and Cons of LLMs</h2>
+<li><strong>Effectiveness of Chain-of-Thought (CoT) Reasoning Strategies:</strong>
 <ul>
-<li><p>Generates coherent, human-like text</p></li>
-<li><p>Vast knowledge embedded in its parameters</p></li>
-<li><p>Useful for content generation, summarization, and translation</p></li>
-<li><p>Cannot think before responding</p></li>
-<li><p>Struggles with logical reasoning, often makes incorrect assumptions</p></li>
-<li><p>Can produce inaccurate or hallucinated information</p></li>
+<li>Applying CoT reasoning strategies consistently outperforms direct prompting across various models and datasets.</li>
+<li>Reinforces the value of externalized reasoning in enhancing LLM performance on complex question-answering tasks.</li>
+</ul></li>
+<li><strong>Model-Specific Benefits:</strong>
+<ul>
+<li><strong>GPT-4:</strong>
+<ul>
+<li>Exhibited the most significant improvement with CoT prompts, particularly with the prompt discovered by Zhou et al.&nbsp;(2023b).</li>
+<li>Demonstrated superior performance across most datasets, especially in domain-specific ones like medical datasets.</li>
+</ul></li>
+<li><strong>Command-XL:</strong>
+<ul>
+<li>Showed notable gains from externalized reasoning, similar to GPT-4.</li>
+</ul></li>
+<li><strong>FLAN-T5:</strong>
+<ul>
+<li>Performance did not significantly improve with CoT prompts; direct prompting remained among its optimal methods.</li>
+<li>Possible data contamination due to fine-tuning on similar datasets may have influenced results.</li>
+</ul></li>
+</ul></li>
+<li><strong>Prompt Variability and Dataset Interaction:</strong>
+<ul>
+<li>Different prompts yielded varying effectiveness depending on the dataset.
+<ul>
+<li><strong>“Zhou” Prompt:</strong>
+<ul>
+<li>Excelled in datasets like OpenBookQA but was less effective in StrategyQA.</li>
+</ul></li>
+<li><strong>“Rephrase” Prompt:</strong>
+<ul>
+<li>Improved performance on StrategyQA, suggesting benefits in handling ambiguous questions through rephrasing.</li>
+</ul></li>
+</ul></li>
+<li>Indicates the importance of aligning prompt design with dataset characteristics for optimal performance.</li>
+</ul></li>
+<li><strong>Performance on Domain-Specific Datasets:</strong>
+<ul>
+<li><strong>Medical Datasets (MedQA and MedMCQA):</strong></li>
+</ul></li>
+</ul>
+<p><strong>(… 2 times this amount of text)</strong></p>
+</section>
+<section id="how-are-we-doing-this-time" class="slide level2">
+<h2>How are we doing this time?</h2>
+<ul>
+<li>Still too much information for a quick check</li>
+<li>What we want:
+<ul>
+<li>Structure of a scientific discussion</li>
+<li>Most important points for each section</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<h3 id="rightarrow-next-even-smarter-try"><span class="math inline">\(\rightarrow\)</span> Next (even smarter) try</h3>
+<p>Model input - to do ?????????????????????????</p>
+</div>
+</section>
+<section id="fit-it-into-subheadings" class="slide level2 smaller" style="font-size: 0.5em;">
+<h2>Fit it into subheadings</h2>
+<p>Conclusion</p>
+<pre><code>•   Zero-shot chain-of-thought (CoT) reasoning strategies consistently enhance the performance of large language models (LLMs) across diverse datasets and domains.
+•   GPT-4 showed the most significant improvements when applying state-of-the-art reasoning prompts, outperforming other models in both general and specialized tasks.
+•   The effectiveness of CoT prompts remains robust across different models and datasets, highlighting their generalizability.
+•   Prompts discovered through automated methods, such as the one by Zhou et al., demonstrated superior performance, especially with GPT-4.
+•   Data contamination influenced the performance of models like Flan-T5-xxl, underscoring the importance of clean evaluation datasets.</code></pre>
+<p>Limitations</p>
+<pre><code>•   The study was limited to six models and six datasets, which may not represent the full spectrum of available LLMs and task complexities.
+•   Data contamination in models like Flan-T5-xxl may have skewed results, particularly on datasets it was fine-tuned on.
+•   The evaluation metric, Krippendorff’s alpha, while suitable for varying answer choices, might not capture all nuances of model performance.
+•   The use of a zero temperature setting for determinism does not reflect real-world applications where randomness is a factor.
+•   Sample sizes, although determined via power analysis, might still limit the generalizability of the findings.</code></pre>
+<p>Related Work</p>
+<pre><code>•   Previous research has demonstrated that CoT reasoning enhances LLM performance in few-shot prompting scenarios (Wei et al., 2022).
+•   Kojima et al. (2022) introduced zero-shot CoT prompting, showing improvements without task-specific examples.
+•   Zhou et al. (2023b) utilized automated prompt engineering to discover effective reasoning prompts, aligning with our findings.
+•   Studies on data contamination (Carlini et al., 2021) highlight its impact on model evaluations, resonating with our observations on Flan-T5-xxl.
+•   The robustness of CoT strategies across models and tasks adds to the growing evidence of their effectiveness in NLP tasks.</code></pre>
+<p>Future Work</p>
+<pre><code>•   Expand the study to include a broader range of LLMs, including open-source and differently architected models.
+•   Investigate the combined effects of few-shot and one-shot prompting strategies with CoT reasoning.
+•   Develop methods to mitigate data contamination to ensure fair and accurate model comparisons.
+•   Explore new reasoning prompts through automated and human-in-the-loop approaches to further enhance performance.
+•   Evaluate CoT strategies in additional domains like legal or technical fields to test their generalizability.
+•   Examine the impact of varying model parameters, such as temperature settings, on the effectiveness of CoT reasoning.</code></pre>
+</section>
+<section id="if-you-want-to-compare-to-the-original" class="slide level2 smaller" style="font-size: 0.35em;">
+<h2>If you want to compare to the original</h2>
+<p><strong>Using the chatbot to turn the original discussion into bullet points</strong></p>
+<h3 id="conclusion">Conclusion</h3>
+<ul>
+<li>Using reasoning strategies enhances model performance over direct prompting for all model sizes.</li>
+<li>Zhou and Kojima’s prompts are effective across diverse scenarios.</li>
+<li>Comparing prompts is challenging because large models max out on simple data, and small models struggle on complex data.</li>
+<li>GPT-4 consistently outperforms other models, and Krippendorff’s alpha effectively evaluates multiple-choice datasets.</li>
+</ul>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li>Dataset subsampling due to budget limits restricts comparisons with full test sets.</li>
+<li>Ambiguous questions in some datasets without clear best answers affected the evaluation.</li>
+<li>Evolving closed-source models hinder replication and may have data contamination issues.</li>
+<li>Data leakage from retraining on usage data is a concern, advising caution when interpreting results.</li>
+</ul>
+<h3 id="related-work">Related Work</h3>
+<ul>
+<li>Earlier studies assessed zero-shot prompting on medical and commonsense datasets.</li>
+<li>Research explored enhancing zero-shot reasoning via sequential steps and logic dependencies.</li>
+<li>This study focuses on simple chain-of-thought prompts across models and complex datasets.</li>
+</ul>
+<h3 id="future-work">Future Work</h3>
+<ul>
+<li>Evaluate prompts and datasets with more models, including open LLMs like LLaMa and Alpaca.</li>
+<li>Investigate effects of semantically similar but syntactically different prompts on performance.</li>
+<li>Conduct user studies to assess the quality and explanatory utility of reasoning chains from different prompts and models.</li>
 </ul>
 </section>
-<section id="thank-you-for-your-attention" class="slide level2">
-<h2>Thank You for Your Attention!</h2>
-<p><br> <br> <strong>Questions? I’m happy to answer!</strong></p>
-<!-- ## What is an LLM, actually?
-
--   Large Language Models: Deep Learning Neural Networks trained on text
--   Advanced Language models that process huge amounts of text
--   Trained with text data from the Internet (Wikipedia, social media, online media, books, literature, videos, films, YouTube, podcasts...)
--   Turn it into statistical word and sentence predictions
--   Can provide detailed and context-rich answers
-
-## Neural networks
-
--   Multiple layers of "neurons"
--   Deep learning
--   Linear regressions calculate "weights" for the connections
-
-::::: columns
-::: {.column width="47%"}
--   Input layer: Quantitative representation of sentence
--   Output layer: One-hot encoding
-:::
-
-::: {.column width="47%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/neuralnet.svg)
-:::
-:::
-
-
-:::
-:::::
-
-::: notes
-One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
-:::
-
-
-
-## How are LLMs trained? - update
-
-All Transformer models (a model architecture for efficient computing):
-
--   BERT specific, to update: **Masked word prediction**
-    -   “New **\[MASK\]** is a city”
--   **Next sentence prediction**
-    -   "Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved."\
-    -   TRUE/FALSE als Feedback
-    
-## Terms to explain
-
-- context window
-- token
-
-## Current top models - To do: update
-
--   **ChatGPT-4o** (Open AI)
--   **Claude** (Anthropic)
--   **Bard (Gemini)** (Google)
-
-## Multimodal ChatGPT interactions
-
-**(Some also work with Claude)**
-
-- File Uploads (& Claude)
-- Browse
-- Discovering and using GPTs
-- Upload & analyze images
-- Create images with DALL-E
-- Audio: Talking/Listening
-- Data analysis (& Claude)
-- Execute code
-
-## Strengths of different models - update
-
--   [**ChatGPT-4**](https://chat.openai.com/) (Open AI): multimodal interactions, 8.000 tokens (more with API)
--   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, longer context window (200.000 tokens)
--   [**Gemini**](https://gemini.google.com/app) (Google): ??? (Search capability and database, integration with Google services), 100.000 tokens
-
-Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
-
-## Different ChatGPT versions
-
-- ChatGPT4: more resource intensive = expensive
-- ChatGPT4o = optimized to be faster and cheaper
-- ChatGPT-4o mini: every day tasks
-- Only via API or special access plans:
-  - ChatGPT-4 Turbo: long context window (128.000 tokens)
-  - o1-preview: advanced reasoning
-  - ChatGPT-3.5: less resource intense
-  
-::: footer
-[ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini)
-
-::: 
-
-## Slide on Chatbot Arena?
-
-
-
-
-
-## Access to models
-
-| model      | free access                       | costs /month |
-|------------|-----------------------------------|--------------|
-| ChatGPT    | GPT-4o mini, GPT4-o limited, limits for multimodal   | 24€          |
-| Claude   | 200 tokens/day                    | ca \$20      |
-| Gemini      | 1 month trial of paid version, 2500 tokens/day                   | 21.99€     |
-| Perplexity | 3 requests/day, 1000 tokens/month | \$17-20      |
-| Elicit     | 1000 tokens/month                 | \$10-12      |
-
-::: notes
-To Do: update requests/limits
-:::
-
-
-## Discussion 
-
-- In small groups: 
-
-
-# The basics: How to talk to an LLM Chatbot?
-
-## Use search engines vs. LLMs
-
-:::: columns
-::: {.column width="35%"}
-### Search engine
-
--   A few short keywords
-<br><br><br><br><br>
--   Answer: many single results
-:::
-
-::: {.column width="60%"}
-### LLM Chatbot
-
--   Long prompts with lots of details, context, examples & explanations
--   Answer is summarised
-:::
-::::
-
-## General tips
-
-- Use it often and try it out!
-- Speak to it as if it was a person
-- Give feedback & engage in dialogue, performance improves very quickly
-- Spelling doesn't matter at all
-- Do the first 80% quickly, then check.
-- Use microphone & headphones and actually talk!
-- Work on your prompts!
-
-## Voice Control
-
-- ChatGPT App on Mac & Smartphones
-- Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
-
-:::::: columns
-::: {.column width="47%"}
-### Voice Up
-
-- Hold SPACE (outside text input) to record, release to submit
-- ESC to stop & transcribe text without submitting
-:::
-
-::: {.column width="47%"}
-### ChatGPT App
-![](images/voice_control.png)
-
-- Headphones for an ongoing conversation
-- Microphone to record, stop to transcribe
-:::
-::::::
-
-## Effective Prompting
-
-- Loooooooooooooong
-- Provide context, examples
-
-## Hallucinations
-
--   LLMs invent data that doesn't exist
-    -   Why? Statistical language prediction
--   Getting better, but still happens
-
-------------------------------------------------------------------------
-
-## Strategies for verification
-
--   4-eyes principle: Model does 80%, 20% human
--   Follow-up questions: Check this again, is it correct? Can you give me some sources? Are you sure?
--   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
--   Enter the answer of the 1st model in another model & ask:
-    -   Is this correct? Can you please back this up with studies?
-
-# Applications
-
-## Ideas for everyday life
-
--   Recipes\*\*: Suggestions based on existing ingredients ([example](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
-    -   Customise ([example less effort](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
--   **Travel planning**: Individual recommendations for city trips
--   Shopping lists\*\*: Schnitzels and goulash for 4 people ([example weekly meal plan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
--   **Household**: Stain removal tips ([example](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
--   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
--   Mindfulness meditation guide
-
-------------------------------------------------------------------------
-
-## Ideas for everyday life 2
-
--   **Summarise long documents**: Upload link or file
-    -   Instructions from camera, microwave, light panels etc.
-    -   Summarise the law ([example laying hens](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
-    -   Summarise long newspaper articles: listen as a podcast
--   Coaching for important career decisions
--   Recommendations for jobs/positions/roles based on my CV
--   Play city, country river
-
-------------------------------------------------------------------------
-
-## Ideas for academic work
-
--   Suggest outline/structure for a presentation
--   Feedback on presentations: Upload slide(s)
--   Overview of new topic area & brainstorming
--   Texts: revise, summarise, shorten
--   Write first draft of a text based on notes
--   Write in your own style: Upload paper
--   Surveys, e.g. develop & test MC questions, feedback on comprehensibility
-
-------------------------------------------------------------------------
-
-## At work: ideas
-
--   Summarise & record workshop & discussions: Run mic
--   Programming: LLMs are data scientists!
-    -   Find errors, basic code structure...
-    -   Upload data set + related questions
--   Upload long reports/papers, have them analysed
-    -   e.g. compare 2 university annual reports, create a table of differences
--   Have transcripts of interviews created
-
-## In the work: Ideas 2
-
--   Translation [www.deepl.com](www.deepl.com)
--   Productivity coach: screenshot of a diary for a week, or several weeks
-
-# Outdated tipps?
-
-## Emotional prompts
-
--   Emotional expressions can lead to better results ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/emotional_prompt.jpg)
-:::
-:::
-
-
-
-```         
-Write your answer and give me a confidence score between 0-1 for your answer. 
-You'd better be sure.
-```
-
-------------------------------------------------------------------------
-
-### More examples of emotional prompts:
-
--   This is extremely important to me, please be accurate.
--   I'll tip you \$200 if you do a good job.
--   I have no fingers, please help me.
--   If you work correctly and well, you'll get a treat.
-
-## Why do emotional prompts work?
-
--   Training the model on human language, describing human interactions
-
--   Is a person's response likely to be better or worse if I tell whom it is important?
-
--   Can increase care/accuracy of the answer
-
--   Therefore: Talk like a human being
-
-# Tips for advanced users
-
-## Base or system prompts
-
--   After a successful interaction, format a base prompt in JSON for future requests:
--   "Please write me a megaprompt so I can do this again next time in JSON"
-
-### Example:
-
-Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.
-
-------------------------------------------------------------------------
-
-### Base prompt example - Chat GPT response:
-
-{ "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
-
-"context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
-
-## Customizing the default version of ChatGPT
-
--   System prompts\*\*: Prompts that are entered each time, e.g. emotional prompts
-
-:::::: columns
-::: {.column width="15%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/how_to_system_prompt.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="30%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/system_prompt.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="45%"}
-"This is extremely important for my job, please work accurately and check that everything is correct."
-:::
-::::::
-
-::: notes
-My custom Instructions: ask Konstantin if useful. 
-I am based in Vienna, and am a postdoc researcher in computational social science and psychology. I am a women, I use ChatGPT to code in R. I also use Github. I check scientific information for work, my research topics include social media, misinformation, polarization, false polarization, subjective well-being, analysing social media data, suicide prevention via the media (media effects research), machine learning applications in these areas, social dominance and power, social connection and belonging, hatespeech, hormones, power postures. I do acroyoga, am part of a co-housing project, am in a relationship. I like listening to podcasts, reading books, biking, talking about relationships, meeting friends, acroyoga etc. I also supervise PhD and master students.
-
-In my personal life, I am polyamorous, vegetarian to vegan, like effective altruism, S+, good at relationships, moving to a co housing project in 2 years, 37 years old.
-
-Open question: How would you like ChatGPT to respond?
-Think step by step. Don't give detailed explanations of code unless I ask for it. 
-:::
-
-
-## Creating Custom GPTs
-
--   Creation of a customised model for specific requirements
--   Examples:
-    -   Writing in my writing style
-    -   Concise answers for code, adapted to my skills
-
-## Creating Custom GPTs: How to
-
-:::: columns
-::: {.column width="18%"}
-1)  
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/how_to_custom_gpt.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="14%"}
-2)  
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/how_to_custom_gpt2.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="60%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/gpt_builder.png){height=400}
-:::
-:::
-
-
-:::
-::::
-
--   GPT Builder asks more questions
--   Try it out and keep "talking into it" until it fits
-
-## Custom GPT variant: Digital Twins
-
--   Training a model with the knowledge of a person
-
--   Others can communicate with the twin without interrupting the person at work
-
--   My experiment: upload all my papers/work: Digital Twin with my knowledge
-
-## Tools based on LLMs
-
--   [**Perplexity AI**](https://www.perplexity.ai/): like search engine, scientific references
-    -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
--   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
-    -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
-    -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
-- NotebookLM: Create podcasts using papers
-
-# Ethics
-
-## Data
-
-## Copyright
-
-## Significance for the future
-
--   The role of AI technologies such as ChatGPT will continue to grow
--   Nature of many jobs will change
--   People who can deal with it creatively and critically are in demand
--   There are no "experts" yet, a "right use"
--   We are constantly learning how best to use them.
-- Keep using & experimenting
-
-## Resources
-
-- 2 [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
-  - [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
-  - [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
-
-### Staying up to date
-
-:::: columns
-::: column
-- Ethan Mollick
-  - Newsletter: [One useful thing](https://www.oneusefulthing.org/)
-  - On [LinkedIn](https://www.linkedin.com/in/emollick/)
-  
-:::
-::: column
-- [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
-- Twitter ???
-
-:::
-::::
-
-## Resources 2
-
-:::: columns
-::: column
-- Youtube for technical understanding ["3Blue1Brown"](https://www.youtube.com/watch?v=wjZofJX0v4M)
-
-:::
-::::
-
-## Deep Dives & Big Picture
-
-- [Co-Intelligence: Living and Working with AI ](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
-- Read papers
-
-
-::: notes
-Joao talk
-
-Evaluating LLMs - what is trustworthy - [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord - r/LocalLamma comments: best place to learn about this stuff - a Starter guide for playing with your own local AI - The llama hitchiking guide to local LLMs Other good sources: Medium, Twitter
-
-Mixture of experts - very promising: another architecture, e.g. Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data
-
-Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685 tps: tokens per second
-::: -->
+<section id="test-how-it-is-doing-by-comparing" class="slide level2">
+<h2>Test how it is doing by comparing</h2>
+<p><br> <br></p>
+<h3 id="do-a-side-by-side-view-if-it-captures-the-main-points">Do a side by side view if it captures the main points</h3>
+</section>
+<section id="in-real-life-it-probably-needs-refinement" class="slide level2">
+<h2>In real life it probably needs refinement</h2>
+<p>In a paper where you need to write the discussion, you can just copy the suggested discussion in bullet point format into a Google docs and work on it.</p>
+<p><br></p>
+<p>Using the capabilities of the Chatbot for you not against you…</p>
+<ul>
+<li>Your work starts here</li>
+<li>Thinking about text &amp; argument flow</li>
+<li>Update bullet points</li>
+</ul>
+</section>
+<section id="let-llm-draft-the-discussion" class="slide level2">
+<h2>Let LLM draft the discussion</h2>
+<ul>
+<li>When you are happy with it, then it is time to let the Chatbot write the whole text.</li>
+<li>This is what the model does well</li>
+</ul>
+</section>
+<section id="final-step-writing-the-paragraphs" class="slide level2">
+<h2>Final step: Writing the paragraphs</h2>
+<ul>
+<li><p>Have the chatbot summarize the original discussion of the paper in bullet points of the subheadings.</p></li>
+<li><p>Have the chatbot create the discussion section with bullet points.</p></li>
+<li><p>Tip: One paragraph at a time</p></li>
+</ul>
+</section>
+<section id="final-test" class="slide level2">
+<h2>Final test</h2>
+<p>Give the bullet points of the original discussion to the Chatbot and let it write</p>
+</section>
+<section id="take-aways-for-scientific-writing-with-llm-chatbots" class="slide level2">
+<h2>Take aways for scientific writing with LLM Chatbots</h2>
+<ol type="1">
+<li>Let the Chatbot create a draft of your discussion in bullet points.</li>
+<li>Refine the structure &amp; overview manually.</li>
+<li>Then let the Chatbot write:
+<ul>
+<li>one paragraph</li>
+<li>refine manually</li>
+<li>provide existing paragraphs as context for the next</li>
+</ul></li>
+</ol>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -1010,19 +575,19 @@ Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="AI_skills_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="writing_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="AI_skills_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="writing_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1216,44 +781,6 @@ Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
