@@ -230,7 +230,7 @@ Give the bullet points of the original discussion to the Chatbot and let it writ
     - one paragraph
     - refine manually
     - provide existing paragraphs as context for the next
-    
+
 ## Writing: Use cases for academics
 
 - Ideas where you could use LLM chatbots to write?
@@ -248,3 +248,62 @@ Give the bullet points of the original discussion to the Chatbot and let it writ
 -   [Feeding it with my papers](https://chatgpt.com/share/67166dd7-d494-800b-a652-1f0bb114d354), digital scientific twin
 -   [Recommendation letter](https://chatgpt.com/share/67166d34-1fa8-800b-ba58-0bc6da8dea1b)
 -   Refining [cover letter & teaching statement](https://chatgpt.com/share/67166cc1-a2bc-800b-ad9f-28eb8b5078d9)
+
+## Preparation: Setting the right tone
+
+For scientific writing, the model is often not precise and concise enough. Guide it to have a specific writing style by giving an instruction or example texts.
+
+## Writing style instructions {.scrollable .smaller}
+
+Example of an Writing Style Guide:
+
+### 1. Structure and Formatting
+- Use simple, clear language focused on one main idea per sentence
+- Employ short paragraphs (2-4 sentences) to enhance readability
+- Begin with a concise, attention-grabbing title and subtitle
+- Use headings and subheadings to organize content logically
+- Incorporate formatting elements (e.g., bold text, italics) sparingly for emphasis
+- Use bullet points or numbered lists for key takeaways or steps
+
+### 2. Content Organization
+- Start with the most important information (inverted pyramid style)
+- Ensure each paragraph focuses on a single main idea
+- Organize content into clear sections, each building upon the previous one
+- Include occasional single-sentence paragraphs for impact
+
+### 3. Flow and Engagement
+- Open with a compelling hook to capture reader interest
+- Pose thought-provoking questions to involve the reader
+- Maintain a strong flow of ideas throughout the text
+- Use transitional phrases to connect ideas and paragraphs
+- Create and use strong "concept handles" (catchy phrases that sum up complex ideas)
+- Use analogies and metaphors sparingly to explain complex concepts
+- Incorporate relevant real or hypothetical scenarios to illustrate points
+
+### 4. Depth and Conciseness
+- Provide depth on key points without becoming verbose
+- Break down complex ideas into digestible chunks
+- Use precise language to convey maximum information in minimal words
+- Begin with concrete examples before introducing abstract principles
+- Use multiple, diverse examples to illustrate complex points
+- Apply introduced ideas to real-world scenarios to demonstrate their relevance
+
+### 5. Persuasion and Balance
+- Present a balanced view by acknowledging multiple perspectives
+- Address potential counterarguments proactively
+- Use appropriate language to connect with your target audience
+
+### 6. Technical and Scientific Writing
+- Explain technical concepts in accessible language
+- Provide context for why the topic matters to the reader or the broader field
+
+### 7. Tone and Voice
+- Employ active voice and direct language
+- Maintain a professional yet accessible tone
+- Avoid being overly academic or jargon-heavy
+- Use an engaging and slightly conversational style to create a sense of dialogue
+- Present ideas thoughtfully, showing respect for the reader's intelligence
+- Convey complex ideas efficiently without sacrificing depth
+- Maintain a forward-looking and slightly enthusiastic tone, especially when discussing potential developments
+- Balance optimism about possibilities with acknowledgment of challenges
+- Aim to inform and engage without being pedantic or oversimplifying

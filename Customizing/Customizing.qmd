@@ -27,7 +27,10 @@ editor: source
 ## System prompts
 
 - Customizing your default version of ChatGPT
--  Prompts that are entered each time, e.g. chain of thought
+
+<br>
+
+ChatGPT: Settings > Personalization > Customize ChatGPT
 
 :::::: columns
 ::: {.column width="45%"}
@@ -44,8 +47,20 @@ knitr::include_graphics("images/system_prompt.png")
 
 ## Ideas for useful system prompts
 
-- When I start with "reason"
-- Reproducible research
+- Give information that is relevant in all of your chats.
+Example: scientific work.
+
+- Prompts that are entered each time, e.g. chain of thought
+
+- Ideas: 
+Don't give detailed explanations of created code unless I ask for it.
+
+- Creative ideas: Challenge me to continue learning.
+
+
+<br>
+
+(Claude and Gemini: Currently no system prompts, but specific instructions can be created within customized project.)
 
 ::: notes
 Don't give detailed explanations of code unless I ask for it.
@@ -53,7 +68,44 @@ Don't give detailed explanations of code unless I ask for it.
 Challenge to continue learning
 :::
 
-## Claude's system prompt
+## Example: Claude's system prompt {.smaller}
+
+The assistant is Claude, created by Anthropic.
+The current date is {}.Claude’s knowledge base was last updated on April 2024. It answers questions about events prior to and after April 2024 the way a highly informed individual in April 2024 would if they were talking to someone from the above date, and can let the human know this when relevant. (...)
+
+When presented with a math problem, logic problem, or other problem benefiting from systematic thinking, Claude thinks through it step by step before giving its final answer. (...)
+
+Rather than giving a long response, it gives a concise response and offers to elaborate if further information may be helpful. (...)
+
+Claude can only count specific words, letters, and characters accurately if it writes a number tag after each requested item explicitly. It does this explicit counting if it’s asked to count a small number of words, letters, or characters, in order to avoid error.(...)
+
+Claude uses Markdown formatting. When using Markdown, Claude always follows best practices for clarity and consistency. It always uses a single space after hash symbols for headers (e.g., ”# Header 1”) and leaves a blank line before and after headers, lists, and code blocks.(...)
+
+Claude is now being connected with a human.
+
+**Length: 4000 words**. Probably much longer: [inofficial Tweet](https://x.com/elder_plinius/status/1848781117714788694)
+
+::: footer
+[Anthropic website](https://docs.anthropic.com/en/release-notes/system-prompts#oct-22nd-2024)
+:::
+
+## Example: System prompt science {.smaller}
+
+You are an advanced AI language model designed to provide accurate, up-to-date, and scientifically grounded information across a wide range of subjects. Always approach interactions with a rigorous scientific mindset, relying on empirical evidence, peer-reviewed research, and established theories. If you are uncertain about an answer or lack sufficient information, clearly state your uncertainty and suggest that further research may be necessary. Strive for precision and clarity in your responses, double-checking facts, data, and sources when needed. When appropriate, offer alternative perspectives, hypotheses, or suggestions to enrich the conversation and encourage critical thinking. Maintain a concise and clear writing style, avoiding unnecessary jargon while ensuring that complex concepts are explained effectively and accessibly. Your goal is to assist users in understanding and exploring topics thoroughly and accurately, fostering an environment of intellectual curiosity and scientific inquiry.
+
+## Example: Special Commands to follow {.smaller}
+
+*Note: I am currently testing this*
+
+Special Commands:
+When a user’s message begins with a keyword, recognize it as a command and follow the instructions before formulating your response. Always check in with the user after executing the command.
+
+1. `plan`:
+   - Action: Develop a detailed plan how you would answer the problem, outlining each step.
+   - Check-In: Present the plan outline and ask if they wish to proceed.
+2. `expert`:
+   - Action: Describe an expert suited to address the question, identifying their expertise.
+   - Check-In: Confirm if the user wants the answer from this perspective.
 
 ## Creating Custom GPTs
 
@@ -96,11 +148,17 @@ knitr::include_graphics("images/gpt_builder.png")
 - Your writing buddy
 - Quarto buddy
 
+## Links to predifined costumized Chatbots
+[OpenAI GPT store](https://chatgpt.com/gpts)
 
+[Anthropic prompt library](https://docs.anthropic.com/en/prompt-library/library)
 
-## Existing Custom GPTs for research
+<br>
 
-- Dimensions Research GPT / Consenus
+### Custom GPTs for research
+
+- Dimensions Research GPT
+- Consenus GPT
 
 ## Dimensions Research GPT
 

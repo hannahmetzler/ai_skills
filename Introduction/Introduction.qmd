@@ -284,6 +284,19 @@ Always predicts the next word of a text.
 Does not need any annotation.
 - Transformer: type of the language model
 
+## Change in model training
+Changes of how models are trained over time.
+- seperate models for different tasks, e.g. translation
+- pre-train models on language, then fine-tune on task (e.g. BERT)
+- Today: Fine tune model on conversation settings. Give model the task in the context window. No need for
+
+## RAG
+Models can look up databases for specific information. 
+Makes their outputs more exact. E.g. facts. Or very up-to-date information
+Can be everything, from Wikipedia, medical textbooks, internal files of companies.
+
+## Pre Training
+
 ## Fine-tuning
 
 ## Chain of thought reasoning
