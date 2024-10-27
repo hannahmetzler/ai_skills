@@ -1,8 +1,8 @@
 ---
-title: "How do Large Language Models (LLMs) work?"
+title: "Ethical considerations"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 author: "Konstantin Hebenstreit"
-date: "October 22 2024"
+date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"

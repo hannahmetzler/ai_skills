@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="AI_skills_files/libs/clipboard/clipboard.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tabby.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/popper.min.js"></script>
-<script src="AI_skills_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="AI_skills_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="AI_skills_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="AI_skills_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="Ethics_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Ethics_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Ethics_files/libs/quarto-html/popper.min.js"></script>
+<script src="Ethics_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Ethics_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Ethics_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Ethics_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="Ethics_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Konstantin Hebenstreit">
-  <meta name="dcterms.date" content="2024-10-22">
-  <title>How do Large Language Models (LLMs) work?</title>
+  <meta name="dcterms.date" content="2024-10-29">
+  <title>Ethical considerations</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="Ethics_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Ethics_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="AI_skills_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="AI_skills_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="Ethics_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="Ethics_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Ethics_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Ethics_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Ethics_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -327,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">How do Large Language Models (LLMs) work?</h1>
+  <h1 class="title">Ethical considerations</h1>
   <p class="subtitle">Mastering AI Chatbots: Optimizing Research through Effective Use</p>
 
 <div class="quarto-title-authors">
@@ -338,668 +338,207 @@ Konstantin Hebenstreit
 </div>
 </div>
 
-  <p class="date">2024-10-22</p>
+  <p class="date">2024-10-29</p>
 </section>
-<section id="ai-and-science" class="slide level2">
-<h2>AI and Science</h2>
-<div class="columns">
-<div class="column" style="width:47%;">
-<p><img data-src="images/ai_scientist_news.png"> <small><em>Source: <a href="https://www.discovermagazine.com/the-sciences/meet-the-ai-scientist">Discover Magazine</a></em></small></p>
-</div><div class="column fragment" style="width:47%;">
-<p><img data-src="images/comparing_numbers.png"></p>
-</div></div>
+<section id="ethics-in-using-ai-for-research" class="slide level2">
+<h2>Ethics in using AI for research</h2>
+<ol type="1">
+<li>General topics of ethics an AI</li>
+<li>What it means for research</li>
+</ol>
+<p>Critical concerns about data privacy and scientific outputs like publications.</p>
+<aside class="notes">
+<p>I can give an overview of the concerns and information but I am not a lawyer, no legal advice.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="how-does-ai-work" class="slide level2">
-<h2>How does AI work?</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Input</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
-<p>AI Model</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Output</p>
-</div></div>
+<section id="reminder-chatbots-are-hard-to-control" class="slide level2">
+<h2>Reminder: Chatbots Are Hard to Control</h2>
+<p><br></p>
+<p>AI companies invest significant effort to ensure their chatbots behave ethically.</p>
+<p>For example, chatbots should not assist users in harmful or destructive behaviors, but challenges remain…</p>
 </section>
-<section id="ai" class="slide level2">
-<h2>AI</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p><img data-src="https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg"></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
-<p>Image Classification Model</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Lemon</p>
-</div></div>
-</section>
-<section id="llms" class="slide level2">
-<h2>LLMs</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Text</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
-<p>Large Language Model</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
-<p>Text</p>
-</div></div>
-</section>
-<section id="llms-1" class="slide level2">
-<h2>LLMs</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p>Text</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:40%;">
-<p><img data-src="images/tunable_parameters.png"></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p>Text</p>
-</div></div>
-</section>
-<section id="llms-autocomplete" class="slide level2">
-<h2>LLMs: Autocomplete</h2>
-<p><br> <br></p>
-<div class="columns">
-<div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p><small>“The actress that played Rose in the 1997 film Titanic is named…”</small></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:40%;">
-<p><img data-src="images/tunable_parameters.png"></p>
-</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div id="vcenter" class="column" data-align="center" style="width:15%;">
-<p><em>Predicts the next word</em></p>
-</div></div>
-</section>
-<section id="next-word-prediction" class="slide level2">
-<h2>Next word prediction</h2>
-
-<!-- ## Text representation
-<br>
-<br>
-
-::::: columns
-::: {.column width="40%" align="center"}
-Words
-
-<small>
-Even though the sound of it is<br> something quite atrocious, if you<br> say it loud enough, you’ll always<br> sound precocious, <br>Supercalifragilisticexpialidocious!
-</small>
-
-<small>
-*Marry Poppins*
-</small>
-
-:::
-
-::: {.column width="10%" align="center".fragment data-fragment-index="1"}
-→
-:::
-
-::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
-Tokens = "Subwords"
-
-![](images/tokenzined_sentence.png)
-:::
-
-::::: -->
-<img data-src="images/next_word_prediction.png" class="r-stretch"></section>
-<section id="representing-the-meaning-of-words" class="slide level2">
-<h2>Representing the meaning of words</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>Word embeddings</strong></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/wordembeddings.svg"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:56%;">
-<p><strong>Contextual word embeddings</strong></p>
+<section id="example-jailbreaking" class="slide level2">
+<h2>Example: Jailbreaking</h2>
 <ul>
-<li>Context (before and after the word) taken into account</li>
-<li><a href="https://www.tiktok.com/@whats_ai/video/7247609946672565510">Example</a> “Apple”: Mac or fruit?</li>
+<li><strong>Jailbreaking</strong>: Techniques to bypass AI safety measures.</li>
 </ul>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/apple_context.png" class="quarto-figure quarto-figure-center" width="250"></p>
-</figure>
+<div style="overflow: hidden; height: 70%; width: 60%;">
+<p><img data-src="images/emoji_jailbreak.png"></p>
 </div>
+<div class="footer">
+<p><a href="https://github.com/0xeb/TheBigPromptLibrary/blob/main/Jailbreak/OpenAI/rsrc/gpt4o-via-emojis-06082024-02.jpg">GitHub TheBigPromptLibrary</a></p>
 </div>
-</div>
-</div></div>
 </section>
-<section id="what-is-an-llm-actually" class="slide level2">
-<h2>What is an LLM, actually?</h2>
+<section id="bias-and-fairness-in-ai-outputs" class="slide level2">
+<h2>Bias and Fairness in AI Outputs</h2>
 <ul>
-<li><strong>Large Language Models (LLMs)</strong>: Deep learning neural networks built to understand and generate text</li>
-<li>Trained on <strong>vast amounts of text</strong> from diverse sources (Wikipedia, social media, books, podcasts, etc.)</li>
-<li>Convert text data into <strong>statistical patterns</strong> to predict words and sentences</li>
+<li>AI can perpetuate societal biases present in training data.</li>
+<li><strong>Examples</strong>:
+<ul>
+<li>Associating “doctor” with male gender.</li>
+<li>Associating “nurse” with female gender.</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p>Kotek et al., <a href="https://arxiv.org/pdf/2308.14921">2023</a></p>
+</div>
+</section>
+<section id="unintended-consequences-of-debiasing" class="slide level2">
+<h2>Unintended Consequences of Debiasing</h2>
+<p>Gemini: “generate a picture of a US senator from the 1800s.”</p>
+
+<img data-src="https://duet-cdn.vox-cdn.com/thumbor/0x0:1668x1168/750x525/filters:focal(834x584:835x585):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/25297980/Screen_Shot_2024_02_21_at_3.10.17_PM.png" class="r-stretch"><div class="footer">
+<p><a href="https://www.theverge.com/2024/2/21/24079371/google-ai-gemini-generative-inaccurate-historical">The Verge on Google Gemini AI</a></p>
+</div>
+<aside class="notes">
+<p>The first female senator, a white woman, served in 1922.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="transparency" class="slide level2">
+<h2>Transparency</h2>
+<ul>
+<li>“Black Box”: Opaque how models work.</li>
+<li>Even for “white box” open-weights Llama models not open on which data they are trained.</li>
 </ul>
 </section>
-<section id="pros-and-cons-of-llms" class="slide level2">
-<h2>Pros and Cons of LLMs</h2>
+<section id="accountability" class="slide level2">
+<h2>Accountability</h2>
 <ul>
-<li><p>Generates coherent, human-like text</p></li>
-<li><p>Vast knowledge embedded in its parameters</p></li>
-<li><p>Useful for content generation, summarization, and translation</p></li>
-<li><p>Cannot think before responding</p></li>
-<li><p>Struggles with logical reasoning, often makes incorrect assumptions</p></li>
-<li><p>Can produce inaccurate or hallucinated information</p></li>
+<li>2023: Two US lawyers fined for submitting fake court citations from ChatGPT, leading to a $5,000 fine.</li>
+</ul>
+<div class="footer">
+<p><a href="https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt">The Guardian</a></p>
+</div>
+</section>
+<section id="data-privacy-concerns" class="slide level2">
+<h2>Data privacy concerns</h2>
+<ul>
+<li>Training data extraction: reconstruct training data from input</li>
+<li>Attribute inference attacks: LLMs can combine information (from big data) to predict sensitive attributes from ‘harmless’ user data</li>
 </ul>
 </section>
-<section id="thank-you-for-your-attention" class="slide level2">
-<h2>Thank You for Your Attention!</h2>
-<p><br> <br> <strong>Questions? I’m happy to answer!</strong></p>
-<!-- ## What is an LLM, actually?
-
--   Large Language Models: Deep Learning Neural Networks trained on text
--   Advanced Language models that process huge amounts of text
--   Trained with text data from the Internet (Wikipedia, social media, online media, books, literature, videos, films, YouTube, podcasts...)
--   Turn it into statistical word and sentence predictions
--   Can provide detailed and context-rich answers
-
-## Neural networks
-
--   Multiple layers of "neurons"
--   Deep learning
--   Linear regressions calculate "weights" for the connections
-
-::::: columns
-::: {.column width="47%"}
--   Input layer: Quantitative representation of sentence
--   Output layer: One-hot encoding
-:::
-
-::: {.column width="47%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/neuralnet.svg)
-:::
-:::
-
-
-:::
-:::::
-
-::: notes
-One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
-:::
-
-
-
-## How are LLMs trained? - update
-
-All Transformer models (a model architecture for efficient computing):
-
--   BERT specific, to update: **Masked word prediction**
-    -   “New **\[MASK\]** is a city”
--   **Next sentence prediction**
-    -   "Today is a beautiful sunny day, and I decided to go for a long walk in the park. Suddenly, the quadratic equation was solved."\
-    -   TRUE/FALSE als Feedback
-    
-## Terms to explain
-
-- context window
-- token
-
-## Current top models - To do: update
-
--   **ChatGPT-4o** (Open AI)
--   **Claude** (Anthropic)
--   **Bard (Gemini)** (Google)
-
-## Multimodal ChatGPT interactions
-
-**(Some also work with Claude)**
-
-- File Uploads (& Claude)
-- Browse
-- Discovering and using GPTs
-- Upload & analyze images
-- Create images with DALL-E
-- Audio: Talking/Listening
-- Data analysis (& Claude)
-- Execute code
-
-## Strengths of different models - update
-
--   [**ChatGPT-4**](https://chat.openai.com/) (Open AI): multimodal interactions, 8.000 tokens (more with API)
--   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, longer context window (200.000 tokens)
--   [**Gemini**](https://gemini.google.com/app) (Google): ??? (Search capability and database, integration with Google services), 100.000 tokens
-
-Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
-
-## Different ChatGPT versions
-
-- ChatGPT4: more resource intensive = expensive
-- ChatGPT4o = optimized to be faster and cheaper
-- ChatGPT-4o mini: every day tasks
-- Only via API or special access plans:
-  - ChatGPT-4 Turbo: long context window (128.000 tokens)
-  - o1-preview: advanced reasoning
-  - ChatGPT-3.5: less resource intense
-  
-::: footer
-[ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini)
-
-::: 
-
-## Slide on Chatbot Arena?
-
-
-
-
-
-## Access to models
-
-| model      | free access                       | costs /month |
-|------------|-----------------------------------|--------------|
-| ChatGPT    | GPT-4o mini, GPT4-o limited, limits for multimodal   | 24€          |
-| Claude   | 200 tokens/day                    | ca \$20      |
-| Gemini      | 1 month trial of paid version, 2500 tokens/day                   | 21.99€     |
-| Perplexity | 3 requests/day, 1000 tokens/month | \$17-20      |
-| Elicit     | 1000 tokens/month                 | \$10-12      |
-
-::: notes
-To Do: update requests/limits
-:::
-
-
-## Discussion 
-
-- In small groups: 
-
-
-# The basics: How to talk to an LLM Chatbot?
-
-## Use search engines vs. LLMs
-
-:::: columns
-::: {.column width="35%"}
-### Search engine
-
--   A few short keywords
-<br><br><br><br><br>
--   Answer: many single results
-:::
-
-::: {.column width="60%"}
-### LLM Chatbot
-
--   Long prompts with lots of details, context, examples & explanations
--   Answer is summarised
-:::
-::::
-
-## General tips
-
-- Use it often and try it out!
-- Speak to it as if it was a person
-- Give feedback & engage in dialogue, performance improves very quickly
-- Spelling doesn't matter at all
-- Do the first 80% quickly, then check.
-- Use microphone & headphones and actually talk!
-- Work on your prompts!
-
-## Voice Control
-
-- ChatGPT App on Mac & Smartphones
-- Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
-
-:::::: columns
-::: {.column width="47%"}
-### Voice Up
-
-- Hold SPACE (outside text input) to record, release to submit
-- ESC to stop & transcribe text without submitting
-:::
-
-::: {.column width="47%"}
-### ChatGPT App
-![](images/voice_control.png)
-
-- Headphones for an ongoing conversation
-- Microphone to record, stop to transcribe
-:::
-::::::
-
-## Effective Prompting
-
-- Loooooooooooooong
-- Provide context, examples
-
-## Hallucinations
-
--   LLMs invent data that doesn't exist
-    -   Why? Statistical language prediction
--   Getting better, but still happens
-
-------------------------------------------------------------------------
-
-## Strategies for verification
-
--   4-eyes principle: Model does 80%, 20% human
--   Follow-up questions: Check this again, is it correct? Can you give me some sources? Are you sure?
--   Enter the same prompt in different models and compare, e.g. at <https://poe.com>, <https://anakin.ai>
--   Enter the answer of the 1st model in another model & ask:
-    -   Is this correct? Can you please back this up with studies?
-
-# Applications
-
-## Ideas for everyday life
-
--   Recipes\*\*: Suggestions based on existing ingredients ([example](https://chat.openai.com/c/396bfb4b-d0c3-4cd7-9239-a9076d85b374))
-    -   Customise ([example less effort](https://chat.openai.com/c/8de5a079-31df-4374-b3ec-15ffe18a6bde))
--   **Travel planning**: Individual recommendations for city trips
--   Shopping lists\*\*: Schnitzels and goulash for 4 people ([example weekly meal plan](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170))
--   **Household**: Stain removal tips ([example](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0))
--   **Geschenksideen** ([Beispiel](https://chat.openai.com/c/eac1d677-9496-40b4-9f52-716bf1a00d2b))
--   Mindfulness meditation guide
-
-------------------------------------------------------------------------
-
-## Ideas for everyday life 2
-
--   **Summarise long documents**: Upload link or file
-    -   Instructions from camera, microwave, light panels etc.
-    -   Summarise the law ([example laying hens](https://chat.openai.com/c/17233daf-0296-4cad-befb-f0466dfb9375))
-    -   Summarise long newspaper articles: listen as a podcast
--   Coaching for important career decisions
--   Recommendations for jobs/positions/roles based on my CV
--   Play city, country river
-
-------------------------------------------------------------------------
-
-## Ideas for academic work
-
--   Suggest outline/structure for a presentation
--   Feedback on presentations: Upload slide(s)
--   Overview of new topic area & brainstorming
--   Texts: revise, summarise, shorten
--   Write first draft of a text based on notes
--   Write in your own style: Upload paper
--   Surveys, e.g. develop & test MC questions, feedback on comprehensibility
-
-------------------------------------------------------------------------
-
-## At work: ideas
-
--   Summarise & record workshop & discussions: Run mic
--   Programming: LLMs are data scientists!
-    -   Find errors, basic code structure...
-    -   Upload data set + related questions
--   Upload long reports/papers, have them analysed
-    -   e.g. compare 2 university annual reports, create a table of differences
--   Have transcripts of interviews created
-
-## In the work: Ideas 2
-
--   Translation [www.deepl.com](www.deepl.com)
--   Productivity coach: screenshot of a diary for a week, or several weeks
-
-# Outdated tipps?
-
-## Emotional prompts
-
--   Emotional expressions can lead to better results ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/emotional_prompt.jpg)
-:::
-:::
-
-
-
-```         
-Write your answer and give me a confidence score between 0-1 for your answer. 
-You'd better be sure.
-```
-
-------------------------------------------------------------------------
-
-### More examples of emotional prompts:
-
--   This is extremely important to me, please be accurate.
--   I'll tip you \$200 if you do a good job.
--   I have no fingers, please help me.
--   If you work correctly and well, you'll get a treat.
-
-## Why do emotional prompts work?
-
--   Training the model on human language, describing human interactions
-
--   Is a person's response likely to be better or worse if I tell whom it is important?
-
--   Can increase care/accuracy of the answer
-
--   Therefore: Talk like a human being
-
-# Tips for advanced users
-
-## Base or system prompts
-
--   After a successful interaction, format a base prompt in JSON for future requests:
--   "Please write me a megaprompt so I can do this again next time in JSON"
-
-### Example:
-
-Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.
-
-------------------------------------------------------------------------
-
-### Base prompt example - Chat GPT response:
-
-{ "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
-
-"context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
-
-## Customizing the default version of ChatGPT
-
--   System prompts\*\*: Prompts that are entered each time, e.g. emotional prompts
-
-:::::: columns
-::: {.column width="15%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/how_to_system_prompt.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="30%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/system_prompt.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="45%"}
-"This is extremely important for my job, please work accurately and check that everything is correct."
-:::
-::::::
-
-::: notes
-My custom Instructions: ask Konstantin if useful. 
-I am based in Vienna, and am a postdoc researcher in computational social science and psychology. I am a women, I use ChatGPT to code in R. I also use Github. I check scientific information for work, my research topics include social media, misinformation, polarization, false polarization, subjective well-being, analysing social media data, suicide prevention via the media (media effects research), machine learning applications in these areas, social dominance and power, social connection and belonging, hatespeech, hormones, power postures. I do acroyoga, am part of a co-housing project, am in a relationship. I like listening to podcasts, reading books, biking, talking about relationships, meeting friends, acroyoga etc. I also supervise PhD and master students.
-
-In my personal life, I am polyamorous, vegetarian to vegan, like effective altruism, S+, good at relationships, moving to a co housing project in 2 years, 37 years old.
-
-Open question: How would you like ChatGPT to respond?
-Think step by step. Don't give detailed explanations of code unless I ask for it. 
-:::
-
-
-## Creating Custom GPTs
-
--   Creation of a customised model for specific requirements
--   Examples:
-    -   Writing in my writing style
-    -   Concise answers for code, adapted to my skills
-
-## Creating Custom GPTs: How to
-
-:::: columns
-::: {.column width="18%"}
-1)  
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/how_to_custom_gpt.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="14%"}
-2)  
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/how_to_custom_gpt2.png)
-:::
-:::
-
-
-:::
-
-::: {.column width="60%"}
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](images/gpt_builder.png){height=400}
-:::
-:::
-
-
-:::
-::::
-
--   GPT Builder asks more questions
--   Try it out and keep "talking into it" until it fits
-
-## Custom GPT variant: Digital Twins
-
--   Training a model with the knowledge of a person
-
--   Others can communicate with the twin without interrupting the person at work
-
--   My experiment: upload all my papers/work: Digital Twin with my knowledge
-
-## Tools based on LLMs
-
--   [**Perplexity AI**](https://www.perplexity.ai/): like search engine, scientific references
-    -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
--   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
-    -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
-    -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
-- NotebookLM: Create podcasts using papers
-
-# Ethics
-
-## Data
-
-## Copyright
-
-## Significance for the future
-
--   The role of AI technologies such as ChatGPT will continue to grow
--   Nature of many jobs will change
--   People who can deal with it creatively and critically are in demand
--   There are no "experts" yet, a "right use"
--   We are constantly learning how best to use them.
-- Keep using & experimenting
-
-## Resources
-
-- 2 [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
-  - [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
-  - [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
-
-### Staying up to date
-
-:::: columns
-::: column
-- Ethan Mollick
-  - Newsletter: [One useful thing](https://www.oneusefulthing.org/)
-  - On [LinkedIn](https://www.linkedin.com/in/emollick/)
-  
-:::
-::: column
-- [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
-- Twitter ???
-
-:::
-::::
-
-## Resources 2
-
-:::: columns
-::: column
-- Youtube for technical understanding ["3Blue1Brown"](https://www.youtube.com/watch?v=wjZofJX0v4M)
-
-:::
-::::
-
-## Deep Dives & Big Picture
-
-- [Co-Intelligence: Living and Working with AI ](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
-- Read papers
-
-
-::: notes
-Joao talk
-
-Evaluating LLMs - what is trustworthy - [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord - r/LocalLamma comments: best place to learn about this stuff - a Starter guide for playing with your own local AI - The llama hitchiking guide to local LLMs Other good sources: Medium, Twitter
-
-Mixture of experts - very promising: another architecture, e.g. Mixtral: trained with 8 mistrals, at each token it is chosing 2 different experts, trained on high dimensional separations of the data
-
-Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs/2106.09685 tps: tokens per second
-::: -->
+<section id="copyright" class="slide level2">
+<h2>Copyright</h2>
+<ul>
+<li><p>is passive, applies to everything you put online</p></li>
+<li><p>bound to a person</p></li>
+<li><p>AI cannot be holder of copyright, as it is not a person</p></li>
+<li><p>copyright case: getty images for example</p></li>
+</ul>
+</section>
+<section id="increasing-use-of-llms-in-research" class="slide level2">
+<h2>Increasing use of LLMs in research</h2>
+<p><img data-src="images/llm_use_research.png" class="" style="width:90.0%"></p>
+<div class="footer">
+<p>Liang et al., <a href="https://arxiv.org/abs/2404.01268">2024</a></p>
+</div>
+</section>
+<section id="ai-in-journal-policies" class="slide level2">
+<h2>AI in Journal Policies</h2>
+<ul>
+<li>Policies are evolving rapidly in response to AI developments.</li>
+<li>Always review journal guidelines before submitting your work.</li>
+</ul>
+</section>
+<section id="elseviers-policies-for-journals" class="slide level2 smaller">
+<h2>Elsevier’s Policies for Journals</h2>
+<ul>
+<li><strong>For Authors</strong>:
+<ul>
+<li>AI tools can only be used to improve language and readability.</li>
+<li>Must disclose AI use in manuscripts.</li>
+<li>AI cannot be listed as an author.</li>
+</ul></li>
+<li><strong>Figures &amp; Images</strong>:
+<ul>
+<li>AI cannot alter or create images (except if part of research methods).</li>
+<li>AI use in research must be documented in methods.</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p><a href="https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals">Elsevier AI Policy</a></p>
+</div>
+</section>
+<section id="elseviers-policies-for-journals-cont." class="slide level2 smaller">
+<h2>Elsevier’s Policies for Journals (cont.)</h2>
+<ul>
+<li><strong>For Reviewers</strong>:
+<ul>
+<li>Do not upload manuscripts to AI tools (confidentiality breach).</li>
+<li>AI should not assist in peer review.</li>
+</ul></li>
+<li><strong>For Editors</strong>:
+<ul>
+<li>AI tools must not be used to evaluate or make decisions on manuscripts.</li>
+<li>Maintain confidentiality in all communications.</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p><a href="https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals">Elsevier AI Policy</a></p>
+</div>
+</section>
+<section id="meduni-vienna-phd-thesis-guideline" class="slide level2 smaller">
+<h2>MedUni Vienna PhD thesis guideline</h2>
+<p>“A doctoral thesis is expected to contain text that is the intellectual product of the student. If, for any reason, a student feels that he or she must rely on an AI algorithm or a writing enhancement tool (Chat-GPT, Grammarly, Google Translate, DeepL, etc.) to translate, generate, or paraphrase texts, this must be indicated as such with an appropriate citation at the end of the relevant paragraph and in the Bibliography. While this indication will serve to defend the student against any claims of reviewer deception, there is no guarantee that the reviewers will be appreciative of ample AI-generated texts in the thesis. Accordingly, theses relying extensively on AI may fail to receive a positive evaluation by the reviewers. Students should note AI-detection algorithms will still recognise machine-generated texts even after being paraphrased by the authors, and that subsequent revised thesis submissions remain marked. Hence, students should be aware that relying on AI may incurr a risk, which is solely their own, and it therefore is strongly recommended that they disclose all AI use in the Declaration, the List of Algorithms, the body of the text, and the Bibliography. For more information, please see https://apastyle.apa.org/blog/how-to-cite-chatgpt”</p>
+</section>
+<section id="implications-for-academic-research" class="slide level2">
+<h2>Implications for Academic Research</h2>
+<ul>
+<li>Citation and Misinformation</li>
+<li>copyright issues !!</li>
+<li>plagiarism issues, please use plagiarism checker</li>
+</ul>
+</section>
+<section id="gdpr" class="slide level2">
+<h2>GDPR</h2>
+<ul>
+<li>{general explanation}</li>
+<li>{sensitive data}</li>
+</ul>
+</section>
+<section id="sensitive-information" class="slide level2">
+<h2>Sensitive information</h2>
+<ul>
+<li>Please consult experts on data security of your university</li>
+<li>Especially for everything that concerns patient data</li>
+</ul>
+</section>
+<section id="use-case" class="slide level2">
+<h2>Use case</h2>
+<p>GDPR conform use of research data: Microsoft and OpenAI offer Possiblity of Azure Server in Europe to comply with those rules. If you need an option for how to be able to use sensitive research data with LLMs.</p>
+</section>
+<section id="possible-future" class="slide level2">
+<h2>Possible Future</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="https://www.fau.edu/newsdesk/images/news/self-driving-patent-newsdesk.jpg" class="nostretch" style="width:100.0%" height="250"> Self-driving car</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="images/dalle_guided_research.png" class="nostretch" style="width:100.0%" height="250"> Autonomous research systems</p>
+</div></div>
+<p><br></p>
+<div style="text-align:center;">
+<p><strong>Human accountability</strong></p>
+</div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
@@ -1010,19 +549,19 @@ Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="AI_skills_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="Ethics_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="AI_skills_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="AI_skills_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Ethics_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -1216,44 +755,6 @@ Best open source model: Mixtral LoRa: Low Rank Adaptation: https://arxiv.org/abs
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
