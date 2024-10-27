@@ -15,27 +15,98 @@ format:
 editor: source
 ---
 
-# Scientific tools based on LLMs
 
 ## Overview
 
-## Perplexity (5 min)
-- [**Perplexity AI**](https://www.perplexity.ai/)
-- Like search engine, scientific references
+### Scientific tools based on LLMs
+  - [Perplexity AI](https://www.perplexity.ai/)
+  - [Elicit](www.elicit.com)
+  - [Notebook LM](notebook.lm)
+
+### Collection of researcher use cases
+
+# Scientific tools based on LLMs
+
+## [Perplexity](https://www.perplexity.ai/)
+
+- LLM with scientific references
     -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
-- Exploration
-- Tip: Search for best tools using the "social" option, as reddit is searched. (Less clutter/ads)
+- For brainstorming, exploring a new topic
+- Tip: Search for best tools using the "social" option to search Reddit and void clutter & adds
 
-## Elicit (5 min)
-Link:   [**Elicit AI**](https://elicit.com/): Analyse research papers at superhuman speed
-    -   Slides [here](https://hannahmetzler.eu/digital_tools_research/04_literature/index.html#7)
-    -   [Beispiel](https://elicit.com/notebook/842fc893-e8f5-49a9-8bfb-d2ec6d1831fb)
-    
-## Exercise Elicit or Perplexity (10 min)
 
--   Exploring a completely new topic
-    
-## NotebookLM (10 min)
+## [Elicit: The AI research assistant](www.elicit.com)
+
+![](images/elicit/elicit_start.png){fig-align="center" width="330"}
+![](images/elicit/elicit_start2.png){fig-align="center" width="330"}
+![](images/elicit/elicit_start3.png){fig-align="center" width="330"}
+
+* Get an overview of many studies quickly
+* Useful for reviews, meta-analyses
+
+---
+
+:::: columns
+::: column
+### Study features
+
+![](images/elicit/study_features.png){width="250"}
+![](images/elicit/study_features2.png){width="210"}
+![](images/elicit/study_features3.png){fig-align="center" width="190"}
+::::
+
+::: column
+### Filters
+![](images/elicit/filters.png){width="230"}
+:::
+::::
+
+---
+
+![](images/elicit/paper_overview1.png){.r-stretch}
+
+## Create custom columns
+
+![](images/elicit/custom_column.png){fig-align="center"}
+
+---
+
+![](images/elicit/paper_overview2.png){.r-stretch}
+
+
+## Link to paper quotes
+
+![](images/elicit/custom_columns_and_link_to_text.png){.r-stretch}
+ 
+ 
+## Fine-tune based on relevant papers
+
+![](images/elicit/show_more_like_these.png){.r-stretch}
+
+## Elicit subscription
+
+:::: columns
+::: {.column width="30%"}
+- Free version: limited usage, good enough for occasional usage
+- Subscription: for systematic reviews/meta-analyses 
+:::
+::: {.column width="70%"}
+![](images/elicit/subscription.png)
+::::
+:::
+
+## Exercise Option 1: Elicit/Perplexity(10 min)
+
+* Choose a research question where you have some expertise, or a completly new research question
+* Delete an irrelevant paper
+* Select relevant study features
+* Select a filter (or use a keyword)
+* Add a custom-made column
+* Find the part of the paper describing the feature
+* Upload 3 papers and chat with them
+
+
+## Exercise Option 2: NotebookLM (10 min)
 Link:   [NotebookLM](https://notebooklm.google.com/): Document-based analyses [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant) [Paper](https://www.nature.com/articles/s41586-024-07417-w)
 
 
