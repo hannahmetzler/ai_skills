@@ -27,13 +27,36 @@ editor: source
 
 # Scientific tools based on LLMs
 
+# Perplexity
+
 ## [Perplexity](https://www.perplexity.ai/)
 
-- LLM with scientific references
-    -   [Example testosterone & behaviour](https://www.perplexity.ai/search/what-are-the-2WzaWWlKRm.4ge6IDNvx3w)
-- For brainstorming, exploring a new topic
-- Tip: Search for best tools using the "social" option to search Reddit and void clutter & adds
+- Ask research questions & follow-up questions
+- Answers like an LLM with scientific references
+- Useful: 
+  - For brainstorming
+  - Exploring a new topic 
+  - Quickly learning the basics about a new topic (as an editor/reviewer)
+-  [Example age & emotion regulation](https://www.perplexity.ai/search/emotion-regulation-and-age-uhA_siK1REuPjlc4yo067g#5)
 
+
+---
+
+![](images/perplexity/results1.png){width="500"}
+
+
+## Rewrite an answer with other models
+
+![](images/perplexity/rewrite_answer.png)
+
+## Choose databases
+
+![](images/perplexity/choose_database.png){width="100"}
+
+- Tip: Search for best tools using the "social" option to search Reddit and avoid clutter & adds
+
+
+# Elicit
 
 ## [Elicit: The AI research assistant](www.elicit.com)
 
@@ -95,15 +118,23 @@ editor: source
 ::::
 :::
 
-## Exercise Option 1: Elicit/Perplexity(10 min)
+# Exercise: Scientific LLM tools
+## Exercise Option 1: Elicit (10 min)
 
-* Choose a research question where you have some expertise, or a completly new research question
+* Choose a (familiar) research question
 * Delete an irrelevant paper
 * Select relevant study features
 * Select a filter (or use a keyword)
 * Add a custom-made column
 * Find the part of the paper describing the feature
 * Upload 3 papers and chat with them
+
+## Exercise Option 2: Perplexity (10 min)
+
+* Choose a new research question
+* Choose the academic database and pro search
+* Ask some follow-up questions
+* Rewrite the answer using another model
 
 
 ## Exercise Option 2: NotebookLM (10 min)
