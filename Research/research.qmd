@@ -49,7 +49,7 @@ Link:   [NotebookLM](https://notebooklm.google.com/): Document-based analyses [E
 
 
 
-# Other researcher use cases
+# Researcher use cases
 
 ## Summarizing content
 
