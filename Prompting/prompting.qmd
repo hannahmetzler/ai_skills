@@ -1,7 +1,7 @@
 ---
-title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-subtitle: "Skill training LBG Career Center"
-author: "Hannah Metzler & Konstantin Hebenstreit <br> Slides: https://github.com/hannahmetzler/AI_skills"
+title: "Chatbot Essentials & Effective Prompting Strategies"
+subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+author: "Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills"
 date: "October 29 2024"
 format: 
   revealjs: 
@@ -14,46 +14,6 @@ format:
     speakerNotes: true
 editor: source
 ---
-
-## Who are we?
-
-### Dr. Hannah Metzler
-
-Complexity Science Hub & Meduni Vienna <br> Psychology, Neuroscience & Data Science <br> https://hannahmetzler.eu \| metzler\@csh.ac.at <br> X: [\@hannahmetzler1](https://x.com/hannahmetzler1)
-
-### Konstanstin Hebenstreit, M.Sc.
-
-Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence, LLMs & Data Science <br> konstantin.hebenstreit\@meduniwien.ac.at <br> X: [\@K_Hebenstreit](https://x.com/K_Hebenstreit)
-
-## Who are you?
-
--   Scientific discipline & topic area
--   One thing you have already used LLMs for
--   If any: particular expectation or interests for today
-
-## (Rough) plan for the day
-
-|               |                                |
-|---------------|--------------------------------|
-| 9h20 -  10h   | Introduction to LLMs|
-| 10h - 11h     | Chatbot essentials & prompting strategies  |
-| 11h15 -  12h   | Customizing Chatbots  |
-| 12h -  12h45   | Chatbots in Research: Writing |
-| 12h45 – 13h45 | Lunch break |
-| 13h45 - 15h15   | Different use cases in research        |
-| 15h30-16h    |Chatbots as coaches |
-| 16h-16h30    | Ethical considerations |
-| 16h30 - 17h | Resources, Questions, Closing round |
-
-## Access to LLM chatbots for today
-
-- Who has a paid account?
-- Did all others create a Gemini pro trial account?
--   Log in for 8 more accounts
-
-# Introduction to LLMs
-
-[Konstantin's slides](https://hannahmetzler.eu/ai_skills/Konstantin/)
 
 # The Basics: How to talk to an LLM Chatbot?
 
