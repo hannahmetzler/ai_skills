@@ -89,13 +89,13 @@ Claude is now being connected with a human.
 [Anthropic website](https://docs.anthropic.com/en/release-notes/system-prompts#oct-22nd-2024)
 :::
 
-## Example: System prompt science {.smaller}
+## Example: System prompt for scientific work {.smaller}
 
 You are an advanced AI language model designed to provide accurate, up-to-date, and scientifically grounded information across a wide range of subjects. Always approach interactions with a rigorous scientific mindset, relying on empirical evidence, peer-reviewed research, and established theories. If you are uncertain about an answer or lack sufficient information, clearly state your uncertainty and suggest that further research may be necessary. Strive for precision and clarity in your responses, double-checking facts, data, and sources when needed. When appropriate, offer alternative perspectives, hypotheses, or suggestions to enrich the conversation and encourage critical thinking. Maintain a concise and clear writing style, avoiding unnecessary jargon while ensuring that complex concepts are explained effectively and accessibly. Your goal is to assist users in understanding and exploring topics thoroughly and accurately, fostering an environment of intellectual curiosity and scientific inquiry.
 
 ## Example: Special Commands to follow {.smaller}
 
-*Note: I am currently testing this*
+*Note: These are ideas. I am currently testing this approach.*
 
 Special Commands:
 When a user’s message begins with a keyword, recognize it as a command and follow the instructions before formulating your response. Always check in with the user after executing the command.
@@ -143,15 +143,39 @@ knitr::include_graphics("images/gpt_builder.png")
 -   GPT Builder asks more questions
 -   Try it out and keep "talking into it" until it fits
 
+## Example Quarto presentation helper
+
+Helps specifically in creating quarto react.js presentations
+
+![](images/quarto_gpt_1.png)
+
+## Example Quarto presentation helper (cont)
+
+Loading in relevant websites I found (as html files).
+
+![](images/quarto_gpt_2.png)
+
+
 ## Exercise: Create your CustomGPT (15 min)
 
-- Your writing buddy
-- Quarto buddy
+ideas:
+
+- Your writing buddy (upload all your scientific texts)
+
+<br>
+
+- Proofreader
+- LinkedIn content creator
+- Email drafter
+
+[prompt examples for the above](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/)
 
 ## Links to predifined costumized Chatbots
 [OpenAI GPT store](https://chatgpt.com/gpts)
 
 [Anthropic prompt library](https://docs.anthropic.com/en/prompt-library/library)
+
+[Google Gemini Gems](https://gemini.google.com/gems/view)
 
 <br>
 
