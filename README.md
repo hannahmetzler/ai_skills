@@ -12,9 +12,17 @@ and their strengths, and discuss the most important ethical questions around usi
 
 ## Workshop slides
 
-- [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Hannah/#/title-slide)
-- [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/Konstantin/#/title-slide)
-- [The Basics: How to talk to an LLM Chatbot?](https://hannahmetzler.eu/ai_skills/Hannah/#/the-basics-how-to-talk-to-an-llm-chatbot)
+- [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Welcome)
+- [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/Introduction)
+- [The Basics: How to talk to an LLM Chatbot?](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Effective prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/effective-prompting)
+- [Chatbots in Research: Writing](https://hannahmetzler.eu/ai_skills/Writing)
+- [Customizing](https://hannahmetzler.eu/ai_skills/Customizing)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Research)
+- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/Research/#/researcher-use-cases)
+- [Exercise: Coding & coaching](https://hannahmetzler.eu/ai_skills/CodingCoaching)
+- [Ethics](https://hannahmetzler.eu/ai_skills/Ethics)
+- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
 ## Preparation before the skills training: 
 
