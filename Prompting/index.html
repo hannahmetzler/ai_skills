@@ -8,9 +8,9 @@
 <link href="prompting_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="prompting_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="prompting_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+  <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="Hannah Metzler   Slides: https://github.com/hannahmetzler/AI_skills">
+  <meta name="author" content="Hannah Metzler">
   <meta name="dcterms.date" content="2024-10-29">
   <title>Chatbot Essentials &amp; Effective Prompting Strategies</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -43,7 +43,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -71,7 +71,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -85,7 +85,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -398,7 +398,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills 
+Hannah Metzler 
 </div>
 </div>
 </div>
@@ -432,8 +432,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 <li>Answer is statistically probable: prototypical, average, generalized</li>
 <li>Generalizes across time, no real time-access</li>
 </ul>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (brainstorming, managing projects, creating documents…)</p>
 <style type="text/css">
@@ -514,8 +513,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 <li><p>Headphones for ongoing conversations, microphone to record, stop to transcribe</p></li>
 <li><p>Advanced voice mode: Memory</p></li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="using-it-often-everyday-life-ideas" class="slide level2 scrollable">
 <h2>Using it often: Everyday life ideas</h2>
@@ -569,7 +567,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 </section>
 <section id="effective-prompting-in-a-nutshell" class="slide level2">
 <h2>Effective prompting in a nutshell</h2>
-<table>
+<table class="caption-top">
 <tbody>
 <tr class="odd">
 <td>P</td>
@@ -652,8 +650,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 <li>Paragraph from paper</li>
 <li>Previous recommendation/ application/ cover letters</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="style-and-output-format" class="slide level2">
 <h2>Style and Output format</h2>
@@ -675,8 +672,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 <li>list of steps</li>
 <li>a table (Markdown format is handy for copy pasting)</li>
 </ul>
-</div>
-</div>
+</div></div>
 </section>
 <section id="explicit-constraints-or-whitelist" class="slide level2">
 <h2>Explicit constraints or whitelist</h2>
@@ -788,8 +784,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 <li><a href="https://www.maastrichtuniversity.nl/improve-text-step-step">Improve text</a></li>
 <li><a href="https://www.maastrichtuniversity.nl/choose-statistics">Choose statistis</a></li>
 </ul>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p><a href="https://www.maastrichtuniversity.nl/prompt-library/prompt-library-prompt-templates">Maastricht University prompt library</a></p>
 </div>
@@ -828,8 +823,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 <span id="cb1-22"><a href=""></a></span>
 <span id="cb1-23"><a href=""></a>Text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</div>
+</div></div>
 </section>
 <section id="markdown" class="slide level2 smaller">
 <h2>Markdown</h2>
@@ -842,7 +836,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 </ul>
 </div><div class="column" style="width:60%;">
 <h3 id="basic-markdown">Basic Markdown:</h3>
-<table>
+<table class="caption-top">
 <colgroup>
 <col style="width: 50%">
 <col style="width: 50%">
@@ -878,8 +872,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</div></div>
 </section>
 <section id="chain-of-thought-prompting" class="slide level2">
 <h2>Chain-of-thought prompting</h2>
@@ -953,8 +946,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
 <p><img data-src="images/hallucinations_birthdate.png"></p>
 </div><div class="column">
 <p><img data-src="images/claude_hallucinations_bio.png"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="strategies-for-verification-i" class="slide level2">
 <h2>Strategies for verification I</h2>
@@ -1279,18 +1271,7 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1322,7 +1303,47 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1359,7 +1380,11 @@ Hannah Metzler <br> Slides: https://github.com/hannahmetzler/AI_skills
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

@@ -1,9 +1,11 @@
 ---
 title: "Try something new or meet your personal LLM coach"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler <br> Slides: https://github.com/hannahmetzler/ai_skills"
+author: "Hannah Metzler"
 date: "October 29 2024"
 format: 
+  # html:
+  #   toc: true
   revealjs: 
     transition: "slide"
     theme: [default, custom.scss]

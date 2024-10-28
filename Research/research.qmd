@@ -1,9 +1,11 @@
 ---
 title: "Enhancing your research outputs with LLM Chatbots"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler & Konstantin Hebenstreit <br> Slides: https://github.com/hannahmetzler/AI_skills"
+author: "Hannah Metzler"
 date: "October 29 2024"
 format: 
+  # html:
+  #   toc: true
   revealjs: 
     transition: "slide"
     theme: [default, custom.scss]
@@ -16,7 +18,7 @@ editor: source
 ---
 
 
-## Overview
+## Overview 
 
 ### Scientific tools based on LLMs
   - [Perplexity AI](https://www.perplexity.ai/)
@@ -25,7 +27,7 @@ editor: source
 
 ### Collection of researcher use cases
 
-# Scientific tools based on LLMs
+# Scientific tools based on LLMs 
 
 ##  [Notebook LM](https://notebooklm.google.com/)
 
