@@ -89,7 +89,7 @@ Here is the finished paper up to the discussion section:
 
 ‘’’
 
-## Output with better prompt {.smaller style="font-size: 0.4em;"}
+## Output with better prompt {.smaller style="font-size: 0.37em;"}
 
 This study systematically evaluated ten zero-shot chain-of-thought (CoT) prompting strategies across six instruction-tuned language models on six diverse question-answering datasets. Our findings indicate that employing specific CoT prompts significantly enhances model performance compared to direct prompting, with the “Zhou” prompt yielding the highest average Krippendorff’s alpha score when used with GPT-4 (α = .83, 95% CI [.77, .90]; Table 4).
 
@@ -109,7 +109,7 @@ Future work should focus on mitigating data contamination issues by utilizing cl
 
 In conclusion, this study demonstrates that zero-shot CoT prompting strategies can substantially improve the reasoning performance of large language models, particularly when aligned with the model’s capabilities and the task’s requirements. As language models continue to advance, leveraging sophisticated prompting techniques will be essential for unlocking their full potential in complex reasoning and decision-making tasks.
 
-## Good, but still lots of text
+## Good, but still lots of text {.smaller}
 
 - Possible strategy, but too much text to check
 - Lot's of correction work for you
@@ -119,7 +119,6 @@ In conclusion, this study demonstrates that zero-shot CoT prompting strategies c
 ### $\rightarrow$ Refinement
 Let's have the output in bullet points, structured in the main parts of a discussion.
 
-<small>
 **Prompt:** Please list the key points of your text as single-sentence bullet points, organized into the following parts of the discussion:
 
 - Conclusion
@@ -128,7 +127,6 @@ Let's have the output in bullet points, structured in the main parts of a discus
 - Future Work
 
 Return it as a markdown file, so I can easily copy it.
-</small>
 
 ## Looks good {.smaller style="font-size: 0.5em;"}
 
@@ -195,7 +193,7 @@ Here is the finished paper including the discussion section:
 
 """
 
-## Original discussion converted to bullet points{.smaller style="font-size: 0.4em;"}
+## Original discussion converted to bullet points{.smaller style="font-size: 0.37em;"}
 
 **Conclusion**
 
@@ -253,11 +251,13 @@ Easy exchange of formatted text between Google docs and Chatbot interface.
 - Thinking about text & argument flow
 - Update bullet points
 
-<br>
-Current developments:
-ChatGPT already includes the option to continue working on outputs manually.
+<small>
+Current developments in ChatGPT:
 
-- GPT-4o with Canvas (in Beta, only for GPT-4o)
+- ChatGPT already includes the option to continue working on outputs manually:
+
+GPT-4o with Canvas (in Beta, only for GPT-4o)
+</small>
 
 
 ## Can the model write a discussion from your bullet points?
@@ -273,7 +273,7 @@ Give the bullet points of the original discussion to the Chatbot and let it writ
 
 - Prompt GPT-4/GPT-4o (free access) with your paper up to discussion, the bullet points and the writing style instruction on the next slide. 
 
-## Writing style instructions {.scrollable .smaller}
+## Writing style instructions {.scrollable .smaller style="font-size: 0.37em;"}
 
 Example of an Writing Style Guide:
 
@@ -337,7 +337,7 @@ Example of an Writing Style Guide:
     - refine manually
     - provide existing paragraphs as context for the next
 
-## Writing: Further use cases for academics
+## Writing: Further use cases for academics {.smaller}
 
 - Ideas where else you could use LLM chatbots to write?
 

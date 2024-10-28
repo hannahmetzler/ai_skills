@@ -408,7 +408,7 @@ Konstantin Hebenstreit
 <p>[Insert your paper’s text up to the discussion section.]</p>
 <p>’’’</p>
 </section>
-<section id="output-with-better-prompt" class="slide level2 smaller" style="font-size: 0.4em;">
+<section id="output-with-better-prompt" class="slide level2 smaller" style="font-size: 0.37em;">
 <h2>Output with better prompt</h2>
 <p>This study systematically evaluated ten zero-shot chain-of-thought (CoT) prompting strategies across six instruction-tuned language models on six diverse question-answering datasets. Our findings indicate that employing specific CoT prompts significantly enhances model performance compared to direct prompting, with the “Zhou” prompt yielding the highest average Krippendorff’s alpha score when used with GPT-4 (α = .83, 95% CI [.77, .90]; Table 4).</p>
 <p>The superior performance of GPT-4 and GPT-3.5-turbo across most datasets (Table 6) underscores the advancements in reasoning capabilities of recent large language models. GPT-4, in particular, demonstrated substantial gains from externalized reasoning prompts, suggesting that more sophisticated models can better leverage CoT strategies to improve reasoning accuracy. For instance, GPT-4’s performance increased from a Krippendorff’s alpha of .71 (95% CI [.64, .79]) with direct prompting to .83 (95% CI [.77, .90]) with the “Zhou” prompt (Table 4).</p>
@@ -420,7 +420,7 @@ Konstantin Hebenstreit
 <p>Future work should focus on mitigating data contamination issues by utilizing cleaner datasets and exploring methods to detect and control for prior exposure. Furthermore, investigating the effectiveness of prompting strategies across a broader range of tasks and domains can provide deeper insights into the generalizability of CoT reasoning approaches.</p>
 <p>In conclusion, this study demonstrates that zero-shot CoT prompting strategies can substantially improve the reasoning performance of large language models, particularly when aligned with the model’s capabilities and the task’s requirements. As language models continue to advance, leveraging sophisticated prompting techniques will be essential for unlocking their full potential in complex reasoning and decision-making tasks.</p>
 </section>
-<section id="good-but-still-lots-of-text" class="slide level2">
+<section id="good-but-still-lots-of-text" class="slide level2 smaller">
 <h2>Good, but still lots of text</h2>
 <ul>
 <li>Possible strategy, but too much text to check</li>
@@ -429,14 +429,14 @@ Konstantin Hebenstreit
 <div class="fragment">
 <h3 id="rightarrow-refinement"><span class="math inline">\(\rightarrow\)</span> Refinement</h3>
 <p>Let’s have the output in bullet points, structured in the main parts of a discussion.</p>
-<p><small> <strong>Prompt:</strong> Please list the key points of your text as single-sentence bullet points, organized into the following parts of the discussion:</small></p><small>
+<p><strong>Prompt:</strong> Please list the key points of your text as single-sentence bullet points, organized into the following parts of the discussion:</p>
 <ul>
 <li>Conclusion</li>
 <li>Limitations</li>
 <li>Related Work</li>
 <li>Future Work</li>
 </ul>
-</small><p><small>Return it as a markdown file, so I can easily copy it. </small></p>
+<p>Return it as a markdown file, so I can easily copy it.</p>
 </div>
 </section>
 <section id="looks-good" class="slide level2 smaller" style="font-size: 0.5em;">
@@ -486,7 +486,7 @@ Konstantin Hebenstreit
 <p>[full paper]</p>
 <p>““”</p>
 </section>
-<section id="original-discussion-converted-to-bullet-points" class="slide level2 smaller" style="font-size: 0.4em;">
+<section id="original-discussion-converted-to-bullet-points" class="slide level2 smaller" style="font-size: 0.37em;">
 <h2>Original discussion converted to bullet points</h2>
 <p><strong>Conclusion</strong></p>
 <ul>
@@ -536,10 +536,11 @@ Konstantin Hebenstreit
 <li>Thinking about text &amp; argument flow</li>
 <li>Update bullet points</li>
 </ul>
-<p><br> Current developments: ChatGPT already includes the option to continue working on outputs manually.</p>
+<p><small> Current developments in ChatGPT:</small></p><small>
 <ul>
-<li>GPT-4o with Canvas (in Beta, only for GPT-4o)</li>
+<li>ChatGPT already includes the option to continue working on outputs manually:</li>
 </ul>
+</small><p><small>GPT-4o with Canvas (in Beta, only for GPT-4o) </small></p>
 </section>
 <section id="can-the-model-write-a-discussion-from-your-bullet-points" class="slide level2">
 <h2>Can the model write a discussion from your bullet points?</h2>
@@ -554,7 +555,7 @@ Konstantin Hebenstreit
 <li><p>Prompt GPT-4/GPT-4o (free access) with your paper up to discussion, the bullet points and the writing style instruction on the next slide.</p></li>
 </ul>
 </section>
-<section id="writing-style-instructions" class="slide level2 scrollable smaller">
+<section id="writing-style-instructions" class="slide level2 scrollable smaller" style="font-size: 0.37em;">
 <h2>Writing style instructions</h2>
 <p>Example of an Writing Style Guide:</p>
 <h3 id="structure-and-formatting">1. Structure and Formatting</h3>
@@ -629,7 +630,7 @@ Konstantin Hebenstreit
 </ul></li>
 </ol>
 </section>
-<section id="writing-further-use-cases-for-academics" class="slide level2">
+<section id="writing-further-use-cases-for-academics" class="slide level2 smaller">
 <h2>Writing: Further use cases for academics</h2>
 <ul>
 <li>Ideas where else you could use LLM chatbots to write?</li>
