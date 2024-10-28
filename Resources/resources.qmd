@@ -1,7 +1,7 @@
 ---
 title: "Resources"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler & Konstantin Hebenstreit <br> Slides: https://github.com/hannahmetzler/AI_skills"
+author: "Hannah Metzler & Konstantin Hebenstreit"
 date: "October 29 2024"
 format:
   # html:

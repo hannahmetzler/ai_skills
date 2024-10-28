@@ -1,9 +1,11 @@
 ---
 title: "Enhancing your research outputs with LLM Chatbots"
 subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler & Konstantin Hebenstreit <br> Slides: https://github.com/hannahmetzler/AI_skills"
+author: "Hannah Metzler"
 date: "October 29 2024"
 format: 
+  # html:
+  #   toc: true
   revealjs: 
     transition: "slide"
     theme: [default, custom.scss]
@@ -16,18 +18,74 @@ editor: source
 ---
 
 
-## Overview
+## Overview 
 
 ### Scientific tools based on LLMs
   - [Perplexity AI](https://www.perplexity.ai/)
   - [Elicit](www.elicit.com)
-  - [Notebook LM](notebook.lm)
+  - [Notebook LM](https://notebooklm.google.com/)
 
 ### Collection of researcher use cases
 
-# Scientific tools based on LLMs
+# Scientific tools based on LLMs 
 
-# Perplexity
+##  [Notebook LM](https://notebooklm.google.com/)
+
+::: columns
+::: column
+### What for?
+- Summarizing & integrating sources to interactive media pieces
+- Learning new materials in easy ways: e.g. listen to podcast of papers
+- Creating blog posts, social media threads, research summaries...
+:::
+::: column
+### How? 
+- Upload sources (documents, websites, video, text)
+- Media pieces: Podcast, Briefing Doc, Study Guide, FAQ, Table of Content
+- Questions & answers, references, quotes, ...
+:::
+:::
+
+::: notes
+Misinformation notebook: https://notebooklm.google.com/notebook/92418463-42e9-4555-8ede-ddbbcb8c7394?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
+:::
+
+## Create a new notebook
+
+![](images/notebooklm/new_notebook.png)
+
+::: notes
+Misinformation notebook: https://notebooklm.google.com/notebook/92418463-42e9-4555-8ede-ddbbcb8c7394?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
+:::
+
+## Upload/select sources & Notebook guide
+
+![](images/notebooklm/notebook_guide_sources.png)
+
+::: notes
+Misinformation notebook: https://notebooklm.google.com/notebook/92418463-42e9-4555-8ede-ddbbcb8c7394?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
+:::
+
+
+## Questions & answers with quotes
+
+![](images/notebooklm/question_answer_quotes.png)
+
+References with links to where information comes from
+
+
+## Output example: Briefing Doc
+
+![](images/notebooklm/briefing_doc.png)
+- Includes direct quotes!
+
+## Generating podcasts
+
+![](images/notebooklm/customize_audio.png){width="400"}
+![](images/notebooklm/podcast.png){width="400"}
+
+- [Let's listen!](https://notebooklm.google.com/notebook/92418463-42e9-4555-8ede-ddbbcb8c7394/audio)
+
 
 ## [Perplexity](https://www.perplexity.ai/)
 
@@ -45,27 +103,33 @@ editor: source
 ![](images/perplexity/results1.png){width="500"}
 
 
-## Rewrite an answer with other models
-
-![](images/perplexity/rewrite_answer.png)
-
 ## Choose databases
 
 ![](images/perplexity/choose_database.png){width="100"}
 
 - Tip: Search for best tools using the "social" option to search Reddit and avoid clutter & adds
 
+## Rewrite an answer with other models
 
-# Elicit
+![](images/perplexity/rewrite_answer.png)
+
 
 ## [Elicit: The AI research assistant](www.elicit.com)
 
-![](images/elicit/elicit_start.png){fig-align="center" width="330"}
-![](images/elicit/elicit_start2.png){fig-align="center" width="330"}
-![](images/elicit/elicit_start3.png){fig-align="center" width="330"}
-
 * Get an overview of many studies quickly
 * Useful for reviews, meta-analyses
+
+::: columns
+::: column
+
+![](images/elicit/elicit_start.png){fig-align="center" width="500"}
+:::
+::: column
+![](images/elicit/elicit_start2.png){fig-align="center" width="450"}
+![](images/elicit/elicit_start3.png){fig-align="center" width="450"}
+:::
+:::
+
 
 ---
 
@@ -91,7 +155,6 @@ editor: source
 ## Create custom columns
 
 ![](images/elicit/custom_column.png){fig-align="center"}
-
 ---
 
 ![](images/elicit/paper_overview2.png){.r-stretch}
@@ -110,16 +173,33 @@ editor: source
 
 :::: columns
 ::: {.column width="30%"}
-- Free version: limited usage, good enough for occasional usage
-- Subscription: for systematic reviews/meta-analyses 
+- Free version: limited usage, for occasional usage
+- Subscription for a few months: for systematic reviews/meta-analyses, PhD writing
 :::
 ::: {.column width="70%"}
 ![](images/elicit/subscription.png)
 ::::
 :::
 
-# Exercise: Scientific LLM tools
-## Exercise Option 1: Elicit (10 min)
+
+
+## Exercise Option 1: NotebookLM (15 min)
+
+- Create a new notebook and upload min. 3 sources (Youtube, paper & website)
+- Create a Briefing Doc and Table of Content (& other outputs)
+- Ask a suggested question, add your own question (maybe also try one that is not directly covered)
+  - Check the different references in the answers and their embedding in the source
+- Create a podcast with a customized focus (listen with headphones)
+
+## Exercise Option 2: Perplexity (15 min)
+
+* Choose a new research question
+* Choose the academic database and pro search
+* Ask some follow-up questions
+* Check the sources: are they good?
+* Rewrite the answer using another model
+
+## Exercise Option 3: Elicit (15 min)
 
 * Choose a (familiar) research question
 * Delete an irrelevant paper
@@ -129,61 +209,35 @@ editor: source
 * Find the part of the paper describing the feature
 * Upload 3 papers and chat with them
 
-## Exercise Option 2: Perplexity (10 min)
-
-* Choose a new research question
-* Choose the academic database and pro search
-* Ask some follow-up questions
-* Rewrite the answer using another model
-
-
-## Exercise Option 2: NotebookLM (10 min)
-Link:   [NotebookLM](https://notebooklm.google.com/): Document-based analyses [Example Tutorial](https://www.gaiforresearch.com/post/introducing-notebooklm-your-ai-powered-research-assistant) [Paper](https://www.nature.com/articles/s41586-024-07417-w)
-
-
 ## Other tools to explore
 
 - [Tome]() for presentations
--   Translation [www.deepl.com](www.deepl.com)
-- ResearchRabbit for Literature search based on paper networks
-
-## Exercise (15 min)
-
-
+- Translation [www.deepl.com](www.deepl.com)
+- [ResearchRabbit](https://www.researchrabbit.ai/) for literature search based on paper networks & paper alerts
+- CustomGPTs: Many different ScholarGPTs, this [one](https://chatgpt.com/g/g-3DGi2iLag-scholargpt) seems to work reasonably 
 
 # Researcher use cases
 
+Collection of ideas for where you might experiment with chatbots in the future
+
 ## Summarizing content
 
--   Record workshops, interviews, discussions: note taking and summarization
--   Upload long reports/papers, have them analysed e.g. compare 2 university annual reports, create a table of differences
--   Summarise long documents: Upload link or file
-    - Long newspaper articles: listen as a podcast (Notebook LM)
-    - Grant writing instructions, specific questions
-    - Journal requirements
--   Summarizing a paper based on [Zotero note example](https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8)
+-   Record workshops, interviews, meetings: note taking & summaries
+-   Upload long reports/papers & analyse: 
+    - compare 2 university annual reports, table with 10 differences
+    - Grant regulatios: ask your specific questions
+-   Summarizing a paper based on notes you took for other papers: [Zotero note example](https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8)
     
-## Structuring stuff
+## Writing
 
-- Suggest outline/structure for a presentation
-- Course Syllabi
+- Write abstract draft given the paper
+- Social media thread based on paper
+- Adapt application to new position: upload CV, job call/description & motivation letter examples
+- Adapt paper for submission to new journal 
+    - Upload paper version, journal requirements, example papers from journal
+- Emails: use email thread as context
 
-## Getting feedback on everything
--   Upload presentation slides
-
-
-## Area specific research tasks
-
--   Surveys, e.g. [develop & test MC questions](https://chatgpt.com/share/67166062-c0e4-800b-b018-07562fc3819d), [check comprehensibility](https://chatgpt.com/share/6716608a-2044-800b-9461-c7508b2912b4), [answer options](https://chatgpt.com/share/67166a29-9330-800b-b041-41c1b9554e8c)
--   Statistics questions [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c)
--   Discussion about [social media & mental health](https://chatgpt.com/share/671668f9-c280-800b-83ef-0e591c1200ca)
-
-::: notes
-survey item to be updated, new conversation with chatgpt necessary
-:::
-
-
-## Prompts for...
+## Writing: Prompt inspirations for...
 
 ::: columns
 ::: column
@@ -203,27 +257,36 @@ survey item to be updated, new conversation with chatgpt necessary
 :::
 ::::
 
+::: footer
 <https://learnprompt.org/chatgpt-prompts-for-academic-writing/>
+:::
 
-<!-- ## Brainstorming & Exploration -->
 
-<!-- -   [Journalist interview questions](https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f) -->
-<!-- -   [Application: Future research directions](https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea) (second half of chat) -->
-<!--     -   What does research on why people donate show? Please include research from Lucius Caviola, Stefan Schubert, and their collaborators. -->
-<!--     -   Have any interventions to increase donations, or get more people to donate, emerged from this research? -->
-<!--     -   What are the most important open questions in psychology regarding how to foster prosocial behavior and cooperation? -->
-<!--     -   What is a concrete experiment that you would do to investigate prosocial behavior, for example donations? Which design, which experimental groups, or which psychological measures would you use? -->
+## Getting feedback on everything
 
-<!-- ## Exercise Summarizing: (15 minutes) {.smaller visibility='hidden'} -->
+- Upload presentation slides: how to improve slides?
+- Screenshot of your weekly schedule: better time management?
+- Reports, papers, course syllabi...
+- Career (and other) decisions & time management
 
-<!-- ### Extract relevant points from long content  -->
+## Create outline and structure suggestions
 
-<!-- - Choose a recent workshop/lecture, meeting you attended or paper you read -->
-<!--   - You have some written record (notes, slides, transcript) -->
-<!-- - Copy/paste or upload the document -->
-<!-- - Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis -->
-<!-- - Define the audience: you, other researchers -->
-<!-- - Context about workshop/lecture/meeting/paper  -->
-<!-- - Task: Summarize key points that are relevant for you: "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam" -->
-<!-- - Add examples if you have any (points that are relevant, exam questions,...) -->
+- Outline/structure for a presentation
+- Course syllabus draft
+- Which topics should I cover?
+
+
+## Area specific research tasks
+
+-   Surveys design
+    - [develop & test MC questions](https://chatgpt.com/share/67166062-c0e4-800b-b018-07562fc3819d)
+    - [check comprehensibility](https://chatgpt.com/share/6716608a-2044-800b-9461-c7508b2912b4)
+    - [answer options](https://chatgpt.com/share/67166a29-9330-800b-b041-41c1b9554e8c)
+-   Statistics questions: [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c) & [high quality prompt](https://www.maastrichtuniversity.nl/choose-statistics)
+-   Discussion about [social media & mental health](https://chatgpt.com/share/671668f9-c280-800b-83ef-0e591c1200ca)
+
+## Brainstorming & Exploration
+
+-   Should I accept a journalist request? Answer ideas for [journalist interview questions](https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f) showed me that I could. 
+-   [Academic application: Writing the statement on "Future research directions"](https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea): exploring the research focus of the group and research area I aimed for. (second half of chat)
 
