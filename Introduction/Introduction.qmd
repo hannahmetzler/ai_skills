@@ -210,6 +210,12 @@ Tokens = "Subwords"
 
 ## Dictionary
 
+The LLM has a dictonary of a specific number of tokens. 
+
+In that way it does not have to know all words, but constructs the rare ones by combining some of its tokens.
+
+Every single character is also one token, such that the LLM can construct all possible words from tokens.
+
 ## Text representation
 <br>
 <br>
@@ -284,30 +290,59 @@ Always predicts the next word of a text.
 Does not need any annotation.
 - Transformer: type of the language model
 
-## Change in model training
+## Comparing training routine to older models
 Changes of how models are trained over time.
-- seperate models for different tasks, e.g. translation
+Earlier approaches for weaker models:
+
+- train seperate models for different tasks, e.g. translation
 - pre-train models on language, then fine-tune on task (e.g. BERT)
-- Today: Fine tune model on conversation settings. Give model the task in the context window. No need for
 
-## RAG
-Models can look up databases for specific information. 
-Makes their outputs more exact. E.g. facts. Or very up-to-date information
-Can be everything, from Wikipedia, medical textbooks, internal files of companies.
+Todays approach for frontier models:
 
-## Pre Training
-
-## Fine-tuning
+1. Pre-train on most of the available data from the internet via next-word prediction.
+1. Fine-tune model on conversation setting and chain-of-thought reasoning (next slide).
+1. Refining by receiving feedback from humans
+1. In context learning: Explain the model a task in the context window. (Often no need for task specific fine-tuning)
 
 ## Chain of thought reasoning
 
-- potential example from here: https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf
+Enhancing the models performance by increasing the number of output tokens. Reasoning happens while the models predicts each word. External reasoning.
+
+<br>
+
+![](images/chain_of_thought.png){width=20%}
 
 
 ::: footer
-https://arxiv.org/abs/2201.11903
+Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
 :::
 
+## What is still missing?
+
+![](images/unknown_caller.png)
+
+. . . 
+
+<br>
+
+**Context information: prompting to give more context**
+
+:::footer
+[pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
+:::
+
+
+
+## RAG Retrieval Augmented Generation
+The LLM is given a specific question.
+
+An algorithm looks up a database for specific or up-to-date information that fits the topic of the question.
+
+This information is automatically added into the context of the LLMs.
+
+The LLM has very specific and reliable information to answer questiong.
+
+Examples for databases: Scientific papers, Medical textbooks, internal files of companies.
 
 ## Current top models
 
@@ -368,8 +403,19 @@ Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
   
 $\rightarrow$ Konstantin's default: GPT4
 
+
+Usage limits:
+As of May 13th 2024, Plus users will be able to send 80 messages every 3 hours on GPT-4o. and 40 messages every 3 hours on GPT-4. The message cap for a user in a ChatGPT Team workspace is approximately twice that of ChatGPT Plus.
+
+
+Please note that unused messages do not accumulate (i.e. if you wait 6 hours, you will not have 80 messages available to use for the next 3 hours on GPT-4). 
+
+GPT-4o mini does not have limits on the Plus tier.
+
+Plus user have access to 50 messages a week with OpenAI o1-preview and 50 messages a day with OpenAI o1-mini to start with our research preview.
+
 ::: footer
-[ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini)
+[ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini) [usage limits](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065)
 
 ::: 
 
