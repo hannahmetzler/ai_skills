@@ -27,8 +27,6 @@ editor: source
 1. General topics of ethics an AI
 2. What it means for research
 
-Critical concerns about data privacy and scientific outputs like publications.
-
 :::notes
 I can give an overview of the concerns and information but I am not a lawyer, no legal advice. 
 :::
@@ -86,23 +84,26 @@ The first female senator, a white woman, served in 1922.
 
 Example: 
 
-2023: Two US lawyers fined for submitting fake court citations from ChatGPT, leading to a $5,000 fine.
+2023: Two US lawyers fined for (unknowingly) submitting court cases as evidence made up by ChatGPT, leading to a $5,000 fine.
 
 :::footer
 [The Guardian](https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt)
 :::
 
 ## Data privacy concerns
-- Training data extraction: reconstruct training data from input
-- Attribute inference attacks: LLMs can combine information (from big data) to predict sensitive attributes from 'harmless' user data
+- Training data extraction: reconstruct training data from model outputs
+- LLMs can combine large ammounts of 'harmless' user data to predict sensitive attributes
 
 ## Copyright
-- is passive, applies to everything you put online
+- is a passive right, applies to everything you put online
 - bound to a person
 - AI cannot be holder of copyright, as it is not a person
 
-Example of copyright violations:
+Example of a copyright violation:
+
 Getty images sued midjourney (AI image creation) for training on their data.
+
+# What does this mean for research?
 
 ## AI use in research
 
@@ -147,6 +148,9 @@ This is a summary, for details please check the link to their website.
   - AI cannot alter or create images (except if part of research methods).
   - AI use in research must be documented in methods.
 
+
+## Elsevier's Policies for Journals 2 {.smaller}
+
 - **For Reviewers**:
   - Do not upload manuscripts to AI tools (confidentiality breach).
   - AI should not assist in peer review.
@@ -170,24 +174,42 @@ This is a summary, for details please check the link to their website.
   - Citation
   - Wrong information
 
-- plagiarism issues:
-  - altough verbatim repetitions of text are very rare in LLMs, the use of a plagiarism checker is advised.
+- Plagiarism issues:
+  - Altough verbatim repetitions of text are very rare in LLMs, the use of a plagiarism checker is advised.
 
-## GDPR
-General Data Protection Regulation
-For all individuals within the EU.
+## What happens with your input data?
 
-If you are using LLMs to process personal data of subjects of your subjects, please consult experts from your university.
+- AI companies are not transparent about this
 
-Especially for everything that concerns patient data.
+(1) Model training: most  data is used for future model training at OpenAI/GPT & Google/Gemini (not Anthropic/Claude)
+(2) Security check of all data for safety violations
 
-Turning off, that the model is not training on your inputs does not mean it complies with the GDPR.
+- Opt out of (1) in Settings - Data Controls:
+    - Turn off the option "Improve model for everyone"
+- Claude does not train on your data by default
+- Security checks happen anyways - human review
 
-## Use case
-Example of GDPR conform use of research data:
-Microsoft and OpenAI offer Possiblity of Azure Server in Europe that complies with those rules.
+
+## General Data Protection Regulation
+
+- For all individuals within the EU
+
+- Avoid entering sensitive data that identifies individuals
+
+- Turning off model training on your inputs does not imply GDPR compliance.
+
+- If you are using LLMs to process personal data of subjects, please consult experts from your university. Especially for everything that concerns patient data.
+
+## Examples for GDPR compliance with sensitive data
+
+- Microsoft and OpenAI offer possiblity of Server in Europe that complies with GDPR rules.
+
+- Using local models and servers
+  - challenges: setting up and costs for servers
 
 ## Possible Future
+How AI will be used in research
+
 ::::: columns
 ::: {.column width="45%"}
 ![](https://www.fau.edu/newsdesk/images/news/self-driving-patent-newsdesk.jpg){.nostretch width=100% height=250px}
@@ -204,7 +226,3 @@ Autonomous research systems
 ::: {style="text-align:center;"}
 **Human accountability**
 :::
-
-## Agents
-
-Claude computer use example
