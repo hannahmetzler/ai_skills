@@ -228,7 +228,7 @@ Collection of ideas for where you might experiment with chatbots in the future
     - Grant regulatios: ask your specific questions
 -   Summarizing a paper based on notes you took for other papers: [Zotero note example](https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8)
     
-## Writing
+## Writing {.smaller}
 
 - Write abstract draft given the paper
 - Social media thread based on paper
@@ -236,6 +236,9 @@ Collection of ideas for where you might experiment with chatbots in the future
 - Adapt paper for submission to new journal 
     - Upload paper version, journal requirements, example papers from journal
 - Emails: use email thread as context
+-   [Feeding it with my papers](https://chatgpt.com/share/67166dd7-d494-800b-a652-1f0bb114d354), digital scientific twin
+-   [Recommendation letter](https://chatgpt.com/share/67166d34-1fa8-800b-ba58-0bc6da8dea1b)
+-   Refining [cover letter & teaching statement](https://chatgpt.com/share/67166cc1-a2bc-800b-ad9f-28eb8b5078d9)
 
 ## Writing: Prompt inspirations for...
 
