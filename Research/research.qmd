@@ -44,13 +44,26 @@ editor: source
 :::
 :::
 
+::: notes
+Misinformation notebook: https://notebooklm.google.com/notebook/92418463-42e9-4555-8ede-ddbbcb8c7394?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
+:::
+
 ## Create a new notebook
 
 ![](images/notebooklm/new_notebook.png)
 
+::: notes
+Misinformation notebook: https://notebooklm.google.com/notebook/92418463-42e9-4555-8ede-ddbbcb8c7394?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
+:::
+
 ## Upload/select sources & Notebook guide
 
 ![](images/notebooklm/notebook_guide_sources.png)
+
+::: notes
+Misinformation notebook: https://notebooklm.google.com/notebook/92418463-42e9-4555-8ede-ddbbcb8c7394?original_referer=https:%2F%2Fnotebooklm.google%23&pli=1
+:::
+
 
 ## Questions & answers with quotes
 
@@ -199,7 +212,7 @@ References with links to where information comes from
 - [Tome]() for presentations
 - Translation [www.deepl.com](www.deepl.com)
 - [ResearchRabbit](https://www.researchrabbit.ai/) for literature search based on paper networks & paper alerts
-- CustomGPTs: ScholarGPT
+- CustomGPTs: Many different ScholarGPTs, this [one](https://chatgpt.com/g/g-3DGi2iLag-scholargpt) seems to work reasonably 
 
 # Researcher use cases
 
