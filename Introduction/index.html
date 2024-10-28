@@ -492,6 +492,9 @@ Konstantin Hebenstreit
 </section>
 <section id="dictionary" class="slide level2">
 <h2>Dictionary</h2>
+<p>The LLM has a dictonary of a specific number of tokens.</p>
+<p>In that way it does not have to know all words, but constructs the rare ones by combining some of its tokens.</p>
+<p>Every single character is also one token, such that the LLM can construct all possible words from tokens.</p>
 </section>
 <section id="text-representation-1" class="slide level2">
 <h2>Text representation</h2>
@@ -542,28 +545,48 @@ Konstantin Hebenstreit
 <li>Transformer: type of the language model</li>
 </ul>
 </section>
-<section id="change-in-model-training" class="slide level2">
-<h2>Change in model training</h2>
-<p>Changes of how models are trained over time. - seperate models for different tasks, e.g.&nbsp;translation - pre-train models on language, then fine-tune on task (e.g.&nbsp;BERT) - Today: Fine tune model on conversation settings. Give model the task in the context window. No need for</p>
-</section>
-<section id="rag" class="slide level2">
-<h2>RAG</h2>
-<p>Models can look up databases for specific information. Makes their outputs more exact. E.g. facts. Or very up-to-date information Can be everything, from Wikipedia, medical textbooks, internal files of companies.</p>
-</section>
-<section id="pre-training" class="slide level2">
-<h2>Pre Training</h2>
-</section>
-<section id="fine-tuning" class="slide level2">
-<h2>Fine-tuning</h2>
+<section id="comparing-training-routine-to-older-models" class="slide level2 smaller">
+<h2>Comparing training routine to older models</h2>
+<p>Changes of how models are trained over time. Earlier approaches for weaker models:</p>
+<ul>
+<li>train seperate models for different tasks, e.g.&nbsp;translation</li>
+<li>pre-train models on language, then fine-tune on task (e.g.&nbsp;BERT)</li>
+</ul>
+<p>Todays approach for frontier models:</p>
+<ol type="1">
+<li>Pre-train on most of the available data from the internet via next-word prediction.</li>
+<li>Fine-tune model on conversation setting and chain-of-thought reasoning (next slide).</li>
+<li>Refining by receiving feedback from humans</li>
+<li>In context learning: Explain the model a task in the context window. (Often no need for task specific fine-tuning)</li>
+</ol>
 </section>
 <section id="chain-of-thought-reasoning" class="slide level2">
 <h2>Chain of thought reasoning</h2>
-<ul>
-<li>potential example from here: https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf</li>
-</ul>
-<div class="footer">
-<p>https://arxiv.org/abs/2201.11903</p>
+<p>Enhancing the models performance by increasing the number of output tokens. Reasoning happens while the models predicts each word. External reasoning.</p>
+<p><br></p>
+
+<img data-src="images/chain_of_thought.png" style="width:20.0%" class="r-stretch"><div class="footer">
+<p>Kojima et al.&nbsp;<a href="https://arxiv.org/abs/2205.11916">2023</a></p>
 </div>
+</section>
+<section id="what-is-still-missing" class="slide level2">
+<h2>What is still missing?</h2>
+
+<img data-src="images/unknown_caller.png" class="r-stretch"><div class="fragment">
+<p><br></p>
+<p><strong>Context information: prompting to give more context</strong></p>
+<div class="footer">
+<p><a href="https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/">pixabay</a></p>
+</div>
+</div>
+</section>
+<section id="rag-retrieval-augmented-generation" class="slide level2 smaller">
+<h2>RAG Retrieval Augmented Generation</h2>
+<p>The LLM is given a specific question.</p>
+<p>An algorithm looks up a database for specific or up-to-date information that fits the topic of the question.</p>
+<p>This information is automatically added into the context of the LLMs.</p>
+<p>The LLM has very specific and reliable information to answer questiong.</p>
+<p>Examples for databases: Scientific papers, Medical textbooks, internal files of companies.</p>
 </section>
 <section id="current-top-models" class="slide level2">
 <h2>Current top models</h2>
@@ -595,7 +618,7 @@ Konstantin Hebenstreit
           display:block!important;
       }</style></aside>
 </section>
-<section id="multimodal-interactions" class="slide level2">
+<section id="multimodal-interactions" class="slide level2 smaller">
 <h2>Multimodal interactions</h2>
 <p>Most with ChatGPT and Gemini, some with Claude. Only Claude: Artifacts, formatting text and websites.</p>
 <ul>
@@ -608,28 +631,44 @@ Konstantin Hebenstreit
 <li>Data analysis (&amp; Claude)</li>
 <li>Execute code</li>
 </ul>
-</section>
-<section id="screenshots-benefits-gptclaude" class="slide level2">
-<h2>Screenshots Benefits GPT/Claude</h2>
+<aside class="notes">
+<p>add screenshots benefits gpt/claude</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="chatbot-arena" class="slide level2">
 <h2>Chatbot Arena</h2>
 <p>Human ratings of chatbot responses <img data-src="images/chatbot_arena.png"></p>
-<p><small> Rank (UB): model’s ranking compared to other models</small></p><small>
-</small><p><small>Rank (StyleCtrl): model’s ranking with style control (lenght, formatting, etc.) </small></p>
-<p>Source: <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord</p>
+<p><small> Rank (UB): model’s ranking compared to other models Rank (StyleCtrl): model’s ranking with style control (lenght, formatting, etc.) </small></p>
+<div class="footer">
+<p><a href="https://chat.lmsys.org/">Chatbot Arena</a></p>
+</div>
 </section>
-<section id="different-chatgpt-versions" class="slide level2">
+<section id="different-chatgpt-versions" class="slide level2 smaller">
 <h2>Different ChatGPT versions</h2>
 <ul>
-<li>ChatGPT4: more resource intensive = expensive</li>
-<li>ChatGPT4o: optimized to be faster and cheaper</li>
-<li>ChatGPT-4o mini: every day tasks</li>
+<li>GPT4: more resource intensive = expensive</li>
+<li>GPT4o: optimized to be faster and cheaper</li>
+<li>GPT-4o mini: every day tasks</li>
 <li>o1-preview: thinks before it answers, for complex tasks (no web search)</li>
 </ul>
 <p><span class="math inline">\(\rightarrow\)</span> Konstantin’s default: GPT4</p>
+<p>Usage limits: - GPT-4: 40 messages every 3 hours - GPT-4o: 80 messages every 3 hours - GPT-4o mini: no limit</p>
+<ul>
+<li>o1-preview: 50 messages per week</li>
+<li>o1-mini: 50 messages a day</li>
+</ul>
 <div class="footer">
-<p><a href="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini">ChatGPT blog on models</a></p>
+<p><a href="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini">ChatGPT blog on models</a> <a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065">usage limits</a></p>
 </div>
 </section>
 <section id="discussion" class="slide level2">
