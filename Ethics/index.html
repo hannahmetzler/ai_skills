@@ -346,7 +346,6 @@ Konstantin Hebenstreit
 <li>General topics of ethics an AI</li>
 <li>What it means for research</li>
 </ol>
-<p>Critical concerns about data privacy and scientific outputs like publications.</p>
 <aside class="notes">
 <p>I can give an overview of the concerns and information but I am not a lawyer, no legal advice.</p>
 <style type="text/css">
@@ -423,9 +422,8 @@ Konstantin Hebenstreit
 </section>
 <section id="accountability" class="slide level2">
 <h2>Accountability</h2>
-<ul>
-<li>2023: Two US lawyers fined for submitting fake court citations from ChatGPT, leading to a $5,000 fine.</li>
-</ul>
+<p>Example:</p>
+<p>2023: Two US lawyers fined for (unknowingly) submitting court cases as evidence made up by ChatGPT, leading to a $5,000 fine.</p>
 <div class="footer">
 <p><a href="https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt">The Guardian</a></p>
 </div>
@@ -433,24 +431,40 @@ Konstantin Hebenstreit
 <section id="data-privacy-concerns" class="slide level2">
 <h2>Data privacy concerns</h2>
 <ul>
-<li>Training data extraction: reconstruct training data from input</li>
-<li>Attribute inference attacks: LLMs can combine information (from big data) to predict sensitive attributes from ‘harmless’ user data</li>
+<li>Training data extraction: reconstruct training data from model outputs</li>
+<li>LLMs can combine large ammounts of ‘harmless’ user data to predict sensitive attributes</li>
 </ul>
 </section>
 <section id="copyright" class="slide level2">
 <h2>Copyright</h2>
 <ul>
-<li><p>is passive, applies to everything you put online</p></li>
-<li><p>bound to a person</p></li>
-<li><p>AI cannot be holder of copyright, as it is not a person</p></li>
-<li><p>copyright case: getty images for example</p></li>
+<li>is a passive right, applies to everything you put online</li>
+<li>bound to a person</li>
+<li>AI cannot be holder of copyright, as it is not a person</li>
 </ul>
+<p>Example of a copyright violation:</p>
+<p>Getty images sued midjourney (AI image creation) for training on their data.</p>
 </section>
-<section id="increasing-use-of-llms-in-research" class="slide level2">
-<h2>Increasing use of LLMs in research</h2>
+<section>
+<section id="what-does-this-mean-for-research" class="title-slide slide level1 center">
+<h1>What does this mean for research?</h1>
+
+</section>
+<section id="ai-use-in-research" class="slide level2">
+<h2>AI use in research</h2>
+<p>Increasing use of LLMs in paper writing</p>
 <p><img data-src="images/llm_use_research.png" class="" style="width:90.0%"></p>
 <div class="footer">
 <p>Liang et al., <a href="https://arxiv.org/abs/2404.01268">2024</a></p>
+</div>
+</section>
+<section id="iclr-conference-using-ai-to-help-reviewers" class="slide level2">
+<h2>ICLR conference using AI to help reviewers</h2>
+<p><small> 1. Encouraging reviewers to rephrase vague review comments, making them more actionable for the authors. <br> 2. Highlighting sections of the paper that may already address some of the reviewer’s questions. <br> 3. Identifying and addressing unprofessional or inappropriate remarks in the review. </small></p>
+
+<img data-src="https://blog.iclr.cc/wp-content/uploads/image1.png" class="r-stretch"><p><small><strong>The feedback system will not replace any human reviewers.</strong></small></p>
+<div class="footer">
+<p><a href="https://blog.iclr.cc/2024/10/09/iclr2025-assisting-reviewers/">ICLR blog</a></p>
 </div>
 </section>
 <section id="ai-in-journal-policies" class="slide level2">
@@ -462,6 +476,7 @@ Konstantin Hebenstreit
 </section>
 <section id="elseviers-policies-for-journals" class="slide level2 smaller">
 <h2>Elsevier’s Policies for Journals</h2>
+<p>This is a summary, for details please check the link to their website.</p>
 <ul>
 <li><strong>For Authors</strong>:
 <ul>
@@ -475,12 +490,9 @@ Konstantin Hebenstreit
 <li>AI use in research must be documented in methods.</li>
 </ul></li>
 </ul>
-<div class="footer">
-<p><a href="https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals">Elsevier AI Policy</a></p>
-</div>
 </section>
-<section id="elseviers-policies-for-journals-cont." class="slide level2 smaller">
-<h2>Elsevier’s Policies for Journals (cont.)</h2>
+<section id="elseviers-policies-for-journals-2" class="slide level2 smaller">
+<h2>Elsevier’s Policies for Journals 2</h2>
 <ul>
 <li><strong>For Reviewers</strong>:
 <ul>
@@ -504,31 +516,57 @@ Konstantin Hebenstreit
 <section id="implications-for-academic-research" class="slide level2">
 <h2>Implications for Academic Research</h2>
 <ul>
-<li>Citation and Misinformation</li>
-<li>copyright issues !!</li>
-<li>plagiarism issues, please use plagiarism checker</li>
-</ul>
-</section>
-<section id="gdpr" class="slide level2">
-<h2>GDPR</h2>
+<li>Hallucinations:
 <ul>
-<li>{general explanation}</li>
-<li>{sensitive data}</li>
-</ul>
-</section>
-<section id="sensitive-information" class="slide level2">
-<h2>Sensitive information</h2>
+<li>Citation</li>
+<li>Wrong information</li>
+</ul></li>
+<li>Plagiarism issues:
 <ul>
-<li>Please consult experts on data security of your university</li>
-<li>Especially for everything that concerns patient data</li>
+<li>Altough verbatim repetitions of text are very rare in LLMs, the use of a plagiarism checker is advised.</li>
+</ul></li>
 </ul>
 </section>
-<section id="use-case" class="slide level2">
-<h2>Use case</h2>
-<p>GDPR conform use of research data: Microsoft and OpenAI offer Possiblity of Azure Server in Europe to comply with those rules. If you need an option for how to be able to use sensitive research data with LLMs.</p>
+<section id="what-happens-with-your-input-data" class="slide level2">
+<h2>What happens with your input data?</h2>
+<ul>
+<li>AI companies are not transparent about this</li>
+</ul>
+<ol type="1">
+<li>Model training: most data is used for future model training at OpenAI/GPT &amp; Google/Gemini (not Anthropic/Claude)</li>
+<li>Security check of all data for safety violations</li>
+</ol>
+<ul>
+<li>Opt out of (1) in Settings - Data Controls:
+<ul>
+<li>Turn off the option “Improve model for everyone”</li>
+</ul></li>
+<li>Claude does not train on your data by default</li>
+<li>Security checks happen anyways - human review</li>
+</ul>
+</section>
+<section id="general-data-protection-regulation" class="slide level2">
+<h2>General Data Protection Regulation</h2>
+<ul>
+<li><p>For all individuals within the EU</p></li>
+<li><p>Avoid entering sensitive data that identifies individuals</p></li>
+<li><p>Turning off model training on your inputs does not imply GDPR compliance.</p></li>
+<li><p>If you are using LLMs to process personal data of subjects, please consult experts from your university. Especially for everything that concerns patient data.</p></li>
+</ul>
+</section>
+<section id="examples-for-gdpr-compliance-with-sensitive-data" class="slide level2">
+<h2>Examples for GDPR compliance with sensitive data</h2>
+<ul>
+<li><p>Microsoft and OpenAI offer possiblity of Server in Europe that complies with GDPR rules.</p></li>
+<li><p>Using local models and servers</p>
+<ul>
+<li>challenges: setting up and costs for servers</li>
+</ul></li>
+</ul>
 </section>
 <section id="possible-future" class="slide level2">
 <h2>Possible Future</h2>
+<p>How AI will be used in research</p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><img data-src="https://www.fau.edu/newsdesk/images/news/self-driving-patent-newsdesk.jpg" class="nostretch" style="width:100.0%" height="250"> Self-driving car</p>
@@ -544,7 +582,7 @@ Konstantin Hebenstreit
 
 </div>
 </div>
-</section>
+</section></section>
     </div>
   </div>
 

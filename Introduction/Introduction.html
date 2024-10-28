@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Customizing_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Customizing_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Customizing_files/libs/quarto-html/popper.min.js"></script>
-<script src="Customizing_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Customizing_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Customizing_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Customizing_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="Customizing_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="Introduction_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Introduction_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Introduction_files/libs/quarto-html/popper.min.js"></script>
+<script src="Introduction_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Introduction_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Introduction_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Introduction_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="Introduction_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Konstantin Hebenstreit">
   <meta name="dcterms.date" content="2024-10-29">
-  <title>Customizing Chatbots</title>
+  <title>How do Large Language Models (LLMs) work?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Customizing_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Customizing_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="Introduction_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Introduction_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Customizing_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="Customizing_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Customizing_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Customizing_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Customizing_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="Introduction_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="Introduction_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Introduction_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Introduction_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Introduction_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -327,7 +327,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Customizing Chatbots</h1>
+  <h1 class="title">How do Large Language Models (LLMs) work?</h1>
   <p class="subtitle">Mastering AI Chatbots: Optimizing Research through Effective Use</p>
 
 <div class="quarto-title-authors">
@@ -340,233 +340,354 @@ Konstantin Hebenstreit
 
   <p class="date">2024-10-29</p>
 </section>
-<section>
-<section id="customizing-chatbots" class="title-slide slide level1 center">
-<h1>Customizing Chatbots</h1>
-
-</section>
-<section id="system-prompts" class="slide level2">
-<h2>System prompts</h2>
-<ul>
-<li>Customizing your default version of ChatGPT</li>
-</ul>
-<p><br></p>
-<p>ChatGPT: Settings &gt; Personalization &gt; Customize ChatGPT</p>
-<p><br></p>
+<section id="ai-and-science" class="slide level2">
+<h2>AI and Science</h2>
 <div class="columns">
-<div class="column" style="width:45%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/system_prompt.png"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:45%;">
-<p>“This is extremely important for my job, please work accurately and check that everything is correct.”</p>
+<div class="column" style="width:47%;">
+<p><img data-src="images/ai_scientist_news.png"> <small><em>Source: <a href="https://www.discovermagazine.com/the-sciences/meet-the-ai-scientist">Discover Magazine</a></em></small></p>
+</div><div class="column fragment" style="width:47%;">
+<p><img data-src="images/comparing_numbers.png"></p>
 </div></div>
-</section>
-<section id="ideas-for-useful-system-prompts" class="slide level2">
-<h2>Ideas for useful system prompts</h2>
-<ul>
-<li><p>Give information that is relevant in all of your chats. Example: scientific work.</p></li>
-<li><p>Prompts that are entered each time, e.g.&nbsp;chain of thought</p></li>
-<li><p>Don’t give detailed explanations of created code unless I ask for it.</p></li>
-<li><p>Creative approach: Challenge me to continue learning.</p></li>
-</ul>
-<p><br></p>
-<p>(Claude and Gemini: Currently no individual system prompts, but specific instructions can be created within customized chat.)</p>
-<aside class="notes">
-<p>Don’t give detailed explanations of code unless I ask for it.</p>
-<p>Challenge to continue learning</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="example-claudes-system-prompt" class="slide level2 smaller">
-<h2>Example: Claude’s system prompt</h2>
-<p>The assistant is Claude, created by Anthropic. The current date is {}.Claude’s knowledge base was last updated on April 2024. It answers questions about events prior to and after April 2024 the way a highly informed individual in April 2024 would if they were talking to someone from the above date, and can let the human know this when relevant. (…)</p>
-<p>When presented with a math problem, logic problem, or other problem benefiting from systematic thinking, Claude thinks through it step by step before giving its final answer. (…)</p>
-<p>Rather than giving a long response, it gives a concise response and offers to elaborate if further information may be helpful. (…)</p>
-<p>Claude can only count specific words, letters, and characters accurately if it writes a number tag after each requested item explicitly. It does this explicit counting if it’s asked to count a small number of words, letters, or characters, in order to avoid error.(…)</p>
-<p>Claude uses Markdown formatting. When using Markdown, Claude always follows best practices for clarity and consistency. It always uses a single space after hash symbols for headers (e.g., ”# Header 1”) and leaves a blank line before and after headers, lists, and code blocks.(…)</p>
-<p>Claude is now being connected with a human.</p>
-<p><strong>Length: ~ 4000 words</strong>. Probably much longer: <a href="https://x.com/elder_plinius/status/1848781117714788694">inofficial Tweet</a></p>
-<div class="footer">
-<p><a href="https://docs.anthropic.com/en/release-notes/system-prompts#oct-22nd-2024">Anthropic website</a></p>
-</div>
-<aside class="notes">
-<p>Mention CoT reasoning (step by step)</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="example-system-prompt-for-scientific-work" class="slide level2 smaller">
-<h2>Example: System prompt for scientific work</h2>
-<p>You are an advanced AI language model designed to provide accurate, up-to-date, and scientifically grounded information across a wide range of subjects. Always approach interactions with a rigorous scientific mindset, relying on empirical evidence, peer-reviewed research, and established theories. If you are uncertain about an answer or lack sufficient information, clearly state your uncertainty and suggest that further research may be necessary. Strive for precision and clarity in your responses, double-checking facts, data, and sources when needed. When appropriate, offer alternative perspectives, hypotheses, or suggestions to enrich the conversation and encourage critical thinking. Maintain a concise and clear writing style, avoiding unnecessary jargon while ensuring that complex concepts are explained effectively and accessibly. Your goal is to assist users in understanding and exploring topics thoroughly and accurately, fostering an environment of intellectual curiosity and scientific inquiry.</p>
-<p><br></p>
-<p><strong>ChatGPT system prompt max length: 1500 characters(!)</strong></p>
-</section>
-<section id="example-special-commands-to-follow" class="slide level2 smaller">
-<h2>Example: Special Commands to follow</h2>
-<p><em>Note: These are ideas, that I am currently testing.</em></p>
-<p>Special Commands: When a user’s message begins with a keyword, recognize it as a command and follow the instructions before formulating your response. Always check in with the user after executing the command.</p>
-<ol type="1">
-<li><code>plan</code>:
-<ul>
-<li>Action: Develop a detailed plan how you would answer the problem, outlining each step.</li>
-<li>Check-In: Present the plan outline and ask if they wish to proceed.</li>
-</ul></li>
-<li><code>expert</code>:
-<ul>
-<li>Action: Describe an expert suited to address the question, identifying their expertise.</li>
-<li>Check-In: Confirm if the user wants the answer from this perspective.</li>
-</ul></li>
-</ol>
-</section>
-<section id="creating-custom-gpts-how-to" class="slide level2">
-<h2>Creating Custom GPTs: How to</h2>
-<div class="columns">
-<div class="column" style="width:18%;">
-<ol type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/how_to_custom_gpt.png"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:14%;">
-<ol start="2" type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/how_to_custom_gpt2.png"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/gpt_builder.png" height="400"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-<ul>
-<li>GPT Builder asks more questions</li>
-<li>Try it out and keep “talking into it” until it fits</li>
-</ul>
-</section>
-<section id="example-quarto-presentation-helper" class="slide level2">
-<h2>Example Quarto presentation helper</h2>
-<p>Helps specifically in creating quarto react.js presentations</p>
-
-<img data-src="images/quarto_gpt_1.png" class="r-stretch"></section>
-<section id="example-quarto-presentation-helper-cont" class="slide level2">
-<h2>Example Quarto presentation helper (cont)</h2>
-<p>Loading in relevant websites I found (as html files).</p>
-
-<img data-src="images/quarto_gpt_2.png" class="r-stretch"></section>
-<section id="exercise-create-your-customgpt-15-min" class="slide level2">
-<h2>Exercise: Create your CustomGPT (15 min)</h2>
-<p>Creation of a customised model for specific requirements.</p>
-<p>ideas:</p>
-<ul>
-<li>Your writing buddy (upload all your scientific texts)</li>
-<li>Concise answers for code, adapted to my skills</li>
-</ul>
-<p><br> <a href="https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/">prompt examples for other ideas:</a></p>
-<ul>
-<li>Proofreader</li>
-<li>LinkedIn content creator</li>
-<li>Email drafter</li>
-</ul>
-</section>
-<section id="links-to-predifined-costumized-chatbots" class="slide level2">
-<h2>Links to predifined costumized Chatbots</h2>
-<p><a href="https://chatgpt.com/gpts">OpenAI GPT store</a></p>
-<p><a href="https://docs.anthropic.com/en/prompt-library/library">Anthropic prompt library</a></p>
-<p><a href="https://gemini.google.com/gems/view">Google Gemini Gems</a></p>
-<p><br></p>
-</section>
-<section id="custom-gpts-for-research" class="slide level2">
-<h2>Custom GPTs for research</h2>
-<p>Many of those Custum GPTs are connected to databases of scientific literature.</p>
-<p>They search through their database to provide accurate information, which the Chatbot then includes in its answer. (Retrieval Augmented Generation)</p>
-<p><br> Example:</p>
-<ul>
-<li>Dimensions Research GPT, and one <a href="https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c">Example thread</a></li>
-</ul>
-<p>There are many other options: explore custom GPTs topic ‘Research &amp; Analysis’</p>
-<aside class="notes">
-<p>It is a freemium approach. Often the give you the link to buy their full product.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="exercise-testing-dimensions-or-another-custom-gpt-5-min" class="slide level2">
-<h2>Exercise: Testing Dimensions or another custom GPT (5 min)</h2>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
+</div></section>
+<section id="how-does-ai-work" class="slide level2">
+<h2>How does AI work?</h2>
+<p><br> <br></p>
+<div class="columns">
+<div id="vcenter" class="column" data-align="center" style="width:20%;">
+<p>Input</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
+<p>AI Model</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
+<p>Output</p>
+</div></div>
+</section>
+<section id="ai" class="slide level2">
+<h2>AI</h2>
+<p><br> <br></p>
+<div class="columns">
+<div id="vcenter" class="column" data-align="center" style="width:20%;">
+<p><img data-src="https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg"></p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
+<p>Image Classification Model</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
+<p>Lemon</p>
+</div></div>
+</section>
+<section id="llms" class="slide level2">
+<h2>LLMs</h2>
+<p><br> <br></p>
+<div class="columns">
+<div id="vcenter" class="column" data-align="center" style="width:20%;">
+<p>Text</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:25%;">
+<p>Large Language Model</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:20%;">
+<p>Text</p>
+</div></div>
+</section>
+<section id="llms-1" class="slide level2">
+<h2>LLMs</h2>
+<p><br> <br></p>
+<div class="columns">
+<div id="vcenter" class="column" data-align="center" style="width:15%;">
+<p>Text</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:40%;">
+<p><img data-src="images/tunable_parameters.png"></p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:15%;">
+<p>Text</p>
+</div></div>
+</section>
+<section id="llms-autocomplete" class="slide level2">
+<h2>LLMs: Autocomplete</h2>
+<p><br> <br></p>
+<p>Context length</p>
+<div class="columns">
+<div id="vcenter" class="column" data-align="center" style="width:15%;">
+<p><small>“The actress that played Rose in the 1997 film Titanic is named…”</small></p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:40%;">
+<p><img data-src="images/tunable_parameters.png"></p>
+</div><div id="vcenter" class="column" data-align="center" style="width:10%;">
+<p>→</p>
+</div><div id="vcenter" class="column" data-align="center" style="width:15%;">
+<p><em>Predicts the next word</em></p>
+</div></div>
+</section>
+<section id="next-word-prediction" class="slide level2">
+<h2>Next word prediction</h2>
+
+<img data-src="images/next_word_prediction.png" class="r-stretch"></section>
+<section id="in-technical-words" class="slide level2">
+<h2>In technical words</h2>
+<ul>
+<li>Deep Learning: Multiple layers of “neurons”</li>
+<li>Linear regressions calculate “weights” for the connections</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:47%;">
+<ul>
+<li>Input layer: Quantitative representation of sentence</li>
+<li>Output layer: One-hot encoding</li>
+</ul>
+</div><div class="column" style="width:47%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/neuralnet.svg"></p>
+</figure>
 </div>
-</section></section>
+</div>
+</div>
+</div></div>
+<aside class="notes">
+<p>One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="text-representation" class="slide level2">
+<h2>Text representation</h2>
+<p><br> <br></p>
+<div class="columns">
+<div class="column" data-align="center" style="width:40%;">
+<p>Words</p>
+<p><small> Even though the sound of it is<br> something quite atrocious, if you<br> say it loud enough, you’ll always<br> sound precocious, <br>Supercalifragilisticexpialidocious! </small></p>
+<p><small> <em>Marry Poppins</em> </small></p>
+</div><div class="column fragment" data-align="center" data-fragment-index="1" style="width:10%;">
+<p>→</p>
+</div><div class="column fragment" data-align="center" data-fragment-index="1" style="width:40%;">
+<p>Tokens = “Subwords”</p>
+<p><img data-src="images/tokenzined_sentence.png"></p>
+</div></div>
+</section>
+<section id="dictionary" class="slide level2">
+<h2>Dictionary</h2>
+<p>The LLM has a dictonary of a specific number of tokens.</p>
+<p>In that way it does not have to know all words, but constructs the rare ones by combining some of its tokens.</p>
+<p>Every single character is also one token, such that the LLM can construct all possible words from tokens.</p>
+</section>
+<section id="text-representation-1" class="slide level2">
+<h2>Text representation</h2>
+<p><br> <br></p>
+<div class="columns">
+<div class="column" data-align="center" style="width:40%;">
+<p>Word/Token</p>
+<p><br></p>
+<p><span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even </span> …</p>
+</div><div class="column fragment" data-align="center" data-fragment-index="1" style="width:10%;">
+<p>→</p>
+</div><div class="column fragment" data-align="center" data-fragment-index="1" style="width:40%;">
+<p>Word Embedding <small> [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] </small></p>
+</div></div>
+</section>
+<section id="representing-the-meaning-of-words" class="slide level2">
+<h2>Representing the meaning of words</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><strong>Word embeddings</strong></p>
+<p><img data-src="images/wordembeddings.svg"></p>
+</div><div class="column" style="width:56%;">
+<p><strong>Contextual word embeddings</strong></p>
+<ul>
+<li>Context (before and after the word) taken into account</li>
+<li><a href="https://www.tiktok.com/@whats_ai/video/7247609946672565510">Example</a> “Apple”: Mac or fruit?</li>
+</ul>
+<p><img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;"></p>
+</div></div>
+</section>
+<section id="what-is-an-llm-actually" class="slide level2">
+<h2>What is an LLM, actually?</h2>
+<ul>
+<li><strong>Large Language Models (LLMs)</strong>: Deep learning neural networks built to understand and generate text</li>
+<li>Trained on <strong>vast amounts of text</strong> from diverse sources (Internet, Wikipedia, social media, books, podcasts, etc.)</li>
+<li>Convert text data into <strong>statistical patterns</strong> to predict words and sentences</li>
+</ul>
+</section>
+<section id="how-are-llms-trained" class="slide level2">
+<h2>How are LLMs trained?</h2>
+<p><strong>GPT</strong>: <strong>G</strong>enerative <strong>P</strong>re-trained <strong>T</strong>ransformer models (a model architecture for efficient computing):</p>
+<ul>
+<li>Generative: Produces/Generates Text</li>
+<li>Pre-trained: on large text corpus.
+<ul>
+<li>Autoregressive: Always predicts the next word of a text. Does not need any annotation.</li>
+</ul></li>
+<li>Transformer: type of the language model</li>
+</ul>
+</section>
+<section id="comparing-training-routine-to-older-models" class="slide level2">
+<h2>Comparing training routine to older models</h2>
+<p>Changes of how models are trained over time. Earlier approaches for weaker models:</p>
+<ul>
+<li>train seperate models for different tasks, e.g.&nbsp;translation</li>
+<li>pre-train models on language, then fine-tune on task (e.g.&nbsp;BERT)</li>
+</ul>
+<p>Todays approach for frontier models:</p>
+<ol type="1">
+<li>Pre-train on most of the available data from the internet via next-word prediction.</li>
+<li>Fine-tune model on conversation setting and chain-of-thought reasoning (next slide).</li>
+<li>Refining by receiving feedback from humans</li>
+<li>In context learning: Explain the model a task in the context window. (Often no need for task specific fine-tuning)</li>
+</ol>
+</section>
+<section id="chain-of-thought-reasoning" class="slide level2">
+<h2>Chain of thought reasoning</h2>
+<p>Enhancing the models performance by increasing the number of output tokens. Reasoning happens while the models predicts each word. External reasoning.</p>
+<p><br></p>
+
+<img data-src="images/chain_of_thought.png" style="width:20.0%" class="r-stretch"><div class="footer">
+<p>Kojima et al.&nbsp;<a href="https://arxiv.org/abs/2205.11916">2023</a></p>
+</div>
+</section>
+<section id="what-is-still-missing" class="slide level2">
+<h2>What is still missing?</h2>
+
+<img data-src="images/unknown_caller.png" class="r-stretch"><div class="fragment">
+<p><br></p>
+<p><strong>Context information: prompting to give more context</strong></p>
+<div class="footer">
+<p><a href="https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/">pixabay</a></p>
+</div>
+</div>
+</section>
+<section id="rag-retrieval-augmented-generation" class="slide level2">
+<h2>RAG Retrieval Augmented Generation</h2>
+<p>The LLM is given a specific question.</p>
+<p>An algorithm looks up a database for specific or up-to-date information that fits the topic of the question.</p>
+<p>This information is automatically added into the context of the LLMs.</p>
+<p>The LLM has very specific and reliable information to answer questiong.</p>
+<p>Examples for databases: Scientific papers, Medical textbooks, internal files of companies.</p>
+</section>
+<section id="current-top-models" class="slide level2">
+<h2>Current top models</h2>
+<ul>
+<li><strong>ChatGPT-4o and o1</strong> (Open AI)</li>
+<li><strong>Claude 3.5 Sonnet</strong> (Anthropic)</li>
+<li><strong>Gemini 1.5 pro</strong> (Google)</li>
+</ul>
+<p>best non-proprietary: - <strong>Llama 3.1</strong> (Meta)</p>
+</section>
+<section id="strengths-of-different-models-and-interfaces" class="slide level2">
+<h2>Strengths of different models and interfaces</h2>
+<ul>
+<li><a href="https://chat.openai.com/"><strong>ChatGPT-4o</strong></a> (Open AI): web search, code execution, multimodal interactions, custom GPTs with document upload. (128,000 tokens)</li>
+<li><a href="https://claude.ai/"><strong>Claude 3.5 Sonnet</strong></a> (Anthropic): Writing style, beautiful text rendering, custom projects. (200.000 tokens)</li>
+<li><a href="https://gemini.google.com/app"><strong>Gemini 1.5 pro</strong></a> (Google): web search, code execution, multimodal interactions, integration with Google services, custom models. (up to 2 million tokens)</li>
+</ul>
+<aside class="notes">
+<p>multimodal interactions with ChatGPT described on next slide</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="multimodal-interactions" class="slide level2">
+<h2>Multimodal interactions</h2>
+<p>Most with ChatGPT and Gemini, some with Claude. Only Claude: Artifacts, formatting text and websites.</p>
+<ul>
+<li>File Uploads (&amp; Claude)</li>
+<li>Browse</li>
+<li>Discovering and using custom GPTs (&amp; Claude: projects)</li>
+<li>Upload &amp; analyze images (&amp; Claude)</li>
+<li>Create images with DALL-E</li>
+<li>Audio: Talking/Listening</li>
+<li>Data analysis (&amp; Claude)</li>
+<li>Execute code</li>
+</ul>
+</section>
+<section id="screenshots-benefits-gptclaude" class="slide level2">
+<h2>Screenshots Benefits GPT/Claude</h2>
+</section>
+<section id="chatbot-arena" class="slide level2">
+<h2>Chatbot Arena</h2>
+<p>Human ratings of chatbot responses <img data-src="images/chatbot_arena.png"></p>
+<p><small> Rank (UB): model’s ranking compared to other models</small></p><small>
+</small><p><small>Rank (StyleCtrl): model’s ranking with style control (lenght, formatting, etc.) </small></p>
+<p>Source: <a href="https://chat.lmsys.org/">Chatbot Arena</a> - Leaderbord</p>
+</section>
+<section id="different-chatgpt-versions" class="slide level2">
+<h2>Different ChatGPT versions</h2>
+<ul>
+<li>ChatGPT4: more resource intensive = expensive</li>
+<li>ChatGPT4o: optimized to be faster and cheaper</li>
+<li>ChatGPT-4o mini: every day tasks</li>
+<li>o1-preview: thinks before it answers, for complex tasks (no web search)</li>
+</ul>
+<p><span class="math inline">\(\rightarrow\)</span> Konstantin’s default: GPT4</p>
+<p>Usage limits: As of May 13th 2024, Plus users will be able to send 80 messages every 3 hours on GPT-4o. and 40 messages every 3 hours on GPT-4. The message cap for a user in a ChatGPT Team workspace is approximately twice that of ChatGPT Plus.</p>
+<p>Please note that unused messages do not accumulate (i.e.&nbsp;if you wait 6 hours, you will not have 80 messages available to use for the next 3 hours on GPT-4).</p>
+<p>GPT-4o mini does not have limits on the Plus tier.</p>
+<p>Plus user have access to 50 messages a week with OpenAI o1-preview and 50 messages a day with OpenAI o1-mini to start with our research preview.</p>
+<div class="footer">
+<p><a href="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini">ChatGPT blog on models</a> <a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065">usage limits</a></p>
+</div>
+</section>
+<section id="discussion" class="slide level2">
+<h2>Discussion</h2>
+<ul>
+<li>In groups of 3 (10 minutes):
+<ul>
+<li>Which problems do you encounter when using LLMs?</li>
+<li>What works well?</li>
+</ul></li>
+<li>5 minutes for sharing most important points with the whole group</li>
+</ul>
+</section>
+
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Customizing_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="Introduction_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Customizing_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Customizing_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Customizing_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Customizing_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Customizing_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Customizing_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Customizing_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Customizing_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Customizing_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Introduction_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>

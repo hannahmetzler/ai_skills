@@ -352,6 +352,7 @@ Konstantin Hebenstreit
 </ul>
 <p><br></p>
 <p>ChatGPT: Settings &gt; Personalization &gt; Customize ChatGPT</p>
+<p><br></p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <div class="cell">
@@ -370,13 +371,15 @@ Konstantin Hebenstreit
 <section id="ideas-for-useful-system-prompts" class="slide level2">
 <h2>Ideas for useful system prompts</h2>
 <ul>
-<li><p>Give information that is relevant in all of your chats. Example: scientific work.</p></li>
-<li><p>Prompts that are entered each time, e.g.&nbsp;chain of thought</p></li>
-<li><p>Ideas: Don’t give detailed explanations of created code unless I ask for it.</p></li>
-<li><p>Creative ideas: Challenge me to continue learning.</p></li>
+<li><p>Give information that is relevant in all of your chats, example: scientific approach.</p></li>
+<li><p>Using chain-of-thought reasoning</p></li>
 </ul>
-<p><br></p>
-<p>(Claude and Gemini: Currently no system prompts, but specific instructions can be created within customized project.)</p>
+<p>Other concrete examples:</p>
+<ul>
+<li><p>Don’t give detailed explanations of created code unless I ask for it.</p></li>
+<li><p>Creative approach: Challenge me to continue learning.</p></li>
+</ul>
+<p>(Claude and Gemini: Currently no individual system prompts, but specific instructions can be created within customized chat.)</p>
 <aside class="notes">
 <p>Don’t give detailed explanations of code unless I ask for it.</p>
 <p>Challenge to continue learning</p>
@@ -392,7 +395,7 @@ Konstantin Hebenstreit
           display:block!important;
       }</style></aside>
 </section>
-<section id="example-claudes-system-prompt" class="slide level2 smaller">
+<section id="example-claudes-system-prompt" class="slide level2 smaller" style="font-size: 0.5em;">
 <h2>Example: Claude’s system prompt</h2>
 <p>The assistant is Claude, created by Anthropic. The current date is {}.Claude’s knowledge base was last updated on April 2024. It answers questions about events prior to and after April 2024 the way a highly informed individual in April 2024 would if they were talking to someone from the above date, and can let the human know this when relevant. (…)</p>
 <p>When presented with a math problem, logic problem, or other problem benefiting from systematic thinking, Claude thinks through it step by step before giving its final answer. (…)</p>
@@ -400,18 +403,33 @@ Konstantin Hebenstreit
 <p>Claude can only count specific words, letters, and characters accurately if it writes a number tag after each requested item explicitly. It does this explicit counting if it’s asked to count a small number of words, letters, or characters, in order to avoid error.(…)</p>
 <p>Claude uses Markdown formatting. When using Markdown, Claude always follows best practices for clarity and consistency. It always uses a single space after hash symbols for headers (e.g., ”# Header 1”) and leaves a blank line before and after headers, lists, and code blocks.(…)</p>
 <p>Claude is now being connected with a human.</p>
-<p><strong>Length: 4000 words</strong>. Probably much longer: <a href="https://x.com/elder_plinius/status/1848781117714788694">inofficial Tweet</a></p>
+<p><strong>Length: ~ 4000 words</strong>. Probably much longer: <a href="https://x.com/elder_plinius/status/1848781117714788694">inofficial Tweet</a></p>
 <div class="footer">
 <p><a href="https://docs.anthropic.com/en/release-notes/system-prompts#oct-22nd-2024">Anthropic website</a></p>
 </div>
+<aside class="notes">
+<p>Mention CoT reasoning (step by step)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="example-system-prompt-for-scientific-work" class="slide level2 smaller">
+<section id="example-system-prompt-for-scientific-work" class="slide level2 smaller" style="font-size: 0.6em;">
 <h2>Example: System prompt for scientific work</h2>
 <p>You are an advanced AI language model designed to provide accurate, up-to-date, and scientifically grounded information across a wide range of subjects. Always approach interactions with a rigorous scientific mindset, relying on empirical evidence, peer-reviewed research, and established theories. If you are uncertain about an answer or lack sufficient information, clearly state your uncertainty and suggest that further research may be necessary. Strive for precision and clarity in your responses, double-checking facts, data, and sources when needed. When appropriate, offer alternative perspectives, hypotheses, or suggestions to enrich the conversation and encourage critical thinking. Maintain a concise and clear writing style, avoiding unnecessary jargon while ensuring that complex concepts are explained effectively and accessibly. Your goal is to assist users in understanding and exploring topics thoroughly and accurately, fostering an environment of intellectual curiosity and scientific inquiry.</p>
+<p><br></p>
+<p><strong>ChatGPT system prompt max length: 1500 characters(!)</strong></p>
 </section>
 <section id="example-special-commands-to-follow" class="slide level2 smaller">
 <h2>Example: Special Commands to follow</h2>
-<p><em>Note: These are ideas. I am currently testing this approach.</em></p>
+<p><em>Note: These are ideas for testing.</em></p>
 <p>Special Commands: When a user’s message begins with a keyword, recognize it as a command and follow the instructions before formulating your response. Always check in with the user after executing the command.</p>
 <ol type="1">
 <li><code>plan</code>:
@@ -425,17 +443,6 @@ Konstantin Hebenstreit
 <li>Check-In: Confirm if the user wants the answer from this perspective.</li>
 </ul></li>
 </ol>
-</section>
-<section id="creating-custom-gpts" class="slide level2">
-<h2>Creating Custom GPTs</h2>
-<ul>
-<li>Creation of a customised model for specific requirements</li>
-<li>Examples:
-<ul>
-<li>Writing in my wHannah/images/riting style</li>
-<li>Concise answers for code, adapted to my skills</li>
-</ul></li>
-</ul>
 </section>
 <section id="creating-custom-gpts-how-to" class="slide level2">
 <h2>Creating Custom GPTs: How to</h2>
@@ -492,19 +499,21 @@ Konstantin Hebenstreit
 <p>Loading in relevant websites I found (as html files).</p>
 
 <img data-src="images/quarto_gpt_2.png" class="r-stretch"></section>
-<section id="exercise-create-your-customgpt-15-min" class="slide level2">
+<section id="exercise-create-your-customgpt-15-min" class="slide level2 smaller">
 <h2>Exercise: Create your CustomGPT (15 min)</h2>
-<p>ideas:</p>
+<p>Creation of a customised model for specific requirements:</p>
 <ul>
 <li>Your writing buddy (upload all your scientific texts)</li>
+<li>Concise answers for code, adapted to my skills</li>
 </ul>
-<p><br></p>
+<p><a href="https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/">prompt examples</a> for other ideas:</p>
 <ul>
 <li>Proofreader</li>
 <li>LinkedIn content creator</li>
 <li>Email drafter</li>
 </ul>
-<p><a href="https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/">prompt examples for the above</a></p>
+<h4 id="add-addtinional-files-that-are-relevant-for-your-gpt">Add addtinional files that are relevant for your GPT:</h4>
+<h4 id="e.g.-websites-with-instructions-of-how-to-peform-the-task.">E.g. Websites with instructions of how to peform the task.</h4>
 </section>
 <section id="links-to-predifined-costumized-chatbots" class="slide level2">
 <h2>Links to predifined costumized Chatbots</h2>
@@ -512,23 +521,39 @@ Konstantin Hebenstreit
 <p><a href="https://docs.anthropic.com/en/prompt-library/library">Anthropic prompt library</a></p>
 <p><a href="https://gemini.google.com/gems/view">Google Gemini Gems</a></p>
 <p><br></p>
-<h3 id="custom-gpts-for-research">Custom GPTs for research</h3>
+</section>
+<section id="custom-gpts-for-research" class="slide level2">
+<h2>Custom GPTs for research</h2>
 <ul>
-<li>Dimensions Research GPT</li>
-<li>Consenus GPT</li>
+<li><p>Many of those Custom GPTs are connected to databases of scientific literature. (Retrieval Augmented Generation)</p></li>
+<li><p>Database search to provide accurate information</p></li>
+<li><p>Included in context window of Chatbot</p></li>
 </ul>
-</section>
-<section id="dimensions-research-gpt" class="slide level2">
-<h2>Dimensions Research GPT</h2>
+<p>Example:</p>
 <ul>
-<li>(<a href="https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c">Example thread</a>)</li>
+<li>Dimensions Research GPT, and one <a href="https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c">Example thread</a></li>
 </ul>
+<aside class="notes">
+<p>It is a freemium approach. Often the give you the link to buy their full product.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="consensus" class="slide level2">
-<h2>Consensus</h2>
-</section>
-<section id="exercise-testing-dimensionsconsensus-5-min" class="slide level2">
-<h2>Exercise: Testing Dimensions/Consensus (5 min)</h2>
+<section id="exercise-testing-dimensions-or-another-custom-gpt-5-min" class="slide level2">
+<h2>Exercise: Testing Dimensions or another custom GPT (5 min)</h2>
+<ol type="1">
+<li><p>Go to the <a href="https://chatgpt.com/gpts">OpenAI GPT store</a></p></li>
+<li><p>Select topic ‘Research &amp; Analysis’</p></li>
+<li><p>Choose a Custom GPT you want to try out</p></li>
+</ol>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 

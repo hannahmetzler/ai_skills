@@ -49,17 +49,16 @@ knitr::include_graphics("images/system_prompt.png")
 
 ## Ideas for useful system prompts
 
-- Give information that is relevant in all of your chats.
-Example: scientific work.
+- Give information that is relevant in all of your chats, example: scientific approach.
 
-- Prompts that are entered each time, e.g. chain of thought
+- Using chain-of-thought reasoning
+
+Other concrete examples:
 
 - Don't give detailed explanations of created code unless I ask for it.
 
 - Creative approach: Challenge me to continue learning.
 
-
-<br>
 
 (Claude and Gemini: Currently no individual system prompts, but specific instructions can be created within customized chat.)
 
@@ -69,7 +68,7 @@ Don't give detailed explanations of code unless I ask for it.
 Challenge to continue learning
 :::
 
-## Example: Claude's system prompt {.smaller}
+## Example: Claude's system prompt {.smaller style="font-size: 0.5em;"}
 
 The assistant is Claude, created by Anthropic.
 The current date is {}.Claude’s knowledge base was last updated on April 2024. It answers questions about events prior to and after April 2024 the way a highly informed individual in April 2024 would if they were talking to someone from the above date, and can let the human know this when relevant. (...)
@@ -94,7 +93,7 @@ Claude is now being connected with a human.
 Mention CoT reasoning (step by step)
 :::
 
-## Example: System prompt for scientific work {.smaller}
+## Example: System prompt for scientific work {.smaller style="font-size: 0.6em;"}
 
 You are an advanced AI language model designed to provide accurate, up-to-date, and scientifically grounded information across a wide range of subjects. Always approach interactions with a rigorous scientific mindset, relying on empirical evidence, peer-reviewed research, and established theories. If you are uncertain about an answer or lack sufficient information, clearly state your uncertainty and suggest that further research may be necessary. Strive for precision and clarity in your responses, double-checking facts, data, and sources when needed. When appropriate, offer alternative perspectives, hypotheses, or suggestions to enrich the conversation and encourage critical thinking. Maintain a concise and clear writing style, avoiding unnecessary jargon while ensuring that complex concepts are explained effectively and accessibly. Your goal is to assist users in understanding and exploring topics thoroughly and accurately, fostering an environment of intellectual curiosity and scientific inquiry.
 
@@ -104,7 +103,7 @@ You are an advanced AI language model designed to provide accurate, up-to-date, 
 
 ## Example: Special Commands to follow {.smaller}
 
-*Note: These are ideas, that I am currently testing.*
+*Note: These are ideas for testing.*
 
 Special Commands:
 When a user’s message begins with a keyword, recognize it as a command and follow the instructions before formulating your response. Always check in with the user after executing the command.
@@ -158,21 +157,23 @@ Loading in relevant websites I found (as html files).
 ![](images/quarto_gpt_2.png)
 
 
-## Exercise: Create your CustomGPT (15 min)
+## Exercise: Create your CustomGPT (15 min) {.smaller}
 
-Creation of a customised model for specific requirements.   
-
-ideas:
+Creation of a customised model for specific requirements: 
 
 - Your writing buddy (upload all your scientific texts)
 - Concise answers for code, adapted to my skills
 
-<br>
-[prompt examples for other ideas:](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/)
+
+[prompt examples](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/) for other ideas:
 
 - Proofreader
 - LinkedIn content creator
 - Email drafter
+
+#### Add addtinional files that are relevant for your GPT:
+
+#### E.g. Websites with instructions of how to peform the task.
 
 
 
@@ -187,16 +188,14 @@ ideas:
 
 ## Custom GPTs for research
 
-Many of those Custum GPTs are connected to databases of scientific literature.
+- Many of those Custom GPTs are connected to databases of scientific literature. (Retrieval Augmented Generation)
 
-They search through their database to provide accurate information, which the Chatbot then includes in its answer. (Retrieval Augmented Generation)
+- Database search to provide accurate information
+- Included in context window of Chatbot 
 
-<br>
 Example:
 
 - Dimensions Research GPT, and one [Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c) 
-
-There are many other options: explore custom GPTs topic 'Research & Analysis'
 
 
 ::: notes
@@ -205,6 +204,14 @@ It is a freemium approach. Often the give you the link to buy their full product
 
 
 ## Exercise: Testing Dimensions or another custom GPT (5 min)
+
+1. Go to the [OpenAI GPT store](https://chatgpt.com/gpts)
+
+1. Select topic 'Research & Analysis'
+
+1. Choose a Custom GPT you want to try out
+
+
 
 
 
