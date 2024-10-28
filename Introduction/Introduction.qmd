@@ -290,7 +290,7 @@ Always predicts the next word of a text.
 Does not need any annotation.
 - Transformer: type of the language model
 
-## Comparing training routine to older models
+## Comparing training routine to older models {.smaller}
 Changes of how models are trained over time.
 Earlier approaches for weaker models:
 
@@ -333,7 +333,7 @@ Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
 
 
 
-## RAG Retrieval Augmented Generation
+## RAG Retrieval Augmented Generation {.smaller}
 The LLM is given a specific question.
 
 An algorithm looks up a database for specific or up-to-date information that fits the topic of the question.
@@ -365,7 +365,7 @@ multimodal interactions with ChatGPT described on next slide
 :::
 
 
-## Multimodal interactions
+## Multimodal interactions {.smaller}
 
 Most with ChatGPT and Gemini, some with Claude. Only Claude: Artifacts, formatting text and websites.
 
@@ -378,7 +378,9 @@ Most with ChatGPT and Gemini, some with Claude. Only Claude: Artifacts, formatti
 - Data analysis (& Claude)
 - Execute code
 
-## Screenshots Benefits GPT/Claude
+:::notes
+add screenshots benefits gpt/claude
+:::
 
 ## Chatbot Arena
 Human ratings of chatbot responses
@@ -386,18 +388,19 @@ Human ratings of chatbot responses
 
 <small>
 Rank (UB): model's ranking compared to other models
-
 Rank (StyleCtrl): model's ranking with style control (lenght, formatting, etc.)
 </small>
 
-Source: [Chatbot Arena](https://chat.lmsys.org/) - Leaderbord
+:::footer
+[Chatbot Arena](https://chat.lmsys.org/)
+:::
 
 
-## Different ChatGPT versions
+## Different ChatGPT versions {.smaller}
 
-- ChatGPT4: more resource intensive = expensive
-- ChatGPT4o: optimized to be faster and cheaper
-- ChatGPT-4o mini: every day tasks
+- GPT4: more resource intensive = expensive
+- GPT4o: optimized to be faster and cheaper
+- GPT-4o mini: every day tasks
 - o1-preview: thinks before it answers, for complex tasks (no web search)
   
   
@@ -405,14 +408,12 @@ $\rightarrow$ Konstantin's default: GPT4
 
 
 Usage limits:
-As of May 13th 2024, Plus users will be able to send 80 messages every 3 hours on GPT-4o. and 40 messages every 3 hours on GPT-4. The message cap for a user in a ChatGPT Team workspace is approximately twice that of ChatGPT Plus.
+- GPT-4: 40 messages every 3 hours
+- GPT-4o: 80 messages every 3 hours
+- GPT-4o mini: no limit
 
-
-Please note that unused messages do not accumulate (i.e. if you wait 6 hours, you will not have 80 messages available to use for the next 3 hours on GPT-4). 
-
-GPT-4o mini does not have limits on the Plus tier.
-
-Plus user have access to 50 messages a week with OpenAI o1-preview and 50 messages a day with OpenAI o1-mini to start with our research preview.
+- o1-preview: 50 messages per week 
+- o1-mini: 50 messages a day 
 
 ::: footer
 [ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini) [usage limits](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065)
