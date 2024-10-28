@@ -26,11 +26,13 @@ editor: source
 
 ## System prompts
 
-- Customizing your default version of ChatGPT
+- Customizing your default version of ChatGPT 
 
 <br>
 
 ChatGPT: Settings > Personalization > Customize ChatGPT
+
+<br>
 
 :::::: columns
 ::: {.column width="45%"}
@@ -52,15 +54,14 @@ Example: scientific work.
 
 - Prompts that are entered each time, e.g. chain of thought
 
-- Ideas: 
-Don't give detailed explanations of created code unless I ask for it.
+- Don't give detailed explanations of created code unless I ask for it.
 
-- Creative ideas: Challenge me to continue learning.
+- Creative approach: Challenge me to continue learning.
 
 
 <br>
 
-(Claude and Gemini: Currently no system prompts, but specific instructions can be created within customized project.)
+(Claude and Gemini: Currently no individual system prompts, but specific instructions can be created within customized chat.)
 
 ::: notes
 Don't give detailed explanations of code unless I ask for it.
@@ -83,19 +84,27 @@ Claude uses Markdown formatting. When using Markdown, Claude always follows best
 
 Claude is now being connected with a human.
 
-**Length: 4000 words**. Probably much longer: [inofficial Tweet](https://x.com/elder_plinius/status/1848781117714788694)
+**Length: ~ 4000 words**. Probably much longer: [inofficial Tweet](https://x.com/elder_plinius/status/1848781117714788694)
 
 ::: footer
 [Anthropic website](https://docs.anthropic.com/en/release-notes/system-prompts#oct-22nd-2024)
+:::
+
+::: notes
+Mention CoT reasoning (step by step)
 :::
 
 ## Example: System prompt for scientific work {.smaller}
 
 You are an advanced AI language model designed to provide accurate, up-to-date, and scientifically grounded information across a wide range of subjects. Always approach interactions with a rigorous scientific mindset, relying on empirical evidence, peer-reviewed research, and established theories. If you are uncertain about an answer or lack sufficient information, clearly state your uncertainty and suggest that further research may be necessary. Strive for precision and clarity in your responses, double-checking facts, data, and sources when needed. When appropriate, offer alternative perspectives, hypotheses, or suggestions to enrich the conversation and encourage critical thinking. Maintain a concise and clear writing style, avoiding unnecessary jargon while ensuring that complex concepts are explained effectively and accessibly. Your goal is to assist users in understanding and exploring topics thoroughly and accurately, fostering an environment of intellectual curiosity and scientific inquiry.
 
+<br>
+
+**ChatGPT system prompt max length: 1500 characters(!)**
+
 ## Example: Special Commands to follow {.smaller}
 
-*Note: These are ideas. I am currently testing this approach.*
+*Note: These are ideas, that I am currently testing.*
 
 Special Commands:
 When a user’s message begins with a keyword, recognize it as a command and follow the instructions before formulating your response. Always check in with the user after executing the command.
@@ -106,13 +115,6 @@ When a user’s message begins with a keyword, recognize it as a command and fol
 2. `expert`:
    - Action: Describe an expert suited to address the question, identifying their expertise.
    - Check-In: Confirm if the user wants the answer from this perspective.
-
-## Creating Custom GPTs
-
--   Creation of a customised model for specific requirements
--   Examples:
-    -   Writing in my wHannah/images/riting style
-    -   Concise answers for code, adapted to my skills
 
 ## Creating Custom GPTs: How to
 
@@ -158,17 +160,21 @@ Loading in relevant websites I found (as html files).
 
 ## Exercise: Create your CustomGPT (15 min)
 
+Creation of a customised model for specific requirements.   
+
 ideas:
 
 - Your writing buddy (upload all your scientific texts)
+- Concise answers for code, adapted to my skills
 
 <br>
+[prompt examples for other ideas:](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/)
 
 - Proofreader
 - LinkedIn content creator
 - Email drafter
 
-[prompt examples for the above](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/)
+
 
 ## Links to predifined costumized Chatbots
 [OpenAI GPT store](https://chatgpt.com/gpts)
@@ -179,16 +185,26 @@ ideas:
 
 <br>
 
-### Custom GPTs for research
+## Custom GPTs for research
 
-- Dimensions Research GPT
-- Consenus GPT
+Many of those Custum GPTs are connected to databases of scientific literature.
 
-## Dimensions Research GPT
+They search through their database to provide accurate information, which the Chatbot then includes in its answer. (Retrieval Augmented Generation)
 
--   ([Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c))
+<br>
+Example:
 
-## Consensus
+- Dimensions Research GPT, and one [Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c) 
 
-## Exercise: Testing Dimensions/Consensus (5 min)
+There are many other options: explore custom GPTs topic 'Research & Analysis'
+
+
+::: notes
+It is a freemium approach. Often the give you the link to buy their full product.
+:::
+
+
+## Exercise: Testing Dimensions or another custom GPT (5 min)
+
+
 
