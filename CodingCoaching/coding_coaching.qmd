@@ -83,6 +83,10 @@ Coaching custom GPT: <https://chatgpt.com/g/g-FGhasb1tZ-therapist-psychologist-n
 - Upload: screenshot of weekly agenda(s), time tracking data, any other data about your tasks or schedule
 - Get feedback on how to optimize your daily schedule, task prioritization, etc. 
 
+::: notes
+private link: https://chatgpt.com/c/671fb907-e30c-800b-911e-61bf950bb961
+:::
+
 
 ## Exercise: Career or productivity coaching (15 min)
 
