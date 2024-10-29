@@ -185,7 +185,7 @@ References with links to where information comes from
 
 ## Exercise Option 1: NotebookLM (15 min)
 
-- Create a new notebook and upload min. 3 sources (Youtube, paper & website)
+- Create a new notebook and upload your 20 papers (or 3 other sources)
 - Create a Briefing Doc and Table of Content (& other outputs)
 - Ask a suggested question, add your own question (maybe also try one that is not directly covered)
   - Check the different references in the answers and their embedding in the source
