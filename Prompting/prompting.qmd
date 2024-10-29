@@ -447,7 +447,7 @@ Could you please write a mega prompt from our interaction here, that I can use a
 -   Ask other models: Enter output of model 1 and ask: "Is this correct? Can you back this up with sources? Do these books exist?"
     - [Example ChatGPT to Claude](https://claude.ai/chat/7fc0d00a-a648-4905-a3bd-c336f7a78b7f)
     - [Example Claude to ChatGPT](https://chatgpt.com/share/671f7e35-a6dc-800b-b02c-0e395158611b)
-- Use LLM tools that provide references: Perplexity AI, Elicit, Dimensions Research AI, Consensus
+- Use LLM tools that provide references: Perplexity AI, Elicit, Dimensions Research AI, ScholarGPT
 
 ## Exercise: Correcting Hallucinations (10 min) {.smaller}
 
