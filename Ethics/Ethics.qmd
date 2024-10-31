@@ -92,7 +92,7 @@ Example:
 
 ## Data privacy concerns
 - Training data extraction: reconstruct training data from model outputs
-- LLMs can combine large ammounts of 'harmless' user data to predict sensitive attributes
+- LLMs can combine large amounts of 'harmless' user data to predict sensitive attributes
 
 ## Copyright
 - is a passive right, applies to everything you put online
