@@ -35,15 +35,17 @@ Slides: https://hannahmetzler.eu/ai_skills
 
 ::::: columns
 ::: {.column width="47%"}
-![](../Introduction/images/ai_scientist_news.png)
+![](images/ai_scientist_news.png)
 <small>*Source: [Discover Magazine](https://www.discovermagazine.com/the-sciences/meet-the-ai-scientist)*</small>
 :::
 
 ::: {.column width="47%" .fragment}
-![](../Introduction/images/comparing_numbers.png)
+![](images/comparing_numbers.png)
 
 :::
 :::::
+
+# How do Large Language Models (LLM) work? 
 
 ## What is an LLM, actually? 
 
@@ -66,9 +68,9 @@ Slides: https://hannahmetzler.eu/ai_skills
 
 ## Next word prediction
 
-![](../Introduction/images/next_word_prediction.png)
+![](images/next_word_prediction.png)
 
-## Text representation
+## How does the model represent text?
 <br>
 <br>
 
@@ -93,7 +95,7 @@ Even though the sound of it is<br> something quite atrocious, if you<br> say it 
 ::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
 Tokens = "Subwords"
 
-![](../Introduction/images/tokenzined_sentence.png)
+![](images/tokenzined_sentence.png)
 :::
 
 :::::
@@ -104,8 +106,7 @@ Tokens = "Subwords"
 - Every single character is also one token, so that the LLM can construct all possible words from tokens.
 :::
 
-## Each token is a vector of numbers (= a word embedding)
-<br>
+## Each token is a vector of numbers
 <br>
 
 ::::: columns
@@ -139,13 +140,15 @@ Word Embedding
 :::::
 
 
-## Representing the meaning of words
+## How do embeddings encode meaning?
+
+<br>
 
 ::::: columns
 ::: {.column width="40%"}
 **Word embeddings**
 
-![](../Introduction/images/wordembeddings.svg)
+![](images/wordembeddings.svg)
 
 :::
 
@@ -155,7 +158,7 @@ Word Embedding
 -   Context (before and after the word) taken into account
 -   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit?
 
-<img src="../Introduction/images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;" />
+<img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;" />
 :::
 :::::
 
@@ -166,14 +169,16 @@ Word Embedding
 
 ::::: columns
 ::: {.column width="47%"}
--   Input layer: Quantitative representation of words
+-   Input layer: Word embeddings
+    - words as numbers
 -   Output layer: One-hot encoding
-    - One (of the) word(s) with high probability gets a 1, all others 0. 
+    - one word = 1
+    - all others = 0
 :::
 
 ::: {.column width="47%"}
 ```{r, echo=FALSE}
-knitr::include_graphics("../Introduction/images/neuralnet.svg")
+knitr::include_graphics("images/neuralnet.svg")
 ```
 :::
 :::::
@@ -184,27 +189,28 @@ One hot encoding: output has as many units as words, we predict the one with the
 
 
 
-<!-- ## Steps for training of frontier LLMs -->
+## Steps for training/using frontier LLMs
 
-<!-- 1. Pre-train on most of the available data from the internet via next-word prediction. -->
-<!-- 1. Fine-tune model on conversation setting and chain-of-thought reasoning (next slide). -->
-<!-- 1. Refine with feedback from humans -->
-<!-- 1. In context learning (Prompting): Explain the task in the context window. -->
+1. **Pre-train** on most of the available data from the internet via next-word prediction.
+1. **Fine-tune** model to the chat setting & apply [system prompts](https://hannahmetzler.eu/ai_skills/Customizing/#/system-prompts)
+1. Refine with **human feedback**
+1. In context learning (**prompting**): Explain the task.   
 
 
 ## What is the model still missing?
 
-![](../Introduction/images/unknown_caller.png)
+![](images/unknown_caller.png)
 
 . . . 
 
-<br>
 
-**Context information: prompting to give more context**
+**Context information: Your prompts need to give context.**
 
 :::footer
-[pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
+[Pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
 :::
+
+# Which models for what?
 
 ## Current top models
 
@@ -212,15 +218,15 @@ One hot encoding: output has as many units as words, we predict the one with the
 -   **ChatGPT-4o and o1** (Open AI)
 -   **Claude 3.5 Sonnet** (Anthropic)
 
+Best non-proprietary:
 
-best non-proprietary:
 -   **Llama 3.1** (Meta)
 
 :::footer
-[Chatbot Arena](https://chat.lmsys.org/)
+Source: [Chatbot Arena](https://chat.lmsys.org/)
 :::
 
-## Strengths of different models and interfaces
+## Strengths of different models & interfaces
 
 -   [**ChatGPT-4o**](https://chat.openai.com/) (Open AI): web search, code execution, multimodal interactions, custom GPTs with document upload, context: 128.000 tokens.
 -   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, beautiful text rendering, custom projects, context: 200.000 tokens
@@ -241,7 +247,7 @@ multimodal interactions with ChatGPT described on next slide
 - Browse
 - Create images
 - Execute code
-- Voice input/output (Claude: input with extensions)
+- Voice input/output
 - Discovering & using custom GPTs/Gems (Claude: Projects)
 :::
 
@@ -254,7 +260,7 @@ multimodal interactions with ChatGPT described on next slide
 
 **Only Claude**
 
-- Interactive artifacts
+- Interactive [artifacts](https://support.anthropic.com/en/articles/9945615-intro-to-artifacts)
 - Format text & websites
 :::
 
@@ -265,6 +271,8 @@ This changes constantly!
 :::
 
 :::notes
+I won't go into detail, but you can look at this when deciding what you need. You can switch once every month. 
+
 Artifacts allows for creating standalone, interactive content directly within the chat interface. Can be created and modified in real-time.  Interactive web components, dashboards interactive tables, data visualizations, svg graphics etc. 
 :::
 
@@ -275,11 +283,8 @@ Artifacts allows for creating standalone, interactive content directly within th
 - GPT-4o mini: every day tasks
 - o1-preview: thinks before it answers, for complex tasks (no web search)
   
-  
-$\rightarrow$ Konstantin's default: GPT4
+**Usage limits:**
 
-
-Usage limits:
 - GPT-4: 40 messages every 3 hours
 - GPT-4o: 80 messages every 3 hours
 - GPT-4o mini: no limit
@@ -292,6 +297,95 @@ Usage limits:
 
 ::: 
 
+# Important ethical aspects
+
+## Two topics
+<br> 
+**1. Ethics in using AI for research**
+
+   - **What you can do to use LLM chatbots as ethically as possible.**
+  
+2. Broad societal implications of AI
+    - Biases, fairness, transparency, accountability, copyrights for training data...
+    - Super interesting, but not today
+  
+## What happens with your input data?
+
+- AI companies are not transparent about this
+
+(1) Model training: most  data is used for future model training at OpenAI/GPT & Google/Gemini (not Anthropic/Claude)
+(2) Security check of all data for safety violations
+
+- Opt out of (1) in Settings - Data Controls:
+    - Turn off the option "Improve model for everyone"
+- Claude does not train on your data by default
+- Security checks happen anyways - human review
+
+
+## General Data Protection Regulation
+
+- For all individuals within the EU
+
+- Avoid entering sensitive data that identifies individuals
+
+- Turning off model training on your inputs does not imply GDPR compliance.
+
+- If you are using LLMs to process personal data of subjects, please consult experts (data protection officers) from your university. Especially for patient data. 
+
+
+## Copyright
+
+- AI cannot be holder of copyright, as it is not a person
+
+Example of a copyright violation:
+
+Getty images sued midjourney (AI image creation) for training on their data.
+
+## AI in Journal Policies
+
+- Policies are evolving rapidly in response to AI developments.
+- Always review journal guidelines before submitting your work.
+
+## Elsevier's Policies for Journals {.smaller}
+This is a summary, for details please check the link to their website.
+
+- **For Authors**:
+  - AI tools can only be used to improve language and readability.
+  - Must disclose AI use in manuscripts.
+  - AI cannot be listed as an author. 
+
+- **Figures & Images**:
+  - AI cannot alter or create images (except if part of research methods).
+  - AI use in research must be documented in methods.
+
+
+## Elsevier's Policies for Journals 2 {.smaller}
+
+- **For Reviewers**:
+  - Do not upload manuscripts to AI tools (confidentiality breach).
+  - AI should not assist in peer review.
+
+- **For Editors**:
+  - AI tools must not be used to evaluate or make decisions on manuscripts.
+  - Maintain confidentiality in all communications.
+
+::: footer
+[Elsevier AI Policy](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals)
+:::
+
+## Karl Landsteiner Privatuniversität
+
+## MedUni Vienna PhD thesis guideline {.smaller}
+
+“A doctoral thesis is expected to contain text that is the intellectual product of the student. If, for any reason, a student feels that he or she must rely on an AI algorithm or a writing enhancement tool (Chat-GPT, Grammarly, Google Translate, DeepL, etc.) to translate, generate, or paraphrase texts, this must be indicated as such with an appropriate citation at the end of the relevant paragraph and in the Bibliography. While this indication will serve to defend the student against any claims of reviewer deception, there is no guarantee that the reviewers will be appreciative of ample AI-generated texts in the thesis. Accordingly, theses relying extensively on AI may fail to receive a positive evaluation by the reviewers. Students should note AI-detection algorithms will still recognise machine-generated texts even after being paraphrased by the authors, and that subsequent revised thesis submissions remain marked. Hence, students should be aware that relying on AI may incurr a risk, which is solely their own, and it therefore is strongly recommended that they disclose all AI use in the Declaration, the List of Algorithms, the body of the text, and the Bibliography. For more information, please see https://apastyle.apa.org/blog/how-to-cite-chatgpt”
+
+## Implications for Academic Research
+- Hallucinations:
+  - Citation
+  - Wrong information
+
+- Plagiarism issues:
+  - Altough verbatim repetitions of text are very rare in LLMs, the use of a plagiarism checker is advised.
 
 ## Appendix {visibility='hidden'}
 
