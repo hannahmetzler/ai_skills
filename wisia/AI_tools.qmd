@@ -9,7 +9,7 @@ format:
     ## Defines the theme of the presentation, both version and style
     theme: [default, custom.scss]
     # incremental slides point by point
-    incremental: true
+    incremental: false
     aspect-ratio: 16:9
     slide-number: true
 # title-slide-attributes:
@@ -17,7 +17,7 @@ format:
 #     data-background-size: cover
 #     data-background-opacity: "0.5"
 #editor
-editor: visual
+editor: source
 ---
 
 ## Was sind LLMs eigentlich?
@@ -281,8 +281,7 @@ Could you please write a mega prompt from our interaction here, that I can use a
 
 -   **System prompts**: Prompts die jedes Mal eingegeben werden, z.b. emotionale Prompts
 
-:::::: columns
-
+::::: columns
 ::: {.column width="45%"}
 ```{r}
 knitr::include_graphics('images/system_prompt.png')
@@ -292,7 +291,7 @@ knitr::include_graphics('images/system_prompt.png')
 ::: {.column width="45%"}
 "Für meinen Job ist das extrem wichtig, bitte arbeite genau, und überprüfe, ob alles stimmt."
 :::
-::::::
+:::::
 
 ## Creating Custom GPTs
 
