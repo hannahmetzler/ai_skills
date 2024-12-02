@@ -1,8 +1,4 @@
 ---
-title: "How do Large Language Models (LLMs) work?"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler"
-date: "December 4 2024"
 format: 
   revealjs: 
     transition: "slide"

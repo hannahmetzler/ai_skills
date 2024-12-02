@@ -1,0 +1,71 @@
+---
+title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
+subtitle: "LLM Workshop Karl Landsteiner Privatuniversität"
+author: "Hannah Metzler <br> Complexity Science Hub & Medical University of Vienna <br> Slides: https://github.com/hannahmetzler/ai_skills"
+date: "4 December 2024"
+format: 
+  revealjs: 
+    transition: "slide"
+    theme: [default, custom.scss]
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+editor: source
+---
+
+## Who am I?
+
+### Dr. Hannah Metzler
+
+Complexity Science Hub & Meduni Vienna <br> Psychology, Neuroscience & Data Science <br> https://hannahmetzler.eu \| metzler\@csh.ac.at <br> X: [\@hannahmetzler1](https://x.com/hannahmetzler1)
+
+## Who are you?
+
+-   Research background & topic
+-   One thing you have already used LLMs for
+-   If any: particular expectation or interests for today
+
+## (Rough) plan for the day {.smaller}
+
+3h Block den ich auf jeden Fall machen würde (inkl. 15 min Pause irgendwo dazwischen)
+
+    15 min Welcome/Setup
+    30 min Introduction to LLMs & important ethical aspects for everyday use in research
+    15 min Pause ca hier oder später
+    1h Chatbot Essentials 
+    1h Advanced Prompting Strategies
+
+1h45 Block mit 2 der Optionen unten (plus 15 min Pause dazwischen)
+
+    45 min Writing
+    45 min Customizing Chatbots
+    45 min Scientific tools (Notebook LM, Perplexity, Elicit)
+    (Falls dir den Block "Try something new" mit Coaching, Data analysis, Website Exercises gerne drin hättest, gib Bescheid. Dann würd ich bei einer der 2 Optionen oben eben die Übung weglassen, und euch dafür noch die Ideen dazu mitgeben in ca. 15 Minuten) 
+
+15 min Abschluss: Resources & Open Questions
+
+|               |                                |
+|---------------|--------------------------------|
+| 10h -  10h15   | Welcome & Setup |
+| 10h15 - 10h45   | Introduction to LLMs & important ethical aspects |
+| 10h45 - 11h30  | Chatbot essentials |
+|  | **Coffee break** |
+| 11h45 - 12h | Chatbot essentials cont' |
+| 12h-13h   | Advanced prompting strategies  |
+| | **Lunch break** |
+| 14h -  14h45   | Writing with chatbots |
+|  | **Coffee break** |
+| 15h - 15h45   | Scientific tools based on LLMs |
+| 15h45 - 16h | Resources, Questions, Closing round |
+
+## Access to LLM chatbots for today
+
+- Who has a paid account?
+- Did all others create a Gemini pro trial account?
+-   Log in for 8 more accounts
+
+# Introduction to LLMs
+
+[Slides](https://hannahmetzler.eu/ai_skills/Intro_ethics_short/)
