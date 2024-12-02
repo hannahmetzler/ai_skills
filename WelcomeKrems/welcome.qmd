@@ -1,0 +1,63 @@
+---
+format: 
+  revealjs: 
+    transition: "slide"
+    theme: [default, custom.scss]
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+editor: source
+---
+
+## Mastering AI Chatbots: Optimizing Research through Effective Use
+
+**LLM Workshop Karl Landsteiner Privatuniversität**
+
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna* <br>
+4 December 2024
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+## Who am I?
+
+- Postdoc & project lead at Complexity Science Hub & Meduni Vienna (and becoming a clinical psychologist)
+- Social Psychology, Neuroscience & Data Science
+- Research: **Social media &** emotions, misinformation, suicide prevention, mental health
+- <https://hannahmetzler.eu> <br> metzler\@csh.ac.at <br> Bluesky: [\@hannahmetzler](https://bsky.app/profile/hannahmetzler.bsky.social)
+
+## Who are you?
+
+-   Research background & topic
+-   One thing you have already used LLMs for
+-   If any: particular expectation or interests for today
+
+## (Rough) plan for the day {.smaller}
+
+|               |                                |
+|---------------|--------------------------------|
+| 10h -  10h15   | Welcome & Setup |
+| 10h15 - 10h45   | Introduction to LLMs & important ethical aspects |
+| 10h45 - 11h30  | Chatbot essentials |
+|  | **Coffee break** |
+| 11h45 - 12h | Chatbot essentials cont' |
+| 12h-13h   | Advanced prompting strategies  |
+| | **Lunch break** |
+| 14h -  14h45    | Scientific tools based on LLMs |
+|  | **Coffee break** |
+|15h - 15h45 | Writing with chatbots |
+| 15h45 - 16h | Resources & open questions |
+
+## Access to LLM chatbots for today
+
+- Who has a paid account?
+- Did all others create a Gemini pro trial account?
+-   Log in for 8 more accounts
+
+# Introduction to LLMs
+
+[Slides](https://hannahmetzler.eu/ai_skills/Intro_ethics_short/)
