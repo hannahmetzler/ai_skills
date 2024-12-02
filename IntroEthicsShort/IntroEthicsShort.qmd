@@ -18,17 +18,18 @@ editor: source
 ---
 
 
-# Introduction to LLMs & Important Ethical Aspects for Everyday Use in Research
+## Introduction to LLMs & Important Ethical Aspects for Everyday Use in Research
 
-**Mastering AI Chatbots: Optimizing Research through Effective Use**
+### Mastering AI Chatbots: Optimizing Research through Effective Use
 
 <br>
 
 **Mag. Dr. Hannah Metzler** <br>
-*Complexity Science Hub &  Medical University of Vienna* <br>
-4 December 2024
+*Complexity Science Hub &  Medical University of Vienna* 
 
-<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+<br>
+
+Slides: https://hannahmetzler.eu/ai_skills
 
 ## AI and Science
 
@@ -183,12 +184,12 @@ One hot encoding: output has as many units as words, we predict the one with the
 
 
 
-## Steps for training of frontier LLMs
+<!-- ## Steps for training of frontier LLMs -->
 
-1. Pre-train on most of the available data from the internet via next-word prediction.
-1. Fine-tune model on conversation setting and chain-of-thought reasoning (next slide).
-1. Refine with feedback from humans
-1. In context learning (Prompting): Explain the task in the context window.
+<!-- 1. Pre-train on most of the available data from the internet via next-word prediction. -->
+<!-- 1. Fine-tune model on conversation setting and chain-of-thought reasoning (next slide). -->
+<!-- 1. Refine with feedback from humans -->
+<!-- 1. In context learning (Prompting): Explain the task in the context window. -->
 
 
 ## What is the model still missing?
@@ -207,9 +208,10 @@ One hot encoding: output has as many units as words, we predict the one with the
 
 ## Current top models
 
+-   **Gemini-Exp & Gemine-1.5 Pro** (Google)
 -   **ChatGPT-4o and o1** (Open AI)
 -   **Claude 3.5 Sonnet** (Anthropic)
--   **Gemini 1.5 pro** (Google)
+
 
 best non-proprietary:
 -   **Llama 3.1** (Meta)
@@ -220,9 +222,9 @@ best non-proprietary:
 
 ## Strengths of different models and interfaces
 
--   [**ChatGPT-4o**](https://chat.openai.com/) (Open AI): web search, code execution, multimodal interactions, custom GPTs with document upload. (128,000 tokens)
--   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, beautiful text rendering, custom projects. (200.000 tokens)
--   [**Gemini 1.5 pro**](https://gemini.google.com/app) (Google): web search, code execution, multimodal interactions, integration with Google services, custom models. (up to 2 million tokens)
+-   [**ChatGPT-4o**](https://chat.openai.com/) (Open AI): web search, code execution, multimodal interactions, custom GPTs with document upload, context: 128.000 tokens.
+-   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, beautiful text rendering, custom projects, context: 200.000 tokens
+-   [**Gemini 1.5 pro**](https://gemini.google.com/app) (Google): web search, code execution, multimodal interactions, integration with Google services, custom models, context: up to 2 million tokens
 
 
 ::: notes
@@ -230,21 +232,40 @@ multimodal interactions with ChatGPT described on next slide
 :::
 
 
-## Multimodal interactions {.smaller}
+## Multimodal interactions
 
-Most with ChatGPT and Gemini, some with Claude. Only Claude: Artifacts, formatting text and websites.
+::::: columns
+::: {.column width="48%"}
+**ChatGPT & Gemini**
 
-- File Uploads (& Claude)
 - Browse
-- Discovering and using custom GPTs (& Claude: projects)
-- Upload & analyze images (& Claude)
-- Create images with DALL-E
-- Audio: Talking/Listening
-- Data analysis (& Claude)
+- Create images
 - Execute code
+- Voice input/output (Claude: input with extensions)
+- Discovering & using custom GPTs/Gems (Claude: Projects)
+:::
+
+::: {.column width="48%"}
+**All models**
+
+- File Uploads
+- Upload & analyze images
+- Data analysis
+
+**Only Claude**
+
+- Interactive artifacts
+- Format text & websites
+:::
+
+:::::
+
+::: footer
+This changes constantly!
+:::
 
 :::notes
-add screenshots benefits gpt/claude
+Artifacts allows for creating standalone, interactive content directly within the chat interface. Can be created and modified in real-time.  Interactive web components, dashboards interactive tables, data visualizations, svg graphics etc. 
 :::
 
 ## Different ChatGPT versions {.smaller}
