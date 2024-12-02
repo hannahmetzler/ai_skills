@@ -44,148 +44,28 @@ editor: source
 :::
 :::::
 
-## How does AI work?
-<br>
-<br>
+## What is an LLM, actually? 
 
-::::: columns
-::: {.column #vcenter width="20%" align="center"}
-Input
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="25%" align="center"}
-AI Model
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="20%" align="center"}
-Output
-:::
-:::::
-
-## AI
-<br>
-<br>
-
-::::: columns
-::: {.column #vcenter width="20%" align="center"}
-![](https://images.pexels.com/photos/1414110/pexels-photo-1414110.jpeg)
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="25%" align="center"}
-Image Classification Model
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="20%" align="center"}
-Lemon
-:::
-:::::
-
-## LLMs
-<br>
-<br>
-
-::::: columns
-::: {.column #vcenter width="20%" align="center"}
-Text
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="25%" align="center"}
-Large Language Model
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="20%" align="center"}
-Text
-:::
-:::::
+- **Large Language Models (LLMs)**: Deep learning neural networks built to understand and generate text
+- Trained on **vast amounts of text** from diverse sources (Internet, Wikipedia, social media, books, podcasts, etc.)
+- Convert text data into **statistical patterns** to predict words and sentences
 
 
-## LLMs
-<br>
-<br>
+## How are LLMs trained?
 
-::::: columns
-::: {.column #vcenter width="15%" align="center"}
-Text
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="40%" align="center"}
-![](../Introduction/images/tunable_parameters.png)
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="15%" align="center"}
-Text
-:::
-:::::
+**GPT**:
+**G**enerative **P**re-trained **T**ransformer models (a model architecture for efficient computing):
 
-## LLMs: Autocomplete
-<br>
-<br>
-
-Context length
-
-::::: columns
-::: {.column #vcenter width="15%" align="center"}
-
-<small>"The actress that played Rose in the 1997 film Titanic is named..."</small>
-
-
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="40%" align="center"}
-![](../Introduction/images/tunable_parameters.png)
-:::
-::: {.column #vcenter width="10%" align="center"}
-→
-:::
-::: {.column #vcenter width="15%" align="center"}
-_Predicts the next word_
-:::
-:::::
+- Generative: Produces/Generates Text
+- Pre-trained: on large text corpus.
+  - Autoregressive:
+      - Always predicts the next word of a text.
+      - Does not need any annotations by humans. 
+- Transformer: type of the language model
 
 ## Next word prediction
 
 ![](../Introduction/images/next_word_prediction.png)
-
-
-## In technical words
-
--   Deep Learning: Multiple layers of "neurons"
--   Linear regressions calculate "weights" for the connections
-
-::::: columns
-::: {.column width="47%"}
--   Input layer: Quantitative representation of sentence
--   Output layer: One-hot encoding
-:::
-
-::: {.column width="47%"}
-```{r, echo=FALSE}
-knitr::include_graphics("../Introduction/images/neuralnet.svg")
-```
-:::
-:::::
-
-::: notes
-One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
-:::
 
 ## Text representation
 <br>
@@ -217,15 +97,13 @@ Tokens = "Subwords"
 
 :::::
 
-## Dictionary
+::: notes
+- Dictionary with specific number of tokens
+- constructs the rare words by combining tokens
+- Every single character is also one token, so that the LLM can construct all possible words from tokens.
+:::
 
-The LLM has a dictonary of a specific number of tokens. 
-
-In that way it does not have to know all words, but constructs the rare ones by combining some of its tokens.
-
-Every single character is also one token, such that the LLM can construct all possible words from tokens.
-
-## Text representation
+## Each token is a vector of numbers (= a word embedding)
 <br>
 <br>
 
@@ -280,53 +158,40 @@ Word Embedding
 :::
 :::::
 
-## What is an LLM, actually? 
+## In technical words
 
-- **Large Language Models (LLMs)**: Deep learning neural networks built to understand and generate text
-- Trained on **vast amounts of text** from diverse sources (Internet, Wikipedia, social media, books, podcasts, etc.)
-- Convert text data into **statistical patterns** to predict words and sentences
+-   Deep Learning: Multiple layers of "neurons"
+-   Linear regressions calculate "weights" for the connections
+
+::::: columns
+::: {.column width="47%"}
+-   Input layer: Quantitative representation of words
+-   Output layer: One-hot encoding
+    - One (of the) word(s) with high probability gets a 1, all others 0. 
+:::
+
+::: {.column width="47%"}
+```{r, echo=FALSE}
+knitr::include_graphics("../Introduction/images/neuralnet.svg")
+```
+:::
+:::::
+
+::: notes
+One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
+:::
 
 
-## How are LLMs trained?
 
-**GPT**:
-**G**enerative **P**re-trained **T**ransformer models (a model architecture for efficient computing):
-
-- Generative: Produces/Generates Text
-- Pre-trained: on large text corpus.
-  - Autoregressive:
-Always predicts the next word of a text.
-Does not need any annotation.
-- Transformer: type of the language model
-
-## Comparing training routine to older models {.smaller}
-Changes of how models are trained over time.
-Earlier approaches for weaker models:
-
-- train seperate models for different tasks, e.g. translation
-- pre-train models on language, then fine-tune on task (e.g. BERT)
-
-Todays approach for frontier models:
+## Steps for training of frontier LLMs
 
 1. Pre-train on most of the available data from the internet via next-word prediction.
 1. Fine-tune model on conversation setting and chain-of-thought reasoning (next slide).
-1. Refining by receiving feedback from humans
-1. In context learning: Explain the model a task in the context window. (Often no need for task specific fine-tuning)
-
-## Chain of thought reasoning
-
-Enhancing the models performance by increasing the number of output tokens. Reasoning happens while the models predicts each word. External reasoning.
-
-<br>
-
-![](../Introduction/images/chain_of_thought.png){width=20%}
+1. Refine with feedback from humans
+1. In context learning (Prompting): Explain the task in the context window.
 
 
-::: footer
-Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
-:::
-
-## What is still missing?
+## What is the model still missing?
 
 ![](../Introduction/images/unknown_caller.png)
 
@@ -340,19 +205,6 @@ Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
 [pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
 :::
 
-
-
-## RAG Retrieval Augmented Generation {.smaller}
-The LLM is given a specific question.
-
-An algorithm looks up a database for specific or up-to-date information that fits the topic of the question.
-
-This information is automatically added into the context of the LLMs.
-
-The LLM has very specific and reliable information to answer questiong.
-
-Examples for databases: Scientific papers, Medical textbooks, internal files of companies.
-
 ## Current top models
 
 -   **ChatGPT-4o and o1** (Open AI)
@@ -361,6 +213,10 @@ Examples for databases: Scientific papers, Medical textbooks, internal files of 
 
 best non-proprietary:
 -   **Llama 3.1** (Meta)
+
+:::footer
+[Chatbot Arena](https://chat.lmsys.org/)
+:::
 
 ## Strengths of different models and interfaces
 
@@ -391,20 +247,6 @@ Most with ChatGPT and Gemini, some with Claude. Only Claude: Artifacts, formatti
 add screenshots benefits gpt/claude
 :::
 
-## Chatbot Arena
-Human ratings of chatbot responses
-![](../Introduction/images/chatbot_arena.png)
-
-<small>
-Rank (UB): model's ranking compared to other models
-Rank (StyleCtrl): model's ranking with style control (lenght, formatting, etc.)
-</small>
-
-:::footer
-[Chatbot Arena](https://chat.lmsys.org/)
-:::
-
-
 ## Different ChatGPT versions {.smaller}
 
 - GPT4: more resource intensive = expensive
@@ -428,16 +270,6 @@ Usage limits:
 [ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini) [usage limits](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065)
 
 ::: 
-
-
-## Discussion 
-
-- In groups of 3 (10 minutes): 
-  - Which problems do you encounter when using LLMs? 
-  - What works well?
-- 5 minutes for sharing most important points with the whole group
-
-
 
 
 ## Appendix {visibility='hidden'}
