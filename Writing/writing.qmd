@@ -250,14 +250,14 @@ Here is the finished paper including the discussion section:
 
 
 
-## Specific prompts for scientific writing
+## Prompts to improve scientific writing
 
 - o1: First GPT model that writes good scientific text without detailed prompts. 
 - Other models need long prompts to be precise and concise, with writing style instructions or written example texts. 
 
 ### Your turn:  
 
-- Prompt GPT-4/GPT-4o (free access) with (1) your paper up to discussion, (2) the bullet points & (3) the instruction on the next slide.
+- Prompt GPT-4/GPT-4o (free access) with (1) your paper up to discussion, (2) the bullet points & (3) the detailed writing style instructions on the next slide.
 
 ::: notes
 this part could be skipped if time is over
