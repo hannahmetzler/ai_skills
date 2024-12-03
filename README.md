@@ -10,13 +10,13 @@ and their strengths, and discuss the most important ethical questions around usi
 - Workshop developed by: [Dr. Hannah Metzler](www.hannahmetzler.eu) & Konstantin Hebenstreit, MSc.
 
 
-## Workshop slides
+## Workshop slides for today: 
 
 - [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
-- [Chatbot Essentials](https://hannahmetzler.eu/ai_skills/Prompting)
-- [Effective prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/effective-prompting)
+- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/effective-prompting)
 - [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Research)
-- [Chatbots in Research: Writing](https://hannahmetzler.eu/ai_skills/Writing)
+- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
 - [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
 ### More detailled session versions & additional sessions: 
