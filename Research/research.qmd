@@ -1,8 +1,4 @@
 ---
-title: "Enhancing your research outputs with LLM Chatbots"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler"
-date: "October 29 2024"
 format: 
   # html:
   #   toc: true
@@ -17,6 +13,23 @@ format:
 editor: source
 ---
 
+## Scientific tools based on LLMs
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+Slides: https://hannahmetzler.eu/ai_skills
+
+::: notes
+Original title: Enhancing your research outputs with LLM Chatbots
+:::
+
 
 ## Overview 
 
@@ -25,9 +38,10 @@ editor: source
   - [Elicit](www.elicit.com)
   - [Notebook LM](https://notebooklm.google.com/)
 
-### Collection of researcher use cases
+### Collection of research use cases
 
-# Scientific tools based on LLMs 
+
+# Scientific tools based on LLMs
 
 ##  [Notebook LM](https://notebooklm.google.com/)
 
@@ -216,7 +230,7 @@ References with links to where information comes from
 - [ResearchRabbit](https://www.researchrabbit.ai/) for literature search based on paper networks & paper alerts
 - CustomGPTs: Many different ScholarGPTs, this [one](https://chatgpt.com/g/g-3DGi2iLag-scholargpt) seems to work reasonably 
 
-# Researcher use cases
+# Research use cases
 
 Collection of ideas for where you might experiment with chatbots in the future
 
