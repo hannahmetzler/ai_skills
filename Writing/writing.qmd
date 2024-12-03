@@ -1,8 +1,4 @@
 ---
-title: "Using Chatbots for Writing"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Konstantin Hebenstreit"
-date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"
@@ -22,18 +18,35 @@ format:
 editor: source
 ---
 
+## <br> Scientific Writing with Chatbots
+
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** (& Konstantin Hebenstreit, MSc.) <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
 ## Writing sections of papers
 
-### Test how good is the AI in writing a discussion
-Try out: (Re-)Writing the discussion of a given paper
+### We will test how good the LLM is in (re)writing a discussion. 
 
-1. Choose a paper you know very well, best would be one of your own.
-2. Give the paper without the discussion to the model "o1-preview"
-3. Let it write the discussion on it's own
-4. Check how it is doing
+- Choose a paper you know very well, best: one of your own.
+- Use the prompts from this presentation as we go along. 
 
-## My example
-### Paper about generalization of prompting strategies
+### First (naive) try: 
+
+1. Give your paper without the discussion to the model "o1-preview" (or Claude)
+2. Prompt: _Write the discussion for the paper below. [Insert text]._
+3. Check how it is doing.
+
+## Example paper
 
 ![](images/peerj_screenshot.png)
 
@@ -42,11 +55,8 @@ Try out: (Re-)Writing the discussion of a given paper
 Hebenstreit et al. [2024](https://peerj.com/articles/cs-1999/#)
 :::
 
-::: notes
-In the last step of creating this session I was rereading the prompting guidlines of o1 and also copying the text with tables from the website, which made the formatting better.
-:::
-
 ## AI generated discussion:{.smaller style="font-size: 0.4em;"}
+
 In this study, we conducted a comprehensive comparison of zero-shot chain-of-thought (CoT) reasoning strategies across multiple large language models (LLMs) and diverse datasets. Our findings highlight that while the effectiveness of specific reasoning strategies can vary depending on the model and dataset, overall gains from CoT reasoning remain robust. Notably, GPT-4 demonstrated the most significant improvements when applying advanced reasoning prompts, particularly the “Zhou” prompt discovered through automated prompt engineering (Zhou et al., 2023b).
 
 Effectiveness of Reasoning Strategies
@@ -73,21 +83,18 @@ People often tell me that they are frustrated because they have to read all of t
 We need to find a method that is easy for us. Easy to test if the Chatbot is doing what we want.
 :::
 
-## Read o1 prompting tips
+## Lot's of not very good text to read & edit 
 
-Remember that for [prompting o1](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting):
- keep it simple, avoid chain-of-thought and use delimeters for clarity
+### Refine your prompt based on [prompting tips for o1](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting):
 
-**New Prompt:**
-Please write a concise and scientifically rigorous discussion section for my paper, maintaining consistency with my writing style demonstrated below. Respond in plain text formatted as markdown.
+- Keep it simple, avoid chain-of-thought and use delimeters for clarity 
 
-Here is the finished paper up to the discussion section:
+Please write a concise and scientifically rigorous discussion section for my paper, maintaining consistency with my writing style demonstrated below. Respond in plain text formatted as markdown. Here is the finished paper up to the discussion section:
 
-‘’’
+‘’’ <br>
+[Insert text]
 
-[Insert your paper’s text up to the discussion section.]
-
-‘’’
+‘’’ 
 
 ## Output with better prompt {.smaller style="font-size: 0.37em;"}
 
@@ -116,8 +123,9 @@ In conclusion, this study demonstrates that zero-shot CoT prompting strategies c
 
 . . .
 
-### $\rightarrow$ Refinement
-Let's have the output in bullet points, structured in the main parts of a discussion.
+### Refine the prompt
+
+- Output in bullet points & defining a structure for the discussion.
 
 **Prompt:** Please list the key points of your text as single-sentence bullet points, organized into the following parts of the discussion:
 
@@ -126,9 +134,7 @@ Let's have the output in bullet points, structured in the main parts of a discus
 - Related Work
 - Future Work
 
-Return it as a markdown file, so I can easily copy it.
-
-## Looks good {.smaller style="font-size: 0.5em;"}
+## This looks good {.smaller style="font-size: 0.5em;"}
 
 Conclusion
 
@@ -160,30 +166,20 @@ Future Work
 
 
 
-## Correct formatting
+## Compare to the original discussion
 
-### Only a small formatting mistake: Markdown output does not work well in o1
-If you really want to have it as markdown use GPT-4.
-Tip: just change the model and continue within the chat.
+Convert original discussion to bullet points with o1-preview.
 
-**Prompt:** Convert this text to markdown format.
+<br>
 
-![](images/markdown_output.png)
-	
-## If you want to compare to the original{.smaller style="font-size: 0.5em;"}
+### You can use this prompt for this: 
 
-**You can convert the original discussion from the paper turned into bullet points by o1-preview**
-
-**Prompt:**
-
-Read the scientific paper I am giving to you. List the key points only of the section discussion as single-sentence bullet points, organized into the following parts of the discussion. Provide only the most important 3-5 bullet points per section:
+<small> Read the scientific paper I inserted below. List the key points for the discussion section only, as single-sentence bullet points, organized into the the below parts of the discussion. Provide only the most important 3-5 bullet points for each part:
 
 - Conclusion
 - Limitations
 - Related Work
 - Future Work
-
-Respond in plain text formatted as markdown.
 
 Here is the finished paper including the discussion section:
 
@@ -192,6 +188,8 @@ Here is the finished paper including the discussion section:
 [full paper]
 
 """
+
+</small>
 
 ## Original discussion converted to bullet points{.smaller style="font-size: 0.37em;"}
 
@@ -224,9 +222,9 @@ Here is the finished paper including the discussion section:
 - Future research could compare semantically similar prompts through paraphrasing to understand their impact on performance.
 
 
-## Test how it is doing by comparing
+## How good are the bullet points by o1 vs. the original discussion?
 
-<br>
+
 <br>
 
 **Do a side by side view to check if it captures the main points**
@@ -234,44 +232,36 @@ Here is the finished paper including the discussion section:
 . . .
 
 <br>
-<br>
 
-### In real life it probably needs refinement
 
-In a paper where you need to write the discussion, you can just copy the suggested discussion in bullet point format into a Google docs and work on it.
-
-## Tip: worflow with Google docs {.smaller}
-
-**This only works in Chrome:** 
-
-![](images/google_docs.png) Paste text from Markdown
-
-Easy exchange of formatted text between Google docs and Chatbot interface.
-
-- Thinking about text & argument flow
-- Update bullet points
-
-<small>
-Current developments in ChatGPT:
-
-- ChatGPT already includes the option to continue working on outputs manually:
-
-GPT-4o with Canvas (in Beta, only for GPT-4o)
-</small>
-
+### In real life, you'll have to refine the bullet points.
 
 ## Can the model write a discussion from your bullet points?
-Give the bullet points of the original discussion to the Chatbot and let it write
 
-## Preparation: Setting the right tone
+<br>
 
-- o1: First model that writes good scientific text without specific prompting 
+1. Give the bullet points of the original discussion to the Chatbot and let it write.
 
-- For scientific writing other models are often not precise and concise enough. 
+    - Compare
 
-- Guide them to have a specific writing style by giving an instruction or example texts.
+2. Test the same approach using [Claude](https://claude.ai/)
+    - Or GPT-4 free version if you've been using Claude so far.
+    - Compare the writing style. 
 
-- Prompt GPT-4/GPT-4o (free access) with your paper up to discussion, the bullet points and the writing style instruction on the next slide. 
+
+
+## Specific prompts for scientific writing
+
+- o1: First GPT model that writes good scientific text without detailed prompts. 
+- Other models need long prompts to be precise and concise, with writing style instructions or written example texts. 
+
+### Your turn:  
+
+- Prompt GPT-4/GPT-4o (free access) with (1) your paper up to discussion, (2) the bullet points & (3) the instruction on the next slide.
+
+::: notes
+this part could be skipped if time is over
+:::
 
 ## Writing style instructions {.scrollable .smaller style="font-size: 0.37em;"}
 
@@ -328,110 +318,41 @@ Example of an Writing Style Guide:
 - Balance optimism about possibilities with acknowledgment of challenges
 - Aim to inform and engage without being pedantic or oversimplifying
 
-## Take aways for scientific writing with LLM Chatbots
+## Steps for scientific writing with LLM Chatbots
 
 1. Let the Chatbot create a draft of parts of your paper in bullet points. 
-1. Refine the structure & overview manually.
-1. Then let the Chatbot write:
-    - one paragraph
-    - refine manually
+1. Refine the bullet points and structure manually.
+1. Then let the Chatbot phrase sentences from bullet points:
+    - one paragraph at a time
+    - refine text manually
     - provide existing paragraphs as context for the next
 
-## Writing: Further use cases for academics {.smaller}
+::: notes
+next 2 slides can be skipped
+:::
 
-- Ideas where else you could use LLM chatbots to write?
+## Tip for Chrome & Google doc users
+
+- Copy/pasting between ChatGPT and Google doc in Markdown format 
+- Keeps the formatting in tact 
+
+![](images/google_docs.png){width="400"}
+
+- Direct editing in ChatGPT interface coming soon
+    - for now only in [ChatGPT4-o1 with canvas (beta)](https://openai.com/index/introducing-canvas/), for Enterprise and Edu subscriptions
+
+## Other ideas for using LLM chatbots in scientific writing?
 
 . . .
 
-- Revise, proof-read, summarise, shorten, finding titles, review
-- Refine your own writing
-  - Useful as context/task examples: your texts before and after your supervisor feedback
-- Tone/style checking
+- Revise, proof-read, summarise, shorten
+- Check tone/style
+- Find titles or acroynyms (always ask for several examples)
+- Useful as context & task examples: provide your text before and after co-author/supervisor feedback
+- Get ideas for rewriting tasks during paper revisions: provide current text & [reviewer requests](https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464). 
 - Getting feedback on specified aspects of drafts ([Example](https://www.clearerthinking.org/post/writing))
--   Providing your paper, the [reviewer requests](https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464) for rewriting, let it rephrase
+
 
 :::notes
 Use examples from book of Tim Skern for scientific writing
 :::
-
-
-
-
-
-<!-- ## Different strategy: bullet points{.smaller style="font-size: 0.4em;"}
-### Discussion
-
-- **Overview of Study Findings:**
-  - The study evaluated ten zero-shot chain-of-thought (CoT) prompting strategies across six language models on six datasets.
-  - Specific CoT prompts significantly improved model performance over direct prompting, exemplified by the "Zhou" prompt showing the highest performance with GPT-4 (Krippendorff's alpha = .83, CI [.77, .90]).
-
-- **Model Performance Insights:**
-  - GPT-4 and GPT-3.5-turbo consistently outperformed other models, highlighting advancements in model reasoning capabilities.
-  - GPT-4 particularly benefited from externalized reasoning prompts, demonstrating enhanced accuracy and reasoning depth.
-
-- **Impact of Data Contamination:**
-  - FLAN-T5-XXL's performance suggests potential data contamination, as it showed high scores on datasets it was fine-tuned on, raising validity concerns regarding its true capability.
-
-- **Effectiveness of Prompt Strategies:**
-  - Different prompts showed varying effectiveness across datasets, suggesting that prompt tailoring to task specifics can optimize performance.
-  - "Zhou" prompt was most effective on OpenBookQA, while "Rephrase" excelled in clarifying ambiguous questions in StrategyQA.
-
-- **Challenges with Self-Critique Prompts:**
-  - The self-critique prompt did not perform as expected, indicating complexities in implementing reflection and critique in zero-shot settings.
-
-- **Implications and Future Directions:**
-  - The findings emphasize the importance of prompt engineering in enhancing reasoning with large language models.
-  - Limitations noted include potential data contamination and lower performance in specialized domains like medicine, pointing to areas for future research.
-  - Future work should explore cleaner datasets and methods to detect and correct prior model exposure, and test the scalability of prompting strategies across broader tasks.
-
-- **Conclusion:**
-  - This study demonstrates that zero-shot CoT prompting can significantly enhance the reasoning capabilities of large language models, with strategic prompt design playing a pivotal role.
-
-## How are we doing this time?
-
-- Looks pretty good...
-- Additional improvement: 
-  - Structure of a scientific discussion
-
-  <br>
-
-- If you get to many bullet points:
-  - Let model select most important points for each section
-  
-. . .
-
-### $\rightarrow$ Next (even smarter) try
-
-Model input - to do ?????????????????????????
-
-## Fit it into subheadings{.smaller style="font-size: 0.4em;"}
-
-#### Conclusion
-- **Enhanced Model Performance Through CoT Prompts:**
-  - Ten zero-shot chain-of-thought (CoT) prompting strategies significantly improved performance across six language models compared to direct prompting.
-  - The "Zhou" prompt notably enhanced GPT-4's performance, achieving the highest Krippendorff's alpha (α = .83, CI [.77, .90]).
-
-- **Superior Performance of Advanced Models:**
-  - GPT-4 and GPT-3.5-turbo outperformed other models in complex reasoning tasks, underscoring the advancements in AI capabilities.
-
-#### Limitations
-- **Data Contamination Concerns:**
-  - FLAN-T5-XXL's unexpectedly high performance on familiar datasets suggests potential data contamination, complicating the assessment of its true reasoning capabilities.
-
-- **Challenges in Medical Domains:**
-  - The study revealed lower performance on specialized medical datasets, highlighting the difficulty models face in domains requiring extensive specialized knowledge.
-
-#### Related Work
-- **Prompt Efficacy Across Datasets:**
-  - Different prompts exhibited variable effectiveness, with "Zhou" excelling on OpenBookQA and "Rephrase" better suited for disentangling StrategyQA's ambiguous queries.
-  - This variability aligns with prior findings that tailored prompting can critically influence model performance (referenced studies and ongoing research in AI prompting).
-
-#### Future Work
-- **Addressing Data Contamination:**
-  - Future studies should focus on cleaner datasets and developing methods to detect and prevent data contamination to ensure model evaluations are accurate and reflective of true capabilities.
-
-- **Expanding Domain-Specific Research:**
-  - Investigating more robust domain-specific prompting strategies, especially in medical fields, to enhance the precision and applicability of language models in specialized tasks.
-
-- **Refining Self-Critique and Reflective Prompts:**
-  - Further exploration is needed to optimize self-critique prompts, ensuring they effectively contribute to model reasoning without introducing complexities that hinder performance. -->

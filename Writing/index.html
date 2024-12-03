@@ -10,9 +10,7 @@
 <link href="writing_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.57">
 
-  <meta name="author" content="Konstantin Hebenstreit">
-  <meta name="dcterms.date" content="2024-10-29">
-  <title>Using Chatbots for Writing</title>
+  <title>writing</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -326,51 +324,36 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Using Chatbots for Writing</h1>
-  <p class="subtitle">Mastering AI Chatbots: Optimizing Research through Effective Use</p>
 
-<div class="quarto-title-authors">
-<div class="quarto-title-author">
-<div class="quarto-title-author-name">
-Konstantin Hebenstreit 
-</div>
-</div>
-</div>
-
-  <p class="date">2024-10-29</p>
+<section id="scientific-writing-with-chatbots" class="slide level2">
+<h2><br> Scientific Writing with Chatbots</h2>
+<p><br></p>
+<h3 id="mastering-ai-chatbots-optimizing-research-through-effective-use">Mastering AI Chatbots: Optimizing Research through Effective Use</h3>
+<p><br></p>
+<p><strong>Mag. Dr.&nbsp;Hannah Metzler</strong> (&amp; Konstantin Hebenstreit, MSc.) <br> <em>Complexity Science Hub &amp; Medical University of Vienna</em></p>
+<p><br></p>
+<p><small> Slides: https://hannahmetzler.eu/ai_skills </small></p>
 </section>
 <section id="writing-sections-of-papers" class="slide level2">
 <h2>Writing sections of papers</h2>
-<h3 id="test-how-good-is-the-ai-in-writing-a-discussion">Test how good is the AI in writing a discussion</h3>
-<p>Try out: (Re-)Writing the discussion of a given paper</p>
+<h3 id="we-will-test-how-good-the-llm-is-in-rewriting-a-discussion.">We will test how good the LLM is in (re)writing a discussion.</h3>
+<ul>
+<li>Choose a paper you know very well, best: one of your own.</li>
+<li>Use the prompts from this presentation as we go along.</li>
+</ul>
+<h3 id="first-naive-try">First (naive) try:</h3>
 <ol type="1">
-<li>Choose a paper you know very well, best would be one of your own.</li>
-<li>Give the paper without the discussion to the model “o1-preview”</li>
-<li>Let it write the discussion on it’s own</li>
-<li>Check how it is doing</li>
+<li>Give your paper without the discussion to the model “o1-preview” (or Claude)</li>
+<li>Prompt: <em>Write the discussion for the paper below. [Insert text].</em></li>
+<li>Check how it is doing.</li>
 </ol>
 </section>
-<section id="my-example" class="slide level2">
-<h2>My example</h2>
-<h3 id="paper-about-generalization-of-prompting-strategies">Paper about generalization of prompting strategies</h3>
+<section id="example-paper" class="slide level2">
+<h2>Example paper</h2>
 
 <img data-src="images/peerj_screenshot.png" class="r-stretch"><div class="footer">
 <p>Hebenstreit et al.&nbsp;<a href="https://peerj.com/articles/cs-1999/#">2024</a></p>
 </div>
-<aside class="notes">
-<p>In the last step of creating this session I was rereading the prompting guidlines of o1 and also copying the text with tables from the website, which made the formatting better.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
 </section>
 <section id="ai-generated-discussion" class="slide level2 smaller" style="font-size: 0.4em;">
 <h2>AI generated discussion:</h2>
@@ -399,13 +382,14 @@ Konstantin Hebenstreit
           display:block!important;
       }</style></aside>
 </section>
-<section id="read-o1-prompting-tips" class="slide level2">
-<h2>Read o1 prompting tips</h2>
-<p>Remember that for <a href="https://platform.openai.com/docs/guides/reasoning/advice-on-prompting">prompting o1</a>: keep it simple, avoid chain-of-thought and use delimeters for clarity</p>
-<p><strong>New Prompt:</strong> Please write a concise and scientifically rigorous discussion section for my paper, maintaining consistency with my writing style demonstrated below. Respond in plain text formatted as markdown.</p>
-<p>Here is the finished paper up to the discussion section:</p>
-<p>’’’</p>
-<p>[Insert your paper’s text up to the discussion section.]</p>
+<section id="lots-of-not-very-good-text-to-read-edit" class="slide level2">
+<h2>Lot’s of not very good text to read &amp; edit</h2>
+<h3 id="refine-your-prompt-based-on-prompting-tips-for-o1">Refine your prompt based on <a href="https://platform.openai.com/docs/guides/reasoning/advice-on-prompting">prompting tips for o1</a>:</h3>
+<ul>
+<li>Keep it simple, avoid chain-of-thought and use delimeters for clarity</li>
+</ul>
+<p>Please write a concise and scientifically rigorous discussion section for my paper, maintaining consistency with my writing style demonstrated below. Respond in plain text formatted as markdown. Here is the finished paper up to the discussion section:</p>
+<p>’’’ <br> [Insert text]</p>
 <p>’’’</p>
 </section>
 <section id="output-with-better-prompt" class="slide level2 smaller" style="font-size: 0.37em;">
@@ -427,8 +411,10 @@ Konstantin Hebenstreit
 <li>Lot’s of correction work for you</li>
 </ul>
 <div class="fragment">
-<h3 id="rightarrow-refinement"><span class="math inline">\(\rightarrow\)</span> Refinement</h3>
-<p>Let’s have the output in bullet points, structured in the main parts of a discussion.</p>
+<h3 id="refine-the-prompt">Refine the prompt</h3>
+<ul>
+<li>Output in bullet points &amp; defining a structure for the discussion.</li>
+</ul>
 <p><strong>Prompt:</strong> Please list the key points of your text as single-sentence bullet points, organized into the following parts of the discussion:</p>
 <ul>
 <li>Conclusion</li>
@@ -436,11 +422,10 @@ Konstantin Hebenstreit
 <li>Related Work</li>
 <li>Future Work</li>
 </ul>
-<p>Return it as a markdown file, so I can easily copy it.</p>
 </div>
 </section>
-<section id="looks-good" class="slide level2 smaller" style="font-size: 0.5em;">
-<h2>Looks good</h2>
+<section id="this-looks-good" class="slide level2 smaller" style="font-size: 0.5em;">
+<h2>This looks good</h2>
 <p>Conclusion</p>
 <pre><code>•   Employing specific zero-shot chain-of-thought (CoT) prompts significantly enhances the performance of large language models compared to direct prompting.
 •   The “Zhou” prompt yielded the highest average Krippendorff’s alpha score with GPT-4 (α = .83, 95% CI [.77, .90]), indicating its effectiveness in improving reasoning performance.
@@ -462,29 +447,23 @@ Konstantin Hebenstreit
 •   Refine self-critique strategies in zero-shot settings to enhance their effectiveness in improving reasoning.
 •   Explore domain-specific fine-tuning or prompting strategies to address challenges in specialized knowledge domains.</code></pre>
 </section>
-<section id="correct-formatting" class="slide level2">
-<h2>Correct formatting</h2>
-<h3 id="only-a-small-formatting-mistake-markdown-output-does-not-work-well-in-o1">Only a small formatting mistake: Markdown output does not work well in o1</h3>
-<p>If you really want to have it as markdown use GPT-4. Tip: just change the model and continue within the chat.</p>
-<p><strong>Prompt:</strong> Convert this text to markdown format.</p>
-
-<img data-src="images/markdown_output.png" class="r-stretch"></section>
-<section id="if-you-want-to-compare-to-the-original" class="slide level2 smaller" style="font-size: 0.5em;">
-<h2>If you want to compare to the original</h2>
-<p><strong>You can convert the original discussion from the paper turned into bullet points by o1-preview</strong></p>
-<p><strong>Prompt:</strong></p>
-<p>Read the scientific paper I am giving to you. List the key points only of the section discussion as single-sentence bullet points, organized into the following parts of the discussion. Provide only the most important 3-5 bullet points per section:</p>
+<section id="compare-to-the-original-discussion" class="slide level2">
+<h2>Compare to the original discussion</h2>
+<p>Convert original discussion to bullet points with o1-preview.</p>
+<p><br></p>
+<h3 id="you-can-use-this-prompt-for-this">You can use this prompt for this:</h3>
+<p><small> Read the scientific paper I inserted below. List the key points for the discussion section only, as single-sentence bullet points, organized into the the below parts of the discussion. Provide only the most important 3-5 bullet points for each part:</small></p><small>
 <ul>
 <li>Conclusion</li>
 <li>Limitations</li>
 <li>Related Work</li>
 <li>Future Work</li>
 </ul>
-<p>Respond in plain text formatted as markdown.</p>
 <p>Here is the finished paper including the discussion section:</p>
 <p>““”</p>
 <p>[full paper]</p>
 <p>““”</p>
+</small><p><small></small></p>
 </section>
 <section id="original-discussion-converted-to-bullet-points" class="slide level2 smaller" style="font-size: 0.37em;">
 <h2>Original discussion converted to bullet points</h2>
@@ -517,43 +496,53 @@ Konstantin Hebenstreit
 <li>Future research could compare semantically similar prompts through paraphrasing to understand their impact on performance.</li>
 </ul>
 </section>
-<section id="test-how-it-is-doing-by-comparing" class="slide level2">
-<h2>Test how it is doing by comparing</h2>
-<p><br> <br></p>
+<section id="how-good-are-the-bullet-points-by-o1-vs.-the-original-discussion" class="slide level2">
+<h2>How good are the bullet points by o1 vs.&nbsp;the original discussion?</h2>
+<p><br></p>
 <p><strong>Do a side by side view to check if it captures the main points</strong></p>
 <div class="fragment">
-<p><br> <br></p>
-<h3 id="in-real-life-it-probably-needs-refinement">In real life it probably needs refinement</h3>
-<p>In a paper where you need to write the discussion, you can just copy the suggested discussion in bullet point format into a Google docs and work on it.</p>
+<p><br></p>
+<h3 id="in-real-life-youll-have-to-refine-the-bullet-points.">In real life, you’ll have to refine the bullet points.</h3>
 </div>
-</section>
-<section id="tip-worflow-with-google-docs" class="slide level2 smaller">
-<h2>Tip: worflow with Google docs</h2>
-<p><strong>This only works in Chrome:</strong></p>
-<p><img data-src="images/google_docs.png"> Paste text from Markdown</p>
-<p>Easy exchange of formatted text between Google docs and Chatbot interface.</p>
-<ul>
-<li>Thinking about text &amp; argument flow</li>
-<li>Update bullet points</li>
-</ul>
-<p><small> Current developments in ChatGPT:</small></p><small>
-<ul>
-<li>ChatGPT already includes the option to continue working on outputs manually:</li>
-</ul>
-</small><p><small>GPT-4o with Canvas (in Beta, only for GPT-4o) </small></p>
 </section>
 <section id="can-the-model-write-a-discussion-from-your-bullet-points" class="slide level2">
 <h2>Can the model write a discussion from your bullet points?</h2>
-<p>Give the bullet points of the original discussion to the Chatbot and let it write</p>
-</section>
-<section id="preparation-setting-the-right-tone" class="slide level2">
-<h2>Preparation: Setting the right tone</h2>
+<p><br></p>
+<ol type="1">
+<li><p>Give the bullet points of the original discussion to the Chatbot and let it write.</p>
 <ul>
-<li><p>o1: First model that writes good scientific text without specific prompting</p></li>
-<li><p>For scientific writing other models are often not precise and concise enough.</p></li>
-<li><p>Guide them to have a specific writing style by giving an instruction or example texts.</p></li>
-<li><p>Prompt GPT-4/GPT-4o (free access) with your paper up to discussion, the bullet points and the writing style instruction on the next slide.</p></li>
+<li>Compare</li>
+</ul></li>
+<li><p>Test the same approach using <a href="https://claude.ai/">Claude</a></p>
+<ul>
+<li>Or GPT-4 free version if you’ve been using Claude so far.</li>
+<li>Compare the writing style.</li>
+</ul></li>
+</ol>
+</section>
+<section id="specific-prompts-for-scientific-writing" class="slide level2">
+<h2>Specific prompts for scientific writing</h2>
+<ul>
+<li>o1: First GPT model that writes good scientific text without detailed prompts.</li>
+<li>Other models need long prompts to be precise and concise, with writing style instructions or written example texts.</li>
 </ul>
+<h3 id="your-turn">Your turn:</h3>
+<ul>
+<li>Prompt GPT-4/GPT-4o (free access) with (1) your paper up to discussion, (2) the bullet points &amp; (3) the instruction on the next slide.</li>
+</ul>
+<aside class="notes">
+<p>this part could be skipped if time is over</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="writing-style-instructions" class="slide level2 scrollable smaller" style="font-size: 0.37em;">
 <h2>Writing style instructions</h2>
@@ -617,34 +606,56 @@ Konstantin Hebenstreit
 <li>Aim to inform and engage without being pedantic or oversimplifying</li>
 </ul>
 </section>
-<section id="take-aways-for-scientific-writing-with-llm-chatbots" class="slide level2">
-<h2>Take aways for scientific writing with LLM Chatbots</h2>
+<section id="steps-for-scientific-writing-with-llm-chatbots" class="slide level2">
+<h2>Steps for scientific writing with LLM Chatbots</h2>
 <ol type="1">
 <li>Let the Chatbot create a draft of parts of your paper in bullet points.</li>
-<li>Refine the structure &amp; overview manually.</li>
-<li>Then let the Chatbot write:
+<li>Refine the bullet points and structure manually.</li>
+<li>Then let the Chatbot phrase sentences from bullet points:
 <ul>
-<li>one paragraph</li>
-<li>refine manually</li>
+<li>one paragraph at a time</li>
+<li>refine text manually</li>
 <li>provide existing paragraphs as context for the next</li>
 </ul></li>
 </ol>
+<aside class="notes">
+<p>next 2 slides can be skipped</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="writing-further-use-cases-for-academics" class="slide level2 smaller">
-<h2>Writing: Further use cases for academics</h2>
+<section id="tip-for-chrome-google-doc-users" class="slide level2">
+<h2>Tip for Chrome &amp; Google doc users</h2>
 <ul>
-<li>Ideas where else you could use LLM chatbots to write?</li>
+<li>Copy/pasting between ChatGPT and Google doc in Markdown format</li>
+<li>Keeps the formatting in tact</li>
 </ul>
+
+<img data-src="images/google_docs.png" width="400" class="r-stretch"><ul>
+<li>Direct editing in ChatGPT interface coming soon
+<ul>
+<li>for now only in <a href="https://openai.com/index/introducing-canvas/">ChatGPT4-o1 with canvas (beta)</a>, for Enterprise and Edu subscriptions</li>
+</ul></li>
+</ul>
+</section>
+<section id="other-ideas-for-using-llm-chatbots-in-scientific-writing" class="slide level2">
+<h2>Other ideas for using LLM chatbots in scientific writing?</h2>
 <div class="fragment">
 <ul>
-<li>Revise, proof-read, summarise, shorten, finding titles, review</li>
-<li>Refine your own writing
-<ul>
-<li>Useful as context/task examples: your texts before and after your supervisor feedback</li>
-</ul></li>
-<li>Tone/style checking</li>
+<li>Revise, proof-read, summarise, shorten</li>
+<li>Check tone/style</li>
+<li>Find titles or acroynyms (always ask for several examples)</li>
+<li>Useful as context &amp; task examples: provide your text before and after co-author/supervisor feedback</li>
+<li>Get ideas for rewriting tasks during paper revisions: provide current text &amp; <a href="https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464">reviewer requests</a>.</li>
 <li>Getting feedback on specified aspects of drafts (<a href="https://www.clearerthinking.org/post/writing">Example</a>)</li>
-<li>Providing your paper, the <a href="https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464">reviewer requests</a> for rewriting, let it rephrase</li>
 </ul>
 <aside class="notes">
 <p>Use examples from book of Tim Skern for scientific writing</p>
@@ -659,83 +670,6 @@ Konstantin Hebenstreit
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- ## Different strategy: bullet points{.smaller style="font-size: 0.4em;"}
-### Discussion
-
-- **Overview of Study Findings:**
-  - The study evaluated ten zero-shot chain-of-thought (CoT) prompting strategies across six language models on six datasets.
-  - Specific CoT prompts significantly improved model performance over direct prompting, exemplified by the "Zhou" prompt showing the highest performance with GPT-4 (Krippendorff's alpha = .83, CI [.77, .90]).
-
-- **Model Performance Insights:**
-  - GPT-4 and GPT-3.5-turbo consistently outperformed other models, highlighting advancements in model reasoning capabilities.
-  - GPT-4 particularly benefited from externalized reasoning prompts, demonstrating enhanced accuracy and reasoning depth.
-
-- **Impact of Data Contamination:**
-  - FLAN-T5-XXL's performance suggests potential data contamination, as it showed high scores on datasets it was fine-tuned on, raising validity concerns regarding its true capability.
-
-- **Effectiveness of Prompt Strategies:**
-  - Different prompts showed varying effectiveness across datasets, suggesting that prompt tailoring to task specifics can optimize performance.
-  - "Zhou" prompt was most effective on OpenBookQA, while "Rephrase" excelled in clarifying ambiguous questions in StrategyQA.
-
-- **Challenges with Self-Critique Prompts:**
-  - The self-critique prompt did not perform as expected, indicating complexities in implementing reflection and critique in zero-shot settings.
-
-- **Implications and Future Directions:**
-  - The findings emphasize the importance of prompt engineering in enhancing reasoning with large language models.
-  - Limitations noted include potential data contamination and lower performance in specialized domains like medicine, pointing to areas for future research.
-  - Future work should explore cleaner datasets and methods to detect and correct prior model exposure, and test the scalability of prompting strategies across broader tasks.
-
-- **Conclusion:**
-  - This study demonstrates that zero-shot CoT prompting can significantly enhance the reasoning capabilities of large language models, with strategic prompt design playing a pivotal role.
-
-## How are we doing this time?
-
-- Looks pretty good...
-- Additional improvement: 
-  - Structure of a scientific discussion
-
-  <br>
-
-- If you get to many bullet points:
-  - Let model select most important points for each section
-  
-. . .
-
-### $\rightarrow$ Next (even smarter) try
-
-Model input - to do ?????????????????????????
-
-## Fit it into subheadings{.smaller style="font-size: 0.4em;"}
-
-#### Conclusion
-- **Enhanced Model Performance Through CoT Prompts:**
-  - Ten zero-shot chain-of-thought (CoT) prompting strategies significantly improved performance across six language models compared to direct prompting.
-  - The "Zhou" prompt notably enhanced GPT-4's performance, achieving the highest Krippendorff's alpha (α = .83, CI [.77, .90]).
-
-- **Superior Performance of Advanced Models:**
-  - GPT-4 and GPT-3.5-turbo outperformed other models in complex reasoning tasks, underscoring the advancements in AI capabilities.
-
-#### Limitations
-- **Data Contamination Concerns:**
-  - FLAN-T5-XXL's unexpectedly high performance on familiar datasets suggests potential data contamination, complicating the assessment of its true reasoning capabilities.
-
-- **Challenges in Medical Domains:**
-  - The study revealed lower performance on specialized medical datasets, highlighting the difficulty models face in domains requiring extensive specialized knowledge.
-
-#### Related Work
-- **Prompt Efficacy Across Datasets:**
-  - Different prompts exhibited variable effectiveness, with "Zhou" excelling on OpenBookQA and "Rephrase" better suited for disentangling StrategyQA's ambiguous queries.
-  - This variability aligns with prior findings that tailored prompting can critically influence model performance (referenced studies and ongoing research in AI prompting).
-
-#### Future Work
-- **Addressing Data Contamination:**
-  - Future studies should focus on cleaner datasets and developing methods to detect and prevent data contamination to ensure model evaluations are accurate and reflective of true capabilities.
-
-- **Expanding Domain-Specific Research:**
-  - Investigating more robust domain-specific prompting strategies, especially in medical fields, to enhance the precision and applicability of language models in specialized tasks.
-
-- **Refining Self-Critique and Reflective Prompts:**
-  - Further exploration is needed to optimize self-critique prompts, ensuring they effectively contribute to model reasoning without introducing complexities that hinder performance. -->
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
