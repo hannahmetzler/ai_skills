@@ -306,7 +306,7 @@ Todays approach for frontier models:
 
 ## Chain of thought reasoning
 
-Enhancing the models performance by increasing the number of output tokens. Reasoning happens while the models predicts each word. External reasoning.
+Enhancing the model's performance by increasing the number of output tokens. Reasoning happens while the models predicts each word. External reasoning.
 
 <br>
 
