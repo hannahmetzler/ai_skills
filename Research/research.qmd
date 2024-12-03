@@ -13,7 +13,9 @@ format:
 editor: source
 ---
 
-## Scientific tools based on LLMs
+## <br> Scientific tools based on LLMs
+
+<br>
 
 ### Mastering AI Chatbots: Optimizing Research through Effective Use
 
@@ -24,7 +26,7 @@ editor: source
 
 <br>
 
-Slides: https://hannahmetzler.eu/ai_skills
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
 ::: notes
 Original title: Enhancing your research outputs with LLM Chatbots

@@ -1,8 +1,4 @@
 ---
-title: "Resources"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler & Konstantin Hebenstreit"
-date: "October 29 2024"
 format:
   # html:
   #   toc: true
@@ -17,7 +13,22 @@ format:
 editor: source
 ---
 
-## Resources: Where to start
+## <br> Resources
+
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+## Where to start
 
 -   [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
     -   [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
@@ -28,7 +39,7 @@ editor: source
   -   [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/)
   - [Prompt Engineering Cheatsheet](https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf) (Maximilian Vogel)
 
-## Resources: Deep dives
+## Deep dives
 
 -   A really enjoyable book: [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 - [YouTube: 3Brown1Blue](https://www.youtube.com/@3blue1brown):  visualized understanding of technical concepts
@@ -59,6 +70,5 @@ editor: source
 
 ## Wrap up
 
-- To do: Log out of borrowed ChatGPT accounts
 - Any open questions?
 - Closing round: What do you take with you?

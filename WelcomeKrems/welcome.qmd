@@ -11,17 +11,19 @@ format:
 editor: source
 ---
 
-## Mastering AI Chatbots: Optimizing Research through Effective Use
+## <br> Mastering AI Chatbots: Optimizing Research through Effective Use
+<br>
 
-**LLM Workshop Karl Landsteiner Privatuniversität**
+### LLM Workshop Karl Landsteiner Privatuniversität
 
 <br>
 
 **Mag. Dr. Hannah Metzler** <br>
-*Complexity Science Hub &  Medical University of Vienna* <br>
+*Complexity Science Hub &  Medical University of Vienna*
+<br><br>
 4 December 2024
 
-<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
 
 ## Who am I?
 
@@ -44,19 +46,16 @@ editor: source
 | 10h15 - 10h45   | Introduction to LLMs & important ethical aspects |
 | 10h45 - 11h30  | Chatbot essentials |
 |  | **Coffee break** |
-| 11h45 - 12h | Chatbot essentials cont' |
+| 11h45 - 12h | Chatbot essentials Exercise |
 | 12h-13h   | Advanced prompting strategies  |
 | | **Lunch break** |
 | 14h -  14h45    | Scientific tools based on LLMs |
 |  | **Coffee break** |
-|15h - 15h45 | Writing with chatbots |
+|15h - 15h45 | Scientific writing with chatbots |
 | 15h45 - 16h | Resources & open questions |
 
 ## Access to LLM chatbots for today
 
 - Who has a paid account?
+- Which models?
 - Did all others create a Gemini pro trial account?
-
-# Introduction to LLMs
-
-[Slides](https://hannahmetzler.eu/ai_skills/IntroEthicsShort/)

@@ -1,8 +1,4 @@
 ---
-title: "Chatbot Essentials & Effective Prompting Strategies"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler"
-date: "October 29 2024"
 format: 
   # html:
   #   toc: true
@@ -16,6 +12,20 @@ format:
     speakerNotes: true
 editor: source
 ---
+
+## <br> Chatbot Essentials & Advanced Prompting Strategies
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
 # The Basics: How to talk to an LLM Chatbot?
 
@@ -212,13 +222,15 @@ all links only work if I am logged in??/
 
 ## Explicit constraints or whitelist
 
-- What you don't want the model to do
-- The task you want your model to stick to
+- What you don't want the model to do.
+- The task you want your model to stick to.
+- Specific rules like: Use "Du" rather than "Sie". 
+
 
 ### Example constraints
 
 - "Rely strictly on the provided text, without including external information." (summarizing text)
-- "Answer only questions about topic X." (for a converational chatbot)
+- "Answer only questions about topic X." (for a conversational chatbot)
 
 
 ## Example from during course preparation
@@ -227,19 +239,27 @@ all links only work if I am logged in??/
 - Task: Create exercise to practice prompting
 - Context: skill training, my previous slides
 - Audience: you
-- Example: Writing an email (see [this exercise](#email))
+- Example exercise: Writing an email (see [here](#email))
 - Output: 3 Quarto slides with one exercise each
 
-## Exercise Option 1: Email (15 minutes) {#email}
+# Exercise Time
 
--   Choose an email you need to write soon
--   Talk to ChatGPT using the microphone
--   Explain who you are (persona), who the email is for (audience), the purpose (context),  necessary points to include (task)
--   Tell it to write in the style of the examples you'll give it (tone)
--   Tell it to wait for further input
--   Upload 2 emails/the email thread of you as writing style examples (context/examples)
+Practice these steps for: 
 
-## Exercise Option 2: (15 minutes) {.smaller}
+- writing an email
+- summarizing content
+- help with a statistics question
+
+20 minutes
+
+## Exercise Option 1: Email (20 minutes) {#email}
+
+-   Choose a longer email you need to write soon
+-   Talk to ChatGPT using the microphone. Explain who you are (persona), who the email is for (audience), the purpose (context),  necessary points to include (task).
+-   Tell it to write in the style of the examples you'll provide (tone) and to wait until you provide them in the next post. Press enter to upload your spoken prompt. 
+-   Copy/paste the email thread (or 2 unrelated emails) as writing style examples (context/examples). Delete names/email addresses.
+
+## Exercise Option 2: (20 minutes) {.smaller}
 
 ### Extract relevant points from long content
 
@@ -253,7 +273,7 @@ all links only work if I am logged in??/
   - Example instructions from [Maastricht University prompt library](https://www.maastrichtuniversity.nl/summarise)
 - Add examples if any (relevant points, exam questions, notes about another paper)
 
-## Exercise Option 3: (15 minutes)  {.smaller}
+## Exercise Option 3: (20 minutes)  {.smaller}
 
 ### Statistics question
 
@@ -281,14 +301,14 @@ all links only work if I am logged in??/
 [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 :::
 
-## Prompt libraries
+## Prompt libraries {#library}
 
 - Library of high quality prompts for your regular tasks
 - Use note taking apps or spreadsheets
   - Notion, OneNote, Zotero...
-  - Excel, Google Sheets
+  - Excel, Google Sheets ([Template](https://docs.google.com/spreadsheets/d/1QbxiZspzCG9qOzqwS_56CdzAbJcgST6vnF8XK6PXaAQ/edit?usp=sharing))
   
-### Examples: 
+### Example questions: 
 
 ::: columns
 ::: column
@@ -365,11 +385,27 @@ Text
 
 ## Chain-of-thought prompting
 
-- "Let's think step by step."
-- Define precise steps you want the model to go through.  
-- [Produces longer & better answers, better reasoning](https://arxiv.org/abs/2201.11903)
+![](images/chain_of_thought.png){width=20%}
 
-### Exception for the GPT o1 model
+
+- Improve performance through more output tokens.
+- Reasoning happens while model predicts each word
+- [Produces longer & better answers, better reasoning](https://arxiv.org/abs/2201.11903).
+- Define precise steps you want the model to go through.  
+
+
+::: footer
+Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
+:::
+
+
+## Chain-of-thought prompting: Exceptions
+
+- This works so well it's built into some of the newest models. 
+
+<br>
+
+### Example: Instructions for using the GPT o1 model
 
 - Avoid chain-of-thought prompts: used internally by default
 - Keep prompts simple and direct
@@ -377,7 +413,7 @@ Text
 - Only include most relevant information when providing context/documents, otherwise overcomplicated responses
 
 ::: footer
-[See the o1 instructions](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting)
+[See the complete o1 instructions](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting)
 :::
 
 ::: notes
@@ -387,9 +423,11 @@ Use delimiters for clarity: Use delimiters like triple quotation marks, XML tags
 Limit additional context in retrieval-augmented generation (RAG): When providing additional context or documents, include only the most relevant information to prevent the model from overcomplicating its response.
 :::
 
-## Base prompts
+## Let the model write your next base prompt {#base}
 
--   After a successful interaction, get & save a base prompt in JSON for future requests:
+### Base prompt
+- Text input provided by the user to directly instruct the LLM
+- After a successful interaction, get & save a base prompt in JSON for future requests:
 
 ### Example:
 
@@ -400,6 +438,13 @@ Could you please write a mega prompt from our interaction here, that I can use a
 { "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
 
 "context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
+
+## Exercise base prompt (5 min)
+
+- Ask the model to write a mega prompt at the end of a successful chat (or in your chat from the previous exercise).
+- "Could you please write a mega prompt in JSON format from our interaction here, that I can use again next time I want to ask you about [task], when I want [what the model did right in the end]?"
+- Save the prompt into your prompt library. Use a spreadsheet like this [template](https://docs.google.com/spreadsheets/d/1QbxiZspzCG9qOzqwS_56CdzAbJcgST6vnF8XK6PXaAQ/edit?usp=sharing) (or any other note taking option from [here](#library).
+  - Filter for categories in Google Sheets: Data -> Create filter. 
 
 ## Hallucinations
 
