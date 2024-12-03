@@ -15,8 +15,8 @@ and their strengths, and discuss the most important ethical questions around usi
 - [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
 - [Chatbot Essentials](https://hannahmetzler.eu/ai_skills/Prompting)
 - [Effective prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/effective-prompting)
-- [Chatbots in Research: Writing](https://hannahmetzler.eu/ai_skills/Writing)
 - [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Research)
+- [Chatbots in Research: Writing](https://hannahmetzler.eu/ai_skills/Writing)
 - [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
 ### More detailled session versions & additional sessions: 
@@ -49,17 +49,8 @@ For the workshop exercises in the LLM workshop, we recommend having access to a 
     1. Sign up under claude.ai
     2. Click Upgrade at the top center
     3. Subscribe to Pro
-    4. Install a voice extension like Claudet (or any other voice extension that works on your system)
+    4. (Claudet is a voice extension you can only use if you buy API access to Claude. Not for this workshop.)
 
 * **Option 3: [Google Gemini](https://gemini.google/advanced/) Pro (Free Trial)** Google offers a free trial of Gemini Pro for one month. If you cancel before the trial ends, there's no cost.
-
-### Files to bring (if you have them)
-
-Having these files available on your laptop will be useful for the exercises: 
-
-* A motivation letter and CV from a previous application  
-* Your LinkedIn profile  
-* Your own research papers or your Master's/PhD thesis  
-* Around 10 PDF research papers (any topic related to your research)
 
 Looking forward to seeing you at the workshop\!
