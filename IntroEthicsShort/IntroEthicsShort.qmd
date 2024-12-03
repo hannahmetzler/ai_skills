@@ -18,7 +18,9 @@ editor: source
 ---
 
 
-## Introduction to LLMs & Important Ethical Aspects for Everyday Use in Research
+## <br> Introduction to LLMs & Important Ethical Aspects for Everyday Use in Research
+
+<br>
 
 ### Mastering AI Chatbots: Optimizing Research through Effective Use
 
@@ -29,9 +31,9 @@ editor: source
 
 <br>
 
-Slides: https://hannahmetzler.eu/ai_skills
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
-## AI and Science
+## AI: Super intelligence or stupid after all?
 
 ::::: columns
 ::: {.column width="47%"}
@@ -54,21 +56,27 @@ Slides: https://hannahmetzler.eu/ai_skills
 - Convert text data into **statistical patterns** to predict words and sentences
 
 
-## How are LLMs trained?
+## It's all in the name: GPT
+<br>
 
-**GPT**:
-**G**enerative **P**re-trained **T**ransformer models (a model architecture for efficient computing):
+**G**enerative **P**re-trained **T**ransformer: 
 
-- Generative: Produces/Generates Text
-- Pre-trained: on large text corpus.
-  - Autoregressive:
-      - Always predicts the next word of a text.
-      - Does not need any annotations by humans. 
-- Transformer: type of the language model
+
+- **Generative**: Can generate text
+- **Pre-trained**: Learned patterns from a lot of text found online  
+  - Autoregressive: Predicts the next word from previous ones  
+  - Learned from raw text, no human labels needed
+- **Transformer**: Efficient model architecture for sequential data
 
 ## Next word prediction
 
 ![](images/next_word_prediction.png)
+
+. . . 
+
+Question for you: 
+
+- What does this mean for self-reflection? Source citations?
 
 ## How does the model represent text?
 <br>
@@ -123,10 +131,10 @@ style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even
 
 :::
 
-::: {.column width="10%" align="center" .fragment data-fragment-index="1"}
+::: {.column width="10%" align="center" }
 →
 :::
-::: {.column width="40%" align="center" .fragment data-fragment-index="1"}
+::: {.column width="40%" align="center" }
 Word Embedding
 <small>
 [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540,
@@ -142,7 +150,6 @@ Word Embedding
 
 ## How do embeddings encode meaning?
 
-<br>
 
 ::::: columns
 ::: {.column width="40%"}
@@ -150,12 +157,15 @@ Word Embedding
 
 ![](images/wordembeddings.svg)
 
+Semantic dimensions: gender & royalty
+
 :::
 
-::: {.column width="56%"}
+::: {.column width="56%" .fragment}
+
 **Contextual word embeddings**
 
--   Context (before and after the word) taken into account
+- Embedding differs depending on the **context** (before and after the word)
 -   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit?
 
 <img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;" />
@@ -166,11 +176,10 @@ Word Embedding
 
 -   Deep Learning: Multiple layers of "neurons"
 -   Linear regressions calculate "weights" for the connections
+-   Input layer: Word embeddings 
 
 ::::: columns
 ::: {.column width="47%"}
--   Input layer: Word embeddings
-    - words as numbers
 -   Output layer: One-hot encoding
     - one word = 1
     - all others = 0
@@ -226,17 +235,6 @@ Best non-proprietary:
 Source: [Chatbot Arena](https://chat.lmsys.org/)
 :::
 
-## Strengths of different models & interfaces
-
--   [**ChatGPT-4o**](https://chat.openai.com/) (Open AI): web search, code execution, multimodal interactions, custom GPTs with document upload, context: 128.000 tokens.
--   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): Writing style, beautiful text rendering, custom projects, context: 200.000 tokens
--   [**Gemini 1.5 pro**](https://gemini.google.com/app) (Google): web search, code execution, multimodal interactions, integration with Google services, custom models, context: up to 2 million tokens
-
-
-::: notes
-multimodal interactions with ChatGPT described on next slide
-:::
-
 
 ## Multimodal interactions
 
@@ -248,7 +246,7 @@ multimodal interactions with ChatGPT described on next slide
 - Create images
 - Execute code
 - Voice input/output
-- Discovering & using custom GPTs/Gems (Claude: Projects)
+- Discovering & using custom GPTs/Gems <br> (Claude: Projects)
 :::
 
 ::: {.column width="48%"}
@@ -276,6 +274,16 @@ I won't go into detail, but you can look at this when deciding what you need. Yo
 Artifacts allows for creating standalone, interactive content directly within the chat interface. Can be created and modified in real-time.  Interactive web components, dashboards interactive tables, data visualizations, svg graphics etc. 
 :::
 
+## Strengths of different models & interfaces
+
+-   [**ChatGPT-4o**](https://chat.openai.com/) (Open AI): **web search**, code execution, multimodal interactions, custom GPTs with document upload, context: 4096-128.000 tokens
+-   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): **Writing style**, beautiful text rendering, custom projects, interactive artifacts, **long context**: 200.000 tokens
+-   [**Gemini 1.5 pro**](https://gemini.google.com/app) (Google): web search, code execution, multimodal interactions, integration with Google services, custom models, context: up to 2 million tokens
+
+::: notes
+up to means: system capabilities, user access levels, computing time
+:::
+
 ## Different ChatGPT versions {.smaller}
 
 - GPT4: more resource intensive = expensive
@@ -293,7 +301,7 @@ Artifacts allows for creating standalone, interactive content directly within th
 - o1-mini: 50 messages a day 
 
 ::: footer
-[ChatGPT blog on models](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini) [usage limits](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065)
+[Which model to use for what](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini), [Features of each model version](https://platform.openai.com/docs/models/gp),  [Usage limits](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065)
 
 ::: 
 
@@ -311,15 +319,19 @@ Artifacts allows for creating standalone, interactive content directly within th
   
 ## What happens with your input data?
 
-- AI companies are not transparent about this
+- AI companies are not super transparent about this
 
 (1) Model training: most  data is used for future model training at OpenAI/GPT & Google/Gemini (not Anthropic/Claude)
 (2) Security check of all data for safety violations
 
-- Opt out of (1) in Settings - Data Controls:
+- Opt out of (1) in Settings -> Data Controls:
     - Turn off the option "Improve model for everyone"
 - Claude does not train on your data by default
-- Security checks happen anyways - human review
+- Security checks happen in all cases - human review
+
+::: footer
+[How we use your data](https://platform.openai.com/docs/models/gp#how-we-use-your-data)
+:::
 
 
 ## General Data Protection Regulation
@@ -330,24 +342,32 @@ Artifacts allows for creating standalone, interactive content directly within th
 
 - Turning off model training on your inputs does not imply GDPR compliance.
 
-- If you are using LLMs to process personal data of subjects, please consult experts (data protection officers) from your university. Especially for patient data. 
+- Before processing personal data of subjects (especially patients) consult experts (e.g. data protection officers) at your university.
+  - Options with local models or servers in EU
 
 
 ## Copyright
 
+- Passive right that applies to all persons. 
 - AI cannot be holder of copyright, as it is not a person
 
 Example of a copyright violation:
 
 Getty images sued midjourney (AI image creation) for training on their data.
 
+::: footer
+[Source Getty lawsuit](https://www.reuters.com/legal/getty-images-lawsuit-says-stability-ai-misused-photos-train-ai-2023-02-06/)
+:::
+
+
 ## AI in Journal Policies
 
 - Policies are evolving rapidly in response to AI developments.
 - Always review journal guidelines before submitting your work.
+  - [Short APA guidelines](https://www.apa.org/pubs/journals/resources/publishing-policies?tab=4)
+  - [Longer Elsevier policy](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals)
 
-## Elsevier's Policies for Journals {.smaller}
-This is a summary, for details please check the link to their website.
+## Elsevier's Policies for Journals: Summary
 
 - **For Authors**:
   - AI tools can only be used to improve language and readability.
@@ -355,11 +375,14 @@ This is a summary, for details please check the link to their website.
   - AI cannot be listed as an author. 
 
 - **Figures & Images**:
-  - AI cannot alter or create images (except if part of research methods).
+  - AI cannot alter or create images (except if part of research methods/design).
   - AI use in research must be documented in methods.
 
+::: footer
+[Elsevier AI Policy](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals)
+:::
 
-## Elsevier's Policies for Journals 2 {.smaller}
+## Elsevier's Policies for Journals (cont')
 
 - **For Reviewers**:
   - Do not upload manuscripts to AI tools (confidentiality breach).
@@ -373,19 +396,24 @@ This is a summary, for details please check the link to their website.
 [Elsevier AI Policy](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals)
 :::
 
-## Karl Landsteiner Privatuniversität
+## Beyond Papers: General Research Policies?
 
-## MedUni Vienna PhD thesis guideline {.smaller}
+- Universities need to develop (realistic & progressive) policies
+- [Example](https://hannahmetzler.eu/ai_skills/Ethics/#/meduni-vienna-phd-thesis-guideline) of a PhD thesis guideline at MedUni Vienna that discourages AI use
+- EU guidelines [factsheet](https://research-and-innovation.ec.europa.eu/document/download/edc8027b-2811-4347-82f4-fa8b29ece534_en?filename=ec_rtd_ai-guidelines-factsheet.pdf) and [report](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf)
+   - Critical Thinking, Integrity, Responsibility, Human Oversight, Transparency, Privacy, Confidentiality, Fairness
+- Fast innovation and unregulated space
+- Act based on these broad ethical principles. Think yourself. You are accountable. 
 
-“A doctoral thesis is expected to contain text that is the intellectual product of the student. If, for any reason, a student feels that he or she must rely on an AI algorithm or a writing enhancement tool (Chat-GPT, Grammarly, Google Translate, DeepL, etc.) to translate, generate, or paraphrase texts, this must be indicated as such with an appropriate citation at the end of the relevant paragraph and in the Bibliography. While this indication will serve to defend the student against any claims of reviewer deception, there is no guarantee that the reviewers will be appreciative of ample AI-generated texts in the thesis. Accordingly, theses relying extensively on AI may fail to receive a positive evaluation by the reviewers. Students should note AI-detection algorithms will still recognise machine-generated texts even after being paraphrased by the authors, and that subsequent revised thesis submissions remain marked. Hence, students should be aware that relying on AI may incurr a risk, which is solely their own, and it therefore is strongly recommended that they disclose all AI use in the Declaration, the List of Algorithms, the body of the text, and the Bibliography. For more information, please see https://apastyle.apa.org/blog/how-to-cite-chatgpt”
 
-## Implications for Academic Research
-- Hallucinations:
-  - Citation
-  - Wrong information
+## Citations, References & Plagiarism
 
-- Plagiarism issues:
-  - Altough verbatim repetitions of text are very rare in LLMs, the use of a plagiarism checker is advised.
+- How to cite ChatGPT: [APA instructions](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
+  - Describe how you used the model (e.g. in Methods)
+  - When prompted with “...” the ChatGPT-generated text indicated that ... (OpenAI, 2023).
+  - Reference: OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. https://chat.openai.com/chat
+- Plagiarism: Although word-by-word repetition of text is very rare, use a plagiarism checker to be sure. 
+- Check for hallucinations (see session on [prompting](https://hannahmetzler.eu/ai_skills/Prompting/#/hallucinations))
 
 ## Appendix {visibility='hidden'}
 

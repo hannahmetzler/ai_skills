@@ -8,7 +8,7 @@
 <link href="IntroEthicsShort_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="IntroEthicsShort_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="IntroEthicsShort_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+  <meta name="generator" content="quarto-1.5.57">
 
   <title>introethicsshort</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -326,26 +326,26 @@
 
 
 <section id="introduction-to-llms-important-ethical-aspects-for-everyday-use-in-research" class="slide level2">
-<h2>Introduction to LLMs &amp; Important Ethical Aspects for Everyday Use in Research</h2>
+<h2><br> Introduction to LLMs &amp; Important Ethical Aspects for Everyday Use in Research</h2>
+<p><br></p>
 <h3 id="mastering-ai-chatbots-optimizing-research-through-effective-use">Mastering AI Chatbots: Optimizing Research through Effective Use</h3>
 <p><br></p>
 <p><strong>Mag. Dr.&nbsp;Hannah Metzler</strong> <br> <em>Complexity Science Hub &amp; Medical University of Vienna</em></p>
 <p><br></p>
-<p>Slides: https://hannahmetzler.eu/ai_skills</p>
+<p><small> Slides: https://hannahmetzler.eu/ai_skills </small></p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div></section>
-<section id="ai-and-science" class="slide level2">
-<h2>AI and Science</h2>
+<section id="ai-super-intelligence-or-stupid-after-all" class="slide level2">
+<h2>AI: Super intelligence or stupid after all?</h2>
 <div class="columns">
 <div class="column" style="width:47%;">
 <p><img data-src="images/ai_scientist_news.png"> <small><em>Source: <a href="https://www.discovermagazine.com/the-sciences/meet-the-ai-scientist">Discover Magazine</a></em></small></p>
 </div><div class="column fragment" style="width:47%;">
 <p><img data-src="images/comparing_numbers.png"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section>
 <section id="how-do-large-language-models-llm-work" class="title-slide slide level1 center">
@@ -360,26 +360,31 @@
 <li>Convert text data into <strong>statistical patterns</strong> to predict words and sentences</li>
 </ul>
 </section>
-<section id="how-are-llms-trained" class="slide level2">
-<h2>How are LLMs trained?</h2>
-<p><strong>GPT</strong>: <strong>G</strong>enerative <strong>P</strong>re-trained <strong>T</strong>ransformer models (a model architecture for efficient computing):</p>
+<section id="its-all-in-the-name-gpt" class="slide level2">
+<h2>It’s all in the name: GPT</h2>
+<p><br></p>
+<p><strong>G</strong>enerative <strong>P</strong>re-trained <strong>T</strong>ransformer:</p>
 <ul>
-<li>Generative: Produces/Generates Text</li>
-<li>Pre-trained: on large text corpus.
+<li><strong>Generative</strong>: Can generate text</li>
+<li><strong>Pre-trained</strong>: Learned patterns from a lot of text found online
 <ul>
-<li>Autoregressive:
-<ul>
-<li>Always predicts the next word of a text.</li>
-<li>Does not need any annotations by humans.</li>
+<li>Autoregressive: Predicts the next word from previous ones<br>
+</li>
+<li>Learned from raw text, no human labels needed</li>
 </ul></li>
-</ul></li>
-<li>Transformer: type of the language model</li>
+<li><strong>Transformer</strong>: Efficient model architecture for sequential data</li>
 </ul>
 </section>
 <section id="next-word-prediction" class="slide level2">
 <h2>Next word prediction</h2>
 
-<img data-src="images/next_word_prediction.png" class="r-stretch"></section>
+<img data-src="images/next_word_prediction.png" class="r-stretch"><div class="fragment">
+<p>Question for you:</p>
+<ul>
+<li>What does this mean for self-reflection? Source citations?</li>
+</ul>
+</div>
+</section>
 <section id="how-does-the-model-represent-text" class="slide level2">
 <h2>How does the model represent text?</h2>
 <p><br> <br></p>
@@ -393,8 +398,7 @@
 </div><div class="column fragment" data-align="center" data-fragment-index="1" style="width:40%;">
 <p>Tokens = “Subwords”</p>
 <p><img data-src="images/tokenzined_sentence.png"></p>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <ul>
 <li>Dictionary with specific number of tokens</li>
@@ -421,43 +425,38 @@
 <p>Word/Token</p>
 <p><br></p>
 <p><span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even </span> …</p>
-</div><div class="column fragment" data-align="center" data-fragment-index="1" style="width:10%;">
+</div><div class="column" data-align="center" style="width:10%;">
 <p>→</p>
-</div><div class="column fragment" data-align="center" data-fragment-index="1" style="width:40%;">
+</div><div class="column" data-align="center" style="width:40%;">
 <p>Word Embedding <small> [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] </small></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="how-do-embeddings-encode-meaning" class="slide level2">
 <h2>How do embeddings encode meaning?</h2>
-<p><br></p>
 <div class="columns">
 <div class="column" style="width:40%;">
 <p><strong>Word embeddings</strong></p>
 <p><img data-src="images/wordembeddings.svg"></p>
-</div><div class="column" style="width:56%;">
+<p>Semantic dimensions: gender &amp; royalty</p>
+</div><div class="column fragment" style="width:56%;">
 <p><strong>Contextual word embeddings</strong></p>
 <ul>
-<li>Context (before and after the word) taken into account</li>
+<li>Embedding differs depending on the <strong>context</strong> (before and after the word)</li>
 <li><a href="https://www.tiktok.com/@whats_ai/video/7247609946672565510">Example</a> “Apple”: Mac or fruit?</li>
 </ul>
 <p><img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;"></p>
-</div>
-</div>
+</div></div>
 </section>
 <section id="in-technical-words" class="slide level2">
 <h2>In technical words</h2>
 <ul>
 <li>Deep Learning: Multiple layers of “neurons”</li>
 <li>Linear regressions calculate “weights” for the connections</li>
+<li>Input layer: Word embeddings</li>
 </ul>
 <div class="columns">
 <div class="column" style="width:47%;">
 <ul>
-<li>Input layer: Word embeddings
-<ul>
-<li>words as numbers</li>
-</ul></li>
 <li>Output layer: One-hot encoding
 <ul>
 <li>one word = 1</li>
@@ -474,8 +473,7 @@
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask</p>
 <style type="text/css">
@@ -529,27 +527,6 @@
 <p>Source: <a href="https://chat.lmsys.org/">Chatbot Arena</a></p>
 </div>
 </section>
-<section id="strengths-of-different-models-interfaces" class="slide level2">
-<h2>Strengths of different models &amp; interfaces</h2>
-<ul>
-<li><a href="https://chat.openai.com/"><strong>ChatGPT-4o</strong></a> (Open AI): web search, code execution, multimodal interactions, custom GPTs with document upload, context: 128.000 tokens.</li>
-<li><a href="https://claude.ai/"><strong>Claude 3.5 Sonnet</strong></a> (Anthropic): Writing style, beautiful text rendering, custom projects, context: 200.000 tokens</li>
-<li><a href="https://gemini.google.com/app"><strong>Gemini 1.5 pro</strong></a> (Google): web search, code execution, multimodal interactions, integration with Google services, custom models, context: up to 2 million tokens</li>
-</ul>
-<aside class="notes">
-<p>multimodal interactions with ChatGPT described on next slide</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="multimodal-interactions" class="slide level2">
 <h2>Multimodal interactions</h2>
 <div class="columns">
@@ -560,7 +537,7 @@
 <li>Create images</li>
 <li>Execute code</li>
 <li>Voice input/output</li>
-<li>Discovering &amp; using custom GPTs/Gems (Claude: Projects)</li>
+<li>Discovering &amp; using custom GPTs/Gems <br> (Claude: Projects)</li>
 </ul>
 </div><div class="column" style="width:48%;">
 <p><strong>All models</strong></p>
@@ -574,14 +551,34 @@
 <li>Interactive <a href="https://support.anthropic.com/en/articles/9945615-intro-to-artifacts">artifacts</a></li>
 <li>Format text &amp; websites</li>
 </ul>
-</div>
-</div>
+</div></div>
 <div class="footer">
 <p>This changes constantly!</p>
 </div>
 <aside class="notes">
 <p>I won’t go into detail, but you can look at this when deciding what you need. You can switch once every month.</p>
 <p>Artifacts allows for creating standalone, interactive content directly within the chat interface. Can be created and modified in real-time. Interactive web components, dashboards interactive tables, data visualizations, svg graphics etc.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="strengths-of-different-models-interfaces" class="slide level2">
+<h2>Strengths of different models &amp; interfaces</h2>
+<ul>
+<li><a href="https://chat.openai.com/"><strong>ChatGPT-4o</strong></a> (Open AI): <strong>web search</strong>, code execution, multimodal interactions, custom GPTs with document upload, context: 4096-128.000 tokens</li>
+<li><a href="https://claude.ai/"><strong>Claude 3.5 Sonnet</strong></a> (Anthropic): <strong>Writing style</strong>, beautiful text rendering, custom projects, interactive artifacts, <strong>long context</strong>: 200.000 tokens</li>
+<li><a href="https://gemini.google.com/app"><strong>Gemini 1.5 pro</strong></a> (Google): web search, code execution, multimodal interactions, integration with Google services, custom models, context: up to 2 million tokens</li>
+</ul>
+<aside class="notes">
+<p>up to means: system capabilities, user access levels, computing time</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -611,7 +608,7 @@
 <li><p>o1-mini: 50 messages a day</p></li>
 </ul>
 <div class="footer">
-<p><a href="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini">ChatGPT blog on models</a> <a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065">usage limits</a></p>
+<p><a href="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini">Which model to use for what</a>, <a href="https://platform.openai.com/docs/models/gp">Features of each model version</a>, <a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065">Usage limits</a></p>
 </div>
 </section></section>
 <section>
@@ -636,20 +633,23 @@
 <section id="what-happens-with-your-input-data" class="slide level2">
 <h2>What happens with your input data?</h2>
 <ul>
-<li>AI companies are not transparent about this</li>
+<li>AI companies are not super transparent about this</li>
 </ul>
 <ol type="1">
 <li>Model training: most data is used for future model training at OpenAI/GPT &amp; Google/Gemini (not Anthropic/Claude)</li>
 <li>Security check of all data for safety violations</li>
 </ol>
 <ul>
-<li>Opt out of (1) in Settings - Data Controls:
+<li>Opt out of (1) in Settings -&gt; Data Controls:
 <ul>
 <li>Turn off the option “Improve model for everyone”</li>
 </ul></li>
 <li>Claude does not train on your data by default</li>
-<li>Security checks happen anyways - human review</li>
+<li>Security checks happen in all cases - human review</li>
 </ul>
+<div class="footer">
+<p><a href="https://platform.openai.com/docs/models/gp#how-we-use-your-data">How we use your data</a></p>
+</div>
 </section>
 <section id="general-data-protection-regulation" class="slide level2">
 <h2>General Data Protection Regulation</h2>
@@ -657,27 +657,37 @@
 <li><p>For all individuals within the EU</p></li>
 <li><p>Avoid entering sensitive data that identifies individuals</p></li>
 <li><p>Turning off model training on your inputs does not imply GDPR compliance.</p></li>
-<li><p>If you are using LLMs to process personal data of subjects, please consult experts (data protection officers) from your university. Especially for patient data.</p></li>
+<li><p>Before processing personal data of subjects (especially patients) consult experts (e.g.&nbsp;data protection officers) at your university.</p>
+<ul>
+<li>Options with local models or servers in EU</li>
+</ul></li>
 </ul>
 </section>
 <section id="copyright" class="slide level2">
 <h2>Copyright</h2>
 <ul>
+<li>Passive right that applies to all persons.</li>
 <li>AI cannot be holder of copyright, as it is not a person</li>
 </ul>
 <p>Example of a copyright violation:</p>
 <p>Getty images sued midjourney (AI image creation) for training on their data.</p>
+<div class="footer">
+<p><a href="https://www.reuters.com/legal/getty-images-lawsuit-says-stability-ai-misused-photos-train-ai-2023-02-06/">Source Getty lawsuit</a></p>
+</div>
 </section>
 <section id="ai-in-journal-policies" class="slide level2">
 <h2>AI in Journal Policies</h2>
 <ul>
 <li>Policies are evolving rapidly in response to AI developments.</li>
-<li>Always review journal guidelines before submitting your work.</li>
+<li>Always review journal guidelines before submitting your work.
+<ul>
+<li><a href="https://www.apa.org/pubs/journals/resources/publishing-policies?tab=4">Short APA guidelines</a></li>
+<li><a href="https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals">Longer Elsevier policy</a></li>
+</ul></li>
 </ul>
 </section>
-<section id="elseviers-policies-for-journals" class="slide level2 smaller">
-<h2>Elsevier’s Policies for Journals</h2>
-<p>This is a summary, for details please check the link to their website.</p>
+<section id="elseviers-policies-for-journals-summary" class="slide level2">
+<h2>Elsevier’s Policies for Journals: Summary</h2>
 <ul>
 <li><strong>For Authors</strong>:
 <ul>
@@ -687,13 +697,16 @@
 </ul></li>
 <li><strong>Figures &amp; Images</strong>:
 <ul>
-<li>AI cannot alter or create images (except if part of research methods).</li>
+<li>AI cannot alter or create images (except if part of research methods/design).</li>
 <li>AI use in research must be documented in methods.</li>
 </ul></li>
 </ul>
+<div class="footer">
+<p><a href="https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals">Elsevier AI Policy</a></p>
+</div>
 </section>
-<section id="elseviers-policies-for-journals-2" class="slide level2 smaller">
-<h2>Elsevier’s Policies for Journals 2</h2>
+<section id="elseviers-policies-for-journals-cont" class="slide level2">
+<h2>Elsevier’s Policies for Journals (cont’)</h2>
 <ul>
 <li><strong>For Reviewers</strong>:
 <ul>
@@ -710,25 +723,30 @@
 <p><a href="https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals">Elsevier AI Policy</a></p>
 </div>
 </section>
-<section id="karl-landsteiner-privatuniversität" class="slide level2">
-<h2>Karl Landsteiner Privatuniversität</h2>
-</section>
-<section id="meduni-vienna-phd-thesis-guideline" class="slide level2 smaller">
-<h2>MedUni Vienna PhD thesis guideline</h2>
-<p>“A doctoral thesis is expected to contain text that is the intellectual product of the student. If, for any reason, a student feels that he or she must rely on an AI algorithm or a writing enhancement tool (Chat-GPT, Grammarly, Google Translate, DeepL, etc.) to translate, generate, or paraphrase texts, this must be indicated as such with an appropriate citation at the end of the relevant paragraph and in the Bibliography. While this indication will serve to defend the student against any claims of reviewer deception, there is no guarantee that the reviewers will be appreciative of ample AI-generated texts in the thesis. Accordingly, theses relying extensively on AI may fail to receive a positive evaluation by the reviewers. Students should note AI-detection algorithms will still recognise machine-generated texts even after being paraphrased by the authors, and that subsequent revised thesis submissions remain marked. Hence, students should be aware that relying on AI may incurr a risk, which is solely their own, and it therefore is strongly recommended that they disclose all AI use in the Declaration, the List of Algorithms, the body of the text, and the Bibliography. For more information, please see https://apastyle.apa.org/blog/how-to-cite-chatgpt”</p>
-</section>
-<section id="implications-for-academic-research" class="slide level2">
-<h2>Implications for Academic Research</h2>
+<section id="beyond-papers-general-research-policies" class="slide level2">
+<h2>Beyond Papers: General Research Policies?</h2>
 <ul>
-<li>Hallucinations:
+<li>Universities need to develop (realistic &amp; progressive) policies</li>
+<li><a href="https://hannahmetzler.eu/ai_skills/Ethics/#/meduni-vienna-phd-thesis-guideline">Example</a> of a PhD thesis guideline at MedUni Vienna that discourages AI use</li>
+<li>EU guidelines <a href="https://research-and-innovation.ec.europa.eu/document/download/edc8027b-2811-4347-82f4-fa8b29ece534_en?filename=ec_rtd_ai-guidelines-factsheet.pdf">factsheet</a> and <a href="https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en?filename=ec_rtd_ai-guidelines.pdf">report</a>
 <ul>
-<li>Citation</li>
-<li>Wrong information</li>
+<li>Critical Thinking, Integrity, Responsibility, Human Oversight, Transparency, Privacy, Confidentiality, Fairness</li>
 </ul></li>
-<li>Plagiarism issues:
+<li>Fast innovation and unregulated space</li>
+<li>Act based on these broad ethical principles. Think yourself. You are accountable.</li>
+</ul>
+</section>
+<section id="citations-references-plagiarism" class="slide level2">
+<h2>Citations, References &amp; Plagiarism</h2>
 <ul>
-<li>Altough verbatim repetitions of text are very rare in LLMs, the use of a plagiarism checker is advised.</li>
+<li>How to cite ChatGPT: <a href="https://apastyle.apa.org/blog/how-to-cite-chatgpt">APA instructions</a>
+<ul>
+<li>Describe how you used the model (e.g.&nbsp;in Methods)</li>
+<li>When prompted with “…” the ChatGPT-generated text indicated that … (OpenAI, 2023).</li>
+<li>Reference: OpenAI. (2023). ChatGPT (Mar 14 version) [Large language model]. https://chat.openai.com/chat</li>
 </ul></li>
+<li>Plagiarism: Although word-by-word repetition of text is very rare, use a plagiarism checker to be sure.</li>
+<li>Check for hallucinations (see session on <a href="https://hannahmetzler.eu/ai_skills/Prompting/#/hallucinations">prompting</a>)</li>
 </ul>
 </section>
 </section>
@@ -1012,18 +1030,7 @@
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1055,7 +1062,47 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1092,7 +1139,11 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {
