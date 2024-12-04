@@ -13,7 +13,7 @@ and their strengths, and discuss the most important ethical questions around usi
 ## Workshop slides for today: 
 
 - [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
-- - [Introduction & Ethids](https://hannahmetzler.eu/ai_skills/IntroductionEthicsShort)
+- [Introduction & Ethics](https://hannahmetzler.eu/ai_skills/IntroductionEthicsShort)
 - [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
 - [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
 - [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Research)
