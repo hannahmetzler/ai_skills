@@ -1,0 +1,105 @@
+---
+format: 
+  # html:
+  #   toc: true
+  revealjs: 
+    transition: "slide"
+    theme: [default, custom.scss]
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+editor: source
+---
+
+## <br> Idea collection of LLM Chatbot Use Cases for Researchers
+
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+Collection of ideas for where you might experiment with chatbots in the future
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+
+
+## Summarizing content
+
+-   Record workshops, interviews, meetings: note taking & summaries
+-   Upload long reports/papers & analyse: 
+    - compare 2 university annual reports, table with 10 differences
+    - Grant regulatios: ask your specific questions
+-   Summarizing a paper based on notes you took for other papers: [Zotero note example](https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8)
+    
+## Writing {.smaller}
+
+- Write abstract draft given the paper
+- Social media thread based on paper
+- Adapt application to new position: upload CV, job call/description & motivation letter examples
+- Adapt paper for submission to new journal 
+    - Upload paper version, journal requirements, example papers from journal
+- Emails: use email thread as context
+-   [Feeding it with my papers](https://chatgpt.com/share/67166dd7-d494-800b-a652-1f0bb114d354), digital scientific twin
+-   [Recommendation letter](https://chatgpt.com/share/67166d34-1fa8-800b-ba58-0bc6da8dea1b)
+-   Refining [cover letter & teaching statement](https://chatgpt.com/share/67166cc1-a2bc-800b-ad9f-28eb8b5078d9)
+
+## Writing: Prompt inspirations for...
+
+::: columns
+::: column
+- Idea generation
+- Structuring content
+- Proofreading
+- Citation guidance
+- Paraphrasing
+- Improving language & vocabulary
+:::
+::: column
+- Clarifying concepts
+- Draft review
+- writing prompts
+- Abstract & Summary
+- Help with Methods
+:::
+::::
+
+::: footer
+<https://learnprompt.org/chatgpt-prompts-for-academic-writing/>
+:::
+
+
+## Getting feedback on everything
+
+- Upload presentation slides: how to improve slides?
+- Screenshot of your weekly schedule: better time management?
+- Reports, papers, course syllabi...
+- Career (and other) decisions & time management
+
+## Create outline and structure suggestions
+
+- Outline/structure for a presentation
+- Course syllabus draft
+- Which topics should I cover?
+
+
+## Area specific research tasks
+
+-   Surveys design
+    - [develop & test MC questions](https://chatgpt.com/share/67166062-c0e4-800b-b018-07562fc3819d)
+    - [check comprehensibility](https://chatgpt.com/share/6716608a-2044-800b-9461-c7508b2912b4)
+    - [answer options](https://chatgpt.com/share/67166a29-9330-800b-b041-41c1b9554e8c)
+-   Statistics questions: [Example](https://chatgpt.com/share/670fd64f-cd54-800b-8539-84730cb2414c) & [high quality prompt](https://www.maastrichtuniversity.nl/choose-statistics)
+-   Discussion about [social media & mental health](https://chatgpt.com/share/671668f9-c280-800b-83ef-0e591c1200ca)
+
+## Brainstorming & Exploration
+
+-   Should I accept a journalist request? Answer ideas for [journalist interview questions](https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f) showed me that I could. 
+-   [Academic application: Writing the statement on "Future research directions"](https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea): exploring the research focus of the group and research area I aimed for. (second half of chat)
+
