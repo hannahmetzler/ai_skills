@@ -42,17 +42,29 @@ editor: source
 
 |               |                                |
 |---------------|--------------------------------|
-| 10h -  10h15   | Welcome & Setup |
-| 10h15 - 10h45   | Introduction to LLMs & important ethical aspects |
-| 10h45 - 11h30  | Chatbot essentials |
+| 9h15 -  9h30   | Welcome & Setup |
+| 9h30 - 10h30   | Introduction to LLMs & important ethical aspects |
 |  | **Coffee break** |
-| 11h45 - 12h | Chatbot essentials Exercise |
-| 12h-13h   | Advanced prompting strategies  |
+| 10h40 - 11h30  | Chatbot essentials |
+| 11h30 - 11h50 | Chatbot essentials Exercise |
+| 11h50-12h45   | Advanced prompting strategies  |
 | | **Lunch break** |
-| 14h -  14h45    | Scientific tools based on LLMs |
+| 13h35 -  14h20    | Scientific tools based on LLMs |
 |  | **Coffee break** |
 |15h - 15h45 | Scientific writing with chatbots |
-| 15h45 - 16h | Resources & open questions |
+|15h45 - 16h | Resources & open questions |
+
+::: notes
+Actual times. 
+- 50 min früher gestartet, bis 12h Chatbot essentials plus exercise den Vorsprung aufgebraucht. 
+- Intro & Ethics Short mit vielen Fragen/Diskussionen: 1h, 9h25-10h25, dann 15 min Pause
+- Chatbot essentials: 1h10, 10h40-11h50
+- Advanced prompting: 60 min wie geplant mit Exercise, 45 ohne exercise zu Halluzinationen. 
+- Scientific tools: 30 min plus 15 Exercise ist perfekt. 
+
+Abschluss genau 6h: 15h15.
+Abschluss wahrscheinlich 15h30
+:::
 
 ## Access to LLM chatbots for today
 
