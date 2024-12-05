@@ -52,5 +52,9 @@ For the workshop exercises in the LLM workshop, we recommend having access to a 
     4. (Claudet is a voice extension you can only use if you buy API access to Claude. Not for this workshop.)
 
 * **Option 3: [Google Gemini](https://gemini.google/advanced/) Pro (Free Trial)** Google offers a free trial of Gemini Pro for one month. If you cancel before the trial ends, there's no cost.
+    1. Sign up under https://gemini.google.com/
+    2. In the paid Pro version, you can choose to turn off the "Gemini Apps Activity" setting. 
+    This prevents any data from being saved (your chats, your feedback, info about your location), and makes sure Google does not use your data to train further models. 
+    Unfortunately, we have found no way to only turn off model training on your data while keeping track of your earlier chats in Gemini. 
 
 Looking forward to seeing you at the workshop\!
