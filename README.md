@@ -10,25 +10,24 @@ and their strengths, and discuss the most important ethical questions around usi
 - Workshop developed by: [Dr. Hannah Metzler](www.hannahmetzler.eu) & Konstantin Hebenstreit, MSc.
 
 
-## Workshop slides for today: 
+## Workshop slides
 
-- [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
-- [Introduction & Ethics](https://hannahmetzler.eu/ai_skills/IntroEthicsShort)
-- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
-- [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
-- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Research)
-- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
-- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
-
-### More detailled session versions & additional sessions: 
-
+- [Introduction & Ethics Short](https://hannahmetzler.eu/ai_skills/IntroEthicsShort)
 - [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/Introduction)
 - [Ethics](https://hannahmetzler.eu/ai_skills/Ethics)
+- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
+- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
 - [Customizing Chatbots](https://hannahmetzler.eu/ai_skills/Customizing)
-- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/Research/#/researcher-use-cases)
+- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/UseCases)
 - [Exercises: Coding & coaching](https://hannahmetzler.eu/ai_skills/CodingCoaching)
+- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
-(from: Skills training at LBG Career Center, October 29, 2024, Vienna)
+## Workshop Overviews
+
+- Karl Landsteiner Privatuniversität Krems, Zentrum für Transitionspsychiatrie, December 4, 2024: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
+- Skills training at Ludwig Boltzmann Gesellschaft Career Center, October 29 2024, Vienna: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeLBG)
 
 ## Preparation before the workshop: 
 
