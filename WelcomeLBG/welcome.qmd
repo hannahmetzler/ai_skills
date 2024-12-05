@@ -49,6 +49,19 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 | 16h00 - 16h30    | Try something new or fun |
 | 16h30 - 17h | Resources, Questions, Closing round |
 
+## Slides for today
+
+- [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/Introduction)
+- [Ethics](https://hannahmetzler.eu/ai_skills/Ethics)
+- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
+- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
+- [Customizing Chatbots](https://hannahmetzler.eu/ai_skills/Customizing)
+- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/UseCases)
+- [Fun exercises: Coding or coaching](https://hannahmetzler.eu/ai_skills/CodingCoaching)
+- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
+
 ## Access to LLM chatbots for today
 
 - Who has a paid account?

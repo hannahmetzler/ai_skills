@@ -38,7 +38,7 @@ editor: source
 -   One thing you have already used LLMs for
 -   If any: particular expectation or interests for today
 
-## (Rough) plan for the day {.smaller}
+## Plan for the day {.smaller}
 
 |               |                                |
 |---------------|--------------------------------|
@@ -47,12 +47,16 @@ editor: source
 |  | **Coffee break** |
 | 10h40 - 11h30  | Chatbot essentials |
 | 11h30 - 11h50 | Chatbot essentials Exercise |
-| 11h50-12h45   | Advanced prompting strategies  |
+| 11h50 - 12h45   | Advanced prompting strategies  |
 | | **Lunch break** |
 | 13h35 -  14h20    | Scientific tools based on LLMs |
-|  | **Coffee break** |
-|15h - 15h45 | Scientific writing with chatbots |
-|15h45 - 16h | Resources & open questions |
+|  | **Short break** |
+|14h30 - 15h15 | Scientific writing with chatbots |
+|15h15 - 15h30 | Resources & open questions |
+
+::: footer
+Updated to actual times
+:::
 
 ::: notes
 Actual times. 
@@ -66,8 +70,20 @@ Abschluss genau 6h: 15h15.
 Abschluss wahrscheinlich 15h30
 :::
 
+## Workshop slides for today
+
+-  [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
+- [Introduction & Ethics Short](https://hannahmetzler.eu/ai_skills/IntroEthicsShort)
+- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
+- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
+- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
+
 ## Access to LLM chatbots for today
 
 - Who has a paid account?
 - Which models?
 - Did all others create a Gemini pro trial account?
+
+
