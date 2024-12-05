@@ -49,7 +49,7 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 | 16h00 - 16h30    | Try something new or fun |
 | 16h30 - 17h | Resources, Questions, Closing round |
 
-## Slides for today
+## Slides for today {.smaller}
 
 - [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/Introduction)
 - [Ethics](https://hannahmetzler.eu/ai_skills/Ethics)
