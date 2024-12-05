@@ -1,8 +1,4 @@
 ---
-title: "Ethical considerations"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Konstantin Hebenstreit"
-date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"
@@ -21,6 +17,20 @@ format:
 #editor
 editor: source
 ---
+
+## <br> Ethical Considerations
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Konstantin Hebenstreit, M.Sc.** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
 ## Ethics in using AI for research
 

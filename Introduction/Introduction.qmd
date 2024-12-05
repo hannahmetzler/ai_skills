@@ -1,8 +1,4 @@
 ---
-title: "How do Large Language Models (LLMs) work?"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Konstantin Hebenstreit"
-date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"
@@ -20,6 +16,20 @@ format:
 #editor
 editor: source
 ---
+
+## <br> Introduction: How do Large Language Models (LLMs) work?
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Konstantin Hebenstreit, M.Sc.** (& Mag. Dr. Hannah Metzler) <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
 ## AI and Science
 

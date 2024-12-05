@@ -1,8 +1,4 @@
 ---
-title: "Customizing Chatbots"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Konstantin Hebenstreit"
-date: "October 29 2024"
 format: 
   revealjs: 
     transition: "slide"
@@ -22,7 +18,19 @@ format:
 editor: source
 ---
 
-# Customizing Chatbots
+## <br> Customizing Chatbots
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Konstantin Hebenstreit, M.Sc.** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
 ## System prompts
 
@@ -115,6 +123,12 @@ When a user’s message begins with a keyword, recognize it as a command and fol
    - Action: Describe an expert suited to address the question, identifying their expertise.
    - Check-In: Confirm if the user wants the answer from this perspective.
 
+## Custom LLM Chatbots
+
+- CustomGPT in ChatGPT (covered on the next slides)
+- Gems in Gemini
+- Projects in Claude
+
 ## Creating Custom GPTs: How to
 
 :::::: columns
@@ -157,24 +171,16 @@ Loading in relevant websites I found (as html files).
 ![](images/quarto_gpt_2.png)
 
 
-## Exercise: Create your CustomGPT (15 min) {.smaller}
+## Exercise: Create a Custom Chatbot (15 min) 
 
-Creation of a customised model for specific requirements: 
+1. Choose a regular task & create a custom model for it: 
 
 - Your writing buddy (upload all your scientific texts)
 - Concise answers for code, adapted to my skills
+- [Prompt examples](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/) for other ideas: Proofreader, LinkedIn content  creator, Email drafter
 
-
-[prompt examples](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/) for other ideas:
-
-- Proofreader
-- LinkedIn content creator
-- Email drafter
-
-#### Add addtinional files that are relevant for your GPT:
-
-#### E.g. Websites with instructions of how to peform the task.
-
+2. Write a detailed prompt
+3. **Add addtinional files relevant for your GPT**, e.g. websites with instructions for the task.
 
 
 ## Links to predifined costumized Chatbots
