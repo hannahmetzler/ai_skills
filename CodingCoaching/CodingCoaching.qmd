@@ -1,8 +1,4 @@
 ---
-title: "Try something new or meet your personal LLM coach"
-subtitle: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-author: "Hannah Metzler"
-date: "October 29 2024"
 format: 
   # html:
   #   toc: true
@@ -21,6 +17,21 @@ format:
 #   data-background-opacity: "0.5"
 editor: source
 ---
+
+## <br> Try something new or meet your personal LLM coach
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
 
 ## 3 exercise options (15 minutes)
 1. Data analysis
