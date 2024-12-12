@@ -8,7 +8,7 @@
 <link href="Prompting_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="Prompting_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="Prompting_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.4.550">
 
   <title>prompting</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,7 +41,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -69,7 +69,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.cf { color: #003b4f; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -83,7 +83,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.kw { color: #003b4f; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -426,7 +426,8 @@
 <li>Answer is statistically probable: prototypical, average, generalized</li>
 <li>Generalizes across time, no real time-access</li>
 </ul>
-</div></div>
+</div>
+</div>
 <aside class="notes">
 <p>LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (brainstorming, managing projects, creating documents…)</p>
 <style type="text/css">
@@ -441,10 +442,10 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="general-tips-for-working-with-chatbots" class="slide level2">
-<h2>General tips for working with Chatbots</h2>
+<section id="general-tips-for-working-with-llm-chatbots" class="slide level2">
+<h2>General tips for working with LLM Chatbots</h2>
 <ul>
-<li>There is no one “correct” way to prompt LLMs - we are all figuring this out together. Experiment!
+<li>There is no one “correct” way to prompt, no clear science of prompt engineering. We are still figuring this out together.
 <ul>
 <li><em>This is the worst AI you will ever use.</em> [1]</li>
 </ul></li>
@@ -452,21 +453,22 @@
 <ul>
 <li><em>Always invite AI to the table.</em> [1]</li>
 </ul></li>
+<li>Practice is all you need to get good at prompting.</li>
 <li>Use it for the first 80% of your tasks (co-intelligence/ intern).</li>
 <li><em>Treat it like a person.</em> [1]?!</li>
 </ul>
 <div class="footer">
-<p>[1] <a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a> by Ethan Mollick</p>
+<p>Ethan Mollick: [1] <a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a></p>
 </div>
 </section>
 <section id="treat-it-like-a-person" class="slide level2">
 <h2>“Treat it like a person” ?!</h2>
 <ul>
 <li>LLMs behave more like people than software/machines.</li>
-<li>Speak to it as if it was a person (although it isn’t one)</li>
+<li>Speak to it as if it was a patient &amp; forgetful co-worker</li>
 <li>Talk into it: give it lots of context</li>
 <li>Use microphone &amp; headphones to actually talk.</li>
-<li>Give it a persona</li>
+<li>Give it a persona (if that’s useful)</li>
 <li>Give feedback &amp; engage in dialogue
 <ul>
 <li>performance improves very quickly</li>
@@ -486,6 +488,9 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<div class="footer">
+<p>Ethan Mollick: <a href="https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough">Getting started with AI: Good enough prompting</a></p>
+</div>
 </section>
 <section id="voice-conversations" class="slide level2">
 <h2>Voice conversations</h2>
@@ -507,26 +512,19 @@
 <li><p>Headphones for ongoing conversations, microphone to record, stop to transcribe</p></li>
 <li><p>Advanced voice mode: Memory</p></li>
 </ul>
-</div></div>
+</div>
+</div>
 </section>
-<section id="using-it-often-everyday-life-ideas" class="slide level2 scrollable">
+<section id="using-it-often-everyday-life-ideas" class="slide level2 scrollable smaller">
 <h2>Using it often: Everyday life ideas</h2>
 <ul>
 <li><a href="https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243">Recipes</a>: Suggestions based on existing ingredients</li>
-<li>Shopping lists
-<ul>
-<li><a href="https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170">vegetable curry</a>, <a href="https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614">weekly meal plan</a>, <a href="https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63">workshop</a></li>
-</ul></li>
+<li>Shopping lists: <a href="https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170">vegetable curry</a>, <a href="https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614">weekly meal plan</a>, <a href="https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63">workshop</a></li>
 <li><a href="https://chatgpt.com/share/671906a2-24e8-800b-8cb3-502973eda6bb">Concert suggestions</a></li>
 <li><a href="https://chatgpt.com/share/6718fe33-b0e0-800b-ac0f-feffc0a6b341">Personalized travel planning</a></li>
 <li>Household: <a href="https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0">Stain</a> or <a href="https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e">smell</a> removal, <a href="https://chatgpt.com/share/671902f6-0e74-800b-919c-26ad4e102a9f">houseplant care</a></li>
 <li><a href="https://chatgpt.com/share/671902aa-aa98-800b-b2cc-72b726281092">Ideas for presents</a></li>
 <li><a href="https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25">Mindfulness meditation</a> guide</li>
-</ul>
-</section>
-<section id="using-it-often-everyday-life-ideas-1" class="slide level2">
-<h2>Using it often: Everyday life ideas</h2>
-<ul>
 <li>Basic medical advice (<a href="https://chatgpt.com/share/671905fa-5fe8-800b-9adb-fc17d40ee6f7">Ibuprofen vs.&nbsp;Paracetamol</a>)</li>
 <li>Summarizing a long law document on <a href="https://chatgpt.com/share/671903b1-46f0-800b-8e0b-2db2c0d0b33d">chicken welfare</a></li>
 <li>Estimating prices (me selling my old <a href="https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928">cello</a>)</li>
@@ -561,7 +559,15 @@
 </section>
 <section id="effective-prompting-in-a-nutshell" class="slide level2">
 <h2>Effective prompting in a nutshell</h2>
-<table class="caption-top">
+<p><strong>Treat AI just like an infinitely <em>patient new</em> coworker who <em>forgets</em> everything you tell them each new conversation.</strong> <small><a href="https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough">(Ethan Mollick)</a> </small></p>
+<ol type="1">
+<li><strong>Practice</strong>: Learn what it can do well by using it in areas of your expertise.</li>
+<li><strong>Clear instructions</strong>: Be specific &amp; clear about what you want.</li>
+<li><strong>Context</strong>: Provide detailed background information.</li>
+<li><strong>Abundance</strong>: Ask for several options &amp; select one you like.</li>
+</ol>
+<aside class="notes">
+<table>
 <tbody>
 <tr class="odd">
 <td>P</td>
@@ -593,58 +599,55 @@
 </tr>
 </tbody>
 </table>
-<p><strong>PROTECT</strong> (or PC-TE-TOC “PC Tik Tok”)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="persona-for-chatbot-and-user" class="slide level2">
-<h2>Persona for chatbot and user</h2>
-<h3 id="persona">Persona</h3>
+<section id="clear-specific-instructions" class="slide level2">
+<h2>2) Clear &amp; specific instructions</h2>
 <ul>
-<li>As a […], You are a […], Act as a […]</li>
-<li>Scientist, PhD student, professional journalist, empathetic coach, prompt engineer…</li>
-</ul>
-<h3 id="useraudience">User/Audience:</h3>
-<ul>
-<li>Specify expertise level: Explain it like to a …
-<ul>
-<li>5-year old | PhD in biology | someone with an MSc in software engineering</li>
-</ul></li>
-</ul>
-</section>
-<section id="context-task-instructions" class="slide level2">
-<h2>Context &amp; Task instructions</h2>
-<ul>
-<li>Extensive context: Purpose, background, specific details</li>
-<li>Clear, concise, specific instructions:
-<ul>
-<li>e.g.&nbsp;meaningful action words [1] <img data-src="images/specific_task_instructions.png"></li>
-</ul></li>
-<li>“Help me draft an email to…”</li>
+<li>Clear language, for example specific verbs (<em>explain, summarize, list, comment, format</em> [1]) <!-- ![](images/specific_task_instructions.png) --></li>
+<li>Give step-by-step instructions</li>
+<li>Give feedback for improvement (dialogue)</li>
+<li>Give examples</li>
+<li>Include constraints</li>
+<li>Specify tone &amp; style</li>
+<li>Specify output format</li>
 </ul>
 <div class="footer">
 <p>[1] <a href="https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf">Prompt Engineering Cheatsheet</a> (Maximilian Vogel); Verbs on <a href="https://www.learnprompt.org/">learnprompt.org</a></p>
 </div>
 </section>
-<section id="provide-examples" class="slide level2">
-<h2>Provide examples</h2>
+<section id="give-examples" class="slide level2">
+<h2>Give examples</h2>
 <ul>
 <li>An example of the output you want the model to produce.</li>
 <li>Zero-shot vs.&nbsp;one-shot learning</li>
 </ul>
-<h3 id="for-example">For example:</h3>
+<h3 id="what-you-could-use">What you could use:</h3>
 <div class="columns">
 <div class="column">
 <ul>
 <li>Emails</li>
 <li>Abstract</li>
 <li>Social media posts/thread and paper</li>
-<li>Presentation slides</li>
 </ul>
 </div><div class="column">
 <ul>
+<li>Presentation slides</li>
 <li>Paragraph from paper</li>
 <li>Previous recommendation/ application/ cover letters</li>
 </ul>
-</div></div>
+</div>
+</div>
 </section>
 <section id="style-and-output-format" class="slide level2">
 <h2>Style and Output format</h2>
@@ -666,19 +669,57 @@
 <li>list of steps</li>
 <li>a table (Markdown format is handy for copy pasting)</li>
 </ul>
-</div></div>
+</div>
+</div>
 </section>
-<section id="explicit-constraints-or-whitelist" class="slide level2">
-<h2>Explicit constraints or whitelist</h2>
+<section id="constraints-or-whitelist" class="slide level2">
+<h2>Constraints or whitelist</h2>
 <ul>
 <li>What you don’t want the model to do.</li>
 <li>The task you want your model to stick to.</li>
-<li>Specific rules like: Use “Du” rather than “Sie”.</li>
 </ul>
 <h3 id="example-constraints">Example constraints</h3>
 <ul>
 <li>“Rely strictly on the provided text, without including external information.” (summarizing text)</li>
 <li>“Answer only questions about topic X.” (for a conversational chatbot)</li>
+</ul>
+</section>
+<section id="provide-detailed-context" class="slide level2">
+<h2>2) Provide detailed context</h2>
+<ul>
+<li>Purpose, background, specific details</li>
+<li>Copy/paste easily available information (<em>documents, instruction manuals, previous conversations, emails…</em>)</li>
+<li>Use a role/persona (when it’s useful, will not always help):
+<ul>
+<li>As a …, You are a …, Act as a … (<em>PhD student, biologist, journalist, empathetic coach, prompt engineer…</em>)</li>
+</ul></li>
+<li>Audience expertise level: Explain it like to a … (<em>5-year old, someone with a PhD in biology,…</em>)</li>
+</ul>
+<aside class="notes">
+<p>include an example on specific instructions here. Use something where the LLM can create a list, then choose the best. Like E. Mollick here: https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough, in the figure after “working with AI ia a dialogue, not an order.” e.g.: “Write an abstract of this paper” “Write an abstract of this paper for the journal <em>Nature human behavior</em>. Focus on the robust methods, the causal design, the novelty and implications of results. Here are instructions on how to write a good abstract: …</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="remember-the-llms-patience-abundance" class="slide level2">
+<h2>Remember the LLMs patience &amp; abundance</h2>
+<ul>
+<li>Ask for several options and select one you like.</li>
+<li>15 sentences, 30 ideas</li>
+<li>Push for:
+<ul>
+<li><em>variation (“give me ideas that are 80% weirder”),</em></li>
+<li><em>recombination (“combine ideas 12 and 16”) and</em></li>
+<li><em>expansion (“more ideas like number 12”)</em></li>
+</ul></li>
 </ul>
 </section>
 <section id="example-from-during-course-preparation" class="slide level2">
@@ -688,20 +729,35 @@
 <li>Task: Create exercise to practice prompting</li>
 <li>Context: skill training, my previous slides</li>
 <li>Audience: you</li>
-<li>Example exercise: Writing an email (see <a href="#/email">here</a>)</li>
+<li>Provided example exercise: Writing an email (see <a href="#/email">here</a>)</li>
 <li>Output: 3 Quarto slides with one exercise each</li>
 </ul>
+</section>
+<section id="managing-expectations" class="slide level2">
+<h2>Managing expectations</h2>
+<ul>
+<li>Usually not all of these details in every prompt</li>
+<li>Talk “into it”, iterate and add necessary aspects required to improve the answer</li>
+<li>Prompting is not hard to learn</li>
+<li>(Probably) only a useful short-term skill:
+<ul>
+<li>LLMs will get good at prompting</li>
+<li>LLMs will get integrated into software/interfaces</li>
+</ul></li>
+</ul>
+<div class="footer">
+<p><a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a> by Ethan Mollick</p>
+</div>
 </section></section>
 <section>
-<section id="exercise-time" class="title-slide slide level1 center">
-<h1>Exercise Time</h1>
-<p>Practice these steps for:</p>
+<section id="exercise-20-minutes" class="title-slide slide level1 center">
+<h1>Exercise (20 minutes)</h1>
+<p>Practice effective prompting for:</p>
 <ul>
 <li>writing an email</li>
 <li>summarizing content</li>
 <li>help with a statistics question</li>
 </ul>
-<p>20 minutes</p>
 </section>
 <section id="email" class="slide level2">
 <h2>Exercise Option 1: Email (20 minutes)</h2>
@@ -750,22 +806,6 @@
 <h1>Advanced prompting strategies</h1>
 
 </section>
-<section id="managing-expectations" class="slide level2">
-<h2>Managing expectations</h2>
-<ul>
-<li>Usually not all of these details in every prompt</li>
-<li>Talk “into it”, iterate and add necessary aspects required to improve the answer</li>
-<li>Prompting is not hard to learn</li>
-<li>(Probably) only a useful short-term skill:
-<ul>
-<li>LLMs will get good at prompting</li>
-<li>LLMs will get integrated into software/interfaces</li>
-</ul></li>
-</ul>
-<div class="footer">
-<p><a href="https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771">Co-Intelligence: Living and Working with AI</a> by Ethan Mollick</p>
-</div>
-</section>
 <section id="library" class="slide level2">
 <h2>Prompt libraries</h2>
 <ul>
@@ -788,7 +828,8 @@
 <li><a href="https://www.maastrichtuniversity.nl/improve-text-step-step">Improve text</a></li>
 <li><a href="https://www.maastrichtuniversity.nl/choose-statistics">Choose statistis</a></li>
 </ul>
-</div></div>
+</div>
+</div>
 <div class="footer">
 <p><a href="https://www.maastrichtuniversity.nl/prompt-library/prompt-library-prompt-templates">Maastricht University prompt library</a></p>
 </div>
@@ -827,7 +868,8 @@
 <span id="cb1-22"><a href=""></a></span>
 <span id="cb1-23"><a href=""></a>Text</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div></div>
+</div>
+</div>
 </section>
 <section id="markdown" class="slide level2 smaller">
 <h2>Markdown</h2>
@@ -840,7 +882,7 @@
 </ul>
 </div><div class="column" style="width:60%;">
 <h3 id="basic-markdown">Basic Markdown:</h3>
-<table class="caption-top">
+<table>
 <colgroup>
 <col style="width: 50%">
 <col style="width: 50%">
@@ -876,7 +918,8 @@
 </tr>
 </tbody>
 </table>
-</div></div>
+</div>
+</div>
 </section>
 <section id="chain-of-thought-prompting" class="slide level2">
 <h2>Chain-of-thought prompting</h2>
@@ -974,13 +1017,14 @@
 <p><img data-src="images/hallucinations_birthdate.png"></p>
 </div><div class="column">
 <p><img data-src="images/claude_hallucinations_bio.png"></p>
-</div></div>
+</div>
+</div>
 </section>
 <section id="strategies-for-verification-i" class="slide level2">
 <h2>Strategies for verification I</h2>
 <ul>
 <li>4-eyes principle: Model does 80%, 20% human [2]</li>
-<li>Expertise and fact knowledge matters (even more?) [1]</li>
+<li>Expertise and fact knowledge matters. Start using LLMs in your area of expertise. [1]</li>
 <li>Check online and give me 5 sources for this claim [2]</li>
 <li><a href="https://arxiv.org/abs/2309.11495">Chain of Verification</a>: Check online for 4 facts to make sure that this answer is correct [2]</li>
 <li>Ask for better prompts: Why am I not getting the answer I am looking for? Why do you produce false responses?
@@ -995,12 +1039,9 @@
 <section id="strategies-for-verification-ii" class="slide level2">
 <h2>Strategies for verification II</h2>
 <ul>
+<li>Write <em>if you’re unsure or necessary information, say “I don’t have enough information to answer this”.</em> (<a href="https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough">One useful thing</a>)</li>
 <li>Enter the same prompt in different models and compare, e.g.&nbsp;at <a href="https://claude.ai" class="uri">https://claude.ai</a>, <a href="https://poe.com" class="uri">https://poe.com</a>, <a href="https://anakin.ai" class="uri">https://anakin.ai</a></li>
-<li>Ask other models: Enter output of model 1 and ask: “Is this correct? Can you back this up with sources? Do these books exist?”
-<ul>
-<li><a href="https://claude.ai/chat/7fc0d00a-a648-4905-a3bd-c336f7a78b7f">Example ChatGPT to Claude</a></li>
-<li><a href="https://chatgpt.com/share/671f7e35-a6dc-800b-b02c-0e395158611b">Example Claude to ChatGPT</a></li>
-</ul></li>
+<li>Ask other models: Enter output of model 1 and ask: “Is this correct? Can you back this up with sources? Do these books exist?” (Example: <a href="https://claude.ai/chat/7fc0d00a-a648-4905-a3bd-c336f7a78b7f">ChatGPT to Claude</a>, <a href="https://chatgpt.com/share/671f7e35-a6dc-800b-b02c-0e395158611b">Claude to ChatGPT</a>)</li>
 <li>Use LLM tools that provide references: Perplexity AI, Elicit, Dimensions Research AI, ScholarGPT</li>
 </ul>
 </section>
@@ -1299,7 +1340,18 @@
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1331,47 +1383,7 @@
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -1408,11 +1420,7 @@
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

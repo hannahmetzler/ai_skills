@@ -54,32 +54,37 @@ editor: source
 LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (brainstorming, managing projects, creating documents...)
 :::
 
-## General tips for working with Chatbots
+## General tips for working with LLM Chatbots
 
-- There is no one "correct" way to prompt LLMs - we are all figuring this out together. Experiment!
+- There is no one "correct" way to prompt, no clear science of prompt engineering. We are still figuring this out together.
   - _This is the worst AI you will ever use._ [1]
-- Use it often and try it out on many different tasks. 
+- Use it often and try it out on many different tasks.
   - _Always invite AI to the table._ [1]
+- Practice is all you need to get good at prompting. 
 - Use it for the first 80% of your tasks (co-intelligence/ intern).
 - _Treat it like a person._ [1]?!
 
 ::: footer
-[1] [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
+Ethan Mollick: [1] [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771)
 :::
 
 ## "Treat it like a person" ?!
 
 - LLMs behave more like people than software/machines.
-- Speak to it as if it was a person (although it isn't one)
+- Speak to it as if it was a patient & forgetful co-worker
 - Talk into it: give it lots of context
 - Use microphone & headphones to actually talk.
-- Give it a persona
+- Give it a persona (if that's useful)
 - Give feedback & engage in dialogue
   - performance improves very quickly
 - Work on your prompts until you get useful output
 
 ::: notes
 we'll now look at these points in more detail
+:::
+
+::: footer
+Ethan Mollick: [Getting started with AI: Good enough prompting](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough)
 :::
 
 ## Voice conversations
@@ -105,19 +110,15 @@ we'll now look at these points in more detail
 :::
 :::::
 
-## Using it often: Everyday life ideas {.scrollable}
+## Using it often: Everyday life ideas {.scrollable .smaller}
 
 -   [Recipes](https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243): Suggestions based on existing ingredients
--  Shopping lists 
-    - [vegetable curry](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170), [weekly meal plan](https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614), [workshop](https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63)
+-  Shopping lists: [vegetable curry](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170), [weekly meal plan](https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614), [workshop](https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63)
 - [Concert suggestions](https://chatgpt.com/share/671906a2-24e8-800b-8cb3-502973eda6bb)
 -   [Personalized travel planning](https://chatgpt.com/share/6718fe33-b0e0-800b-ac0f-feffc0a6b341)
 -   Household: [Stain](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0) or [smell](https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e) removal, [houseplant care](https://chatgpt.com/share/671902f6-0e74-800b-919c-26ad4e102a9f)
 -   [Ideas for presents](https://chatgpt.com/share/671902aa-aa98-800b-b2cc-72b726281092)
 -   [Mindfulness meditation](https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25) guide
-
-## Using it often: Everyday life ideas
-
 - Basic medical advice ([Ibuprofen vs. Paracetamol](https://chatgpt.com/share/671905fa-5fe8-800b-9adb-fc17d40ee6f7))
 - Summarizing a long law document on [chicken welfare](https://chatgpt.com/share/671903b1-46f0-800b-8e0b-2db2c0d0b33d)
 - Estimating prices (me selling my old [cello](https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928))
@@ -138,6 +139,15 @@ all links only work if I am logged in??/
 
 ## Effective prompting in a nutshell
 
+ __Treat AI just like an infinitely _patient new_ coworker who _forgets_ everything you tell them each new conversation.__ 
+ <small>[(Ethan Mollick)](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough) </small>
+
+1) **Practice**: Learn what it can do well by using it in areas of your expertise. 
+2) **Clear instructions**: Be specific & clear about what you want.
+3) **Context**: Provide detailed background information. 
+4) **Abundance**: Ask for several options & select one you like.
+
+::: notes
 |  |                                     |
 |--------|------------------------------------------|
 | P      | Assign a **P**ersona/role                |
@@ -147,50 +157,40 @@ all links only work if I am logged in??/
 | T      | Specify **T**one/style                   |
 | O      | Specify **O**utput format                |
 | R/C    | Provide **c**onstraints (**R**estrictions)   |
+:::
 
-**PROTECT** (or PC-TE-TOC "PC Tik Tok")
+## 2) Clear & specific instructions
 
-## Persona for chatbot and user
-
-### Persona
-
--  As a [...], You are a [...], Act as a [...]
-  - Scientist, PhD student, professional journalist, empathetic coach, prompt engineer...
-  
-### User/Audience: 
-
-- Specify expertise level: Explain it like to a ...
-  - 5-year old | PhD in biology | someone with an MSc in software engineering
-
-## Context & Task instructions
-
-- Extensive context: Purpose, background, specific details
-- Clear, concise, specific instructions:
-  - e.g. meaningful action words [1]
-![](images/specific_task_instructions.png)
--   "Help me draft an email to..."
+- Clear language, for example specific verbs (_explain, summarize, list, comment, format_ [1])
+<!-- ![](images/specific_task_instructions.png) -->
+- Give step-by-step instructions
+- Give feedback for improvement (dialogue)
+- Give examples
+- Include constraints
+- Specify tone & style
+- Specify output format
 
 ::: footer
 [1] [Prompt Engineering Cheatsheet](https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf) (Maximilian Vogel); Verbs on [learnprompt.org](https://www.learnprompt.org/)
-
 :::
 
-## Provide examples
+
+## Give examples
 
 - An example of the output you want the model to produce.
 - Zero-shot vs. one-shot learning
 
-
-### For example: 
+### What you could use:  
 ::: columns
 ::: column
 
 - Emails
 - Abstract
 - Social media posts/thread and paper
-- Presentation slides
+
 :::
 ::: column
+- Presentation slides
 - Paragraph from paper
 - Previous recommendation/ application/ cover letters
 :::
@@ -220,37 +220,70 @@ all links only work if I am logged in??/
 :::
 :::
 
-## Explicit constraints or whitelist
+## Constraints or whitelist
 
 - What you don't want the model to do.
 - The task you want your model to stick to.
-- Specific rules like: Use "Du" rather than "Sie". 
-
 
 ### Example constraints
 
 - "Rely strictly on the provided text, without including external information." (summarizing text)
 - "Answer only questions about topic X." (for a conversational chatbot)
 
+## 2) Provide detailed context
 
+- Purpose, background, specific details
+- Copy/paste easily available information (_documents, instruction manuals, previous conversations, emails..._)
+- Use a role/persona (when it's useful, will not always help):
+  - As a ..., You are a ..., Act as a ... (_PhD student, biologist, journalist, empathetic coach, prompt engineer..._)
+- Audience expertise level: Explain it like to a ... (_5-year old, someone with a PhD in biology,..._)
+
+
+::: notes
+
+include an example on specific instructions here. Use something where the LLM can create a list, then choose the best. Like E. Mollick here: https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough, in the figure after "working with AI ia a dialogue, not an order."
+e.g.: "Write an abstract of this paper"
+"Write an abstract of this paper for the journal _Nature human behavior_. Focus on the robust methods, the causal design, the novelty and implications of results. Here are instructions on how to write a good abstract: ...
+:::
+
+## Remember the LLMs patience & abundance
+
+- Ask for several options and select one you like.
+- 15 sentences, 30 ideas
+- Push for:  
+    - _variation (“give me ideas that are 80% weirder”),_ 
+    - _recombination (“combine ideas 12 and 16”) and_ 
+    - _expansion (“more ideas like number 12”)_
+    
 ## Example from during course preparation
 
 - [ChatGPT conversation](https://chatgpt.com/share/671a423d-dba8-800b-bd9a-f27bbe249c02)
 - Task: Create exercise to practice prompting
 - Context: skill training, my previous slides
 - Audience: you
-- Example exercise: Writing an email (see [here](#email))
+- Provided example exercise: Writing an email (see [here](#email))
 - Output: 3 Quarto slides with one exercise each
 
-# Exercise Time
+## Managing expectations
 
-Practice these steps for: 
+- Usually not all of these details in every prompt
+- Talk "into it", iterate and add necessary aspects required to improve the answer
+- Prompting is not hard to learn
+- (Probably) only a useful short-term skill: 
+  - LLMs will get good at prompting
+  - LLMs will get integrated into software/interfaces
+
+::: footer
+[Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
+:::
+
+# Exercise (20 minutes)
+
+Practice effective prompting for: 
 
 - writing an email
 - summarizing content
 - help with a statistics question
-
-20 minutes
 
 ## Exercise Option 1: Email (20 minutes) {#email}
 
@@ -287,19 +320,6 @@ Practice these steps for:
 
 
 # Advanced prompting strategies
-
-## Managing expectations
-
-- Usually not all of these details in every prompt
-- Talk "into it", iterate and add necessary aspects required to improve the answer
-- Prompting is not hard to learn
-- (Probably) only a useful short-term skill: 
-  - LLMs will get good at prompting
-  - LLMs will get integrated into software/interfaces
-
-::: footer
-[Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
-:::
 
 ## Prompt libraries {#library}
 
@@ -475,8 +495,9 @@ Could you please write a mega prompt from our interaction here, that I can use a
 
 ## Strategies for verification I
 
+
 - 4-eyes principle: Model does 80%, 20% human [2]
-- Expertise and fact knowledge matters (even more?) [1]
+- Expertise and fact knowledge matters. Start using LLMs in your area of expertise. [1] 
 - Check online and give me 5 sources for this claim [2]
 - [Chain of Verification](https://arxiv.org/abs/2309.11495): Check online for 4 facts to make sure that this answer is correct [2]
 - Ask for better prompts: Why am I not getting the answer I am looking for? Why do you produce false responses?
@@ -488,10 +509,10 @@ Could you please write a mega prompt from our interaction here, that I can use a
 
 ## Strategies for verification II
 
+- Write _if you’re unsure or necessary information, say “I don’t have enough information to answer this"._ ([One useful thing](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough))
 -   Enter the same prompt in different models and compare, e.g. at <https://claude.ai>, <https://poe.com>, <https://anakin.ai>
 -   Ask other models: Enter output of model 1 and ask: "Is this correct? Can you back this up with sources? Do these books exist?"
-    - [Example ChatGPT to Claude](https://claude.ai/chat/7fc0d00a-a648-4905-a3bd-c336f7a78b7f)
-    - [Example Claude to ChatGPT](https://chatgpt.com/share/671f7e35-a6dc-800b-b02c-0e395158611b)
+ (Example: [ChatGPT to Claude](https://claude.ai/chat/7fc0d00a-a648-4905-a3bd-c336f7a78b7f), [Claude to ChatGPT](https://chatgpt.com/share/671f7e35-a6dc-800b-b02c-0e395158611b))
 - Use LLM tools that provide references: Perplexity AI, Elicit, Dimensions Research AI, ScholarGPT
 
 ## Exercise: Correcting Hallucinations (15 min) {.smaller}
