@@ -1,0 +1,81 @@
+---
+format: 
+  revealjs: 
+    transition: "slide"
+    theme: [default, custom.scss]
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+editor: source
+---
+
+## <br> Mastering AI Chatbots: Optimizing Research through Effective Use
+<br>
+
+### LLM Workshop Austrian Archaeological Institute
+
+<br>
+
+**Konstantin Hebenstreit** <br>
+*Medical University of Vienna*
+<br><br>
+9 January 2025
+
+## Who am I? {.smaller}
+
+PhD at the Artificial Intelligence Institute at Meduni Vienna <br> AI, LLMs & Data Science <br> konstantin.hebenstreit\@meduniwien.ac.at <br> X: [\@K_Hebenstreit](https://x.com/K_Hebenstreit)
+
+### Profile 
+
+-	2023-2024: Doctoral researcher, Artificial intelligence Institute, Medical University of Vienna
+-	2023: Research Assistant, Artificial Intelligence Institute, Medical University of Vienna
+-	2020: Machine Learning internships at University of Vienna & Complexity Science Hub
+-	M.Sc. in Artificial Intelligence, B.Sc. in Physiotherapy and Psychology 
+
+
+## Plan for the day {.smaller}
+
+|               |                                |
+|---------------|--------------------------------|
+| 9h30 -  9h45   | Welcome & Setup |
+| 9h45 - 10h45   | Introduction to LLMs & important ethical aspects |
+|  | **Coffee break** |
+| 10h55 - 11h40  | Chatbot essentials |
+| 11h40 - 12h00 | Chatbot essentials Exercise |
+| | **Lunch break** |
+| 12h45 -  13h35    | Scientific tools based on LLMs |
+| | **OR** |
+| 12h45 -  13h35    | Scientific writing with chatbots |
+|13h35 - 14h00 | Resources & open questions |
+
+
+::: notes
+Actual times. 
+- 50 min früher gestartet, bis 12h Chatbot essentials plus exercise den Vorsprung aufgebraucht. 
+- Intro & Ethics Short mit vielen Fragen/Diskussionen: 1h, 9h25-10h25, dann 15 min Pause
+- Chatbot essentials: 1h10, 10h40-11h50
+- Advanced prompting: 60 min wie geplant mit Exercise, 45 ohne exercise zu Halluzinationen. 
+- Scientific tools: 30 min plus 15 Exercise ist perfekt. 
+
+Abschluss genau 6h: 15h15.
+Abschluss wahrscheinlich 15h30
+:::
+
+## Workshop slides for today
+
+-  [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeArchaeology)
+- [Introduction & Ethics Short](https://hannahmetzler.eu/ai_skills/IntroEthicsShort)
+- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
+- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
+- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
+
+## Access to LLM chatbots for today
+
+- Who has a paid account?
+- Which models?
+- Did all others create a Gemini pro trial account?
+
+
