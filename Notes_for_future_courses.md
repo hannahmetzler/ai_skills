@@ -18,3 +18,7 @@ Ethan Mollick Newsletter: Which model to use? Has a great image comparing the mo
 - Writes research reports, better than the average human, not as good as the best humans
 - no good arguments when there is conflicting evidence
 - a bit superficial
+
+# New Developments
+
+- Reasoning via reinforcement learning: https://benjamintodd.substack.com/p/teaching-ai-to-reason-this-years
