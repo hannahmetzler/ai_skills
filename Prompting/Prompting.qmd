@@ -63,7 +63,7 @@ Tipp: neuer Chat - neuer kontext notwendig
 - Use it often and try it out on many different tasks.
   - _Always invite AI to the table._ [1]
 - Practice is all you need to get good at prompting. 
-- Use it for the first 80% of your tasks (co-intelligence/ intern).
+- Use it for the first 80% of your tasks (co-intelligence/ co-worker).
 - _Treat it like a person._ [1]?!
 
 ::: footer
@@ -450,6 +450,30 @@ Avoid chain-of-thought prompts: Since these models perform reasoning internally,
 Use delimiters for clarity: Use delimiters like triple quotation marks, XML tags, or section titles to clearly indicate distinct parts of the input, helping the model interpret different sections appropriately.
 Limit additional context in retrieval-augmented generation (RAG): When providing additional context or documents, include only the most relevant information to prevent the model from overcomplicating its response.
 :::
+
+## Re-reading improves accuracy
+
+
+::: columns
+::: column
+Improve reasoning by asking to re-read (RE2) a question.
+
+  1. Question
+  2. "Read the question again + Question"
+  3. Chain of thought (CoT)
+
+:::
+::: column
+![](images/rereading.png)
+:::
+:::
+
+Later tokens see earlier tokens: "tennis balls" sees "how many"
+
+::: footer
+[Xu et al. (2024)](https://arxiv.org/pdf/2309.06275)
+:::
+
 
 ## Let the model write your next base prompt {#base}
 
