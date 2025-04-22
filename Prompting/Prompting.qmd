@@ -52,6 +52,8 @@ editor: source
 
 ::: notes
 LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (binstorming, managing projects, creating documents...)
+Meta-Regeln, Kontext, FRagen/Antwort schrittweise: https://www.youtube.com/watch?v=cfl7q1llkso&t=5s Minute 30 - vielleicht gut als Vereinfachung meines Prompting Teils?
+Tipp: neuer Chat - neuer kontext notwendig
 :::
 
 ## General tips for working with LLM Chatbots
@@ -157,6 +159,13 @@ all links only work if I am logged in??/
 | T      | Specify **T**one/style                   |
 | O      | Specify **O**utput format                |
 | R/C    | Provide **c**onstraints (**R**estrictions)   |
+:::
+
+::: notes
+Vereinfacht: https://www.youtube.com/watch?v=cfl7q1llkso&t=5s bei Minute 33
+
+Kontext, Frage, Format, Beispiele, Rollen, Zielgruppe, Kanal. 
+Constraints vielleicht entfernen?
 :::
 
 ## 2) Clear & specific instructions
