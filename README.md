@@ -25,7 +25,7 @@ and their strengths, and discuss the most important ethical questions around usi
 - [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
 ## Workshop Overviews
-
+- Austrian Academy of Sciences, Austrian Archaeological Institute, January 9, 2025: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeArchaeology)
 - Karl Landsteiner Privatuniversität Krems, Zentrum für Transitionspsychiatrie, December 4, 2024: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
 - Skills training at Ludwig Boltzmann Gesellschaft Career Center, October 29 2024, Vienna: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeLBG)
 
