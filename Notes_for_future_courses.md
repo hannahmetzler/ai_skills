@@ -1,6 +1,6 @@
 # In the introduction to different models:
 
-# To Do: 
+# Models and model features
 
 - Which models exist slide
   - GPT 4.5 (for writing and exploring ideas - is this ChatGPT Deep Research?), 
@@ -8,20 +8,51 @@
   - GPT 4.1 instead of 4: larger window of up to one million tokens of context, gpt4.1 mini, gpt-41 nano. More lightweight. 4.1. is 26 percent cheaper than gpt-4o.
   - GPT-4.5 preview will be deprectated on July 14th? https://www.theverge.com/news/647896/openai-chatgpt-gpt-4-1-mini-nano-launch-availability
   - GPT 5 in a few months
-    - Claude 3.7, Gemini 2.5 Pro (free, just less agentic ability)
-    -   - slightly less capable but faster and cheaper models (Gemini 2.5 Flash, o4-mini, and Grok-3-mini)
+- Claude 3.7
+- Gemini 2.5 Pro (experimental, free, just less agentic ability)
+    - slightly less capable but faster and cheaper models (Gemini 2.5 Flash, and Grok-3-mini)
 - Update part about o1 to o3
   - o3 mini: quick reasoning (wie Deepseek R1), particularly good for programming
   - better: 04 mini. 
   - trained to problem solve, and use tools agentically (search, write code, generae graphs, explain, etc)
-- Include Deep Research: Google Deep Research, Claude Research
+  
+- Claude features: integrates with Google Workspace (calendar, Docs), Research: search in your work context and on the web, verified citations (not yet available in Austria)
+- Organize in Projects
+
+
+# Include Deep Research: Google Deep Research, Claude Research
   - Think for much longer
   - provide sources
   - limited access with ChatGPT plus (10 questions/ month, 120 as a Pro User
   - still includes unreliable sources, can include hallucinations)
-- Change data privacy/data training slide slide
-- Claude features: integrates with Google Workspace (calendar, Docs), Research: search in your work context and on the web, verified citations (not yet available in Austria)
-- Organize in Projects
+
+
+
+## Customizing session
+
+- Personalizing GPT: Settings - personalization, or also: Customize ChatGPT
+  - Update about the memory function, recommended settings if users want memory vs. not. 3 images with examples by Hannah and where to find it. 
+    - new memory feature out since 10 April 2025 for plus users
+  - see image in customizing/images: customizing_GPT_individualized_user_info_and_instructions.png. Is this the new system prompt?
+  - Info I provide here: 
+    - gender, age, some personal attributes I think are relevant, interests, my education, 
+    my research topics during the PhD and after (my expertise areas), education I am currently pursuing.
+- 1 image about data controls settings in main folder. Interesting: saves shared links
+
+- Gems in Gemini: Gem manager
+  - Gems by google, and creating your own (no access to gems by other users?)
+  - add up to 10 files, give instructions, and name
+
+# Gemini
+
+- Google Gemini Agents: take care of tasks on its own
+- Gemini & ChatGPT app: speak German
+- Integration with Google Docs, Gmail, Drive
+- Connect to Apps: Youtube, google maps, flights, hotels, workspace, calendar, tasks etc
+
+- Gemini 2.0: 
+  - multimodal input and output, search, use of programs
+  - gemini flash (more efficient, a bit smaller)
 
 
 # Ethan Mollick Newsletter: Which model to use?
@@ -40,6 +71,10 @@
 - Gemini & Claude do not train on your data, opt-out for ChatGPT
 - From the blogpost/newsletter: "very major provider (except DeepSeek) now offers some form of privacy-focused mode: ChatGPT lets you opt out of training, and Claude says it will not train on your data as does Gemini. 
 - The exception is if you're handling truly sensitive data like medical records – in those cases, you'll still want to look into enterprise versions of these tools that offer additional security guarantees and meet regulatory requirements."
+- Gemini Apps Activity: 
+  - save activity for 3, 18 or 36 months
+  - required for google drive/apps integration
+
 
 # Research
 
@@ -65,6 +100,10 @@
 - You'll learn where hallucinations are a big deal, and where they are not over time
 - Reduce hallucinations by giving the AI the ability to be wrong, for example, 
 writing: if you’re unsure or necessary information, say “I don’t have enough information to answer this"
+
+[Techcrunch article](https://techcrunch.com/2025/04/18/openais-new-reasoning-ai-models-hallucinate-more/): Hallucinations have proven to be one of the biggest and most difficult problems to solve in AI. Reasoning models hallucinate more. 
+- give models webs search: helpful
+
 
 ## New on the job
 
