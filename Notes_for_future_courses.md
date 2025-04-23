@@ -3,11 +3,17 @@
 # To Do: 
 
 - Which models exist slide
-  - Include new models: GPT 4.5 (for writing and exploring ideas - is this ChatGPT Deep Research?), o3 for reasonging, Claude 3.7, Gemini 2.5 Pro (free, just less agentic ability)
-  - slightly less capable but faster and cheaper models (Gemini 2.5 Flash, o4-mini, and Grok-3-mini)
+  - GPT 4.5 (for writing and exploring ideas - is this ChatGPT Deep Research?), 
+  - o3 for reasoning and o4 mini. 
+  - GPT 4.1 instead of 4: larger window of up to one million tokens of context, gpt4.1 mini, gpt-41 nano. More lightweight. 4.1. is 26 percent cheaper than gpt-4o.
+  - GPT-4.5 preview will be deprectated on July 14th? https://www.theverge.com/news/647896/openai-chatgpt-gpt-4-1-mini-nano-launch-availability
+  - GPT 5 in a few months
+    - Claude 3.7, Gemini 2.5 Pro (free, just less agentic ability)
+    -   - slightly less capable but faster and cheaper models (Gemini 2.5 Flash, o4-mini, and Grok-3-mini)
 - Update part about o1 to o3
   - o3 mini: quick reasoning (wie Deepseek R1), particularly good for programming
-  - better: 03 mini high
+  - better: 04 mini. 
+  - trained to problem solve, and use tools agentically (search, write code, generae graphs, explain, etc)
 - Include Deep Research: Google Deep Research, Claude Research
   - Think for much longer
   - provide sources
@@ -24,6 +30,9 @@
 - Post: https://www.oneusefulthing.org/p/which-ai-to-use-now-an-updated-opinionated
 - Image: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4ce87d9-1ee9-401f-8609-8bafea0eacf9_1560x472.png
 
+# Intro
+
+- Training: mention reinforcement learning
 
 # Ethics
 
@@ -48,7 +57,7 @@
 - Try it out for all worktasks and see how good it does
 - There is no clear science of prompt engineering. AI is inconcistent and weird. 
 - treat AI just like an infinitely patient new coworker who forgets everything you tell them each new conversation
-
+- Treat as human citation: OpenAI’s ChatGPT-4.5 Passes Turing Test With 73% Success Rate [ref](https://arxiv.org/pdf/2503.23674)
 ## Co-worker
 
 - Work with it, do not just give it orders, learn what it's good or bad at.
@@ -91,3 +100,7 @@ writing: if you’re unsure or necessary information, say “I don’t have enou
 ## General
 
 - AI is unreliable in some tasks. In other tasks, AI is superhuman.
+
+# Images & reasoning
+
+- recognizing locations from photos. Researching other infos about pictures (name of ship and where it will dock next example)
