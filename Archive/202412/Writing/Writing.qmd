@@ -1,0 +1,358 @@
+---
+format: 
+  revealjs: 
+    transition: "slide"
+    ## Defines the theme of the presentation, both version and style
+    theme: [default, custom.scss]
+    # incremental slides point by point
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    speakerNotes: true
+    footer: ""
+# title-slide-attributes:
+# data-background-image: images/
+# data-background-size: cover
+# data-background-opacity: "0.5"
+#editor
+editor: source
+---
+
+## <br> Scientific Writing with Chatbots
+
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** (& Konstantin Hebenstreit, MSc.) <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+## Writing sections of papers
+
+### We will test how good the LLM is in (re)writing a discussion. 
+
+- Choose a paper you know very well, best: one of your own.
+- Use the prompts from this presentation as we go along. 
+
+### First (naive) try: 
+
+1. Give your paper without the discussion to the model "o1-preview" (or Claude)
+2. Prompt: _Write the discussion for the paper below. [Insert text]._
+3. Check how it is doing.
+
+## Example paper
+
+![](images/peerj_screenshot.png)
+
+
+:::footer
+Hebenstreit et al. [2024](https://peerj.com/articles/cs-1999/#)
+:::
+
+## AI generated discussion:{.smaller style="font-size: 0.4em;"}
+
+In this study, we conducted a comprehensive comparison of zero-shot chain-of-thought (CoT) reasoning strategies across multiple large language models (LLMs) and diverse datasets. Our findings highlight that while the effectiveness of specific reasoning strategies can vary depending on the model and dataset, overall gains from CoT reasoning remain robust. Notably, GPT-4 demonstrated the most significant improvements when applying advanced reasoning prompts, particularly the “Zhou” prompt discovered through automated prompt engineering (Zhou et al., 2023b).
+
+Effectiveness of Reasoning Strategies
+
+Our results indicate that employing explicit reasoning prompts generally outperforms direct prompting without any specific CoT trigger. The “Zhou” prompt—“Let’s work this out in a step by step way to be sure we have the right answer.”—consistently yielded the highest performance across models, especially with GPT-4. This aligns with previous research suggesting that guiding models to think step by step enhances their ability to solve complex problems (Wei et al., 2022; Kojima et al., 2022).
+
+Interestingly, while GPT-4 benefited significantly from externalized reasoning prompts, models like Flan-T5-xxl did not exhibit the same level of improvement. For Flan-T5-xxl, direct prompting remained among the optimal methods. This suggests that the efficacy of CoT reasoning strategies may be model-dependent, possibly due to differences in training data, architecture, or inherent reasoning capabilities.
+
+Model Performance Across Datasets
+
+The performance of models varied notably across different datasets. GPT-4 and GPT-3.5-turbo achieved the highest scores overall, particularly excelling in datasets like WorldTree v2 and CommonsenseQA. These datasets, which require general knowledge and logical reasoning, appear to be well-suited for advanced LLMs. The superior performance on WorldTree v2 suggests that better models find this dataset increasingly easier, potentially due to their enhanced ability to process and reason with scientific facts.
+
+Conversely, StrategyQA presented challenges, with models showing lower performance due to the dataset’s ambiguous items. This highlights the impact of question clarity on model performance and suggests that even advanced models struggle with poorly defined problems.
+
+The medical datasets, MedQA and MedMCQA, were the most difficult for all models. Only GPT-4 and GPT-3.5-turbo displayed acceptable performance levels, underscoring the complexity of medical knowledge and the limitations of LLMs without specialized training in this domain. The low performance of models like Flan-T5-xxl on MedQA (Krippendorff’s alpha close to chance) emphasizes the need for domain-specific fine-tuning to improve accuracy in specialized fields.
+
+Impact of Data Contamination
+
+(...)
+
+:::notes
+People often tell me that they are frustrated because they have to read all of that text the AI is providing.
+
+We need to find a method that is easy for us. Easy to test if the Chatbot is doing what we want.
+:::
+
+## Lot's of not very good text to read & edit 
+
+### Refine your prompt based on [prompting tips for o1](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting):
+
+- Keep it simple, avoid chain-of-thought and use delimeters for clarity 
+
+Please write a concise and scientifically rigorous discussion section for my paper, maintaining consistency with my writing style demonstrated below. Respond in plain text formatted as markdown. Here is the finished paper up to the discussion section:
+
+‘’’ <br>
+[Insert text]
+
+‘’’ 
+
+## Output with better prompt {.smaller style="font-size: 0.37em;"}
+
+This study systematically evaluated ten zero-shot chain-of-thought (CoT) prompting strategies across six instruction-tuned language models on six diverse question-answering datasets. Our findings indicate that employing specific CoT prompts significantly enhances model performance compared to direct prompting, with the “Zhou” prompt yielding the highest average Krippendorff’s alpha score when used with GPT-4 (α = .83, 95% CI [.77, .90]; Table 4).
+
+The superior performance of GPT-4 and GPT-3.5-turbo across most datasets (Table 6) underscores the advancements in reasoning capabilities of recent large language models. GPT-4, in particular, demonstrated substantial gains from externalized reasoning prompts, suggesting that more sophisticated models can better leverage CoT strategies to improve reasoning accuracy. For instance, GPT-4’s performance increased from a Krippendorff’s alpha of .71 (95% CI [.64, .79]) with direct prompting to .83 (95% CI [.77, .90]) with the “Zhou” prompt (Table 4).
+
+The observation that FLAN-T5-XXL exhibited unexpectedly high performance on datasets such as CommonsenseQA (α = .81, 95% CI [.75, .85]; Table 7) suggests possible data contamination due to prior exposure during instruction fine-tuning. This raises concerns about the validity of its performance on these datasets and highlights the importance of ensuring dataset integrity in evaluating model capabilities.
+
+Our results also reveal that different prompts vary in effectiveness depending on the dataset. The “Zhou” prompt excelled on OpenBookQA (α = .74, 95% CI [.66, .81]; Table 10), whereas the “Rephrase” prompt performed better on StrategyQA (α = .42, 95% CI [.30, .55]). This variability suggests that tailoring prompts to the specific reasoning demands of a task can enhance model performance. The effectiveness of the “Rephrase” prompt on StrategyQA may be attributed to its ability to help models disentangle ambiguous questions by encouraging initial rephrasing.
+
+The self-critique prompt, which incorporated a reflection step, did not yield the expected performance improvements and sometimes produced multiple answers, complicating evaluation. This indicates that while self-critique is a promising strategy for enhancing reasoning, its implementation in zero-shot settings may require further refinement to be effective.
+
+Our findings emphasize the potential of carefully designed zero-shot CoT prompts in enhancing the reasoning abilities of language models. The significant performance gains observed with certain prompts suggest that prompt engineering remains a critical factor in maximizing the utility of large language models for complex reasoning tasks.
+
+However, the study has limitations that warrant consideration. The potential data contamination in FLAN-T5-XXL’s training data complicates the interpretation of its performance, particularly on datasets it may have been exposed to. Additionally, the lower performance on medical datasets like MedQA and MedMCQA (Table 5) highlights the challenges models face with specialized knowledge domains, suggesting a need for further research into domain-specific fine-tuning or prompting strategies.
+
+Future work should focus on mitigating data contamination issues by utilizing cleaner datasets and exploring methods to detect and control for prior exposure. Furthermore, investigating the effectiveness of prompting strategies across a broader range of tasks and domains can provide deeper insights into the generalizability of CoT reasoning approaches.
+
+In conclusion, this study demonstrates that zero-shot CoT prompting strategies can substantially improve the reasoning performance of large language models, particularly when aligned with the model’s capabilities and the task’s requirements. As language models continue to advance, leveraging sophisticated prompting techniques will be essential for unlocking their full potential in complex reasoning and decision-making tasks.
+
+## Good, but still lots of text {.smaller}
+
+- Possible strategy, but too much text to check
+- Lot's of correction work for you
+
+. . .
+
+### Refine the prompt
+
+- Output in bullet points & defining a structure for the discussion.
+
+**Prompt:** Please list the key points of your text as single-sentence bullet points, organized into the following parts of the discussion:
+
+- Conclusion
+- Limitations
+- Related Work
+- Future Work
+
+## This looks good {.smaller style="font-size: 0.5em;"}
+
+Conclusion
+
+	•	Employing specific zero-shot chain-of-thought (CoT) prompts significantly enhances the performance of large language models compared to direct prompting.
+	•	The “Zhou” prompt yielded the highest average Krippendorff’s alpha score with GPT-4 (α = .83, 95% CI [.77, .90]), indicating its effectiveness in improving reasoning performance.
+	•	GPT-4 and GPT-3.5-turbo demonstrated superior performance across most datasets, highlighting advancements in recent large language models’ reasoning capabilities.
+	•	Tailoring prompts to the specific reasoning demands of a task can enhance model performance, as different prompts vary in effectiveness depending on the dataset.
+	•	Carefully designed zero-shot CoT prompts can substantially improve the reasoning abilities of language models, emphasizing the importance of prompt engineering.
+
+Limitations
+
+	•	Potential data contamination in FLAN-T5-XXL’s training data complicates the interpretation of its performance on certain datasets.
+	•	Lower performance on medical datasets like MedQA and MedMCQA highlights challenges models face with specialized knowledge domains.
+	•	The self-critique prompt did not yield expected performance improvements and sometimes produced multiple answers, complicating evaluation.
+	•	Findings may be limited by the specific models and datasets used, necessitating caution in generalizing the results.
+
+Related Work
+
+	•	Builds upon previous zero-shot CoT prompting strategies by Kojima et al. (2022) and Zhou et al. (2023b).
+	•	Relates to research on self-critique strategies in language models by Madaan et al. (2023) and Saunders et al. (2022).
+	•	Aligns with ongoing exploration of prompt engineering as a critical factor in enhancing language model performance.
+
+Future Work
+
+	•	Focus on mitigating data contamination issues by utilizing cleaner datasets and developing methods to detect and control for prior exposure.
+	•	Investigate the effectiveness of prompting strategies across a broader range of tasks and domains to assess generalizability.
+	•	Refine self-critique strategies in zero-shot settings to enhance their effectiveness in improving reasoning.
+	•	Explore domain-specific fine-tuning or prompting strategies to address challenges in specialized knowledge domains.
+
+
+
+## Compare to the original discussion
+
+Convert original discussion to bullet points with o1-preview.
+
+<br>
+
+### You can use this prompt for this: 
+
+<small> Read the scientific paper I inserted below. List the key points for the discussion section only, as single-sentence bullet points, organized into the the below parts of the discussion. Provide only the most important 3-5 bullet points for each part:
+
+- Conclusion
+- Limitations
+- Related Work
+- Future Work
+
+Here is the finished paper including the discussion section:
+
+"""
+
+[full paper]
+
+"""
+
+</small>
+
+## Original discussion converted to bullet points{.smaller style="font-size: 0.37em;"}
+
+**Conclusion**
+
+- Using reasoning strategies significantly improves performance beyond direct prompting alone.
+- The improvement does not strongly correlate with model size; both large (GPT-4) and smaller (Command XL) models benefit from reasoning strategies.
+- State-of-the-art prompts developed by Zhou and Kojima demonstrate robust performance across various scenarios.
+- GPT-4 consistently outperforms other models across all datasets tested.
+- Krippendorff’s alpha is a practical and intuitive metric for evaluating performance on multiple-choice datasets.
+
+**Limitations**
+
+- The study used subsampled datasets due to budget constraints, limiting direct comparison to full benchmark tests.
+- Some benchmark datasets had quality issues, with questions not allowing a single best answer, affecting model evaluation.
+- Use of closed-source models that change over time makes replication and comparison difficult.
+- Potential data contamination and leakage due to lack of model documentation complicates result interpretation across models.
+
+**Related Work**
+
+- Previous studies have evaluated zero-shot prompting performance, including Liévin et al. (2022) on medical datasets.
+- Earlier work includes evaluating models on commonsense data (Zhou et al., 2020) and assessing T0's performance on multiple-choice tasks (Orlanski, 2022).
+- Zero-shot reasoning can be enhanced through precise reasoning steps and logic dependencies (Ling et al., 2024; Zhao et al., 2023).
+- This study contributes by focusing on simple and versatile chain-of-thought prompting approaches across various models.
+
+**Future Work**
+
+- Extend the study by evaluating prompts and datasets with additional models, particularly openly available LLMs like LLaMa, Pythia, Alpaca, StableLM, and OpenAssistant.
+- Conduct user evaluations of the quality and explanatory utility of reasoning chains generated by different prompts and models.
+- Future research could compare semantically similar prompts through paraphrasing to understand their impact on performance.
+
+
+## How good are the bullet points by o1 vs. the original discussion?
+
+
+<br>
+
+**Do a side by side view to check if it captures the main points**
+
+. . .
+
+<br>
+
+
+### In real life, you'll have to refine the bullet points.
+
+## Can the model write a discussion from your bullet points?
+
+<br>
+
+1. Give the bullet points of the original discussion to the Chatbot and let it write.
+
+    - Compare
+
+2. Test the same approach using [Claude](https://claude.ai/)
+    - Or GPT-4 free version if you've been using Claude so far.
+    - Compare the writing style. 
+
+
+
+## Prompts to improve scientific writing
+
+- o1: First GPT model that writes good scientific text without detailed prompts. 
+- Other models need long prompts to be precise and concise, with writing style instructions or written example texts. 
+
+### Your turn:  
+
+- Prompt GPT-4/GPT-4o (free access) with (1) your paper up to discussion, (2) the bullet points & (3) the detailed writing style instructions on the next slide.
+
+::: notes
+this part could be skipped if time is over
+:::
+
+## Writing style instructions {.scrollable .smaller style="font-size: 0.37em;"}
+
+Example of an Writing Style Guide:
+
+### 1. Structure and Formatting
+- Use simple, clear language focused on one main idea per sentence
+- Employ short paragraphs (2-4 sentences) to enhance readability
+- Begin with a concise, attention-grabbing title and subtitle
+- Use headings and subheadings to organize content logically
+- Incorporate formatting elements (e.g., bold text, italics) sparingly for emphasis
+- Use bullet points or numbered lists for key takeaways or steps
+
+### 2. Content Organization
+- Start with the most important information (inverted pyramid style)
+- Ensure each paragraph focuses on a single main idea
+- Organize content into clear sections, each building upon the previous one
+- Include occasional single-sentence paragraphs for impact
+
+### 3. Flow and Engagement
+- Open with a compelling hook to capture reader interest
+- Pose thought-provoking questions to involve the reader
+- Maintain a strong flow of ideas throughout the text
+- Use transitional phrases to connect ideas and paragraphs
+- Create and use strong "concept handles" (catchy phrases that sum up complex ideas)
+- Use analogies and metaphors sparingly to explain complex concepts
+- Incorporate relevant real or hypothetical scenarios to illustrate points
+
+### 4. Depth and Conciseness
+- Provide depth on key points without becoming verbose
+- Break down complex ideas into digestible chunks
+- Use precise language to convey maximum information in minimal words
+- Begin with concrete examples before introducing abstract principles
+- Use multiple, diverse examples to illustrate complex points
+- Apply introduced ideas to real-world scenarios to demonstrate their relevance
+
+### 5. Persuasion and Balance
+- Present a balanced view by acknowledging multiple perspectives
+- Address potential counterarguments proactively
+- Use appropriate language to connect with your target audience
+
+### 6. Technical and Scientific Writing
+- Explain technical concepts in accessible language
+- Provide context for why the topic matters to the reader or the broader field
+
+### 7. Tone and Voice
+- Employ active voice and direct language
+- Maintain a professional yet accessible tone
+- Avoid being overly academic or jargon-heavy
+- Use an engaging and slightly conversational style to create a sense of dialogue
+- Present ideas thoughtfully, showing respect for the reader's intelligence
+- Convey complex ideas efficiently without sacrificing depth
+- Maintain a forward-looking and slightly enthusiastic tone, especially when discussing potential developments
+- Balance optimism about possibilities with acknowledgment of challenges
+- Aim to inform and engage without being pedantic or oversimplifying
+
+## Steps for scientific writing with LLM Chatbots
+
+1. Let the Chatbot create a draft of parts of your paper in bullet points. 
+1. Refine the bullet points and structure manually.
+1. Then let the Chatbot phrase sentences from bullet points:
+    - one paragraph at a time
+    - refine text manually
+    - provide existing paragraphs as context for the next
+
+::: notes
+next 2 slides can be skipped
+:::
+
+## Tip for Chrome & Google doc users
+
+- Copy/pasting between ChatGPT and Google doc in Markdown format 
+- Keeps the formatting in tact 
+
+![](images/google_docs.png){width="400"}
+
+- Direct editing in ChatGPT interface coming soon
+    - for now only in [ChatGPT4-o1 with canvas (beta)](https://openai.com/index/introducing-canvas/), for Enterprise and Edu subscriptions
+
+## Other ideas for using LLM chatbots in scientific writing?
+
+. . .
+
+- Revise, proof-read, summarise, shorten
+- Check tone/style
+- Find titles or acroynyms (always ask for several examples)
+- Useful as context & task examples: provide your text before and after co-author/supervisor feedback
+- Get ideas for rewriting tasks during paper revisions: provide current text & [reviewer requests](https://chatgpt.com/share/671669a4-77ac-800b-a49a-7d210914c464). 
+- Getting feedback on specified aspects of drafts ([Example](https://www.clearerthinking.org/post/writing))
+
+
+:::notes
+Use examples from book of Tim Skern for scientific writing
+:::

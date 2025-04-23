@@ -1,0 +1,145 @@
+---
+format: 
+  # html:
+  #   toc: true
+  revealjs: 
+    transition: "slide"
+    theme: [default, custom.scss]
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+# Optional background attributes for the title slide
+# title-slide-attributes:
+#   data-background-image: images/your_image.jpg
+#   data-background-size: cover
+#   data-background-opacity: "0.5"
+editor: source
+---
+
+## <br> Try something new or meet your personal LLM coach
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** (& Konstantin Hebenstreit, M.Sc.) <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+
+## 3 exercise options (15 minutes)
+1. Data analysis
+1. Creating a website
+1. Career or productivity coaching
+
+## Data analysis
+- LLMs are data scientists!!
+- Check out & upload this [data file on housing prices](https://github.com/hannahmetzler/ai_skills/blob/main/CodingCoaching/data_housing.csv).
+- Test different Chatbots and ask for visual data exploration and analysis, for example: 
+1. Please analyse this file and provide detailed information about it.
+2. Please make a heat map showing the correlation of the different columns (try other types of figure types too).
+3. Round the numbers in the heat map to 2 decimal places.
+
+## Creating a website
+- Turn your CV into a personal website
+- [Example](https://claude.site/artifacts/50f01821-fb16-4332-b65e-5499c3b71a0f) to get you started
+- Define website sections (Inspiration [here](https://hannahmetzler.eu/))
+- Upload it a screenshot of a website design you like and update the design
+...
+
+## AI as a coach
+
+::: {.columns}
+
+::: {.column width="43%"}
+### Coaching topics
+
+- Career decisions
+- Productivity coach
+- Task prioritization
+...
+:::
+
+::: {.column width="43%"}
+### Benefits
+
+- For free
+- Radical honesty - no shame
+- Going into detail
+- Asking for advice based on my input
+:::
+
+:::
+
+## Career decisions
+
+- Personal example:
+    -   Decision around leaving academia (long-term) &
+    -   Accepting an invitation to give a job talk as assistant professor (short-term)
+- Context: explaining my situation, values, doubts, wishes for the future...
+- Asking for: direct advice, fitting job roles based on CV, approaches to take decisions
+
+::: notes
+The conversation: <https://chatgpt.com/c/2402017d-b78e-4b2a-8b0b-960ccc2cf0c5>
+Coaching custom GPT: <https://chatgpt.com/g/g-FGhasb1tZ-therapist-psychologist-non-medical-therapy/c/671e9c1b-daf8-800b-87a4-0b2561d9ebaa>
+:::
+
+## Productivity coaching
+
+- Context: your role, regular tasks, working hours, most focused time, names of regular meeting events, colors of different agendas, ...
+- Upload: screenshot of weekly agenda(s), time tracking data, any other data about your tasks or schedule
+- Get feedback on how to optimize your daily schedule, task prioritization, etc. 
+
+::: notes
+private link: https://chatgpt.com/c/671fb907-e30c-800b-911e-61bf950bb961
+:::
+
+
+## Exercise: Career or productivity coaching (15 min)
+
+- Choose a decision you want feedback on/are unsure about
+- For productivity coaching: Upload some data (agenda screenshot, time tracking data...)
+- Assign a role
+- Describe who you are, everything that matters for the question you have
+- Describe what you are looking for from the coach
+- Get inspiration for prompts on the next 2 slides
+
+## Example prompts: Career decision {.scrollable .smaller}
+
+-   Explicit instruction & role: "You are an encouraging and empathetic coach, who helps me take a big decision. Don't shy away from being directive and giving advice. You are very experienced in coaching PhDs leaving academia, and a lot of knowledge about the job market for PhDs with a background in [...] in Vienna."
+
+-   Context: background, my values and where they (don't) fit with academia, what I like about academia, what is difficult for me, work-life balance I want in the future, aspects I want to have in my next job, my worries about each decision, why decision is hard to take so far... (\~650 words)
+
+-   What would you do if you had to decide for me?
+
+-   I have to take the decision today if I accept the invitation for the interview. Please give a recommendation for a decision, yes or no (rather than listing approaches I could take to make the decision myself).
+
+-   What are opportunities outside academia where my skills are valued? Which types of roles? Which companies?
+
+-   CV upload plus: Adapt the list so it is more personalized after reading my CV and my publication list. I have attached them in a document.
+
+-   I want to work while living in Vienna, I do not want to move. I prefer working on site to a remote job, but would consider very attractive remote jobs. Please make adjustments to this list with this knowledge.
+
+-   Please check for specific companies in Vienna where I could find such job roles, and list at least 2 companies per role. 
+
+- I have a doubt about my fit to data science roles. [Explain doubt] How would you evaluate my fit to data science roles? Please give very honest and direct feedback, no need to be friendly and encouraging here. 
+
+## Example prompts: Productivity {.smaller .scrollable}
+
+
+You are a productivity coach. I am a postdoc in psychology, work full time as a scientist, and lead a small project with 2 PhDs (name 1 and name 2), so my tasks include supervising the students, project management, and science communication, and doing small amounts of teaching. I am also doing education to become a clinical psychologist in Austria. I want to optimize my time, and work on the most important things when I can focus (mostly the morning), only go to necessary meetings. I need clear priorities and an optimized time schedule.  I also have time intensive personal life projects like a community housing project called xxx with regular meetings (AG O&E, GGT, KK in the agenda). 
+
+I will upload three screenshots of my Google agenda form the last three weeks. From Monday to Friday or Saturday (because once I had clinical psychology education on Friday/Saturday). In the blue agenda, you'll see events in my free time or the clinical psychology education, but never work. In the green agenda, you will see working events like group meetings or meetings with PhD students, and blocks of time that I reserve for certain tasks. In the evenings, you will mostly see meetings with the co-housing project or with friends, or yoga and acroyoga classes, sometimes handstand classes. XXX is a friend that visited during those 3 weeks and stayed at my apartment for three nights.  
+
+I want you to give me feedback on how I could increase my productivity without getting more stressed. My goal is to work 7 hours per day max, to also have time for education, free time and the co-housing project. I want to know: 
+
+- if my schedule seems full to you
+- if I could arrange meetings differently
+- how to prioritize my tasks/daily schedule
+- any other feedback you think might be valuable based on my agenda of the last three weeks. 

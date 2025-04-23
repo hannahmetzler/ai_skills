@@ -1,0 +1,238 @@
+---
+format: 
+  revealjs: 
+    transition: "slide"
+    ## Defines the theme of the presentation, both version and style
+    theme: [default, custom.scss]
+    # incremental slides point by point
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    speakerNotes: true
+    footer: ""
+# title-slide-attributes:
+# data-background-image: images/
+# data-background-size: cover
+# data-background-opacity: "0.5"
+#editor
+editor: source
+---
+
+## <br> Ethical Considerations
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Konstantin Hebenstreit, M.Sc.** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+## Ethics in using AI for research
+
+1. General topics of ethics an AI
+2. What it means for research
+
+:::notes
+I can give an overview of the concerns and information but I am not a lawyer, no legal advice. 
+:::
+
+## Reminder: Chatbots Are Hard to Control
+
+<br>
+
+AI companies invest significant effort to ensure their chatbots behave ethically.
+
+For example, chatbots should not assist users in harmful or destructive behaviors, but challenges remain...
+
+## Example: Jailbreaking
+- **Jailbreaking**: Techniques to bypass AI safety measures.
+
+::: {style="overflow: hidden; height: 70%; width: 60%;"}
+![](images/emoji_jailbreak.png)
+:::
+
+:::footer
+[GitHub TheBigPromptLibrary](https://github.com/0xeb/TheBigPromptLibrary/blob/main/Jailbreak/OpenAI/rsrc/gpt4o-via-emojis-06082024-02.jpg)
+:::
+
+## Bias and Fairness in AI Outputs
+
+- AI can perpetuate societal biases present in training data.
+- **Examples**:
+  - Associating "doctor" with male gender.
+  - Associating "nurse" with female gender.
+
+:::footer
+Kotek et al., [2023](https://arxiv.org/pdf/2308.14921)
+:::
+
+## Unintended Consequences of Debiasing
+
+Gemini: "generate a picture of a US senator from the 1800s."
+
+![](https://duet-cdn.vox-cdn.com/thumbor/0x0:1668x1168/750x525/filters:focal(834x584:835x585):format(webp)/cdn.vox-cdn.com/uploads/chorus_asset/file/25297980/Screen_Shot_2024_02_21_at_3.10.17_PM.png)
+
+:::footer
+[The Verge on Google Gemini AI](https://www.theverge.com/2024/2/21/24079371/google-ai-gemini-generative-inaccurate-historical)
+:::
+
+:::notes
+The first female senator, a white woman, served in 1922.
+:::
+
+
+## Transparency
+- "Black Box": Opaque how models work.
+- Even for "white box" open-weights Llama models not open on which data they are trained.
+
+## Accountability
+
+Example: 
+
+2023: Two US lawyers fined for (unknowingly) submitting court cases as evidence made up by ChatGPT, leading to a $5,000 fine.
+
+:::footer
+[The Guardian](https://www.theguardian.com/technology/2023/jun/23/two-us-lawyers-fined-submitting-fake-court-citations-chatgpt)
+:::
+
+## Data privacy concerns
+- Training data extraction: reconstruct training data from model outputs
+- LLMs can combine large amounts of 'harmless' user data to predict sensitive attributes
+
+## Copyright
+- is a passive right, applies to everything you put online
+- bound to a person
+- AI cannot be holder of copyright, as it is not a person
+
+Example of a copyright violation:
+
+Getty images sued midjourney (AI image creation) for training on their data.
+
+# What does this mean for research?
+
+## AI use in research
+
+Increasing use of LLMs in paper writing
+
+![](images/llm_use_research.png){.nostretch width="90%"}
+
+:::footer
+Liang et al., [2024](https://arxiv.org/abs/2404.01268)
+:::
+
+## ICLR conference using AI to help reviewers
+
+<small>
+1. Encouraging reviewers to rephrase vague review comments, making them more actionable for the authors. <br>
+2. Highlighting sections of the paper that may already address some of the reviewer’s questions. <br>
+3. Identifying and addressing unprofessional or inappropriate remarks in the review.
+</small>
+
+![](https://blog.iclr.cc/wp-content/uploads/image1.png)
+
+<small>**The feedback system will not replace any human reviewers.**</small>
+
+:::footer
+[ICLR blog](https://blog.iclr.cc/2024/10/09/iclr2025-assisting-reviewers/)
+:::
+
+## AI in Journal Policies
+
+- Policies are evolving rapidly in response to AI developments.
+- Always review journal guidelines before submitting your work.
+
+## Elsevier's Policies for Journals {.smaller}
+This is a summary, for details please check the link to their website.
+
+- **For Authors**:
+  - AI tools can only be used to improve language and readability.
+  - Must disclose AI use in manuscripts.
+  - AI cannot be listed as an author. 
+
+- **Figures & Images**:
+  - AI cannot alter or create images (except if part of research methods).
+  - AI use in research must be documented in methods.
+
+
+## Elsevier's Policies for Journals 2 {.smaller}
+
+- **For Reviewers**:
+  - Do not upload manuscripts to AI tools (confidentiality breach).
+  - AI should not assist in peer review.
+
+- **For Editors**:
+  - AI tools must not be used to evaluate or make decisions on manuscripts.
+  - Maintain confidentiality in all communications.
+
+::: footer
+[Elsevier AI Policy](https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals)
+:::
+
+
+## MedUni Vienna PhD thesis guideline {.smaller}
+
+“A doctoral thesis is expected to contain text that is the intellectual product of the student. If, for any reason, a student feels that he or she must rely on an AI algorithm or a writing enhancement tool (Chat-GPT, Grammarly, Google Translate, DeepL, etc.) to translate, generate, or paraphrase texts, this must be indicated as such with an appropriate citation at the end of the relevant paragraph and in the Bibliography. While this indication will serve to defend the student against any claims of reviewer deception, there is no guarantee that the reviewers will be appreciative of ample AI-generated texts in the thesis. Accordingly, theses relying extensively on AI may fail to receive a positive evaluation by the reviewers. Students should note AI-detection algorithms will still recognise machine-generated texts even after being paraphrased by the authors, and that subsequent revised thesis submissions remain marked. Hence, students should be aware that relying on AI may incurr a risk, which is solely their own, and it therefore is strongly recommended that they disclose all AI use in the Declaration, the List of Algorithms, the body of the text, and the Bibliography. For more information, please see https://apastyle.apa.org/blog/how-to-cite-chatgpt”
+
+
+## Implications for Academic Research
+- Hallucinations:
+  - Citation
+  - Wrong information
+
+- Plagiarism issues:
+  - Altough verbatim repetitions of text are very rare in LLMs, the use of a plagiarism checker is advised.
+
+## What happens with your input data?
+
+- AI companies are not transparent about this
+
+(1) Model training: most  data is used for future model training at OpenAI/GPT & Google/Gemini (not Anthropic/Claude)
+(2) Security check of all data for safety violations
+
+- Opt out of (1) in Settings - Data Controls:
+    - Turn off the option "Improve model for everyone"
+- Claude does not train on your data by default
+- Security checks happen anyways - human review
+
+
+## General Data Protection Regulation
+
+- For all individuals within the EU
+
+- Avoid entering sensitive data that identifies individuals
+
+- Turning off model training on your inputs does not imply GDPR compliance.
+
+- If you are using LLMs to process personal data of subjects, please consult experts from your university. Especially for everything that concerns patient data.
+
+## Examples for GDPR compliance with sensitive data
+
+- Microsoft and OpenAI offer possiblity of Server in Europe that complies with GDPR rules.
+
+- Using local models and servers
+  - challenges: setting up and costs for servers
+
+## Possible Future
+How AI will be used in research
+
+::::: columns
+::: {.column width="45%"}
+![](https://www.fau.edu/newsdesk/images/news/self-driving-patent-newsdesk.jpg){.nostretch width=100% height=250px}
+Self-driving car
+:::
+::: {.column width="45%"}
+![](images/dalle_guided_research.png){.nostretch width=100% height=250px}
+Autonomous research systems
+:::
+:::::
+
+<br>
+
+::: {style="text-align:center;"}
+**Human accountability**
+:::

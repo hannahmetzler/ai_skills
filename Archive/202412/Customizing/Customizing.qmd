@@ -1,0 +1,223 @@
+---
+format: 
+  revealjs: 
+    transition: "slide"
+    ## Defines the theme of the presentation, both version and style
+    theme: [default, custom.scss]
+    # incremental slides point by point
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    speakerNotes: true
+    footer: ""
+# title-slide-attributes:
+# data-background-image: images/
+# data-background-size: cover
+# data-background-opacity: "0.5"
+#editor
+editor: source
+---
+
+## <br> Customizing Chatbots
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Konstantin Hebenstreit, M.Sc.** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+## System prompts
+
+- Customizing your default version of ChatGPT 
+
+<br>
+
+ChatGPT: Settings > Personalization > Customize ChatGPT
+
+<br>
+
+:::::: columns
+::: {.column width="45%"}
+```{r}
+knitr::include_graphics("images/system_prompt.png")
+```
+:::
+
+::: {.column width="45%"}
+"This is extremely important for my job, please work accurately and check that everything is correct."
+:::
+::::::
+
+
+## Ideas for useful system prompts
+
+- Give information that is relevant in all of your chats, example: scientific approach.
+
+- Using chain-of-thought reasoning
+
+Other concrete examples:
+
+- Don't give detailed explanations of created code unless I ask for it.
+
+- Creative approach: Challenge me to continue learning.
+
+
+(Claude and Gemini: Currently no individual system prompts, but specific instructions can be created within customized chat.)
+
+::: notes
+Don't give detailed explanations of code unless I ask for it.
+
+Challenge to continue learning
+:::
+
+## Example: Claude's system prompt {.smaller style="font-size: 0.5em;"}
+
+The assistant is Claude, created by Anthropic.
+The current date is {}.Claude’s knowledge base was last updated on April 2024. It answers questions about events prior to and after April 2024 the way a highly informed individual in April 2024 would if they were talking to someone from the above date, and can let the human know this when relevant. (...)
+
+When presented with a math problem, logic problem, or other problem benefiting from systematic thinking, Claude thinks through it step by step before giving its final answer. (...)
+
+Rather than giving a long response, it gives a concise response and offers to elaborate if further information may be helpful. (...)
+
+Claude can only count specific words, letters, and characters accurately if it writes a number tag after each requested item explicitly. It does this explicit counting if it’s asked to count a small number of words, letters, or characters, in order to avoid error.(...)
+
+Claude uses Markdown formatting. When using Markdown, Claude always follows best practices for clarity and consistency. It always uses a single space after hash symbols for headers (e.g., ”# Header 1”) and leaves a blank line before and after headers, lists, and code blocks.(...)
+
+Claude is now being connected with a human.
+
+**Length: ~ 4000 words**. Probably much longer: [inofficial Tweet](https://x.com/elder_plinius/status/1848781117714788694)
+
+::: footer
+[Anthropic website](https://docs.anthropic.com/en/release-notes/system-prompts#oct-22nd-2024)
+:::
+
+::: notes
+Mention CoT reasoning (step by step)
+:::
+
+## Example: System prompt for scientific work {.smaller style="font-size: 0.6em;"}
+
+You are an advanced AI language model designed to provide accurate, up-to-date, and scientifically grounded information across a wide range of subjects. Always approach interactions with a rigorous scientific mindset, relying on empirical evidence, peer-reviewed research, and established theories. If you are uncertain about an answer or lack sufficient information, clearly state your uncertainty and suggest that further research may be necessary. Strive for precision and clarity in your responses, double-checking facts, data, and sources when needed. When appropriate, offer alternative perspectives, hypotheses, or suggestions to enrich the conversation and encourage critical thinking. Maintain a concise and clear writing style, avoiding unnecessary jargon while ensuring that complex concepts are explained effectively and accessibly. Your goal is to assist users in understanding and exploring topics thoroughly and accurately, fostering an environment of intellectual curiosity and scientific inquiry.
+
+<br>
+
+**ChatGPT system prompt max length: 1500 characters(!)**
+
+## Example: Special Commands to follow {.smaller}
+
+*Note: These are ideas for testing.*
+
+Special Commands:
+When a user’s message begins with a keyword, recognize it as a command and follow the instructions before formulating your response. Always check in with the user after executing the command.
+
+1. `plan`:
+   - Action: Develop a detailed plan how you would answer the problem, outlining each step.
+   - Check-In: Present the plan outline and ask if they wish to proceed.
+2. `expert`:
+   - Action: Describe an expert suited to address the question, identifying their expertise.
+   - Check-In: Confirm if the user wants the answer from this perspective.
+
+## Custom LLM Chatbots
+
+- CustomGPT in ChatGPT (covered on the next slides)
+- Gems in Gemini
+- Projects in Claude
+
+## Creating Custom GPTs: How to
+
+:::::: columns
+::: {.column width="18%"}
+1)  
+
+```{r, echo=F}
+knitr::include_graphics("images/how_to_custom_gpt.png")
+```
+:::
+
+::: {.column width="14%"}
+2)  
+
+```{r}
+knitr::include_graphics("images/how_to_custom_gpt2.png")
+```
+:::
+
+::: {.column width="60%"}
+```{r, out.height=400}
+knitr::include_graphics("images/gpt_builder.png")
+```
+:::
+::::::
+
+-   GPT Builder asks more questions
+-   Try it out and keep "talking into it" until it fits
+
+## Example Quarto presentation helper
+
+Helps specifically in creating quarto react.js presentations
+
+![](images/quarto_gpt_1.png)
+
+## Example Quarto presentation helper (cont)
+
+Loading in relevant websites I found (as html files).
+
+![](images/quarto_gpt_2.png)
+
+
+## Exercise: Create a Custom Chatbot (15 min) 
+
+1. Choose a regular task & create a custom model for it: 
+
+- Your writing buddy (upload all your scientific texts)
+- Concise answers for code, adapted to my skills
+- [Prompt examples](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/) for other ideas: Proofreader, LinkedIn content  creator, Email drafter
+
+2. Write a detailed prompt
+3. **Add addtinional files relevant for your GPT**, e.g. websites with instructions for the task.
+
+
+## Links to predifined costumized Chatbots
+[OpenAI GPT store](https://chatgpt.com/gpts)
+
+[Anthropic prompt library](https://docs.anthropic.com/en/prompt-library/library)
+
+[Google Gemini Gems](https://gemini.google.com/gems/view)
+
+<br>
+
+## Custom GPTs for research
+
+- Many of those Custom GPTs are connected to databases of scientific literature. (Retrieval Augmented Generation)
+
+- Database search to provide accurate information
+- Included in context window of Chatbot 
+
+Example:
+
+- Dimensions Research GPT, and one [Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c) 
+
+
+::: notes
+It is a freemium approach. Often the give you the link to buy their full product.
+:::
+
+
+## Exercise: Testing Dimensions or another custom GPT (5 min)
+
+1. Go to the [OpenAI GPT store](https://chatgpt.com/gpts)
+
+1. Select topic 'Research & Analysis'
+
+1. Choose a Custom GPT you want to try out
+
+
+
+
+

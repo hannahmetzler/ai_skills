@@ -1,0 +1,74 @@
+---
+format:
+  # html:
+  #   toc: true
+   revealjs: 
+    theme: [default, custom.scss]
+    transition: "slide"
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+editor: source
+---
+
+## <br> Resources
+
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna* 
+
+<br>
+
+<small> Slides: https://hannahmetzler.eu/ai_skills </small>
+
+## Where to start
+
+-   [Erklär mir die Welt](https://xn--erklrmir-3za.at/) Podcasts with Malcolm Werchota:
+    -   [#283 Erklär mir ChatGPT](https://xn--erklrmir-3za.at/2023/12/27/283-erklaer-mir-chatgpt-malcolm-werchota/)
+    -   [#313 deep dive: Alle eure Fragen zu K.I., beantwortet](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
+-   [Intrenion.com](https://intrenion.com): videos and ChatGPT prompt course notes
+    - Many [links to further resources](https://www.intrenion.com/Generative-AI-Research-Policies-EN-DE-23a4800b10c34ed3a637646ba73b68e8) & [prompt suggestions](https://www.intrenion.com/12ae2c1dbf7980dfbc60ea5513649ea1?v=e29263bc65bd4b71af467eb91955bdde)
+- Basic & useful terms: 
+  -   [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/)
+  - [Prompt Engineering Cheatsheet](https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf) (Maximilian Vogel)
+
+## Deep dives
+
+-   A really enjoyable book: [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
+- [YouTube: 3Brown1Blue](https://www.youtube.com/@3blue1brown):  visualized understanding of technical concepts
+- For coding: [Nicholas Carlini](https://nicholas.carlini.com/writing/2024/how-i-use-ai.html)
+
+## Staying up to date
+
+::::: columns
+::: {.column width="47%"}
+### Newsletters & blogs
+
+- [One useful thing](https://www.oneusefulthing.org/) (E. Mollick) - application
+- [Sebastian Ruder](https://www.ruder.io/) - experts
+- Medium.com:
+    - [Maximilian Vogel](https://medium.com/@maximilian.vogel)
+    - [Recommendations for Twitter, Newsletters, Medium, Youtube & Co](https://medium.com/@maobedkova/how-i-stay-up-to-date-with-ai-and-nlp-656de9e284d9)
+:::
+
+::: {.column width="47%"}
+### Social Media
+
+-   [Ethan Mollick on LinkedIn](https://www.linkedin.com/in/emollick/)
+-   [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
+:::
+:::::
+
+
+
+## Wrap up
+
+- Any open questions?
+- Closing round: What do you take with you?

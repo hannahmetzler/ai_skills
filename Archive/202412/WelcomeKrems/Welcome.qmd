@@ -1,0 +1,89 @@
+---
+format: 
+  revealjs: 
+    transition: "slide"
+    theme: [default, custom.scss]
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+editor: source
+---
+
+## <br> Mastering AI Chatbots: Optimizing Research through Effective Use
+<br>
+
+### LLM Workshop Karl Landsteiner Privatuniversität
+
+<br>
+
+**Mag. Dr. Hannah Metzler** <br>
+*Complexity Science Hub &  Medical University of Vienna*
+<br><br>
+4 December 2024
+
+
+
+## Who am I?
+
+- Postdoc & project lead at Complexity Science Hub & Meduni Vienna (and becoming a clinical psychologist)
+- Social Psychology, Neuroscience & Data Science
+- Research: **Social media &** emotions, misinformation, suicide prevention, mental health
+- <https://hannahmetzler.eu> <br> metzler\@csh.ac.at <br> Bluesky: [\@hannahmetzler](https://bsky.app/profile/hannahmetzler.bsky.social)
+
+## Who are you?
+
+-   Research background & topic
+-   One thing you have already used LLMs for
+-   If any: particular expectation or interests for today
+
+## Plan for the day {.smaller}
+
+|               |                                |
+|---------------|--------------------------------|
+| 9h15 -  9h30   | Welcome & Setup |
+| 9h30 - 10h30   | Introduction to LLMs & important ethical aspects |
+|  | **Coffee break** |
+| 10h40 - 11h30  | Chatbot essentials |
+| 11h30 - 11h50 | Chatbot essentials Exercise |
+| 11h50 - 12h45   | Advanced prompting strategies  |
+| | **Lunch break** |
+| 13h35 -  14h20    | Scientific tools based on LLMs |
+|  | **Short break** |
+|14h30 - 15h15 | Scientific writing with chatbots |
+|15h15 - 15h30 | Resources & open questions |
+
+::: footer
+Updated to actual times
+:::
+
+::: notes
+Actual times. 
+- 50 min früher gestartet, bis 12h Chatbot essentials plus exercise den Vorsprung aufgebraucht. 
+- Intro & Ethics Short mit vielen Fragen/Diskussionen: 1h, 9h25-10h25, dann 15 min Pause
+- Chatbot essentials: 1h10, 10h40-11h50
+- Advanced prompting: 60 min wie geplant mit Exercise, 45 ohne exercise zu Halluzinationen. 
+- Scientific tools: 30 min plus 15 Exercise ist perfekt. 
+
+Abschluss genau 6h: 15h15.
+Abschluss wahrscheinlich 15h30
+:::
+
+## Workshop slides for today
+
+-  [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
+- [Introduction & Ethics Short](https://hannahmetzler.eu/ai_skills/IntroEthicsShort)
+- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
+- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
+- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
+
+## Access to LLM chatbots for today
+
+- Who has a paid account?
+- Which models?
+- Did all others create a Gemini pro trial account?
+
+

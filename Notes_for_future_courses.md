@@ -1,5 +1,52 @@
 # In the introduction to different models:
 
+# To Do 
+
+- Email to people: Gemini test subscription, currently best model and free for one month
+- Update Github readme
+
+## Intro
+
+
+- Delete slide 10 deep learning/neural networks
+- Maybe delete word embeddings
+
+---
+- Übersicht Modeltypen in Intro: 
+  - Reasoning (kann nicht suchen)
+  - Flash/Mini: kleiner, effizienter
+  - Deep Research
+- Exercise to test different models:
+- Exercise Mathematik Beispiel in Reasoning und Flash/Mini reingeben
+- Reasoning riddle: surgeon and son: https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything
+- Stahl und Federn Beispiel
+  
+- Features
+  - Google Search
+  - Canvas mode
+  - Integration...
+  
+  
+- Multimodal interactions slide: instead give overview of features and explain that they change quickly over time
+- Slide 17: stattdessen Models (2 bilder für gpt und gemini im images folder)
+
+- Explain and then test system prompt
+  - Who are you? 
+  - What day is today?
+- Move Chain of thought prompts from prompting to the intro to explain reasoning models
+- Add reinforcement learning
+
+  
+- Update Ethics (data privacy, see below)
+
+
+
+
+- Exercises/part to play with different models
+
+  
+
+
 # Models and model features
 
 - Which models exist slide
@@ -9,24 +56,32 @@
   - GPT-4.5 preview will be deprectated on July 14th? https://www.theverge.com/news/647896/openai-chatgpt-gpt-4-1-mini-nano-launch-availability
   - GPT 5 in a few months
 - Claude 3.7
-- Gemini 2.5 Pro (experimental, free, just less agentic ability)
-    - slightly less capable but faster and cheaper models (Gemini 2.5 Flash, and Grok-3-mini)
 - Update part about o1 to o3
   - o3 mini: quick reasoning (wie Deepseek R1), particularly good for programming
   - better: 04 mini. 
   - trained to problem solve, and use tools agentically (search, write code, generae graphs, explain, etc)
-  
+
+
+## Claude
+
 - Claude features: integrates with Google Workspace (calendar, Docs), Research: search in your work context and on the web, verified citations (not yet available in Austria)
 - Organize in Projects
 
+## ChatGPT features
+
+- projects
+- Libary: all your generated images
+    - deleting: you need to delete the conversation 
+    - (date visible in library when you click on the image, or write a prompt, that will take you back to the conversation)
+
 
 # Include Deep Research: Google Deep Research, Claude Research
+
   - Think for much longer
-  - provide sources
-  - limited access with ChatGPT plus (10 questions/ month, 120 as a Pro User
+  - provides verified sources
+  - limited access with ChatGPT plus (10 questions/ month, 120 as a Pro User - still correct?)
   - still includes unreliable sources, can include hallucinations)
-
-
+- It asks for clarifications before it writes the report
 
 ## Customizing session
 
@@ -45,14 +100,15 @@
 
 # Gemini
 
+- Gemini 2.5 Pro (experimental, free, just less agentic ability)
+    - slightly less capable but faster and cheaper models (Gemini 2.5 Flash, and Grok-3-mini)
+- Since Gemini 2.0: 
+  - multimodal input and output, search, use of programs
+  - gemini flash (more efficient, a bit smaller)
 - Google Gemini Agents: take care of tasks on its own
 - Gemini & ChatGPT app: speak German
 - Integration with Google Docs, Gmail, Drive
 - Connect to Apps: Youtube, google maps, flights, hotels, workspace, calendar, tasks etc
-
-- Gemini 2.0: 
-  - multimodal input and output, search, use of programs
-  - gemini flash (more efficient, a bit smaller)
 
 
 # Ethan Mollick Newsletter: Which model to use?
@@ -61,11 +117,11 @@
 - Post: https://www.oneusefulthing.org/p/which-ai-to-use-now-an-updated-opinionated
 - Image: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4ce87d9-1ee9-401f-8609-8bafea0eacf9_1560x472.png
 
-# Intro
+# Intro (Konstantin)
 
 - Training: mention reinforcement learning
 
-# Ethics
+# Ethics (Konstantin)
 
 - Privacy has changed: https://www.oneusefulthing.org/i/155502334/privacy-and-other-factors
 - Gemini & Claude do not train on your data, opt-out for ChatGPT
@@ -88,6 +144,13 @@
 - Reasoning via reinforcement learning: https://benjamintodd.substack.com/p/teaching-ai-to-reason-this-years
 
 # Prompting (Ethan Molick good enough prompting)
+
+- Most important: there is no correct way of prompting that applies universally. [Ref](https://ai-analytics.wharton.upenn.edu/generative-ai-labs/research-and-technical-reports/tech-report-prompt-engineering-is-complicated-and-contingent/)
+- It's hard to predict what will work in a particular use case.
+- Prompting tricks are not universal (like being polite). 
+- Formatting is consistently important. 
+  - (Although the study tested this with the format: "Format your response as follows: 'The correct answer is (insert answer here)'"). 
+  - So it's conflated with the prompt "the correct answer is"
 
 - Try it out for all worktasks and see how good it does
 - There is no clear science of prompt engineering. AI is inconcistent and weird. 
