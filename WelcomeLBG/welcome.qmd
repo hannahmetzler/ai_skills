@@ -2,7 +2,7 @@
 title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
 subtitle: "Skills training LBG Career Center"
 author: "Hannah Metzler & Konstantin Hebenstreit <br> Slides: https://github.com/hannahmetzler/ai_skills"
-date: "October 29 2024"
+date: "April 29 2025"
 format: 
   revealjs: 
     transition: "slide"
@@ -28,47 +28,46 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 
 ## Who are you?
 
--   Scientific discipline & topic area
+- Scientific discipline & topic area
 - Which problems do you encounter when using LLMs? 
 - What works well?
--   If any: particular expectation or interests for today
+- If any: particular expectation or interests for today
 
 ## (Rough) plan for the day {.smaller}
 
 |               |                                |
 |---------------|--------------------------------|
-| 9h30 -  10h15   | Introduction to LLMs|
-| 10h15 - 11h00   | Chatbot essentials  |
-|  | **Coffee break** |
-| 11h15 -  11h50   | Prompting strategies  |
-| 11h50 -  12h30   | Chatbots in research: Writing |
-| | **Lunch break** |
-| 13h30 - 14h15 | Customizing Chatbots  |
-| 14h15 - 15h00   | Scientific tools based on LLMs |
-|  | **Coffee break** |
-| 15h15 - 15h30   | Other researcher use cases |
-| 15h30 - 16h00  | Ethical considerations  |
-| 16h00 - 16h30    | Try something new or fun |
-| 16h30 - 17h | Resources, Questions, Closing round |
+| 9h00 - 9h30    | Welcome, setup & short introduction |
+| 9h30 - 10h30   | Introduction to LLMs |
+| 10h30 - 11h00  | Ethical Considerations |
+|               | **Coffee break**              |
+| 11h15 - 12h30  | Chatbot Essentials |
+|               | **Lunch break**               |
+| 13h30 - 14h15  | Advanced Prompting |
+| 14h15 - 15h00  | Deep Research Mode |
+|               | **Coffee break**              |
+| 15h15 - 16h00  | Customizing Chatbots |
+| 16h00 - 16h45  | Scientific tools based on LLMs |
+| 16h45 - 17h00  | Resource Sharing & Open Questions & Feedback |
+
 
 ## Slides for today {.smaller}
 
-- [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/Introduction)
-- [Ethics](https://hannahmetzler.eu/ai_skills/Ethics)
+- [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/IntroEthicsShort/)
+- [Ethics](https://hannahmetzler.eu/ai_skills/IntroEthicsShort/#/important-ethical-aspects)
 - [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
 - [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
-- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
-- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
+- [Deep Research Mode](https://hannahmetzler.eu/ai_skills/DeepResearch)
 - [Customizing Chatbots](https://hannahmetzler.eu/ai_skills/Customizing)
-- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/UseCases)
-- [Fun exercises: Coding or coaching](https://hannahmetzler.eu/ai_skills/CodingCoaching)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
+- [Collection of use cases](https://hannahmetzler.eu/ai_skills/UseCases)
 - [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
 ## Access to LLM chatbots for today
 
-- Who has a paid account?
-- Did all others create a Gemini pro trial account?
+- Did you all create a Gemini pro trial account?
+- Do you have accounts on ChatGPT and Claude? (or Gmail account details to log in)
 
 # Introduction to LLMs
 
-[Slides](https://hannahmetzler.eu/ai_skills/Introduction/)
+[Slides](https://hannahmetzler.eu/ai_skills/IntroEthicsShort/)
