@@ -1,0 +1,59 @@
+---
+format:
+  # html:
+  #   toc: true
+   revealjs: 
+    theme: [default, custom.scss]
+    transition: "slide"
+    incremental: false
+    aspect-ratio: 16:9
+    slide-number: true
+    title-slide: true  # This enables the title slide
+    speakerNotes: true
+editor: source
+---
+
+## <br> Deep Research
+
+<br>
+
+### Mastering AI Chatbots: Optimizing Research through Effective Use
+
+<br>
+
+**Mag. Dr. Hannah Metzler** & **Konstantin Hebenstreit, M.Sc.** <br>
+*Complexity Science Hub & Medical University of Vienna*
+
+
+## LLM research reports
+
+- Deep Research Mode: 
+  - Gemini
+  - ChatGPT (paid account only, and limits apply)
+
+- Custom GPT with scientific articles sourcs only:
+  - Consensus
+  - Dimensions Research
+  
+## How do they work?
+
+- Deep Research: 
+  - Reasoning models
+  - Verification before processing
+  - Questions really matter - expensive compute
+  - Search the entire internet
+- Custom GPTs: databases with sources, document embeddings, finding similar documents, third party provider, only open access papers
+
+Check online
+  
+## Exercise
+
+Define a research question where you can judge the answer (you have expertise. 
+Social Media Question insert here. 
+
+Add it in Gemini Deep Research, ChatGPT Deep Research mode if you have a paid account, maybe Perplexity?, in Consensus and Dimensions Research. 
+
+- How accurate are the reports?
+- Do they reflect your knowledge on the field?
+- How good are the sources cited?
+

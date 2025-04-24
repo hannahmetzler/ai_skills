@@ -18,12 +18,10 @@
 # To Do Hannah
 
 - Prompting, Hallucinations
-- Welcome slides update
 - Resources
 - Deep Research
 
 ## Intro
-
 
 - Delete slide 10 deep learning/neural networks
 - Maybe delete word embeddings
@@ -57,9 +55,6 @@
   
 - Update Ethics (data privacy, see below)
 - Exercises/part to play with different models
-
-  
-
 
 # Models and model features
 
@@ -170,6 +165,8 @@
 - There is no clear science of prompt engineering. AI is inconcistent and weird. 
 - treat AI just like an infinitely patient new coworker who forgets everything you tell them each new conversation
 - Treat as human citation: OpenAI’s ChatGPT-4.5 Passes Turing Test With 73% Success Rate [ref](https://arxiv.org/pdf/2503.23674)
+
+
 ## Co-worker
 
 - Work with it, do not just give it orders, learn what it's good or bad at.

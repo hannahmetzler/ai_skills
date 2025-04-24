@@ -21,8 +21,8 @@ editor: source
 
 <br>
 
-**Mag. Dr. Hannah Metzler** <br>
-*Complexity Science Hub &  Medical University of Vienna* 
+**Mag. Dr. Hannah Metzler** & **Konstantin Hebenstreit, M.Sc.** <br>
+*Complexity Science Hub & Medical University of Vienna*
 
 <br>
 
@@ -36,12 +36,12 @@ editor: source
 -   [Intrenion.com](https://intrenion.com): videos and ChatGPT prompt course notes
     - Many [links to further resources](https://www.intrenion.com/Generative-AI-Research-Policies-EN-DE-23a4800b10c34ed3a637646ba73b68e8) & [prompt suggestions](https://www.intrenion.com/12ae2c1dbf7980dfbc60ea5513649ea1?v=e29263bc65bd4b71af467eb91955bdde)
 - Basic & useful terms: 
-  -   [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/)
+  - [The Llama Hitchiking Guide to Local LLMs](https://osanseviero.github.io/hackerllama/blog/posts/hitchhiker_guide/)
   - [Prompt Engineering Cheatsheet](https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf) (Maximilian Vogel)
 
 ## Deep dives
 
--   A really enjoyable book: [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
+-  A really enjoyable book: [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 - [YouTube: 3Brown1Blue](https://www.youtube.com/@3blue1brown):  visualized understanding of technical concepts
 - For coding: [Nicholas Carlini](https://nicholas.carlini.com/writing/2024/how-i-use-ai.html)
 
