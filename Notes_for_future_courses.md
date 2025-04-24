@@ -9,6 +9,9 @@
 - Intro
 - Ethics
 - Customizing updates? See notes for future courses
+- Creating Custom Gem on Gemini, memory (ev Gemini)
+- Using others CustomGPTs on ChatGPT
+- Customizing, system prompt on ChatGPT
 
 - Resources (add youtube andrej karpathy)
 
