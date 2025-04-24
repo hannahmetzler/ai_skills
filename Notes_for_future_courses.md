@@ -1,9 +1,23 @@
 # In the introduction to different models:
 
-# To Do 
+# To Do Konstantin
 
 - Email to people: Gemini test subscription, currently best model and free for one month
-- Update Github readme
+- Account on Gemini, ChatGPT, Claude
+
+- Update Github readme, day schedule
+- Intro
+- Ethics
+- Customizing updates? See notes for future courses
+
+- Resources (add youtube andrej karpathy)
+
+# To Do Hannah
+
+- Prompting, Hallucinations
+- Welcome slides update
+- Resources
+- Deep Research
 
 ## Intro
 
@@ -33,15 +47,12 @@
 - Explain and then test system prompt
   - Who are you? 
   - What day is today?
+- Add reasoning
 - Move Chain of thought prompts from prompting to the intro to explain reasoning models
 - Add reinforcement learning
 
   
 - Update Ethics (data privacy, see below)
-
-
-
-
 - Exercises/part to play with different models
 
   

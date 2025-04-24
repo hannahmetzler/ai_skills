@@ -1,6 +1,6 @@
 ---
 title: "Mastering AI Chatbots: Optimizing Research through Effective Use"
-subtitle: "Skill training LBG Career Center"
+subtitle: "Skills training LBG Career Center"
 author: "Hannah Metzler & Konstantin Hebenstreit <br> Slides: https://github.com/hannahmetzler/ai_skills"
 date: "October 29 2024"
 format: 
@@ -19,16 +19,18 @@ editor: source
 
 ### Dr. Hannah Metzler
 
-Complexity Science Hub & Meduni Vienna <br> Psychology, Neuroscience & Data Science <br> https://hannahmetzler.eu \| metzler\@csh.ac.at <br> X: [\@hannahmetzler1](https://x.com/hannahmetzler1)
+Complexity Science Hub <br> Psychology, Neuroscience & Data Science <br> https://hannahmetzler.eu \| metzler\@csh.ac.at <br>
+ <br>
 
 ### Konstanstin Hebenstreit, M.Sc.
 
-Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence, LLMs & Data Science <br> konstantin.hebenstreit\@meduniwien.ac.at <br> X: [\@K_Hebenstreit](https://x.com/K_Hebenstreit)
+Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence, LLMs & Data Science <br> konstantin.hebenstreit\@meduniwien.ac.at <br> 
 
 ## Who are you?
 
 -   Scientific discipline & topic area
--   One thing you have already used LLMs for
+- Which problems do you encounter when using LLMs? 
+- What works well?
 -   If any: particular expectation or interests for today
 
 ## (Rough) plan for the day {.smaller}
@@ -66,7 +68,6 @@ Artificial Intelligence Institute at Meduni Vienna <br> Artificial Intelligence,
 
 - Who has a paid account?
 - Did all others create a Gemini pro trial account?
--   Log in for 8 more accounts
 
 # Introduction to LLMs
 

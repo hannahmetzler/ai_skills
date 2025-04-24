@@ -11,17 +11,19 @@ format:
     title-slide: true  # This enables the title slide
     speakerNotes: true
 editor: source
+  markdown: 
+    wrap: 72
 ---
 
 ## <br> Chatbot Essentials & Advanced Prompting Strategies
+
 <br>
 
 ### Mastering AI Chatbots: Optimizing Research through Effective Use
 
 <br>
 
-**Mag. Dr. Hannah Metzler** <br>
-*Complexity Science Hub &  Medical University of Vienna* 
+**Mag. Dr. Hannah Metzler** <br> *Complexity Science Hub & Medical University of Vienna*
 
 <br>
 
@@ -51,35 +53,33 @@ editor: source
 :::::
 
 ::: notes
-LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (binstorming, managing projects, creating documents...)
-Meta-Regeln, Kontext, FRagen/Antwort schrittweise: https://www.youtube.com/watch?v=cfl7q1llkso&t=5s Minute 30 - vielleicht gut als Vereinfachung meines Prompting Teils?
-Tipp: neuer Chat - neuer kontext notwendig
+LLMs: not ideal for news and up to date knowledge research, better adapted for things that generalize across time (binstorming, managing projects, creating documents...) Meta-Regeln, Kontext, FRagen/Antwort schrittweise: https://www.youtube.com/watch?v=cfl7q1llkso&t=5s Minute 30 - vielleicht gut als Vereinfachung meines Prompting Teils? Tipp: neuer Chat - neuer kontext notwendig
 :::
 
 ## General tips for working with LLM Chatbots
 
-- There is no one "correct" way to prompt, no clear science of prompt engineering. We are still figuring this out together.
-  - _This is the worst AI you will ever use._ [1]
-- Use it often and try it out on many different tasks.
-  - _Always invite AI to the table._ [1]
-- Practice is all you need to get good at prompting. 
-- Use it for the first 80% of your tasks (co-intelligence/ co-worker).
-- _Treat it like a person._ [1]?!
+-   There is no one "correct" way to prompt, no clear science of prompt engineering. We are still figuring this out together.
+-   *This is the worst AI you will ever use.* \[1\]
+-   Use it often and try it out on many different tasks.
+-   *Always invite AI to the table.* \[1\]
+-   Practice is all you need to get good at prompting.
+-   Use it for the first 80% of your tasks (co-intelligence/ co-worker).
+-   *Treat it like a person.* \[1\]?!
 
 ::: footer
-Ethan Mollick: [1] [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771)
+Ethan Mollick: \[1\] [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771)
 :::
 
 ## "Treat it like a person" ?!
 
-- LLMs behave more like people than software/machines.
-- Speak to it as if it was a patient & forgetful co-worker
-- Talk into it: give it lots of context
-- Use microphone & headphones to actually talk.
-- Give it a persona (if that's useful)
-- Give feedback & engage in dialogue
-  - performance improves very quickly
-- Work on your prompts until you get useful output
+-   LLMs behave more like people than software/machines.
+-   Speak to it as if it was a patient & forgetful co-worker
+-   Talk into it: give it lots of context
+-   Use microphone & headphones to actually talk.
+-   Give it a persona (if that's useful)
+-   Give feedback & engage in dialogue
+-   performance improves very quickly
+-   Work on your prompts until you get useful output
 
 ::: notes
 we'll now look at these points in more detail
@@ -104,26 +104,27 @@ Ethan Mollick: [Getting started with AI: Good enough prompting](https://www.oneu
 
 ::: {.column width="55%"}
 ### ChatGPT App
+
 ![](images/voice_control.png){width="250"}
 
-- Headphones for ongoing conversations, microphone to record, stop to transcribe
+-   Headphones for ongoing conversations, microphone to record, stop to transcribe
 
-- Advanced voice mode: Memory
+-   Advanced voice mode: Memory
 :::
 :::::
 
 ## Using it often: Everyday life ideas {.scrollable .smaller}
 
 -   [Recipes](https://chatgpt.com/share/6716308d-3f20-800b-b5b7-b09291e3e243): Suggestions based on existing ingredients
--  Shopping lists: [vegetable curry](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170), [weekly meal plan](https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614), [workshop](https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63)
-- [Concert suggestions](https://chatgpt.com/share/671906a2-24e8-800b-8cb3-502973eda6bb)
+-   Shopping lists: [vegetable curry](https://chat.openai.com/c/19cd2fa5-ea51-49cb-8eff-559149200170), [weekly meal plan](https://chatgpt.com/share/67165da8-6dd0-800b-8c0b-237f7947a614), [workshop](https://chatgpt.com/share/67165a23-a6c0-800b-9466-be566ecb0a63)
+-   [Concert suggestions](https://chatgpt.com/share/671906a2-24e8-800b-8cb3-502973eda6bb)
 -   [Personalized travel planning](https://chatgpt.com/share/6718fe33-b0e0-800b-ac0f-feffc0a6b341)
 -   Household: [Stain](https://chat.openai.com/c/8cbd83d0-eb44-40ad-88bf-c1f227a44df0) or [smell](https://chatgpt.com/share/67165e32-4a40-800b-aefd-1fb1a055593e) removal, [houseplant care](https://chatgpt.com/share/671902f6-0e74-800b-919c-26ad4e102a9f)
 -   [Ideas for presents](https://chatgpt.com/share/671902aa-aa98-800b-b2cc-72b726281092)
 -   [Mindfulness meditation](https://chatgpt.com/share/671661b7-3cc4-800b-a126-264962464b25) guide
-- Basic medical advice ([Ibuprofen vs. Paracetamol](https://chatgpt.com/share/671905fa-5fe8-800b-9adb-fc17d40ee6f7))
-- Summarizing a long law document on [chicken welfare](https://chatgpt.com/share/671903b1-46f0-800b-8e0b-2db2c0d0b33d)
-- Estimating prices (me selling my old [cello](https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928))
+-   Basic medical advice ([Ibuprofen vs. Paracetamol](https://chatgpt.com/share/671905fa-5fe8-800b-9adb-fc17d40ee6f7))
+-   Summarizing a long law document on [chicken welfare](https://chatgpt.com/share/671903b1-46f0-800b-8e0b-2db2c0d0b33d)
+-   Estimating prices (me selling my old [cello](https://chatgpt.com/c/bdeef817-c7b1-4541-b228-cae9f10a9928))
 -   Personalized [fitness plan](https://chatgpt.com/share/671904b2-7f44-800b-ad5f-1824a194e177)
 -   Finding a [web hosting](https://chatgpt.com/share/67166a6e-772c-800b-9da7-67148e1f9c51) service
 
@@ -141,145 +142,125 @@ all links only work if I am logged in??/
 
 ## Effective prompting in a nutshell
 
- __Treat AI just like an infinitely _patient new_ coworker who _forgets_ everything you tell them each new conversation.__ 
- <small>[(Ethan Mollick)](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough) </small>
+**Treat AI just like an infinitely *patient new* coworker who *forgets* everything you tell them each new conversation.** <small>[(Ethan Mollick)](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough) </small>
 
-1) **Practice**: Learn what it can do well by using it in areas of your expertise. 
-2) **Clear instructions**: Be specific & clear about what you want.
-3) **Context**: Provide detailed background information. 
-4) **Abundance**: Ask for several options & select one you like.
-
-::: notes
-|  |                                     |
-|--------|------------------------------------------|
-| P      | Assign a **P**ersona/role                |
-| C      | Provide detailed **C**ontext             |
-| T      | Clear & specific **T**ask instructions   |
-| E      | Give **E**xamples                        |
-| T      | Specify **T**one/style                   |
-| O      | Specify **O**utput format                |
-| R/C    | Provide **c**onstraints (**R**estrictions)   |
-:::
+1)  **Practice**: Learn what it can do well by using it in areas of your expertise.
+2)  **Clear instructions**: Be specific & clear about what you want.
+3)  **Context**: Provide detailed background information.
+4)  **Abundance**: Ask for several options & select one you like.
 
 ::: notes
 Vereinfacht: https://www.youtube.com/watch?v=cfl7q1llkso&t=5s bei Minute 33
 
-Kontext, Frage, Format, Beispiele, Rollen, Zielgruppe, Kanal. 
-Constraints vielleicht entfernen?
+Kontext, Frage, Format, Beispiele, Rollen, Zielgruppe, Kanal. Constraints vielleicht entfernen?
 :::
 
 ## 2) Clear & specific instructions
 
-- Clear language, for example specific verbs (_explain, summarize, list, comment, format_ [1])
-<!-- ![](images/specific_task_instructions.png) -->
-- Give step-by-step instructions
-- Give feedback for improvement (dialogue)
-- Give examples
-- Include constraints
-- Specify tone & style
-- Specify output format
+-   Clear language, for example specific verbs (*explain, summarize, list, comment, format* \[1\]) <!-- ![](images/specific_task_instructions.png) -->
+-   Give step-by-step instructions
+-   Give feedback for improvement (dialogue)
+-   Give examples
+-   Include constraints
+-   Specify tone & style
+-   Specify output format
 
 ::: footer
-[1] [Prompt Engineering Cheatsheet](https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf) (Maximilian Vogel); Verbs on [learnprompt.org](https://www.learnprompt.org/)
+\[1\] [Prompt Engineering Cheatsheet](https://big-picture.com/media/the_prompt_engineering_cheat_sheet.pdf) (Maximilian Vogel); Verbs on [learnprompt.org](https://www.learnprompt.org/)
 :::
 
 ::: notes
-On a slide: include an example on specific & step-by-step instructions here. Use something where the LLM can create a list, then choose the best. Like E. Mollick here: https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough, in the figure after "working with AI ia a dialogue, not an order."
-e.g.: "Write an abstract of this paper"
-"Write an abstract of this paper for the journal _Nature human behavior_. Focus on the robust methods, the causal design, the novelty and implications of results. Here are instructions on how to write a good abstract: ...
+On a slide: include an example on specific & step-by-step instructions here. Use something where the LLM can create a list, then choose the best. Like E. Mollick here: https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough, in the figure after "working with AI ia a dialogue, not an order." e.g.: "Write an abstract of this paper" "Write an abstract of this paper for the journal *Nature human behavior*. Focus on the robust methods, the causal design, the novelty and implications of results. Here are instructions on how to write a good abstract: ...
 :::
-
 
 ## Give examples
 
-- An example of the output you want the model to produce.
-- Zero-shot vs. one-shot learning
+-   An example of the output you want the model to produce.
+-   Zero-shot vs. one-shot learning
 
-### What you could use:  
-::: columns
+### What you could use:
+
+::::: columns
 ::: column
-
-- Emails
-- Abstract
-- Social media posts/thread and paper
-
+-   Emails
+-   Abstract
+-   Social media posts/thread and paper
 :::
+
 ::: column
-- Presentation slides
-- Paragraph from paper
-- Previous recommendation/ application/ cover letters
+-   Presentation slides
+-   Paragraph from paper
+-   Previous recommendation/ application/ cover letters
 :::
-:::
-
+:::::
 
 ## Style and Output format
 
-::: columns
+::::: columns
 ::: column
 ### Style, tone, modality
 
-- formal vs. easy to understand
-- caring, professional, bold ([more examples](https://www.learnprompt.org/))
-- style of a famous person, researcher, book
-- Style of your text example
+-   formal vs. easy to understand
+-   caring, professional, bold ([more examples](https://www.learnprompt.org/))
+-   style of a famous person, researcher, book
+-   Style of your text example
 :::
+
 ::: column
 ### Output format
-    
-- length (300 words)
-- structure (e.g., bullet points, paragraphs)
-- Markdown, JSON, csv, coding language
-- list of steps
-- a table (Markdown format is handy for copy pasting)
 
+-   length (300 words)
+-   structure (e.g., bullet points, paragraphs)
+-   Markdown, JSON, csv, coding language
+-   list of steps
+-   a table (Markdown format is handy for copy pasting)
 :::
-:::
+:::::
 
 ## Constraints or whitelist
 
-- What you don't want the model to do.
-- The task you want your model to stick to.
+-   What you don't want the model to do.
+-   The task you want your model to stick to.
 
 ### Example constraints
 
-- "Rely strictly on the provided text, without including external information." (summarizing text)
-- "Answer only questions about topic X." (for a conversational chatbot)
+-   "Rely strictly on the provided text, without including external information." (summarizing text)
+-   "Answer only questions about topic X." (for a conversational chatbot)
 
 ## 3) Provide detailed context
 
-- Purpose, background, specific details
-- Copy/paste easily available information (_documents, instruction manuals, previous conversations, emails..._)
-- Use a role/persona (when it's useful, will not always help):
-  - As a ..., You are a ..., Act as a ... (_PhD student, biologist, journalist, empathetic coach, prompt engineer..._)
-- Audience expertise level: Explain it like to a ... (_5-year old, someone with a PhD in biology,..._)
-
+-   Purpose, background, specific details
+-   Copy/paste easily available information (*documents, instruction manuals, previous conversations, emails...*)
+-   Use a role/persona (when it's useful, will not always help):
+-   As a ..., You are a ..., Act as a ... (*PhD student, biologist, journalist, empathetic coach, prompt engineer...*)
+-   Audience expertise level: Explain it like to a ... (*5-year old, someone with a PhD in biology,...*)
 
 ## 4) Patience & abundance
 
-- Ask for several options and select one you like.
-  - _15 sentences, 30 ideas, 3 abstracts_
-- Push for:  
-    - _variation (“give me ideas that are 80% weirder”),_ 
-    - _recombination (“combine ideas 12 and 16”) and_ 
-    - _expansion (“more ideas like number 12”)_
-    
+-   Ask for several options and select one you like.
+-   *15 sentences, 30 ideas, 3 abstracts*
+-   Push for:
+-   *variation (“give me ideas that are 80% weirder”),*
+-   *recombination (“combine ideas 12 and 16”) and*
+-   *expansion (“more ideas like number 12”)*
+
 ## Example from during course preparation
 
-- [ChatGPT conversation](https://chatgpt.com/share/671a423d-dba8-800b-bd9a-f27bbe249c02)
-- Task: Create exercise to practice prompting
-- Context: skill training, my previous slides
-- Audience: you
-- Provided example exercise: Writing an email (see [here](#email))
-- Output: 3 Quarto slides with one exercise each
+-   [ChatGPT conversation](https://chatgpt.com/share/671a423d-dba8-800b-bd9a-f27bbe249c02)
+-   Task: Create exercise to practice prompting
+-   Context: skill training, my previous slides
+-   Audience: you
+-   Provided example exercise: Writing an email (see [here](#email))
+-   Output: 3 Quarto slides with one exercise each
 
 ## Managing expectations
 
-- Usually not all of these details in every prompt
-- Talk "into it", iterate and add necessary aspects required to improve the answer
-- Prompting is not hard to learn
-- (Probably) only a useful short-term skill: 
-  - LLMs will get good at prompting
-  - LLMs will get integrated into software/interfaces
+-   Usually not all of these details in every prompt
+-   Talk "into it", iterate and add necessary aspects required to improve the answer
+-   Prompting is not hard to learn
+-   (Probably) only a useful short-term skill:
+-   LLMs will get good at prompting
+-   LLMs will get integrated into software/interfaces
 
 ::: footer
 [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
@@ -287,86 +268,64 @@ e.g.: "Write an abstract of this paper"
 
 # Exercise (20 minutes)
 
-Practice effective prompting for: 
+Practice effective prompting for:
 
-- writing an email
-- summarizing content
-- help with a statistics question
+<!-- - writing an email -->
+
+<!-- - summarizing content -->
+
+<!-- - help with a statistics question -->
+
+-   writing a paper part
+-   discussion in five different styles
+-   discussion in bullet points for content, then convert to text with chosen style
+-   doing a review of your paper, get feedback
+-   adding extra content, e.g. website about reviewer instructions
+-   [Summarise texts](https://www.maastrichtuniversity.nl/summarise)
+-   [Improve text](https://www.maastrichtuniversity.nl/improve-text-step-step)
 
 ## Exercise Option 1: Email (20 minutes) {#email}
 
 -   Choose a longer email you need to write soon
--   Talk to ChatGPT using the microphone. Explain who you are (persona), who the email is for (audience), the purpose (context),  necessary points to include (task).
--   Tell it to write in the style of the examples you'll provide (tone) and to wait until you provide them in the next post. Press enter to upload your spoken prompt. 
+-   Talk to ChatGPT using the microphone. Explain who you are (persona), who the email is for (audience), the purpose (context), necessary points to include (task).
+-   Tell it to write in the style of the examples you'll provide (tone) and to wait until you provide them in the next post. Press enter to upload your spoken prompt.
 -   Copy/paste the email thread (or 2 unrelated emails) as writing style examples (context/examples). Delete names/email addresses.
 
 ## Exercise Option 2: (20 minutes) {.smaller}
 
 ### Extract relevant points from long content
 
-- Choose a recent workshop/lecture, meeting you attended or paper you read
-  - Some written record exists (notes, slides, transcript)
-- Copy/paste text or upload the document
-- Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis, ...
-- Define the audience: you, the team, other researchers
-- Context: Background/focus/purpose of meeting/analysis, exam...
-- Task: Tell the model what to focus on. E.g. "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam"
-  - Example instructions from [Maastricht University prompt library](https://www.maastrichtuniversity.nl/summarise)
-- Add examples if any (relevant points, exam questions, notes about another paper)
+-   Choose a recent workshop/lecture, meeting you attended or paper you read
+-   Some written record exists (notes, slides, transcript)
+-   Copy/paste text or upload the document
+-   Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis, ...
+-   Define the audience: you, the team, other researchers
+-   Context: Background/focus/purpose of meeting/analysis, exam...
+-   Task: Tell the model what to focus on. E.g. "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam"
+-   Example instructions from [Maastricht University prompt library](https://www.maastrichtuniversity.nl/summarise)
+-   Add examples if any (relevant points, exam questions, notes about another paper)
 
-## Exercise Option 3: (20 minutes)  {.smaller}
+## Exercise Option 3: (20 minutes) {.smaller}
 
 ### Statistics question
 
-- Select a statistical problem you're currently facing in your research
-- Use ChatGPT to explain your statistical question
-  - Specify the data set involved, the analysis you're attempting, and any issues you've encountered
-- Provide a persona: e.g., "You are a statistics expert with experience in [field of research]"
-- Ask for a specific solution, including step-by-step instructions
-- Upload a sample of your data or describe it in detail as context
-
-
+-   Select a statistical problem you're currently facing in your research
+-   Use ChatGPT to explain your statistical question
+-   Specify the data set involved, the analysis you're attempting, and any issues you've encountered
+-   Provide a persona: e.g., "You are a statistics expert with experience in \[field of research\]"
+-   Ask for a specific solution, including step-by-step instructions
+-   Upload a sample of your data or describe it in detail as context
 
 # Advanced prompting strategies
 
-## Prompt libraries {#library}
-
-- Library of high quality prompts for your regular tasks
-- Use note taking apps or spreadsheets
-  - Notion, OneNote, Zotero...
-  - Excel, Google Sheets ([Template](https://docs.google.com/spreadsheets/d/1QbxiZspzCG9qOzqwS_56CdzAbJcgST6vnF8XK6PXaAQ/edit?usp=sharing))
-
-
-
-### Example questions: 
-
-::: columns
-::: column
-- [Create MC questions](https://www.maastrichtuniversity.nl/create-multiple-choice-questions)
-- [Summarise texts](https://www.maastrichtuniversity.nl/summarise)
-:::
-::: column
-- [Improve text](https://www.maastrichtuniversity.nl/improve-text-step-step)
-- [Choose statistis](https://www.maastrichtuniversity.nl/choose-statistics)
-:::
-:::
-
-::: footer
-[Maastricht University prompt library](https://www.maastrichtuniversity.nl/prompt-library/prompt-library-prompt-templates)
-:::
-
-  
-::: notes
-cut
-:::
-
 ## Using section headers
 
-::: columns
+::::: columns
 ::: {.column width="45%"}
-- Use section headers
-- Markdown format
+-   Use section headers
+-   Markdown format
 :::
+
 ::: {.column width="50%"}
 ```{Markdown, eval = F, echo=T}
 # Role
@@ -394,123 +353,71 @@ Text
 Text
 ```
 :::
-:::
+:::::
 
 ## Markdown {.smaller}
 
-::: columns
+::::: columns
 ::: {.column width="35%"}
-- [Markdown guide](https://www.markdownguide.org/) and [cheatsheet](https://www.markdownguide.org/cheat-sheet/)
-- Easy to use text-to-html conversion tool
-- Copying from Chatbot to Google docs without loosing the formatting
+-   [Markdown guide](https://www.markdownguide.org/) and [cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+-   Easy to use text-to-html conversion tool
+-   Copying from Chatbot to Google docs without loosing the formatting
 :::
+
 ::: {.column width="60%"}
-### Basic Markdown: 
-| |  |
-| -------- | -------- |
-| Headings          | # for H1, ## for H2                |
-| Text format    | \*\*bold \*\*, \*italic\*                            |
-| Lists             | 1. Item (ordered) <br> - Item (unordered)         |
-| Tables            | \| Column 1 \| Column 2 \|<br>\| -------- \| -------- \|<br>\| Text  \| Text     \| |
-| Links             | [Link Text]\(URL\)                              |
-| Images            | ![Alt Text]\(Image Path\)                       |
-| Horizontal Rule   | \- \- \-                                        |
+### Basic Markdown:
+
+|  |  |
+|------------------------------------|------------------------------------|
+| Headings | \# for H1, \## for H2 |
+| Text format | \*\*bold \*\*, \*italic\* |
+| Lists | 1\. Item (ordered) <br> - Item (unordered) |
+| Tables | \| Column 1 \| Column 2 \|<br>\| -------- \| -------- \|<br>\| Text \| Text \| |
+| Links | \[Link Text\](URL) |
+| Images | \![Alt Text\](Image Path) |
+| Horizontal Rule | \- - - |
 :::
-:::
-
-## Chain-of-thought prompting
-
-![](images/chain_of_thought.png){width=20%}
+:::::
 
 
-- Improve performance through more output tokens.
-- Reasoning happens while model predicts each word
-- [Produces longer & better answers, better reasoning](https://arxiv.org/abs/2201.11903).
-- Define precise steps you want the model to go through.  
+<!-- ## Re-reading improves accuracy -->
 
+<!-- ::: columns -->
 
-::: footer
-Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
-:::
+<!-- ::: column -->
 
+<!-- Improve reasoning by asking to re-read (RE2) a question. -->
 
-## Chain-of-thought prompting: Exceptions
+<!--   1. Question -->
 
-- This works so well it's built into some of the newest models. 
+<!--   2. "Read the question again + Question" -->
 
-<br>
+<!--   3. Chain of thought (CoT) -->
 
-### Example: Instructions for using the GPT o1 model
+<!-- ::: -->
 
-- Avoid chain-of-thought prompts: used internally by default
-- Keep prompts simple and direct
-- Use delimiters: triple quotation marks, section titles
-- Only include most relevant information when providing context/documents, otherwise overcomplicated responses
+<!-- ::: column -->
 
-::: footer
-[See the complete o1 instructions](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting)
-:::
+<!-- ![](images/rereading.png) -->
 
-::: notes
-Keep prompts simple and direct: The models excel at understanding and responding to brief, clear instructions without the need for extensive guidance.
-Avoid chain-of-thought prompts: Since these models perform reasoning internally, prompting them to "think step by step" or "explain your reasoning" is unnecessary.
-Use delimiters for clarity: Use delimiters like triple quotation marks, XML tags, or section titles to clearly indicate distinct parts of the input, helping the model interpret different sections appropriately.
-Limit additional context in retrieval-augmented generation (RAG): When providing additional context or documents, include only the most relevant information to prevent the model from overcomplicating its response.
-:::
+<!-- ::: -->
 
-## Re-reading improves accuracy
+<!-- ::: -->
 
+<!-- Later tokens see earlier tokens: "tennis balls" sees "how many" -->
 
-::: columns
-::: column
-Improve reasoning by asking to re-read (RE2) a question.
+<!-- ::: footer -->
 
-  1. Question
-  2. "Read the question again + Question"
-  3. Chain of thought (CoT)
+<!-- [Xu et al. (2024)](https://arxiv.org/pdf/2309.06275) -->
 
-:::
-::: column
-![](images/rereading.png)
-:::
-:::
-
-Later tokens see earlier tokens: "tennis balls" sees "how many"
-
-::: footer
-[Xu et al. (2024)](https://arxiv.org/pdf/2309.06275)
-:::
-
-
-## Let the model write your next base prompt {#base}
-
-### Base prompt
-- Text input provided by the user to directly instruct the LLM
-- After a successful interaction, get & save a base prompt in JSON for future requests:
-
-### Example:
-
-Could you please write a mega prompt from our interaction here, that I can use again next time I want to ask you about coding, when I want a succinct answer? Please write it in JSON.
-
-## Base prompt example - ChatGPT response:
-
-{ "request": "Please provide a concise, code-focused answer without basic instructions like how to sign in or navigate interfaces. Assume familiarity with basic concepts and procedures, and focus directly on the commands or steps needed to accomplish the task. In the code, add comments for different code blocks.",
-
-"context": "When asking for coding or technical guidance, I prefer succinct responses that go straight to the point, providing only the essential commands or steps without additional explanations or preliminary steps assumed to be known." }
-
-## Exercise base prompt (5 min)
-
-- Ask the model to write a mega prompt at the end of a successful chat (or in your chat from the previous exercise).
-- "Could you please write a mega prompt in JSON format from our interaction here, that I can use again next time I want to ask you about [task], when I want [what the model did right in the end]?"
-- Save the prompt into your prompt library. Use a spreadsheet like this [template](https://docs.google.com/spreadsheets/d/1QbxiZspzCG9qOzqwS_56CdzAbJcgST6vnF8XK6PXaAQ/edit?usp=sharing) (or any other note taking option from [here](#library).
-  - Filter for categories in Google Sheets: Data -> Create filter. 
+<!-- ::: -->
 
 ## Hallucinations
 
 -   LLMs invent facts/sources that don't exist.
--   Why? 
-    - Statistical patterns in training data
-    -   Predicting the next most likely word.
+-   Why?
+-   Statistical patterns in training data
+-   Predicting the next most likely word.
 -   Trained to give an answer, not to be truthful.
 -   Likely = plausible & hard to recognize
 -   Does not have fact knowledge or real-time access.
@@ -518,53 +425,53 @@ Could you please write a mega prompt from our interaction here, that I can use a
 
 ## Improvements for hallucinations
 
-- New models much better
-- Online search possibility helps a lot
-- But the problem is built in, will continue to occur
+-   performance of new models
+-   Online search possibility helps a lot
+-   But the problem is built in, will continue to occur
 
-::: columns
+::::: columns
 ::: column
 ![](images/hallucinations_birthdate.png)
 :::
+
 ::: column
 ![](images/claude_hallucinations_bio.png)
 :::
-:::
-
+:::::
 
 ## Strategies for verification I
 
-
-- 4-eyes principle: Model does 80%, 20% human [2]
-- Expertise and fact knowledge matters. Start using LLMs in your area of expertise. [1] 
-- Check online and give me 5 sources for this claim [2]
-- [Chain of Verification](https://arxiv.org/abs/2309.11495): Check online for 4 facts to make sure that this answer is correct [2]
-- Ask for better prompts: Why am I not getting the answer I am looking for? Why do you produce false responses?
-  - [Book example in Erklär mir die Welt](https://youtu.be/7i70ssKwiNk?si=x3IvUZoDupXA1OF1&t=906)
+-   4-eyes principle: Model does 80%, 20% human \[2\]
+-   Expertise and fact knowledge matters. Start using LLMs in your area of expertise. \[1\]
+-   Check this claim with 5 sources \[2\]
+-   [Chain of Verification](https://arxiv.org/abs/2309.11495): Check online for 4 facts to make sure that this answer is correct \[2\]
+-   Ask for better prompts: Why am I not getting the answer I am looking for? Why do you produce false responses?
+-   [Book example in Erklär mir die Welt](https://youtu.be/7i70ssKwiNk?si=x3IvUZoDupXA1OF1&t=906)
 
 ::: footer
-[1] [Co-Intelligence](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick; [2] [Malcolm Wachota](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
+\[1\] [Co-Intelligence](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick; \[2\] [Malcolm Wachota](https://xn--erklrmir-3za.at/2024/07/30/deep-dive-alle-eure-fragen-zu-k-i-beantwortet/)
 :::
 
 ## Strategies for verification II
 
-- Write _if you’re unsure or necessary information, say “I don’t have enough information to answer this"._ ([One useful thing](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough))
+-   Write *if you’re unsure or necessary information, say “I don’t have enough information to answer this".* ([One useful thing](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough))
 -   Enter the same prompt in different models and compare, e.g. at <https://claude.ai>, <https://poe.com>, <https://anakin.ai>
--   Ask other models: Enter output of model 1 and ask: "Is this correct? Can you back this up with sources? Do these books exist?"
- (Example: [ChatGPT to Claude](https://claude.ai/chat/7fc0d00a-a648-4905-a3bd-c336f7a78b7f), [Claude to ChatGPT](https://chatgpt.com/share/671f7e35-a6dc-800b-b02c-0e395158611b))
-- Use LLM tools that provide references: Perplexity AI, Elicit, Dimensions Research AI, ScholarGPT
+-   Ask other models: Enter output of model 1 and ask: "Is this correct? Can you back this up with sources? Do these books exist?" (Example: [ChatGPT to Claude](https://claude.ai/chat/7fc0d00a-a648-4905-a3bd-c336f7a78b7f), [Claude to ChatGPT](https://chatgpt.com/share/671f7e35-a6dc-800b-b02c-0e395158611b))
+-   Use LLM tools that provide references: Perplexity AI, Elicit, Dimensions Research AI, ScholarGPT
 
-## Exercise: Correcting hallucinations (15 min) {.smaller}
+## Exercise: Correcting hallucinations (20 min) {.smaller}
 
-1. Use a prompt that could lead to hallucinations
-2. Apply different verification strategies
+1.  Use a prompt that could lead to hallucinations
+2.  Apply different verification strategies
 
-- "Please recommend 5 easy to read non-technical books about how to use LLM chatbots for research", books about: psychology/biology
-- "Summarize the findings of studies that show that evidence on the connection between mental health and social media use is often misleading. Include a reference list at the end of your summary."
-- Quote from an expert on a specific topic: "What does Jonathan Haidt say about why evidence on social media and mental health is not conclusive?" 
-- Or: ask about a historical event, details from a biography, most recent statistical data on unemployment in the Maldives etc.  
+-   "Please recommend 5 easy to read non-technical books about how to use LLM chatbots for research", books about: psychology/biology
+-   "Summarize the findings of studies that show that evidence on the connection between mental health and social media use is often misleading. Include a reference list at the end of your summary."
+-   Quote from an expert on a specific topic: "What does Jonathan Haidt say about why evidence on social media and mental health is not conclusive?"
+-   Or: ask about a historical event, details from a biography, most recent statistical data on unemployment in the Maldives etc.
 
-## Emotion prompts {visibility='hidden'}
+## No correct science of prompting can exist
+
+## Emotion prompts {visibility="hidden"}
 
 -   Emotional expressions can lead to better results ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
 
@@ -581,13 +488,13 @@ You'd better be sure.
 Still relevant? Can enhance both accuracy and depth of response across a variety of tasks. EmotionPrompt, improved performance on complex reasoning tasks such as Instruction Induction and BIG-Bench by up to 8-115%​ ChatGPT-4 and Claude Sonnet 3.5: Using emotional prompts can still provide added value in tasks requiring empathy or context sensitivity. Practical advice: Testing emotional prompts can help in specific scenarios, like advice or motivational tasks, even though some improvements are already baked into the default model behavior
 :::
 
-### More examples of emotional prompts: 
+### More examples of emotional prompts:
 
 -   This is extremely important to me, please be accurate.
 -   If you work correctly and well, you'll get a treat.
 -   This is important for my career, please be careful.
 
-## Why do emotional prompts work? {visibility='hidden'}
+## Why do emotional prompts work? {visibility="hidden"}
 
 -   Training the model on human language, describing human interactions
 -   Is a person's response likely to be better or worse if I tell whom it is important?

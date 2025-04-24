@@ -284,6 +284,46 @@ Artifacts allows for creating standalone, interactive content directly within th
 up to means: system capabilities, user access levels, computing time
 :::
 
+## Chain-of-thought prompting
+
+![](images/chain_of_thought.png){width="20%"}
+
+-   Improve performance through more output tokens.
+-   Reasoning happens while model predicts each word
+-   [Produces longer & better answers, better reasoning](https://arxiv.org/abs/2201.11903).
+-   Define precise steps you want the model to go through.
+
+::: footer
+Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
+:::
+
+
+## Chain-of-thought prompting: Exceptions
+
+- This works so well it's built into some of the newest models. 
+
+<br>
+
+
+
+### Example: Instructions for using the GPT o1 model
+
+- Avoid chain-of-thought prompts: used internally by default
+- Keep prompts simple and direct
+- Use delimiters: triple quotation marks, section titles
+- Only include most relevant information when providing context/documents, otherwise overcomplicated responses
+
+::: footer
+[See the complete o1 instructions](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting)
+:::
+
+::: notes
+Keep prompts simple and direct: The models excel at understanding and responding to brief, clear instructions without the need for extensive guidance.
+Avoid chain-of-thought prompts: Since these models perform reasoning internally, prompting them to "think step by step" or "explain your reasoning" is unnecessary.
+Use delimiters for clarity: Use delimiters like triple quotation marks, XML tags, or section titles to clearly indicate distinct parts of the input, helping the model interpret different sections appropriately.
+Limit additional context in retrieval-augmented generation (RAG): When providing additional context or documents, include only the most relevant information to prevent the model from overcomplicating its response.
+:::
+
 ## Different ChatGPT versions {.smaller}
 
 - GPT4: more resource intensive = expensive
