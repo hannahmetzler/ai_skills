@@ -49,20 +49,24 @@ editor: source
 
 ::::: columns
 ::: {.column width="47%"}
-### Newsletters & blogs
+### Newsletters
 
 - [One useful thing](https://www.oneusefulthing.org/) (E. Mollick) - application
 - [Sebastian Ruder](https://www.ruder.io/) - experts
-- Medium.com:
-    - [Maximilian Vogel](https://medium.com/@maximilian.vogel)
-    - [Recommendations for Twitter, Newsletters, Medium, Youtube & Co](https://medium.com/@maobedkova/how-i-stay-up-to-date-with-ai-and-nlp-656de9e284d9)
-:::
 
-::: {.column width="47%"}
 ### Social Media
 
 -   [Ethan Mollick on LinkedIn](https://www.linkedin.com/in/emollick/)
 -   [Nate Jones on Tiktok](https://www.tiktok.com/@nate.b.jones)
+
+:::
+
+::: {.column width="47%"}
+### Blogs on Medium
+
+- [Maximilian Vogel](https://medium.com/@maximilian.vogel), e.g. on [learning to use AI agents](https://medium.com/@maximilian.vogel/mastering-ai-agents-the-10-best-free-courses-tutorials-learning-tools-46bc380a19d1)
+- [Recommendations for Twitter, Newsletters, Medium, Youtube & Co](https://medium.com/@maobedkova/how-i-stay-up-to-date-with-ai-and-nlp-656de9e284d9)
+    
 :::
 :::::
 

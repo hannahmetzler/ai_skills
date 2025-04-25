@@ -103,3 +103,12 @@ Collection of ideas for where you might experiment with chatbots in the future
 -   Should I accept a journalist request? Answer ideas for [journalist interview questions](https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f) showed me that I could. 
 -   [Academic application: Writing the statement on "Future research directions"](https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea): exploring the research focus of the group and research area I aimed for. (second half of chat)
 
+## Tasks involving Code
+
+- Data analysis
+- Creating a website
+
+## Coaching, Time planning, 
+
+
+
