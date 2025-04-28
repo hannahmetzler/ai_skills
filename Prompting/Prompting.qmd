@@ -11,8 +11,6 @@ format:
     title-slide: true  # This enables the title slide
     speakerNotes: true
 editor: source
-  markdown: 
-    wrap: 72
 ---
 
 ## <br> Chatbot Essentials & Advanced Prompting Strategies
@@ -58,36 +56,20 @@ LLMs: not ideal for news and up to date knowledge research, better adapted for t
 
 ## General tips for working with LLM Chatbots
 
--   There is no one "correct" way to prompt, no clear science of prompt engineering. We are still figuring this out together.
--   *This is the worst AI you will ever use.* \[1\]
--   Use it often and try it out on many different tasks.
--   *Always invite AI to the table.* \[1\]
--   Practice is all you need to get good at prompting.
--   Use it for the first 80% of your tasks (co-intelligence/ co-worker).
--   *Treat it like a person.* \[1\]?!
+-  There is no correct way of prompting that applies universally. We are all figuring this out together constantly. 
+- We can't predict what will work in a particular use case. \[1\].
+-   *This is the worst AI you will ever use.* \[2\]
+-   *Always invite AI to the table.* \[2\]
+- Use it often and try it out on many different tasks. 
+- Practice is all you need to get good at prompting.
+-   Use it for the first 80% of your tasks (co-intelligence/co-worker).
 
 ::: footer
-Ethan Mollick: \[1\] [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771)
+ \[1\] ([Meinke et al., 2025](https://ai-analytics.wharton.upenn.edu/generative-ai-labs/research-and-technical-reports/tech-report-prompt-engineering-is-complicated-and-contingent/));
+Ethan Mollick: \[2\] [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771)
 :::
 
-## "Treat it like a person" ?!
 
--   LLMs behave more like people than software/machines.
--   Speak to it as if it was a patient & forgetful co-worker
--   Talk into it: give it lots of context
--   Use microphone & headphones to actually talk.
--   Give it a persona (if that's useful)
--   Give feedback & engage in dialogue
--   performance improves very quickly
--   Work on your prompts until you get useful output
-
-::: notes
-we'll now look at these points in more detail
-:::
-
-::: footer
-Ethan Mollick: [Getting started with AI: Good enough prompting](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough)
-:::
 
 ## Voice conversations
 
@@ -142,12 +124,12 @@ all links only work if I am logged in??/
 
 ## Effective prompting in a nutshell
 
-**Treat AI just like an infinitely *patient new* coworker who *forgets* everything you tell them each new conversation.** <small>[(Ethan Mollick)](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough) </small>
+**Treat AI just like an infinitely *patient new* co-worker who *forgets* everything you tell them each new conversation.** <small>[(Ethan Mollick)](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough) </small>
 
-1)  **Practice**: Learn what it can do well by using it in areas of your expertise.
-2)  **Clear instructions**: Be specific & clear about what you want.
-3)  **Context**: Provide detailed background information.
-4)  **Abundance**: Ask for several options & select one you like.
+1)  **Co-worker**: Learn what it can do well by using it in areas of your expertise.
+2)  **New on the job**: Be specific & clear about what you want.
+3)  **Forgetful**: Provide detailed background information every time.
+4)  **Patient**: Ask for many options & select those you like. Abundance!
 
 ::: notes
 Vereinfacht: https://www.youtube.com/watch?v=cfl7q1llkso&t=5s bei Minute 33
@@ -155,12 +137,29 @@ Vereinfacht: https://www.youtube.com/watch?v=cfl7q1llkso&t=5s bei Minute 33
 Kontext, Frage, Format, Beispiele, Rollen, Zielgruppe, Kanal. Constraints vielleicht entfernen?
 :::
 
+## 1) Treat it like a co-worker. 
+
+- LLMs behave more like people than software/machines.
+- Work with it, don't give it orders. 
+- You are the expert: Start by using it in areas of your expertise.
+- You'll learn where hallucinations are a big deal, and where they are not over time.
+- Give feedback & engage in dialogue. Performance improves very quickly.
+- Work on your prompts until you get useful output
+
+::: footer
+Ethan Mollick: [Getting started with AI: Good enough prompting](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough)
+:::
+
+## 2) New on the job: Clear instructions
+
+You don’t want _a report on the pros and cons in remote learning_, you want _a report on the pros and cons in remote learning appropriate for a regional university in the Midwestern US and that might convince a business school Dean to fund a new remote learning program._ ([E. Mollick](https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough))
+
+
 ## 2) Clear & specific instructions
 
--   Clear language, for example specific verbs (*explain, summarize, list, comment, format* \[1\]) <!-- ![](images/specific_task_instructions.png) -->
 -   Give step-by-step instructions
+- Provide examples
 -   Give feedback for improvement (dialogue)
--   Give examples
 -   Include constraints
 -   Specify tone & style
 -   Specify output format
@@ -173,9 +172,9 @@ Kontext, Frage, Format, Beispiele, Rollen, Zielgruppe, Kanal. Constraints vielle
 On a slide: include an example on specific & step-by-step instructions here. Use something where the LLM can create a list, then choose the best. Like E. Mollick here: https://www.oneusefulthing.org/p/getting-started-with-ai-good-enough, in the figure after "working with AI ia a dialogue, not an order." e.g.: "Write an abstract of this paper" "Write an abstract of this paper for the journal *Nature human behavior*. Focus on the robust methods, the causal design, the novelty and implications of results. Here are instructions on how to write a good abstract: ...
 :::
 
-## Give examples
+## Give good or bad examples
 
--   An example of the output you want the model to produce.
+-   An example of the output you want (or do not want) the model to produce.
 -   Zero-shot vs. one-shot learning
 
 ### What you could use:
@@ -227,7 +226,7 @@ On a slide: include an example on specific & step-by-step instructions here. Use
 -   "Rely strictly on the provided text, without including external information." (summarizing text)
 -   "Answer only questions about topic X." (for a conversational chatbot)
 
-## 3) Provide detailed context
+## 3) Forgetful: Provide detailed context
 
 -   Purpose, background, specific details
 -   Copy/paste easily available information (*documents, instruction manuals, previous conversations, emails...*)
@@ -257,64 +256,98 @@ On a slide: include an example on specific & step-by-step instructions here. Use
 
 -   Usually not all of these details in every prompt
 -   Talk "into it", iterate and add necessary aspects required to improve the answer
--   Prompting is not hard to learn
+-   Prompting is not hard to learn - there is no perfection. 
 -   (Probably) only a useful short-term skill:
--   LLMs will get good at prompting
--   LLMs will get integrated into software/interfaces
+-   LLMs already got very good at prompting themselves (reasoning)
+-   LLMs are getting integrated into software/interfaces
 
 ::: footer
 [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 :::
 
-# Exercise (20 minutes)
+## Exercise options 1 & 2
 
-Practice effective prompting for:
+**Practice instructing your new, infinitely patient & forgetful co-worker.**
 
-<!-- - writing an email -->
+1. Translate a paper into a general audience presentation.
+    - Context: Paper, audience, focus...
+    
+2. Do a review of a/your paper.
+    - Context/clarity: reviewer guidelines ([general](https://authorservices.wiley.com/Reviewers/journal-reviewers/how-to-perform-a-peer-review/step-by-step-guide-to-reviewing-a-manuscript.html), [psychology](https://online.ucpress.edu/collabra/article/10/1/126218/204033/A-Beginner-s-Guide-to-Open-and-Reproducible))
+    - Good reviews you have done/received as examples
+    - Inspiration for a prompt to [improve text](https://www.maastrichtuniversity.nl/improve-text-step-step)
+    
+## Exercise Option 3
 
-<!-- - summarizing content -->
+3. Write the discussion of a finished paper.
+    - Context: Intro, Methods, Results
+    - Experiment with different writing instructions (see [here](#writing-style))
+    - Experiment with letting the model suggest different outlines as bullet points, improve those, then let the model write full sentences.
+    - Write one paragraph after another. Improve. Add each paragraph to the initial prompt with entire paper once you like it. 
+    
+## Example for writing style instructions {#writing-style .scrollable .smaller style="font-size: 0.45em;"} 
 
-<!-- - help with a statistics question -->
+Example of an Writing Style Guide:
 
--   writing a paper part
--   discussion in five different styles
--   discussion in bullet points for content, then convert to text with chosen style
--   doing a review of your paper, get feedback
--   adding extra content, e.g. website about reviewer instructions
--   [Summarise texts](https://www.maastrichtuniversity.nl/summarise)
--   [Improve text](https://www.maastrichtuniversity.nl/improve-text-step-step)
+### 1. Structure and Formatting
+- Use simple, clear language focused on one main idea per sentence
+- Employ short paragraphs (2-4 sentences) to enhance readability
+- Begin with a concise, attention-grabbing title and subtitle
+- Use headings and subheadings to organize content logically
+- Incorporate formatting elements (e.g., bold text, italics) sparingly for emphasis
+- Use bullet points or numbered lists for key takeaways or steps
 
-## Exercise Option 1: Email (20 minutes) {#email}
+### 2. Content Organization
+- Start with the most important information (inverted pyramid style)
+- Ensure each paragraph focuses on a single main idea
+- Organize content into clear sections, each building upon the previous one
+- Include occasional single-sentence paragraphs for impact
 
--   Choose a longer email you need to write soon
--   Talk to ChatGPT using the microphone. Explain who you are (persona), who the email is for (audience), the purpose (context), necessary points to include (task).
--   Tell it to write in the style of the examples you'll provide (tone) and to wait until you provide them in the next post. Press enter to upload your spoken prompt.
--   Copy/paste the email thread (or 2 unrelated emails) as writing style examples (context/examples). Delete names/email addresses.
+### 3. Flow and Engagement
+- Open with a compelling hook to capture reader interest
+- Pose thought-provoking questions to involve the reader
+- Maintain a strong flow of ideas throughout the text
+- Use transitional phrases to connect ideas and paragraphs
+- Create and use strong "concept handles" (catchy phrases that sum up complex ideas)
+- Use analogies and metaphors sparingly to explain complex concepts
+- Incorporate relevant real or hypothetical scenarios to illustrate points
 
-## Exercise Option 2: (20 minutes) {.smaller}
+### 4. Depth and Conciseness
+- Provide depth on key points without becoming verbose
+- Break down complex ideas into digestible chunks
+- Use precise language to convey maximum information in minimal words
+- Begin with concrete examples before introducing abstract principles
+- Use multiple, diverse examples to illustrate complex points
+- Apply introduced ideas to real-world scenarios to demonstrate their relevance
 
-### Extract relevant points from long content
+### 5. Persuasion and Balance
+- Present a balanced view by acknowledging multiple perspectives
+- Address potential counterarguments proactively
+- Use appropriate language to connect with your target audience
 
--   Choose a recent workshop/lecture, meeting you attended or paper you read
--   Some written record exists (notes, slides, transcript)
--   Copy/paste text or upload the document
--   Define the persona: academic assistant organizing meeting notes, PhD student preparing for exam, researcher who writes a meta-analysis, ...
--   Define the audience: you, the team, other researchers
--   Context: Background/focus/purpose of meeting/analysis, exam...
--   Task: Tell the model what to focus on. E.g. "Summarize the main points in bullet points with a focus on To Dos/study design/what could be asked in the exam"
--   Example instructions from [Maastricht University prompt library](https://www.maastrichtuniversity.nl/summarise)
--   Add examples if any (relevant points, exam questions, notes about another paper)
+### 6. Technical and Scientific Writing
+- Explain technical concepts in accessible language
+- Provide context for why the topic matters to the reader or the broader field
 
-## Exercise Option 3: (20 minutes) {.smaller}
+### 7. Tone and Voice
+- Employ active voice and direct language
+- Maintain a professional yet accessible tone
+- Avoid being overly academic or jargon-heavy
+- Use an engaging and slightly conversational style to create a sense of dialogue
+- Present ideas thoughtfully, showing respect for the reader's intelligence
+- Convey complex ideas efficiently without sacrificing depth
+- Maintain a forward-looking and slightly enthusiastic tone, especially when discussing potential developments
+- Balance optimism about possibilities with acknowledgment of challenges
+- Aim to inform and engage without being pedantic or oversimplifying
 
-### Statistics question
+## Steps for scientific writing with LLM Chatbots
 
--   Select a statistical problem you're currently facing in your research
--   Use ChatGPT to explain your statistical question
--   Specify the data set involved, the analysis you're attempting, and any issues you've encountered
--   Provide a persona: e.g., "You are a statistics expert with experience in \[field of research\]"
--   Ask for a specific solution, including step-by-step instructions
--   Upload a sample of your data or describe it in detail as context
+1. Let the Chatbot create a draft of parts of your paper in bullet points. 
+1. Refine the bullet points and structure manually.
+1. Then let the Chatbot phrase sentences from bullet points:
+    - one paragraph at a time
+    - refine text manually
+    - provide existing paragraphs as context for the next
 
 # Advanced prompting strategies
 
@@ -425,9 +458,8 @@ Text
 
 ## Improvements for hallucinations
 
--   performance of new models
--   Online search possibility helps a lot
--   But the problem is built in, will continue to occur
+-   Web search possibility helps a lot.
+-   But the problem is built in, will continue to occur.
 
 ::::: columns
 ::: column
