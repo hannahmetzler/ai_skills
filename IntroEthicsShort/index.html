@@ -381,7 +381,7 @@
 <img data-src="images/next_word_prediction.png" class="r-stretch"><div class="fragment">
 <p>Question for you:</p>
 <ul>
-<li>What does this mean for self-reflection? Source citations?</li>
+<li>What does this mean, when the model writes citations and references?</li>
 </ul>
 </div>
 </section>
@@ -416,95 +416,83 @@
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<!-- ## Each token is a vector of numbers -->
+<!-- <br> -->
+<!-- ::::: columns -->
+<!-- ::: {.column width="40%" align="center"} -->
+<!-- Word/Token -->
+<!-- <br> -->
+<!-- <span -->
+<!-- style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even -->
+<!-- </span> -->
+<!-- ... -->
+<!-- ::: -->
+<!-- ::: {.column width="10%" align="center" } -->
+<!-- → -->
+<!-- ::: -->
+<!-- ::: {.column width="40%" align="center" } -->
+<!-- Word Embedding -->
+<!-- <small> -->
+<!-- [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, -->
+<!-- 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, -->
+<!-- 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, -->
+<!-- 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, -->
+<!-- 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -->
+<!-- -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] -->
+<!-- </small> -->
+<!-- ::: -->
+<!-- ::::: -->
+<!-- ## How do embeddings encode meaning? -->
+<!-- ::::: columns -->
+<!-- ::: {.column width="40%"} -->
+<!-- **Word embeddings** -->
+<!-- ![](images/wordembeddings.svg) -->
+<!-- Semantic dimensions: gender & royalty -->
+<!-- ::: -->
+<!-- ::: {.column width="56%" .fragment} -->
+<!-- **Contextual word embeddings** -->
+<!-- - Embedding differs depending on the **context** (before and after the word) -->
+<!-- -   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit? -->
+<!-- <img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;" /> -->
+<!-- ::: -->
+<!-- ::::: -->
+<!-- ## In technical words -->
+<!-- -   Deep Learning: Multiple layers of "neurons" -->
+<!-- -   Linear regressions calculate "weights" for the connections -->
+<!-- -   Input layer: Word embeddings  -->
+<!-- ::::: columns -->
+<!-- ::: {.column width="47%"} -->
+<!-- -   Output layer: One-hot encoding -->
+<!--     - one word = 1 -->
+<!--     - all others = 0 -->
+<!-- ::: -->
+<!-- ::: {.column width="47%"} -->
+<!-- ```{r, echo=FALSE} -->
+<!-- knitr::include_graphics("images/neuralnet.svg") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::::: -->
+<!-- ::: notes -->
+<!-- One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask -->
+<!-- ::: -->
 </section>
-<section id="each-token-is-a-vector-of-numbers" class="slide level2">
-<h2>Each token is a vector of numbers</h2>
-<p><br></p>
-<div class="columns">
-<div class="column" data-align="center" style="width:40%;">
-<p>Word/Token</p>
-<p><br></p>
-<p><span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even </span> …</p>
-</div><div class="column" data-align="center" style="width:10%;">
-<p>→</p>
-</div><div class="column" data-align="center" style="width:40%;">
-<p>Word Embedding <small> [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] </small></p>
-</div></div>
-</section>
-<section id="how-do-embeddings-encode-meaning" class="slide level2">
-<h2>How do embeddings encode meaning?</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><strong>Word embeddings</strong></p>
-<p><img data-src="images/wordembeddings.svg"></p>
-<p>Semantic dimensions: gender &amp; royalty</p>
-</div><div class="column fragment" style="width:56%;">
-<p><strong>Contextual word embeddings</strong></p>
-<ul>
-<li>Embedding differs depending on the <strong>context</strong> (before and after the word)</li>
-<li><a href="https://www.tiktok.com/@whats_ai/video/7247609946672565510">Example</a> “Apple”: Mac or fruit?</li>
-</ul>
-<p><img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;"></p>
-</div></div>
-</section>
-<section id="in-technical-words" class="slide level2">
-<h2>In technical words</h2>
-<ul>
-<li>Deep Learning: Multiple layers of “neurons”</li>
-<li>Linear regressions calculate “weights” for the connections</li>
-<li>Input layer: Word embeddings</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:47%;">
-<ul>
-<li>Output layer: One-hot encoding
-<ul>
-<li>one word = 1</li>
-<li>all others = 0</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:47%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/neuralnet.svg"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-<aside class="notes">
-<p>One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="steps-for-trainingusing-frontier-llms" class="slide level2">
-<h2>Steps for training/using frontier LLMs</h2>
+<section id="steps-for-training-frontier-llms" class="slide level2">
+<h2>Steps for training frontier LLMs</h2>
 <ol type="1">
 <li><strong>Pre-train</strong> on most of the available data from the internet via next-word prediction.</li>
-<li><strong>Fine-tune</strong> model to the chat setting &amp; apply <a href="https://hannahmetzler.eu/ai_skills/Customizing/#/system-prompts">system prompts</a></li>
-<li>Refine with <strong>human feedback</strong></li>
-<li>In context learning (<strong>prompting</strong>): Explain the task.</li>
+<li><strong>Fine-tune</strong> model to the chat setting.</li>
+<li>Refine with <strong>human feedback</strong>, e.g.&nbsp;via reinforcement learning.</li>
 </ol>
+<!-- & apply [system prompts](https://hannahmetzler.eu/ai_skills/Customizing/#/system-prompts) -->
+<!-- 1. In context learning (**prompting**): Explain the task.    -->
 </section>
-<section id="what-is-the-model-still-missing" class="slide level2">
-<h2>What is the model still missing?</h2>
+<section id="refining-with-human-feedback" class="slide level2">
+<h2>Refining with human feedback</h2>
+<h3 id="rlhf-reinforcement-learning-from-human-feedback">RLHF: Reinforcement learning from human feedback</h3>
 
-<img data-src="images/unknown_caller.png" class="r-stretch"><div class="fragment">
-<p><strong>Context information: Your prompts need to give context.</strong></p>
+<img data-src="images/RLHF_3steps_easy.jpg" class="r-stretch"><p>Human preference data is used for creating a reward model, which is then used to train the LLM via reinforcement learning.</p>
 <div class="footer">
-<p><a href="https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/">Pixabay</a></p>
-</div>
+<p>Source: <a href="https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/">AWS Blog</a></p>
 </div>
 </section></section>
 <section>
@@ -515,43 +503,101 @@
 <section id="current-top-models" class="slide level2">
 <h2>Current top models</h2>
 <ul>
-<li><strong>Gemini-Exp &amp; Gemine-1.5 Pro</strong> (Google)</li>
-<li><strong>ChatGPT-4o and o1</strong> (Open AI)</li>
-<li><strong>Claude 3.5 Sonnet</strong> (Anthropic)</li>
+<li><strong>Gemini 2.5 Pro</strong> (Google)</li>
+<li><strong>ChatGPT-4o, GPT-4.5 and o3</strong> (OpenAI)</li>
+<li><strong>Grok-3</strong> (xAI)</li>
+<li><strong>Claude 3.7 Sonnet</strong> (Anthropic)</li>
 </ul>
 <p>Best non-proprietary:</p>
 <ul>
-<li><strong>Llama 3.1</strong> (Meta)</li>
+<li><strong>DeepSeek-V3</strong> (DeepSeek)</li>
 </ul>
 <div class="footer">
 <p>Source: <a href="https://chat.lmsys.org/">Chatbot Arena</a></p>
 </div>
 </section>
-<section id="multimodal-interactions" class="slide level2">
-<h2>Multimodal interactions</h2>
-<div class="columns">
-<div class="column" style="width:48%;">
-<p><strong>ChatGPT &amp; Gemini</strong></p>
+<section id="features-of-the-models" class="slide level2">
+<h2>Features of the models</h2>
+<p><strong>All models (ChatGPT, Gemini, Claude)</strong></p>
 <ul>
-<li>Browse</li>
-<li>Create images</li>
-<li>Execute code</li>
-<li>Voice input/output</li>
-<li>Discovering &amp; using custom GPTs/Gems <br> (Claude: Projects)</li>
+<li>Long inputs and interactions possible (context window)</li>
+<li>Extended reasoning</li>
+<li>File &amp; Image Uploads</li>
+<li>Connection to Google Drive</li>
+<li>Canvas mode (show formatted document)</li>
 </ul>
-</div><div class="column" style="width:48%;">
-<p><strong>All models</strong></p>
-<ul>
-<li>File Uploads</li>
-<li>Upload &amp; analyze images</li>
-<li>Data analysis</li>
-</ul>
-<p><strong>Only Claude</strong></p>
-<ul>
-<li>Interactive <a href="https://support.anthropic.com/en/articles/9945615-intro-to-artifacts">artifacts</a></li>
-<li>Format text &amp; websites</li>
-</ul>
-</div></div>
+</section>
+<section id="features-of-the-models-1" class="slide level2">
+<h2>Features of the models</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Capability</th>
+<th style="text-align: center;">ChatGPT</th>
+<th style="text-align: center;">Claude</th>
+<th style="text-align: center;">Gemini</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Web Browsing</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><strong>~</strong></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Deep Research</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Image Generation</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Execute Code</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><strong>~</strong></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Data analysis</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Voice input</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"><strong>~</strong></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Voice conversation</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Projects</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌</td>
+</tr>
+</tbody>
+</table>
+<!-- | Long Reasoning      | ✅             | ✅         | ✅                 | -->
+<!-- | File & Image upload | ✅             | ✅         | ✅                 | -->
+<!-- | Canvas/Formatting   | ✅             | ✅         | ✅                 | -->
 <div class="footer">
 <p>This changes constantly!</p>
 </div>
@@ -573,9 +619,9 @@
 <section id="strengths-of-different-models-interfaces" class="slide level2">
 <h2>Strengths of different models &amp; interfaces</h2>
 <ul>
-<li><a href="https://chat.openai.com/"><strong>ChatGPT-4o</strong></a> (Open AI): <strong>web search</strong>, code execution, multimodal interactions, custom GPTs with document upload, context: 4096-128.000 tokens</li>
-<li><a href="https://claude.ai/"><strong>Claude 3.5 Sonnet</strong></a> (Anthropic): <strong>Writing style</strong>, beautiful text rendering, custom projects, interactive artifacts, <strong>long context</strong>: 200.000 tokens</li>
-<li><a href="https://gemini.google.com/app"><strong>Gemini 1.5 pro</strong></a> (Google): web search, code execution, multimodal interactions, integration with Google services, custom models, context: up to 2 million tokens</li>
+<li><a href="https://chat.openai.com/"><strong>ChatGPT</strong></a> (Open AI): most features, best interface, live mode video and voice</li>
+<li><a href="https://claude.ai/"><strong>Claude</strong></a> (Anthropic): writing style, interactive artifacts for simple figures or websites</li>
+<li><a href="https://gemini.google.com/app"><strong>Gemini</strong></a> (Google): currently best model, integration with Google services (Youtube, google maps, flights, hotels, workspace, calendar, tasks etc)</li>
 </ul>
 <aside class="notes">
 <p>up to means: system capabilities, user access levels, computing time</p>
@@ -591,24 +637,100 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="different-chatgpt-versions" class="slide level2 smaller">
-<h2>Different ChatGPT versions</h2>
-<ul>
-<li>GPT4: more resource intensive = expensive</li>
-<li>GPT4o: optimized to be faster and cheaper</li>
-<li>GPT-4o mini: every day tasks</li>
-<li>o1-preview: thinks before it answers, for complex tasks (no web search)</li>
+<section id="extended-reasoning" class="slide level2">
+<h2>Extended reasoning</h2>
+<p>“Automated” Chain-of-thought prompting</p>
+
+<img data-src="images/chain_of_thought.png" style="width:20.0%" class="r-stretch"><ul>
+<li><a href="https://arxiv.org/abs/2201.11903">Produces longer &amp; better answers, better reasoning</a>.</li>
+<li>Improve performance through more output tokens.</li>
+<li>Reasoning happens while model predicts each word.</li>
 </ul>
-<p><strong>Usage limits:</strong></p>
-<ul>
-<li><p>GPT-4: 40 messages every 3 hours</p></li>
-<li><p>GPT-4o: 80 messages every 3 hours</p></li>
-<li><p>GPT-4o mini: no limit</p></li>
-<li><p>o1-preview: 50 messages per week</p></li>
-<li><p>o1-mini: 50 messages a day</p></li>
-</ul>
+<p>Important: This is already included as a general capability of models.</p>
 <div class="footer">
-<p><a href="https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini">Which model to use for what</a>, <a href="https://platform.openai.com/docs/models/gp">Features of each model version</a>, <a href="https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065">Usage limits</a></p>
+<p>Kojima et al.&nbsp;<a href="https://arxiv.org/abs/2205.11916">2023</a></p>
+</div>
+</section>
+<section id="automated-extended-reasoning" class="slide level2">
+<h2>Automated extended reasoning</h2>
+<ul>
+<li>No need for explicit chain-of-thought prompting</li>
+<li>Models trained to use “scratch pads” in background</li>
+<li>Hidden (e.g.&nbsp;GPT 4.x) or partially visible (e.g.&nbsp;o3)</li>
+</ul>
+</section>
+<section id="test-different-models" class="slide level2">
+<h2>Test different models</h2>
+<p>Simple math example:</p>
+<p><strong>9.11 or 9.9, which is bigger?</strong></p>
+<p>Compare different models. E.g. Gemini Flash 2.0 versus 2.5</p>
+<p>options: - try adding “short answer” to provoke wrong output</p>
+<ul>
+<li>if the model gives wrong answer:</li>
+<li>ask it to explain it</li>
+<li>ask to check with code</li>
+</ul>
+<aside class="notes">
+<p>The “9.11 vs 9.9” example. Different models. quick answer. Reasoning. Prove with code.</p>
+<p>Or do example 12345*66666</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-output" class="slide level2">
+<h2>Example output</h2>
+
+<img data-src="images/bigger_number_gemini_flash_small.png" class="r-stretch"></section>
+<section id="models-learn-by-examples" class="slide level2">
+<h2>Models learn by examples</h2>
+<h3 id="do-you-know-this-riddle">Do you know this riddle?</h3>
+<p>A father and son are in a car crash, the father dies, and the son is rushed to the hospital. The surgeon says, ‘I can’t operate, that boy is my son,’ who is the surgeon?</p>
+<p><br></p>
+<h3 id="using-a-modified-version-to-test-the-chat-bots">Using a <strong>modified version</strong> to test the Chat-bots:</h3>
+<p>A young boy who has been in a car accident is rushed to the emergency room. Upon seeing him, the surgeon says, “I can operate on this boy!” How is this possible?</p>
+<div class="footer">
+<p><a href="https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything">One useful thing newsletter</a></p>
+</div>
+</section>
+<section id="example-output-1" class="slide level2">
+<h2>Example output</h2>
+
+<img data-src="images/riddle_boys_mother_gemini_25.png" class="r-stretch"><p>Models over rely on known patterns and make reasoning errors.</p>
+</section>
+<section id="models-as-agents" class="slide level2">
+<h2>Models as Agents</h2>
+
+<img data-src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*7rWViLLiWpoHivd15UHZTQ.png" class="r-stretch"><div class="footer">
+<p><a href="https://medium.com/codex/what-are-ai-agents-your-step-by-step-guide-to-build-your-own-df54193e2de3">Medium Codex Blog</a></p>
+</div>
+</section>
+<section id="towards-autonomous-research" class="slide level2">
+<h2>Towards autonomous research</h2>
+
+<img data-src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-06792-0/MediaObjects/41586_2023_6792_Fig1_HTML.png?as=webp" class="r-stretch"><div class="footer">
+<p>Source: Boiko et al.&nbsp;<a href="https://www.nature.com/articles/s41586-023-06792-0">2023</a></p>
+</div>
+</section>
+<section id="overview" class="slide level2">
+<h2>Overview</h2>
+
+<img data-src="images/Karpathy_intro_1.png" class="r-stretch"><div class="footer">
+<p>Source: Karpathy <a href="https://www.youtube.com/watch?v=EWvNQjAaOHw">“How I use LLMs”</a></p>
+</div>
+</section>
+<section id="overview-cont." class="slide level2">
+<h2>Overview (cont.)</h2>
+
+<img data-src="images/Karpathy_intro_2.png" class="r-stretch"><div class="footer">
+<p>Source: Karpathy <a href="https://www.youtube.com/watch?v=EWvNQjAaOHw">“How I use LLMs”</a></p>
 </div>
 </section></section>
 <section>
@@ -632,21 +754,23 @@
 </section>
 <section id="what-happens-with-your-input-data" class="slide level2">
 <h2>What happens with your input data?</h2>
-<ul>
-<li>AI companies are not super transparent about this</li>
-</ul>
 <ol type="1">
-<li>Model training: most data is used for future model training at OpenAI/GPT &amp; Google/Gemini (not Anthropic/Claude)</li>
-<li>Security check of all data for safety violations</li>
+<li>Model training: data can be used for future model training</li>
 </ol>
 <ul>
-<li>Opt out of (1) in Settings -&gt; Data Controls:
+<li>OpenAI: Opt out in Settings -&gt; Data Controls:
 <ul>
 <li>Turn off the option “Improve model for everyone”</li>
 </ul></li>
-<li>Claude does not train on your data by default</li>
-<li>Security checks happen in all cases - human review</li>
+<li>Gemini: Opt out only possible via deactivating saved conversations
+<ul>
+<li>if activated: options to save activity for 3, 18 or 36 months</li>
+</ul></li>
+<li>Claude: does not train on your data by default</li>
 </ul>
+<ol start="2" type="1">
+<li>Check for security violations of all chats. Human review.</li>
+</ol>
 <div class="footer">
 <p><a href="https://platform.openai.com/docs/models/gp#how-we-use-your-data">How we use your data</a></p>
 </div>
@@ -662,6 +786,18 @@
 <li>Options with local models or servers in EU</li>
 </ul></li>
 </ul>
+</section>
+<section id="example-academic-ai" class="slide level2">
+<h2>Example: Academic AI</h2>
+<ul>
+<li>ChatGPT is hosted on a Microsoft Azure server in EU</li>
+<li>Data stays within “Azure secure landing zone”</li>
+<li>Available at 23 universities (e.g.&nbsp;Uni Wien)</li>
+</ul>
+
+<img data-src="https://www.acomarket.at/images/chatgpt/acg_1_neutral_AI.png" class="r-stretch"><div class="footer">
+<p><a href="https://www.acomarket.at/de/portfolio/projekte/academic-ai">aco market</a></p>
+</div>
 </section>
 <section id="copyright" class="slide level2">
 <h2>Copyright</h2>
@@ -960,44 +1096,6 @@
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

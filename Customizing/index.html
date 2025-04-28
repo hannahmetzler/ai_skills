@@ -330,62 +330,28 @@
 <p><br></p>
 <h3 id="mastering-ai-chatbots-optimizing-research-through-effective-use">Mastering AI Chatbots: Optimizing Research through Effective Use</h3>
 <p><br></p>
-<p><strong>Konstantin Hebenstreit, M.Sc.</strong> <br> <em>Complexity Science Hub &amp; Medical University of Vienna</em></p>
+<p><strong>Konstantin Hebenstreit, M.Sc.</strong> <br> <em>Medical University of Vienna</em></p>
 <p><br></p>
 <p><small> Slides: https://hannahmetzler.eu/ai_skills </small></p>
 </section>
-<section id="system-prompts" class="slide level2">
-<h2>System prompts</h2>
+<section id="internal-knowledge-of-models" class="slide level2">
+<h2>Internal knowledge of models</h2>
+<p>Models normally have a knowledge cutoff, as they are normally trained months prior.</p>
 <ul>
-<li>Customizing your default version of ChatGPT</li>
+<li>Does a model know ‘who’ it is?</li>
+<li>Does a model know which date is today?</li>
+<li>Does a model know what time it is?</li>
 </ul>
-<p><br></p>
-<p>ChatGPT: Settings &gt; Personalization &gt; Customize ChatGPT</p>
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:45%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/system_prompt.png"></p>
-</figure>
+<div class="fragment">
+<p>Let’s try this out!</p>
 </div>
+<div class="fragment">
+<p><br> <br></p>
+<p><strong>How does the model know?</strong></p>
 </div>
-</div>
-</div><div class="column" style="width:45%;">
-<p>“This is extremely important for my job, please work accurately and check that everything is correct.”</p>
-</div></div>
 </section>
-<section id="ideas-for-useful-system-prompts" class="slide level2">
-<h2>Ideas for useful system prompts</h2>
-<ul>
-<li><p>Give information that is relevant in all of your chats, example: scientific approach.</p></li>
-<li><p>Using chain-of-thought reasoning</p></li>
-</ul>
-<p>Other concrete examples:</p>
-<ul>
-<li><p>Don’t give detailed explanations of created code unless I ask for it.</p></li>
-<li><p>Creative approach: Challenge me to continue learning.</p></li>
-</ul>
-<p>(Claude and Gemini: Currently no individual system prompts, but specific instructions can be created within customized chat.)</p>
-<aside class="notes">
-<p>Don’t give detailed explanations of code unless I ask for it.</p>
-<p>Challenge to continue learning</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="example-claudes-system-prompt" class="slide level2 smaller" style="font-size: 0.5em;">
-<h2>Example: Claude’s system prompt</h2>
+<section id="example-claudes-general-prompt" class="slide level2 smaller" style="font-size: 0.5em;">
+<h2>Example: Claude’s general prompt</h2>
 <p>The assistant is Claude, created by Anthropic. The current date is {}.Claude’s knowledge base was last updated on April 2024. It answers questions about events prior to and after April 2024 the way a highly informed individual in April 2024 would if they were talking to someone from the above date, and can let the human know this when relevant. (…)</p>
 <p>When presented with a math problem, logic problem, or other problem benefiting from systematic thinking, Claude thinks through it step by step before giving its final answer. (…)</p>
 <p>Rather than giving a long response, it gives a concise response and offers to elaborate if further information may be helpful. (…)</p>
@@ -398,6 +364,91 @@
 </div>
 <aside class="notes">
 <p>Mention CoT reasoning (step by step)</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="what-is-the-model-still-missing" class="slide level2">
+<h2>What is the model still missing?</h2>
+
+<img data-src="images/unknown_caller.png" class="r-stretch"><div class="fragment">
+<p><strong>Context information: Information about you and your preferences.</strong></p>
+<p>This is implemented as custom instructions (system prompts) or automated via memories.</p>
+<div class="footer">
+<p><a href="https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/">Pixabay</a></p>
+</div>
+</div>
+</section>
+<section id="memories-chatgpt" class="slide level2">
+<h2>Memories (ChatGPT)</h2>
+<p>Settings &gt; Personalization &gt; Manage Memories</p>
+<ul>
+<li>Are automatically extracted from your chats</li>
+<li>You can manually delete memories</li>
+</ul>
+
+<img data-src="images/saved_memories.png" class="r-stretch"></section>
+<section id="updating-memories-chatgpt" class="slide level2">
+<h2>Updating Memories (ChatGPT)</h2>
+<ul>
+<li>You can instruct the model to add/update specific memories</li>
+</ul>
+
+<img data-src="images/update_saved_memories.png" class="r-stretch"></section>
+<section id="memories-gemini" class="slide level2">
+<h2>Memories (Gemini)</h2>
+<p>Settings &gt; Saved Info</p>
+
+<img data-src="images/Gemini_memories_Konstantin.png" class="r-stretch"><p><small> Note: Currently not as good as ChatGPT, but will probably improve soon. </small></p>
+</section>
+<section id="customization-chatgpt" class="slide level2">
+<h2>Customization (ChatGPT)</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p>ChatGPT:</p>
+<p>Settings &gt;</p>
+<p>Personalization &gt;</p>
+<p>Customize ChatGPT</p>
+</div><div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="images/customizing_GPT_individualized_user_info_and_instructions.png"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="customization" class="slide level2">
+<h2>Customization</h2>
+<ul>
+<li>Claude: Settings &gt; Profile &gt; Personal Preferences</li>
+<li>Gemini: Currently no individual system prompts, only customized chats.</li>
+</ul>
+</section>
+<section id="ideas-for-useful-system-prompts" class="slide level2">
+<h2>Ideas for useful system prompts</h2>
+<ul>
+<li>Give information that is relevant in all of your chats, example: scientific approach.</li>
+</ul>
+<p>Other concrete examples:</p>
+<ul>
+<li><p>Don’t give detailed explanations of created code unless I ask for it.</p></li>
+<li><p>Creative approach: Challenge me to continue learning.</p></li>
+<li><p>(!) Specific instructions for chain-of-thought reasoning are often unnecessary now.</p></li>
+</ul>
+<aside class="notes">
+
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -436,79 +487,70 @@
 <section id="custom-llm-chatbots" class="slide level2">
 <h2>Custom LLM Chatbots</h2>
 <ul>
-<li>CustomGPT in ChatGPT (covered on the next slides)</li>
-<li>Gems in Gemini</li>
+<li>CustomGPT in ChatGPT
+<ul>
+<li>“Explore GPTs”: a marketplace of customized models</li>
+<li>Free tier: only usage, Paid tier needed for creation</li>
+</ul></li>
+<li>Gems in Gemini (covered on the next slides)</li>
 <li>Projects in Claude</li>
 </ul>
 </section>
-<section id="creating-custom-gpts-how-to" class="slide level2">
-<h2>Creating Custom GPTs: How to</h2>
-<div class="columns">
-<div class="column" style="width:18%;">
-<ol type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/how_to_custom_gpt.png"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:14%;">
-<ol start="2" type="1">
-<li></li>
-</ol>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/how_to_custom_gpt2.png"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/gpt_builder.png" height="400"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-<ul>
-<li>GPT Builder asks more questions</li>
-<li>Try it out and keep “talking into it” until it fits</li>
-</ul>
-</section>
-<section id="example-quarto-presentation-helper" class="slide level2">
-<h2>Example Quarto presentation helper</h2>
-<p>Helps specifically in creating quarto react.js presentations</p>
+<section id="gem-manager-gemini" class="slide level2">
+<h2>Gem Manager (Gemini)</h2>
+<p>Gem manager &gt; New Gem</p>
 
-<img data-src="images/quarto_gpt_1.png" class="r-stretch"></section>
-<section id="example-quarto-presentation-helper-cont" class="slide level2">
-<h2>Example Quarto presentation helper (cont)</h2>
-<p>Loading in relevant websites I found (as html files).</p>
+<img data-src="images/gemini_gem_manager.png" class="r-stretch"></section>
+<section id="custom-gem-example" class="slide level2">
+<h2>Custom Gem: Example</h2>
+<h4 id="advisor-for-income-tax">Advisor for income tax</h4>
 
-<img data-src="images/quarto_gpt_2.png" class="r-stretch"></section>
+<!-- ## Creating Custom GPTs: How to -->
+<!-- :::::: columns -->
+<!-- ::: {.column width="18%"} -->
+<!-- 1)   -->
+<!-- ```{r, echo=F} -->
+<!-- knitr::include_graphics("images/how_to_custom_gpt.png") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: {.column width="14%"} -->
+<!-- 2)   -->
+<!-- ```{r} -->
+<!-- knitr::include_graphics("images/how_to_custom_gpt2.png") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::: {.column width="60%"} -->
+<!-- ```{r, out.height=400} -->
+<!-- knitr::include_graphics("images/gpt_builder.png") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::::: -->
+<!-- -   GPT Builder asks more questions -->
+<!-- -   Try it out and keep "talking into it" until it fits -->
+<!-- ## Example Quarto presentation helper -->
+<!-- Helps specifically in creating quarto react.js presentations -->
+<!-- ![](images/quarto_gpt_1.png) -->
+<!-- ## Example Quarto presentation helper (cont) -->
+<!-- Loading in relevant websites I found (as html files). -->
+<!-- ![](images/quarto_gpt_2.png) -->
+<img data-src="images/gemini_customize_gem.png" class="r-stretch"></section>
 <section id="exercise-create-a-custom-chatbot-15-min" class="slide level2">
 <h2>Exercise: Create a Custom Chatbot (15 min)</h2>
 <ol type="1">
 <li>Choose a regular task &amp; create a custom model for it:</li>
 </ol>
 <ul>
-<li>Your writing buddy (upload all your scientific texts)</li>
+<li><a href="https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/">Prompt examples</a>: for Proofreader, LinkedIn content creator &amp; Concise Email drafter</li>
+</ul>
+<p>Other ideas:</p>
+<ul>
 <li>Concise answers for code, adapted to my skills</li>
-<li><a href="https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/">Prompt examples</a> for other ideas: Proofreader, LinkedIn content creator, Email drafter</li>
+<li>Explanation of concepts adapted to your knowledge level</li>
+<li>Multiple choice questionnaire creator</li>
 </ul>
 <ol start="2" type="1">
-<li>Write a detailed prompt</li>
-<li><strong>Add addtinional files relevant for your GPT</strong>, e.g.&nbsp;websites with instructions for the task.</li>
+<li><p>Write a detailed prompt</p></li>
+<li><p><strong>Add additional files relevant for your Custom Chatbot</strong>, e.g.&nbsp;websites with instructions for the task.</p></li>
 </ol>
 </section>
 <section id="links-to-predifined-costumized-chatbots" class="slide level2">
@@ -517,39 +559,20 @@
 <p><a href="https://docs.anthropic.com/en/prompt-library/library">Anthropic prompt library</a></p>
 <p><a href="https://gemini.google.com/gems/view">Google Gemini Gems</a></p>
 <p><br></p>
-</section>
-<section id="custom-gpts-for-research" class="slide level2">
-<h2>Custom GPTs for research</h2>
-<ul>
-<li><p>Many of those Custom GPTs are connected to databases of scientific literature. (Retrieval Augmented Generation)</p></li>
-<li><p>Database search to provide accurate information</p></li>
-<li><p>Included in context window of Chatbot</p></li>
-</ul>
-<p>Example:</p>
-<ul>
-<li>Dimensions Research GPT, and one <a href="https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c">Example thread</a></li>
-</ul>
-<aside class="notes">
-<p>It is a freemium approach. Often the give you the link to buy their full product.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="exercise-testing-dimensions-or-another-custom-gpt-5-min" class="slide level2">
-<h2>Exercise: Testing Dimensions or another custom GPT (5 min)</h2>
-<ol type="1">
-<li><p>Go to the <a href="https://chatgpt.com/gpts">OpenAI GPT store</a></p></li>
-<li><p>Select topic ‘Research &amp; Analysis’</p></li>
-<li><p>Choose a Custom GPT you want to try out</p></li>
-</ol>
+<p>Downside: Custom models normally do not use the most recent and best models.</p>
+<!-- ## Custom GPTs for research -->
+<!-- - Many of those Custom GPTs are connected to databases of scientific literature. (Retrieval Augmented Generation) -->
+<!-- - Database search to provide accurate information -->
+<!-- - Included in context window of Chatbot  -->
+<!-- Example: -->
+<!-- - Dimensions Research GPT, and one [Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c)  -->
+<!-- ::: notes -->
+<!-- It is a freemium approach. Often the give you the link to buy their full product. -->
+<!-- ::: -->
+<!-- ## Exercise: Testing Dimensions or another custom GPT (5 min) -->
+<!-- 1. Go to the [OpenAI GPT store](https://chatgpt.com/gpts) -->
+<!-- 1. Select topic 'Research & Analysis' -->
+<!-- 1. Choose a Custom GPT you want to try out -->
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
