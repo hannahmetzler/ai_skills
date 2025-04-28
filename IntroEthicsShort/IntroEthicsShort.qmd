@@ -282,7 +282,7 @@ Artifacts allows for creating standalone, interactive content directly within th
 
 ## Strengths of different models & interfaces
 
--   [**ChatGPT**](https://chat.openai.com/) (Open AI): most features, best interface
+-   [**ChatGPT**](https://chat.openai.com/) (Open AI): most features, best interface, live mode video and voice
 -   [**Claude**](https://claude.ai/) (Anthropic): writing style, interactive artifacts for simple figures or websites
 -   [**Gemini**](https://gemini.google.com/app) (Google): currently best model, integration with Google services
 
@@ -381,6 +381,23 @@ Models over rely on known patterns and make reasoning errors.
 Source: Boiko et al. [2023](https://www.nature.com/articles/s41586-023-06792-0)
 :::
 
+## Overview
+
+![](images/Karpathy_intro_1.png)
+
+:::footer
+Source: Karpathy ["How I use LLMs"](https://www.youtube.com/watch?v=EWvNQjAaOHw)
+:::
+
+## Overview (cont.)
+
+![](images/Karpathy_intro_2.png)
+
+:::footer
+Source: Karpathy ["How I use LLMs"](https://www.youtube.com/watch?v=EWvNQjAaOHw)
+:::
+
+
 # Important ethical aspects
 
 ## Two topics
@@ -395,16 +412,14 @@ Source: Boiko et al. [2023](https://www.nature.com/articles/s41586-023-06792-0)
   
 ## What happens with your input data?
 
-- AI companies are not super transparent about this
-
-(1) Model training: most  data is used for future model training at OpenAI/GPT & Google/Gemini (not Anthropic/Claude)
-(2) Security check of all data for safety violations
-
-- For OpenAI: Opt out of (1) in Settings -> Data Controls:
-    - Turn off the option "Improve model for everyone"
+(1) Model training: data can be used for future model training
+- OpenAI: Opt out in Settings -> Data Controls:
+  - Turn off the option "Improve model for everyone"
 - Gemini: Opt out only possible via deactivating saved conversations
-- Claude does not train on your data by default
-- Security checks happen in all cases - human review
+  - if activated: options to save activity for 3, 18 or 36 months
+- Claude: does not train on your data by default
+
+(2) Check for security violations of all chats. Human review.
 
 ::: footer
 [How we use your data](https://platform.openai.com/docs/models/gp#how-we-use-your-data)
@@ -421,6 +436,17 @@ Source: Boiko et al. [2023](https://www.nature.com/articles/s41586-023-06792-0)
 
 - Before processing personal data of subjects (especially patients) consult experts (e.g. data protection officers) at your university.
   - Options with local models or servers in EU
+  
+## Example: Academic AI
+- ChatGPT is hosted on a Microsoft Azure server in EU
+- Data stays within "Azure secure landing zone"
+- Available at 23 universities (e.g. Uni Wien)
+
+![](https://www.acomarket.at/images/chatgpt/acg_1_neutral_AI.png)
+
+::: footer
+[aco market](https://www.acomarket.at/de/portfolio/projekte/academic-ai)
+:::
 
 
 ## Copyright
@@ -496,18 +522,6 @@ Getty images sued midjourney (AI image creation) for training on their data.
 ## Appendix {visibility='hidden'}
 
 
-### What is the model still missing?
-
-![](images/unknown_caller.png)
-
-. . . 
-
-
-**Context information: Your prompts need to give context.**
-
-:::footer
-[Pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
-:::
 
 ### Chain-of-thought prompting: Exceptions
 
