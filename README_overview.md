@@ -26,7 +26,7 @@ and their strengths, and discuss the most important ethical questions around usi
 
 ## Workshop Overviews & last update
 
-- Skills training at Ludwig Boltzmann Gesellschaft Career Center, April 29 2024, Vienna: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeLBG)
+- Skills training at Ludwig Boltzmann Gesellschaft Career Center, April 29 2025, Vienna: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeLBG)
 - Austrian Academy of Sciences, Austrian Archaeological Institute, January 9, 2025: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Archive/202412/WelcomeArchaeology)
 - Karl Landsteiner Privatuniversität Krems, Zentrum für Transitionspsychiatrie, December 4, 2024: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Archive/202412/WelcomeKrems)
 - Skills training at Ludwig Boltzmann Gesellschaft Career Center, October 29 2024, Vienna: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Archive/202412/WelcomeLBG)
