@@ -203,15 +203,30 @@ Source: [Clarify AI](https://www.clarifai.com/blog/what-is-rag-retrieval-augment
 
 ---
 
-## Hannah's preliminary conclusions on Deep Research Mode {.smaller style="font-size: 0.8em;"}
+## Hannah's preliminary conclusions {.smaller style="font-size: 0.9em;"}
 
-- Excellent to get a first overview much more quickly.
-- Hallucinations: Check before you cite in your papers. 
-- No actual critical thinking: summarizes majority opinions, will miss critical perspectives/constraints if you don't highlight them.
+- Excellent to get a first overview much more quickly, a great start for many research tasks. But a bit superficial. 
+- Hallucinations: You need to check before you cite in your papers. 
+- No actual critical thinking: summarizes majority opinions, will miss critical perspectives/constraints if you don't highlight them, no strong arguments in the face of conflicting evidence. 
 - Check the number and quality of sources. Often limited. 
 - Ask Deep Research mode to include only academic sources 
 - Only open access: Do additional research to not miss half of the research. (& publish open access!)
-- Excellent starting ground for many research tasks
+
+::: footer
+see also: [Prophecies-of-the-flood](https://www.oneusefulthing.org/p/prophecies-of-the-flood) by Ethan Mollick.
+:::
+
+
+## A possible iterative workflow 
+
+- AI provides draft literature reviews, research summaries or research ideas
+- Apply traditional critical analysis to identify gaps, errors, or misrepresentations. Manually check references. 
+- Return to AI with refined questions informed by deeper understanding
+- Repeat until achieving a comprehensive, accurate review
+
+::: footer
+Source: [Feedback by Claude](https://claude.ai/share/6b224ae7-dea4-49fe-9204-bf961b376d96) on my presentation
+:::
 
 
 ## Back to the exercise output (15 min)

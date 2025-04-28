@@ -2,22 +2,21 @@
 
 # To Do Konstantin
 
-- Email to people: Gemini test subscription, currently best model and free for one month
 - Account on Gemini, ChatGPT, Claude
-
-- Update Github readme, day schedule
 - Intro
 - Ethics
 - Customizing updates? See notes for future courses
 - Creating Custom Gem on Gemini, memory (ev Gemini)
 - Using others CustomGPTs on ChatGPT
 - Customizing, system prompt on ChatGPT
-- Source for agents graphik: https://medium.com/codex/what-are-ai-agents-your-step-by-step-guide-to-build-your-own-df54193e2de3
+- Source for agents graphic: https://medium.com/codex/what-are-ai-agents-your-step-by-step-guide-to-build-your-own-df54193e2de3
 
 # To Do Hannah
 
+- Include writing exercise into the chatbot essentials session?
 - Prompting, Hallucinations
-- Deep Research
+- Update Use Cases
+- Help with Customizing session?
 
 ## Intro
 
@@ -38,8 +37,6 @@
   - Google Search
   - Canvas mode
   - Integration...
-  
-  
 - Multimodal interactions slide: instead give overview of features and explain that they change quickly over time
 - Slide 17: stattdessen Models (2 bilder für gpt und gemini im images folder)
 
@@ -49,9 +46,6 @@
 - Add reasoning
 - Move Chain of thought prompts from prompting to the intro to explain reasoning models
 - Add reinforcement learning
-
-  
-- Update Ethics (data privacy, see below)
 - Exercises/part to play with different models
 
 # Models and model features
@@ -67,7 +61,6 @@
   - o3 mini: quick reasoning (wie Deepseek R1), particularly good for programming
   - better: 04 mini. 
   - trained to problem solve, and use tools agentically (search, write code, generae graphs, explain, etc)
-
 
 ## Claude
 
@@ -123,10 +116,6 @@
 - Has a great image comparing the model's features & skills:
 - Post: https://www.oneusefulthing.org/p/which-ai-to-use-now-an-updated-opinionated
 - Image: https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4ce87d9-1ee9-401f-8609-8bafea0eacf9_1560x472.png
-
-# Intro (Konstantin)
-
-- Training: mention reinforcement learning
 
 # Ethics (Konstantin)
 
