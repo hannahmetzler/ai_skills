@@ -250,30 +250,30 @@ Gem manager > New Gem
 
 <br>
 
-## Custom GPTs for research
+<!-- ## Custom GPTs for research -->
 
-- Many of those Custom GPTs are connected to databases of scientific literature. (Retrieval Augmented Generation)
+<!-- - Many of those Custom GPTs are connected to databases of scientific literature. (Retrieval Augmented Generation) -->
 
-- Database search to provide accurate information
-- Included in context window of Chatbot 
+<!-- - Database search to provide accurate information -->
+<!-- - Included in context window of Chatbot  -->
 
-Example:
+<!-- Example: -->
 
-- Dimensions Research GPT, and one [Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c) 
-
-
-::: notes
-It is a freemium approach. Often the give you the link to buy their full product.
-:::
+<!-- - Dimensions Research GPT, and one [Example thread](https://chatgpt.com/share/671658c3-ce74-800b-bde7-63e08f530e8c)  -->
 
 
-## Exercise: Testing Dimensions or another custom GPT (5 min)
+<!-- ::: notes -->
+<!-- It is a freemium approach. Often the give you the link to buy their full product. -->
+<!-- ::: -->
 
-1. Go to the [OpenAI GPT store](https://chatgpt.com/gpts)
 
-1. Select topic 'Research & Analysis'
+<!-- ## Exercise: Testing Dimensions or another custom GPT (5 min) -->
 
-1. Choose a Custom GPT you want to try out
+<!-- 1. Go to the [OpenAI GPT store](https://chatgpt.com/gpts) -->
+
+<!-- 1. Select topic 'Research & Analysis' -->
+
+<!-- 1. Choose a Custom GPT you want to try out -->
 
 
 

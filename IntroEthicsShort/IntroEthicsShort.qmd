@@ -284,7 +284,7 @@ Artifacts allows for creating standalone, interactive content directly within th
 
 -   [**ChatGPT**](https://chat.openai.com/) (Open AI): most features, best interface, live mode video and voice
 -   [**Claude**](https://claude.ai/) (Anthropic): writing style, interactive artifacts for simple figures or websites
--   [**Gemini**](https://gemini.google.com/app) (Google): currently best model, integration with Google services
+-   [**Gemini**](https://gemini.google.com/app) (Google): currently best model, integration with Google services (Youtube, google maps, flights, hotels, workspace, calendar, tasks etc)
 
 ::: notes
 up to means: system capabilities, user access levels, computing time
