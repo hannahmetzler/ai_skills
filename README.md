@@ -23,7 +23,7 @@ and their strengths, and discuss the most important ethical questions around usi
 ### Not covered or more detailed sessions
 
 - [Ethics](https://hannahmetzler.eu/ai_skills/Ethics)
-- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/Research/#/researcher-use-cases)
+- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/UseCases)
 - [Exercises: Coding & coaching](https://hannahmetzler.eu/ai_skills/CodingCoaching)
 
 (from: Skills training at LBG Career Center, April 29, 2024, Vienna)
