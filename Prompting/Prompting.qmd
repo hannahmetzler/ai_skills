@@ -265,7 +265,7 @@ On a slide: include an example on specific & step-by-step instructions here. Use
 [Co-Intelligence: Living and Working with AI](https://www.amazon.de/Co-Intelligence-Living-Working-Ethan-Mollick/dp/0753560771) by Ethan Mollick
 :::
 
-## Exercise options 1 & 2
+## Exercise Options 1 & 2
 
 **Practice instructing your new, infinitely patient & forgetful co-worker.**
 
@@ -340,14 +340,6 @@ Example of an Writing Style Guide:
 - Balance optimism about possibilities with acknowledgment of challenges
 - Aim to inform and engage without being pedantic or oversimplifying
 
-## Steps for scientific writing with LLM Chatbots
-
-1. Let the Chatbot create a draft of parts of your paper in bullet points. 
-1. Refine the bullet points and structure manually.
-1. Then let the Chatbot phrase sentences from bullet points:
-    - one paragraph at a time
-    - refine text manually
-    - provide existing paragraphs as context for the next
 
 # Advanced prompting strategies
 
