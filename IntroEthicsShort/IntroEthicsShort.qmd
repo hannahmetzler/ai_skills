@@ -76,7 +76,7 @@ editor: source
 
 Question for you: 
 
-- What does this mean for self-reflection? Source citations?
+- What does this mean, when the model writes citations and references?
 
 ## How does the model represent text?
 <br>
@@ -114,155 +114,159 @@ Tokens = "Subwords"
 - Every single character is also one token, so that the LLM can construct all possible words from tokens.
 :::
 
-## Each token is a vector of numbers
-<br>
+<!-- ## Each token is a vector of numbers -->
+<!-- <br> -->
 
-::::: columns
-::: {.column width="40%" align="center"}
-Word/Token
-
-
-<br>
-
-<span
-style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even
-</span>
-...
-
-:::
-
-::: {.column width="10%" align="center" }
-→
-:::
-::: {.column width="40%" align="center" }
-Word Embedding
-<small>
-[-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540,
-0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710,
-0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789,
-0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972,
-0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286,
--0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830]
-</small>
-:::
-:::::
+<!-- ::::: columns -->
+<!-- ::: {.column width="40%" align="center"} -->
+<!-- Word/Token -->
 
 
-## How do embeddings encode meaning?
+<!-- <br> -->
+
+<!-- <span -->
+<!-- style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even -->
+<!-- </span> -->
+<!-- ... -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="10%" align="center" } -->
+<!-- → -->
+<!-- ::: -->
+<!-- ::: {.column width="40%" align="center" } -->
+<!-- Word Embedding -->
+<!-- <small> -->
+<!-- [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, -->
+<!-- 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, -->
+<!-- 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, -->
+<!-- 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, -->
+<!-- 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -->
+<!-- -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] -->
+<!-- </small> -->
+<!-- ::: -->
+<!-- ::::: -->
 
 
-::::: columns
-::: {.column width="40%"}
-**Word embeddings**
-
-![](images/wordembeddings.svg)
-
-Semantic dimensions: gender & royalty
-
-:::
-
-::: {.column width="56%" .fragment}
-
-**Contextual word embeddings**
-
-- Embedding differs depending on the **context** (before and after the word)
--   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit?
-
-<img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;" />
-:::
-:::::
-
-## In technical words
-
--   Deep Learning: Multiple layers of "neurons"
--   Linear regressions calculate "weights" for the connections
--   Input layer: Word embeddings 
-
-::::: columns
-::: {.column width="47%"}
--   Output layer: One-hot encoding
-    - one word = 1
-    - all others = 0
-:::
-
-::: {.column width="47%"}
-```{r, echo=FALSE}
-knitr::include_graphics("images/neuralnet.svg")
-```
-:::
-:::::
-
-::: notes
-One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask
-:::
+<!-- ## How do embeddings encode meaning? -->
 
 
+<!-- ::::: columns -->
+<!-- ::: {.column width="40%"} -->
+<!-- **Word embeddings** -->
 
-## Steps for training/using frontier LLMs
+<!-- ![](images/wordembeddings.svg) -->
+
+<!-- Semantic dimensions: gender & royalty -->
+
+<!-- ::: -->
+
+<!-- ::: {.column width="56%" .fragment} -->
+
+<!-- **Contextual word embeddings** -->
+
+<!-- - Embedding differs depending on the **context** (before and after the word) -->
+<!-- -   [Example](https://www.tiktok.com/@whats_ai/video/7247609946672565510) "Apple": Mac or fruit? -->
+
+<!-- <img src="images/apple_context.png" alt="Apple context" style="display: block; margin-left: auto; margin-right: auto; width: 250px;" /> -->
+<!-- ::: -->
+<!-- ::::: -->
+
+<!-- ## In technical words -->
+
+<!-- -   Deep Learning: Multiple layers of "neurons" -->
+<!-- -   Linear regressions calculate "weights" for the connections -->
+<!-- -   Input layer: Word embeddings  -->
+
+<!-- ::::: columns -->
+<!-- ::: {.column width="47%"} -->
+<!-- -   Output layer: One-hot encoding -->
+<!--     - one word = 1 -->
+<!--     - all others = 0 -->
+<!-- ::: -->
+
+<!-- ::: {.column width="47%"} -->
+<!-- ```{r, echo=FALSE} -->
+<!-- knitr::include_graphics("images/neuralnet.svg") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- ::::: -->
+
+<!-- ::: notes -->
+<!-- One hot encoding: output has as many units as words, we predict the one with the maximum value, probabilities of words Input: one-hot times embedding, everything but the mask -->
+<!-- ::: -->
+
+
+
+## Steps for training frontier LLMs
 
 1. **Pre-train** on most of the available data from the internet via next-word prediction.
-1. **Fine-tune** model to the chat setting & apply [system prompts](https://hannahmetzler.eu/ai_skills/Customizing/#/system-prompts)
-1. Refine with **human feedback**
-1. In context learning (**prompting**): Explain the task.   
+1. **Fine-tune** model to the chat setting.
+1. Refine with **human feedback**, e.g. via reinforcement learning.
 
+<!-- & apply [system prompts](https://hannahmetzler.eu/ai_skills/Customizing/#/system-prompts) -->
 
-## What is the model still missing?
+<!-- 1. In context learning (**prompting**): Explain the task.    -->
 
-![](images/unknown_caller.png)
+## Refining with human feedback
 
-. . . 
+### RLHF: Reinforcement learning from human feedback
 
+![](images/RLHF_3steps_easy.jpg)
 
-**Context information: Your prompts need to give context.**
+Human preference data is used for creating a reward model, which is then used to train the LLM via reinforcement learning.
+
 
 :::footer
-[Pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
+Source: [AWS Blog](https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/)
 :::
+
+
 
 # Which models for what?
 
 ## Current top models
 
--   **Gemini-Exp & Gemine-1.5 Pro** (Google)
--   **ChatGPT-4o and o1** (Open AI)
--   **Claude 3.5 Sonnet** (Anthropic)
+-   **Gemini 2.5 Pro** (Google)
+-   **ChatGPT-4o, GPT-4.5 and o3** (OpenAI)
+-   **Grok-3** (xAI)
+-   **Claude 3.7 Sonnet** (Anthropic)
+
 
 Best non-proprietary:
 
--   **Llama 3.1** (Meta)
+-   **DeepSeek-V3** (DeepSeek)
 
 :::footer
 Source: [Chatbot Arena](https://chat.lmsys.org/)
 :::
 
 
-## Multimodal interactions
+## Features of the models
+**All models (ChatGPT, Gemini, Claude)**
 
-::::: columns
-::: {.column width="48%"}
-**ChatGPT & Gemini**
+- Long inputs and interactions possible (context window)
+- Extended reasoning
+- File & Image Uploads
+- Connection to Google Drive
+- Canvas mode (show formatted document)
 
-- Browse
-- Create images
-- Execute code
-- Voice input/output
-- Discovering & using custom GPTs/Gems <br> (Claude: Projects)
-:::
+## Features of the models
 
-::: {.column width="48%"}
-**All models**
+| Capability          | ChatGPT | Claude | Gemini |
+|:--------------------|:----------:|:----------:|:----------:|
+| Web Browsing        | ✅             | **~**      | ✅                 |
+| Deep Research       | ✅             | ❌         | ✅                 |
+| Image Generation    | ✅             | ❌         | ✅                 |
+| Execute Code        | ✅             | **~**      | ✅                 |
+| Data analysis       | ✅             | ❌         | ✅                 |
+| Voice input         | ✅             | **~**      | ✅                 |
+| Voice conversation  | ✅             | ❌         | ❌                 |
+| Projects            | ✅             | ✅         | ❌                 |
+<!-- | Long Reasoning      | ✅             | ✅         | ✅                 | -->
+<!-- | File & Image upload | ✅             | ✅         | ✅                 | -->
+<!-- | Canvas/Formatting   | ✅             | ✅         | ✅                 | -->
 
-- File Uploads
-- Upload & analyze images
-- Data analysis
-
-**Only Claude**
-
-- Interactive [artifacts](https://support.anthropic.com/en/articles/9945615-intro-to-artifacts)
-- Format text & websites
-:::
-
-:::::
 
 ::: footer
 This changes constantly!
@@ -274,76 +278,108 @@ I won't go into detail, but you can look at this when deciding what you need. Yo
 Artifacts allows for creating standalone, interactive content directly within the chat interface. Can be created and modified in real-time.  Interactive web components, dashboards interactive tables, data visualizations, svg graphics etc. 
 :::
 
+
+
 ## Strengths of different models & interfaces
 
--   [**ChatGPT-4o**](https://chat.openai.com/) (Open AI): **web search**, code execution, multimodal interactions, custom GPTs with document upload, context: 4096-128.000 tokens
--   [**Claude 3.5 Sonnet**](https://claude.ai/) (Anthropic): **Writing style**, beautiful text rendering, custom projects, interactive artifacts, **long context**: 200.000 tokens
--   [**Gemini 1.5 pro**](https://gemini.google.com/app) (Google): web search, code execution, multimodal interactions, integration with Google services, custom models, context: up to 2 million tokens
+-   [**ChatGPT**](https://chat.openai.com/) (Open AI): most features, best interface
+-   [**Claude**](https://claude.ai/) (Anthropic): writing style, interactive artifacts for simple figures or websites
+-   [**Gemini**](https://gemini.google.com/app) (Google): currently best model, integration with Google services
 
 ::: notes
 up to means: system capabilities, user access levels, computing time
 :::
 
-## Chain-of-thought prompting
+## Extended reasoning
+
+"Automated" Chain-of-thought prompting
 
 ![](images/chain_of_thought.png){width="20%"}
 
--   Improve performance through more output tokens.
--   Reasoning happens while model predicts each word
 -   [Produces longer & better answers, better reasoning](https://arxiv.org/abs/2201.11903).
--   Define precise steps you want the model to go through.
+-   Improve performance through more output tokens.
+-   Reasoning happens while model predicts each word.
+
+Important: This is already included as a general capability of models.
 
 ::: footer
 Kojima et al. [2023](https://arxiv.org/abs/2205.11916)
 :::
 
+## Automated extended reasoning
 
-## Chain-of-thought prompting: Exceptions
+- No need for explicit chain-of-thought prompting
+- Models trained to use "scratch pads" in background
+- Hidden (e.g. GPT 4.x) or partially visible (e.g. o3)
 
-- This works so well it's built into some of the newest models. 
+## Test different models
+
+Simple math example:
+
+**9.11 or 9.9, which is bigger?**
+
+Compare different models. 
+E.g. Gemini Flash 2.0 versus 2.5
+
+options:
+- try adding "short answer" to provoke wrong output
+
+- if the model gives wrong answer:
+- ask it to explain it
+- ask to check with code
+
+::: notes
+The "9.11 vs 9.9" example. 
+Different models.
+quick answer. 
+Reasoning. 
+Prove with code.
+
+Or do example 12345*66666
+:::
+
+## Example output
+
+![](images/bigger_number_gemini_flash_small.png)
+
+## Models learn by examples
+
+### Do you know this riddle?
+
+A father and son are in a car crash, the father dies, and the son is rushed to the hospital. The surgeon says, 'I can't operate, that boy is my son,' who is the surgeon?
 
 <br>
 
+### Using a **modified version** to test the Chat-bots:
 
+A young boy who has been in a car accident is rushed to the emergency room. Upon seeing him, the surgeon says, "I can operate on this boy!" How is this possible?
 
-### Example: Instructions for using the GPT o1 model
-
-- Avoid chain-of-thought prompts: used internally by default
-- Keep prompts simple and direct
-- Use delimiters: triple quotation marks, section titles
-- Only include most relevant information when providing context/documents, otherwise overcomplicated responses
-
-::: footer
-[See the complete o1 instructions](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting)
+:::footer
+[One useful thing newsletter](https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything)
 :::
 
-::: notes
-Keep prompts simple and direct: The models excel at understanding and responding to brief, clear instructions without the need for extensive guidance.
-Avoid chain-of-thought prompts: Since these models perform reasoning internally, prompting them to "think step by step" or "explain your reasoning" is unnecessary.
-Use delimiters for clarity: Use delimiters like triple quotation marks, XML tags, or section titles to clearly indicate distinct parts of the input, helping the model interpret different sections appropriately.
-Limit additional context in retrieval-augmented generation (RAG): When providing additional context or documents, include only the most relevant information to prevent the model from overcomplicating its response.
+
+## Example output
+
+![](images/riddle_boys_mother_gemini_25.png)
+
+Models over rely on known patterns and make reasoning errors.
+
+## Models as Agents
+
+![](https://miro.medium.com/v2/resize:fit:720/format:webp/1*7rWViLLiWpoHivd15UHZTQ.png)
+
+:::footer
+[Medium Codex Blog](https://medium.com/codex/what-are-ai-agents-your-step-by-step-guide-to-build-your-own-df54193e2de3)
 :::
 
-## Different ChatGPT versions {.smaller}
+## Towards autonomous research
 
-- GPT4: more resource intensive = expensive
-- GPT4o: optimized to be faster and cheaper
-- GPT-4o mini: every day tasks
-- o1-preview: thinks before it answers, for complex tasks (no web search)
-  
-**Usage limits:**
+![](https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41586-023-06792-0/MediaObjects/41586_2023_6792_Fig1_HTML.png?as=webp)
 
-- GPT-4: 40 messages every 3 hours
-- GPT-4o: 80 messages every 3 hours
-- GPT-4o mini: no limit
-
-- o1-preview: 50 messages per week 
-- o1-mini: 50 messages a day 
-
-::: footer
-[Which model to use for what](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini), [Features of each model version](https://platform.openai.com/docs/models/gp),  [Usage limits](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065)
-
-::: 
+:::footer
+Source: Boiko et al. [2023](https://www.nature.com/articles/s41586-023-06792-0)
+:::
 
 # Important ethical aspects
 
@@ -364,8 +400,9 @@ Limit additional context in retrieval-augmented generation (RAG): When providing
 (1) Model training: most  data is used for future model training at OpenAI/GPT & Google/Gemini (not Anthropic/Claude)
 (2) Security check of all data for safety violations
 
-- Opt out of (1) in Settings -> Data Controls:
+- For OpenAI: Opt out of (1) in Settings -> Data Controls:
     - Turn off the option "Improve model for everyone"
+- Gemini: Opt out only possible via deactivating saved conversations
 - Claude does not train on your data by default
 - Security checks happen in all cases - human review
 
@@ -455,7 +492,67 @@ Getty images sued midjourney (AI image creation) for training on their data.
 - Plagiarism: Although word-by-word repetition of text is very rare, use a plagiarism checker to be sure. 
 - Check for hallucinations (see session on [prompting](https://hannahmetzler.eu/ai_skills/Prompting/#/hallucinations))
 
+
 ## Appendix {visibility='hidden'}
+
+
+### What is the model still missing?
+
+![](images/unknown_caller.png)
+
+. . . 
+
+
+**Context information: Your prompts need to give context.**
+
+:::footer
+[Pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
+:::
+
+### Chain-of-thought prompting: Exceptions
+
+- This works so well it's built into some of the newest models.
+
+<br>
+
+### Example: Instructions for using the GPT o1 model
+
+- Avoid chain-of-thought prompts: used internally by default
+- Keep prompts simple and direct
+- Use delimiters: triple quotation marks, section titles
+- Only include most relevant information when providing context/documents, otherwise overcomplicated responses
+
+::: footer
+[See the complete o1 instructions](https://platform.openai.com/docs/guides/reasoning/advice-on-prompting)
+:::
+
+::: notes
+Keep prompts simple and direct: The models excel at understanding and responding to brief, clear instructions without the need for extensive guidance.
+Avoid chain-of-thought prompts: Since these models perform reasoning internally, prompting them to "think step by step" or "explain your reasoning" is unnecessary.
+Use delimiters for clarity: Use delimiters like triple quotation marks, XML tags, or section titles to clearly indicate distinct parts of the input, helping the model interpret different sections appropriately.
+Limit additional context in retrieval-augmented generation (RAG): When providing additional context or documents, include only the most relevant information to prevent the model from overcomplicating its response.
+:::
+
+### Different ChatGPT versions {.smaller}
+
+- GPT4: more resource intensive = expensive
+- GPT4o: optimized to be faster and cheaper
+- GPT-4o mini: every day tasks
+- o1-preview: thinks before it answers, for complex tasks (no web search)
+
+**Usage limits:**
+
+- GPT-4: 40 messages every 3 hours
+- GPT-4o: 80 messages every 3 hours
+- GPT-4o mini: no limit
+
+- o1-preview: 50 messages per week
+- o1-mini: 50 messages a day
+
+::: footer
+[Which model to use for what](https://help.openai.com/en/articles/7102672-how-can-i-access-gpt-4-gpt-4-turbo-gpt-4o-and-gpt-4o-mini), [Features of each model version](https://platform.openai.com/docs/models/gp),  [Usage limits](https://help.openai.com/en/articles/6950777-what-is-chatgpt-plus#h_d78bb59065)
+
+:::
 
 ### Access to models
 
@@ -466,3 +563,50 @@ Getty images sued midjourney (AI image creation) for training on their data.
 | Gemini      | 1 month trial of paid version, <br> high usage limits in free version                   | 22€     |
 | Perplexity | 3 requests/day, 1000 tokens/month | \$17-20      |
 | Elicit     | 1000 tokens/month                 | \$10-12      |
+
+<!-- ## Features of the models -->
+
+<!-- - Claude has browsing and voice input in US version -->
+<!-- - Code generation: Claude can create interactive simple websites -->
+<!-- - Voice input only in GPT very good -->
+<!-- - Projects to collect conversations -->
+
+<!-- **specifics** -->
+<!-- - Data analysis  -->
+<!-- - Browse internet -->
+<!-- - Execute code -->
+<!-- - Create images -->
+<!-- - Voice input/output -->
+<!-- - File upload -->
+<!-- - Image analysis and creation -->
+
+<!-- - GPT has much better with Voice input and has conversation mode.  -->
+
+
+<!-- ::::: columns -->
+<!-- ::: {.column width="48%"} -->
+<!-- **ChatGPT & Gemini** -->
+
+<!-- - Browse -->
+<!-- - Create images -->
+<!-- - Execute code -->
+<!-- - Voice input/output -->
+<!-- - Discovering & using custom GPTs/Gems <br> (Claude: Projects) -->
+<!-- ::: -->
+
+<!-- ::: {.column width="48%"} -->
+<!-- **All models** -->
+
+<!-- - File Uploads -->
+<!-- - Upload & analyze images -->
+<!-- - Connection to Google drive -->
+<!-- - Voice input (ChatGPT) -->
+<!-- - Data analysis -->
+
+<!-- **Only Claude** -->
+
+<!-- - Interactive [artifacts](https://support.anthropic.com/en/articles/9945615-intro-to-artifacts) -->
+<!-- - Format text & websites -->
+<!-- ::: -->
+
+<!-- ::::: -->
