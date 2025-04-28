@@ -32,51 +32,16 @@ editor: source
 
 <small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
-## System prompts
+## Internal knowledge of models
 
-- Customizing your default version of ChatGPT 
+Models normally have a knowledge cutoff, as they are normally trained months prior.
 
-<br>
+- Does a model know which date is today?
+- Does a model know what time it is?
 
-ChatGPT: Settings > Personalization > Customize ChatGPT
+Let's try this out!
 
-<br>
-
-:::::: columns
-::: {.column width="45%"}
-```{r}
-knitr::include_graphics("images/system_prompt.png")
-```
-:::
-
-::: {.column width="45%"}
-"This is extremely important for my job, please work accurately and check that everything is correct."
-:::
-::::::
-
-
-## Ideas for useful system prompts
-
-- Give information that is relevant in all of your chats, example: scientific approach.
-
-- Using chain-of-thought reasoning
-
-Other concrete examples:
-
-- Don't give detailed explanations of created code unless I ask for it.
-
-- Creative approach: Challenge me to continue learning.
-
-
-(Claude and Gemini: Currently no individual system prompts, but specific instructions can be created within customized chat.)
-
-::: notes
-Don't give detailed explanations of code unless I ask for it.
-
-Challenge to continue learning
-:::
-
-## Example: Claude's system prompt {.smaller style="font-size: 0.5em;"}
+## Example: Claude's general prompt {.smaller style="font-size: 0.5em;"}
 
 The assistant is Claude, created by Anthropic.
 The current date is {}.Claude’s knowledge base was last updated on April 2024. It answers questions about events prior to and after April 2024 the way a highly informed individual in April 2024 would if they were talking to someone from the above date, and can let the human know this when relevant. (...)
@@ -100,6 +65,84 @@ Claude is now being connected with a human.
 ::: notes
 Mention CoT reasoning (step by step)
 :::
+
+## What is the model still missing?
+
+![](images/unknown_caller.png)
+
+. . . 
+
+
+**Context information: Information about you and your preferences.**
+
+This is implemented as custom instructions (system prompts) or automated via memories.
+
+:::footer
+[Pixabay](https://pixabay.com/illustrations/keyboard-smartphone-unknown-call-6753584/)
+:::
+
+## Memories (ChatGPT)
+Settings > Personalization > Manage Memories
+
+- Are automatically extracted from your chats
+- You can manually delete memories 
+
+![](images/saved_memories.png)
+
+## Updating Memories (ChatGPT)
+- You can instruct the model to add/update specific memories
+
+![](images/update_saved_memories.png)
+
+## Memories (Gemini)
+Settings > Saved Info
+
+![](images/Gemini_memories_Konstantin.png)
+
+<small> Note: Currently not as good as ChatGPT, but will probably improve soon. </small>
+
+## Customization (ChatGPT)
+
+:::::: columns
+::: {.column width="45%"}
+ChatGPT: 
+
+Settings > 
+
+Personalization > 
+
+Customize ChatGPT
+:::
+
+::: {.column width="45%"}
+```{r}
+knitr::include_graphics("images/customizing_GPT_individualized_user_info_and_instructions.png")
+```
+:::
+::::::
+
+## Customization 
+
+- Claude: Settings > Profile > Personal Preferences
+- Gemini: Currently no individual system prompts, only customized chats.
+
+## Ideas for useful system prompts
+
+- Give information that is relevant in all of your chats, example: scientific approach.
+
+Other concrete examples:
+
+- Don't give detailed explanations of created code unless I ask for it.
+
+- Creative approach: Challenge me to continue learning.
+
+- (!) Specific instructions for chain-of-thought reasoning are often unnecessary now.
+
+
+::: notes
+
+:::
+
 
 ## Example: System prompt for scientific work {.smaller style="font-size: 0.6em;"}
 
@@ -125,50 +168,65 @@ When a user’s message begins with a keyword, recognize it as a command and fol
 
 ## Custom LLM Chatbots
 
-- CustomGPT in ChatGPT (covered on the next slides)
-- Gems in Gemini
+- CustomGPT in ChatGPT
+  - "Explore GPTs": a marketplace of customized models
+  - Free tier: only usage, Paid tier needed for creation
+  
+- Gems in Gemini (covered on the next slides)
 - Projects in Claude
 
-## Creating Custom GPTs: How to
+## Gem Manager (Gemini)
 
-:::::: columns
-::: {.column width="18%"}
-1)  
+Gem manager > New Gem
 
-```{r, echo=F}
-knitr::include_graphics("images/how_to_custom_gpt.png")
-```
-:::
+![](images/gemini_gem_manager.png)
 
-::: {.column width="14%"}
-2)  
+## Custom Gem: Example
 
-```{r}
-knitr::include_graphics("images/how_to_custom_gpt2.png")
-```
-:::
+#### Advisor for income tax
 
-::: {.column width="60%"}
-```{r, out.height=400}
-knitr::include_graphics("images/gpt_builder.png")
-```
-:::
-::::::
+![](images/gemini_customize_gem.png)
 
--   GPT Builder asks more questions
--   Try it out and keep "talking into it" until it fits
+<!-- ## Creating Custom GPTs: How to -->
 
-## Example Quarto presentation helper
+<!-- :::::: columns -->
+<!-- ::: {.column width="18%"} -->
+<!-- 1)   -->
 
-Helps specifically in creating quarto react.js presentations
+<!-- ```{r, echo=F} -->
+<!-- knitr::include_graphics("images/how_to_custom_gpt.png") -->
+<!-- ``` -->
+<!-- ::: -->
 
-![](images/quarto_gpt_1.png)
+<!-- ::: {.column width="14%"} -->
+<!-- 2)   -->
 
-## Example Quarto presentation helper (cont)
+<!-- ```{r} -->
+<!-- knitr::include_graphics("images/how_to_custom_gpt2.png") -->
+<!-- ``` -->
+<!-- ::: -->
 
-Loading in relevant websites I found (as html files).
+<!-- ::: {.column width="60%"} -->
+<!-- ```{r, out.height=400} -->
+<!-- knitr::include_graphics("images/gpt_builder.png") -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::::: -->
 
-![](images/quarto_gpt_2.png)
+<!-- -   GPT Builder asks more questions -->
+<!-- -   Try it out and keep "talking into it" until it fits -->
+
+<!-- ## Example Quarto presentation helper -->
+
+<!-- Helps specifically in creating quarto react.js presentations -->
+
+<!-- ![](images/quarto_gpt_1.png) -->
+
+<!-- ## Example Quarto presentation helper (cont) -->
+
+<!-- Loading in relevant websites I found (as html files). -->
+
+<!-- ![](images/quarto_gpt_2.png) -->
 
 
 ## Exercise: Create a Custom Chatbot (15 min) 
@@ -180,7 +238,7 @@ Loading in relevant websites I found (as html files).
 - [Prompt examples](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/) for other ideas: Proofreader, LinkedIn content  creator, Email drafter
 
 2. Write a detailed prompt
-3. **Add addtinional files relevant for your GPT**, e.g. websites with instructions for the task.
+3. **Add additional files relevant for your Custom Chatbot**, e.g. websites with instructions for the task.
 
 
 ## Links to predifined costumized Chatbots
