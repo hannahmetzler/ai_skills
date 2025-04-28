@@ -2,10 +2,6 @@
 
 # To Do Konstantin
 
-- Account on Gemini, ChatGPT, Claude
-- Intro
-- Ethics
-- Customizing updates? See notes for future courses
 - Creating Custom Gem on Gemini, memory (ev Gemini)
 - Using others CustomGPTs on ChatGPT
 - Customizing, system prompt on ChatGPT
@@ -14,9 +10,6 @@
 # To Do Hannah
 
 - Include writing exercise into the chatbot essentials session?
-- Prompting, Hallucinations
-- Update Use Cases
-- Help with Customizing session?
 
 ## Intro
 
@@ -31,8 +24,8 @@
 - Exercise to test different models:
 - Exercise Mathematik Beispiel in Reasoning und Flash/Mini reingeben
 - Reasoning riddle: surgeon and son: https://www.oneusefulthing.org/p/on-jagged-agi-o3-gemini-25-and-everything
+- Reasoning via reinforcement learning: https://benjamintodd.substack.com/p/teaching-ai-to-reason-this-years
 - Stahl und Federn Beispiel
-  
 - Features
   - Google Search
   - Canvas mode
@@ -40,11 +33,6 @@
 - Multimodal interactions slide: instead give overview of features and explain that they change quickly over time
 - Slide 17: stattdessen Models (2 bilder für gpt und gemini im images folder)
 
-- Explain and then test system prompt
-  - Who are you? 
-  - What day is today?
-- Add reasoning
-- Move Chain of thought prompts from prompting to the intro to explain reasoning models
 - Add reinforcement learning
 - Exercises/part to play with different models
 
@@ -110,7 +98,6 @@
 - Integration with Google Docs, Gmail, Drive
 - Connect to Apps: Youtube, google maps, flights, hotels, workspace, calendar, tasks etc
 
-
 # Ethan Mollick Newsletter: Which model to use?
 
 - Has a great image comparing the model's features & skills:
@@ -127,18 +114,6 @@
   - save activity for 3, 18 or 36 months
   - required for google drive/apps integration
 
-
-# Research
-
-- Checkout Deep Research (by Gemini) blogpost (https://www.oneusefulthing.org/p/prophecies-of-the-flood): specialized research agent
-- Writes research reports, better than the average human, not as good as the best humans
-- no good arguments when there is conflicting evidence
-- a bit superficial
-
-# New Developments
-
-- Reasoning via reinforcement learning: https://benjamintodd.substack.com/p/teaching-ai-to-reason-this-years
-
 # Prompting (Ethan Molick good enough prompting)
 
 - Most important: there is no correct way of prompting that applies universally. [Ref](https://ai-analytics.wharton.upenn.edu/generative-ai-labs/research-and-technical-reports/tech-report-prompt-engineering-is-complicated-and-contingent/)
@@ -147,60 +122,6 @@
 - Formatting is consistently important. 
   - (Although the study tested this with the format: "Format your response as follows: 'The correct answer is (insert answer here)'"). 
   - So it's conflated with the prompt "the correct answer is"
-
-- Try it out for all worktasks and see how good it does
 - There is no clear science of prompt engineering. AI is inconcistent and weird. 
 - treat AI just like an infinitely patient new coworker who forgets everything you tell them each new conversation
 - Treat as human citation: OpenAI’s ChatGPT-4.5 Passes Turing Test With 73% Success Rate [ref](https://arxiv.org/pdf/2503.23674)
-
-
-## Co-worker
-
-- Work with it, do not just give it orders, learn what it's good or bad at.
-- You are the expert: Start by using it in areas of your expertise.
-- You'll learn where hallucinations are a big deal, and where they are not over time
-- Reduce hallucinations by giving the AI the ability to be wrong, for example, 
-writing: if you’re unsure or necessary information, say “I don’t have enough information to answer this"
-
-[Techcrunch article](https://techcrunch.com/2025/04/18/openais-new-reasoning-ai-models-hallucinate-more/): Hallucinations have proven to be one of the biggest and most difficult problems to solve in AI. Reasoning models hallucinate more. 
-- give models webs search: helpful
-
-
-## New on the job
-
-- Clarity: be very clear on exactly what you want 
-  - ("You don’t want a report on the pros and cons in remote learning, you want a 
-  report on the pros and cons in remote learning appropriate for a regional university in the 
-  Midwestern US and that might convince a business school Dean to fund a new remote learning program.")
-- give examples of good or bad responses (few shot prompting)
-- give step by step instructions
-- give it feedback
-
-## Forgetfulness
-
-- provide context: role, persona (help most of the time but not always, but are not magically turn the AI into that role)
-- documents
-- pay attention to context window
-
-## Infinite patience
-
-- abundance
-- 15 ways to complete a sentence
-- email in 3 different tones
-- Ask for 30 ideas
-- Push for variation ("give me ideas that are 80% weirder"), recombination (idea 12+16) and expansion (more ideas like number 12). 
-- Then select one idea you like. 
-
-## Don't make it hard
-
-- Simply use it. 
-- Spend 10h to figure out how it's useful for you. Test how it fits into your work and life. 
-- Don't aim for perfection.
-
-## General
-
-- AI is unreliable in some tasks. In other tasks, AI is superhuman.
-
-# Images & reasoning
-
-- recognizing locations from photos. Researching other infos about pictures (name of ship and where it will dock next example)
