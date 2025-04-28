@@ -31,21 +31,23 @@ editor: source
 ::: {.column width="47%"}
 ### Deep Research Mode
 
-Writes detailed research reports
+In-depth research reports
 
-- Gemini (free) 
-- ChatGPT (paid accounts only, limits apply)
+- Gemini: currently free, 20/day for Advanced users
+- ChatGPT: paid accounts only, 10 times/month + 15 times lightweight version
+- DeepSeek
+- Grok3
 
 :::
 
 ::: {.column width="47%"}
-### Custom GPTs
+### Scientific custom GPTs
 
 Short summaries, often bullet points & single citations
 
-  - Consensus
-  - Dimensions Research
-  - Many Scholar GPTs
+- Consensus
+- Dimensions Research
+- Many Scholar GPTs
 
 :::
 :::
@@ -53,23 +55,27 @@ Short summaries, often bullet points & single citations
   
 ## What is Deep Research Mode?
 
-- Suggests an (editable) multi step research plan
-- Searches the entire internet
-- Reasoning
-- Reporting: Synthesis
-- Your prompt really matters
-- Expensive compute (limits)
-- 1 million token window with RAG
+- Agentic AI fine-tuned on reasoning models (e.g. o3)
+- Suggests & follows an editable multi-step research plan
+- Autonomously web search, multiple rounds
+- Reasoning in multiple rounds
+- Synthesizes information: long & structured research reports
+- Your prompt really matters: Expensive compute & limits
+- Limitations: factual errors possible, communication of uncertainty, not only scientific sources
 
+## What are scientific Custum GPTs?
 
-## How do Custum GPTs citing scientific sources work?
-
-- Include only scientific sources: 
-- Retrieval Augmented Generation (RAG)
-- Interaction with scientific paper databases (third party provider, only open access papers)
-- Document embeddings
+- Custom GPTs connected to scientific article data bases
+  -  Third party provider, only open access papers
+- References: only scientific sources
+- How does it work?
+  - Retrieval Augmented Generation (RAG)
+  - Vector embeddings for documents
 - Finding similar documents
 
+## Slide on RAG?
+
+- 1 million token window with RAG
 
 ## Each word or document is a vector of numbers
 <br>

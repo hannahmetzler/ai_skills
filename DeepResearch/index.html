@@ -337,15 +337,13 @@
 <div class="columns">
 <div class="column" style="width:47%;">
 <h3 id="deep-research-mode">Deep Research Mode</h3>
-<p>In-depth research reports</p>
+<p>Detailed research reports</p>
 <ul>
-<li>Gemini: currently free, 20/day for Advanced users</li>
-<li>ChatGPT: paid accounts only, 10 times/month + 15 times lightweight version</li>
-<li>DeepSeek</li>
-<li>Grok3</li>
+<li>Gemini (free)</li>
+<li>ChatGPT (paid accounts only, limits apply)</li>
 </ul>
 </div><div class="column" style="width:47%;">
-<h3 id="scientific-custom-gpts">Scientific custom GPTs</h3>
+<h3 id="custom-gpts">Custom GPTs</h3>
 <p>Short summaries, often bullet points &amp; single citations</p>
 <ul>
 <li>Consensus</li>
@@ -357,35 +355,22 @@
 <section id="what-is-deep-research-mode" class="slide level2">
 <h2>What is Deep Research Mode?</h2>
 <ul>
-<li>Agentic AI fine-tuned on reasoning models (e.g.&nbsp;o3)</li>
-<li>Suggests &amp; follows an editable multi-step research plan</li>
-<li>Autonomously web search, multiple rounds</li>
-<li>Reasoning in multiple rounds</li>
-<li>Synthesizes information: long &amp; structured research reports</li>
-<li>Your prompt really matters: Expensive compute &amp; limits</li>
-<li>Limitations: factual errors possible, communication of uncertainty, not only scientific sources</li>
+<li>Suggests an (editable) research plan</li>
+<li>Searches the entire internet.</li>
+<li>Reasoning</li>
+<li>Reporting</li>
+<li>Your prompt really matters.</li>
+<li>Expensive compute and long reports.</li>
 </ul>
 </section>
-<section id="what-are-scientific-custum-gpts" class="slide level2">
-<h2>What are scientific Custum GPTs?</h2>
+<section id="how-do-custum-gpts-citing-scientific-sources-work" class="slide level2">
+<h2>How do Custum GPTs citing scientific sources work?</h2>
 <ul>
-<li>Custom GPTs connected to scientific article data bases
-<ul>
-<li>Third party provider, only open access papers</li>
-</ul></li>
-<li>References: only scientific sources</li>
-<li>How does it work?
-<ul>
+<li>Include only scientific sources:</li>
 <li>Retrieval Augmented Generation (RAG)</li>
-<li>Vector embeddings for documents</li>
-</ul></li>
+<li>Interaction with scientific paper databases (third party provider, only open access papers)</li>
+<li>Document embeddings</li>
 <li>Finding similar documents</li>
-</ul>
-</section>
-<section id="slide-on-rag" class="slide level2">
-<h2>Slide on RAG?</h2>
-<ul>
-<li>1 million token window with RAG</li>
 </ul>
 </section>
 <section id="each-word-or-document-is-a-vector-of-numbers" class="slide level2">
@@ -393,13 +378,13 @@
 <p><br></p>
 <div class="columns">
 <div class="column" data-align="center" style="width:40%;">
-<p>Word/Token/Document</p>
+<p>Word/Token</p>
 <p><br></p>
 <p><span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even </span> …</p>
 </div><div class="column" data-align="center" style="width:10%;">
 <p>→</p>
 </div><div class="column" data-align="center" style="width:40%;">
-<p>Embedding <small> [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] </small></p>
+<p>Word Embedding <small> [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] </small></p>
 </div></div>
 </section>
 <section id="how-do-embeddings-encode-meaning" class="slide level2">

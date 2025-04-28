@@ -122,6 +122,12 @@ References with links to where information comes from
 
 - Tip: Search for best tools using the "social" option to search Reddit and avoid clutter & adds
 
+## Deep Research with Perplexity
+
+- 3 queries/day for free
+
+![](images/perplexity/deepresearch.png)
+
 ## Rewrite an answer with other models
 
 ![](images/perplexity/rewrite_answer.png)
