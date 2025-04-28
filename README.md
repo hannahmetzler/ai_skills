@@ -17,7 +17,7 @@ and their strengths, and discuss the most important ethical questions around usi
 - [Effective prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/effective-prompting)
 - [LLM Research Reports (Deep Research)](https://hannahmetzler.eu/ai_skills/DeepResearch/)
 - [Customizing Chatbots](https://hannahmetzler.eu/ai_skills/Customizing)
-- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Research)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
 - [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
 ### Not covered or more detailed sessions
