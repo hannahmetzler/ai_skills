@@ -13,7 +13,7 @@ format:
 editor: source
 ---
 
-## <br> Deep Research
+## <br> LLM Research Reports
 
 <br>
 
@@ -25,30 +25,25 @@ editor: source
 *Complexity Science Hub & Medical University of Vienna*
 
 
-## Creating research reports using LLMs
+## Deep Research Mode  vs. "academic" LLMs
 
-::::: columns
+::: columns
 ::: {.column width="47%"}
-### Deep Research Mode
 
-In-depth research reports
+**Agentic in-depth research**
 
-- Gemini: currently free, 20/day for Advanced users
-- ChatGPT: paid accounts only, 10 times/month + 15 times lightweight version
-- DeepSeek
-- Grok3
-
+- Gemini: 10/month for free 
+- ChatGPT Plus only: 30/month + 15 with lightweight version
+- [Genspark](https://www.genspark.ai/a) (free for now)
+- [DeepSeek](https://www.deepseek.com/) (Chinese)
+- [Grok3](https://grok.com/)
 :::
-
 ::: {.column width="47%"}
-### Scientific custom GPTs
+**Connected to scientific data bases**
 
-Short summaries, often bullet points & single citations
-
-- Consensus
-- Dimensions Research
+- [Consensus GPT](https://chatgpt.com/g/g-bo0FiWLY7-consensus)
+- [Dimensions Research GPT](https://chatgpt.com/g/g-STAmDxyVG-dimensions-research-gpt)
 - Many Scholar GPTs
-
 :::
 :::
 
@@ -57,25 +52,42 @@ Short summaries, often bullet points & single citations
 
 - Agentic AI fine-tuned on reasoning models (e.g. o3)
 - Suggests & follows an editable multi-step research plan
-- Autonomously web search, multiple rounds
+- Iterative autonomous web search
 - Reasoning in multiple rounds
 - Synthesizes information: long & structured research reports
 - Your prompt really matters: Expensive compute & limits
-- Limitations: factual errors possible, communication of uncertainty, not only scientific sources
+- Use all the prompting tips we talked about to write detailed & specific prompts. 
 
-## What are scientific Custum GPTs?
+## Limitations of Deep Research Mode
 
-- Custom GPTs connected to scientific article data bases
-  -  Third party provider, only open access papers
+- factual errors will happen
+- not good at communicating uncertainty
+- not only scientific sources
+- only open access sources
+
+## "Academic" LLMs
+
+- LLMs connected to scientific article databases
+- Database: Third party provider, only open access papers
 - References: only scientific sources
-- How does it work?
-  - Retrieval Augmented Generation (RAG)
-  - Vector embeddings for documents
-- Finding similar documents
 
-## Slide on RAG?
+### Limitations: 
 
-- 1 million token window with RAG
+- Reports much shorter
+- Bullet point format
+- Often single citations
+- Quality of studies varies greatly
+
+## Retrieval Augmented Generation (RAG)
+
+- **R**: LLM can search external sources
+- **A**: Add external information as context to the prompt
+- Advantages: 
+  - Current information & specific data access
+  - Less hallucinations
+  - References
+  
+### How is relevant information  identified?
 
 ## Each word or document is a vector of numbers
 <br>
@@ -113,13 +125,54 @@ Embedding
 
 ## How do embeddings encode meaning?
 
-
-
+::: columns
+::: {.column width="47%"}
 **Word embeddings**
 
 ![](images/wordembeddings.svg)
 
 Semantic dimensions: gender & royalty
+:::
+::: {.column width="47%"}
+**RAG:**
+
+Such embedding vectors of query and search findings are used for **semantic search**.
+:::
+:::
+
+## RAG with semantic search
+
+![](https://www.clarifai.com/hs-fs/hubfs/rag-query-drawio%20(1)-png-2.png?width=2056&height=1334&name=rag-query-drawio%20(1)-png-2.png)
+
+::: footer
+Source: [Clarify AI](https://www.clarifai.com/blog/what-is-rag-retrieval-augmented-generation)
+:::
+
+## Our conclusions
+
+- Get a first overview much more quickly.
+- No actual critical thinking
+- Only open access sources: you will miss research
+- Will hallucinate: before including into papers, you will have to check the sources yourself. 
+- Excellent starting ground for many research tasks.
+- Check the number and quality of sources
+
+## Ideas for use cases (by Andy Stapleton)
+
+- Doing literature review (keeping up to date): Summarize the current research on [...]
+- Research gaps: Perform an analysis on [...]. Find research gaps or open questions that need further investigation. Provide references to support these identified gaps.
+- Brainstorm ideas on [...]
+- Grant applications: Gather facts and references for a grant proposal. Outline the current challenges, why this problem is important solve, and how recent advances suggest our approach will work. Include key statistics...
+- Methodologies: Which methodologies are commonly used to research questions X.
+- Fact checking: Check the following statement: ... Is this accurate and reflects current empirical evidence?
+- Literature summary: which research areas around this topic should I be aware of?
+- Keep up with new trends: Tell me about what new developments occurred in misinformation research in the past year. Highlight any breakthrough studies, new intervention trials, or changing theories, Provide a brief summary of each development along with the citation or source (journal or conference) where it was reported.
+- Asking about the work of specific researchers: summarize their most influential work and current research focus. Include a few example papers (or other contributions). Check if their research group has any recent publications I should be aware of.
+- Preparing for a general audience. My research on ... (include your paper, presentations...), Goal: 20 min. talk at science festival.
+
+::: footer
+[Academics are secretly using Deep Research like this](https://www.youtube.com/watch?v=scKBbRn6Zec)
+:::
 
 
 ## Social Media Mental Health example
@@ -134,9 +187,82 @@ Semantic dimensions: gender & royalty
 Define a research question where you can judge the answer (you have expertise. 
 Social Media Question insert here. 
 
+First enter your question in Flash. 4.5. 
+
 Add it in Gemini Deep Research, ChatGPT Deep Research mode if you have a paid account, maybe Perplexity?, in Consensus and Dimensions Research. 
 
 - How accurate are the reports?
 - Do they reflect your knowledge on the field?
 - How good are the sources cited?
+
+
+# Rick Mulready
+
+## Research process
+
+- Collecting sources
+- Reasoning through informaiton
+- Outputs detailed reports
+
+
+## Perplexity
+
++ Fastest (<3 min)
++ Extracts key facts
++ Pretty wide range of sources
++ follow up questions
+
+- poor context window (memory)
+- short reports
+
+
+Test: 43 sources
+
+## Gemini
+
+- Intermediate: 5-10 min
+- More reputable sources
+- Lack of diverse perspectives
+- Integration with Google drive
+- Large number of websites searched
+
+Test: 414 websites
+
+## ChatGPT
+
+- Slowest: 15-30 minutes
+- Most comprehensive research capabilities
+- Deep complex topics
+- Source reliability less good
+- Most expensive
+
+Test: 23 sources
+
+## Genspark.ai
+
+- More creative output (mindmaps)
++ Table of content
++ Supplementary resources, similar knowledge section
++ Mixture of Agents: "best" combination of models for your specific research question
+
+## Prompt suggestion
+
+1. Context (your background and goal): what you already know, what you are researching
+2. Central research question
+3. Specifications:
+  - time period, which population...
+4. Desired Report Output
+  - Structure
+  - Content Elements (Table, Graphs, Subtitles, Policy Implications, Case Studies...)
+  - Target Length
+  - Citation style
+5. Source preferences: 
+    *   **Prioritize:** `[e.g., "Peer-reviewed journals," "Government reports," "Reputable news sources," "Industry analysis reports"]`
+    *   **Avoid:** `[e.g., "Blog posts," "Opinion pieces," "Websites with known biases," "Social media"]`
+    *   **Bias Considerations:** `[e.g., "Acknowledge potential biases in industry-funded research," "Consider perspectives from multiple stakeholders," "Prioritize sources with transparent methodologies"]`
+6. Follow-up question (optional)
+
+::: footer
+[Rick Mulready prompt](https://root-tendency-e9a.notion.site/Deep-Research-Prompt-5-Mind-Blowing-Use-Cases-of-Deep-Research-1b6c2aecc29780f6a612c6e9730b84d1) (developed for entrepreneurs) & related [video](https://www.youtube.com/watch?v=ZzO2GMc-G3M)
+:::
 
