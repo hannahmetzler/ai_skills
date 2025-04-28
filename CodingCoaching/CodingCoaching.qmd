@@ -50,7 +50,7 @@ editor: source
 - Turn your CV into a personal website
 - [Example](https://claude.site/artifacts/50f01821-fb16-4332-b65e-5499c3b71a0f) to get you started
 - Define website sections (Inspiration [here](https://hannahmetzler.eu/))
-- Upload it a screenshot of a website design you like and update the design
+- Upload a screenshot of a website design you like and update the design
 ...
 
 ## AI as a coach
