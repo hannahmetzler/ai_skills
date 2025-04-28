@@ -103,12 +103,24 @@ Collection of ideas for where you might experiment with chatbots in the future
 -   Should I accept a journalist request? Answer ideas for [journalist interview questions](https://chatgpt.com/share/67166aa4-64e4-800b-b1fc-f5099ce4c53f) showed me that I could. 
 -   [Academic application: Writing the statement on "Future research directions"](https://chatgpt.com/share/67166bc6-8c38-800b-81c7-abc648c1cbea): exploring the research focus of the group and research area I aimed for. (second half of chat)
 
-## Tasks involving Code
+## Tasks involving code
 
-- Data analysis
-- Creating a website
+- Data analysis: analyse a data file and provide information about it
+- Create any type of graph: e.g., a scatter plot showing x on the x-axis, y on the y-axis. 
+- Which type of graph would allow to show...
+- Translate code between languages
+- Creating a website from scratch based on your CV
+- Upload a screenshot of a website design you like and update the design …
 
-## Coaching, Time planning, 
+## Coaching, time planning
+
+- Any career-related decision you want feedback on/are unsure about
+- What type of job could you do with your skills? Which types of companies? Upload your CV, describe your skills. 
+- For productivity coaching: Upload some data (agenda screenshot, time tracking data...)
+- LLMs can be very empathic and are infinitely patient! 
+- See these [slides](https://hannahmetzler.eu/ai_skills/CodingCoaching/) for examples
+
+
 
 
 
