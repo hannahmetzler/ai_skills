@@ -32,11 +32,11 @@ editor: source
 
 **Agentic in-depth research**
 
-- Gemini: 10/month for free 
-- ChatGPT Plus only: 30/month + 15 with lightweight version
+- [Gemini](https://gemini.google.com/): 10/month for free 
+- [ChatGPT](https://chatgpt.com/) Plus only: 30/month + 15 with lightweight version
 - [Genspark](https://www.genspark.ai/a) (free for now)
-- [DeepSeek](https://www.deepseek.com/) (Chinese)
 - [Grok3](https://grok.com/)
+- [Perplexity](https://www.perplexity.ai/)
 :::
 ::: {.column width="47%"}
 **Connected to scientific data bases**
@@ -47,22 +47,39 @@ editor: source
 :::
 :::
 
-  
+## Let's start our exercise for later: Exercise (10 min) {.smaller style="font-size: 0.6em;"}
+
+**Define a research question in your area of expertise, where you can judge accuracy. Be specific on study population, methodology (RCT), type of study (meta-analyses), outcome variables, etc.** 
+
+For example: _"What are effects of social media use on well-being and mental health, including depression, anxiety and sleep? How does the effect differ between particular subgroups (like teenagers, or girls vs. boys, individuals with and without a mental health condition)? Does it matter how much individuals use social media (dose-dependent effects), and how they use it (for example, passive vs. active use)? Overall, please focus on how robust the evidence is and on what the highest-quality studies say. Prioritize meta-analyses and causal studies (RCTs, natural experiments) whenever they exist. Please include only articles from scientific journals. Please cite all studies in APA format and include a list of references at the end."_
+
+**Open a tab for each of these models & enter the prompt. Let the models compute while we continue with our content.** 
+
+1. Gemini 2.5 Pro (Not Deep Research) (or ChatGPT 4.5)
+2. Consensus and/or Dimensions GPT
+3. Gemini Deep Research
+4. ChatGT 4.5 Deep Research mode if you have a paid account
+5. Genspark.ai Deep Research
+
+
 ## What is Deep Research Mode?
 
 - Agentic AI fine-tuned on reasoning models (e.g. o3)
 - Suggests & follows an editable multi-step research plan
-- Iterative autonomous web search
-- Reasoning in multiple rounds
+- Collects sources: Iterative autonomous web search
+- Reasons through information in multiple rounds
 - Synthesizes information: long & structured research reports
 - Your prompt really matters: Expensive compute & limits
 - Use all the prompting tips we talked about to write detailed & specific prompts. 
 
-## Limitations of Deep Research Mode
+## Deep Research Mode
+
+### Limitations
 
 - factual errors will happen
 - not good at communicating uncertainty
-- not only scientific sources
+- not only scientific sources (except Perplexity)
+  - but: requesting scientific sources only worked in ChatGPT for me
 - only open access sources
 
 ## "Academic" LLMs
@@ -74,28 +91,28 @@ editor: source
 ### Limitations: 
 
 - Reports much shorter
-- Bullet point format
+- Often bullet point format
 - Often single citations
 - Quality of studies varies greatly
 
 ## Retrieval Augmented Generation (RAG)
 
 - **R**: LLM can search external sources
-- **A**: Add external information as context to the prompt
+- **A**: and add external information as context to the prompt
+- **G**enerate an answer based on this augmented prompt. 
 - Advantages: 
   - Current information & specific data access
   - Less hallucinations
   - References
   
-### How is relevant information  identified?
+### How do models identify relevant information/papers?
 
 ## Each word or document is a vector of numbers
-<br>
+
 
 ::::: columns
 ::: {.column width="40%" align="center"}
 Word/Token/Document
-
 
 <br>
 
@@ -148,119 +165,133 @@ Such embedding vectors of query and search findings are used for **semantic sear
 Source: [Clarify AI](https://www.clarifai.com/blog/what-is-rag-retrieval-augmented-generation)
 :::
 
-## Our conclusions
+## Ideas for use cases {.smaller style="font-size: 0.8em;"}
 
-- Get a first overview much more quickly.
-- No actual critical thinking
-- Only open access sources: you will miss research
-- Will hallucinate: before including into papers, you will have to check the sources yourself. 
-- Excellent starting ground for many research tasks.
-- Check the number and quality of sources
+**by Andrew Stapleton**
 
-## Ideas for use cases (by Andy Stapleton)
-
-- Doing literature review (keeping up to date): Summarize the current research on [...]
-- Research gaps: Perform an analysis on [...]. Find research gaps or open questions that need further investigation. Provide references to support these identified gaps.
-- Brainstorm ideas on [...]
-- Grant applications: Gather facts and references for a grant proposal. Outline the current challenges, why this problem is important solve, and how recent advances suggest our approach will work. Include key statistics...
-- Methodologies: Which methodologies are commonly used to research questions X.
-- Fact checking: Check the following statement: ... Is this accurate and reflects current empirical evidence?
-- Literature summary: which research areas around this topic should I be aware of?
-- Keep up with new trends: Tell me about what new developments occurred in misinformation research in the past year. Highlight any breakthrough studies, new intervention trials, or changing theories, Provide a brief summary of each development along with the citation or source (journal or conference) where it was reported.
-- Asking about the work of specific researchers: summarize their most influential work and current research focus. Include a few example papers (or other contributions). Check if their research group has any recent publications I should be aware of.
-- Preparing for a general audience. My research on ... (include your paper, presentations...), Goal: 20 min. talk at science festival.
+- Doing literature reviews
+- Overview of existing research areas
+- Ask for research gaps
+- Brainstorm ideas in a research area
+- Grant applications
+- Ask about common methodologies for a specific question
+- Ask about the work of specific researchers
+- Translate your research for a general audience
+- Fact-check (very) specific claims
 
 ::: footer
-[Academics are secretly using Deep Research like this](https://www.youtube.com/watch?v=scKBbRn6Zec)
+[Andrew Stapleton: Academics are secretly using Deep Research like this](https://www.youtube.com/watch?v=scKBbRn6Zec)
 :::
 
+## Andy Stapleton prompt ideas {.scrollable .smaller style="font-size: 0.6em;"}
 
-## Social Media Mental Health example
+### For inspiration, there is zero guarantee that any of this produces any better result then prompts you would come with! 
 
-- [Consensus](https://chatgpt.com/share/680b547c-adf0-800b-87a1-96f6e510f241)
-- [Dimensions Research](https://chatgpt.com/share/680b5c8a-f658-800b-967a-0068d3dbfcf4)
-- [ChatGPT Deep Research](https://chatgpt.com/share/680b5555-34c8-800b-8beb-c86289cf21ee)
-- [Gemini Deep Research](https://g.co/gemini/share/f65dd50b565e)
-  
-## Exercise
+- Doing regular literature reviews to keep up to date: Summarize the current research on [...]. Include the main findings, major authors and cite recent key studies in the field. 
+- Research gaps: Perform an analysis on [...]. Find research gaps or open questions that need further investigation. Provide references to support these identified gaps.
+- Brainstorm some potential research questions about the effects of [...] on [...]. Provide a list of unique questions or hypotheses, each with a brief explanation or rationale drawn from existing studies. 
+- Grant applications: Gather facts and references for a grant proposal. Outline the current challenges, why this problem is important solve, and how recent advances suggest our approach will work. Include key statistics...
+- Methodologies: I am planning a study on [...]. Which methodologies are commonly used for [...]. Compare approaches and summarize the best practices and recommendations from recent studies with references. 
+- Keep up with new trends: Tell me about what new developments occurred in [...] research in the past year. Highlight any breakthrough studies, new treatment trials, or changing theories. Provide a brief summary of each development along with the citation or source (journal or conference) where it was reported.
+- Asking about the work of specific researchers: summarize their most influential work and current research focus. Include a few example papers (or other contributions). Check if their research group has any recent publications I should be aware of.
+- Prepare a layperson-friendly explanation of my research on [...]. [Provide your paper(s), presentations, any references). The goal is a 2-minute talk for a science festival. Explain what [...] is and why it can improve [...]. Also mention real-world examples (with sources) that highlight the potential of [...].
+- Fact-checking: Check the following statement: [Biodiversity has declined by over 50% in the last 40 years.] Is this accurate and reflects current empirical evidence? If so, provide several sources. 
 
-Define a research question where you can judge the answer (you have expertise. 
-Social Media Question insert here. 
+::: footer
+[Andrew Stapleton: Academics are secretly using Deep Research like this](https://www.youtube.com/watch?v=scKBbRn6Zec)
+:::
 
-First enter your question in Flash. 4.5. 
+---
 
-Add it in Gemini Deep Research, ChatGPT Deep Research mode if you have a paid account, maybe Perplexity?, in Consensus and Dimensions Research. 
+## Hannah's preliminary conclusions on Deep Research Mode {.smaller style="font-size: 0.8em;"}
+
+- Excellent to get a first overview much more quickly.
+- Hallucinations: Check before you cite in your papers. 
+- No actual critical thinking: summarizes majority opinions, will miss critical perspectives/constraints if you don't highlight them.
+- Check the number and quality of sources. Often limited. 
+- Ask Deep Research mode to include only academic sources 
+- Only open access: Do additional research to not miss half of the research. (& publish open access!)
+- Excellent starting ground for many research tasks
+
+
+## Back to the exercise output (15 min)
 
 - How accurate are the reports?
-- Do they reflect your knowledge on the field?
-- How good are the sources cited?
+- Do they reflect your expert knowledge on the field?
+- Which differences between models/services did you notice?
+    - Quality of sources
+    - Number of sources searched
+    - Length
+    - Format
+    ...
+- You can also use my example reports on the next slide. 
 
 
-# Rick Mulready
+## Research report examples on social media & mental health 
 
-## Research process
+(Always check the prompt version, it evolved slightly between the different trials.)
 
-- Collecting sources
-- Reasoning through informaiton
-- Outputs detailed reports
-
-
-## Perplexity
-
-+ Fastest (<3 min)
-+ Extracts key facts
-+ Pretty wide range of sources
-+ follow up questions
-
-- poor context window (memory)
-- short reports
+- [Consensus GPT](https://chatgpt.com/share/680b547c-adf0-800b-87a1-96f6e510f241)
+- [Dimensions Research GPT](https://chatgpt.com/share/680b5c8a-f658-800b-967a-0068d3dbfcf4)
+- [ChatGPT Deep Research](https://chatgpt.com/share/680b5555-34c8-800b-8beb-c86289cf21ee)
+- [Gemini Deep Research](https://g.co/gemini/share/f65dd50b565e)
+- [Perplexity Deep Research](https://www.perplexity.ai/search/what-are-effects-of-social-med-o7qOWf3VRhGzGiYUPXb.5Q)
+- [Genspark](https://www.genspark.ai/spark?id=4869f1db-00e2-499c-b887-b36ace70dc7f) (This is an example on misinformation research)
 
 
-Test: 43 sources
+## Some impressions from comparing {.smaller style="font-size: 0.6em;"}
 
-## Gemini
+::: columns
+::: {.column width="47%"}
+### Gemini
 
-- Intermediate: 5-10 min
-- More reputable sources
-- Lack of diverse perspectives
+- Intermediate search time: 5-10 min
 - Integration with Google drive
 - Large number of websites searched
+- Follow up questions create new reports
 
-Test: 414 websites
-
-## ChatGPT
+### ChatGPT
 
 - Slowest: 15-30 minutes
 - Most comprehensive research capabilities
 - Deep complex topics
-- Source reliability less good
 - Most expensive
 
-Test: 23 sources
+### Consensus/Dimensions
 
-## Genspark.ai
+- very similar
+- short, but accurate
+:::
+::: {.column width="47%"}
+### Genspark
 
-- More creative output (mindmaps)
+- high quality
 + Table of content
-+ Supplementary resources, similar knowledge section
++ Supplementary resources (videos), similar knowledge section
 + Mixture of Agents: "best" combination of models for your specific research question
+(+ Creative output formats (e.g. [Mindmaps](https://www.genspark.ai/spark/comparative-analysis-of-deep-research-ai-agents/44916286-7832-4e98-bbc1-e3bcdb8f9217))
 
-## Prompt suggestion
+### Perplexity
 
-1. Context (your background and goal): what you already know, what you are researching
+- Shorter reports: Extracts key facts
+- Pretty wide range of sources
+- You can ask follow up questions
+- Poor context window (memory)
+- Fewer sources
+- 30 minute search
+:::
+::::
+
+## Prompt suggestion for the future  {.smaller style="font-size: 0.7em;"}
+
+1. Context (your background and goal): what you already know, what you are researching. 
 2. Central research question
-3. Specifications:
-  - time period, which population...
-4. Desired Report Output
-  - Structure
-  - Content Elements (Table, Graphs, Subtitles, Policy Implications, Case Studies...)
-  - Target Length
-  - Citation style
+3. Specifications: time period, population, study type, output variables...
+4. Desired Report Output: Structure, Content Elements (Table, Graphs, Subtitles, Policy Implications, Case Studies...), Target length, Citation style
 5. Source preferences: 
-    *   **Prioritize:** `[e.g., "Peer-reviewed journals," "Government reports," "Reputable news sources," "Industry analysis reports"]`
-    *   **Avoid:** `[e.g., "Blog posts," "Opinion pieces," "Websites with known biases," "Social media"]`
-    *   **Bias Considerations:** `[e.g., "Acknowledge potential biases in industry-funded research," "Consider perspectives from multiple stakeholders," "Prioritize sources with transparent methodologies"]`
-6. Follow-up question (optional)
+    *   **Prioritize:** [e.g., "Peer-reviewed journals," "Government reports," "Reputable news sources," "Industry analysis reports"]`
+    *   **Avoid:** [e.g., "Blog posts," "Opinion pieces," "Websites with known biases," "Social media"]
+    *   **Bias Considerations:** [e.g., "Acknowledge potential biases in industry-funded research," "Consider perspectives from multiple stakeholders," "Prioritize sources with transparent methodologies"]
 
 ::: footer
 [Rick Mulready prompt](https://root-tendency-e9a.notion.site/Deep-Research-Prompt-5-Mind-Blowing-Use-Cases-of-Deep-Research-1b6c2aecc29780f6a612c6e9730b84d1) (developed for entrepreneurs) & related [video](https://www.youtube.com/watch?v=ZzO2GMc-G3M)

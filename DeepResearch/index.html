@@ -325,92 +325,268 @@
     <div class="slides">
 
 
-<section id="deep-research" class="slide level2">
-<h2><br> Deep Research</h2>
+<section id="llm-research-reports" class="slide level2">
+<h2><br> LLM Research Reports</h2>
 <p><br></p>
 <h3 id="mastering-ai-chatbots-optimizing-research-through-effective-use">Mastering AI Chatbots: Optimizing Research through Effective Use</h3>
 <p><br></p>
 <p><strong>Mag. Dr.&nbsp;Hannah Metzler</strong> &amp; <strong>Konstantin Hebenstreit, M.Sc.</strong> <br> <em>Complexity Science Hub &amp; Medical University of Vienna</em></p>
 </section>
-<section id="creating-research-reports-using-llms" class="slide level2">
-<h2>Creating research reports using LLMs</h2>
+<section id="deep-research-mode-vs.-academic-llms" class="slide level2">
+<h2>Deep Research Mode vs.&nbsp;“academic” LLMs</h2>
 <div class="columns">
 <div class="column" style="width:47%;">
-<h3 id="deep-research-mode">Deep Research Mode</h3>
-<p>Detailed research reports</p>
+<p><strong>Agentic in-depth research</strong></p>
 <ul>
-<li>Gemini (free)</li>
-<li>ChatGPT (paid accounts only, limits apply)</li>
+<li><a href="https://gemini.google.com/">Gemini</a>: 10/month for free</li>
+<li><a href="https://chatgpt.com/">ChatGPT</a> Plus only: 30/month + 15 with lightweight version</li>
+<li><a href="https://www.genspark.ai/a">Genspark</a> (free for now)</li>
+<li><a href="https://grok.com/">Grok3</a></li>
+<li><a href="https://www.perplexity.ai/">Perplexity</a></li>
 </ul>
 </div><div class="column" style="width:47%;">
-<h3 id="custom-gpts">Custom GPTs</h3>
-<p>Short summaries, often bullet points &amp; single citations</p>
+<p><strong>Connected to scientific data bases</strong></p>
 <ul>
-<li>Consensus</li>
-<li>Dimensions Research</li>
+<li><a href="https://chatgpt.com/g/g-bo0FiWLY7-consensus">Consensus GPT</a></li>
+<li><a href="https://chatgpt.com/g/g-STAmDxyVG-dimensions-research-gpt">Dimensions Research GPT</a></li>
 <li>Many Scholar GPTs</li>
 </ul>
 </div></div>
 </section>
+<section id="lets-start-our-exercise-for-later-exercise-10-min" class="slide level2 smaller" style="font-size: 0.6em;">
+<h2>Let’s start our exercise for later: Exercise (10 min)</h2>
+<p><strong>Define a research question in your area of expertise, where you can judge accuracy. Be specific on study population, methodology (RCT), type of study (meta-analyses), outcome variables, etc.</strong></p>
+<p>For example: <em>“What are effects of social media use on well-being and mental health, including depression, anxiety and sleep? How does the effect differ between particular subgroups (like teenagers, or girls vs.&nbsp;boys, individuals with and without a mental health condition)? Does it matter how much individuals use social media (dose-dependent effects), and how they use it (for example, passive vs.&nbsp;active use)? Overall, please focus on how robust the evidence is and on what the highest-quality studies say. Prioritize meta-analyses and causal studies (RCTs, natural experiments) whenever they exist. Please include only articles from scientific journals. Please cite all studies in APA format and include a list of references at the end.”</em></p>
+<p><strong>Open a tab for each of these models &amp; enter the prompt. Let the models compute while we continue with our content.</strong></p>
+<ol type="1">
+<li>Gemini 2.5 Pro (Not Deep Research) (or ChatGPT 4.5)</li>
+<li>Consensus and/or Dimensions GPT</li>
+<li>Gemini Deep Research</li>
+<li>ChatGT 4.5 Deep Research mode if you have a paid account</li>
+<li>Genspark.ai Deep Research</li>
+</ol>
+</section>
 <section id="what-is-deep-research-mode" class="slide level2">
 <h2>What is Deep Research Mode?</h2>
 <ul>
-<li>Suggests an (editable) research plan</li>
-<li>Searches the entire internet.</li>
-<li>Reasoning</li>
-<li>Reporting</li>
-<li>Your prompt really matters.</li>
-<li>Expensive compute and long reports.</li>
+<li>Agentic AI fine-tuned on reasoning models (e.g.&nbsp;o3)</li>
+<li>Suggests &amp; follows an editable multi-step research plan</li>
+<li>Collects sources: Iterative autonomous web search</li>
+<li>Reasons through information in multiple rounds</li>
+<li>Synthesizes information: long &amp; structured research reports</li>
+<li>Your prompt really matters: Expensive compute &amp; limits</li>
+<li>Use all the prompting tips we talked about to write detailed &amp; specific prompts.</li>
 </ul>
 </section>
-<section id="how-do-custum-gpts-citing-scientific-sources-work" class="slide level2">
-<h2>How do Custum GPTs citing scientific sources work?</h2>
+<section id="deep-research-mode" class="slide level2">
+<h2>Deep Research Mode</h2>
+<h3 id="limitations">Limitations</h3>
 <ul>
-<li>Include only scientific sources:</li>
-<li>Retrieval Augmented Generation (RAG)</li>
-<li>Interaction with scientific paper databases (third party provider, only open access papers)</li>
-<li>Document embeddings</li>
-<li>Finding similar documents</li>
+<li>factual errors will happen</li>
+<li>not good at communicating uncertainty</li>
+<li>not only scientific sources (except Perplexity)
+<ul>
+<li>but: requesting scientific sources only worked in ChatGPT for me</li>
+</ul></li>
+<li>only open access sources</li>
 </ul>
+</section>
+<section id="academic-llms" class="slide level2">
+<h2>“Academic” LLMs</h2>
+<ul>
+<li>LLMs connected to scientific article databases</li>
+<li>Database: Third party provider, only open access papers</li>
+<li>References: only scientific sources</li>
+</ul>
+<h3 id="limitations-1">Limitations:</h3>
+<ul>
+<li>Reports much shorter</li>
+<li>Often bullet point format</li>
+<li>Often single citations</li>
+<li>Quality of studies varies greatly</li>
+</ul>
+</section>
+<section id="retrieval-augmented-generation-rag" class="slide level2">
+<h2>Retrieval Augmented Generation (RAG)</h2>
+<ul>
+<li><strong>R</strong>: LLM can search external sources</li>
+<li><strong>A</strong>: and add external information as context to the prompt</li>
+<li><strong>G</strong>enerate an answer based on this augmented prompt.</li>
+<li>Advantages:
+<ul>
+<li>Current information &amp; specific data access</li>
+<li>Less hallucinations</li>
+<li>References</li>
+</ul></li>
+</ul>
+<h3 id="how-do-models-identify-relevant-informationpapers">How do models identify relevant information/papers?</h3>
 </section>
 <section id="each-word-or-document-is-a-vector-of-numbers" class="slide level2">
 <h2>Each word or document is a vector of numbers</h2>
-<p><br></p>
 <div class="columns">
 <div class="column" data-align="center" style="width:40%;">
-<p>Word/Token</p>
+<p>Word/Token/Document</p>
 <p><br></p>
 <p><span style="padding: 0.1em 0.em; background-color: #D7C9F3; border-radius: 4px;">Even </span> …</p>
 </div><div class="column" data-align="center" style="width:10%;">
 <p>→</p>
 </div><div class="column" data-align="center" style="width:40%;">
-<p>Word Embedding <small> [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] </small></p>
+<p>Embedding <small> [-0.3185, 0.5976, 0.4817, 0.7306, -0.5938, -0.6372, 0.9381, -0.9165, -0.9396, 0.3540, 0.0262, -0.6131, 0.3634, -0.0391, -0.4732, -0.2341, -0.8044, -0.3637, -0.5958, -0.8710, 0.3722, -0.8544, -0.7819, -0.5487, -0.9314, 0.3949, -0.3168, -0.3363, -0.6973, -0.3789, 0.7200, -0.6201, -0.7010, -0.3735, 0.7437, -0.9795, -0.4916, 0.2130, 0.6817, 0.1972, 0.8518, -0.8700, -0.4013, -0.6310, -0.9597, 0.2763, -0.9173, 0.2900, -0.1896, 0.8286, -0.8617, 0.2566, 0.7024, -0.2448, 0.0994, -0.6664, -0.0699, -0.5830] </small></p>
 </div></div>
 </section>
 <section id="how-do-embeddings-encode-meaning" class="slide level2">
 <h2>How do embeddings encode meaning?</h2>
+<div class="columns">
+<div class="column" style="width:47%;">
 <p><strong>Word embeddings</strong></p>
-
-<img data-src="images/wordembeddings.svg" class="r-stretch"><p>Semantic dimensions: gender &amp; royalty</p>
+<p><img data-src="images/wordembeddings.svg"></p>
+<p>Semantic dimensions: gender &amp; royalty</p>
+</div><div class="column" style="width:47%;">
+<p><strong>RAG:</strong></p>
+<p>Such embedding vectors of query and search findings are used for <strong>semantic search</strong>.</p>
+</div></div>
 </section>
-<section id="social-media-mental-health-example" class="slide level2">
-<h2>Social Media Mental Health example</h2>
+<section id="rag-with-semantic-search" class="slide level2">
+<h2>RAG with semantic search</h2>
+
+<img data-src="https://www.clarifai.com/hs-fs/hubfs/rag-query-drawio%20(1)-png-2.png?width=2056&amp;height=1334&amp;name=rag-query-drawio%20(1)-png-2.png" class="r-stretch"><div class="footer">
+<p>Source: <a href="https://www.clarifai.com/blog/what-is-rag-retrieval-augmented-generation">Clarify AI</a></p>
+</div>
+</section>
+<section id="ideas-for-use-cases" class="slide level2 smaller" style="font-size: 0.8em;">
+<h2>Ideas for use cases</h2>
+<p><strong>by Andrew Stapleton</strong></p>
 <ul>
-<li><a href="https://chatgpt.com/share/680b547c-adf0-800b-87a1-96f6e510f241">Consensus</a></li>
-<li><a href="https://chatgpt.com/share/680b5c8a-f658-800b-967a-0068d3dbfcf4">Dimensions Research</a></li>
-<li><a href="https://chatgpt.com/share/680b5555-34c8-800b-8beb-c86289cf21ee">ChatGPT Deep Research</a></li>
-<li><a href="https://g.co/gemini/share/f65dd50b565e">Gemini Deep Research</a></li>
+<li>Doing literature reviews</li>
+<li>Overview of existing research areas</li>
+<li>Ask for research gaps</li>
+<li>Brainstorm ideas in a research area</li>
+<li>Grant applications</li>
+<li>Ask about common methodologies for a specific question</li>
+<li>Ask about the work of specific researchers</li>
+<li>Translate your research for a general audience</li>
+<li>Fact-check (very) specific claims</li>
+</ul>
+<div class="footer">
+<p><a href="https://www.youtube.com/watch?v=scKBbRn6Zec">Andrew Stapleton: Academics are secretly using Deep Research like this</a></p>
+</div>
+</section>
+<section id="andy-stapleton-prompt-ideas" class="slide level2 scrollable smaller" style="font-size: 0.6em;">
+<h2>Andy Stapleton prompt ideas</h2>
+<h3 id="for-inspiration-there-is-zero-guarantee-that-any-of-this-produces-any-better-result-then-prompts-you-would-come-with">For inspiration, there is zero guarantee that any of this produces any better result then prompts you would come with!</h3>
+<ul>
+<li>Doing regular literature reviews to keep up to date: Summarize the current research on […]. Include the main findings, major authors and cite recent key studies in the field.</li>
+<li>Research gaps: Perform an analysis on […]. Find research gaps or open questions that need further investigation. Provide references to support these identified gaps.</li>
+<li>Brainstorm some potential research questions about the effects of […] on […]. Provide a list of unique questions or hypotheses, each with a brief explanation or rationale drawn from existing studies.</li>
+<li>Grant applications: Gather facts and references for a grant proposal. Outline the current challenges, why this problem is important solve, and how recent advances suggest our approach will work. Include key statistics…</li>
+<li>Methodologies: I am planning a study on […]. Which methodologies are commonly used for […]. Compare approaches and summarize the best practices and recommendations from recent studies with references.</li>
+<li>Keep up with new trends: Tell me about what new developments occurred in […] research in the past year. Highlight any breakthrough studies, new treatment trials, or changing theories. Provide a brief summary of each development along with the citation or source (journal or conference) where it was reported.</li>
+<li>Asking about the work of specific researchers: summarize their most influential work and current research focus. Include a few example papers (or other contributions). Check if their research group has any recent publications I should be aware of.</li>
+<li>Prepare a layperson-friendly explanation of my research on […]. [Provide your paper(s), presentations, any references). The goal is a 2-minute talk for a science festival. Explain what […] is and why it can improve […]. Also mention real-world examples (with sources) that highlight the potential of […].</li>
+<li>Fact-checking: Check the following statement: [Biodiversity has declined by over 50% in the last 40 years.] Is this accurate and reflects current empirical evidence? If so, provide several sources.</li>
+</ul>
+<div class="footer">
+<p><a href="https://www.youtube.com/watch?v=scKBbRn6Zec">Andrew Stapleton: Academics are secretly using Deep Research like this</a></p>
+</div>
+</section>
+<section id="hannahs-preliminary-conclusions-on-deep-research-mode" class="slide level2 smaller" style="font-size: 0.8em;">
+<h2>Hannah’s preliminary conclusions on Deep Research Mode</h2>
+<ul>
+<li>Excellent to get a first overview much more quickly.</li>
+<li>Hallucinations: Check before you cite in your papers.</li>
+<li>No actual critical thinking: summarizes majority opinions, will miss critical perspectives/constraints if you don’t highlight them.</li>
+<li>Check the number and quality of sources. Often limited.</li>
+<li>Ask Deep Research mode to include only academic sources</li>
+<li>Only open access: Do additional research to not miss half of the research. (&amp; publish open access!)</li>
+<li>Excellent starting ground for many research tasks</li>
 </ul>
 </section>
-<section id="exercise" class="slide level2">
-<h2>Exercise</h2>
-<p>Define a research question where you can judge the answer (you have expertise. Social Media Question insert here.</p>
-<p>Add it in Gemini Deep Research, ChatGPT Deep Research mode if you have a paid account, maybe Perplexity?, in Consensus and Dimensions Research.</p>
+<section id="back-to-the-exercise-output-15-min" class="slide level2">
+<h2>Back to the exercise output (15 min)</h2>
 <ul>
 <li>How accurate are the reports?</li>
-<li>Do they reflect your knowledge on the field?</li>
-<li>How good are the sources cited?</li>
+<li>Do they reflect your expert knowledge on the field?</li>
+<li>Which differences between models/services did you notice?
+<ul>
+<li>Quality of sources</li>
+<li>Number of sources searched</li>
+<li>Length</li>
+<li>Format …</li>
+</ul></li>
+<li>You can also use my example reports on the next slide.</li>
 </ul>
+</section>
+<section id="research-report-examples-on-social-media-mental-health" class="slide level2">
+<h2>Research report examples on social media &amp; mental health</h2>
+<p>(Always check the prompt version, it evolved slightly between the different trials.)</p>
+<ul>
+<li><a href="https://chatgpt.com/share/680b547c-adf0-800b-87a1-96f6e510f241">Consensus GPT</a></li>
+<li><a href="https://chatgpt.com/share/680b5c8a-f658-800b-967a-0068d3dbfcf4">Dimensions Research GPT</a></li>
+<li><a href="https://chatgpt.com/share/680b5555-34c8-800b-8beb-c86289cf21ee">ChatGPT Deep Research</a></li>
+<li><a href="https://g.co/gemini/share/f65dd50b565e">Gemini Deep Research</a></li>
+<li><a href="https://www.perplexity.ai/search/what-are-effects-of-social-med-o7qOWf3VRhGzGiYUPXb.5Q">Perplexity Deep Research</a></li>
+<li><a href="https://www.genspark.ai/spark?id=4869f1db-00e2-499c-b887-b36ace70dc7f">Genspark</a> (This is an example on misinformation research)</li>
+</ul>
+</section>
+<section id="some-impressions-from-comparing" class="slide level2 smaller" style="font-size: 0.6em;">
+<h2>Some impressions from comparing</h2>
+<div class="columns">
+<div class="column" style="width:47%;">
+<h3 id="gemini">Gemini</h3>
+<ul>
+<li>Intermediate search time: 5-10 min</li>
+<li>Integration with Google drive</li>
+<li>Large number of websites searched</li>
+<li>Follow up questions create new reports</li>
+</ul>
+<h3 id="chatgpt">ChatGPT</h3>
+<ul>
+<li>Slowest: 15-30 minutes</li>
+<li>Most comprehensive research capabilities</li>
+<li>Deep complex topics</li>
+<li>Most expensive</li>
+</ul>
+<h3 id="consensusdimensions">Consensus/Dimensions</h3>
+<ul>
+<li>very similar</li>
+<li>short, but accurate</li>
+</ul>
+</div><div class="column" style="width:47%;">
+<h3 id="genspark">Genspark</h3>
+<ul>
+<li>high quality</li>
+<li>Table of content</li>
+<li>Supplementary resources (videos), similar knowledge section</li>
+<li>Mixture of Agents: “best” combination of models for your specific research question (+ Creative output formats (e.g.&nbsp;<a href="https://www.genspark.ai/spark/comparative-analysis-of-deep-research-ai-agents/44916286-7832-4e98-bbc1-e3bcdb8f9217">Mindmaps</a>)</li>
+</ul>
+<h3 id="perplexity">Perplexity</h3>
+<ul>
+<li>Shorter reports: Extracts key facts</li>
+<li>Pretty wide range of sources</li>
+<li>You can ask follow up questions</li>
+<li>Poor context window (memory)</li>
+<li>Fewer sources</li>
+<li>30 minute search</li>
+</ul>
+</div></div>
+</section>
+<section id="prompt-suggestion-for-the-future" class="slide level2 smaller" style="font-size: 0.7em;">
+<h2>Prompt suggestion for the future</h2>
+<ol type="1">
+<li>Context (your background and goal): what you already know, what you are researching.</li>
+<li>Central research question</li>
+<li>Specifications: time period, population, study type, output variables…</li>
+<li>Desired Report Output: Structure, Content Elements (Table, Graphs, Subtitles, Policy Implications, Case Studies…), Target length, Citation style</li>
+<li>Source preferences:
+<ul>
+<li><strong>Prioritize:</strong> [e.g., “Peer-reviewed journals,” “Government reports,” “Reputable news sources,” “Industry analysis reports”]`</li>
+<li><strong>Avoid:</strong> [e.g., “Blog posts,” “Opinion pieces,” “Websites with known biases,” “Social media”]</li>
+<li><strong>Bias Considerations:</strong> [e.g., “Acknowledge potential biases in industry-funded research,” “Consider perspectives from multiple stakeholders,” “Prioritize sources with transparent methodologies”]</li>
+</ul></li>
+</ol>
+<div class="footer">
+<p><a href="https://root-tendency-e9a.notion.site/Deep-Research-Prompt-5-Mind-Blowing-Use-Cases-of-Deep-Research-1b6c2aecc29780f6a612c6e9730b84d1">Rick Mulready prompt</a> (developed for entrepreneurs) &amp; related <a href="https://www.youtube.com/watch?v=ZzO2GMc-G3M">video</a></p>
+</div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
