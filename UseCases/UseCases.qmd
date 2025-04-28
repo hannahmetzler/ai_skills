@@ -29,16 +29,18 @@ Collection of ideas for where you might experiment with chatbots in the future
 <small> Slides: https://hannahmetzler.eu/ai_skills </small>
 
 
-
-## Summarizing content
+## Summarizing content {.smaller style="font-size: 0.9em;"}
 
 -   Record workshops, interviews, meetings: note taking & summaries
+- Summarize lectures/workshops
+-   Context: Background/focus/purpose of meeting/analysis, exam...
 -   Upload long reports/papers & analyse: 
     - compare 2 university annual reports, table with 10 differences
     - Grant regulatios: ask your specific questions
 -   Summarizing a paper based on notes you took for other papers: [Zotero note example](https://chatgpt.com/share/67166160-4cdc-800b-8965-487a32301be8)
+-   Example instructions from [Maastricht University prompt library](https://www.maastrichtuniversity.nl/summarise)
     
-## Writing {.smaller}
+## Writing {.smaller style="font-size: 0.9em;"}
 
 - Write abstract draft given the paper
 - Social media thread based on paper
@@ -111,6 +113,14 @@ Collection of ideas for where you might experiment with chatbots in the future
 - Translate code between languages
 - Creating a website from scratch based on your CV
 - Upload a screenshot of a website design you like and update the design …
+
+## Statistics questions
+
+-   Use ChatGPT to explain your statistical question
+-   Specify the data set involved, the analysis you're attempting, and any issues you've encountered
+-   Provide a persona: e.g., "You are a statistics expert with experience in \[field of research\]"
+-   Ask for a specific solution, including step-by-step instructions
+-   Upload a sample of your data or describe it in detail as context
 
 ## Coaching, time planning
 
