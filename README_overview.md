@@ -12,22 +12,24 @@ and their strengths, and discuss the most important ethical questions around usi
 
 ## Workshop slides
 
-- [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeKrems)
-- [Chatbot Essentials](https://hannahmetzler.eu/ai_skills/Prompting)
-- [Effective prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/effective-prompting)
-- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Research)
-- [Chatbots in Research: Writing](https://hannahmetzler.eu/ai_skills/Writing)
-- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
-
-### More detailled session versions & additional sessions: 
-
+- [Introduction & Ethics Short](https://hannahmetzler.eu/ai_skills/IntroEthicsShort)
 - [Introduction to LLMs](https://hannahmetzler.eu/ai_skills/Introduction)
 - [Ethics](https://hannahmetzler.eu/ai_skills/Ethics)
+- [Chatbot essentials](https://hannahmetzler.eu/ai_skills/Prompting)
+- [Advanced prompting strategies](https://hannahmetzler.eu/ai_skills/Prompting/#/advanced-prompting-strategies)
+- [Scientific tools based on LLMs](https://hannahmetzler.eu/ai_skills/Tools)
+- [Scientific writing with chatbots](https://hannahmetzler.eu/ai_skills/Writing)
 - [Customizing Chatbots](https://hannahmetzler.eu/ai_skills/Customizing)
-- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/Research/#/researcher-use-cases)
+- [Collection of researcher use cases](https://hannahmetzler.eu/ai_skills/UseCases)
 - [Exercises: Coding & coaching](https://hannahmetzler.eu/ai_skills/CodingCoaching)
+- [Resources](https://hannahmetzler.eu/ai_skills/Resources)
 
-(from: Skills training at LBG Career Center, October 29, 2024, Vienna)
+## Workshop Overviews & last update
+
+- Skills training at Ludwig Boltzmann Gesellschaft Career Center, April 29 2024, Vienna: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/WelcomeLBG)
+- Austrian Academy of Sciences, Austrian Archaeological Institute, January 9, 2025: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Archive/202412/WelcomeArchaeology)
+- Karl Landsteiner Privatuniversität Krems, Zentrum für Transitionspsychiatrie, December 4, 2024: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Archive/202412/WelcomeKrems)
+- Skills training at Ludwig Boltzmann Gesellschaft Career Center, October 29 2024, Vienna: [Welcome & course overview](https://hannahmetzler.eu/ai_skills/Archive/202412/WelcomeLBG)
 
 ## Preparation before the workshop: 
 
@@ -52,14 +54,8 @@ For the workshop exercises in the LLM workshop, we recommend having access to a 
     4. (Claudet is a voice extension you can only use if you buy API access to Claude. Not for this workshop.)
 
 * **Option 3: [Google Gemini](https://gemini.google/advanced/) Pro (Free Trial)** Google offers a free trial of Gemini Pro for one month. If you cancel before the trial ends, there's no cost.
-
-### Files to bring (if you have them)
-
-Having these files available on your laptop will be useful for the exercises: 
-
-* A motivation letter and CV from a previous application  
-* Your LinkedIn profile  
-* Your own research papers or your Master's/PhD thesis  
-* Around 10 PDF research papers (any topic related to your research)
+    1. Sign up under https://gemini.google.com/
+    2. You can choose to turn off the "Gemini Apps Activity" setting. This prevents any data from being saved (your chats, your feedback, info about your location),
+    and makes sure Google does not use your data to train further models. Unfortunately, we have found no way to only turn off model training on your data while keeping track of your earlier chats in Gemini. 
 
 Looking forward to seeing you at the workshop\!

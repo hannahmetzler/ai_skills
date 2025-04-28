@@ -12,13 +12,11 @@
 - Creating Custom Gem on Gemini, memory (ev Gemini)
 - Using others CustomGPTs on ChatGPT
 - Customizing, system prompt on ChatGPT
-
-- Resources (add youtube andrej karpathy)
+- Source for agents graphik: https://medium.com/codex/what-are-ai-agents-your-step-by-step-guide-to-build-your-own-df54193e2de3
 
 # To Do Hannah
 
 - Prompting, Hallucinations
-- Resources
 - Deep Research
 
 ## Intro

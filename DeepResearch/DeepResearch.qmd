@@ -65,7 +65,7 @@ For example: _"What are effects of social media use on well-being and mental hea
 ## What is Deep Research Mode?
 
 - Agentic AI fine-tuned on reasoning models (e.g. o3)
-- Suggests & follows an editable multi-step research plan
+- Suggests & follows an (editable) multi-step research plan
 - Collects sources: Iterative autonomous web search
 - Reasons through information in multiple rounds
 - Synthesizes information: long & structured research reports
@@ -97,9 +97,9 @@ For example: _"What are effects of social media use on well-being and mental hea
 
 ## Retrieval Augmented Generation (RAG)
 
-- **R**: LLM can search external sources
-- **A**: and add external information as context to the prompt
-- **G**enerate an answer based on this augmented prompt. 
+- **Retrieval**: LLM can search external sources
+- **Augmented**: add external information as context
+- **Generate** an answer based on this augmented prompt. 
 - Advantages: 
   - Current information & specific data access
   - Less hallucinations
