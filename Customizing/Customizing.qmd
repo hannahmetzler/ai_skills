@@ -36,10 +36,21 @@ editor: source
 
 Models normally have a knowledge cutoff, as they are normally trained months prior.
 
+- Does a model know 'who' it is?
 - Does a model know which date is today?
 - Does a model know what time it is?
 
+
+. . .
+
 Let's try this out!
+
+. . .
+
+<br>
+<br>
+
+**How does the model know?**
 
 ## Example: Claude's general prompt {.smaller style="font-size: 0.5em;"}
 
@@ -233,11 +244,16 @@ Gem manager > New Gem
 
 1. Choose a regular task & create a custom model for it: 
 
-- Your writing buddy (upload all your scientific texts)
+- [Prompt examples](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/): for Proofreader, LinkedIn content creator & Concise Email drafter
+
+Other ideas:
+
 - Concise answers for code, adapted to my skills
-- [Prompt examples](https://www.reddit.com/r/ChatGPTPromptGenius/comments/1bq212c/3_chatgpt_megaprompts_i_use_daily_to_save_tons_of/) for other ideas: Proofreader, LinkedIn content  creator, Email drafter
+- Explanation of concepts adapted to your knowledge level
+- Multiple choice questionnaire creator
 
 2. Write a detailed prompt
+
 3. **Add additional files relevant for your Custom Chatbot**, e.g. websites with instructions for the task.
 
 
@@ -249,6 +265,8 @@ Gem manager > New Gem
 [Google Gemini Gems](https://gemini.google.com/gems/view)
 
 <br>
+
+Downside: Custom models normally do not use the most recent and best models.
 
 <!-- ## Custom GPTs for research -->
 
