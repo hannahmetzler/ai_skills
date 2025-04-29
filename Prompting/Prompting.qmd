@@ -493,8 +493,6 @@ Text
 -   Quote from an expert on a specific topic: "What does Jonathan Haidt say about why evidence on social media and mental health is not conclusive?"
 -   Or: ask about a historical event, details from a biography, most recent statistical data on unemployment in the Maldives etc.
 
-## No correct science of prompting can exist
-
 ## Emotion prompts {visibility="hidden"}
 
 -   Emotional expressions can lead to better results ([Cheng et al., 2023](https://arxiv.org/abs/2307.11760))
