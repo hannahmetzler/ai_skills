@@ -89,9 +89,9 @@ Ethan Mollick: \[2\] [Co-Intelligence: Living and Working with AI](https://www.a
 
 ![](images/voice_control.png){width="250"}
 
--   Headphones for ongoing conversations, microphone to record, stop to transcribe
+-   Microphone to record, stop to transcribe
 
--   Advanced voice mode: Memory
+-   Advanced voice mode (headphone, Gemini symbol)
 :::
 :::::
 
