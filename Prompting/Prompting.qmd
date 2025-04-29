@@ -73,8 +73,8 @@ Ethan Mollick: \[2\] [Co-Intelligence: Living and Working with AI](https://www.a
 
 ## Voice conversations
 
--   ChatGPT App: Mac (& Windows beta) & Smartphones
--   Otherwise: Chrome extension [Voice Up](https://voicecontrol.chat/) (ChatGPT & Claude)
+-   Gemini/ChatGPT App: Mac (& Windows?) & Smartphones
+-   Browser: Gemini, or Chrome extension [Voice Up](https://voicecontrol.chat/)
 
 ::::: columns
 ::: {.column width="40%"}
@@ -85,7 +85,7 @@ Ethan Mollick: \[2\] [Co-Intelligence: Living and Working with AI](https://www.a
 :::
 
 ::: {.column width="55%"}
-### ChatGPT App
+### Gemini/ChatGPT App
 
 ![](images/voice_control.png){width="250"}
 
