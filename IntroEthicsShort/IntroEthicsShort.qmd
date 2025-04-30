@@ -241,6 +241,21 @@ Best non-proprietary:
 Source: [Chatbot Arena](https://chat.lmsys.org/)
 :::
 
+## Types of models
+
+* General or efficient: default, fast, everyday tasks
+* Reasoning: Strong logical capabilities, detailed accuracy.
+* Deep Research: Reasoning model + web search agent
+
+## What's what on each platform?
+
+| **Provider** | **General** | **Reasoning**| **Efficient**| **Deep Research**|
+|--------------|----------------------------|---------------------------------------------|------------------------------|----------------------------------------------------|
+| **OpenAI/ GPT**   | GPT-4o | o3, o4-mini-high| o4-mini  | Deep R. mode (any)  |
+| **Google/ Gemini**   |  2.0 Flash| 2.5 Pro, 2.5 Flash| 2.0 Flash| Deep R. (2.5 Pro)|
+
+<br> 
+**Anthropic**: ClaudeSonnet 3.7: balanced, capable of reasoning & coding
 
 ## Features of the models
 **All models (ChatGPT, Gemini, Claude)**

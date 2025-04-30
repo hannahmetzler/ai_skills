@@ -86,7 +86,6 @@ Ethan Mollick: \[2\] [Co-Intelligence: Living and Working with AI](https://www.a
 
 ::: {.column width="55%"}
 ### Gemini/ChatGPT App
-
 ![](images/voice_control.png){width="250"}
 
 -   Microphone to record, stop to transcribe
